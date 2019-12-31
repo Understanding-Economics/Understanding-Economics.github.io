@@ -68,7 +68,7 @@ function updateCrosstabs() {
             {
                 rows : [selectedFields.demographic],
                 cols: [selectedFields.content],
-                aggregator: $.pivotUtilities.aggregators["Count as Fraction of Rows"]()
+                aggregator: $.pivotUtilities.aggregators["Count"]()
             });
     }
 }
@@ -78,20 +78,12 @@ function updateChart() {
 
     }
     else {
-        console.log($.pivotUtilities.c3_renderers)
         $("#chart").pivot(data, {
             rows : [selectedFields.demographic],
             cols: [selectedFields.content],
             aggregator: $.pivotUtilities.aggregators["Count as Fraction of Rows"](),
             renderer: $.pivotUtilities.c3_renderers["Horizontal Stacked Bar Chart"],
             rowOrder: "value_z_to_a", colOrder: "value_z_to_a",
-            rendererOptions: {
-                c3: {
-                    title : {
-                        text: "Frequency percentage"
-                    }
-                }
-            }
         });
         document.getElementById("chart").getElementsByTagName("p")[0].remove();
     }
