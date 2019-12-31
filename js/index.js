@@ -2,7 +2,7 @@ var curTab = null;
 
 window.onload = () => {
     curTab = document.getElementById("navbar").getElementsByTagName("li")[0].id.substring(3);
-    console.log(curTab);
+    frame = document.getElementById("frame_dataview");
 }
 function onTabClick(selectedSurvey) {
     document.getElementById(`link_${selectedSurvey}`).classList.add("active");
