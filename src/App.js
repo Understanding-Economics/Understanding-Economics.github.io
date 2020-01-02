@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {groups, surveys} from './config/fields.json'
+import NavigationBar from './components/NavigationBar'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        Under construction
+        <NavigationBar surveys={surveys}/>
       </div>
     );
   }
