@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import {groups, surveys} from './config/fields.json'
 import NavigationBar from './components/NavigationBar'
-import DataView from './components/DataView'
-import CrossTabView from './components/CrossTabView';
+import CrossTabView from './components/CrossTabView'
+import ChartView from './components/ChartView'
 
 class App extends React.Component {
   constructor() {
@@ -19,7 +19,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <NavigationBar surveys={surveys}/>
-        <CrossTabView 
+        <ChartView 
           survey = {surveys.income_survey} 
           data = { this.state.surveyData }
           selectedGroup = { this.state.selectedGroup }
