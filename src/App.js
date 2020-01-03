@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import {groups, surveys} from './config/fields.json'
 import NavigationBar from './components/NavigationBar'
 import DataView from './components/DataView'
 import CrossTabView from './components/CrossTabView';
 
-class App extends Component {
+class App extends React.Component {
   constructor() {
     super(); 
     this.state = {

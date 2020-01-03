@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import DataView from './DataView'
 
-export default class CrossTabView extends Component{
+export default class CrossTabView extends React.Component {
     render() {
         return <DataView 
                     elementId = "crosstab" 
