@@ -19,7 +19,7 @@ export default class ChartView extends React.Component {
                 {
                     rows : ["group"],
                     aggregator: $.pivotUtilities.aggregators["Average"](["response"]),
-                    renderer: $.pivotUtilities.c3_renderers["Horizontal Stacked Bar Chart"],
+                    renderer: $.pivotUtilities.c3_renderers["Horizontal Bar Chart"],
                     rowOrder: "value_z_to_a"
                 });
         }
