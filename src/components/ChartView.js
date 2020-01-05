@@ -13,11 +13,11 @@ export default class ChartView extends React.Component {
                 />
     }
 
-    renderChart(elementId, selectedGroup, selectedQuestion, data, survey) {
-        if(survey.questions[selectedQuestion].numeric) {
+    renderChart(elementId, selectedGroup, selectedQuestion, data) {
+        if(selectedQuestion.numeric) {
             $(`#${elementId}`).pivot(cleanData, 
                 {
-                    rows : ["group"],
+                    rows : [selectedGroup.id],
                     aggregator: $.pivotUtilities.aggregators["Average"](["response"]),
                     renderer: $.pivotUtilities.c3_renderers["Horizontal Bar Chart"],
                     rowOrder: "value_z_to_a"
@@ -25,8 +25,8 @@ export default class ChartView extends React.Component {
         }
         else { 
             $(`#${elementId}`).pivot(data, {
-                rows : [selectedGroup],
-                cols: [selectedQuestion],
+                rows : [selectedGroup.id],
+                cols: [selectedQuestion.id],
                 aggregator: $.pivotUtilities.aggregators["Count as Fraction of Rows"](),
                 renderer: $.pivotUtilities.c3_renderers["Horizontal Stacked Bar Chart"],
                 rowOrder: "value_z_to_a", colOrder: "value_z_to_a",

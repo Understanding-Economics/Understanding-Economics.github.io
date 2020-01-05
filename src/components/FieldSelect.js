@@ -7,27 +7,36 @@ export default class FieldSelect extends React.Component {
         if(!this.props.options) {
             return null;
         }
-        let optionComponents = this.props.options.map((option) => {
-            return <option value = {option.id}>option.title</option>
+        let optionComponents = getValues(this.props.options).map((option) => {
+            return <option value = {option.id}>{option.title}</option>
         });
         let selectedDescription = this.props.selected ? this.props.options[this.props.selected].description : "";
         return (
-            <div className = "row">
-                <h3>{this.props.title}</h3>
-                <span>{this.props.description}</span>
-                <div className = "col-md">
-                    <select size = {8} value = {this.props.selected} onChange={this.props.handleSelect}>
-                        {optionComponents}
-                    </select>
+            <div>
+                <div className = "row">
+                    <h4>{this.props.title}</h4>
                 </div>
-                <div className = "col-md">
-                    <span className = "align-top align-text-top">
-                        {selectedDescription}
-                    </span>
+                <div className = "row">
+                    <span>{this.props.description}</span>
+                </div>
+                <div className = "row">
+                    <div className = "col-md-4">
+                        <select className = "pull-left" size = {6} value = {this.props.selected} onChange={this.props.handleSelect}>
+                            {optionComponents}
+                        </select>
+                    </div>
+                    <div className = "col-md">
+                        <span className = "align-top align-text-top" dangerouslySetInnerHTML={{__html : selectedDescription}}>
+                        </span>
+                    </div>
                 </div>
             </div>
         );
     }
+}
+
+function getValues(dict) {
+    return Object.keys(dict).map(key => dict[key])
 }
 
 FieldSelect.propTypes = { 

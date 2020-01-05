@@ -25,32 +25,41 @@
         "additional_groups" : {},
         "topics" : {
           "Economic Effects": {
+            "description" : "Questions about economic effects", 
             "id" : "Economic Effects", 
-            "Q06006_en" : {
-              "id": "Q06006_en",
-              "title": "Economic Effect",
-              "numeric": false,
-              "description": "The economic effect that the respondent believes.\n<ul>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li><li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n</ul>"
-            },
-            "Q06009_en":{
-              "id": "Q06009_en",
-              "title": "Yes or No",
-              "numeric": false,
-              "description": "A yes or no question where I don't know the question"
+            "title" : "Economic Effects", 
+            "questions" : {
+              "Q06006_en" : {
+                "id": "Q06006_en",
+                "title": "Economic Effect",
+                "numeric": false,
+                "description": "The economic effect that the respondent believes.\n<ul>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li><li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n</ul>"
+              },
+              "Q06009_en":{
+                "id": "Q06009_en",
+                "title": "Yes or No",
+                "numeric": false,
+                "description": "A yes or no question where I don't know the question"
+              }
             }
           },
           "Tax Cut" : {
-            "Q06007_en" : {
-              "id": "Q06007_en",
-              "title": "Tax Cut Deficit",
-              "numeric": false,
-              "description": "How the respondents believes the tax cut affected the deficit"
-            },
-            "Q06008_en" : {
-              "id": "Q06008_en",
-              "title": "Tax Cut Deficit 2",
-              "numeric": false,
-              "description": "Another tax cut deficit question"
+            "description" : "Questions about the recent tax cut", 
+            "id" : "Tax Cut", 
+            "title" : "Tax Cut", 
+            "questions" : {
+              "Q06007_en" : {
+                "id": "Q06007_en",
+                "title": "Tax Cut Deficit",
+                "numeric": false,
+                "description": "How the respondents believes the tax cut affected the deficit"
+              },
+              "Q06008_en" : {
+                "id": "Q06008_en",
+                "title": "Tax Cut Deficit 2",
+                "numeric": false,
+                "description": "Another tax cut deficit question"
+              }
             }
           } 
         }
