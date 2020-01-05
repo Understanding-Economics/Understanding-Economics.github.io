@@ -20,12 +20,12 @@ export default class FieldSelect extends React.Component {
                     <span>{this.props.description}</span>
                 </div>
                 <div className = "row">
-                    <div className = "col-md-4">
-                        <select className = "pull-left" size = {6} value = {this.props.selected} onChange={this.props.handleSelect}>
+                    <div className = "col-md-6">
+                        <select className = "pull-left" size = {8} value = {this.props.selected} onChange={this.props.handleSelect}>
                             {optionComponents}
                         </select>
                     </div>
-                    <div className = "col-md">
+                    <div className = "col-md-6">
                         <span className = "align-top align-text-top" dangerouslySetInnerHTML={{__html : selectedDescription}}>
                         </span>
                     </div>
