@@ -3,6 +3,12 @@ import PropTypes from 'prop-types'
 import '../css/FieldSelect.css'
 
 export default class FieldSelect extends React.Component { 
+    constructor() { 
+        super();
+        this.slctDivRef = React.createRef();
+        this.descDivRef = React.createRef();
+    }
+
     render() {
         if(!this.props.options) {
             return null;
@@ -20,18 +26,24 @@ export default class FieldSelect extends React.Component {
                     <span>{this.props.description}</span>
                 </div>
                 <div className = "row">
-                    <div className = "col-md-6">
-                        <select className = "pull-left" size = {8} value = {this.props.selected} onChange={this.props.handleSelect}>
+                    <div className = "col-md-6 slctDiv" ref = {this.slctDivRef}>
+                        <select className = "align-left" size = {8} value = {this.props.selected} onChange={this.props.handleSelect}>
                             {optionComponents}
                         </select>
                     </div>
-                    <div className = "col-md-6">
+                    <div className = "col-md-6 scrolling" ref = {this.descDivRef}>
                         <span className = "align-top align-text-top" dangerouslySetInnerHTML={{__html : selectedDescription}}>
                         </span>
                     </div>
                 </div>
             </div>
         );
+    }
+
+    componentDidUpdate() {
+        if (this.slctDivRef.current &&  this.descDivRef.current) {
+            this.descDivRef.current.style.height = `${this.slctDivRef.current.offsetHeight}px`
+        }
     }
 }
 
