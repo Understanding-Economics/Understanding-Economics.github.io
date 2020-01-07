@@ -8,8 +8,18 @@ export default class NavigationBar extends React.Component {
     }
     render() {
         return (
-            <div className = "navbar navbar-default">
-            </div>
+            <ul className = "nav nav-tabs">
+                <li className = "nav-item">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/">
+                        Home
+                    </NavLink> 
+                </li>
+                <li className = "nav-item">
+                    <NavLink className="nav-link" activeClassName="active" to="/survey/income_survey">
+                        Income Survey
+                    </NavLink>
+                </li>
+            </ul>
         )
     }
     componentDidMount() {

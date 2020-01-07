@@ -20,7 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className="App container">
           <NavigationBar />
           <Switch>
             <Route exact path="/" component={HomePage}/>

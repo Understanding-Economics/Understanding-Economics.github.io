@@ -30,38 +30,38 @@ export default class DataPage extends React.Component {
             return <NotFound />
         }
         return (
-            <div className = "container">
+            <div className = "container-fluid">
                 <div className = "row">
-                <div className = "col-md-6">
-                    <FieldSelect 
-                        title = "Group"
-                        description = "Select how you would like to group responses"
-                        options = { groups }
-                        selected = {this.state.selectedGroup}
-                        handleSelect = {this.handleGroupSelect}
-                    />
-                </div>
-                <div className = "col-md-6">
-                    <FieldSelect
-                        title = "Topic"
-                        description = "Select a topic that you would like to examine"
-                        options = { this.survey.topics }
-                        selected = {this.state.selectedTopic}
-                        handleSelect = {this.handleTopicSelect}
-                    />
-                </div>
-                <div className = "col-md-6">
-                    <FieldSelect
-                        title = "Question"
-                        description = "Select a question to examine"
-                        options = {this.state.selectedTopic ? 
-                            this.survey.topics[this.state.selectedTopic].questions :
-                            null
-                        }
-                        selected = {this.state.selectedQuestion}
-                        handleSelect = {this.handleQuestionSelect}
-                    />
-                </div>
+                    <div className = "col-md-6">
+                        <FieldSelect 
+                            title = "Group"
+                            description = "Select how you would like to group responses"
+                            options = { groups }
+                            selected = {this.state.selectedGroup}
+                            handleSelect = {this.handleGroupSelect}
+                        />
+                    </div>
+                    <div className = "col-md-6">
+                        <FieldSelect
+                            title = "Topic"
+                            description = "Select a topic that you would like to examine"
+                            options = { this.survey.topics }
+                            selected = {this.state.selectedTopic}
+                            handleSelect = {this.handleTopicSelect}
+                        />
+                    </div>
+                    <div className = "col-md-6">
+                        <FieldSelect
+                            title = "Question"
+                            description = "Select a question to examine"
+                            options = {this.state.selectedTopic ? 
+                                this.survey.topics[this.state.selectedTopic].questions :
+                                null
+                            }
+                            selected = {this.state.selectedQuestion}
+                            handleSelect = {this.handleQuestionSelect}
+                        />
+                    </div>
                 </div>
                 
                 <div className = "row">
