@@ -4,6 +4,7 @@ import CrossTabView from './CrossTabView'
 import ChartView from './ChartView'
 import FieldSelect from './FieldSelect'
 import { surveys, groups } from '../config/fields.json'
+import NotFound from './NotFound'
 
 export default class DataPage extends React.Component {
     constructor() {
@@ -18,12 +19,15 @@ export default class DataPage extends React.Component {
         this.handleQuestionSelect = this.handleQuestionSelect.bind(this); 
     }
     componentWillMount() {
-        this.survey = surveys[this.props.surveyId];
+        this.surveyId = this.props.match.params.surveyId;
+        if (this.surveyId && this.surveyId in surveys) {
+            this.survey = surveys[this.surveyId];
+        }
     }
 
     render() {
-        if (this.props.surveyId == null) {
-            throw new Error("Expected a survey id");
+        if(!this.survey) {
+            return <NotFound />
         }
         return (
             <div className = "container">
@@ -85,8 +89,11 @@ export default class DataPage extends React.Component {
     }
 
     componentDidMount() {
-        document.title = surveys[this.props.surveyId].title;
-        d3.csv(`${process.env.PUBLIC_URL}/data/data_${this.props.surveyId}.csv`).then((data) => {
+        if(!this.survey){
+            return;
+        }
+        document.title = this.survey.title;
+        d3.csv(`${process.env.PUBLIC_URL}/data/data_${this.surveyId}.csv`).then((data) => {
           this.setState({
             surveyData : data
           })

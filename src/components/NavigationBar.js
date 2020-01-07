@@ -1,13 +1,18 @@
 import React from 'react'
+import '../css/NavigationBar.css'
+import { NavLink } from 'react-router-dom'
 
 export default class NavigationBar extends React.Component { 
-    componentDidMount() {
-
+    constructor() {
+        super();
     }
     render() {
         return (
-            <div>
+            <div className = "navbar navbar-default">
             </div>
         )
+    }
+    componentDidMount() {
+
     }
 }

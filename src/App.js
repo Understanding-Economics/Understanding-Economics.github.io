@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
-import {groups, surveys} from './config/fields.json'
 import NavigationBar from './components/NavigationBar'
 import DataPage from './components/DataPage'
+import HomePage from './components/HomePage'
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
+import NotFound from './components/NotFound'
 
 
 class App extends React.Component {
@@ -17,24 +19,17 @@ class App extends React.Component {
   
   render() {
     return (
-      <div className="App">
-        <DataPage
-          surveyId = "income_survey"
-        />
-      </div>
+      <Router>
+        <div className="App">
+          <NavigationBar />
+          <Switch>
+            <Route exact path="/" component={HomePage}/>
+            <Route exact path="/survey/:surveyId" component={DataPage}/>
+            <Route component={NotFound} />
+          </Switch>
+        </div>
+      </Router>
     );
-  }
-
-  componentDidMount() {
-    console.log(`${process.env.PUBLIC_URL}/data/data_income_survey.csv`);
-    d3.csv(`${process.env.PUBLIC_URL}/data/data_income_survey.csv`).then((data) => {
-      console.log(data);
-      this.setState({
-        surveyData : data,
-        selectedGroup : "income",
-        selectedQuestion : "Q06006_en"
-      })
-    });
   }
 }
 
