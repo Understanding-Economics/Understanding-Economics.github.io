@@ -14,22 +14,25 @@ export default class ChartView extends React.Component {
     }
 
     renderChart(elementId, selectedGroup, selectedQuestion, data) {
-        data.forEach(x => {
-            x[selectedQuestion.id] = x[selectedQuestion.id] || " No Response"
+        let cleanData = data.map(x => {
+            let newX = {};
+            newX[selectedGroup.title] = x[selectedGroup.id];
+            newX["response"] = x[selectedQuestion.id] || " No response";
+            return newX;
         })
         if(selectedQuestion.numeric) {
-            $(`#${elementId}`).pivot(data, 
+            $(`#${elementId}`).pivot(cleanData, 
                 {
-                    rows : [selectedGroup.id],
+                    rows : [selectedGroup.title],
                     aggregator: $.pivotUtilities.aggregators["Average"](["response"]),
                     renderer: $.pivotUtilities.c3_renderers["Horizontal Bar Chart"],
                     rowOrder: "value_z_to_a"
                 });
         }
         else { 
-            $(`#${elementId}`).pivot(data, {
-                rows : [selectedGroup.id],
-                cols: [selectedQuestion.id],
+            $(`#${elementId}`).pivot(cleanData, {
+                rows : [selectedGroup.title],
+                cols: ["response"],
                 aggregator: $.pivotUtilities.aggregators["Count as Fraction of Rows"](),
                 renderer: $.pivotUtilities.c3_renderers["Horizontal Stacked Bar Chart"],
                 rowOrder: "value_z_to_a", colOrder: "value_z_to_a",
