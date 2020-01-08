@@ -7,6 +7,7 @@ export default class FieldSelect extends React.Component {
         super();
         this.slctDivRef = React.createRef();
         this.descDivRef = React.createRef();
+        this.slctRef = React.createRef();
     }
 
     render() {
@@ -27,7 +28,7 @@ export default class FieldSelect extends React.Component {
                 </div>
                 <div className = "row">
                     <div className = "col-md-6 slctDiv" ref = {this.slctDivRef}>
-                        <select className = "align-left" size = {8} value = {this.props.selected} onChange={this.props.handleSelect}>
+                        <select className = "align-left" size = {8} ref = {this.slctRef} value = {this.props.selected} onChange={this.props.handleSelect}>
                             {optionComponents}
                         </select>
                     </div>
@@ -43,6 +44,10 @@ export default class FieldSelect extends React.Component {
     componentDidUpdate() {
         if (this.slctDivRef.current &&  this.descDivRef.current) {
             this.descDivRef.current.style.height = `${this.slctDivRef.current.offsetHeight}px`
+        }
+
+        if(this.slctRef.current && !this.props.selected) { 
+            this.slctRef.current.selectedIndex = "-1";
         }
     }
 }
