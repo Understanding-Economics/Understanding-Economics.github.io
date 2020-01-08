@@ -14,8 +14,11 @@ export default class ChartView extends React.Component {
     }
 
     renderChart(elementId, selectedGroup, selectedQuestion, data) {
+        data.forEach(x => {
+            x[selectedQuestion.id] = x[selectedQuestion.id] || " No Response"
+        })
         if(selectedQuestion.numeric) {
-            $(`#${elementId}`).pivot(cleanData, 
+            $(`#${elementId}`).pivot(data, 
                 {
                     rows : [selectedGroup.id],
                     aggregator: $.pivotUtilities.aggregators["Average"](["response"]),

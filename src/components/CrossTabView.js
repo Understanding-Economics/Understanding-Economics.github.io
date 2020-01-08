@@ -13,11 +13,8 @@ export default class CrossTabView extends React.Component {
                 />
     }
 
-    renderCrossTabs(elementId, selectedGroup, selectedQuestion, data) {
-        console.log(`SELECTED GROUP: ${selectedGroup}`);
-        console.log(`SELECTED QUESTION: ${selectedQuestion}`);
+    renderCrossTabs(elementId, selectedGroup, selectedQuestion, data) {;
         let cleanData = data.map((x) => { return {group : x[selectedGroup.id], response : x[selectedQuestion.id] || " No Response"} });
-        console.log(cleanData);
         if(selectedQuestion.numeric) {
             $(`#${elementId}`).pivot(cleanData, 
                 {
