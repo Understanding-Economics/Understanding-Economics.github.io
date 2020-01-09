@@ -3,7 +3,7 @@ import './App.css';
 import NavigationBar from './components/NavigationBar'
 import DataPage from './components/DataPage'
 import HomePage from './components/HomePage'
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Switch, HashRouter as Router } from 'react-router-dom'
 import NotFound from './components/NotFound'
 
 
@@ -19,7 +19,7 @@ class App extends React.Component {
   
   render() {
     return (
-      <Router>
+      <Router basename = "/">
         <div className="App container">
           <NavigationBar />
           <Switch>
