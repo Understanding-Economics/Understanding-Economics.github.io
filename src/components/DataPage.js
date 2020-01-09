@@ -6,6 +6,8 @@ import FieldSelect from './FieldSelect'
 import { surveys, groups } from '../config/fields.json'
 import NotFound from './NotFound'
 
+// This is to cache the CSV data so that we are not consistently pinging the server for it.
+var dataCache = {};
 export default class DataPage extends React.Component {
     constructor() {
         super();
@@ -19,10 +21,13 @@ export default class DataPage extends React.Component {
         this.handleQuestionSelect = this.handleQuestionSelect.bind(this); 
     }
     componentWillMount() {
-        this.surveyId = this.props.match.params.surveyId;
+        this.surveyId = this.props.surveyId;
         if (this.surveyId && this.surveyId in surveys) {
             this.survey = surveys[this.surveyId];
         }
+        console.log(this.survey.additionalGroups);
+        this.groups = {...groups, ... (this.survey.additionalGroups || {})}
+        console.log(this.groups);
     }
 
     render() {
@@ -36,7 +41,7 @@ export default class DataPage extends React.Component {
                         <FieldSelect 
                             title = "Group"
                             description = "Select how you would like to group responses"
-                            options = { groups }
+                            options = { this.groups }
                             selected = {this.state.selectedGroup}
                             handleSelect = {this.handleGroupSelect}
                         />
@@ -68,7 +73,7 @@ export default class DataPage extends React.Component {
                     <ChartView
                         survey = { this.survey } 
                         data = { this.state.surveyData }
-                        selectedGroup = { groups[this.state.selectedGroup] }
+                        selectedGroup = { this.groups[this.state.selectedGroup] }
                         selectedQuestion = { this.state.selectedQuestion ? 
                             this.survey.topics[this.state.selectedTopic].questions[this.state.selectedQuestion] : null
                         } 
@@ -78,7 +83,7 @@ export default class DataPage extends React.Component {
                     <CrossTabView
                         survey = { this.survey } 
                         data = { this.state.surveyData }
-                        selectedGroup = { groups[this.state.selectedGroup] }
+                        selectedGroup = { this.groups[this.state.selectedGroup] }
                         selectedQuestion = { this.state.selectedQuestion ? 
                             this.survey.topics[this.state.selectedTopic].questions[this.state.selectedQuestion] : null
                         } 
@@ -93,11 +98,19 @@ export default class DataPage extends React.Component {
             return;
         }
         document.title = this.survey.title;
-        d3.csv(`${process.env.PUBLIC_URL}/data/data_${this.surveyId}.csv`).then((data) => {
-          this.setState({
-            surveyData : data
-          })
-        });
+        if(this.surveyId in dataCache) {
+            this.setState({
+                surveyData : dataCache[this.surveyId]
+            });
+        }
+        else {
+            d3.csv(`${process.env.PUBLIC_URL}/data/data_${this.surveyId}.csv`).then((data) => {
+                dataCache[this.surveyId] = data; 
+                this.setState({
+                  surveyData : data
+                })
+              });
+        }
       }
 
     handleGroupSelect(event) {
