@@ -1,1 +1,0 @@
-{"version":3,"sources":["FieldSelect.css","index.css"],"names":[],"mappings":"AAAA,OACI,UAAW,CACX,aACJ,CCHA,KACE,QAAS,CACT,SAAU,CACV,sBACF","file":"main.78209852.chunk.css","sourcesContent":["select { \n    width: 100%;\n    margin-left:0px;\n}","body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n}\n"]}
