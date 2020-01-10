@@ -18,7 +18,7 @@ export default class DataDisplay extends React.Component {
                     <div className = "row">
                         <CrossTabView
                             survey = { this.props.survey } 
-                            data = { this.props.surveyData }
+                            data = { this.props.data }
                             selectedGroup = { this.props.selectedGroup }
                             selectedQuestion = { this.props.selectedQuestion }
                         />

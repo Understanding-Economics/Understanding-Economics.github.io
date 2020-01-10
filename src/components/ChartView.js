@@ -17,7 +17,7 @@ export default class ChartView extends React.Component {
         console.log("rendering chart...");
         let cleanData = data.map(x => {
             let newX = {};
-            newX[selectedGroup.title] = x[selectedGroup.id];
+            newX[selectedGroup.title] = x[selectedGroup.id] || " No response";
             newX["response"] = x[selectedQuestion.id] || " No response";
             return newX;
         })
