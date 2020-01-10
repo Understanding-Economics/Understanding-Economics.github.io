@@ -2,7 +2,7 @@ import React from 'react'
 
 export default class DataView extends React.Component {
     render() {
-        if(!this.props.selectedQuestion) {
+        if(!this.props.selectedQuestion || !this.props.selectedGroup) {
             return null;
         }
         return (

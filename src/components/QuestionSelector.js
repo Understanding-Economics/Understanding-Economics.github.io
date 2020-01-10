@@ -49,7 +49,9 @@ export default class QuestionSelector extends React.Component {
         this.setState({
             selectedTopic : event.target.value,
             selectedQuestion : undefined
-        })
+        }, () => {
+            this.props.receiveSelection(null);
+        });
     }
     
     handleQuestionSelect(event) {

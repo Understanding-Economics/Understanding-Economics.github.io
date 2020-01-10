@@ -23,12 +23,12 @@ export default class DataPage extends React.Component {
             this.survey = surveys[this.surveyId];
         };
         this.groups = {...groups, ... (this.survey.additionalGroups || {})};
-        this.topics = {...this.survey.topics, "Demographics" : {
+        this.topics = {"Demographics" : {
             id : "Demographics",
             title : "Demographics",
             description : "Questions about the demographics of the respondent",
             questions : this.groups
-        }};
+        }, ...this.survey.topics};
     }
 
     render() {
