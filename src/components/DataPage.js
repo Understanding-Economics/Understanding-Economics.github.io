@@ -1,7 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import CrossTabView from './CrossTabView'
-import ChartView from './ChartView'
 import FieldSelect from './FieldSelect'
 import { surveys, groups } from '../config/fields.json'
 import NotFound from './NotFound'
@@ -26,9 +24,7 @@ export default class DataPage extends React.Component {
         if (this.surveyId && this.surveyId in surveys) {
             this.survey = surveys[this.surveyId];
         }
-        console.log(this.survey.additionalGroups);
         this.groups = {...groups, ... (this.survey.additionalGroups || {})}
-        console.log(this.groups);
     }
 
     render() {
