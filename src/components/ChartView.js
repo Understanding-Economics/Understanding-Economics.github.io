@@ -14,6 +14,7 @@ export default class ChartView extends React.Component {
     }
 
     renderChart(elementId, selectedGroup, selectedQuestion, data) {
+        console.log("rendering chart...");
         let cleanData = data.map(x => {
             let newX = {};
             newX[selectedGroup.title] = x[selectedGroup.id];

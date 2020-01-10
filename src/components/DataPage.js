@@ -5,6 +5,7 @@ import ChartView from './ChartView'
 import FieldSelect from './FieldSelect'
 import { surveys, groups } from '../config/fields.json'
 import NotFound from './NotFound'
+import DataDisplay from './DataDisplay'
 
 // This is to cache the CSV data so that we are not consistently pinging the server for it.
 var dataCache = {};
@@ -69,26 +70,14 @@ export default class DataPage extends React.Component {
                     </div>
                 </div>
                 
-                <div className = "row">
-                    <ChartView
-                        survey = { this.survey } 
-                        data = { this.state.surveyData }
-                        selectedGroup = { this.groups[this.state.selectedGroup] }
-                        selectedQuestion = { this.state.selectedQuestion ? 
-                            this.survey.topics[this.state.selectedTopic].questions[this.state.selectedQuestion] : null
-                        } 
-                    />
-                </div>
-                <div className = "row">
-                    <CrossTabView
-                        survey = { this.survey } 
-                        data = { this.state.surveyData }
-                        selectedGroup = { this.groups[this.state.selectedGroup] }
-                        selectedQuestion = { this.state.selectedQuestion ? 
-                            this.survey.topics[this.state.selectedTopic].questions[this.state.selectedQuestion] : null
-                        } 
-                    />
-                </div>
+                <DataDisplay
+                    survey = { this.survey } 
+                    data = { this.state.surveyData }
+                    selectedGroup = { this.groups[this.state.selectedGroup] }
+                    selectedQuestion = { this.state.selectedQuestion ? 
+                        this.survey.topics[this.state.selectedTopic].questions[this.state.selectedQuestion] : null
+                    } 
+                />
             </div>
         )
     }
