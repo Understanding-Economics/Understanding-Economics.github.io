@@ -32,7 +32,7 @@ export default class FieldSelect extends React.Component {
                             {optionComponents}
                         </select>
                     </div>
-                    <div className = "col-md-6 scrolling" ref = {this.descDivRef}>
+                    <div className = "col-md-6 description" ref = {this.descDivRef}>
                         <span className = "align-top align-text-top" dangerouslySetInnerHTML={{__html : selectedDescription}}>
                         </span>
                     </div>

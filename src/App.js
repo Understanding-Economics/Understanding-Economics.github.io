@@ -4,6 +4,7 @@ import NavigationBar from './components/NavigationBar'
 import DataPage from './components/DataPage'
 import DataPageAlt from './components/DataPageAlt'
 import HomePage from './components/HomePage'
+import BackgroundPage from './components/BackgroundPage'
 import { Route, Switch, HashRouter as Router } from 'react-router-dom'
 import NotFound from './components/NotFound'
 import { surveys } from './config/fields.json'
@@ -36,6 +37,7 @@ class App extends React.Component {
           <NavigationBar />
           <Switch>
             <Route exact path="/" component={HomePage}/>
+            <Route exact path="/background" component={BackgroundPage}/>
             {surveyRoutes}
             <Route exact path="/survey_alt/income_survey" component = {() => <DataPageAlt surveyId = "income_survey"/>} />
             <Route component={NotFound} />

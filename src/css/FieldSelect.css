@@ -10,6 +10,7 @@ select {
     padding-right: 0px !important;
 }
 
-.scrolling {
+.description {
     overflow-y: scroll;
+    min-height: 150px;
 }
