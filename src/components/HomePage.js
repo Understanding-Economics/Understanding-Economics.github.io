@@ -2,6 +2,7 @@ import React from 'react'
 
 export default class HomePage extends React.Component {
     render() {
+        document.title = "Understanding Economics";
         return (
             <div className = "HomePage">
                 <span>
