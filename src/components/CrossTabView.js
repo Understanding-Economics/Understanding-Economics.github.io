@@ -1,5 +1,6 @@
 import React from 'react'
 import DataView from './DataView'
+import './../css/CrossTabView.css'
 
 export default class CrossTabView extends React.Component {
     render() {
