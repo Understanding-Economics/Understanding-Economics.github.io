@@ -3,15 +3,16 @@ select {
     margin-left:0px;
     margin-top: 10px !important;
     border-radius:5px;
+    padding:3px;
 }
 
 option {
-    margin: 3px;
     padding-top:3px;
     padding-bottom:3px;
     border-radius: 2px;
     min-height:20px;
-    font-style: inherit !important;
+    font-size: 12pt;
+    color:	#686868;
 }
 
 .slctDiv {
