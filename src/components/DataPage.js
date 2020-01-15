@@ -5,9 +5,12 @@ import { surveys, groups } from '../config/fields.json'
 import NotFound from './NotFound'
 import DataDisplay from './DataDisplay'
 import VariableDescription from './VariableDescription'
+import incomeSurveyData from './../json_data/data_income_survey.json'
 
 // This is to cache the CSV data so that we are not consistently pinging the server for it.
-var dataCache = {};
+var dataCache = {
+    "income_survey" : incomeSurveyData
+};
 export default class DataPage extends React.Component {
     constructor() {
         super();
