@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import '../css/FieldSelect.css'
+import '../App.css'
 
 export default class FieldSelect extends React.Component { 
     constructor() { 
@@ -17,6 +18,7 @@ export default class FieldSelect extends React.Component {
         let optionComponents = getValues(this.props.options).map((option) => {
             return <option value = {option.id}>{option.title}</option>
         });
+        let selectedTitle = this.props.selected ? this.props.options[this.props.selected].title : "";
         let selectedDescription = this.props.selected ? this.props.options[this.props.selected].description : "";
         return (
             <div>
@@ -32,7 +34,8 @@ export default class FieldSelect extends React.Component {
                             {optionComponents}
                         </select>
                     </div>
-                    <div className = "col-md-6 description" ref = {this.descDivRef}>
+                    <div className = "col-md-6 scrolling" ref = {this.descDivRef}>
+                        <strong>{selectedTitle}</strong> <br/>
                         <span className = "align-top align-text-top" dangerouslySetInnerHTML={{__html : selectedDescription}}>
                         </span>
                     </div>

@@ -4,6 +4,7 @@ import FieldSelect from './FieldSelect'
 import { surveys, groups } from '../config/fields.json'
 import NotFound from './NotFound'
 import DataDisplay from './DataDisplay'
+import VariableDescription from './VariableDescription'
 
 // This is to cache the CSV data so that we are not consistently pinging the server for it.
 var dataCache = {};
@@ -39,7 +40,7 @@ export default class DataPage extends React.Component {
                             title = "Group"
                             description = "Select how you would like to group responses"
                             options = { this.groups }
-                            selected = {this.state.selectedGroup}
+                            selected = {this.state.selectedGroup ? this.state.selectedGroup.id : null}
                             handleSelect = {this.handleGroupSelect}
                         />
                     </div>
@@ -48,7 +49,7 @@ export default class DataPage extends React.Component {
                             title = "Topic"
                             description = "Select a topic that you would like to examine"
                             options = { this.survey.topics }
-                            selected = {this.state.selectedTopic}
+                            selected = {this.state.selectedTopic ? this.state.selectedTopic.id : null}
                             handleSelect = {this.handleTopicSelect}
                         />
                     </div>
@@ -57,11 +58,17 @@ export default class DataPage extends React.Component {
                             title = "Question"
                             description = "Select a question to examine"
                             options = {this.state.selectedTopic ? 
-                                this.survey.topics[this.state.selectedTopic].questions :
+                                this.state.selectedTopic.questions :
                                 null
                             }
-                            selected = {this.state.selectedQuestion}
+                            selected = {this.state.selectedQuestion ? this.state.selectedQuestion.id : null}
                             handleSelect = {this.handleQuestionSelect}
+                        />
+                    </div>
+
+                    <div className = "col-md-6 scrolling">
+                        <VariableDescription 
+                            selectedQuestion = {this.state.selectedQuestion}
                         />
                     </div>
                 </div>
@@ -69,10 +76,8 @@ export default class DataPage extends React.Component {
                 <DataDisplay
                     survey = { this.survey } 
                     data = { this.state.surveyData }
-                    selectedGroup = { this.groups[this.state.selectedGroup] }
-                    selectedQuestion = { this.state.selectedQuestion ? 
-                        this.survey.topics[this.state.selectedTopic].questions[this.state.selectedQuestion] : null
-                    } 
+                    selectedGroup = { this.state.selectedGroup }
+                    selectedQuestion = { this.state.selectedQuestion } 
                 />
             </div>
         )
@@ -100,20 +105,20 @@ export default class DataPage extends React.Component {
 
     handleGroupSelect(event) {
         this.setState({
-            selectedGroup : event.target.value
+            selectedGroup : this.groups[event.target.value]
         })
     }
 
     handleTopicSelect(event) {
         this.setState({
-            selectedTopic : event.target.value,
+            selectedTopic : this.survey.topics[event.target.value],
             selectedQuestion : undefined
         })
     }
     
     handleQuestionSelect(event) {
         this.setState({
-            selectedQuestion : event.target.value
+            selectedQuestion : this.state.selectedTopic.questions[event.target.value]
         })
     }
 }

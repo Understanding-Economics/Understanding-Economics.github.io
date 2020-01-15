@@ -33,7 +33,21 @@
                 "id": "Q06006_en",
                 "title": "Economic Effect",
                 "numeric": false,
-                "description": "The economic effect that the respondent believes.\n<ul>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li><li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n</ul>"
+                "description": "The economic effect that the respondent believes.", 
+                "variables": [
+                  {
+                    "name" : "Helped",
+                    "description" : "Help economic activity in the U.S."
+                  },
+                  { 
+                    "name" : "Hurt",
+                    "description" : "Hurt economic activity in the U.S."
+                  },
+                  { 
+                    "name" : "No effect",
+                    "description" : "Not have an effect on economic activity in the U.S."
+                  }
+                ]
               },
               "Q06009_en":{
                 "id": "Q06009_en",
@@ -50,7 +64,7 @@
             "questions" : {
               "Q06007_en" : {
                 "id": "Q06007_en",
-                "title": "Tax Cut Deficit",
+                "title": "Perceived Equality of Income Tax Share",
                 "numeric": false,
                 "description": "How the respondents believes the tax cut affected the deficit"
               },

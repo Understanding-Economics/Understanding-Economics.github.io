@@ -13,9 +13,9 @@ export default class DataView extends React.Component {
     componentDidUpdate() {
         let selectedGroup = this.props.selectedGroup;
         let selectedQuestion = this.props.selectedQuestion; 
-        let data = this.props.data; 
         let renderFunction = this.props.renderFunction;
-        if (selectedGroup && selectedQuestion && data) {
+        if (selectedGroup && selectedQuestion && this.props.data) {
+            let data = this.props.data.filter(x => x[selectedGroup.id] && x[selectedQuestion.id] && true)
             renderFunction(this.props.elementId, selectedGroup, selectedQuestion, data);
         }
     }
