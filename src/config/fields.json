@@ -142,11 +142,11 @@
                 "description": "Do you think that people with higher incomes pay a higher or lower share of their total income in federal personal income taxes than people with lower incomes?",
                 "numeric": false
               },
-              " Q04007_en": {
-                "id": " Q04007_en",
+              "Q04007_en": {
+                "id": "Q04007_en",
                 "title": "Top Tax Rate Threshold",
                 "description": "How high is the threshold of total annual income for a married household above which the top tax rate applies?",
-                "numeric": false
+                "numeric": true
               },
               "Q04008_en": {
                 "id": "Q04008_en",

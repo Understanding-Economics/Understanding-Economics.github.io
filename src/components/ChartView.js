@@ -3,18 +3,23 @@ import DataView from './DataView'
 
 export default class ChartView extends React.Component { 
     render() {
+        let headerText = null
+        if (this.props.selectedQuestion) {
+            // headerText = `${this.props.selectedQuestion.numeric ? "Average" : "Proportions"} of responses to "${this.props.selectedQuestion.title}" by "${this.props.selectedGroup.title}"`
+            headerText = `Each bar in the chart shows, for each group list on the left, the ${this.props.selectedQuestion.numeric ? "average" : "share"} of responses to the question.`
+        }
         return <DataView
                     elementId = "chart"
                     survey = { this.props.survey }
                     data = { this.props.data }
                     selectedGroup = { this.props.selectedGroup }
                     selectedQuestion = { this.props.selectedQuestion }
+                    header = {headerText}
                     renderFunction = { this.renderChart }
                 />
     }
 
     renderChart(elementId, selectedGroup, selectedQuestion, data) {
-        console.log("rendering chart...");
         let cleanData = data.map(x => {
             let newX = {};
             newX[selectedGroup.title] = x[selectedGroup.id] || " No response"
@@ -26,10 +31,7 @@ export default class ChartView extends React.Component {
             sorters[selectedGroup.title] = $.pivotUtilities.sortAs(selectedGroup.sorter);
         }
         else {
-            sorters[selectedGroup.title] = (a, b) => {
-                console.log("sorting!");
-                return a.localeCompare(b);
-            };
+            sorters[selectedGroup.title] = (a, b) => a.localeCompare(b);
         }
         if(selectedQuestion.sorter) {
             sorters["response"] = $.pivotUtilities.sortAs(selectedQuestion.sorter);
