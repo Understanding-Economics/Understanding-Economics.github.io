@@ -22,6 +22,10 @@ export default class CrossTabView extends React.Component {
                     rows : ["group"],
                     aggregator: $.pivotUtilities.aggregators["Average"](["response"])
                 });
+            for(let label of document.getElementsByClassName("pvtTotalLabel")){ 
+                console.log(label);
+                label.innerHTML = "Average";
+            }
         }
         else {
             $(`#${elementId}`).pivot(cleanData, 

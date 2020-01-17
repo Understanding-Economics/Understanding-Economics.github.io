@@ -1,11 +1,5 @@
 {
     "groups": {
-      "state": {
-        "id": "state",
-        "title": "State",
-        "description": "The state that the respondent lives in",
-        "numeric": false
-      },
       "agegroup": {
         "id": "agegroup",
         "title": "Age Group",
@@ -31,7 +25,10 @@
         "id": "marital_status",
         "title": "Marital Status",
         "description": "The marital status of the individual",
-        "numeric": false
+        "numeric": false, 
+        "sorter" : [
+          "Single", "Married", "Legally separated or divorced", "Widowed"
+        ]
       },
       "gender": {
         "id": "gender",
@@ -63,12 +60,6 @@
         "description": "The current employment status of the respondent.",
         "numeric": false
       },
-      "occupation": {
-        "id": "occupation",
-        "title": "Occupation",
-        "description": "The main occupation area of the respondent.",
-        "numeric": false
-      },
       "social_class": {
         "id": "social_class",
         "title": "Social Class",
@@ -97,7 +88,10 @@
         "id": "knowledge_econ",
         "title": "Knowledge of Economics",
         "description": "The respondent's self-reported knowedge of economics.",
-        "numeric": false
+        "numeric": false,
+        "sorter" : [
+          "Highly knowledgeable", "Somewhat knowledgeable", "Not very knowledgeable",  "Not knowledgeable at all"
+        ]
       },
       "candidate_2016": {
         "id": "candidate_2016",
@@ -109,60 +103,205 @@
     "surveys": {
       "income_survey": {
         "title": "Income Survey",
-        "additionalGroups" : {},
-        "topics" : {
-          "Economic Effects": {
-            "description" : "Questions about economic effects", 
-            "id" : "Economic Effects", 
-            "title" : "Economic Effects", 
-            "questions" : {
-              "Q06006_en" : {
-                "id": "Q06006_en",
-                "title": "Economic Effect",
-                "numeric": false,
-                "description": "The economic effect that the respondent believes.", 
-                "variables": [
-                  {
-                    "name" : "Helped",
-                    "description" : "Help economic activity in the U.S."
-                  },
-                  { 
-                    "name" : "Hurt",
-                    "description" : "Hurt economic activity in the U.S."
-                  },
-                  { 
-                    "name" : "No effect",
-                    "description" : "Not have an effect on economic activity in the U.S."
-                  }
-                ]
-              },
-              "Q06009_en":{
-                "id": "Q06009_en",
-                "title": "Yes or No",
-                "numeric": false,
-                "description": "A yes or no question where I don't know the question"
+        "additionalGroups": {
+          "mechanisms_rando": {
+            "id": "mechanisms_rando",
+            "title": "Wording Mechanism",
+            "description": "The type of wording for questions mechanismed questions",
+            "numeric": false
+          }
+        },
+        "topics": {
+          "Personal Exposure": {
+            "id": "Personal Exposure",
+            "title": "Personal Exposure",
+            "description": "Questions on the personal exposure the respondent believes they have to income tax policy",
+            "questions": {
+              "Q03001_en": {
+                "id": "Q03001_en",
+                "title": "Income Tax Policy Effect",
+                "description": "Do you feel that U.S. federal income tax policy has important direct effects on your own life?",
+                "numeric": false
               }
             }
           },
-          "Tax Cut" : {
-            "description" : "Questions about the recent tax cut", 
-            "id" : "Tax Cut", 
-            "title" : "Tax Cut", 
-            "questions" : {
-              "Q06007_en" : {
-                "id": "Q06007_en",
+          "Policy Knowledge": {
+            "id": "Policy Knowledge",
+            "title": "Policy Knowledge",
+            "description": "Questions to examine the individual's knowledge of income tax policy",
+            "questions": {
+              "Q04004_en": {
+                "id": "Q04004_en",
                 "title": "Perceived Equality of Income Tax Share",
-                "numeric": false,
-                "description": "How the respondents believes the tax cut affected the deficit"
+                "description": "Do you think that, broadly speaking, everyone in the U.S. currently pays approximately the same share of income in federal personal income taxes or do you think people pay very different shares of income in federal personal income taxes?",
+                "numeric": false
               },
-              "Q06008_en" : {
-                "id": "Q06008_en",
-                "title": "Tax Cut Deficit 2",
-                "numeric": false,
-                "description": "Another tax cut deficit question"
+              "Q04005_en": {
+                "id": "Q04005_en",
+                "title": "Taxed Share by Income",
+                "description": "Do you think that people with higher incomes pay a higher or lower share of their total income in federal personal income taxes than people with lower incomes?",
+                "numeric": false
+              },
+              " Q04007_en": {
+                "id": " Q04007_en",
+                "title": "Top Tax Rate Threshold",
+                "description": "How high is the threshold of total annual income for a married household above which the top tax rate applies?",
+                "numeric": false
+              },
+              "Q04008_en": {
+                "id": "Q04008_en",
+                "title": "Proportion in Top Tax Rate",
+                "description": "Out of 100 households in the U.S., how many are in the top federal personal income tax bracket?",
+                "numeric": true
+              },
+              "Q04009_en": {
+                "id": "Q04009_en",
+                "title": "Top Tax Rate Today",
+                "description": "What is the top federal personal income tax rate in the U.S.?",
+                "numeric": true
+              },
+              "Q04010_en": {
+                "id": "Q04010_en",
+                "title": "Top Tax Share of Income",
+                "description": "What share of their total income do people in the top federal personal income tax bracket pay in taxes?",
+                "numeric": true
+              },
+              "Q04011_en": {
+                "id": "Q04011_en",
+                "title": "1950s Top Tax Rate",
+                "description": "Can you guess what the top federal personal income tax rate used to be in the 1950s in the U.S.?",
+                "numeric": true
+              },
+              "Q04012_en": {
+                "id": "Q04012_en",
+                "title": "No Federal Income Tax",
+                "description": "Out of 100 U.S. households, how many pay no federal income taxes?",
+                "numeric": true
+              },
+              "Q04013_en": {
+                "id": "Q04013_en",
+                "title": "Median Tax Share of Income",
+                "description": "Imagine a middle class household that is right at the middle of the income distribution, such that half of all households in the U.S. earn more than this household and half earn less. What share of their income do you think such a household pays in federal income taxes?",
+                "numeric": true
+              },
+              "Q04014_en": {
+                "id": "Q04014_en",
+                "title": "U.S. Relative Taxation",
+                "description": "If you compare the U.S. to other rich countries such as Canada or Western Europe, do you think the U.S. has, on average, higher federal personal income taxes, similar levels of federal personal income taxes, or lower federal personal income taxes than these countries?",
+                "numeric": false
+              },
+              "Q04016_en": {
+                "id": "Q04016_en",
+                "title": "Top 1% Share of Income",
+                "description": "What share of total national income do you think goes to the top 1% richest households?",
+                "numeric": true
+              },
+              "Q04019_en": {
+                "id": "Q04019_en",
+                "title": "Reason for wealth",
+                "description": "Which has more to do with why a person is rich?",
+                "numeric": false
+              },
+              "Q04020_en": {
+                "id": "Q04020_en",
+                "title": "Change in Top 1% Share of Income",
+                "description": "How has the share of total U.S. income that goes to the top 1% in the U.S. evolved over the past 30 years?",
+                "numeric": false
               }
             }
-          } 
+          },
+          "Outcomes": {
+            "id": "Outcomes",
+            "title": "Outcomes",
+            "description": "Questions to test the individual's perception of income tax policy outcomes",
+            "questions": {
+              "Q07001_en": {
+                "id": "Q07001_en",
+                "title": "Tax System Fairness (Broad)",
+                "description": "Would you say that the current U.S. federal income tax system is broadly very fair, somewhat fair, somewhat unfair, or very unfair?",
+                "numeric": false
+              },
+              "Q07002_en": {
+                "id": "Q07002_en",
+                "title": "Tax System Satisfaction",
+                "description": "How satisfied or dissatisfied are you with the current U.S. federal income tax system?",
+                "numeric": false
+              },
+              "Q07003_en": {
+                "id": "Q07003_en",
+                "title": "Tax Share Fairness (Specific)",
+                "description": "CONTROL: Would you say that high income, upper-class households in the U.S.<br/>today:<br/>\u201cYOU\u201d: Would you say that you:<br/>\u201cGENDER\u201d: Would you say that high income, upper-class women in the U.S. today:",
+                "numeric": false
+              },
+              "Q07004_en": {
+                "id": "Q07004_en",
+                "title": "Middle Class Tax Share Fairness",
+                "description": "CONTROL: Would you say that middle-class households in the U.S. today: <br/>\u201cGENDER\u201d: Would you say that women in the middle-class in the U.S. today:",
+                "numeric": false
+              },
+              "Q07005_en": {
+                "id": "Q07005_en",
+                "title": "Distribution Fairness",
+                "description": "Do you feel that the distribution of money and wealth in this country today is fair, or do you feel that the money and wealth in this country should be more evenly distributed among a larger percentage of the people?",
+                "numeric": false
+              },
+              "Q07006_en": {
+                "id": "Q07006_en",
+                "title": "Income Inequality Issue",
+                "description": "How big of an issue do you think income inequality is in America?",
+                "numeric": false
+              },
+              "Q07008_en": {
+                "id": "Q07008_en",
+                "title": "Support Top Income Tax Increase",
+                "description": "Would you support raising federal income taxes on higher income households in the following cases?",
+                "numeric": false
+              }
+            }
+          },
+          "Tax Change Behavior": {
+            "id": "Tax Change Behavior",
+            "title": "Tax Change Behavior",
+            "description": "CONTROL. If the federal personal income tax rate were to increase for the rich- est people in the economy, to what extent would it encourage them towards the following behaviors?<br/>YOU. If your federal personal income tax rate were to increase, to what extent would it encourage you towards the following behaviors?<br/>GENDER. If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman towards the following behaviors?",
+            "questions": {
+              "Q06101_1_en": {
+                "id": "Q06101_1_en",
+                "title": "Evade taxes",
+                "description": "",
+                "numeric": false
+              },
+              "Q06101_2_en": {
+                "id": "Q06101_2_en",
+                "title": "Work less ",
+                "description": "",
+                "numeric": false
+              },
+              "Q06101_3_en": {
+                "id": "Q06101_3_en",
+                "title": "Stop working altogether",
+                "description": "",
+                "numeric": false
+              },
+              "Q06101_4_en": {
+                "id": "Q06101_4_en",
+                "title": "Have spouse stop working",
+                "description": "Have their/your/her spouse stop working",
+                "numeric": false
+              },
+              "Q06101_5_en": {
+                "id": "Q06101_5_en",
+                "title": "Move to state with lower taxes",
+                "description": "",
+                "numeric": false
+              },
+              "Q06101_6_en": {
+                "id": "Q06101_6_en",
+                "title": "Be less entrepreneurial",
+                "description": "Be less entrepreneurial and create fewer businesses",
+                "numeric": false
+              }
+            }
+          }
         }
       },
       "tax_survey" : {

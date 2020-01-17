@@ -22,8 +22,21 @@ export default class ChartView extends React.Component {
             return newX;
         })
         let sorters = {}
-        if(selectedGroup.sorter) sorters[selectedGroup.id] = $.pivotUtilities.sortAs(selectedGroup.sorter);
-        if(selectedQuestion.sorter) sorters[selectedQuestion.id] = $.pivotUtilities.sortAs(selectedQuestion.sorter);
+        if(selectedGroup.sorter) {
+            sorters[selectedGroup.title] = $.pivotUtilities.sortAs(selectedGroup.sorter);
+        }
+        else {
+            sorters[selectedGroup.title] = (a, b) => {
+                console.log("sorting!");
+                return a.localeCompare(b);
+            };
+        }
+        if(selectedQuestion.sorter) {
+            sorters["response"] = $.pivotUtilities.sortAs(selectedQuestion.sorter);
+        }
+        else {
+            sorters["response"] = (a, b) => a.localeCompare(b);
+        }
 
         if(selectedQuestion.numeric) {
             $(`#${elementId}`).pivot(cleanData, 
@@ -31,9 +44,21 @@ export default class ChartView extends React.Component {
                     rows : [selectedGroup.title],
                     aggregator: $.pivotUtilities.aggregators["Average"](["response"]),
                     renderer: $.pivotUtilities.c3_renderers["Horizontal Bar Chart"],
-                    rowOrder: "value_z_to_a",
-                    sorters : sorters
+                    sorters : sorters,
+                    rendererOptions : {
+                        c3 : {
+                            data : { 
+                                names : {
+                                    Count : "Average"
+                                },
+                            },
+                            legend : {
+                                show: true
+                            }
+                        }
+                    }
                 });
+            document.getElementsByClassName("c3-axis-y-label")[0].innerHTML = "Average";
         }
         else { 
             $(`#${elementId}`).pivot(cleanData, {
@@ -43,7 +68,8 @@ export default class ChartView extends React.Component {
                 renderer: $.pivotUtilities.c3_renderers["Horizontal Stacked Bar Chart"],
                 sorters : sorters
             });
-            document.getElementById("chart").getElementsByTagName("p")[0].remove();
+            document.getElementsByClassName("c3-axis-y-label")[0].innerHTML = "Proportion";
         }
+        document.getElementById("chart").getElementsByTagName("p")[0].remove();
     }
 }
