@@ -264,38 +264,38 @@
             "title": "Tax Change Behavior",
             "description": "CONTROL. If the federal personal income tax rate were to increase for the rich- est people in the economy, to what extent would it encourage them towards the following behaviors?<br/>YOU. If your federal personal income tax rate were to increase, to what extent would it encourage you towards the following behaviors?<br/>GENDER. If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman towards the following behaviors?",
             "questions": {
-              "Q06101_1_en": {
-                "id": "Q06101_1_en",
+              "Q06001_1_en": {
+                "id": "Q06001_1_en",
                 "title": "Evade taxes",
                 "description": "",
                 "numeric": false
               },
-              "Q06101_2_en": {
-                "id": "Q06101_2_en",
+              "Q06001_2_en": {
+                "id": "Q06001_2_en",
                 "title": "Work less ",
                 "description": "",
                 "numeric": false
               },
-              "Q06101_3_en": {
-                "id": "Q06101_3_en",
+              "Q06001_3_en": {
+                "id": "Q06001_3_en",
                 "title": "Stop working altogether",
                 "description": "",
                 "numeric": false
               },
-              "Q06101_4_en": {
-                "id": "Q06101_4_en",
+              "Q06001_4_en": {
+                "id": "Q06001_4_en",
                 "title": "Have spouse stop working",
                 "description": "Have their/your/her spouse stop working",
                 "numeric": false
               },
-              "Q06101_5_en": {
-                "id": "Q06101_5_en",
+              "Q06001_5_en": {
+                "id": "Q06001_5_en",
                 "title": "Move to state with lower taxes",
                 "description": "",
                 "numeric": false
               },
-              "Q06101_6_en": {
-                "id": "Q06101_6_en",
+              "Q06001_6_en": {
+                "id": "Q06001_6_en",
                 "title": "Be less entrepreneurial",
                 "description": "Be less entrepreneurial and create fewer businesses",
                 "numeric": false
