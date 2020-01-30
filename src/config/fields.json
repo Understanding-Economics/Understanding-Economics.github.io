@@ -4,13 +4,13 @@
         "id": "agegroup",
         "title": "Age Group",
         "description": "The age group that the respondent belongs to",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "income": {
         "id": "income",
         "title": "Income",
         "description": "The annual income of the respondent",
-        "numeric": false,
+        "type" : "CATEGORICAL",
         "sorter" : [
           "$0-$9999",  "$10000-$14999",  "$15000-$19999",  "$20000-$29999",  "$30000-39999",  "$40000-$49999",  "$50000-$69999",  "$70000-$89999",  "$90000-$109999",  "$110000-$149999",  "$150000-$199999",  "$200000+"
         ]
@@ -19,13 +19,13 @@
         "id": "born_us",
         "title": "Born in US",
         "description": "Whether the respondent was born in the United States.",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "marital_status": {
         "id": "marital_status",
         "title": "Marital Status",
         "description": "The marital status of the individual",
-        "numeric": false, 
+        "type" : "CATEGORICAL", 
         "sorter" : [
           "Single", "Married", "Legally separated or divorced", "Widowed"
         ]
@@ -34,61 +34,61 @@
         "id": "gender",
         "title": "Gender",
         "description": "The gender of the respondent.",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "nb_child": {
         "id": "nb_child",
         "title": "Number of Children",
         "description": "Number of children the repsondent has.",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "race": {
         "id": "race",
         "title": "Race",
         "description": "The race of the respondent.",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "education_level": {
         "id": "education_level",
         "title": "Education level",
         "description": "The highest education level achieved by the repsondent.",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "employment_status": {
         "id": "employment_status",
         "title": "Employment Status",
         "description": "The current employment status of the respondent.",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "social_class": {
         "id": "social_class",
         "title": "Social Class",
         "description": "The social class that the respondent identifies with.",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "econ_ideology": {
         "id": "econ_ideology",
         "title": "Economic Ideology",
         "description": "The economic ideology that the respondent self-identifies with.",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "political_party": {
         "id": "political_party",
         "title": "Political Party",
         "description": "The political party that the respondent self-identifies with. ",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "news_media": {
         "id": "news_media",
         "title": "Source of News",
         "description": "The medium from which the respondent gets most of their news",
-        "numeric": false
+        "type" : "CATEGORICAL"
       },
       "knowledge_econ": {
         "id": "knowledge_econ",
         "title": "Knowledge of Economics",
         "description": "The respondent's self-reported knowedge of economics.",
-        "numeric": false,
+        "type" : "CATEGORICAL",
         "sorter" : [
           "Highly knowledgeable", "Somewhat knowledgeable", "Not very knowledgeable",  "Not knowledgeable at all"
         ]
@@ -97,7 +97,7 @@
         "id": "candidate_2016",
         "title": "2016 Presidential Candidate",
         "description": "The candidate whom the respondent supported in the 2016 presidential election.",
-        "numeric": false
+        "type" : "CATEGORICAL"
       }
     },
     "surveys": {
@@ -108,7 +108,7 @@
             "id": "mechanisms_rando",
             "title": "Wording Mechanism",
             "description": "The type of wording for questions mechanismed questions",
-            "numeric": false
+            "type" : "CATEGORICAL"
           }
         },
         "topics": {
@@ -121,7 +121,7 @@
                 "id": "Q03001_en",
                 "title": "Income Tax Policy Effect",
                 "description": "Do you feel that U.S. federal income tax policy has important direct effects on your own life?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               }
             }
           },
@@ -134,79 +134,79 @@
                 "id": "Q04004_en",
                 "title": "Perceived Equality of Income Tax Share",
                 "description": "Do you think that, broadly speaking, everyone in the U.S. currently pays approximately the same share of income in federal personal income taxes or do you think people pay very different shares of income in federal personal income taxes?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q04005_en": {
                 "id": "Q04005_en",
                 "title": "Taxed Share by Income",
                 "description": "Do you think that people with higher incomes pay a higher or lower share of their total income in federal personal income taxes than people with lower incomes?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q04007_en": {
                 "id": "Q04007_en",
                 "title": "Top Tax Rate Threshold",
                 "description": "How high is the threshold of total annual income for a married household above which the top tax rate applies?",
-                "numeric": true
+                "type" : "NUMERIC"
               },
               "Q04008_en": {
                 "id": "Q04008_en",
                 "title": "Proportion in Top Tax Rate",
                 "description": "Out of 100 households in the U.S., how many are in the top federal personal income tax bracket?",
-                "numeric": true
+                "type" : "NUMERIC"
               },
               "Q04009_en": {
                 "id": "Q04009_en",
                 "title": "Top Tax Rate Today",
                 "description": "What is the top federal personal income tax rate in the U.S.?",
-                "numeric": true
+                "type" : "NUMERIC"
               },
               "Q04010_en": {
                 "id": "Q04010_en",
                 "title": "Top Tax Share of Income",
                 "description": "What share of their total income do people in the top federal personal income tax bracket pay in taxes?",
-                "numeric": true
+                "type" : "NUMERIC"
               },
               "Q04011_en": {
                 "id": "Q04011_en",
                 "title": "1950s Top Tax Rate",
                 "description": "Can you guess what the top federal personal income tax rate used to be in the 1950s in the U.S.?",
-                "numeric": true
+                "type" : "NUMERIC"
               },
               "Q04012_en": {
                 "id": "Q04012_en",
                 "title": "No Federal Income Tax",
                 "description": "Out of 100 U.S. households, how many pay no federal income taxes?",
-                "numeric": true
+                "type" : "NUMERIC"
               },
               "Q04013_en": {
                 "id": "Q04013_en",
                 "title": "Median Tax Share of Income",
                 "description": "Imagine a middle class household that is right at the middle of the income distribution, such that half of all households in the U.S. earn more than this household and half earn less. What share of their income do you think such a household pays in federal income taxes?",
-                "numeric": true
+                "type" : "NUMERIC"
               },
               "Q04014_en": {
                 "id": "Q04014_en",
                 "title": "U.S. Relative Taxation",
                 "description": "If you compare the U.S. to other rich countries such as Canada or Western Europe, do you think the U.S. has, on average, higher federal personal income taxes, similar levels of federal personal income taxes, or lower federal personal income taxes than these countries?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q04016_en": {
                 "id": "Q04016_en",
                 "title": "Top 1% Share of Income",
                 "description": "What share of total national income do you think goes to the top 1% richest households?",
-                "numeric": true
+                "type" : "NUMERIC"
               },
               "Q04019_en": {
                 "id": "Q04019_en",
                 "title": "Reason for wealth",
                 "description": "Which has more to do with why a person is rich?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q04020_en": {
                 "id": "Q04020_en",
                 "title": "Change in Top 1% Share of Income",
                 "description": "How has the share of total U.S. income that goes to the top 1% in the U.S. evolved over the past 30 years?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               }
             }
           },
@@ -219,43 +219,43 @@
                 "id": "Q07001_en",
                 "title": "Tax System Fairness (Broad)",
                 "description": "Would you say that the current U.S. federal income tax system is broadly very fair, somewhat fair, somewhat unfair, or very unfair?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q07002_en": {
                 "id": "Q07002_en",
                 "title": "Tax System Satisfaction",
                 "description": "How satisfied or dissatisfied are you with the current U.S. federal income tax system?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q07003_en": {
                 "id": "Q07003_en",
                 "title": "Tax Share Fairness (Specific)",
                 "description": "CONTROL: Would you say that high income, upper-class households in the U.S.<br/>today:<br/>\u201cYOU\u201d: Would you say that you:<br/>\u201cGENDER\u201d: Would you say that high income, upper-class women in the U.S. today:",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q07004_en": {
                 "id": "Q07004_en",
                 "title": "Middle Class Tax Share Fairness",
                 "description": "CONTROL: Would you say that middle-class households in the U.S. today: <br/>\u201cGENDER\u201d: Would you say that women in the middle-class in the U.S. today:",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q07005_en": {
                 "id": "Q07005_en",
                 "title": "Distribution Fairness",
                 "description": "Do you feel that the distribution of money and wealth in this country today is fair, or do you feel that the money and wealth in this country should be more evenly distributed among a larger percentage of the people?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q07006_en": {
                 "id": "Q07006_en",
                 "title": "Income Inequality Issue",
                 "description": "How big of an issue do you think income inequality is in America?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q07008_en": {
                 "id": "Q07008_en",
                 "title": "Support Top Income Tax Increase",
                 "description": "Would you support raising federal income taxes on higher income households in the following cases?",
-                "numeric": false
+                "type" : "CATEGORICAL"
               }
             }
           },
@@ -268,37 +268,37 @@
                 "id": "Q06001_1_en",
                 "title": "Evade taxes",
                 "description": "",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q06001_2_en": {
                 "id": "Q06001_2_en",
                 "title": "Work less ",
                 "description": "",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q06001_3_en": {
                 "id": "Q06001_3_en",
                 "title": "Stop working altogether",
                 "description": "",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q06001_4_en": {
                 "id": "Q06001_4_en",
                 "title": "Have spouse stop working",
                 "description": "Have their/your/her spouse stop working",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q06001_5_en": {
                 "id": "Q06001_5_en",
                 "title": "Move to state with lower taxes",
                 "description": "",
-                "numeric": false
+                "type" : "CATEGORICAL"
               },
               "Q06001_6_en": {
                 "id": "Q06001_6_en",
                 "title": "Be less entrepreneurial",
                 "description": "Be less entrepreneurial and create fewer businesses",
-                "numeric": false
+                "type" : "CATEGORICAL"
               }
             }
           }
@@ -316,13 +316,13 @@
               "Q06006_en" : {
                 "id": "Q06006_en",
                 "title": "Economic Effect",
-                "numeric": false,
+                "type" : "CATEGORICAL",
                 "description": "The economic effect that the respondent believes.\n<ul>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li><li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n</ul>"
               },
               "Q06009":{
                 "id": "Q06009",
                 "title": "Yes or No",
-                "numeric": false,
+                "type" : "CATEGORICAL",
                 "description": "A yes or no question where I don't know the question"
               }
             }
@@ -335,13 +335,13 @@
               "Q06007_en" : {
                 "id": "Q06007_en",
                 "title": "Tax Cut Deficit",
-                "numeric": false,
+                "type" : "CATEGORICAL",
                 "description": "How the respondents believes the tax cut affected the deficit"
               },
               "Q06008_en" : {
                 "id": "Q06008_en",
                 "title": "Tax Cut Deficit 2",
-                "numeric": false,
+                "type" : "CATEGORICAL",
                 "description": "Another tax cut deficit question"
               }
             }
