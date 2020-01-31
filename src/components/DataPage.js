@@ -38,7 +38,7 @@ export default class DataPage extends React.Component {
         return (
             <div className = "container-fluid">
                 <div className = "row">
-                    <div className = "col-md-6">
+                    <div className = "col-md-4">
                         <FieldSelect 
                             title = "Group"
                             description = "Select how you would like to group responses"
@@ -47,7 +47,7 @@ export default class DataPage extends React.Component {
                             handleSelect = {this.handleGroupSelect}
                         />
                     </div>
-                    <div className = "col-md-6">
+                    <div className = "col-md-4">
                         <FieldSelect
                             title = "Topic"
                             description = "Select a topic that you would like to examine"
@@ -56,7 +56,7 @@ export default class DataPage extends React.Component {
                             handleSelect = {this.handleTopicSelect}
                         />
                     </div>
-                    <div className = "col-md-6">
+                    <div className = "col-md-4">
                         <FieldSelect
                             title = "Question"
                             description = "Select a question to examine"
@@ -66,12 +66,6 @@ export default class DataPage extends React.Component {
                             }
                             selected = {this.state.selectedQuestion ? this.state.selectedQuestion.id : null}
                             handleSelect = {this.handleQuestionSelect}
-                        />
-                    </div>
-
-                    <div className = "col-md-6 scrolling">
-                        <VariableDescription 
-                            selectedQuestion = {this.state.selectedQuestion}
                         />
                     </div>
                 </div>

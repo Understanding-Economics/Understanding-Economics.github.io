@@ -21,34 +21,28 @@ export default class FieldSelect extends React.Component {
         let selectedTitle = this.props.selected ? this.props.options[this.props.selected].title : "";
         let selectedDescription = this.props.selected ? this.props.options[this.props.selected].description : "";
         return (
-            <div>
+            <div className = "FieldSelect">
                 <div className = "row">
                     <h4>{this.props.title}</h4>
                 </div>
                 <div className = "row">
                     <span>{this.props.description}</span>
                 </div>
-                <div className = "row">
-                    <div className = "col-md-6 slctDiv" ref = {this.slctDivRef}>
-                        <select className = "align-left" size = {8} ref = {this.slctRef} value = {this.props.selected} onChange={this.props.handleSelect}>
-                            {optionComponents}
-                        </select>
-                    </div>
-                    <div className = "col-md-6 scrolling" ref = {this.descDivRef}>
-                        <strong>{selectedTitle}</strong> <br/>
-                        <span className = "align-top align-text-top" dangerouslySetInnerHTML={{__html : selectedDescription}}>
-                        </span>
-                    </div>
+                <div className = "row slctDiv" ref = {this.slctDivRef}>
+                    <select className = "align-left" size = {7} ref = {this.slctRef} value = {this.props.selected} onChange={this.props.handleSelect}>
+                        {optionComponents}
+                    </select>
                 </div>
+                <div className = "row">
+                    <strong>{selectedTitle}</strong>
+                </div>
+                <span className = "row scrolling slctDesc" dangerouslySetInnerHTML={{__html : selectedDescription}} ref = {this.descDivRef}>
+                </span>
             </div>
         );
     }
 
     componentDidUpdate() {
-        if (this.slctDivRef.current &&  this.descDivRef.current) {
-            this.descDivRef.current.style.height = `${this.slctDivRef.current.offsetHeight}px`
-        }
-
         if(this.slctRef.current && !this.props.selected) { 
             this.slctRef.current.selectedIndex = "-1";
         }
