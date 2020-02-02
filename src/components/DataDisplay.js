@@ -7,6 +7,7 @@ import NumericDisplay from './NumericDisplay'
 export default class DataDisplay extends React.Component {
     render() {
         let question = this.props.selectedQuestion;
+        console.log(question);
         let specificDisplay = null;
         if(!question) {
             return null;

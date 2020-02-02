@@ -12,6 +12,9 @@ export default class DataView extends React.Component {
             </div>
         )
     }
+    componentDidMount() {
+        this.componentDidUpdate();
+    }
 
     componentDidUpdate() {
         let selectedGroup = this.props.selectedGroup;
