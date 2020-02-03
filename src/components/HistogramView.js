@@ -8,7 +8,7 @@ export default class HistogramView extends React.Component {
     }
     render() {
         if(!this.props.groupVal) {
-            return null;
+            return <div style={{minHeight: "300px"}}></div>
         }
         let headerText = "";
         return <DataView
@@ -27,7 +27,7 @@ export default class HistogramView extends React.Component {
         let cleanData = data.filter(x => x[selectedGroup.id] == this.props.groupVal)
                             .map(x => Number(x[selectedQuestion.id]));
 
-        let nticks = 10; 
+        let nticks = 15; 
         let scale = d3.scaleLinear()
                         .domain([d3.min(dataNumeric), d3.max(dataNumeric)])
                         .range([d3.min(dataNumeric), d3.max(dataNumeric)]);
@@ -42,9 +42,9 @@ export default class HistogramView extends React.Component {
         let chart = c3.generate({
                 bindto: `#${elementId}`,
                 data : {
-                    columns : [['value', ... binSizes]],
+                    columns : [['count', ... binSizes]],
                     types : { 
-                        'value' : 'bar'
+                        'count' : 'bar'
                     }
                 },
                 axis : {

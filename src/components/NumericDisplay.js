@@ -12,7 +12,6 @@ export default class NumericDisplay extends React.Component {
         let data = this.cleanData(this.props.data);
         let averages = this.calcAverages(data).sort((a, b) => {
             if(this.props.group.sorter) {
-
                 return this.props.group.sorter.indexOf(a.groupVal) - this.props.group.sorter.indexOf(b.groupVal);
             }
             else {
@@ -49,8 +48,16 @@ export default class NumericDisplay extends React.Component {
         )
     }
 
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+            selectedGroupVal : null
+        })
+    }
+
     cleanData(data) {
-        return data.filter(x => x[this.props.group.id] && x[this.props.question.id] && true);
+        let filteredData = data.filter(x => x[this.props.group.id] && x[this.props.question.id]);
+        let sortedData = filteredData.sort((a, b) => a[this.props.question.id] - b[this.props.question.id]);
+        return filteredData.filter(x => sortedData.indexOf(x) <= 0.95 * sortedData.length);
     }
     
     createClickHandler(groupVal) {
