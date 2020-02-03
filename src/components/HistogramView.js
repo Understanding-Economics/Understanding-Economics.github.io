@@ -8,6 +8,7 @@ export default class HistogramView extends React.Component {
     }
     render() {
         if(!this.props.groupVal) {
+            this.chart = null;
             return <div style={{minHeight: "300px"}}></div>
         }
         let headerText = "";
@@ -39,7 +40,8 @@ export default class HistogramView extends React.Component {
         let bins = histogram(cleanData);
         let binSizes = bins.map(x => x.length);
         let categories = bins.map(bin => `${bin["x0"]}-${bin["x1"]}`);
-        let chart = c3.generate({
+        if(!this.chart) {
+            this.chart = c3.generate({
                 bindto: `#${elementId}`,
                 data : {
                     columns : [['count', ... binSizes]],
@@ -59,5 +61,11 @@ export default class HistogramView extends React.Component {
                     }
                 },
             });
+        }
+        else {
+            this.chart.load({
+                columns : [['count', ... binSizes]]
+            })
+        }
     }
 }
