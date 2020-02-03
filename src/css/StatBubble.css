@@ -1,0 +1,14 @@
+.StatBubble {
+    color: grey;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.StatBubble:hover {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+.BubbleTitle {
+    margin-bottom:5px;
+}

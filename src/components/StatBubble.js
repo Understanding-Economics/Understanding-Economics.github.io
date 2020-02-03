@@ -1,16 +1,13 @@
 import React from 'react'
+import '../css/StatBubble.css'
 
 export default class StatBubble extends React.PureComponent { 
     render() { 
         return (
-            <div className = "NumberBubble card" onClick = { this.props.handleClick }>
-                <div className = "row">
-                    <strong>{this.props.title}</strong>
-                </div>
-                <div className = "row statistic">
-                    {this.props.stat}
-                </div>
-            </div>
+            <a href="#" className = "StatBubble text-center card h-100" onClick = { (e) => {e.preventDefault(); this.props.handleClick()} }>
+                <strong className = "BubbleTitle">{this.props.title}</strong>
+                {this.props.stat.toFixed(2)}
+            </a>
         )
     }
 }
