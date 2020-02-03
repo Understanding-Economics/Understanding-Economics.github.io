@@ -1,13 +1,18 @@
 import React from 'react'
 import StatBubble from './StatBubble'
 import '../css/NumericDisplay.css'
+import HistogramView from './HistogramView'
 
 export default class NumericDisplay extends React.Component {
+    constructor() { 
+        super();
+        this.state = {};
+    }
     render() { 
         let data = this.cleanData(this.props.data);
         let averages = this.calcAverages(data).sort((a, b) => {
             if(this.props.group.sorter) {
-                console.log(`${a.groupVal} : ${this.props.group.sorter.indexOf(a.groupVal)}`);
+
                 return this.props.group.sorter.indexOf(a.groupVal) - this.props.group.sorter.indexOf(b.groupVal);
             }
             else {
@@ -31,12 +36,21 @@ export default class NumericDisplay extends React.Component {
                 <div className = "row">
                     { statBubbles }
                 </div>
+                <div className = "row">
+                    <HistogramView
+                        survey = { this.props.survey } 
+                        data = { this.cleanData(this.props.data) }
+                        selectedGroup = { this.props.group }
+                        selectedQuestion = { this.props.question }
+                        groupVal = {this.state.selectedGroupVal }
+                    />
+                </div>
             </div>
         )
     }
 
     cleanData(data) {
-        return data.filter(x => x[this.props.group.id] && x[this.props.question.id]);
+        return data.filter(x => x[this.props.group.id] && x[this.props.question.id] && true);
     }
     
     createClickHandler(groupVal) {
