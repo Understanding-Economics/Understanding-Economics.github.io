@@ -7,25 +7,33 @@ export default class HistogramView extends React.Component {
         this.renderHistogram = this.renderHistogram.bind(this);
     }
     render() {
-        if(!this.props.groupVal) {
+        return (
+        <div style={{width: "100%"}}> 
+            <h5 className = "text-center">
+                Distribution of responses by group: <strong>{this.props.groupVal}</strong>
+            </h5>
+            <DataView
+                elementId = "histogram"
+                survey = { this.props.survey }
+                data = { this.props.data }
+                selectedGroup = { this.props.selectedGroup }
+                selectedQuestion = { this.props.selectedQuestion }
+                renderFunction = { this.renderHistogram }
+            />
+        </div>
+        )
+    }
+
+    shouldComponentUpdate(nextProps, nextState) { 
+        if(nextProps.selectedGroup != this.props.selectedGroup || nextProps.selectedQuestion != this.props.selectedQuestion) {
             this.chart = null;
-            return <div style={{minHeight: "300px"}}></div>
         }
-        let headerText = "";
-        return <DataView
-                    elementId = "histogram"
-                    survey = { this.props.survey }
-                    data = { this.props.data }
-                    selectedGroup = { this.props.selectedGroup }
-                    selectedQuestion = { this.props.selectedQuestion }
-                    header = { headerText }
-                    renderFunction = { this.renderHistogram }
-                />
+        return true;
     }
 
     renderHistogram(elementId, selectedGroup, selectedQuestion, data) {
         let dataNumeric = data.map(x => Number(x[selectedQuestion.id]));
-        let cleanData = data.filter(x => x[selectedGroup.id] == this.props.groupVal)
+        let cleanData = data.filter(x => this.props.groupVal === "All" || x[selectedGroup.id] == this.props.groupVal)
                             .map(x => Number(x[selectedQuestion.id]));
 
         let nticks = 15; 

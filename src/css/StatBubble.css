@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+.active {
+    background-color: lightgrey;
+}
+
 .BubbleTitle {
     margin-bottom:5px;
 }

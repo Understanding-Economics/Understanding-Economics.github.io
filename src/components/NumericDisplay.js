@@ -6,12 +6,20 @@ import HistogramView from './HistogramView'
 export default class NumericDisplay extends React.Component {
     constructor() { 
         super();
-        this.state = {};
+        this.state = {
+            selectedGroupVal : "All"
+        };
     }
     render() { 
         let data = this.cleanData(this.props.data);
         let averages = this.calcAverages(data).sort((a, b) => {
-            if(this.props.group.sorter) {
+            if(a.groupVal == "All") {
+                return -1;
+            }
+            else if(b.groupVal == "All") {
+                return 1;
+            }
+            else if(this.props.group.sorter) {
                 return this.props.group.sorter.indexOf(a.groupVal) - this.props.group.sorter.indexOf(b.groupVal);
             }
             else {
@@ -23,6 +31,7 @@ export default class NumericDisplay extends React.Component {
                 <StatBubble 
                     title = { x.groupVal }
                     stat = { x.average }
+                    active = { x.groupVal == this.state.selectedGroupVal }
                     handleClick = { this.createClickHandler(x.groupVal) }
                 />
             </div>
@@ -41,7 +50,7 @@ export default class NumericDisplay extends React.Component {
                         data = { this.cleanData(this.props.data) }
                         selectedGroup = { this.props.group }
                         selectedQuestion = { this.props.question }
-                        groupVal = {this.state.selectedGroupVal }
+                        groupVal = { this.state.selectedGroupVal }
                     />
                 </div>
             </div>
@@ -50,7 +59,7 @@ export default class NumericDisplay extends React.Component {
 
     componentWillReceiveProps(nextProps) {
         this.setState({
-            selectedGroupVal : null
+            selectedGroupVal : "All"
         })
     }
 
@@ -68,8 +77,14 @@ export default class NumericDisplay extends React.Component {
         }.bind(this);
     }
 
+    // TODO: calculate total average
     calcAverages(data) {
-        let acc = {}
+        let acc = {
+            All : {
+                sum : 0,
+                count : 0
+            }
+        }
         let groupId = this.props.group.id;
         let questionId = this.props.question.id;
         for(let row of data) {
@@ -77,6 +92,8 @@ export default class NumericDisplay extends React.Component {
             if(!(groupVal in acc)) {
                 acc[groupVal] = {sum : 0, count : 0}
             }
+            acc.All.sum += Number(row[questionId]);
+            acc.All.count++;
             acc[groupVal].sum += Number(row[questionId]);
             acc[groupVal].count++; 
         }
