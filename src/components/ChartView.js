@@ -1,5 +1,6 @@
 import React from 'react'
 import DataView from './DataView'
+import Colors from '../Colors'
 
 export default class ChartView extends React.Component { 
     render() {
@@ -39,39 +40,23 @@ export default class ChartView extends React.Component {
         else {
             sorters["response"] = (a, b) => a.localeCompare(b);
         }
-
-        if(selectedQuestion.numeric) {
-            $(`#${elementId}`).pivot(cleanData, 
-                {
-                    rows : [selectedGroup.title],
-                    aggregator: $.pivotUtilities.aggregators["Average"](["response"]),
-                    renderer: $.pivotUtilities.c3_renderers["Horizontal Bar Chart"],
-                    sorters : sorters,
-                    rendererOptions : {
-                        c3 : {
-                            data : { 
-                                names : {
-                                    Count : "Average"
-                                },
-                            },
-                            legend : {
-                                show: true
-                            }
-                        }
+        let colorPattern = selectedQuestion.color && typeof(selectedQuestion.color == "string") 
+                            && selectedQuestion.color in Colors ? Colors[selectedQuestion.color] : selectedQuestion.color;
+        $(`#${elementId}`).pivot(cleanData, {
+            rows : [selectedGroup.title],
+            cols: ["response"],
+            aggregator: $.pivotUtilities.aggregators["Count as Fraction of Rows"](),
+            renderer: $.pivotUtilities.c3_renderers["Horizontal Stacked Bar Chart"],
+            sorters : sorters,
+            rendererOptions : {
+                c3 : {
+                    color : {
+                        pattern : colorPattern || Colors.Categorical
                     }
-                });
-            document.getElementsByClassName("c3-axis-y-label")[0].innerHTML = "Average";
-        }
-        else { 
-            $(`#${elementId}`).pivot(cleanData, {
-                rows : [selectedGroup.title],
-                cols: ["response"],
-                aggregator: $.pivotUtilities.aggregators["Count as Fraction of Rows"](),
-                renderer: $.pivotUtilities.c3_renderers["Horizontal Stacked Bar Chart"],
-                sorters : sorters
-            });
-            document.getElementsByClassName("c3-axis-y-label")[0].innerHTML = "Proportion";
-        }
+                }
+            }
+        });
+        document.getElementsByClassName("c3-axis-y-label")[0].innerHTML = "Proportion";
         document.getElementById("chart").getElementsByTagName("p")[0].remove();
     }
 }

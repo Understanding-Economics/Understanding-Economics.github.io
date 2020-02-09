@@ -1,5 +1,6 @@
 import React from 'react'
 import DataView from './DataView'
+import Colors from '../Colors'
 
 export default class HistogramView extends React.Component { 
     constructor() {
@@ -57,6 +58,9 @@ export default class HistogramView extends React.Component {
                         'count' : 'bar'
                     }
                 },
+                color : {
+                    pattern : Colors.Histogram
+                }, 
                 axis : {
                     x : {
                         type : 'category',

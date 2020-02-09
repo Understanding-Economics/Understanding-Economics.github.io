@@ -121,7 +121,9 @@
                 "id": "Q03001_en",
                 "title": "Income Tax Policy Effect",
                 "description": "Do you feel that U.S. federal income tax policy has important direct effects on your own life?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL", 
+                "sorter" : ["No, It has no direct effects on my own life", "It has some effects on my own life", "Yes, it has very important direct effects on my own life"],
+                "color" : "Gradient3"
               }
             }
           },
@@ -225,7 +227,9 @@
                 "id": "Q07002_en",
                 "title": "Tax System Satisfaction",
                 "description": "How satisfied or dissatisfied are you with the current U.S. federal income tax system?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL", 
+                "sorter" : ["Very dissatisfied", "Somewhat dissatisfied", "Somewhat satisfied", "Very satisfied"],
+                "color" : "Gradient4"
               },
               "Q07003_en": {
                 "id": "Q07003_en",
