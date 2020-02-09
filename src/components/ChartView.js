@@ -4,18 +4,20 @@ import Colors from '../Colors'
 
 export default class ChartView extends React.Component { 
     render() {
+        console.log(this.props.selectedQuestion.id);
+        console.log(this.props.data);
         let headerText = null
         if (this.props.selectedQuestion) {
             // headerText = `${this.props.selectedQuestion.numeric ? "Average" : "Proportions"} of responses to "${this.props.selectedQuestion.title}" by "${this.props.selectedGroup.title}"`
             headerText = `Each bar in the chart shows, for each group list on the left, the ${this.props.selectedQuestion.numeric ? "average" : "share"} of responses to the question.`
         }
         return <DataView
-                    elementId = "chart"
+                    elementId = {this.props.elementId || "chart"}
                     survey = { this.props.survey }
                     data = { this.props.data }
                     selectedGroup = { this.props.selectedGroup }
                     selectedQuestion = { this.props.selectedQuestion }
-                    header = {headerText}
+                    header = {this.props.headerText || headerText}
                     renderFunction = { this.renderChart }
                 />
     }
@@ -57,6 +59,6 @@ export default class ChartView extends React.Component {
             }
         });
         document.getElementsByClassName("c3-axis-y-label")[0].innerHTML = "Proportion";
-        document.getElementById("chart").getElementsByTagName("p")[0].remove();
+        document.getElementById(elementId).getElementsByTagName("p")[0].remove();
     }
 }

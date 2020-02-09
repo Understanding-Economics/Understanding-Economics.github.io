@@ -37,6 +37,7 @@ export default class DataDisplay extends React.Component {
                     group = { this.props.selectedGroup }
                     question = { this.props.selectedQuestion }
                 />
+                break;
             default: 
                 throw new Error(`Invalid data type for ${ this.props.selectedQuestion.id}`)
 

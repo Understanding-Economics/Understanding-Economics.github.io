@@ -235,8 +235,28 @@
               "Q07003_en": {
                 "id": "Q07003_en",
                 "title": "Tax Share Fairness (Specific)",
-                "description": "CONTROL: Would you say that high income, upper-class households in the U.S.<br/>today:<br/>\u201cYOU\u201d: Would you say that you:<br/>\u201cGENDER\u201d: Would you say that high income, upper-class women in the U.S. today:",
-                "type" : "CATEGORICAL"
+                "description": "How fair the respondent thinks the tax system is, depending on their treatment",
+                "type" : "TREATMENT",
+                "questions" : [
+                  {
+                    "id" : "Q07003_en",
+                    "title" : "CONTROL",
+                    "description" : "Would you say that high income, upper-class households in the U.S. today...",
+                    "treatments" : ["Neutral"]
+                  },
+                  {
+                    "id" : "Q07003_en",
+                    "title" : "YOU",
+                    "description" : "Would you say that you...",
+                    "treatments" : ["You"]
+                  },
+                  {
+                    "id" : "Q07003_en",
+                    "title" : "GENDER",
+                    "description" : "Would you say that high income, upper-class women in the U.S. today...",
+                    "treatments" : ["Gender"]
+                  }
+                ]
               },
               "Q07004_en": {
                 "id": "Q07004_en",

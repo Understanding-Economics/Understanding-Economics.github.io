@@ -1,6 +1,8 @@
-class DataType {}
-DataType.CATEGORICAL = "CATEGORICAL";
-DataType.NUMERIC = "NUMERIC";
-DataType.TREATMENT = "TREATMENT";
+const DataType = 
+{
+    CATEGORICAL :  "CATEGORICAL", 
+    NUMERIC : "NUMERIC",
+    TREATMENT : "TREATMENT"
+}
 
 export default DataType;
