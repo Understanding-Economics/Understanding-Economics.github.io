@@ -3,6 +3,7 @@ import '../css/DataDisplay.css'
 import DataType from '../DataType'
 import CategoricalDisplay from './CategoricalDisplay'
 import NumericDisplay from './NumericDisplay'
+import TreatmentDisplay from './TreatmentDisplay'
 
 export default class DataDisplay extends React.Component {
     render() {
@@ -29,6 +30,13 @@ export default class DataDisplay extends React.Component {
                     question = { this.props.selectedQuestion }
                 />
                 break;
+            case DataType.TREATMENT:
+                specificDisplay = <TreatmentDisplay
+                    survey = { this.props.survey }
+                    data = { this.props.data }
+                    group = { this.props.selectedGroup }
+                    question = { this.props.selectedQuestion }
+                />
             default: 
                 throw new Error(`Invalid data type for ${ this.props.selectedQuestion.id}`)
 
