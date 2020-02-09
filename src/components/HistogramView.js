@@ -43,12 +43,14 @@ export default class HistogramView extends React.Component {
                         .range([d3.min(dataNumeric), d3.max(dataNumeric)]);
 
         let histogram = d3.histogram()
-                            .domain(scale.domain())
+                            .domain([d3.min(dataNumeric), d3.max(dataNumeric)])
                             .thresholds(scale.ticks(nticks));
         
         let bins = histogram(cleanData);
         let binSizes = bins.map(x => x.length);
         let categories = bins.map(bin => `${bin["x0"]}-${bin["x1"]}`);
+        let correctBin = selectedQuestion.correct ? histogram([selectedQuestion.correct]).filter(x => x.length > 0)[0] : null;
+        console.log(histogram([selectedQuestion.correct]));
         if(!this.chart) {
             this.chart = c3.generate({
                 bindto: `#${elementId}`,
@@ -57,6 +59,12 @@ export default class HistogramView extends React.Component {
                     types : { 
                         'count' : 'bar'
                     }
+                },
+                grid : {
+                    x: {
+                        lines : (selectedQuestion.correct ? 
+                                [{value : `${correctBin["x0"]}-${correctBin["x1"]}`, text : `Correct: ${selectedQuestion.correct}`}] : [])
+                    },
                 },
                 color : {
                     pattern : Colors.Histogram

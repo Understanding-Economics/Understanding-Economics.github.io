@@ -160,7 +160,8 @@
                 "id": "Q04009_en",
                 "title": "Top Tax Rate Today",
                 "description": "What is the top federal personal income tax rate in the U.S.?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : 37
               },
               "Q04010_en": {
                 "id": "Q04010_en",

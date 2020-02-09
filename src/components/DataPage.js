@@ -114,7 +114,6 @@ export default class DataPage extends React.Component {
     }
     
     handleQuestionSelect(event) {
-        console.log("HANDLE QUESTION SELECT: " + event.target.value);
         this.setState({
             selectedQuestion : this.state.selectedTopic.questions[event.target.value]
         })
