@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import '../css/FieldSelect.css'
 import '../App.css'
+import ScrollableDesc from './ScrollableDesc';
 
 export default class FieldSelect extends React.Component { 
     constructor() { 
@@ -33,11 +34,11 @@ export default class FieldSelect extends React.Component {
                         {optionComponents}
                     </select>
                 </div>
-                <div className = "row">
-                    <strong>{selectedTitle}</strong>
-                </div>
-                <span className = "row scrolling slctDesc" dangerouslySetInnerHTML={{__html : selectedDescription}} ref = {this.descDivRef}>
-                </span>
+                <ScrollableDesc 
+                    title = {selectedTitle} 
+                    content = {selectedDescription}
+                    height = "125px"
+                />
             </div>
         );
     }
