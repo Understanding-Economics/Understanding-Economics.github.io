@@ -1,24 +1,20 @@
 import React from 'react'
 import DataView from './DataView'
 import Colors from '../Colors'
+import '../css/ChartView.css'
 
 export default class ChartView extends React.Component { 
     render() {
         console.log(this.props.selectedQuestion.id);
         console.log(this.props.data);
-        let headerText = null
-        if (this.props.selectedQuestion) {
-            // headerText = `${this.props.selectedQuestion.numeric ? "Average" : "Proportions"} of responses to "${this.props.selectedQuestion.title}" by "${this.props.selectedGroup.title}"`
-            headerText = `Each bar in the chart shows, for each group list on the left, the ${this.props.selectedQuestion.numeric ? "average" : "share"} of responses to the question.`
-        }
         return <DataView
                     elementId = {this.props.elementId || "chart"}
                     survey = { this.props.survey }
                     data = { this.props.data }
                     selectedGroup = { this.props.selectedGroup }
                     selectedQuestion = { this.props.selectedQuestion }
-                    header = {this.props.headerText || headerText}
-                    renderFunction = { this.renderChart }
+                    header = {this.props.headerText}
+                    renderFunction = { this.renderChart.bind(this) }
                 />
     }
 
@@ -44,6 +40,8 @@ export default class ChartView extends React.Component {
         }
         let colorPattern = selectedQuestion.color && typeof(selectedQuestion.color == "string") 
                             && selectedQuestion.color in Colors ? Colors[selectedQuestion.color] : selectedQuestion.color;
+
+        
         $(`#${elementId}`).pivot(cleanData, {
             rows : [selectedGroup.title],
             cols: ["response"],
@@ -51,14 +49,20 @@ export default class ChartView extends React.Component {
             renderer: $.pivotUtilities.c3_renderers["Horizontal Stacked Bar Chart"],
             sorters : sorters,
             rendererOptions : {
-                c3 : {
+                c3 :{
+                    size : {
+                        width: $(`#${elementId}`).parent().width()
+                    }, 
                     color : {
                         pattern : colorPattern || Colors.Categorical
-                    }
+                    },
+                    ... this.props.c3Override
                 }
             }
         });
-        document.getElementsByClassName("c3-axis-y-label")[0].innerHTML = "Proportion";
+        for(let elt of document.getElementsByClassName("c3-axis-y-label")) {
+            elt.innerHTML = "Proportion";
+        }
         document.getElementById(elementId).getElementsByTagName("p")[0].remove();
     }
 }
