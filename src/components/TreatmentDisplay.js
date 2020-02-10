@@ -9,7 +9,7 @@ export default class TreatmentDisplay extends React.Component {
             return null;
         }
         let chartViews = this.props.question.questions.map(question => 
-            <div className = "col-md">
+            <div className = "col-md-3">
                 <ScrollableDesc
                     title = {question.title}
                     content = {question.description}

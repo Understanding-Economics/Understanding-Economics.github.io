@@ -31,8 +31,8 @@ export default class DummyChartView extends React.Component {
         let displayElts = this.getUniqueGroupVals(this.props.data, this.props.selectedGroup, sorter)
                             .map(x => <tr style={{overflow: "hidden"}}><td><strong>{x}</strong></td></tr>);
 
-        return <table id = "ChartLabel">
-            <tbody style={{fontSize : "12px", marginTop:"0.5%", textAlign:"right", width:"100%"}}>
+        return <table id = "ChartLabel" style={{marginTop: "2%"}}>
+            <tbody style={{fontSize : "12px"}}>
                 {displayElts}
             </tbody>
         </table>
