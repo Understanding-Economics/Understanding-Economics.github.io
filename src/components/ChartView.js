@@ -66,5 +66,9 @@ export default class ChartView extends React.Component {
             elt.innerHTML = "Proportion";
         }
         document.getElementById(elementId).getElementsByTagName("p")[0].remove();
+        let ChartLabel = document.getElementById("ChartLabel");
+        if (ChartLabel) {
+            ChartLabel.style.height = document.getElementsByClassName("c3-event-rect")[0].height.baseVal.value + "px";
+        }
     }
 }
