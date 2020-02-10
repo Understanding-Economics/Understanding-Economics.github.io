@@ -103,14 +103,6 @@
     "surveys": {
       "income_survey": {
         "title": "Income Survey",
-        "additionalGroups": {
-          "mechanisms_rando": {
-            "id": "mechanisms_rando",
-            "title": "Wording Mechanism",
-            "description": "The type of wording for questions mechanismed questions",
-            "type" : "CATEGORICAL"
-          }
-        },
         "topics": {
           "Personal Exposure": {
             "id": "Personal Exposure",
@@ -262,7 +254,21 @@
                 "id": "Q07004_en",
                 "title": "Middle Class Tax Share Fairness",
                 "description": "CONTROL: Would you say that middle-class households in the U.S. today: <br/>\u201cGENDER\u201d: Would you say that women in the middle-class in the U.S. today:",
-                "type" : "CATEGORICAL"
+                "type" : "TREATMENT",
+                "questions" : [
+                  {
+                    "id" : "Q07004_en",
+                    "title" : "Control",
+                    "description" : "Would you say that middle-class households in the U.S. today...",
+                    "treatments" : ["Neutral", "You"]
+                  },
+                  {
+                    "id" : "Q07004_en",
+                    "title" : "Gender",
+                    "description" : "Would you say that women in the middle-class in the U.S. today...",
+                    "treatments" : ["Gender"]
+                  }
+                ]
               },
               "Q07005_en": {
                 "id": "Q07005_en",

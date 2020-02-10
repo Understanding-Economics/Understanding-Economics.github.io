@@ -50,7 +50,6 @@ export default class HistogramView extends React.Component {
         let binSizes = bins.map(x => x.length);
         let categories = bins.map(bin => `${bin["x0"]}-${bin["x1"]}`);
         let correctBin = selectedQuestion.correct ? histogram([selectedQuestion.correct]).filter(x => x.length > 0)[0] : null;
-        console.log(histogram([selectedQuestion.correct]));
         if(!this.chart) {
             this.chart = c3.generate({
                 bindto: `#${elementId}`,

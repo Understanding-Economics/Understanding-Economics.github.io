@@ -5,8 +5,6 @@ import '../css/ChartView.css'
 
 export default class ChartView extends React.Component { 
     render() {
-        console.log(this.props.selectedQuestion.id);
-        console.log(this.props.data);
         return <DataView
                     elementId = {this.props.elementId || "chart"}
                     survey = { this.props.survey }
@@ -49,14 +47,14 @@ export default class ChartView extends React.Component {
             renderer: $.pivotUtilities.c3_renderers["Horizontal Stacked Bar Chart"],
             sorters : sorters,
             rendererOptions : {
-                c3 :{
+                c3 :{ 
                     size : {
                         width: $(`#${elementId}`).parent().width()
                     }, 
                     color : {
                         pattern : colorPattern || Colors.Categorical
                     },
-                    ... this.props.c3Override
+                    ... this.props.c3Override,
                 }
             }
         });
