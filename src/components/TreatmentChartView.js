@@ -20,7 +20,6 @@ export default class TreatmentChartView extends React.Component {
             selectedGroup = { this.props.selectedGroup }
             selectedQuestion = { this.props.selectedQuestion }
             elementId = { this.props.elementId }
-            headerText = {" "}
             c3Override = { c3Overrides }
         />
     }

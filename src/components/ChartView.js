@@ -11,7 +11,6 @@ export default class ChartView extends React.Component {
                     data = { this.props.data }
                     selectedGroup = { this.props.selectedGroup }
                     selectedQuestion = { this.props.selectedQuestion }
-                    header = {this.props.headerText}
                     renderFunction = { this.renderChart.bind(this) }
                 />
     }
@@ -53,6 +52,11 @@ export default class ChartView extends React.Component {
                     }, 
                     color : {
                         pattern : colorPattern || Colors.Categorical
+                    },
+                    legend : {
+                        item : {
+                            onclick : function() {}
+                        }
                     },
                     ... this.props.c3Override,
                 }

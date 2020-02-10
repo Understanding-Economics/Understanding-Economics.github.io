@@ -9,3 +9,13 @@
 h4 { 
     margin-top: 5px;
 }
+
+.header { 
+    margin-bottom: 10px;
+}
+
+.c3-xgrid-focus { display: none; }
+
+.c3-legend-item {
+    cursor:default !important;
+}

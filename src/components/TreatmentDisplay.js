@@ -21,7 +21,6 @@ export default class TreatmentDisplay extends React.Component {
                     selectedGroup = { this.props.group }
                     selectedQuestion = { question }
                     elementId = {`${question.title}_chart`}
-                    headerText = {" "}
                 />
             </div>
         )
@@ -39,7 +38,6 @@ export default class TreatmentDisplay extends React.Component {
                         selectedGroup = { this.props.group }
                         selectedQuestion = { this.props.question }
                         elementId = {`dummy_chart`}
-                        headerText = {" "}
                     />
                 </div>
                 {chartViews}

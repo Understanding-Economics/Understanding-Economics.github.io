@@ -6,8 +6,7 @@ export default class DataView extends React.Component {
             return null;
         }
         return (
-            <div className="DataView">
-                <h5>{this.props.header}</h5>
+            <div className="DataView" style={{width: "100%"}}>
                 <div id = {this.props.elementId} style={{width:"100%"}}></div>
             </div>
         )
