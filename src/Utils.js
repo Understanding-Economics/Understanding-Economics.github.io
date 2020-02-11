@@ -1,8 +1,8 @@
 const Utils = {
-    getUniqueGroupVals: function(data, group, sorter) {
-        let groupVals = data.map(x => x[group.id]);
-        var uniqueGroupVals = groupVals.filter((v, i, a) => a.indexOf(v) === i);
-        return uniqueGroupVals.filter(x => x.trim().length > 0).sort(sorter);
+    getUniqueDictVals: function(data, key, sorter) {
+        let vals = data.map(x => x[key]);
+        var uniqueVals = groupVals.filter((v, i, a) => a.indexOf(v) === i);
+        return uniqueVals.filter(x => x.trim().length > 0).sort(sorter);
     }
 }
 

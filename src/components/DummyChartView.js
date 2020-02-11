@@ -28,7 +28,7 @@ export default class DummyChartView extends React.Component {
             sorter = (a, b) => a.localeCompare(b);
         }
 
-        let displayElts = ["All", ...Utils.getUniqueGroupVals(this.props.data, this.props.selectedGroup, sorter)]
+        let displayElts = ["All", ...Utils.getUniqueDictVals(this.props.data, this.props.selectedGroup.id, sorter)]
                             .map(x => <tr style={{overflow: "hidden"}}><td><strong>{x}</strong></td></tr>);
 
         return <table id = "ChartLabel" style={{marginTop: "2%"}}>
