@@ -1,5 +1,5 @@
 import React from 'react'
-import ChartView from './ChartView'
+import Utils from '../Utils'
 
 export default class DummyChartView extends React.Component {
     render() { 
@@ -28,7 +28,7 @@ export default class DummyChartView extends React.Component {
             sorter = (a, b) => a.localeCompare(b);
         }
 
-        let displayElts = ["All", ...this.getUniqueGroupVals(this.props.data, this.props.selectedGroup, sorter)]
+        let displayElts = ["All", ...Utils.getUniqueGroupVals(this.props.data, this.props.selectedGroup, sorter)]
                             .map(x => <tr style={{overflow: "hidden"}}><td><strong>{x}</strong></td></tr>);
 
         return <table id = "ChartLabel" style={{marginTop: "2%"}}>
@@ -45,12 +45,6 @@ export default class DummyChartView extends React.Component {
             elementId = { this.props.elementId }
             c3Override = { c3Overrides }
         />*/ 
-    }
-
-    getUniqueGroupVals(data, group, sorter) {
-        let groupVals = data.map(x => x[group.id]);
-        var uniqueGroupVals = groupVals.filter((v, i, a) => a.indexOf(v) === i);
-        return uniqueGroupVals.filter(x => x.trim().length > 0).sort(sorter);
     }
     
     componentDidMount() {
