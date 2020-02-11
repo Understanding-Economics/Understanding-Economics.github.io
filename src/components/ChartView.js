@@ -22,12 +22,26 @@ export default class ChartView extends React.Component {
             newX["response"] = x[selectedQuestion.id] || " No response";
             return newX;
         })
+        let allData = data.map(x => {
+            return {
+                [selectedGroup.title] : "All",
+                "response" : x[selectedQuestion.id]
+            }
+        })
         let sorters = {}
         if(selectedGroup.sorter) {
-            sorters[selectedGroup.title] = $.pivotUtilities.sortAs(selectedGroup.sorter);
+            sorters[selectedGroup.title] = (a, b) => {
+                if (a == "All") return -1;
+                if (b == "All") return 1;
+                else $.pivotUtilities.sortAs(selectedGroup.sorter)(a, b);
+            }
         }
         else {
-            sorters[selectedGroup.title] = (a, b) => a.localeCompare(b);
+            sorters[selectedGroup.title] = (a, b) => { 
+                if (a == "All") return -1;
+                if (b == "All") return 1;
+                else a.localeCompare(b)
+            }
         }
         if(selectedQuestion.sorter) {
             sorters["response"] = $.pivotUtilities.sortAs(selectedQuestion.sorter);
@@ -39,7 +53,7 @@ export default class ChartView extends React.Component {
                             && selectedQuestion.color in Colors ? Colors[selectedQuestion.color] : selectedQuestion.color;
 
         
-        $(`#${elementId}`).pivot(cleanData, {
+        $(`#${elementId}`).pivot([...allData, ...cleanData], {
             rows : [selectedGroup.title],
             cols: ["response"],
             aggregator: $.pivotUtilities.aggregators["Count as Fraction of Rows"](),

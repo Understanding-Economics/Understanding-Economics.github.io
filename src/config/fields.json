@@ -4,7 +4,8 @@
         "id": "agegroup",
         "title": "Age Group",
         "description": "The age group that the respondent belongs to",
-        "type" : "CATEGORICAL"
+        "type" : "CATEGORICAL",
+        "sorter" : ["18-29", "30-39", "40-49", "50-59", "60-69"]
       },
       "income": {
         "id": "income",
@@ -19,7 +20,8 @@
         "id": "born_us",
         "title": "Born in US",
         "description": "Whether the respondent was born in the United States.",
-        "type" : "CATEGORICAL"
+        "type" : "CATEGORICAL",
+        "sorter" : ["Yes", "No"]
       },
       "marital_status": {
         "id": "marital_status",
@@ -40,7 +42,8 @@
         "id": "nb_child",
         "title": "Number of Children",
         "description": "Number of children the repsondent has.",
-        "type" : "CATEGORICAL"
+        "type" : "CATEGORICAL",
+        "sorter" : ["I do not have children", "1", "2", "3", "4", "5 or more"]
       },
       "race": {
         "id": "race",
@@ -52,7 +55,8 @@
         "id": "education_level",
         "title": "Education level",
         "description": "The highest education level achieved by the repsondent.",
-        "type" : "CATEGORICAL"
+        "type" : "CATEGORICAL",
+        "sorter" : ["Eighth Grade or lower", "Some High School", "High School degree/ GED", "Some College", "2-year College Degree", "4-year College Degree", "Master's Degree", "Professional Degree (JD, MD, MBA)", "Doctoral Degree"]
       },
       "employment_status": {
         "id": "employment_status",

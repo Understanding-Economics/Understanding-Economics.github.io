@@ -7,7 +7,7 @@ export default class CategoricalDisplay extends React.Component {
         return (
             <div className = "CategoricalDisplay">
                 <div className = "row header">
-                    <h5>Average response to "<strong>{this.props.question.description}</strong>" by "<strong>{this.props.group.title}</strong>"</h5>
+                    <h5>Proportion of responses to "<strong>{this.props.question.description}</strong>" by "<strong>{this.props.group.title}</strong>"</h5>
                 </div>
                 <div className = "row">
                     <ChartView
