@@ -144,13 +144,15 @@
                 "id": "Q04007_en",
                 "title": "Top Tax Rate Threshold",
                 "description": "How high is the threshold of total annual income for a married household above which the top tax rate applies?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "format" : "dollar"
               },
               "Q04008_en": {
                 "id": "Q04008_en",
                 "title": "Proportion in Top Tax Rate",
                 "description": "Out of 100 households in the U.S., how many are in the top federal personal income tax bracket?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC", 
+                "format" : "percent"
               },
               "Q04009_en": {
                 "id": "Q04009_en",

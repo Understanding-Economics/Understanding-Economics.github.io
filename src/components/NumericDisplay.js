@@ -2,6 +2,7 @@ import React from 'react'
 import StatBubble from './StatBubble'
 import '../css/NumericDisplay.css'
 import HistogramView from './HistogramView'
+import NumberFormats from '../NumberFormats'
 
 export default class NumericDisplay extends React.Component {
     constructor() { 
@@ -33,6 +34,7 @@ export default class NumericDisplay extends React.Component {
                     stat = { x.average }
                     active = { x.groupVal == this.state.selectedGroupVal }
                     handleClick = { this.createClickHandler(x.groupVal) }
+                    formatter = { NumberFormats[this.props.question.format] }
                 />
             </div>
         );
