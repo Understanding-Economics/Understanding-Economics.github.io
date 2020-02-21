@@ -2,6 +2,8 @@ import React from 'react'
 import TreatmentChartView from './TreatmentChartView'
 import ScrollableDesc from './ScrollableDesc'
 import DummyChartView from './DummyChartView'
+import ChartLegend from './ChartLegend'
+import Utils from '../Utils';
 
 export default class TreatmentDisplay extends React.Component { 
     render() {
@@ -20,9 +22,7 @@ export default class TreatmentDisplay extends React.Component {
             </div>
         )
 
-        let selectedColor = this.props.question.color; 
-        let colorPattern = selectedColor && typeof(selectedColor == "string") 
-                            && selectedColor in Colors ? Colors[selectedColor] : selectedColor;
+        let colorPattern = Utils.getColorPattern(this.props.question);
 
         let descriptions = this.props.question.questions.map(question => 
             <div className = "col-md-3">
@@ -44,6 +44,15 @@ export default class TreatmentDisplay extends React.Component {
                         /> 
                     </div>
                     {descriptions}
+                </div>
+                <div className = "row">
+                    <div className = "col-md-3"></div>
+                    <div className = "col-md-9">
+                        <ChartLegend 
+                            data = { this.props.data }
+                            question = { this.props.question }
+                        />
+                    </div>
                 </div>
                 <div className = "row">
                     <div className = "col-md-3">

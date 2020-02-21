@@ -2,6 +2,7 @@ import React from 'react'
 import DataView from './DataView'
 import Colors from '../Colors'
 import '../css/ChartView.css'
+import Utils from '../Utils'
 
 export default class ChartView extends React.Component { 
     render() {
@@ -28,8 +29,11 @@ export default class ChartView extends React.Component {
                 "response" : x[selectedQuestion.id]
             }
         })
-        let sorters = {}
-        if(selectedGroup.sorter) {
+        let sorters = {
+            [selectedGroup.title] : Utils.getGroupSorter(selectedGroup),
+            "response" : Utils.getQuestionSorter(selectedQuestion)
+        }
+        /*if(selectedGroup.sorter) {
             sorters[selectedGroup.title] = (a, b) => {
                 if (a == "All") return -1;
                 if (b == "All") return 1;
@@ -48,9 +52,8 @@ export default class ChartView extends React.Component {
         }
         else {
             sorters["response"] = (a, b) => a.localeCompare(b);
-        }
-        let colorPattern = selectedQuestion.color && typeof(selectedQuestion.color == "string") 
-                            && selectedQuestion.color in Colors ? Colors[selectedQuestion.color] : selectedQuestion.color;
+        }*/
+        let colorPattern = Utils.getColorPattern(selectedQuestion);
 
         
         $(`#${elementId}`).pivot([...allData, ...cleanData], {

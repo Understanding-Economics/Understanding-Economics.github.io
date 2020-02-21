@@ -1,3 +1,4 @@
+import Colors from './Colors'
 const Utils = {
     getUniqueDictVals: function(data, key, sorter) {
         let vals = data.map(x => x[key]);
@@ -14,6 +15,39 @@ const Utils = {
             countsDict[val] = 0;
         }
         
+    },
+
+    getQuestionSorter: function(question) {
+        if(question.sorter) {
+            return $.pivotUtilities.sortAs(question.sorter);
+        }
+        else {
+            return (a, b) => a.localeCompare(b);
+        }
+    },
+
+    getGroupSorter: function(group) {
+        if(group.sorter) {
+            return (a, b) => {
+                if (a == "All") return -1;
+                if (b == "All") return 1;
+                else $.pivotUtilities.sortAs(group.sorter)(a, b);
+            }
+        }
+        else {
+            return (a, b) => { 
+                if (a == "All") return -1;
+                if (b == "All") return 1;
+                else a.localeCompare(b)
+            }
+        }
+    }, 
+
+    getColorPattern: function(question) {
+        let colorPattern = question.color && typeof(question.color == "string") 
+        && question.color in Colors ? Colors[question.color] : question.color;
+        if(colorPattern) return colorPattern
+        else return Colors.Categorical
     }
 }
 
