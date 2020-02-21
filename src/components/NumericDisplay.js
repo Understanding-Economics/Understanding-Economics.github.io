@@ -27,6 +27,7 @@ export default class NumericDisplay extends React.Component {
                 return a.groupVal.localeCompare(b.groupVal);
             }
         });
+        let formatter = NumberFormats[this.props.question.format] || (x => x);
         let statBubbles = averages.map(x => 
             <div className = "col-md-3" style={{marginBottom : "10px"}}>
                 <StatBubble 
@@ -34,15 +35,22 @@ export default class NumericDisplay extends React.Component {
                     stat = { x.average }
                     active = { x.groupVal == this.state.selectedGroupVal }
                     handleClick = { this.createClickHandler(x.groupVal) }
-                    formatter = { NumberFormats[this.props.question.format] }
+                    formatter = { formatter }
                 />
             </div>
         );
+        let correctDiv = null;
+        if(this.props.question.correct != undefined) {
+            correctDiv = <div className = "row header" style={{color:"green", fontSize:"14pt"}}>
+                <strong>Correct Answer: {formatter(this.props.question.correct)}</strong>
+            </div>
+        }
         return (
             <div className = "NumericDisplay">
                 <div className = "row header">
-                    <h5>Average response to "<strong>{this.props.question.description}</strong>" by "<strong>{this.props.group.title}</strong>"</h5>
+                    <h5>Average response to "<strong>{this.props.question.description}</strong>" by <strong>{this.props.group.title.toLowerCase()}</strong> of the respondent</h5>
                 </div>
+                {correctDiv}
                 <div className = "row">
                     { statBubbles }
                 </div>
@@ -53,6 +61,7 @@ export default class NumericDisplay extends React.Component {
                         selectedGroup = { this.props.group }
                         selectedQuestion = { this.props.question }
                         groupVal = { this.state.selectedGroupVal }
+                        formatter = {formatter}
                     />
                 </div>
             </div>

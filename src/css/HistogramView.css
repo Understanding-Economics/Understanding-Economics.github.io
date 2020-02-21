@@ -1,0 +1,10 @@
+.correct_line line{ 
+    stroke:gray;       
+    stroke-width: 4; 
+}
+
+.correct_line text { 
+    font-size: 14px;
+    font-weight: bold;
+    fill: black;
+}

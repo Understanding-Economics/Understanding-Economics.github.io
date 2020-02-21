@@ -39,15 +39,6 @@ export default class DataPage extends React.Component {
             <div className = "container-fluid">
                 <div className = "row">
                     <div className = "col-md-4">
-                        <FieldSelect 
-                            title = "Group"
-                            description = "Select how you would like to group responses"
-                            options = { this.groups }
-                            selected = {this.state.selectedGroup ? this.state.selectedGroup.id : null}
-                            handleSelect = {this.handleGroupSelect}
-                        />
-                    </div>
-                    <div className = "col-md-4">
                         <FieldSelect
                             title = "Topic"
                             description = "Select a topic that you would like to examine"
@@ -66,6 +57,15 @@ export default class DataPage extends React.Component {
                             }
                             selected = {this.state.selectedQuestion ? this.state.selectedQuestion.id : null}
                             handleSelect = {this.handleQuestionSelect}
+                        />
+                    </div>
+                    <div className = "col-md-4">
+                        <FieldSelect 
+                            title = "Group"
+                            description = "Select how you would like to group responses"
+                            options = { this.state.selectedQuestion ? this.groups : null }
+                            selected = {this.state.selectedGroup ? this.state.selectedGroup.id : null}
+                            handleSelect = {this.handleGroupSelect}
                         />
                     </div>
                 </div>
@@ -109,7 +109,8 @@ export default class DataPage extends React.Component {
     handleTopicSelect(event) {
         this.setState({
             selectedTopic : this.survey.topics[event.target.value],
-            selectedQuestion : undefined
+            selectedQuestion : undefined,
+            selectedGroup : undefined
         })
     }
     

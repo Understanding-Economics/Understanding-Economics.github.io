@@ -9,7 +9,7 @@ export default class DataDisplay extends React.Component {
     render() {
         let question = this.props.selectedQuestion;
         let specificDisplay = null;
-        if(!question) {
+        if(!question || !this.props.selectedGroup) {
             return null;
         }
         switch(question.type) {

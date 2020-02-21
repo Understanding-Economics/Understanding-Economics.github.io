@@ -1,6 +1,7 @@
 import React from 'react'
 import DataView from './DataView'
 import Colors from '../Colors'
+import '../css/HistogramView.css'
 
 export default class HistogramView extends React.Component { 
     constructor() {
@@ -62,7 +63,13 @@ export default class HistogramView extends React.Component {
                 grid : {
                     x: {
                         lines : (selectedQuestion.correct ? 
-                                [{value : `${correctBin["x0"]}-${correctBin["x1"]}`, text : `Correct: ${selectedQuestion.correct}`}] : [])
+                                [{
+                                    value : `${correctBin["x0"]}-${correctBin["x1"]}`, 
+                                    text : `Correct: ${this.props.formatter(selectedQuestion.correct)}`, 
+                                    class: "correct_line",
+                                    position: "start", 
+                                }
+                                ] : [])
                     },
                 },
                 color : {
