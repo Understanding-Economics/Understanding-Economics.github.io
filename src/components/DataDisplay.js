@@ -30,7 +30,7 @@ export default class DataDisplay extends React.Component {
                 />
                 break;
             case DataType.TREATMENT:
-                specificDisplay = <TreatmentDisplay
+                specificDisplay =  <TreatmentDisplay
                     survey = { this.props.survey }
                     data = { this.props.data }
                     group = { this.props.selectedGroup }

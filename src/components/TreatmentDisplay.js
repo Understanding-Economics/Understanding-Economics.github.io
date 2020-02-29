@@ -10,8 +10,12 @@ export default class TreatmentDisplay extends React.Component {
         if(!this.props.question) {
             return null;
         }
+        // Ugh, more hacky shit. 
+        // Basically we need to adjust the column size based on how many treatment groups there are
+        // But bootstrap is too stupid to figure it out by itself
+        let columnWidth = `col-md-${10 - 2 * this.props.question.questions.length}`;
         let chartViews = this.props.question.questions.map(question => 
-            <div className = "col-md">
+            <div className = {columnWidth}>
                 <TreatmentChartView
                     survey = { this.props.survey } 
                     data = { this.props.data.filter(x => question.treatments.indexOf(x["mechanisms_rando"]) >= 0) }
@@ -25,7 +29,7 @@ export default class TreatmentDisplay extends React.Component {
         let colorPattern = Utils.getColorPattern(this.props.question);
 
         let descriptions = this.props.question.questions.map(question => 
-            <div className = "col-md">
+            <div className = {columnWidth}>
                 <ScrollableDesc
                     title = {question.title}
                     content = {question.description}
@@ -43,10 +47,14 @@ export default class TreatmentDisplay extends React.Component {
                             height = {"100px"}
                         /> 
                     </div>
-                    {descriptions}
+                    <div className = "col-md-9">
+                        <div className = "row">
+                            {descriptions}
+                        </div>
+                    </div>
                 </div>
                 <div className = "row">
-                    <div className = "col-md"></div>
+                    <div className = "col-md-3"></div>
                     <div className = "col-md-9">
                         <ChartLegend 
                             data = { this.props.data }
@@ -64,7 +72,11 @@ export default class TreatmentDisplay extends React.Component {
                             elementId = {`dummy_chart`}
                         />
                     </div>
-                    {chartViews}
+                    <div className = "col-md-9">
+                        <div className = "row">
+                            {chartViews}
+                        </div>
+                    </div>
                 </div>
             </div>
         )
