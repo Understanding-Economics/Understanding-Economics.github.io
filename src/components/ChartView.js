@@ -79,7 +79,10 @@ export default class ChartView extends React.Component {
                         y : {
                             // This is some hacky shit to get rid of the 110% display
                             max : 0.95,
-                            label: "Proportion"
+                            label: "Proportion",
+                            tick : {
+                                format: d3.format(".0%")
+                            }
                         }
                     },
                     ... this.props.c3Override,
