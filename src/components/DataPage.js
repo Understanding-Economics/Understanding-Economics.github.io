@@ -63,7 +63,7 @@ export default class DataPage extends React.Component {
                         <FieldSelect 
                             title = "Group"
                             description = "Select how you would like to group responses"
-                            options = { this.state.selectedQuestion ? this.groups : null }
+                            options = { this.state.selectedTopic ? this.groups : null }
                             selected = {this.state.selectedGroup ? this.state.selectedGroup.id : null}
                             handleSelect = {this.handleGroupSelect}
                         />
