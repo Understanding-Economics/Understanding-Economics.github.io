@@ -11,7 +11,7 @@ export default class TreatmentDisplay extends React.Component {
             return null;
         }
         let chartViews = this.props.question.questions.map(question => 
-            <div className = "col-md-3">
+            <div className = "col-md">
                 <TreatmentChartView
                     survey = { this.props.survey } 
                     data = { this.props.data.filter(x => question.treatments.indexOf(x["mechanisms_rando"]) >= 0) }
@@ -25,7 +25,7 @@ export default class TreatmentDisplay extends React.Component {
         let colorPattern = Utils.getColorPattern(this.props.question);
 
         let descriptions = this.props.question.questions.map(question => 
-            <div className = "col-md-3">
+            <div className = "col-md">
                 <ScrollableDesc
                     title = {question.title}
                     content = {question.description}
@@ -46,7 +46,7 @@ export default class TreatmentDisplay extends React.Component {
                     {descriptions}
                 </div>
                 <div className = "row">
-                    <div className = "col-md-3"></div>
+                    <div className = "col-md"></div>
                     <div className = "col-md-9">
                         <ChartLegend 
                             data = { this.props.data }
