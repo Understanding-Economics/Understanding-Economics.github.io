@@ -110,7 +110,7 @@ export default class DataPage extends React.Component {
         this.setState({
             selectedTopic : this.survey.topics[event.target.value],
             selectedQuestion : undefined,
-            selectedGroup : undefined
+            //selectedGroup : undefined
         })
     }
     

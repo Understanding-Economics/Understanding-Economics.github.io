@@ -7,6 +7,13 @@ const Utils = {
     }, 
 
     // For each group, gets the proportion of each response
+    /**
+     * 
+     * @param {array} data array of dictionaries representing the data
+     * @param {string} groupKey the group that we want proportions for
+     * @param {string} groupVal the specific group value that we want proportions for
+     * @param {string} responseKey the dictionary key of the response variable that we want proportions for
+     */ 
     getProportions : function(data, groupKey, groupVal, responseKey) {
         let responseVals = getUniqueDictVals(data, responseKey, null);
         let filteredData = data.filter(x => x[groupKey] == groupVal);
