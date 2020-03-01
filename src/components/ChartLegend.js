@@ -24,7 +24,7 @@ export default class ChartLegend extends React.PureComponent {
         }}>
             <strong>{val}</strong>
         </div>)
-        return <div className = "row legend centered">
+        return <div className = "row legend" style={{marginLeft: "auto", marginRight: "auto", width:"100%"}}>
             {legendItems}
         </div>
     }

@@ -38,14 +38,14 @@ const Utils = {
             return (a, b) => {
                 if (a == "All") return -1;
                 if (b == "All") return 1;
-                else $.pivotUtilities.sortAs(group.sorter)(a, b);
+                else return $.pivotUtilities.sortAs(group.sorter)(a, b);
             }
         }
         else {
             return (a, b) => { 
                 if (a == "All") return -1;
                 if (b == "All") return 1;
-                else a.localeCompare(b)
+                else return a.localeCompare(b)
             }
         }
     }, 
