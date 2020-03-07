@@ -2,7 +2,10 @@ const DataType =
 {
     CATEGORICAL :  "CATEGORICAL", 
     NUMERIC : "NUMERIC",
-    TREATMENT : "TREATMENT"
+    TREATMENT : "TREATMENT",
+    MULTICHOICE : "MULTICHOICE",
+    KEYNESS : "KEYNESS",
+    WORDCLOUD : "WORDCLOUD"
 }
 
 export default DataType;
