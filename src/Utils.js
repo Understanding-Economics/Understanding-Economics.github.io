@@ -16,7 +16,7 @@ const Utils = {
      * @param {string} responseKey the dictionary key of the response variable that we want proportions for
      */ 
     getProportions : function(data, groupKey, groupVal, responseKey) {
-        let responseVals = this.getUniqueDictVals(data, responseKey, null);
+        let responseVals = this.getUniqueDictVals(data, responseKey, undefined);
         let filteredData = data.filter(x => x[groupKey] == groupVal);
         let countsDict = {}
         for(let val of responseVals) {
