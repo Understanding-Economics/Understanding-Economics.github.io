@@ -3,6 +3,7 @@ import StatBubble from './StatBubble'
 import '../css/NumericDisplay.css'
 import HistogramView from './HistogramView'
 import NumberFormats from '../NumberFormats'
+import Utils from '../Utils'
 
 export default class NumericDisplay extends React.Component {
     constructor() { 
@@ -13,20 +14,7 @@ export default class NumericDisplay extends React.Component {
     }
     render() { 
         let data = this.cleanData(this.props.data);
-        let averages = this.calcAverages(data).sort((a, b) => {
-            if(a.groupVal == "All") {
-                return -1;
-            }
-            else if(b.groupVal == "All") {
-                return 1;
-            }
-            else if(this.props.group.sorter) {
-                return this.props.group.sorter.indexOf(a.groupVal) - this.props.group.sorter.indexOf(b.groupVal);
-            }
-            else {
-                return a.groupVal.localeCompare(b.groupVal);
-            }
-        });
+        let averages = this.calcAverages(data).sort((a, b) => Utils.getGroupSorter(this.props.group)(a.groupVal, b.groupVal));
         let formatter = NumberFormats[this.props.question.format] || (x => x);
         let statBubbles = averages.map(x => 
             <div className = "col-md-3" style={{marginBottom : "10px"}}>
@@ -87,8 +75,7 @@ export default class NumericDisplay extends React.Component {
             });
         }.bind(this);
     }
-
-    // TODO: calculate total average
+    
     calcAverages(data) {
         let acc = {
             All : {
