@@ -7,13 +7,13 @@
         "type" : "CATEGORICAL",
         "sorter" : ["18-29", "30-39", "40-49", "50-59", "60-69"]
       },
-      "income": {
-        "id": "income",
-        "title": "Income",
+      "incomegroup": {
+        "id": "incomegroup",
+        "title": "Income Group",
         "description": "The annual income of the respondent",
         "type" : "CATEGORICAL",
         "sorter" : [
-          "$0-$9999",  "$10000-$14999",  "$15000-$19999",  "$20000-$29999",  "$30000-$39999",  "$40000-$49999",  "$50000-$69999",  "$70000-$89999",  "$90000-$109999",  "$110000-$149999",  "$150000-$199999",  "$200000+"
+          "$0-$19999", "$20000-$39999", "$40000-$69999", "$70000-$109999", "$110000+"
         ]
       },
       "born_us": {
@@ -58,8 +58,8 @@
         "type" : "CATEGORICAL",
         "sorter" : ["Eighth Grade or lower", "Some High School", "High School degree/ GED", "Some College", "2-year College Degree", "4-year College Degree", "Master's Degree", "Professional Degree (JD, MD, MBA)", "Doctoral Degree"]
       },
-      "employment_status": {
-        "id": "employment_status",
+      "employment_agg": {
+        "id": "employment_agg",
         "title": "Employment Status",
         "description": "The current employment status of the respondent.",
         "type" : "CATEGORICAL"
