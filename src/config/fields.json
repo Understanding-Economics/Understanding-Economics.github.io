@@ -160,6 +160,7 @@
                 "description": "What is the top federal personal income tax rate in the U.S.?",
                 "type" : "NUMERIC",
                 "correct" : 37,
+                "source": "News org", 
                 "format" : "percent"
               },
               "Q04010_en": {

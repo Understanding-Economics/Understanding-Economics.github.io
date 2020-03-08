@@ -29,8 +29,9 @@ export default class NumericDisplay extends React.Component {
         );
         let correctDiv = null;
         if(this.props.question.correct != undefined) {
-            correctDiv = <div className = "row header" style={{color:"green", fontSize:"14pt"}}>
-                <strong>Correct Answer: {formatter(this.props.question.correct)}</strong>
+            correctDiv = <div className = "row header">
+                <strong style={{color:"green", fontSize:"14pt"}}>Correct Answer: {formatter(this.props.question.correct)}</strong>
+                <em style={{fontSize:"8pt", marginLeft: "5px", verticalAlign: "bottom"}}>{this.props.question.source ? `  (Source: ${this.props.question.source})` : null}</em>
             </div>
         }
         return (
