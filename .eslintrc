@@ -1,0 +1,6 @@
+{ 
+    "globals" : {
+        "$" : false,
+        "d3" : false
+    }
+}
