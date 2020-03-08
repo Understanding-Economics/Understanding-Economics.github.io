@@ -32,7 +32,7 @@ class App extends React.Component {
     return (
       <Router basename = "/">
         <div className="App container">
-          <h3>Understanding Economics</h3>
+          <h2>Understanding Economics</h2>
           <NavigationBar />
           <Switch>
             <Route exact path="/" component={HomePage}/>
