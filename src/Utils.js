@@ -1,4 +1,6 @@
+/* eslint no-undef: "off"*/
 import Colors from './Colors'
+import $ from 'jquery'
 const Utils = {
     getUniqueDictVals: function(data, key, sorter) {
         let vals = data.map(x => x[key]);
@@ -15,7 +17,7 @@ const Utils = {
      * @param {string} responseKey the dictionary key of the response variable that we want proportions for
      */ 
     getProportions : function(data, groupKey, groupVal, responseKey) {
-        let responseVals = getUniqueDictVals(data, responseKey, null);
+        let responseVals = Utils.getUniqueDictVals(data, responseKey, null);
         let filteredData = data.filter(x => x[groupKey] == groupVal);
         let countsDict = {}
         for(let val of responseVals) {

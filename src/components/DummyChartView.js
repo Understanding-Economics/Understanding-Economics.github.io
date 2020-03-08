@@ -1,3 +1,4 @@
+/* eslint no-undef: "off"*/
 import React from 'react'
 import Utils from '../Utils'
 
