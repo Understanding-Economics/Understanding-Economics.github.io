@@ -12,6 +12,7 @@
     "react-scripts": "^3.3.0"
   },
   "devDependencies": {
+    "deepmerge": "^4.2.2",
     "web-pack": "^1.0.0"
   },
   "homepage": "https://understanding-economics.github.io/",

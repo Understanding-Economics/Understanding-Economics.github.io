@@ -4,6 +4,7 @@ import DataView from './DataView'
 import Colors from '../Colors'
 import '../css/ChartView.css'
 import Utils from '../Utils'
+import merge from 'deepmerge'
 
 export default class ChartView extends React.Component { 
     render() {
@@ -19,83 +20,78 @@ export default class ChartView extends React.Component {
 
     renderChart(elementId, selectedGroup, selectedQuestion, data) {
         let cleanData = data.map(x => {
-            let newX = {};
-            newX[selectedGroup.title] = x[selectedGroup.id] || " No response"
-            newX["response"] = x[selectedQuestion.id] || " No response";
-            return newX;
-        })
-
-        let proportions = Utils.getProportions(data, selectedGroup.id, "All", selectedQuestion.id);
-        let allData = data.map(x => {
             return {
-                [selectedGroup.title] : "All",
-                "response" : x[selectedQuestion.id]
-            }
-        })
-        let sorters = {
-            [selectedGroup.title] : Utils.getGroupSorter(selectedGroup),
-            "response" : Utils.getQuestionSorter(selectedQuestion)
-        }
-        /*if(selectedGroup.sorter) {
-            sorters[selectedGroup.title] = (a, b) => {
-                if (a == "All") return -1;
-                if (b == "All") return 1;
-                else $.pivotUtilities.sortAs(selectedGroup.sorter)(a, b);
-            }
-        }
-        else {
-            sorters[selectedGroup.title] = (a, b) => { 
-                if (a == "All") return -1;
-                if (b == "All") return 1;
-                else a.localeCompare(b)
-            }
-        }
-        if(selectedQuestion.sorter) {
-            sorters["response"] = $.pivotUtilities.sortAs(selectedQuestion.sorter);
-        }
-        else {
-            sorters["response"] = (a, b) => a.localeCompare(b);
-        }*/
-        let colorPattern = Utils.getColorPattern(selectedQuestion);
-
-        
-        $(`#${elementId}`).pivot([...allData, ...cleanData], {
-            rows : [selectedGroup.title],
-            cols: ["response"],
-            aggregator: $.pivotUtilities.aggregators["Count as Fraction of Rows"](),
-            renderer: $.pivotUtilities.c3_renderers["Horizontal Stacked Bar Chart"],
-            sorters : sorters,
-            rendererOptions : {
-                c3 :{ 
-                    size : {
-                        width: $(`#${elementId}`).parent().width()
-                    }, 
-                    color : {
-                        pattern : colorPattern || Colors.Categorical
-                    },
-                    legend : {
-                        item : {
-                            onclick : function() {}
-                        }
-                    },
-                    axis : {
-                        y : {
-                            // This is some hacky shit to get rid of the 110% display
-                            max : 0.95,
-                            label: "Proportion",
-                            tick : {
-                                format: d3.format(".0%")
-                            }
-                        }
-                    },
-                    ... this.props.c3Override,
-                }
-            }
+                [selectedGroup.id]: x[selectedGroup.id] || " No response",
+                [selectedQuestion.id]: x[selectedQuestion.id] || " No response"
+            };
         });
+        let groupSorter = Utils.getGroupSorter(selectedGroup);
+        let responseSorter = Utils.getQuestionSorter(selectedQuestion)
+        let colorPattern = Utils.getColorPattern(selectedQuestion);
+        let groupVals = ["All"].concat(Utils.getUniqueDictVals(cleanData, selectedGroup.id, groupSorter));
+        let responseVals = Utils.getUniqueDictVals(cleanData, selectedQuestion.id, responseSorter);
+        let proportions = {}
+        for(let groupVal of groupVals) {
+            proportions[groupVal] = Utils.getProportions(cleanData, selectedGroup.id, 
+                groupVal, selectedQuestion.id, responseSorter); 
+        }
+        let chartData = responseVals.map(responseVal => {
+            return [responseVal, ... groupVals.map(x => proportions[x][responseVal])]
+        });
+
+        const barWidth = 75;
+        console.log(chartData);
+        let chart = c3.generate(merge.all([{
+            bindto: `#${elementId}`,
+            data : { 
+                columns: chartData,
+                groups : [responseVals],
+                type : "bar", 
+                order: null
+            },
+            size : {
+                width: $(`#${elementId}`).parent().width()
+            }, 
+            color : {
+                pattern : colorPattern || Colors.Categorical
+            },
+            legend : {
+                item : {
+                    onclick : function() {}
+                }
+            },
+            tooltip: {
+                grouped : false
+            }, 
+            bar : {
+                width:{ 
+                    ratio: 0.75
+                }
+
+            }, 
+            size : {
+                height: groupVals.length * barWidth
+            },
+            axis : {
+                rotated : true, 
+                x : {
+                    type: "category", 
+                    categories: groupVals
+                }, 
+                y : {
+                    // This is some hacky shit to get rid of the 110% display
+                    max : 0.95,
+                    label: "Proportion",
+                    tick : {
+                        format: d3.format(".0%")
+                    }
+                }
+            },
+        }, this.props.c3Override || {}]));
         for(let elt of document.getElementsByClassName("c3-axis-y-label")) {
             elt.innerHTML = "Proportion";
         }
-        document.getElementById(elementId).getElementsByTagName("p")[0].remove();
+        // document.getElementById(elementId).getElementsByTagName("p")[0].remove();
         let ChartLabel = document.getElementById("ChartLabel");
         if (ChartLabel) {
             ChartLabel.style.height = document.getElementsByClassName("c3-event-rect")[0].height.baseVal.value + "px";

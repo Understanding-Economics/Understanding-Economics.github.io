@@ -5,6 +5,7 @@ export default class TreatmentChartView extends React.Component {
     render() { 
         let c3Overrides = { 
             axis : {
+                rotated : true, 
                 x : {
                     show : false
                 }, 
