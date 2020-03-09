@@ -15,7 +15,7 @@ const Utils = {
      * @param {string} groupVal the specific group value that we want proportions for
      * @param {string} responseKey the dictionary key of the response variable that we want proportions for
      */
-     getProportions : function(data, groupKey, groupVal, responseKey){
+     /* getProportions : function(data, groupKey, groupVal, responseKey){
        var final_result = [];
        var unique_rkeys = [];
 
@@ -53,16 +53,23 @@ const Utils = {
 
          return final_result;
 
-     },
-    // getProportions : function(data, groupKey, groupVal, responseKey) {
-    //     let responseVals = this.getUniqueDictVals(data, responseKey, undefined);
-    //     let filteredData = data.filter(x => x[groupKey] == groupVal);
-    //     let countsDict = {}
-    //     for(let val of responseVals) {
-    //         countsDict[val] = 0;
-    //     }
-    //
-    // },
+     },*/
+    getProportions : function(data, groupKey, groupVal, responseKey) {
+         let responseVals = this.getUniqueDictVals(data, responseKey, undefined);
+         let filteredData = data.filter(x => (x[groupKey] == groupVal || groupVal == "All") && x[responseKey] != undefined);
+         let countsDict = {}
+         for(let val of responseVals) {
+             countsDict[val] = 0;
+         }
+
+         let total = filteredData.length;
+         filteredData.forEach(x => countsDict[x[responseKey]]++);
+         let propsDict = {};
+         for(let val of responseVals){ 
+             propsDict[val] = countsDict[val] / total;
+         }
+         return propsDict;
+    },
 
     getQuestionSorter: function(question) {
         if(question.sorter) {

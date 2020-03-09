@@ -25,7 +25,7 @@ export default class ChartView extends React.Component {
             return newX;
         })
 
-        let proportions = Utils.getProportions(data, selectedGroup.id, data[0][selectedGroup.id], selectedQuestion.id);
+        let proportions = Utils.getProportions(data, selectedGroup.id, "All", selectedQuestion.id);
         console.log("PROPORTIONS: ");
         console.log(proportions);
         let allData = data.map(x => {
