@@ -6,8 +6,18 @@ import ChartLegend from './ChartLegend'
 import Utils from '../Utils';
 
 export default class TreatmentDisplay extends React.Component { 
+    constructor(props) {
+        super(props);
+        this.state = {
+            charts : [] 
+        };
+        this.charts = []
+        this.receiveChart = this.receiveChart.bind(this);
+    }
+
     render() {
         if(!this.props.question) {
+            this.charts = []
             return null;
         }
         // Ugh, more hacky shit. 
@@ -22,6 +32,7 @@ export default class TreatmentDisplay extends React.Component {
                     selectedGroup = { this.props.group }
                     selectedQuestion = { {color: this.props.question.color, sorter: this.props.question.sorter, ...question} }
                     elementId = {`${question.title}_chart`}
+                    receiveChart = {this.receiveChart}
                 />
             </div>
         )
@@ -59,6 +70,7 @@ export default class TreatmentDisplay extends React.Component {
                         <ChartLegend 
                             data = { this.props.data }
                             question = { this.props.question }
+                            charts = { this.state.charts }
                         />
                     </div>
                 </div>
@@ -80,5 +92,14 @@ export default class TreatmentDisplay extends React.Component {
                 </div>
             </div>
         )
+    }
+
+    receiveChart(chart) {
+        this.charts.push(chart);
+        if(this.charts.length == this.props.question.questions.length) {
+            this.setState({
+                charts : this.charts
+            })
+        }
     }
 }

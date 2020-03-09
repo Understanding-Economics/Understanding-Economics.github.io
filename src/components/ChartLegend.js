@@ -10,17 +10,31 @@ export default class ChartLegend extends React.PureComponent {
         let colorPattern = Utils.getColorPattern(this.props.question); 
         let responses = Utils.getUniqueDictVals(this.props.data, this.props.question.id, 
                             Utils.getQuestionSorter(this.props.question));
-        
         let legendItems = responses.map((val, i) => 
         <div className = "col-md text-center card unselectable"
-        style = {{
-            color : "black",
-            backgroundColor: colorPattern[i],
-            margin: "3px",
-            fontSize : "13px",
-            minHeight: "30px",
-            maxWidth: "33%", 
-            padding: "3px"
+            onMouseOver={() => {
+                console.log("MOUSE OVER!")
+                if(this.props.charts){
+                    for(let chart of this.props.charts) {
+                        chart.focus(val);
+                    }
+                }
+            }}
+            onMouseLeave={() => {
+                if(this.props.charts){
+                    for(let chart of this.props.charts) {
+                        chart.revert();
+                    }
+                }
+            }}
+            style = {{
+                color : "black",
+                backgroundColor: colorPattern[i],
+                margin: "3px",
+                fontSize : "13px",
+                minHeight: "30px",
+                maxWidth: "33%", 
+                padding: "3px"
         }}>
             <strong>{val}</strong>
         </div>)

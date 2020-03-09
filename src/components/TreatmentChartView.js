@@ -1,7 +1,7 @@
 import React from 'react'
 import ChartView from './ChartView'
 
-export default class TreatmentChartView extends React.Component {
+export default class TreatmentChartView extends React.PureComponent {
     render() { 
         let c3Overrides = { 
             axis : {
@@ -12,6 +12,9 @@ export default class TreatmentChartView extends React.Component {
                 y : {
                     show : false
                 }
+            },
+            padding : {
+                left: 0
             }
         }
 
@@ -22,6 +25,7 @@ export default class TreatmentChartView extends React.Component {
             selectedQuestion = { this.props.selectedQuestion }
             elementId = { this.props.elementId }
             c3Override = { c3Overrides }
+            receiveChart = { this.props.receiveChart }
         />
     }
 }

@@ -6,7 +6,7 @@ import '../css/ChartView.css'
 import Utils from '../Utils'
 import merge from 'deepmerge'
 
-export default class ChartView extends React.Component { 
+export default class ChartView extends React.PureComponent { 
     render() {
         return <DataView
                     elementId = {this.props.elementId || "chart"}
@@ -40,7 +40,6 @@ export default class ChartView extends React.Component {
         });
 
         const barWidth = 75;
-        console.log(chartData);
         let chart = c3.generate(merge.all([{
             bindto: `#${elementId}`,
             data : { 
@@ -58,7 +57,11 @@ export default class ChartView extends React.Component {
             legend : {
                 item : {
                     onclick : function() {}
-                }
+                }, 
+                show: false
+            },
+            padding : {
+                left : 150
             },
             tooltip: {
                 grouped : false
@@ -95,6 +98,9 @@ export default class ChartView extends React.Component {
         let ChartLabel = document.getElementById("ChartLabel");
         if (ChartLabel) {
             ChartLabel.style.height = document.getElementsByClassName("c3-event-rect")[0].height.baseVal.value + "px";
+        }
+        if(this.props.receiveChart) {
+            this.props.receiveChart(chart); 
         }
     }
 }

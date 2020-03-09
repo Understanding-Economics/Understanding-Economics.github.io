@@ -4,6 +4,11 @@ import ChartView from './ChartView'
 import ChartLegend from './ChartLegend'
 
 export default class CategoricalDisplay extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {}
+        this.receiveChart = this.receiveChart.bind(this);
+    }
     render() {
         return (
             <div className = "CategoricalDisplay">
@@ -14,6 +19,7 @@ export default class CategoricalDisplay extends React.Component {
                     <ChartLegend 
                         data = { this.props.data }
                         question = { this.props.question }
+                        charts = { [this.state.chart] }
                     />
                 </div>
                 <div className = "row">
@@ -22,6 +28,7 @@ export default class CategoricalDisplay extends React.Component {
                         data = { this.props.data }
                         selectedGroup = { this.props.group }
                         selectedQuestion = { this.props.question }
+                        receiveChart = { this.receiveChart }
                     />
                 </div>
                 <div className = "row">
@@ -34,6 +41,12 @@ export default class CategoricalDisplay extends React.Component {
                 </div>
             </div>
         )
+    }
+
+    receiveChart(chart) {
+        this.setState({
+            chart : chart
+        })
     }
 
     cleanData(data) {
