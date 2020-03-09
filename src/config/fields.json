@@ -237,6 +237,7 @@
                 "title": "Tax Share Fairness (Specific)",
                 "description": "How fair the respondent thinks the tax system is, depending on their treatment",
                 "type" : "TREATMENT",
+                "sorter" : ["Pay much less than fair share", "Pay less than fair share", "Pay fair share", "Pay more than fair share", "Pay much more than fair share"], 
                 "questions" : [
                   {
                     "id" : "Q07003_en",
