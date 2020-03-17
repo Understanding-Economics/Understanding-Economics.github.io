@@ -6,11 +6,21 @@ import { surveys, groups } from '../config/fields.json'
 import NotFound from './NotFound'
 import DataDisplay from './DataDisplay'
 import incomeSurveyData from './../json_data/data_income_survey.json'
+import DataType from '../DataType'
 
 // This is to cache the CSV data so that we are not consistently pinging the server for it.
 var dataCache = {
     "income_survey" : incomeSurveyData
 };
+
+// Datatypes that should not allow groups
+const noGroupTypes = [
+    DataType.KEYNESS,
+    DataType.WORDCLOUD,
+    DataType.MULTICHOICE
+]
+
+
 export default class DataPage extends React.Component {
     constructor() {
         super();
@@ -63,7 +73,7 @@ export default class DataPage extends React.Component {
                         <FieldSelect 
                             title = "Group"
                             description = "Select how you would like to group responses"
-                            options = { this.state.selectedTopic ? this.groups : null }
+                            options = { this.state.selectedTopic && !(this.state.selectedQuestion.type in noGroupTypes) ? this.groups : null }
                             selected = {this.state.selectedGroup ? this.state.selectedGroup.id : null}
                             handleSelect = {this.handleGroupSelect}
                         />
