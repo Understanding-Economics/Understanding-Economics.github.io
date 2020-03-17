@@ -69,15 +69,19 @@ export default class DataPage extends React.Component {
                             handleSelect = {this.handleQuestionSelect}
                         />
                     </div>
-                    <div className = "col-md-4">
-                        <FieldSelect 
-                            title = "Group"
-                            description = "Select how you would like to group responses"
-                            options = { this.state.selectedTopic && !(this.state.selectedQuestion.type in noGroupTypes) ? this.groups : null }
-                            selected = {this.state.selectedGroup ? this.state.selectedGroup.id : null}
-                            handleSelect = {this.handleGroupSelect}
-                        />
-                    </div>
+                    {
+                        this.displayGroupSelect() ? 
+                        <div className = "col-md-4">
+                            <FieldSelect 
+                                title = "Group"
+                                description = "Select how you would like to group responses"
+                                options = { this.groups }
+                                selected = {this.state.selectedGroup ? this.state.selectedGroup.id : null}
+                                handleSelect = {this.handleGroupSelect}
+                            />
+                        </div> 
+                        : null
+                    }
                 </div>
                 
                 <DataDisplay
@@ -88,6 +92,16 @@ export default class DataPage extends React.Component {
                 />
             </div>
         )
+    }
+    // decide whether to display the group
+    displayGroupSelect() {
+        if (!this.state.selectedTopic) {
+            return false;
+        }
+        if (this.state.selectedQuestion && this.state.selectedQuestion.type && this.state.selectedQuestion.type in noGroupTypes){
+            return false;
+        } 
+        return true
     }
 
     componentDidMount() {

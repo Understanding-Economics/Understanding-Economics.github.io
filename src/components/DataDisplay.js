@@ -4,6 +4,9 @@ import DataType from '../DataType'
 import CategoricalDisplay from './CategoricalDisplay'
 import NumericDisplay from './NumericDisplay'
 import TreatmentDisplay from './TreatmentDisplay'
+import KeynessDisplay from './KeynessDisplay'
+import WordcloudDisplay from './WordcloudDisplay'
+import MultichoiceDisplay from './MultichoiceDisplay'
 
 export default class DataDisplay extends React.Component {
     render() {
@@ -36,6 +39,8 @@ export default class DataDisplay extends React.Component {
                     group = { this.props.selectedGroup }
                     question = { this.props.selectedQuestion }
                 />
+                break;
+            case DataType.KEYNESS: 
                 break;
             default: 
                 throw new Error(`Invalid data type for ${ this.props.selectedQuestion.id}`)
