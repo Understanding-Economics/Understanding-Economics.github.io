@@ -16,7 +16,7 @@ export default class TreatmentDisplay extends React.Component {
     }
 
     render() {
-        if(!this.props.question) {
+        if(!this.props.question || !this.props.group) {
             this.charts = []
             return null;
         }

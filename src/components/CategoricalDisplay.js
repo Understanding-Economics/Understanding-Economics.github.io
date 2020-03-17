@@ -10,6 +10,9 @@ export default class CategoricalDisplay extends React.Component {
         this.receiveChart = this.receiveChart.bind(this);
     }
     render() {
+        if(!this.props.question || !this.props.group) {
+            return null;
+        }
         return (
             <div className = "CategoricalDisplay">
                 <div className = "row header">

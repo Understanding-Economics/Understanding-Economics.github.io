@@ -69,9 +69,9 @@ export default class DataPage extends React.Component {
                             handleSelect = {this.handleQuestionSelect}
                         />
                     </div>
-                    {
-                        this.displayGroupSelect() ? 
-                        <div className = "col-md-4">
+                    <div className = "col-md-4">
+                        {
+                            this.displayGroupSelect() ?
                             <FieldSelect 
                                 title = "Group"
                                 description = "Select how you would like to group responses"
@@ -79,9 +79,9 @@ export default class DataPage extends React.Component {
                                 selected = {this.state.selectedGroup ? this.state.selectedGroup.id : null}
                                 handleSelect = {this.handleGroupSelect}
                             />
-                        </div> 
-                        : null
-                    }
+                            : null
+                        }
+                    </div> 
                 </div>
                 
                 <DataDisplay
@@ -94,10 +94,14 @@ export default class DataPage extends React.Component {
     }
     // decide whether to display the group
     displayGroupSelect() {
+        console.log()
         if (!this.state.selectedTopic) {
             return false;
         }
-        if (this.state.selectedQuestion && this.state.selectedQuestion.type && this.state.selectedQuestion.type in noGroupTypes){
+        if(!this.state.selectedQuestion && !this.state.selectedGroup) {
+            return false;
+        }
+        if (this.state.selectedQuestion && this.state.selectedQuestion.type && noGroupTypes.includes(this.state.selectedQuestion.type)){
             return false;
         } 
         return true

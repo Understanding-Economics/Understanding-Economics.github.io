@@ -13,6 +13,9 @@ export default class NumericDisplay extends React.Component {
         };
     }
     render() { 
+        if(!this.props.question || !this.props.group) {
+            return null;
+        }
         let data = this.cleanData(this.props.data);
         let averages = this.calcAverages(data).sort((a, b) => Utils.getGroupSorter(this.props.group)(a.groupVal, b.groupVal));
         let formatter = NumberFormats[this.props.question.format] || (x => x);

@@ -12,7 +12,7 @@ export default class DataDisplay extends React.Component {
     render() {
         let question = this.props.selectedQuestion;
         let specificDisplay = null;
-        if(!question || !this.props.selectedGroup) {
+        if(!question /* || !this.props.selectedGroup*/) {
             return null;
         }
         switch(question.type) {
@@ -38,7 +38,8 @@ export default class DataDisplay extends React.Component {
                 />
                 break;
             case DataType.KEYNESS: 
-                specificDisplay = <DataDisplay 
+                specificDisplay = <KeynessDisplay 
+                    question = { this.props.selectedQuestion }
                 />
                 break;
             default: 
