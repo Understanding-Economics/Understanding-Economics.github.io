@@ -42,6 +42,11 @@ export default class DataDisplay extends React.Component {
                     question = { this.props.selectedQuestion }
                 />
                 break;
+            case DataType.WORDCLOUD:
+                specificDisplay = <WordcloudDisplay
+                    question = { this.props.selectedQuestion }
+                />
+                break;
             default: 
                 throw new Error(`Invalid data type for ${ this.props.selectedQuestion.id}`)
 
