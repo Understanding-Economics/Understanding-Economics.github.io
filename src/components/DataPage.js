@@ -85,7 +85,6 @@ export default class DataPage extends React.Component {
                 </div>
                 
                 <DataDisplay
-                    survey = { this.survey } 
                     data = { this.state.surveyData }
                     selectedGroup = { this.state.selectedGroup }
                     selectedQuestion = { this.state.selectedQuestion } 

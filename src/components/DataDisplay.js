@@ -18,7 +18,6 @@ export default class DataDisplay extends React.Component {
         switch(question.type) {
             case DataType.CATEGORICAL:
                 specificDisplay = <CategoricalDisplay 
-                    survey = { this.props.survey }
                     data = { this.props.data }
                     group = { this.props.selectedGroup }
                     question = { this.props.selectedQuestion }
@@ -26,7 +25,6 @@ export default class DataDisplay extends React.Component {
                 break;
             case DataType.NUMERIC:
                 specificDisplay = <NumericDisplay
-                    survey = { this.props.survey }
                     data = { this.props.data }
                     group = { this.props.selectedGroup }
                     question = { this.props.selectedQuestion }
@@ -34,13 +32,14 @@ export default class DataDisplay extends React.Component {
                 break;
             case DataType.TREATMENT:
                 specificDisplay =  <TreatmentDisplay
-                    survey = { this.props.survey }
                     data = { this.props.data }
                     group = { this.props.selectedGroup }
                     question = { this.props.selectedQuestion }
                 />
                 break;
             case DataType.KEYNESS: 
+                specificDisplay = <DataDisplay 
+                />
                 break;
             default: 
                 throw new Error(`Invalid data type for ${ this.props.selectedQuestion.id}`)
