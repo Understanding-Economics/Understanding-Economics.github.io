@@ -142,8 +142,11 @@ export default class DataPage extends React.Component {
     }
     
     handleQuestionSelect(event) {
+        let selectedQuestion = this.state.selectedTopic.questions[event.target.value];
         this.setState({
-            selectedQuestion : this.state.selectedTopic.questions[event.target.value]
+            selectedQuestion : selectedQuestion,
+            selectedGroup : noGroupTypes.includes(selectedQuestion.type) ?
+                                null : this.state.selectedGroup
         })
     }
 }
