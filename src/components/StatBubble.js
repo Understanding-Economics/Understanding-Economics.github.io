@@ -7,7 +7,11 @@ export default class StatBubble extends React.PureComponent {
         return (
             <a href="#" className = {classNames} onClick = { (e) => {e.preventDefault(); this.props.handleClick()} }>
                 <strong className = "BubbleTitle">{this.props.title}</strong>
-                {this.props.formatter ? this.props.formatter(this.props.stat.toFixed(0)) : this.props.stat.toFixed(0)}
+                {
+                    this.props.stat ? 
+                    (this.props.formatter ? this.props.formatter(this.props.stat.toFixed(0)) : this.props.stat.toFixed(0)) :
+                    null
+                }
             </a>
         )
     }
