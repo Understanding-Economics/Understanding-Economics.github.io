@@ -1,4 +1,6 @@
 import React from 'react'
+import StatBubble from './StatBubble'
+import DataDisplay from './DataDisplay'
 
 export default class UmbrellaDisplay extends React.Component {
     constructor(){
@@ -8,7 +10,11 @@ export default class UmbrellaDisplay extends React.Component {
         }
     }
     render() {
+        if(!this.props.group) {
+            return null;
+        }
         let subquestions = this.props.question.questions;
+        let selectedQuestion = this.state.question || subquestions[0];
         if(subquestions == undefined) {
             throw new Error("No subquestions for Umbrella display")
         }
@@ -16,7 +22,7 @@ export default class UmbrellaDisplay extends React.Component {
             <div className = "col-md-3" style={{marginBottom : "10px"}}>
                 <StatBubble
                     title = { question.title }
-                    active = { question == this.state.question }
+                    active = { question == selectedQuestion }
                     handleClick = { (() => this.handleClick(question)).bind(this) }
                 />
             </div>    
@@ -25,12 +31,15 @@ export default class UmbrellaDisplay extends React.Component {
         return (
             <div className = "UmbrellaDisplay">
                 <div className = "row">
+                    <h5>{ this.props.question.description }</h5>
+                </div>
+                <div className = "row">
                     { bubbles }
                 </div>
                 <DataDisplay
                     data = { this.props.data }
                     selectedGroup = { this.props.group }
-                    selectedQuestion = { this.state.question }
+                    selectedQuestion = { selectedQuestion }
                 />
             </div>
         )

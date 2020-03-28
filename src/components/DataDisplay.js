@@ -6,7 +6,7 @@ import NumericDisplay from './NumericDisplay'
 import TreatmentDisplay from './TreatmentDisplay'
 import KeynessDisplay from './KeynessDisplay'
 import WordcloudDisplay from './WordcloudDisplay'
-import MultichoiceDisplay from './MultichoiceDisplay'
+import UmbrellaDisplay from './UmbrellaDisplay'
 
 export default class DataDisplay extends React.Component {
     render() {
@@ -44,6 +44,13 @@ export default class DataDisplay extends React.Component {
                 break;
             case DataType.WORDCLOUD:
                 specificDisplay = <WordcloudDisplay
+                    question = { this.props.selectedQuestion }
+                />
+                break;
+            case DataType.UMBRELLA:
+                specificDisplay = <UmbrellaDisplay 
+                    data = { this.props.data }
+                    group = { this.props.selectedGroup }
                     question = { this.props.selectedQuestion }
                 />
                 break;

@@ -5,7 +5,8 @@ const DataType =
     TREATMENT : "TREATMENT",
     MULTICHOICE : "MULTICHOICE",
     KEYNESS : "KEYNESS",
-    WORDCLOUD : "WORDCLOUD"
+    WORDCLOUD : "WORDCLOUD",
+    UMBRELLA : "UMBRELLA"
 }
 
 export default DataType;
