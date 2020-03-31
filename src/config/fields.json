@@ -330,7 +330,7 @@
           "Tax Change Behavior": {
             "id": "Tax Change Behavior",
             "title": "Tax Change Behavior",
-            "description": "CONTROL. If the federal personal income tax rate were to increase for the rich- est people in the economy, to what extent would it encourage them towards the following behaviors?<br/>YOU. If your federal personal income tax rate were to increase, to what extent would it encourage you towards the following behaviors?<br/>GENDER. If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman towards the following behaviors?",
+            "description": "How tax changes affect behavior",
             "questions": {
               "Q060001" : {
                 "id" : "Q060001",
