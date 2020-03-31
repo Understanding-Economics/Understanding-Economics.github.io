@@ -16,7 +16,8 @@ export default class CategoricalDisplay extends React.Component {
         return (
             <div className = "CategoricalDisplay">
                 <div className = "row header">
-                    <h5>Proportion of responses to "<strong>{this.props.question.description}</strong>" <br/> <br/> by "<strong>{this.props.group.title}</strong>"</h5>
+                    <h5>Proportion of responses to "<strong>{this.props.question.description}</strong>" <br/> <br/> 
+                    By <strong>{this.props.group.title}</strong></h5>
                 </div>
                 <div className = "row" style = {{paddingLeft:"20px"}}>
                     <ChartLegend 

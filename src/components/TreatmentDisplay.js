@@ -51,6 +51,14 @@ export default class TreatmentDisplay extends React.Component {
         return(
             <div className = "TreatmentDisplay">
                 <div className = "row">
+                    <h5>
+                        Responses to <strong>{this.props.question.title}</strong> by treatment. <br/><br/>
+
+                        Grouped by <strong>{this.props.group.title}</strong>
+
+                    </h5>
+                </div>
+                <div className = "row">
                     <div className = "col-md-3">
                         <ScrollableDesc
                             title = {this.props.group.title }
