@@ -2,11 +2,14 @@ import React from 'react'
 import CrossTabView from './CrossTabView'
 import ChartView from './ChartView'
 import ChartLegend from './ChartLegend'
+import '../css/CategoricalDisplay.css'
 
 export default class CategoricalDisplay extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {
+            showTable : false
+        }
         this.receiveChart = this.receiveChart.bind(this);
     }
     render() {
@@ -35,13 +38,21 @@ export default class CategoricalDisplay extends React.Component {
                         receiveChart = { this.receiveChart }
                     />
                 </div>
-                <div className = "row">
-                    <CrossTabView
-                        survey = { this.props.survey } 
-                        data = { this.props.data }
-                        selectedGroup = { this.props.group }
-                        selectedQuestion = { this.props.question }
-                    />
+
+                <div className = "row text-center">
+                    <button onClick = {this.toggleTable.bind(this)} className = "btn btn-info toggleButton">
+                        {this.state.showTable ? "Hide" : "Show"} answer distribution table
+                    </button>
+                </div>
+                <div className = "row" style = {{minHeight: "50px", marginBottom: "30px"}}>
+                    { this.state.showTable ? 
+                        <CrossTabView
+                            survey = { this.props.survey } 
+                            data = { this.props.data }
+                            selectedGroup = { this.props.group }
+                            selectedQuestion = { this.props.question }
+                        /> : null
+                    } 
                 </div>
             </div>
         )
@@ -51,6 +62,12 @@ export default class CategoricalDisplay extends React.Component {
         this.setState({
             chart : chart
         })
+    }
+
+    toggleTable() {
+        this.setState ({ 
+            showTable : !this.state.showTable
+        });
     }
 
     cleanData(data) {
