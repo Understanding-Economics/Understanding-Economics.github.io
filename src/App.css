@@ -1,5 +1,6 @@
 .App { 
     padding: 10px;
+    color: dimgray !important;
 }
 
 .scrolling {
@@ -32,3 +33,4 @@ h4 {
 .nowrap {
     white-space: nowrap;
   }
+

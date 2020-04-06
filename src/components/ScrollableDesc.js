@@ -6,7 +6,7 @@ export default class ScrollableDesc extends React.PureComponent {
             minHeight : this.props.minHeight,
             maxHeight : this.props.maxHeight,
             height : this.props.height,
-            padding : "5px"
+            paddingRight: "10px"
         }
         return (
             <div>
