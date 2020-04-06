@@ -330,7 +330,7 @@
           "Tax Change Behavior": {
             "id": "Tax Change Behavior",
             "title": "Tax Change Behavior",
-            "description": "How tax changes affect behavior",
+            "description": "Questions on how tax changes affect behavior",
             "questions": {
               "Q060001" : {
                 "id" : "Q060001",
