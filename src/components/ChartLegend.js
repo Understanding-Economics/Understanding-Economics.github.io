@@ -13,7 +13,6 @@ export default class ChartLegend extends React.PureComponent {
         let legendItems = responses.map((val, i) => 
         <div className = "col-md text-center card unselectable"
             onMouseOver={() => {
-                console.log("MOUSE OVER!")
                 if(this.props.charts){
                     for(let chart of this.props.charts) {
                         chart.focus(val);
@@ -34,7 +33,9 @@ export default class ChartLegend extends React.PureComponent {
                 fontSize : "13px",
                 minHeight: "30px",
                 maxWidth: "33%", 
-                padding: "3px"
+                padding: "3px",
+                marginLeft: i == 0 ? "auto" : "3px", 
+                marginRight: i == responses.length - 1 ? "auto" : "3px"
         }}>
             <strong>{val}</strong>
         </div>)

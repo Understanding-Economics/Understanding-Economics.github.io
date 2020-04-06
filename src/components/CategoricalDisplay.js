@@ -40,7 +40,7 @@ export default class CategoricalDisplay extends React.Component {
                 </div>
 
                 <div className = "row text-center">
-                    <button onClick = {this.toggleTable.bind(this)} className = "btn btn-info toggleButton">
+                    <button onClick = {this.toggleTable.bind(this)} className = "card toggleButton">
                         {this.state.showTable ? "Hide" : "Show"} answer distribution table
                     </button>
                 </div>
