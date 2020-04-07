@@ -44,7 +44,7 @@ export default class TreatmentDisplay extends React.Component {
                 <ScrollableDesc
                     title = {question.title}
                     content = {question.description}
-                    height = {"100px"}
+                    maxHeight = {"140px"}
                 />
             </div>
             )
