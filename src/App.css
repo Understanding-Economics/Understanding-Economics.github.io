@@ -3,6 +3,10 @@
     color: dimgray !important;
 }
 
+span {
+    white-space: pre-wrap !important;
+}
+
 .scrolling {
     overflow-y: scroll;
 }

@@ -5,12 +5,18 @@ import FieldSelect from './FieldSelect'
 import { surveys, groups } from '../config/fields.json'
 import NotFound from './NotFound'
 import DataDisplay from './DataDisplay'
-import incomeSurveyData from './../json_data/data_income_survey.json'
+import incomeSurveyData from './../json_data/data_income.json'
+import tradeSurveyData from './../json_data/data_trade.json'
+import estateSurveyData from './../json_data/data_estate.json'
+import healthSurveyData from './../json_data/data_health.json'
 import DataType from '../DataType'
 
 // This is to cache the CSV data so that we are not consistently pinging the server for it.
 var dataCache = {
-    "income_survey" : incomeSurveyData
+    "income_survey" : incomeSurveyData,
+    "trade_survey" : tradeSurveyData, 
+    "estate_survey" : estateSurveyData,
+    "health_survey" : healthSurveyData 
 };
 
 // Datatypes that should not allow groups
@@ -42,6 +48,7 @@ export default class DataPage extends React.Component {
     }
 
     render() {
+        console.log(this.survey)
         if(!this.survey) {
             return <NotFound />
         }
@@ -73,7 +80,7 @@ export default class DataPage extends React.Component {
                         {
                             this.displayGroupSelect() ?
                             <FieldSelect 
-                                title = "Group"
+                                title = "Group by"
                                 description = "Select how you would like to group responses"
                                 options = { this.groups }
                                 selected = {this.state.selectedGroup ? this.state.selectedGroup.id : null}

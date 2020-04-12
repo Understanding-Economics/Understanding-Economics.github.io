@@ -40,12 +40,14 @@ export default class HistogramView extends React.Component {
                             .map(x => Number(x[selectedQuestion.id]));
 
         let nticks = 15; 
+        let correctList = selectedQuestion.correct ? [selectedQuestion.correct] : [];
+        let dataWithCorrect = dataNumeric.concat(correctList);
         let scale = d3.scaleLinear()
-                        .domain([d3.min(dataNumeric), d3.max(dataNumeric)])
-                        .range([d3.min(dataNumeric), d3.max(dataNumeric)]);
+                        .domain([d3.min(dataWithCorrect), d3.max(dataWithCorrect)])
+                        .range([d3.min(dataWithCorrect), d3.max(dataWithCorrect)]);
 
         let histogram = d3.histogram()
-                            .domain([d3.min(dataNumeric), d3.max(dataNumeric)])
+                            .domain([d3.min(dataWithCorrect), d3.max(dataWithCorrect)])
                             .thresholds(scale.ticks(nticks));
         
         let bins = histogram(cleanData);
@@ -63,7 +65,7 @@ export default class HistogramView extends React.Component {
                 },
                 grid : {
                     x: {
-                        lines : (selectedQuestion.correct ? 
+                        lines : (correctBin ? 
                                 [{
                                     value : `${correctBin["x0"]}-${correctBin["x1"]}`, 
                                     text : `Correct: ${this.props.formatter(selectedQuestion.correct)}`, 
