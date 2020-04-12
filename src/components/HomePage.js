@@ -1,4 +1,5 @@
 import React from 'react'
+import DemoImage from './DemoImage'
 import { Section } from './TextComponents'
 import { NavLink } from 'react-router-dom';
 
@@ -32,8 +33,24 @@ export default class HomePage extends React.Component {
                 </p>
 
                 <p>
-                First choose a big issue policy from the tabs. Then, choose a topic, a specific question for that topic, and a group for which you'd like to see the answers displayed. You can explore as many topics, questions, and groups as you'd like.
+                First choose a big issue policy from the tabs above:
                 </p>
+
+                <DemoImage src = "tabs.png"/>
+                
+                <p> Then, choose a topic area that you are interested in exploring:</p>
+                
+                <DemoImage src = "topic.png" />
+                
+                <p>Choose a specific question within that topic for which you would like to see responses: </p> 
+
+                <DemoImage src = "question.png"/>
+                
+                <p>Finally, choose a demographic group by which you'd like to see answers to the question organized</p>
+
+                <DemoImage src ="groupby.png"/>
+
+                <p>You can explore as many topics, questions, and groups as you'd like. </p>
 
                 <p>
                 Some questions have several formulations (Generic, You, and Gender), which were randomized across respondents in order to compare how people's responses are changed when we change the way we ask the question. 
