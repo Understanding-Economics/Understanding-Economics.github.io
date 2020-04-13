@@ -248,13 +248,13 @@
                   {
                     "id" : "Q07003_en",
                     "title" : "YOU",
-                    "description" : "Would you say that you...",
+                    "description" : "Would you say that <strong>you</strong>...",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q07003_en",
                     "title" : "GENDER",
-                    "description" : "Would you say that high income, upper-class women in the U.S. today...",
+                    "description" : "Would you say that high income, upper-class <strong>women</strong> in the U.S. today...",
                     "treatments" : ["Gender"]
                   }
                 ]

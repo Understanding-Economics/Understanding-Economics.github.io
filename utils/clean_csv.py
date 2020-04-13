@@ -3,7 +3,7 @@ import json
 import sys
 import itertools
 def get_question_ids(survey):
-    ids = []
+    ids = ["mechanisms_rando"]
     flatten = lambda l: [item for sublist in l for item in sublist]
     questions = flatten([list(topic["questions"].values()) for topic in survey["topics"].values()])
     while len(questions) > 0:
@@ -39,4 +39,4 @@ def main():
     print(len(ids))
 
 if __name__ == "__main__":
-    main()
+    fields_filename = sys.argv[1]
