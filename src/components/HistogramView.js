@@ -39,7 +39,7 @@ export default class HistogramView extends React.Component {
         let cleanData = data.filter(x => this.props.groupVal === "All" || x[selectedGroup.id] == this.props.groupVal)
                             .map(x => Number(x[selectedQuestion.id]));
 
-        let nticks = 15; 
+        let nticks = selectedQuestion.nticks ? selectedQuestion.nticks : 15;
         let correctList = selectedQuestion.correct ? [selectedQuestion.correct] : [];
         let dataWithCorrect = dataNumeric.concat(correctList);
         let scale = d3.scaleLinear()

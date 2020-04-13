@@ -2,6 +2,7 @@ import React from 'react'
 import CrossTabView from './CrossTabView'
 import ChartView from './ChartView'
 import ChartLegend from './ChartLegend'
+import CorrectDisplay from './CorrectDisplay'
 import '../css/CategoricalDisplay.css'
 
 export default class CategoricalDisplay extends React.Component {
@@ -21,6 +22,9 @@ export default class CategoricalDisplay extends React.Component {
                 <div className = "row header">
                     <h5>Proportion of responses to "<strong>{this.props.question.description}</strong>" <br/> <br/> 
                     By <strong>{this.props.group.title}</strong></h5>
+                </div>
+                <div className = "row">
+                    <CorrectDisplay question = {this.props.question} />
                 </div>
                 <div className = "row" style = {{paddingLeft:"20px"}}>
                     <ChartLegend 

@@ -4,6 +4,7 @@ import '../css/NumericDisplay.css'
 import HistogramView from './HistogramView'
 import NumberFormats from '../NumberFormats'
 import Utils from '../Utils'
+import CorrectDisplay from './CorrectDisplay'
 
 export default class NumericDisplay extends React.Component {
     constructor() { 
@@ -30,20 +31,15 @@ export default class NumericDisplay extends React.Component {
                 />
             </div>
         );
-        let correctDiv = null;
-        if(this.props.question.correct != undefined) {
-            correctDiv = <div className = "row header">
-                <strong style={{color:"green", fontSize:"14pt"}}>Correct Answer: {formatter(this.props.question.correct)}</strong>
-                <em style={{fontSize:"8pt", marginLeft: "5px", verticalAlign: "bottom"}}>{this.props.question.source ? `  (Source: ${this.props.question.source})` : null}</em>
-            </div>
-        }
         return (
             <div className = "NumericDisplay">
                 <div className = "row header">
                     <h5>Average response to "<strong>{this.props.question.description}</strong>" <br/><br/>
                     By <strong>{this.props.group.title}</strong></h5>
                 </div>
-                {correctDiv}
+                <div className = "row">
+                    <CorrectDisplay question ={this.props.question} formatter = {formatter} />
+                </div>
                 <div className = "row">
                     { statBubbles }
                 </div>

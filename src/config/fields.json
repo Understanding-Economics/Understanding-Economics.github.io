@@ -442,6 +442,7 @@
                 "description": "The U.S. imports both industrial (i.e., non-agricultural) and agricultural goods. What share of the goods that the U.S. imports do you think are agricultural goods?",
                 "type" : "NUMERIC",
                 "correct" : "4.1",
+                "nticks" : 10, 
                 "source" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/"
               },
               "Q04007_en": {
@@ -449,6 +450,7 @@
                 "title": "Share of imports subject to tariff",
                 "description": "Of all the goods that the U.S. imports, what share do you think is subject to a tariff or import duty?",
                 "type" : "NUMERIC",
+                "nticks" : 10,
                 "correct" : "Approximately one half",
                 "source" : "Office of the US Trade Representative"
               },
