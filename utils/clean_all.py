@@ -15,6 +15,8 @@ def get_question_ids(survey):
     questions = flatten([list(topic["questions"].values()) for topic in survey["topics"].values()])
     while len(questions) > 0:
         question = questions.pop(0)
+        if ("questions" in question):
+            questions.extend(question["questions"])
         ids.append(question["id"])
     return sorted(list(set(ids)))
 
@@ -22,11 +24,16 @@ def get_group_ids(groups):
     return sorted([group["id"] for group in groups.values()])
 
 def filtered_csv_to_json(csv_filename, json_filename, ids):
+    invalid_ids = []
     with open(csv_filename, "r") as f:
         reader = csv.DictReader(f)
         filtered_rows = [{ i : row[i] for i in ids if i in row} for row in reader]
+        for i in ids:
+            if i not in filtered_rows[0]:
+                invalid_ids.append(i)
     with open(json_filename, "w+") as f:
         json.dump(filtered_rows, f)
+    return invalid_ids
 
 if __name__ == "__main__":
     fields_filename = sys.argv[1]
@@ -39,4 +46,6 @@ if __name__ == "__main__":
         question_ids = get_question_ids(survey)
         group_ids = get_group_ids(groups)
         ids = question_ids + group_ids
-        filtered_csv_to_json(data_path + filename + ".csv", data_path + filename + ".json", ids)
+        invalid_ids = filtered_csv_to_json(data_path + filename + ".csv", data_path + filename + ".json", ids)
+        with open(survey_id + "_invalid_ids.json", "w+") as f:
+            json.dump(invalid_ids, f)
