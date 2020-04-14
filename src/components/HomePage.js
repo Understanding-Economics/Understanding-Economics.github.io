@@ -10,7 +10,7 @@ export default class HomePage extends React.Component {
         document.title = "Understanding Economics";
         return (
             <div className = "HomePage">
-                <h2>Welcome to the "Understanding Economics" website!</h2>
+                <h2 style = {{marginBottom : "20px"}}>Welcome to the "Understanding Economics" website!</h2>
 
                 <Section>Project</Section>
 
