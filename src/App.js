@@ -3,7 +3,7 @@ import './App.css';
 import NavigationBar from './components/NavigationBar'
 import DataPage from './components/DataPage'
 import HomePage from './components/HomePage'
-import BackgroundPage from './components/BackgroundPage'
+import AboutPage from './components/AboutPage'
 import { Route, Switch, HashRouter as Router } from 'react-router-dom'
 import NotFound from './components/NotFound'
 import { surveys } from './config/fields.json'
@@ -36,7 +36,7 @@ class App extends React.Component {
           <NavigationBar />
           <Switch>
             <Route exact path="/" component={HomePage}/>
-            <Route exact path="/background" component={BackgroundPage}/>
+            <Route exact path="/about" component={AboutPage}/>
             {surveyRoutes}
             <Route component={NotFound} />
           </Switch>

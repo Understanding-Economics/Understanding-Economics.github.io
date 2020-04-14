@@ -26,8 +26,8 @@ export default class NavigationBar extends React.Component {
                     </NavLink> 
                 </li>
                 <li className = "nav-item">
-                    <NavLink exact className="nav-link" activeClassName="active" to="/background">
-                        Background
+                    <NavLink exact className="nav-link" activeClassName="active" to="/about">
+                        About
                     </NavLink> 
                 </li>
                 {surveyLinks}

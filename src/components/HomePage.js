@@ -57,7 +57,7 @@ export default class HomePage extends React.Component {
                 </p>
 
                 <p>
-                More information about the project and the surveys can be found <NavLink exact to = "/background">here</NavLink>.
+                More information about the project and the surveys can be found <a href = "https://stefanie-stantcheva.onrender.com">here</a>
                 </p>
             </div>
         )
