@@ -47,5 +47,5 @@ if __name__ == "__main__":
         group_ids = get_group_ids(groups)
         ids = question_ids + group_ids
         invalid_ids = filtered_csv_to_json(data_path + filename + ".csv", data_path + filename + ".json", ids)
-        with open(survey_id + "_invalid_ids.json", "w+") as f:
+        with open(data_path + survey_id + "_invalid_ids.json", "w+") as f:
             json.dump(invalid_ids, f)

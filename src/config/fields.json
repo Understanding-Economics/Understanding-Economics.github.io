@@ -307,35 +307,7 @@
                 "type" : "CATEGORICAL"
               }
             }
-          },
-          "Keyness Graphs" : {
-            "id": "Keyness Graphs",
-            "title" : "Keyness Graphs",
-            "description" : "Graphs showing relative frequencies of wodrs",
-            "questions" : {
-              "Keyness_test" : {
-                "id" : "Keyness_test",
-                "title" : "Keyness Test",
-                "description" : "Democratic vs Republican word usage for considerations, goals, and shortcomings",
-                "type" : "KEYNESS",
-                "img_url" : "Keyness_test.png"
-              }
-            }
-          },
-          "Wordclouds" : {
-            "id": "Wordclouds",
-            "title" : "Wordclouds",
-            "description" : "Graphs showing relative frequencies of wodrs",
-            "questions" : {
-              "Wordcloud_test" : {
-                "id" : "Wordcloud_test",
-                "title" : "Wordcloud Test",
-                "description" : "Democratic vs Republican word usage for considerations, goals, and shortcomings",
-                "type" : "WORDCLOUD",
-                "img_url" : "Q02004_wordcloud.png"
-              }
-            }
-          },
+          }, 
           "Tax Change Behavior": {
             "id": "Tax Change Behavior",
             "title": "Tax Change Behavior",
