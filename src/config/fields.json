@@ -115,7 +115,7 @@
     },
     "surveys": {
       "income_survey": {
-        "title": "Income Survey",
+        "title": "Income Tax",
         "topics": {
           "Personal Exposure": {
             "id": "Personal Exposure",
@@ -453,7 +453,7 @@
         }
       },
       "trade_survey" : {
-        "title": "Trade Survey",
+        "title": "Trade Policy",
         "additionalGroups" : {},
         "topics" : {
           "Personal Exposure" : {
@@ -1112,7 +1112,7 @@
         }
       },
       "estate_survey" : {
-        "title": "Estate Tax Survey",
+        "title": "Estate Tax",
         "additionalGroups" : {},
         "topics" : {
           "Personal Exposure" : {
@@ -1956,7 +1956,7 @@
         }
       },
       "health_survey" : {
-        "title": "Health Survey",
+        "title": "Health Insurance",
         "additionalGroups" : {},
         "topics" : {
           "Personal Exposure" : {
