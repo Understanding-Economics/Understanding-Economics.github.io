@@ -248,13 +248,13 @@
                   {
                     "id" : "Q07003_en",
                     "title" : "YOU",
-                    "description" : "Would you say that <strong>you</strong>...",
+                    "description" : "Would you say that you...",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q07003_en",
                     "title" : "GENDER",
-                    "description" : "Would you say that high income, upper-class <strong>women</strong> in the U.S. today...",
+                    "description" : "Would you say that high income, upper-class women in the U.S. today...",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -399,6 +399,50 @@
           }
         }
       },
+      "tax_survey" : {
+        "title": "Tax Survey",
+        "additionalGroups" : {},
+        "topics" : {
+          "Blah blah blah": {
+            "description" : "Questions about economic effects",
+            "id" : "Blah blah blah",
+            "title" : "Blah blah blah",
+            "questions" : {
+              "Q06006_en" : {
+                "id": "Q06006_en",
+                "title": "Economic Effect",
+                "type" : "CATEGORICAL",
+                "description": "The economic effect that the respondent believes.\n<ul>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li><li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n</ul>"
+              },
+              "Q06009":{
+                "id": "Q06009",
+                "title": "Yes or No",
+                "type" : "CATEGORICAL",
+                "description": "A yes or no question where I don't know the question"
+              }
+            }
+          },
+          "Tax Cut" : {
+            "description" : "Questions about the recent tax cut",
+            "id" : "Tax Cut",
+            "title" : "Tax Cut",
+            "questions" : {
+              "Q06007_en" : {
+                "id": "Q06007_en",
+                "title": "Tax Cut Deficit",
+                "type" : "CATEGORICAL",
+                "description": "How the respondents believes the tax cut affected the deficit"
+              },
+              "Q06008_en" : {
+                "id": "Q06008_en",
+                "title": "Tax Cut Deficit 2",
+                "type" : "CATEGORICAL",
+                "description": "Another tax cut deficit question"
+              }
+            }
+          }
+        }
+      },
       "trade_survey" : {
         "title": "Trade Survey",
         "additionalGroups" : {},
@@ -409,7 +453,7 @@
             "description": "Questions to examine the individual's exposure to trade policy",
             "questions": {
               "Q03001_en": {
-                "id": "Q03001_en",
+                "id": "Q03001",
                 "title": "Trade policy affects own life",
                 "description": "Do you feel that U.S. trade policy has important, direct effects on your own life?",
                 "type" : "CATEGORICAL",
@@ -441,8 +485,7 @@
                 "title": "Share of imports that are agricultural",
                 "description": "The U.S. imports both industrial (i.e., non-agricultural) and agricultural goods. What share of the goods that the U.S. imports do you think are agricultural goods?",
                 "type" : "NUMERIC",
-                "correct" : "4.1",
-                "nticks" : 10, 
+                "correct" : "4.1%",
                 "source" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/"
               },
               "Q04007_en": {
@@ -450,7 +493,6 @@
                 "title": "Share of imports subject to tariff",
                 "description": "Of all the goods that the U.S. imports, what share do you think is subject to a tariff or import duty?",
                 "type" : "NUMERIC",
-                "nticks" : 10,
                 "correct" : "Approximately one half",
                 "source" : "Office of the US Trade Representative"
               },
@@ -536,7 +578,7 @@
                     "id" : "Q06001_4_en",
                     "title" : "Effects of Trade",
                     "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"], 
+                    "sorter" : ["1", "2", "3", "4", "5"],
                     "questions" : [
                         {
                             "id" : "Q06001_4_en",
@@ -606,7 +648,7 @@
                 "sorter" : ["Better off", "Worse off"],
                 "questions" : [
                   {
-                    "id" : "Q06201B_1",
+                    "id" : "Q06201B",
                     "title" : "YOU",
                     "description" : "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
                     "treatments" : ["You"]
@@ -2175,7 +2217,7 @@
               "Q06002": {
                 "id": "Q06002",
                 "title": "Individual mandate: beneficial or detrimental?",
-                "description" : "Would you say that an individual mandate is beneficial or detrimental? Please explain your reasoning.",
+                "description": "Would you say that an individual mandate is beneficial or detrimental? Please explain your reasoning.",
                 "type" : "WORDCLOUD"
               },
               "Q06003_en": {
@@ -2671,7 +2713,7 @@
               "Q07010_1_en" : {
                 "id" : "Q07010_1_en",
                 "title" : "Desired design of health insurance",
-                "description" : "Imagine it were up to you to design Americans' health insurance plans such that they are most cost-effective and that patients get the best care while having to pay the lowest insurance premiums. For the following types of medical care, please say which ones should receive: full coverage (the patient pays no costs out of pocket)\" \"generous coverage (the patient has only minimal copay or deductibles)\" \"low coverage (costs are shared and the patient bears a significant share of total costs)\" \"no coverage (meaning the patient has to pay the full costs out of pocket). Bear in mind that the more generous coverage is, the higher health insurance premiums can be expected to be.",
+                "description" : "Imagine it were up to you to design Americans' health insurance plans such that they are most cost-effective and that patients get the best care while having to pay the lowest insurance premiums. For the following types of medical care, please say which ones should receive: full coverage (the patient pays no costs out of pocket), generous coverage (the patient has only minimal copay or deductibles), low coverage (costs are shared and the patient bears a significant share of total costs), no coverage (meaning the patient has to pay the full costs out of pocket). Bear in mind that the more generous coverage is, the higher health insurance premiums can be expected to be.",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
