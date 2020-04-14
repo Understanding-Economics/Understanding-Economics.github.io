@@ -408,50 +408,6 @@
           }
         }
       },
-      "tax_survey" : {
-        "title": "Tax Survey",
-        "additionalGroups" : {},
-        "topics" : {
-          "Blah blah blah": {
-            "description" : "Questions about economic effects",
-            "id" : "Blah blah blah",
-            "title" : "Blah blah blah",
-            "questions" : {
-              "Q06006_en" : {
-                "id": "Q06006_en",
-                "title": "Economic Effect",
-                "type" : "CATEGORICAL",
-                "description": "The economic effect that the respondent believes.\n<ul>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n<li>Hello</li><li>Hello</li>\n<li>Hello</li>\n<li>Hello</li>\n</ul>"
-              },
-              "Q06009":{
-                "id": "Q06009",
-                "title": "Yes or No",
-                "type" : "CATEGORICAL",
-                "description": "A yes or no question where I don't know the question"
-              }
-            }
-          },
-          "Tax Cut" : {
-            "description" : "Questions about the recent tax cut",
-            "id" : "Tax Cut",
-            "title" : "Tax Cut",
-            "questions" : {
-              "Q06007_en" : {
-                "id": "Q06007_en",
-                "title": "Tax Cut Deficit",
-                "type" : "CATEGORICAL",
-                "description": "How the respondents believes the tax cut affected the deficit"
-              },
-              "Q06008_en" : {
-                "id": "Q06008_en",
-                "title": "Tax Cut Deficit 2",
-                "type" : "CATEGORICAL",
-                "description": "Another tax cut deficit question"
-              }
-            }
-          }
-        }
-      },
       "trade_survey" : {
         "title": "Trade Policy",
         "additionalGroups" : {},
