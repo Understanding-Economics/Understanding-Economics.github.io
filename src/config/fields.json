@@ -307,14 +307,42 @@
                 "type" : "CATEGORICAL"
               }
             }
-          }, 
+          },
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding income policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "Main considerations",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_income.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "Goals",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_income.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "Shortcomings",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_income.png"
+              }
+            }
+          },
           "Tax Change Behavior": {
             "id": "Tax Change Behavior",
             "title": "Tax Change Behavior",
             "description": "CONTROL. If the federal personal income tax rate were to increase for the rich- est people in the economy, to what extent would it encourage them towards the following behaviors?<br/>YOU. If your federal personal income tax rate were to increase, to what extent would it encourage you towards the following behaviors?<br/>GENDER. If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman towards the following behaviors?",
             "questions": {
               "Q060001" : {
-                "id" : "Q060001",
+                "id" : "Q06001_1_en",
                 "title" : "Likeliness to change behavior",
                 "description" : "If federal income taxes change, how likely are people to...",
                 "type" : "UMBRELLA",
@@ -390,7 +418,7 @@
             "description": "Questions to examine the individual's exposure to trade policy",
             "questions": {
               "Q03001_en": {
-                "id": "Q03001",
+                "id": "Q03001_en",
                 "title": "Trade policy affects own life",
                 "description": "Do you feel that U.S. trade policy has important, direct effects on your own life?",
                 "type" : "CATEGORICAL",
@@ -464,7 +492,7 @@
             "description": "Questions to examine the expected effects of trade policy",
             "questions": {
               "Q06001_en": {
-                "id": "Q06001_en",
+                "id": "Q06001_1_en",
                 "title": "Effects of Trade",
                 "description": "YOU As trade with other countries has increased, to what extent do you think the following firms have lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
                 "type" : "UMBRELLA",
@@ -541,72 +569,6 @@
                   }
                 ]
               },
-              "Q06201": {
-                "id": "Q06201",
-                "title": "Effects of Trade",
-                "description": "YOU As trade with other countries has increased, to what extent do you think the following firms have lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
-                "type" : "UMBRELLA",
-                "questions" : [
-                  {
-                    "id" : "Q06201",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06201_1",
-                            "title" : "YOU",
-                            "description" : "Large corporations",
-                            "treatments" : ["You"]
-                        }
-                      ]
-                  },
-                  {
-                    "id" : "Q06201",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06201_2",
-                            "title" : "YOU",
-                            "description" : "Small businesses",
-                            "treatments" : ["You"]
-                        }
-                      ]
-                  }
-                ]
-              },
-              "Q06201B": {
-                "id": "Q06201B",
-                "title": "Personal situation",
-                "description": "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
-                "type" : "TREATMENT",
-                "sorter" : ["Better off", "Worse off"],
-                "questions" : [
-                  {
-                    "id" : "Q06201B",
-                    "title" : "YOU",
-                    "description" : "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
-                    "treatments" : ["You"]
-                  }
-                ]
-              },
-              "Q06201C_1": {
-                "id": "Q06201C_1",
-                "title": "Magnitude on personal situation",
-                "description": "Please specify the extent to which you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
-                "type" : "TREATMENT",
-                "sorter" : ["1", "2", "3", "4", "5"],
-                "questions" : [
-                  {
-                    "id" : "Q06201C_1",
-                    "title" : "YOU",
-                    "description" : "Please specify the extent to which you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
-                    "treatments" : ["You"]
-                  }
-                ]
-              },
               "Q06003_en": {
                 "id": "Q06003_en",
                 "title": "Effect on Jobs",
@@ -635,53 +597,8 @@
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
-              "Q06105": {
-                "id": "Q06105",
-                "title": "Ability to find new job - Low-skilled workers",
-                "description": "CONTROL Do you think it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06105",
-                    "title" : "CONTROL",
-                    "description" : "Do you think it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
-                    "treatments" : ["Neutral"]
-                  }
-                ]
-              },
-              "Q06106": {
-                "id": "Q06106",
-                "title": "Ability to find new job - High-skilled workers",
-                "description": "CONTROL Do you think it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06106",
-                    "title" : "CONTROL",
-                    "description" : "Do you think it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
-                    "treatments" : ["Neutral"]
-                  }
-                ]
-              },
-              "Q06205": {
-                "id": "Q06205",
-                "title": "Ability to find new job",
-                "description": "YOU Would it be easy for you to find a job in a different sector from the one you are currently working in?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06205",
-                    "title" : "YOU",
-                    "description" : "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
-                    "treatments" : ["You"]
-                  }
-                ]
-              },
               "Q06007_en": {
-                "id": "Q06007_en",
+                "id": "Q06007_1_en",
                 "title": "Effects on Unemployment",
                 "description": "CONTROL Unemployment in some sectors and the decline of some industries in the U.S. ME Unemployment in your sector and the decline of some industries in the U.S.",
                 "type" : "UMBRELLA",
@@ -778,7 +695,7 @@
             "description": "Long example about laptops and cars",
             "questions": {
               "Q06015": {
-                "id": "Q06015",
+                "id": "Q06015_en",
                 "title": "Long example",
                 "description": "Long example about laptops and cars",
                 "type" : "UMBRELLA",
@@ -883,22 +800,8 @@
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
               },
-              "Q07004": {
-                "id": "Q07004",
-                "title": "",
-                "description": "Do you think some industries should be protected from foreign competition using tariffs or other import restrictions? Select all that apply:",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Dairy products", "Agricultural products (fruit, vegetables, plants)", "Beverages and tobaccos", "Min- erals and metals", "Petroleum", "Chemicals", "Animal products (meat, fish)", "Textiles, clothing leather and footwear", "Machinery, transport, equipment and cars", "Manufactured goods"]
-              },
-              "Q07005": {
-                "id": "Q07005",
-                "title": "",
-                "description": "Do you think particular goods should be protected from foreign competition using tariffs or other import restrictions? Select all that apply.",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Cars", "Washing machines", "Solar panels", "Shoes", "Machinery", "Oil", "Vegetables", "Fruits", "Toys", "Meat", "Fish", "Milk", "Steel", "Textiles", "Clothing", "Coffee and tea", "Chemicals"]
-              },
               "Q07006_en": {
-                "id": "Q07006_en",
+                "id": "Q07006_1_en",
                 "title": "Effects on Unemployment",
                 "description": "CONTROL In your view, what is the best policy tool to help workers in an industry that's declining and threatened by foreign competition? Please rank the following options from best (1) to worst (3). ME In your view, what is the best policy tool to help workers in your industry against the threat of foreign competition? Please rank the following options from best (1) to worst (3).",
                 "type" : "UMBRELLA",
@@ -995,45 +898,31 @@
               }
             }
           },
-          "Text analysis" : {
-            "id": "Text analysis",
-            "title": "Text analysis",
-            "description": "Questions to examine text analysis",
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding trade policy",
             "questions": {
               "Q02002": {
                 "id": "Q02002",
                 "title": "Main considerations",
-                "description": "",
+                "description": "Main considerations",
                 "type" : "WORDCLOUD",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
+                "img_url" : "Question_Q02002_trade.png"
               },
               "Q02003": {
                 "id": "Q02003",
                 "title": "Goals",
-                "description": "",
+                "description": "Goals",
                 "type" : "WORDCLOUD",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
+                "img_url" : "Question_Q02003_trade.png"
               },
               "Q02004": {
                 "id": "Q02004",
                 "title": "Shortcomings",
-                "description": "",
+                "description": "Shortcomings",
                 "type" : "WORDCLOUD",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
-              },
-              "Q02005": {
-                "id": "Q02005",
-                "title": "Economic effects if trade barriers increased",
-                "description": "",
-                "type" : "WORDCLOUD",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
-              },
-              "Q02006": {
-                "id": "Q02006",
-                "title": "Who Gains if trade barriers were increased?",
-                "description": "",
-                "type" : "WORDCLOUD",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
+                "img_url" : "Question_Q02004_trade.png"
               }
             }
           }
@@ -1170,19 +1059,19 @@
                 "type" : "NUMERIC"
               },
               "Q04016_en": {
-                "id": "Q04016_en",
+                "id": "Q04016_top1",
                 "title": "Share of wealth owned by following groups",
                 "description": "What share of all of the wealth in the U.S. do you think is currently owned by the following groups?",
                 "type" : "UMBRELLA",
                 "questions" : [
                     {
-                      "id": "Q04016_1_en",
+                      "id": "Q04016_top1",
                       "title": "Share of wealth owned by top 1%",
                       "description": "What share of all of the wealth in the U.S. do you think is currently owned by the top 1%?",
                       "type" : "NUMERIC"
                     },
                     {
-                      "id": "Q04016_2_en",
+                      "id": "Q04016_050_en",
                       "title": "Share of wealth owned by bottom 50%",
                       "description": "What share of all of the wealth in the U.S. do you think is currently owned by the bottom 50%",
                       "type" : "NUMERIC"
@@ -1196,7 +1085,7 @@
                 "type" : "NUMERIC"
               },
               "Q04021_en": {
-                "id": "Q04021_en",
+                "id": "Q04021_1_en",
                 "title": "Probability of moving in following ways",
                 "description": "What is the probability of moving quintiles in the following ways?",
                 "type" : "UMBRELLA",
@@ -1241,7 +1130,7 @@
             "description": "Questions to examine expected effects of estate tax policy",
             "questions": {
               "Q06001_en": {
-                "id": "Q06001_en",
+                "id": "Q06001_1_en",
                 "title": "Increase in federal estate taxes",
                 "description": "CONTROL GROUP. If the federal estate tax increases, to what extent would it encourage the very wealthy individuals towards the following behaviors? “ME” RANDOMIZATION. If the federal estate tax were to increase, to what extent would it encourage you towards the following behaviors? “WOMEN” RANDOMIZATION. If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women towards the following behaviors?",
                 "type" : "UMBRELLA",
@@ -1431,7 +1320,7 @@
                 ]
               },
               "Q06002_en": {
-                "id": "Q06002_en",
+                "id": "Q06002_1_en",
                 "title": "Young people - increase in federal estate taxes",
                 "description": "CONTROL GROUP AND “ME”. Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people towards the following behaviors? “WOMEN” RANDOMIZATION. Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women towards the following behaviors?",
                 "type" : "UMBRELLA",
@@ -1880,6 +1769,34 @@
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
             }
+          },
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding estate tax policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "Main considerations",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_estate.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "Goals",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_estate.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "Shortcomings",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_estate.png"
+              }
+            }
           }
         }
       },
@@ -1892,8 +1809,8 @@
             "title": "Personal Exposure",
             "description": "Questions to examine the individual's exposure to health policy",
             "questions": {
-              "Q03001": {
-                "id": "Q03001",
+              "Q03001_en": {
+                "id": "Q03001_en",
                 "title": "Has health insurance",
                 "description": "Do you currently have health insurance?",
                 "type" : "CATEGORICAL",
@@ -1962,17 +1879,8 @@
                 "type" : "WORDCLOUD",
                 "sorter" : ["Yes", "No"]
               },
-              "TO DO": {
-                "id": "TO DO",
-                "title": "Who pays for long-term care",
-                "description": "If an elderly person is in need of long-term care, which program(s) will pay for that?",
-                "type" : "WORDCLOUD",
-                "sorter" : ["Yes", "No"],
-                "correct" : ["Private long-term care insurance plans will pay for long-term care for all elderly who purchased them", "Medicaid will pay for all of long-term care only for the elderly who have a low income and low assets"],
-                "source" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
-              },
               "Q04020_en" : {
-                "id" : "Q04020_en",
+                "id" : "Q04020_1_en",
                 "title" : "Health insurance coverage programs",
                 "description" : "Out of 100 Americans, how many get their health insurance coverage through the following programs?",
                 "type" : "UMBRELLA",
@@ -2018,7 +1926,7 @@
                 "source" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
               },
               "Q04010_en" : {
-                "id" : "Q04010_en",
+                "id" : "Q04010_1_en",
                 "title" : "Health insurance premium criteria",
                 "description" : "Are insurance companies currently allowed to set different premiums based on the following characteristics?",
                 "type" : "UMBRELLA",
@@ -2185,7 +2093,7 @@
                 ]
               },
               "Q06004_en": {
-                "id": "Q06004_en",
+                "id": "Q06004_1_en",
                 "title": "Generous health insurance incentives",
                 "description": "CONTROL If health insurance were to be made more generous, to what extent would it encourage people towards the following behaviors? ME If your health insurance were to be made more generous, to what extent would it encourage you towards the following behaviors? WOMEN If health insurance were to be made more generous, to what extent would it encourage women towards the following behaviors?",
                 "type" : "UMBRELLA",
@@ -2406,7 +2314,7 @@
                 ]
               },
               "Q06111": {
-                "id": "Q06111",
+                "id": "Q06111_en",
                 "title": "Main responsibility in health issues",
                 "description": "CONTROL Would you say that health issues and medical conditions are mostly the result of circumstances outside of one's control or mostly the result of one's own actions? ME Would you say that your own health issues and your own medical conditions are mostly the result of circumstances outside of your control or mostly the result of your own actions? WOMEN Would you say that health issues and medical conditions that arise for women are mostly the result of circumstances outside of their control or mostly the result of these women's own actions?",
                 "type" : "UMBRELLA",
@@ -2632,18 +2540,11 @@
                 "description": "Do you support or oppose having an individual mandate whereby every individual is obliged to buy health insurance?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
-              },
-              "Q07010_en": {
-                "id": "Q07010_en",
-                "title": "Support for employer mandate",
-                "description": "Do you support or oppose having an employer mandate whereby every large employer, with more than 50 employees, is obliged to offer health insurance plans for their employees?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
               }
             }
           },
           "Desired design of health insurance" : {
-            "id": "Desired design of health insurance",
+            "id": "Q07010_1_en",
             "title": "Desired design of health insurance",
             "description": "Desired design of health insurance",
             "questions": {
@@ -2720,52 +2621,31 @@
               }
             }
           },
-          "Text analysis" : {
-            "id": "Text analysis",
-            "title": "Text analysis",
-            "description": "?????",
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding health policy",
             "questions": {
               "Q02002": {
                 "id": "Q02002",
                 "title": "Main considerations",
-                "description": "",
-                "type" : "WORDCLOUD"
+                "description": "Main considerations",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_health.png"
               },
               "Q02003": {
                 "id": "Q02003",
                 "title": "Goals",
-                "description": "",
-                "type" : "WORDCLOUD"
+                "description": "Goals",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_health.png"
               },
               "Q02004": {
                 "id": "Q02004",
                 "title": "Shortcomings",
-                "description": "",
-                "type" : "WORDCLOUD"
-              },
-              "Q02006": {
-                "id": "Q02006",
-                "title": "Economic Effects",
-                "description": "",
-                "type" : "WORDCLOUD"
-              },
-              "Q06001": {
-                "id": "Q06001",
-                "title": "Beneficial/detrimental",
-                "description": "",
-                "type" : "WORDCLOUD"
-              },
-              "Q06002": {
-                "id": "Q06002",
-                "title": "Reasons",
-                "description": "",
-                "type" : "WORDCLOUD"
-              },
-              "Q02007": {
-                "id": "Q02007",
-                "title": "Who gains?",
-                "description": "",
-                "type" : "WORDCLOUD"
+                "description": "Shortcomings",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_health.png"
               }
             }
           }
