@@ -307,7 +307,35 @@
                 "type" : "CATEGORICAL"
               }
             }
-          }, 
+          },
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding income policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "Main considerations",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_income.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "Goals",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_income.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "Shortcomings",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_income.png"
+              }
+            }
+          },
           "Tax Change Behavior": {
             "id": "Tax Change Behavior",
             "title": "Tax Change Behavior",
@@ -870,45 +898,31 @@
               }
             }
           },
-          "Text analysis" : {
-            "id": "Text analysis",
-            "title": "Text analysis",
-            "description": "Questions to examine text analysis",
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding trade policy",
             "questions": {
               "Q02002": {
                 "id": "Q02002",
                 "title": "Main considerations",
-                "description": "",
+                "description": "Main considerations",
                 "type" : "WORDCLOUD",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
+                "img_url" : "Question_Q02002_trade.png"
               },
               "Q02003": {
                 "id": "Q02003",
                 "title": "Goals",
-                "description": "",
+                "description": "Goals",
                 "type" : "WORDCLOUD",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
+                "img_url" : "Question_Q02003_trade.png"
               },
               "Q02004": {
                 "id": "Q02004",
                 "title": "Shortcomings",
-                "description": "",
+                "description": "Shortcomings",
                 "type" : "WORDCLOUD",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
-              },
-              "Q02005": {
-                "id": "Q02005",
-                "title": "Economic effects if trade barriers increased",
-                "description": "",
-                "type" : "WORDCLOUD",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
-              },
-              "Q02006": {
-                "id": "Q02006",
-                "title": "Who Gains if trade barriers were increased?",
-                "description": "",
-                "type" : "WORDCLOUD",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
+                "img_url" : "Question_Q02004_trade.png"
               }
             }
           }
@@ -1755,6 +1769,34 @@
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
             }
+          },
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding estate tax policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "Main considerations",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_estate.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "Goals",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_estate.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "Shortcomings",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_estate.png"
+              }
+            }
           }
         }
       },
@@ -2579,52 +2621,31 @@
               }
             }
           },
-          "Text analysis" : {
-            "id": "Text analysis",
-            "title": "Text analysis",
-            "description": "?????",
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding health policy",
             "questions": {
               "Q02002": {
                 "id": "Q02002",
                 "title": "Main considerations",
-                "description": "",
-                "type" : "WORDCLOUD"
+                "description": "Main considerations",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_health.png"
               },
               "Q02003": {
                 "id": "Q02003",
                 "title": "Goals",
-                "description": "",
-                "type" : "WORDCLOUD"
+                "description": "Goals",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_health.png"
               },
               "Q02004": {
                 "id": "Q02004",
                 "title": "Shortcomings",
-                "description": "",
-                "type" : "WORDCLOUD"
-              },
-              "Q02006": {
-                "id": "Q02006",
-                "title": "Economic Effects",
-                "description": "",
-                "type" : "WORDCLOUD"
-              },
-              "Q06001": {
-                "id": "Q06001",
-                "title": "Beneficial/detrimental",
-                "description": "",
-                "type" : "WORDCLOUD"
-              },
-              "Q06002": {
-                "id": "Q06002",
-                "title": "Reasons",
-                "description": "",
-                "type" : "WORDCLOUD"
-              },
-              "Q02007": {
-                "id": "Q02007",
-                "title": "Who gains?",
-                "description": "",
-                "type" : "WORDCLOUD"
+                "description": "Shortcomings",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_health.png"
               }
             }
           }
