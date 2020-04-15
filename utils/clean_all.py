@@ -42,8 +42,9 @@ if __name__ == "__main__":
         fields = json.load(f)
     for filename, survey_id in keywords:
         survey = fields["surveys"][survey_id]
+        pooled = fields["surveys"]["pooled"]
         groups = fields["groups"]
-        question_ids = get_question_ids(survey)
+        question_ids = get_question_ids(survey) + get_question_ids(pooled)
         group_ids = get_group_ids(groups)
         ids = question_ids + group_ids
         invalid_ids = filtered_csv_to_json(data_path + filename + ".csv", data_path + filename + ".json", ids)
