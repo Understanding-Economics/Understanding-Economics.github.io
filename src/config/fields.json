@@ -341,7 +341,7 @@
             "title": "Tax Change Behavior",
             "description": "CONTROL. If the federal personal income tax rate were to increase for the rich- est people in the economy, to what extent would it encourage them towards the following behaviors?<br/>YOU. If your federal personal income tax rate were to increase, to what extent would it encourage you towards the following behaviors?<br/>GENDER. If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman towards the following behaviors?",
             "questions": {
-              "Q060001" : {
+              "Q06001_1_en" : {
                 "id" : "Q06001_1_en",
                 "title" : "Likeliness to change behavior",
                 "description" : "If federal income taxes change, how likely are people to...",
@@ -491,7 +491,7 @@
             "title": "Expected Effects",
             "description": "Questions to examine the expected effects of trade policy",
             "questions": {
-              "Q06001_en": {
+              "Q06001_1_en": {
                 "id": "Q06001_1_en",
                 "title": "Effects of Trade",
                 "description": "YOU As trade with other countries has increased, to what extent do you think the following firms have lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
@@ -597,7 +597,7 @@
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
-              "Q06007_en": {
+              "Q06007_1_en": {
                 "id": "Q06007_1_en",
                 "title": "Effects on Unemployment",
                 "description": "CONTROL Unemployment in some sectors and the decline of some industries in the U.S. ME Unemployment in your sector and the decline of some industries in the U.S.",
@@ -800,7 +800,7 @@
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
               },
-              "Q07006_en": {
+              "Q07006_1_en": {
                 "id": "Q07006_1_en",
                 "title": "Effects on Unemployment",
                 "description": "CONTROL In your view, what is the best policy tool to help workers in an industry that's declining and threatened by foreign competition? Please rank the following options from best (1) to worst (3). ME In your view, what is the best policy tool to help workers in your industry against the threat of foreign competition? Please rank the following options from best (1) to worst (3).",
@@ -1058,7 +1058,7 @@
                 "description": "Please specify the exact threshold.",
                 "type" : "NUMERIC"
               },
-              "Q04016_en": {
+              "Q04016_top1": {
                 "id": "Q04016_top1",
                 "title": "Share of wealth owned by following groups",
                 "description": "What share of all of the wealth in the U.S. do you think is currently owned by the following groups?",
@@ -1129,7 +1129,7 @@
             "title": "Expected Effects",
             "description": "Questions to examine expected effects of estate tax policy",
             "questions": {
-              "Q06001_en": {
+              "Q06001_1_en": {
                 "id": "Q06001_1_en",
                 "title": "Increase in federal estate taxes",
                 "description": "CONTROL GROUP. If the federal estate tax increases, to what extent would it encourage the very wealthy individuals towards the following behaviors? “ME” RANDOMIZATION. If the federal estate tax were to increase, to what extent would it encourage you towards the following behaviors? “WOMEN” RANDOMIZATION. If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women towards the following behaviors?",
@@ -1319,7 +1319,7 @@
                   }
                 ]
               },
-              "Q06002_en": {
+              "Q06002_1_en": {
                 "id": "Q06002_1_en",
                 "title": "Young people - increase in federal estate taxes",
                 "description": "CONTROL GROUP AND “ME”. Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people towards the following behaviors? “WOMEN” RANDOMIZATION. Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women towards the following behaviors?",
@@ -1879,7 +1879,7 @@
                 "type" : "WORDCLOUD",
                 "sorter" : ["Yes", "No"]
               },
-              "Q04020_en" : {
+              "Q04020_1_en" : {
                 "id" : "Q04020_1_en",
                 "title" : "Health insurance coverage programs",
                 "description" : "Out of 100 Americans, how many get their health insurance coverage through the following programs?",
@@ -1925,7 +1925,7 @@
                 "correct" : "49",
                 "source" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
               },
-              "Q04010_en" : {
+              "Q04010_1_en" : {
                 "id" : "Q04010_1_en",
                 "title" : "Health insurance premium criteria",
                 "description" : "Are insurance companies currently allowed to set different premiums based on the following characteristics?",
@@ -2092,7 +2092,7 @@
                   }
                 ]
               },
-              "Q06004_en": {
+              "Q06004_1_en": {
                 "id": "Q06004_1_en",
                 "title": "Generous health insurance incentives",
                 "description": "CONTROL If health insurance were to be made more generous, to what extent would it encourage people towards the following behaviors? ME If your health insurance were to be made more generous, to what extent would it encourage you towards the following behaviors? WOMEN If health insurance were to be made more generous, to what extent would it encourage women towards the following behaviors?",
@@ -2313,7 +2313,7 @@
                   }
                 ]
               },
-              "Q06111": {
+              "Q06111_en": {
                 "id": "Q06111_en",
                 "title": "Main responsibility in health issues",
                 "description": "CONTROL Would you say that health issues and medical conditions are mostly the result of circumstances outside of one's control or mostly the result of one's own actions? ME Would you say that your own health issues and your own medical conditions are mostly the result of circumstances outside of your control or mostly the result of your own actions? WOMEN Would you say that health issues and medical conditions that arise for women are mostly the result of circumstances outside of their control or mostly the result of these women's own actions?",
