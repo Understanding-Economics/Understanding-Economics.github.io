@@ -292,19 +292,29 @@
                 "id": "Q07005_en",
                 "title": "Distribution Fairness",
                 "description": "Do you feel that the distribution of money and wealth in this country today is fair, or do you feel that the money and wealth in this country should be more evenly distributed among a larger percentage of the people?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL",
+                "sorter" : ["The distribution and money and wealth in this country today is fair", "The money and wealth in this country should be more evenly distributed among a larger percentage of the people"]
               },
               "Q07006_en": {
                 "id": "Q07006_en",
                 "title": "Income Inequality Issue",
                 "description": "How big of an issue do you think income inequality is in America?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL",
+                "sorter" : ["An issue", "A very serious issue", "A small issue", "A serious issue", "Not an issue at all"]
               },
               "Q07008_en": {
                 "id": "Q07008_en",
-                "title": "Support Top Income Tax Increase",
+                "title": "Support Top Income Tax Increase for lower-incomes",
                 "description": "Would you support raising federal income taxes on higher income households in the following cases?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL",
+                "sorter" : ["Neither support nor oppose", "Strongly support", "Support", "Strongly oppose", "Oppose"]
+              },
+              "Q07009_en": {
+                "id": "Q07009_en",
+                "title": "Support Top Income Tax Increase for investment",
+                "description": "Would you support raising federal income taxes on higher income households in the following cases?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Neither support nor oppose", "Strongly support", "Support", "Strongly oppose", "Oppose"]
               }
             }
           },
@@ -569,6 +579,72 @@
                   }
                 ]
               },
+              "Q06201": {
+                "id": "Q06201",
+                "title": "Effects of Trade",
+                "description": "YOU As trade with other countries has increased, to what extent do you think the following firms have lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "Q06201",
+                    "title" : "Effects of Trade",
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3", "4", "5"],
+                    "questions" : [
+                        {
+                            "id" : "Q06201_1",
+                            "title" : "YOU",
+                            "description" : "Large corporations",
+                            "treatments" : ["You"]
+                        }
+                      ]
+                  },
+                  {
+                    "id" : "Q06201",
+                    "title" : "Effects of Trade",
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3", "4", "5"],
+                    "questions" : [
+                        {
+                            "id" : "Q06201_2",
+                            "title" : "YOU",
+                            "description" : "Small businesses",
+                            "treatments" : ["You"]
+                        }
+                      ]
+                  }
+                ]
+              },
+              "Q06201B": {
+                "id": "Q06201B",
+                "title": "Personal situation",
+                "description": "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
+                "type" : "TREATMENT",
+                "sorter" : ["Better off", "Worse off"],
+                "questions" : [
+                  {
+                    "id" : "Q06201B_1",
+                    "title" : "YOU",
+                    "description" : "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
+                    "treatments" : ["You"]
+                  }
+                ]
+              },
+              "Q06201C_1": {
+                "id": "Q06201C_1",
+                "title": "Magnitude on personal situation",
+                "description": "Please specify the extent to which you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
+                "type" : "TREATMENT",
+                "sorter" : ["1", "2", "3", "4", "5"],
+                "questions" : [
+                  {
+                    "id" : "Q06201C_1",
+                    "title" : "YOU",
+                    "description" : "Please specify the extent to which you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
+                    "treatments" : ["You"]
+                  }
+                ]
+              },
               "Q06003_en": {
                 "id": "Q06003_en",
                 "title": "Effect on Jobs",
@@ -596,6 +672,51 @@
                 "description": "Overall, has international trade helped or hurt U.S. workers?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
+              },
+              "Q06105": {
+                "id": "Q06105",
+                "title": "Ability to find new job - Low-skilled workers",
+                "description": "CONTROL Do you think it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
+                "type" : "TREATMENT",
+                "sorter" : ["Yes", "No"],
+                "questions" : [
+                  {
+                    "id" : "Q06105",
+                    "title" : "CONTROL",
+                    "description" : "Do you think it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
+                    "treatments" : ["Neutral"]
+                  }
+                ]
+              },
+              "Q06106": {
+                "id": "Q06106",
+                "title": "Ability to find new job - High-skilled workers",
+                "description": "CONTROL Do you think it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
+                "type" : "TREATMENT",
+                "sorter" : ["Yes", "No"],
+                "questions" : [
+                  {
+                    "id" : "Q06106",
+                    "title" : "CONTROL",
+                    "description" : "Do you think it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
+                    "treatments" : ["Neutral"]
+                  }
+                ]
+              },
+              "Q06205": {
+                "id": "Q06205",
+                "title": "Ability to find new job",
+                "description": "YOU Would it be easy for you to find a job in a different sector from the one you are currently working in?",
+                "type" : "TREATMENT",
+                "sorter" : ["Yes", "No"],
+                "questions" : [
+                  {
+                    "id" : "Q06205",
+                    "title" : "YOU",
+                    "description" : "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
+                    "treatments" : ["You"]
+                  }
+                ]
               },
               "Q06007_1_en": {
                 "id": "Q06007_1_en",
