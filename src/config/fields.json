@@ -2771,6 +2771,19 @@
             }
           }
         }
+      },
+      "pooled" : {
+        "title" : "Pooled Data",
+        "topics" : {
+          "Views on government" : {
+            "id" : "Views on government",
+            "title" : "Views on government",
+            "description" : "Questions on the individual's views on the government",
+            "questions" : {
+              
+            }
+          }
+        }
       }
     }
   }
