@@ -2,6 +2,7 @@
 import React from 'react'
 import DataView from './DataView'
 import './../css/CrossTabView.css'
+import Utils from '../Utils'
 
 export default class CrossTabView extends React.Component {
     render() {
@@ -17,23 +18,18 @@ export default class CrossTabView extends React.Component {
 
     renderCrossTabs(elementId, selectedGroup, selectedQuestion, data) {
         let cleanData = data.map((x) => { return {group : x[selectedGroup.id] || " No Response", response : x[selectedQuestion.id] || " No Response"} });
-        if(selectedQuestion.numeric) {
-            $(`#${elementId}`).pivot(cleanData, 
-                {
-                    rows : ["group"],
-                    aggregator: $.pivotUtilities.aggregators["Average"](["response"])
-                });
-            for(let label of document.getElementsByClassName("pvtTotalLabel")){ 
-                label.innerHTML = "Average";
-            }
+        let groupSorter = Utils.getGroupSorter(selectedGroup);
+        let responseSorter = Utils.getQuestionSorter(selectedQuestion)
+        let sorters = {
+            group : groupSorter,
+            response : responseSorter,
         }
-        else {
-            $(`#${elementId}`).pivot(cleanData, 
-                {
-                    rows : ["group"],
-                    cols: ["response"],
-                    aggregator: $.pivotUtilities.aggregators["Count"]()
-                });
-        }
+        $(`#${elementId}`).pivot(cleanData, 
+            {
+                rows : ["group"],
+                cols: ["response"],
+                aggregator: $.pivotUtilities.aggregators["Count"](),
+                sorters : sorters
+            });
     }
 }

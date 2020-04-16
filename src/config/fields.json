@@ -3118,7 +3118,13 @@
             "title" : "Views on government",
             "description" : "Questions on the individual's views on the government",
             "questions" : {
-              
+              "G10001_en" : {
+                "id": "G10001_en",
+                "title" : "Trust",
+                "description" : "How much of the time do you think you can trust our federal government to do what is right?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Almost never", "Not very often", "A lot of the time", "Almost always"]
+              }
             }
           }
         }

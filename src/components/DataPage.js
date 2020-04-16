@@ -16,7 +16,8 @@ var dataCache = {
     "income_survey" : incomeSurveyData,
     "trade_survey" : tradeSurveyData, 
     "estate_survey" : estateSurveyData,
-    "health_survey" : healthSurveyData 
+    "health_survey" : healthSurveyData,
+    "pooled" : incomeSurveyData.concat(tradeSurveyData, estateSurveyData, healthSurveyData)
 };
 
 // Datatypes that should not allow groups
