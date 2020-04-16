@@ -141,13 +141,15 @@
                 "id": "Q04004_en",
                 "title": "Perceived Equality of Income Tax Share",
                 "description": "Do you think that, broadly speaking, everyone in the U.S. currently pays approximately the same share of income in federal personal income taxes or do you think people pay very different shares of income in federal personal income taxes?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL",
+                "sorter" : ["Everyone pays more or less the same share", "People pay somewhat different shares of their income in taxes", "People pay very different shares of their incomes in taxes"]
               },
               "Q04005_en": {
                 "id": "Q04005_en",
                 "title": "Taxed Share by Income",
                 "description": "Do you think that people with higher incomes pay a higher or lower share of their total income in federal personal income taxes than people with lower incomes?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL",
+                "sorter" : ["People with higher incomes pay a higher share of their income in taxes than those with lower incomes.", "People with higher incomes pay a lower share of their income in taxes than those with lower incomes."]
               },
               "Q04007_en": {
                 "id": "Q04007_en",
@@ -200,7 +202,8 @@
                 "id": "Q04014_en",
                 "title": "U.S. Relative Taxation",
                 "description": "If you compare the U.S. to other rich countries such as Canada or Western Europe, do you think the U.S. has, on average, higher federal personal income taxes, similar levels of federal personal income taxes, or lower federal personal income taxes than these countries?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL",
+                "sorter" : ["Higher income taxes", "Comparable levels of income taxes", "Lower income taxes"]
               },
               "Q04016_en": {
                 "id": "Q04016_en",
@@ -212,13 +215,15 @@
                 "id": "Q04019_en",
                 "title": "Reason for wealth",
                 "description": "Which has more to do with why a person is rich?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL",
+                "sorter" : ["Because she or he worked harder than others", "Because she or he had more advantages than others"]
               },
               "Q04020_en": {
                 "id": "Q04020_en",
                 "title": "Change in Top 1% Share of Income",
                 "description": "How has the share of total U.S. income that goes to the top 1% in the U.S. evolved over the past 30 years?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL",
+                "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"]
               }
             }
           },
@@ -231,14 +236,15 @@
                 "id": "Q07001_en",
                 "title": "Tax System Fairness (Broad)",
                 "description": "Would you say that the current U.S. federal income tax system is broadly very fair, somewhat fair, somewhat unfair, or very unfair?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL",
+                "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
               },
               "Q07002_en": {
                 "id": "Q07002_en",
                 "title": "Tax System Satisfaction",
                 "description": "How satisfied or dissatisfied are you with the current U.S. federal income tax system?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Very dissatisfied", "Somewhat dissatisfied", "Somewhat satisfied", "Very satisfied"],
+                "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"],
                 "color" : "Gradient4"
               },
               "Q07003_en": {
@@ -246,7 +252,7 @@
                 "title": "Tax Share Fairness (Specific)",
                 "description": "How fair the respondent thinks the tax system is, depending on their treatment",
                 "type" : "TREATMENT",
-                "sorter" : ["Pay much less than fair share", "Pay less than fair share", "Pay fair share", "Pay more than fair share", "Pay much more than fair share"],
+                "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
                 "questions" : [
                   {
                     "id" : "Q07003_en",
@@ -273,6 +279,7 @@
                 "title": "Middle Class Tax Share Fairness",
                 "description": "CONTROL: Would you say that middle-class households in the U.S. today: <br/>\u201cGENDER\u201d: Would you say that women in the middle-class in the U.S. today:",
                 "type" : "TREATMENT",
+                "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
                 "questions" : [
                   {
                     "id" : "Q07004_en",
@@ -300,21 +307,35 @@
                 "title": "Income Inequality Issue",
                 "description": "How big of an issue do you think income inequality is in America?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["An issue", "A very serious issue", "A small issue", "A serious issue", "Not an issue at all"]
+                "sorter" : ["Not an issue at all", "A small issue", "An issue", "A serious issue", "A very serious issue"]
               },
               "Q07008_en": {
                 "id": "Q07008_en",
                 "title": "Support Top Income Tax Increase for lower-incomes",
-                "description": "Would you support raising federal income taxes on higher income households in the following cases?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Neither support nor oppose", "Strongly support", "Support", "Strongly oppose", "Oppose"]
+                "description": "The additional revenue raised is used to expand programs that support lower-income individuals",
+                "type" : "TREATMENT",
+                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"],
+                "questions" : [
+                  {
+                    "id" : "Q07008_en",
+                    "title" : "Control",
+                    "description" : "The additional revenue raised is used to expand programs that support lower-income individuals",
+                    "treatments" : ["Neutral", "You"]
+                  },
+                  {
+                    "id" : "Q07008_en",
+                    "title" : "Gender",
+                    "description" : "The additional revenue raised is used to expand programs that support lower-income women",
+                    "treatments" : ["Gender"]
+                  }
+                ]
               },
               "Q07009_en": {
                 "id": "Q07009_en",
                 "title": "Support Top Income Tax Increase for investment",
                 "description": "Would you support raising federal income taxes on higher income households in the following cases?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Neither support nor oppose", "Strongly support", "Support", "Strongly oppose", "Oppose"]
+                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"]
               }
             }
           },
@@ -353,14 +374,15 @@
             "questions": {
               "Q06001_1_en" : {
                 "id" : "Q06001_1_en",
-                "title" : "Likeliness to change behavior",
-                "description" : "If federal income taxes change, how likely are people to...",
+                "title" : "Likeliness to change behavior - Taxes for the rich",
+                "description" : "If federal income taxes change for the richest people in the economy, how likely are people to...",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id": "Q06001_1_en",
                     "title": "Evade taxes",
                     "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                       {
                           "id" : "Q06001_1_en",
@@ -386,33 +408,356 @@
                     "id": "Q06001_2_en",
                     "title": "Work less ",
                     "description": "",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
                   },
                   {
                     "id": "Q06001_3_en",
                     "title": "Stop working altogether",
                     "description": "",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
                   },
                   {
                     "id": "Q06001_4_en",
                     "title": "Have spouse stop working",
                     "description": "Have their/your/her spouse stop working",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
                   },
                   {
                     "id": "Q06001_5_en",
                     "title": "Move to state with lower taxes",
                     "description": "",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
                   },
                   {
                     "id": "Q06001_6_en",
                     "title": "Be less entrepreneurial",
                     "description": "Be less entrepreneurial and create fewer businesses",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
                   }
                 ]
+              },
+              "Q06002_1_en" : {
+                "id" : "Q06002_1_en",
+                "title" : "Likeliness to change behavior - Taxes for the middle class",
+                "description" : "If federal income taxes change for the middle class, how likely are people to...",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q06002_1_en",
+                    "title": "Evade taxes",
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06002_1_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to evade taxes"
+                      },
+                      {
+                        "id" : "Q06002_1_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to evade taxes"
+                      },
+                      {
+                        "id" : "Q06002_1_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to evade taxes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "Q06002_2_en",
+                    "title": "Work less ",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                  },
+                  {
+                    "id": "Q06002_3_en",
+                    "title": "Stop working altogether",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                  },
+                  {
+                    "id": "Q06002_4_en",
+                    "title": "Have spouse stop working",
+                    "description": "Have their/your/her spouse stop working",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                  },
+                  {
+                    "id": "Q06002_5_en",
+                    "title": "Move to state with lower taxes",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                  },
+                  {
+                    "id": "Q06002_6_en",
+                    "title": "Be less entrepreneurial",
+                    "description": "Be less entrepreneurial and create fewer businesses",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                  }
+                ]
+              },
+              "Q06003_en": {
+                "id": "Q06003_en",
+                "title": "Middle Class Tax Share Fairness",
+                "description": "CONTROL AND “YOU”. What do you think would ultimately do more to reduce the income differences between poor and rich families? “GENDER”. What do you think would ultimately do more to reduce the income differences between poor and rich women?",
+                "type" : "TREATMENT",
+                "sorter" : ["Lowering taxes on wealthy people/women and corporations to encourage more investment in economic growth.", "Raising taxes on wealthy people/women and corporations to expand programs for the poor."],
+                "questions" : [
+                  {
+                    "id" : "Q06003_en",
+                    "title" : "Control",
+                    "description" : "What do you think would ultimately do more to reduce the income differences between poor and rich families?",
+                    "treatments" : ["Neutral", "You"]
+                  },
+                  {
+                    "id" : "Q06003_en",
+                    "title" : "Gender",
+                    "description" : "What do you think would ultimately do more to reduce the income differences between poor and rich women?",
+                    "treatments" : ["Gender"]
+                  }
+                ]
+              },
+              "Q06004_1_en" : {
+                "id" : "Q06004_1_en",
+                "title" : "Effects of Cuts in top tax rates",
+                "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q06004_1_en",
+                    "title": "Lower Class or Poor",
+                    "type" : "TREATMENT",
+                    "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "questions" : [
+                      {
+                          "id" : "Q06004_1_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06004_1_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06004_1_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in these groups would you say mostly win or mostly lose from this change?"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "Q06004_2_en",
+                    "title": "Working Class",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                  },
+                  {
+                    "id": "Q06002_3_en",
+                    "title": "Middle Class",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                  },
+                  {
+                    "id": "Q06002_4_en",
+                    "title": "Upper-middle class",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                  },
+                  {
+                    "id": "Q06002_5_en",
+                    "title": "Upper class",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                  }
+                ]
+              },
+              "Q06005_1_en" : {
+                "id" : "Q06005_1_en",
+                "title" : "Effects of Cuts in top tax rates",
+                "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q06005_1_en",
+                    "title": "Lower Class or Poor",
+                    "type" : "TREATMENT",
+                    "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "questions" : [
+                      {
+                          "id" : "Q06005_1_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06005_1_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06005_1_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, women in which of these groups would you say mostly win or mostly lose from this change?"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "Q06005_2_en",
+                    "title": "Working Class",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                  },
+                  {
+                    "id": "Q06005_3_en",
+                    "title": "Middle Class",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                  },
+                  {
+                    "id": "Q06005_4_en",
+                    "title": "Upper-middle class",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                  },
+                  {
+                    "id": "Q06005_5_en",
+                    "title": "Upper class",
+                    "description": "",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                  }
+                ]
+              },
+              "Q06006_en": {
+                "id": "Q06006_en",
+                "title": "Effect of high income tax increase on economic activity",
+                "description": "CONTROL GROUP AND “YOU”. Do you think that increasing income taxes on high- income households would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.? “GENDER” RANDOMIZATION. Do you think that increasing income taxes that high- income women have to pay would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.?",
+                "type" : "TREATMENT",
+                "sorter" : ["Hurt economic activity in the U.S.", "Not have an effect on economic activity in the U.S.", "Help economic activity in the U.S."],
+                "questions" : [
+                  {
+                    "id" : "Q06006_en",
+                    "title" : "Control",
+                    "description" : "Do you think that increasing income taxes on high- income households would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.?",
+                    "treatments" : ["Neutral", "You"]
+                  },
+                  {
+                    "id" : "Q06006_en",
+                    "title" : "Gender",
+                    "description" : "Do you think that increasing income taxes that high- income women have to pay would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.?",
+                    "treatments" : ["Gender"]
+                  }
+                ]
+              },
+              "Q06007_en": {
+                "id": "Q06007_en",
+                "title": "Effect of high income tax cut on deficit",
+                "description": "CONTROL GROUP. Which comes closer to your view about the long-term impact that tax cuts on high-income households may have on the federal budget deficit? “YOU” RANDOMIZATION. Which comes closer to your view about the long-term impact that tax cuts on households with your level of income may have on the federal budget deficit? “GENDER” RANDOMIZATION. Which comes closer to your view about the long-term impact that the cuts on taxes that high-income women have to pay may have on the federal budget deficit?",
+                "type" : "TREATMENT",
+                "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
+                "questions" : [
+                  {
+                    "id" : "Q06007_en",
+                    "title" : "Control",
+                    "description" : "Which comes closer to your view about the long-term impact that tax cuts on high-income households may have on the federal budget deficit?",
+                    "treatments" : ["Neutral"]
+                  },
+                  {
+                    "id" : "Q06007_en",
+                    "title" : "You",
+                    "description" : "Which comes closer to your view about the long-term impact that tax cuts on households with your level of income may have on the federal budget deficit?",
+                    "treatments" : ["You"]
+                  },
+                  {
+                    "id" : "Q06007_en",
+                    "title" : "Gender",
+                    "description" : "Which comes closer to your view about the long-term impact that the cuts on taxes that high-income women have to pay may have on the federal budget deficit?",
+                    "treatments" : ["Gender"]
+                  }
+                ]
+              },
+              "Q06008_en": {
+                "id": "Q06008_en",
+                "title": "Effect of middle class tax cut on deficit",
+                "description": "CONTROL GROUP. What about the long-term impact that tax cuts on the middle-class may have on the federal budget deficit? “GENDER” RANDOMIZATION. What about the long-term impact that cuts on taxes that women from the middle-class have to pay may have on the federal budget deficit?",
+                "type" : "TREATMENT",
+                "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
+                "questions" : [
+                  {
+                    "id" : "Q06008_en",
+                    "title" : "Control",
+                    "description" : "What about the long-term impact that tax cuts on the middle-class may have on the federal budget deficit?",
+                    "treatments" : ["Neutral"]
+                  },
+                  {
+                    "id" : "Q06008_en",
+                    "title" : "Gender",
+                    "description" : "What about the long-term impact that cuts on taxes that women from the middle-class have to pay may have on the federal budget deficit?",
+                    "treatments" : ["Gender"]
+                  }
+                ]
+              },
+              "Q06009_en": {
+                "id": "Q06009_en",
+                "title": "Progressive Taxes and Income Inequality",
+                "description": "CONTROL GROUP AND “YOU”. Do you think that a progressive federal income tax system, in which people with higher incomes pay a higher share of income in taxes than people with lower incomes is an important tool to reduce inequality? “GENDER” RANDOMIZATION. Do you think that a progressive federal income tax system, in which women with higher incomes pay a higher share of their income in taxes than women with lower incomes is an important tool to reduce inequality?",
+                "type" : "TREATMENT",
+                "sorter" : ["Yes", "No"],
+                "questions" : [
+                  {
+                    "id" : "Q06009_en",
+                    "title" : "Control",
+                    "description" : "Do you think that a progressive federal income tax system, in which people with higher incomes pay a higher share of income in taxes than people with lower incomes is an important tool to reduce inequality?",
+                    "treatments" : ["Neutral", "You"]
+                  },
+                  {
+                    "id" : "Q06009_en",
+                    "title" : "Gender",
+                    "description" : "Do you think that a progressive federal income tax system, in which women with higher incomes pay a higher share of their income in taxes than women with lower incomes is an important tool to reduce inequality?",
+                    "treatments" : ["Gender"]
+                  }
+                ]
+              }
+            }
+          },
+          "Views on government" : {
+            "id": "Views on government",
+            "title": "Views on government",
+            "description": "Questions to examine the individual's views on government regarding income policy",
+            "questions": {
+              "Q09001_en": {
+                "id": "Q09001_en",
+                "title": "Reduction of income differences",
+                "description": "To reduce income differences between rich and poor people, the government (at the local, state, or federal level) has the ability and the tools to do:",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
             }
           }
@@ -579,14 +924,14 @@
                   }
                 ]
               },
-              "Q06201": {
-                "id": "Q06201",
+              "Q06201_1": {
+                "id": "Q06201_1",
                 "title": "Effects of Trade",
                 "description": "YOU As trade with other countries has increased, to what extent do you think the following firms have lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
-                    "id" : "Q06201",
+                    "id" : "Q06201_1",
                     "title" : "Effects of Trade",
                     "type" : "TREATMENT",
                     "sorter" : ["1", "2", "3", "4", "5"],
@@ -600,7 +945,7 @@
                       ]
                   },
                   {
-                    "id" : "Q06201",
+                    "id" : "Q06201_2",
                     "title" : "Effects of Trade",
                     "type" : "TREATMENT",
                     "sorter" : ["1", "2", "3", "4", "5"],
@@ -623,7 +968,7 @@
                 "sorter" : ["Better off", "Worse off"],
                 "questions" : [
                   {
-                    "id" : "Q06201B_1",
+                    "id" : "Q06201B",
                     "title" : "YOU",
                     "description" : "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
                     "treatments" : ["You"]
@@ -815,7 +1160,7 @@
             "title": "Example",
             "description": "Long example about laptops and cars",
             "questions": {
-              "Q06015": {
+              "Q06015_en": {
                 "id": "Q06015_en",
                 "title": "Long example",
                 "description": "Long example about laptops and cars",
@@ -1205,7 +1550,7 @@
                 "description": "What share of total wealth owned by households in the U.S. today is inherited from their parents?",
                 "type" : "NUMERIC"
               },
-              "Q04021_en": {
+              "Q04021_1_en": {
                 "id": "Q04021_1_en",
                 "title": "Probability of moving in following ways",
                 "description": "What is the probability of moving quintiles in the following ways?",
@@ -2137,13 +2482,6 @@
                 "title": "% of FPL for Medicaid eligibility",
                 "description": "To be eligible for Medicaid, a family's income needs to be below a certain percentage of the Federal Poverty Level for a family of that size. How high is that percentage in your state fo a family like yours to be eligible for Medicaid?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Under 50% of the FPL", "Between 50 and 90% of the FPL", "Between 130 and 160% of the FPL", "Between 160 and 200% of the FPL", "Higher than 200 of the FPL"]
-              },
-              "aca_over": {
-                "id": "aca_over",
-                "title": "% of respondents who overestimate threshold",
-                "description": "Please specify the percentage",
-                "type" : "NUMERIC",
                 "sorter" : ["Under 50% of the FPL", "Between 50 and 90% of the FPL", "Between 130 and 160% of the FPL", "Between 160 and 200% of the FPL", "Higher than 200 of the FPL"]
               },
               "Q04017_en": {
