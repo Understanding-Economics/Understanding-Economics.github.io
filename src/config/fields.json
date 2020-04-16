@@ -3113,9 +3113,9 @@
       "pooled" : {
         "title" : "Pooled Data",
         "topics" : {
-          "Views on government" : {
-            "id" : "Views on government",
-            "title" : "Views on government",
+          "General views on government" : {
+            "id" : "General views on government",
+            "title" : "General views on government",
             "description" : "Questions on the individual's views on the government",
             "questions" : {
               "G10001_en" : {
@@ -3124,6 +3124,81 @@
                 "description" : "How much of the time do you think you can trust our federal government to do what is right?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Almost never", "Not very often", "A lot of the time", "Almost always"]
+              },
+              "G10002_en" : {
+                "id" : "G10002_en",
+                "title" : "Current intervention level",
+                "description" : "Some people think the government is trying to do too many things that should be left to individuals and businesses. Others think that government should do more to solve our country's problems. Which come closer to your own view?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Government should do more", "Government is doing just the right amount", "Government is doing too much"]
+              },
+              "G10003_en" : {
+                "id" : "G10003_en",
+                "title" : "Theoretical intervention level",
+                "description" : "Where would you rate yourself on a scale of 1 to 5, where 1 means you think the government should do only those things necessary to provide the most basic government functions, and 5 means you think the government should take active steps in every area it can to try and improve the lives of its citizens?",
+                "type" : "CATEGORICAL"
+              },
+              "G10005_en" : {
+                "id" : "G10005_en",
+                "title" : "Satisfaction",
+                "description" : "Are you very satisfied, somewhat satisfied, somewhat dissatisfied, or very dissatisfied with the way the federal government in Washington is dealing with the problems the country is facing today?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Very dissatisfied", "Somewhat dissatisfied", "Somewhat satisfied", "Very satisfied"]
+              }
+            }
+          },
+          "Views on government responsibility" : {
+            "id" : "Views on government responsibility",
+            "title" : "Views on government responsibility",
+            "description" : "On a 1 to 5 scale, please say how much responsibility the respondent think the government should have for various functions, where 1 is no responsibility, 5 is total responsibility",
+            "questions" : {
+              "G10006_1_en" : {
+                "id" : "G10006_1_en",
+                "title" : "Reduce income differences",
+                "description" : "Reducing income differences between the rich and the poor",
+                "type" : "CATEGORICAL"
+              },
+              "G10006_2_en" : {
+                "id" : "G10006_2_en",
+                "title" : "Reduce wealth transmission",
+                "description" : "Reducing the transmission of wealth from one generation to the other",
+                "type" : "CATEGORICAL"
+              },
+              "G10006_3_en" : {
+                "id" : "G10006_3_en",
+                "title" : "Ensuring health care",
+                "description" : "Making sure Americans have adequate health care",
+                "type" : "CATEGORICAL"
+              }, 
+              "G10006_4_en" : {
+                "id" : "G10006_4_en",
+                "title" : "Reducing opportunity differences",
+                "description" : "Reducing the differences in opportunities between children from wealthy and poor families",
+                "type" : "CATEGORICAL"
+              }, 
+              "G10006_5_en" : {
+                "id" : "G10006_5_en",
+                "title" : "Regulating trade",
+                "description" : "Regulating trade to and from the U.S. to protect American producers and consumers",
+                "type" : "CATEGORICAL"
+              }, 
+              "G10006_6_en" : {
+                "id" : "G10006_6_en",
+                "title" : "Stabilizing financial system",
+                "description" : "Maintaining a stable financial system and enrusing that credit markets work",
+                "type" : "CATEGORICAL"
+              },
+              "G10006_7_en" : {
+                "id" : "G10006_7_en",
+                "title" : "Stabilizing dollar",
+                "description" : "Ensuring a stable dollar",
+                "type" : "CATEGORICAL"
+              },
+              "G10006_8_en" : {
+                "id" : "G10006_8_en",
+                "title" : "Providing minimum living",
+                "description" : "Providing a minimum standard of living for all",
+                "type" : "CATEGORICAL"
               }
             }
           }
