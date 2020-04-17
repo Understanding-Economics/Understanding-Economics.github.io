@@ -156,14 +156,18 @@
                 "title": "Top Tax Rate Threshold",
                 "description": "How high is the threshold of total annual income for a married household above which the top tax rate applies?",
                 "type" : "NUMERIC",
-                "format" : "dollar"
+                "format" : "dollar",
+                "correct" : "600000",
+                "source" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/"
               },
               "Q04008_en": {
                 "id": "Q04008_en",
                 "title": "Proportion in Top Tax Rate",
                 "description": "Out of 100 households in the U.S., how many are in the top federal personal income tax bracket?",
                 "type" : "NUMERIC",
-                "format" : "percent"
+                "format" : "percent",
+                "correct" : "65",
+                "source" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
               },
               "Q04009_en": {
                 "id": "Q04009_en",
@@ -178,19 +182,25 @@
                 "id": "Q04010_en",
                 "title": "Top Tax Share of Income",
                 "description": "What share of their total income do people in the top federal personal income tax bracket pay in taxes?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "28.5",
+                "source" : "https://jicinvest.com/how-many-taxpayers-fall-into-each-income-tax-bracket/"
               },
               "Q04011_en": {
                 "id": "Q04011_en",
                 "title": "1950s Top Tax Rate",
                 "description": "Can you guess what the top federal personal income tax rate used to be in the 1950s in the U.S.?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "95",
+                "source" : "https://bradfordtaxinstitute.com/Free_Resources/Federal-Income-Tax-Rates.aspx"
               },
               "Q04012_en": {
                 "id": "Q04012_en",
                 "title": "No Federal Income Tax",
                 "description": "Out of 100 U.S. households, how many pay no federal income taxes?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "44",
+                "source" : "https://www.taxpolicycenter.org/taxvox/closer-look-those-who-pay-no-income-or-payroll-taxes"
               },
               "Q04013_en": {
                 "id": "Q04013_en",
@@ -209,7 +219,9 @@
                 "id": "Q04016_en",
                 "title": "Top 1% Share of Income",
                 "description": "What share of total national income do you think goes to the top 1% richest households?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "20",
+                "source" : "https://wir2018.wid.world/executive-summary.html"
               },
               "Q04019_en": {
                 "id": "Q04019_en",
@@ -1333,14 +1345,17 @@
                 "title": "Scope of Estate Tax",
                 "description": "Is every individual's estate taxed",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Yes", "No"],
+                "correct" : "Yes",
+                "source" : "https://www.irs.gov/businesses/small-businesses-self-employed/whats-new-estate-and-gift-tax"
               },
               "Q04008_en": {
                 "id": "Q04008_en",
                 "title": "Small Businesses",
                 "description": "Do you think small business or small farm owners are subject to the federal estate tax?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Almost all are subject to the estate tax; Many are subject to the estate tax", "Few are subject to the estate tax", "Almost none are subject to the estate tax"]
+                "sorter" : ["Almost all are subject to the estate tax; Many are subject to the estate tax", "Few are subject to the estate tax", "Almost none are subject to the estate tax"],
+                "correct" : "Few"
               },
               "Q04009_en": {
                 "id": "Q04009_en",
@@ -1396,25 +1411,33 @@
                 "id": "Q04010_en",
                 "title": "Share of Estates that are Unrealized Capital Gains",
                 "description": "What share of estates subject to the federal estate tax is made up of unrealized capital gains that have never been taxed before?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "55%",
+                "source" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04011_en": {
                 "id": "Q04011_en",
                 "title": "Average Rate on Taxed Estates",
                 "description": "What fraction of the total value of estates subject to the federal estate tax is paid in taxes?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "16.8%",
+                "source" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04006_en": {
                 "id": "Q04006_en",
                 "title": "Estate Tax Rate Above Threshold",
                 "description": "At what rate is each dollar of estate that is passed on and falls above the exemption threshold taxed?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "40%",
+                "source" : "https://www.cbpp.org/research/federal-tax/policy-basics-the-federal-estate-tax"
               },
               "Q04007_en": {
                 "id": "Q04007_en",
                 "title": "Estate Tax Rate in 1950s",
                 "description": "At what rate was each dollar of estate that is passed on and falls above the threshold taxed in the 1950s?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "77%",
+                "source" : "https://www.irs.gov/pub/irs-soi/ninetyestate.pdf"
               },
               "Q04003_en": {
                 "id": "Q04003_en",
@@ -1426,7 +1449,9 @@
                 "id": "Q04005_en",
                 "title": "Estate Tax Exemption Threshold",
                 "description": "Please specify the exact estate tax exemption threshold.",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "$11.4 million",
+                "source" : "https://www.irs.gov/businesses/small-businesses-self-employed/whats-new-estate-and-gift-tax"
               },
               "Q04016_top1": {
                 "id": "Q04016_top1",
@@ -1438,13 +1463,17 @@
                       "id": "Q04016_top1",
                       "title": "Share of wealth owned by top 1%",
                       "description": "What share of all of the wealth in the U.S. do you think is currently owned by the top 1%?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "20.4%",
+                      "source" : "World Inequlity Database"
                     },
                     {
                       "id": "Q04016_050_en",
                       "title": "Share of wealth owned by bottom 50%",
                       "description": "What share of all of the wealth in the U.S. do you think is currently owned by the bottom 50%",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "0%",
+                      "source" : "World Inequlity Database"
                     }
                 ]
               },
@@ -1452,7 +1481,9 @@
                 "id": "Q04018_en",
                 "title": "Share of Wealth Inherited",
                 "description": "What share of total wealth owned by households in the U.S. today is inherited from their parents?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "Between 56 and 64%",
+                "source" : "Alvaredo et al (2017)"
               },
               "Q04021_1_en": {
                 "id": "Q04021_1_en",
@@ -1464,31 +1495,36 @@
                       "id": "Q04021_1_en",
                       "title": "Probability to get from bottom to top quintile",
                       "description": "What is the probability of getting from bottom to top quintile?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "7.5%"
                     },
                     {
                       "id": "Q04021_2_en",
                       "title": "Probability to get from bottom to second quintile",
                       "description": "What is the probability of getting from bottom to second quintile?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "12.3%"
                     },
                     {
                       "id": "Q04021_3_en",
                       "title": "Probability to get from bottom to third quintile",
                       "description": "What is the probability of getting from bottom to third quintile?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "18.4%"
                     },
                     {
                       "id": "Q04021_4_en",
                       "title": "Probability to remain in bottom quintile",
                       "description": "What is the probability of remaining in bottom quintile?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "28.0%"
                     },
                     {
                       "id": "Q04021_5_en",
                       "title": "Probability to get from bottom to top quintile",
                       "description": "What is the probability of getting from bottom to top quintile?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "33.7%"
                     }
                 ]
               }
@@ -2259,31 +2295,40 @@
                     "id": "Q04020_1_en",
                     "title": "Share of Americans on Medicaid",
                     "description" : "Medicaid",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : "15",
+                    "source" : "https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html"
                   },
                   {
                     "id": "Q04020_2_en",
                     "title": "Share of Americans on Medicare",
                     "description" : "Medicare",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : "14",
+                    "source" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
                   },
                   {
                     "id": "Q04020_3_en",
                     "title": "Share of Americans on Employer-based Insurance",
                     "description" : "Group health insurance through employer",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : "49",
+                    "source" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
                   },
                   {
                     "id": "Q04020_4_en",
                     "title": "Share of Americans on Other Insurance",
                     "description" : "Other insurance (policies purchased directly from an insurance company, military, etc.)",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : "9.8"
                   },
                   {
                     "id": "Q04020_5_en",
                     "title": "Share of Americans Uninsured",
                     "description" : "Uninsured",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : "12.2",
+                    "source" : "https://news.gallup.com/poll/225383/uninsured-rate-steady-fourth-quarter-2017.aspx"
                   }
                 ]
               },
@@ -2292,8 +2337,8 @@
                 "title": "Share of American Children on Medicaid",
                 "description": "Out of 100 American children, aged below 18, how many are enrolled in Medicaid?",
                 "type" : "NUMERIC",
-                "correct" : "49",
-                "source" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
+                "correct" : "37",
+                "source" : "https://www.medicaid.gov/medicaid/benefits/bhs/children-and-youth/index.html"
               },
               "Q04010_1_en" : {
                 "id" : "Q04010_1_en",
@@ -2315,7 +2360,9 @@
                     "title": "Based on age",
                     "description" : "Age",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["Yes", "No"]
+                    "sorter" : ["Yes", "No"],
+                    "correct" : "Yes",
+                    "source" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
                   },
                   {
                     "id": "Q04010_3_en",
