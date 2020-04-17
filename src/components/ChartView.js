@@ -95,6 +95,16 @@ export default class ChartView extends React.PureComponent {
             elt.innerHTML = "Proportion";
         }
         // document.getElementById(elementId).getElementsByTagName("p")[0].remove();
+
+        if(selectedQuestion.correct != undefined) {
+            let bars = document.getElementsByClassName(`c3-target-${selectedQuestion.correct.replace(" ", "-")}`);
+            for(let i = 0; i < bars.length; i++){
+                bars[i].style.setProperty("opacity", "1.0", "important");
+            }
+        }
+
+        // some hacky stuff to handle the treatment chart views and adjust the label size.
+        // should try to find some other way to deal with this at some point
         let ChartLabel = document.getElementById("ChartLabel");
         if (ChartLabel) {
             ChartLabel.style.height = document.getElementsByClassName("c3-event-rect")[0].height.baseVal.value + "px";

@@ -805,7 +805,7 @@
                 "title": "Share of imports that are agricultural",
                 "description": "The U.S. imports both industrial (i.e., non-agricultural) and agricultural goods. What share of the goods that the U.S. imports do you think are agricultural goods?",
                 "type" : "NUMERIC",
-                "correct" : "4.1%",
+                "correct" : "4.1",
                 "source" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/"
               },
               "Q04007_en": {
