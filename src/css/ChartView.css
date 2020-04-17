@@ -1,3 +1,7 @@
 .c3-axis {
     font-size : 10pt !important; 
 }
+
+.c3-event-rect {
+    opacity: 0.5 !important;
+}

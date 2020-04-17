@@ -4,7 +4,7 @@ import '../css/StatBubble.css'
 export default class StatBubble extends React.PureComponent { 
     render() { 
     let style = this.props.title == "All" ? { textDecoration : "underline" } : {};
-    let classNames = "StatBubble text-center card h-100 " + (this.props.active ? "active" : "");
+    let classNames = "StatBubble text-center card h-100 " + (this.props.active ? "activeBubble" : "");
         return (
             <a href="#" className = {classNames} onClick = { (e) => {e.preventDefault(); this.props.handleClick()}}>
                 <strong className = "BubbleTitle" style = {style}>{this.props.title == "All" ? this.props.title.toUpperCase() : this.props.title}</strong>

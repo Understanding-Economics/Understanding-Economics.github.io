@@ -1,4 +1,9 @@
-.nav {
+.navbar {
     margin-top: 20px;
     margin-bottom: 20px !important;
+    border-radius: 10px !important;
+}
+
+.nav-link {
+    font-weight: bolder !important;
 }

@@ -4,7 +4,7 @@ import NavigationBar from './components/NavigationBar'
 import DataPage from './components/DataPage'
 import HomePage from './components/HomePage'
 import AboutPage from './components/AboutPage'
-import { Route, Switch, HashRouter as Router } from 'react-router-dom'
+import { NavLink, Route, Switch, HashRouter as Router } from 'react-router-dom'
 import NotFound from './components/NotFound'
 import { surveys } from './config/fields.json'
 
@@ -31,8 +31,10 @@ class App extends React.Component {
     
     return (
       <Router basename = "/">
-        <div className="App container">
-          <h2>Understanding Economics</h2>
+          <div className="App container">
+          <NavLink exact to="/">
+              <h2>Understanding Economics</h2>
+          </NavLink> 
           <NavigationBar />
           <Switch>
             <Route exact path="/" component={HomePage}/>
