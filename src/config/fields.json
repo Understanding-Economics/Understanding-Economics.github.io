@@ -140,14 +140,14 @@
               "Q04004_en": {
                 "id": "Q04004_en",
                 "title": "Perceived Equality of Income Tax Share",
-                "description": "Do you think that, broadly speaking, everyone in the U.S. currently pays approximately the same share of income in federal personal income taxes or do you think people pay very different shares of income in federal personal income taxes?",
+                "description": "How equally the respondent thinks the share of income tax is distributed across people in the U.S.",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Everyone pays more or less the same share", "People pay somewhat different shares of their income in taxes", "People pay very different shares of their incomes in taxes"]
               },
               "Q04005_en": {
                 "id": "Q04005_en",
                 "title": "Taxed Share by Income",
-                "description": "Do you think that people with higher incomes pay a higher or lower share of their total income in federal personal income taxes than people with lower incomes?",
+                "description": "Whether respondent thinks people with higher incomes pay a higher or lower share of their total income in federal taxes than people with lower incomes?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["People with higher incomes pay a higher share of their income in taxes than those with lower incomes.", "People with higher incomes pay a lower share of their income in taxes than those with lower incomes."]
               },
@@ -156,14 +156,18 @@
                 "title": "Top Tax Rate Threshold",
                 "description": "How high is the threshold of total annual income for a married household above which the top tax rate applies?",
                 "type" : "NUMERIC",
-                "format" : "dollar"
+                "format" : "dollar",
+                "correct" : "600000",
+                "source" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/"
               },
               "Q04008_en": {
                 "id": "Q04008_en",
                 "title": "Proportion in Top Tax Rate",
                 "description": "Out of 100 households in the U.S., how many are in the top federal personal income tax bracket?",
                 "type" : "NUMERIC",
-                "format" : "percent"
+                "format" : "percent",
+                "correct" : "65",
+                "source" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
               },
               "Q04009_en": {
                 "id": "Q04009_en",
@@ -178,30 +182,36 @@
                 "id": "Q04010_en",
                 "title": "Top Tax Share of Income",
                 "description": "What share of their total income do people in the top federal personal income tax bracket pay in taxes?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "28.5",
+                "source" : "https://jicinvest.com/how-many-taxpayers-fall-into-each-income-tax-bracket/"
               },
               "Q04011_en": {
                 "id": "Q04011_en",
                 "title": "1950s Top Tax Rate",
                 "description": "Can you guess what the top federal personal income tax rate used to be in the 1950s in the U.S.?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "95",
+                "source" : "https://bradfordtaxinstitute.com/Free_Resources/Federal-Income-Tax-Rates.aspx"
               },
               "Q04012_en": {
                 "id": "Q04012_en",
                 "title": "No Federal Income Tax",
                 "description": "Out of 100 U.S. households, how many pay no federal income taxes?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "44",
+                "source" : "https://www.taxpolicycenter.org/taxvox/closer-look-those-who-pay-no-income-or-payroll-taxes"
               },
               "Q04013_en": {
                 "id": "Q04013_en",
                 "title": "Median Tax Share of Income",
-                "description": "Imagine a middle class household that is right at the middle of the income distribution, such that half of all households in the U.S. earn more than this household and half earn less. What share of their income do you think such a household pays in federal income taxes?",
+                "description": "What share of income do you think a middle-class household pays in federal income taxes?",
                 "type" : "NUMERIC"
               },
               "Q04014_en": {
                 "id": "Q04014_en",
                 "title": "U.S. Relative Taxation",
-                "description": "If you compare the U.S. to other rich countries such as Canada or Western Europe, do you think the U.S. has, on average, higher federal personal income taxes, similar levels of federal personal income taxes, or lower federal personal income taxes than these countries?",
+                "description": "How respondent thinks U.S. federal income taxes compare to those of other rich countries such as Canada or Western Europe",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Higher income taxes", "Comparable levels of income taxes", "Lower income taxes"]
               },
@@ -209,11 +219,13 @@
                 "id": "Q04016_en",
                 "title": "Top 1% Share of Income",
                 "description": "What share of total national income do you think goes to the top 1% richest households?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "20",
+                "source" : "https://wir2018.wid.world/executive-summary.html"
               },
               "Q04019_en": {
                 "id": "Q04019_en",
-                "title": "Reason for wealth",
+                "title": "Reason for Wealth",
                 "description": "Which has more to do with why a person is rich?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Because she or he worked harder than others", "Because she or he had more advantages than others"]
@@ -235,14 +247,14 @@
               "Q07001_en": {
                 "id": "Q07001_en",
                 "title": "Tax System Fairness (Broad)",
-                "description": "Would you say that the current U.S. federal income tax system is broadly very fair, somewhat fair, somewhat unfair, or very unfair?",
+                "description": "How fair the respondent thinks the current U.S. federal income tax system is",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
               },
               "Q07002_en": {
                 "id": "Q07002_en",
                 "title": "Tax System Satisfaction",
-                "description": "How satisfied or dissatisfied are you with the current U.S. federal income tax system?",
+                "description": "How satisfied the respondent is with the current U.S. federal income tax system",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"],
                 "color" : "Gradient4"
@@ -250,7 +262,7 @@
               "Q07003_en": {
                 "id": "Q07003_en",
                 "title": "Tax Share Fairness (Specific)",
-                "description": "How fair the respondent thinks the tax system is, depending on their treatment",
+                "description": "How fair the respondent thinks the tax system is regarding high income housheolds, depending on their treatment",
                 "type" : "TREATMENT",
                 "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
                 "questions" : [
@@ -277,7 +289,7 @@
               "Q07004_en": {
                 "id": "Q07004_en",
                 "title": "Middle Class Tax Share Fairness",
-                "description": "CONTROL: Would you say that middle-class households in the U.S. today: <br/>\u201cGENDER\u201d: Would you say that women in the middle-class in the U.S. today:",
+                "description": "How fair the respondent thinks the tax system is regarding middle-class housheolds, depending on their treatment",
                 "type" : "TREATMENT",
                 "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
                 "questions" : [
@@ -297,8 +309,8 @@
               },
               "Q07005_en": {
                 "id": "Q07005_en",
-                "title": "Distribution Fairness",
-                "description": "Do you feel that the distribution of money and wealth in this country today is fair, or do you feel that the money and wealth in this country should be more evenly distributed among a larger percentage of the people?",
+                "title": "Money/Wealth Distribution Fairness",
+                "description": "How fair the respondent believes the distribution of money and wealth is in the U.S.",
                 "type" : "CATEGORICAL",
                 "sorter" : ["The distribution and money and wealth in this country today is fair", "The money and wealth in this country should be more evenly distributed among a larger percentage of the people"]
               },
@@ -311,8 +323,8 @@
               },
               "Q07008_en": {
                 "id": "Q07008_en",
-                "title": "Support Top Income Tax Increase for lower-incomes",
-                "description": "The additional revenue raised is used to expand programs that support lower-income individuals",
+                "title": "Support Top Income Tax Increase for Lower-Income People",
+                "description": "Support for increasing the top income tax rate if the additional revenue raised supports lower-income individuals",
                 "type" : "TREATMENT",
                 "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"],
                 "questions" : [
@@ -332,8 +344,8 @@
               },
               "Q07009_en": {
                 "id": "Q07009_en",
-                "title": "Support Top Income Tax Increase for investment",
-                "description": "Would you support raising federal income taxes on higher income households in the following cases?",
+                "title": "Support Top Income Tax Increase for Investment",
+                "description": "Support for increasing the top income tax rate if the additional revenue raised supports investment",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"]
               }
@@ -370,12 +382,12 @@
           "Tax Change Behavior": {
             "id": "Tax Change Behavior",
             "title": "Tax Change Behavior",
-            "description": "CONTROL. If the federal personal income tax rate were to increase for the rich- est people in the economy, to what extent would it encourage them towards the following behaviors?<br/>YOU. If your federal personal income tax rate were to increase, to what extent would it encourage you towards the following behaviors?<br/>GENDER. If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman towards the following behaviors?",
+            "description": "How would increasing the federal income tax rate for the richest individuals encourage the following behavior(s)?",
             "questions": {
               "Q06001_1_en" : {
                 "id" : "Q06001_1_en",
-                "title" : "Likeliness to change behavior - Taxes for the rich",
-                "description" : "If federal income taxes change for the richest people in the economy, how likely are people to...",
+                "title" : "Behavioral Effects of Taxes for the Rich",
+                "description" : "If federal income taxes for the richest people in the economy increase, how likely are people to...",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -443,8 +455,8 @@
               },
               "Q06002_1_en" : {
                 "id" : "Q06002_1_en",
-                "title" : "Likeliness to change behavior - Taxes for the middle class",
-                "description" : "If federal income taxes change for the middle class, how likely are people to...",
+                "title" : "Behavioral Effects of Taxes for the Middle Class",
+                "description" : "If federal income taxes change for the middle class increase, how likely are people to...",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -513,7 +525,7 @@
               "Q06003_en": {
                 "id": "Q06003_en",
                 "title": "Middle Class Tax Share Fairness",
-                "description": "CONTROL AND “YOU”. What do you think would ultimately do more to reduce the income differences between poor and rich families? “GENDER”. What do you think would ultimately do more to reduce the income differences between poor and rich women?",
+                "description": "What would ultimately do more to reduce the income differences between poor and rich families?",
                 "type" : "TREATMENT",
                 "sorter" : ["Lowering taxes on wealthy people/women and corporations to encourage more investment in economic growth.", "Raising taxes on wealthy people/women and corporations to expand programs for the poor."],
                 "questions" : [
@@ -533,8 +545,8 @@
               },
               "Q06004_1_en" : {
                 "id" : "Q06004_1_en",
-                "title" : "Effects of Cuts in top tax rates",
-                "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?",
+                "title" : "Effects of Cuts in Top Tax Rates",
+                "description" : "Which of these groups would mostly win or mostly lose from a cut in the top federal income tax rate?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -595,8 +607,8 @@
               },
               "Q06005_1_en" : {
                 "id" : "Q06005_1_en",
-                "title" : "Effects of Cuts in top tax rates",
-                "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?",
+                "title" : "Overall Tax Increase",
+                "description" : "Which of these groups mostly win or mostly lose from increases in overall taxes and government revenues?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -609,19 +621,19 @@
                           "id" : "Q06005_1_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?"
+                          "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which of these groups would you say mostly win or mostly lose from this change?"
                       },
                       {
                         "id" : "Q06005_1_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
                       },
                       {
                         "id" : "Q06005_1_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, women in which of these groups would you say mostly win or mostly lose from this change?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which of these groups would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
@@ -657,8 +669,8 @@
               },
               "Q06006_en": {
                 "id": "Q06006_en",
-                "title": "Effect of high income tax increase on economic activity",
-                "description": "CONTROL GROUP AND “YOU”. Do you think that increasing income taxes on high- income households would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.? “GENDER” RANDOMIZATION. Do you think that increasing income taxes that high- income women have to pay would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.?",
+                "title": "Effect on Economic Activity",
+                "description": "How the respondent thinks increasing the top federal income tax rate would affect economic activity",
                 "type" : "TREATMENT",
                 "sorter" : ["Hurt economic activity in the U.S.", "Not have an effect on economic activity in the U.S.", "Help economic activity in the U.S."],
                 "questions" : [
@@ -678,8 +690,8 @@
               },
               "Q06007_en": {
                 "id": "Q06007_en",
-                "title": "Effect of high income tax cut on deficit",
-                "description": "CONTROL GROUP. Which comes closer to your view about the long-term impact that tax cuts on high-income households may have on the federal budget deficit? “YOU” RANDOMIZATION. Which comes closer to your view about the long-term impact that tax cuts on households with your level of income may have on the federal budget deficit? “GENDER” RANDOMIZATION. Which comes closer to your view about the long-term impact that the cuts on taxes that high-income women have to pay may have on the federal budget deficit?",
+                "title": "Effect of High-Income Tax Cut on Federal Deficit",
+                "description": "How the respondent views the long-term impact of tax cuts on high-income households on the federal budget deficit?",
                 "type" : "TREATMENT",
                 "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
                 "questions" : [
@@ -705,8 +717,8 @@
               },
               "Q06008_en": {
                 "id": "Q06008_en",
-                "title": "Effect of middle class tax cut on deficit",
-                "description": "CONTROL GROUP. What about the long-term impact that tax cuts on the middle-class may have on the federal budget deficit? “GENDER” RANDOMIZATION. What about the long-term impact that cuts on taxes that women from the middle-class have to pay may have on the federal budget deficit?",
+                "title": "Effect of Middle-Class Tax Cut on Federal Deficit",
+                "description": "How the respondent views the long-term impact of tax cuts on middle-class households on the federal budget deficit?",
                 "type" : "TREATMENT",
                 "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
                 "questions" : [
@@ -727,20 +739,20 @@
               "Q06009_en": {
                 "id": "Q06009_en",
                 "title": "Progressive Taxes and Income Inequality",
-                "description": "CONTROL GROUP AND “YOU”. Do you think that a progressive federal income tax system, in which people with higher incomes pay a higher share of income in taxes than people with lower incomes is an important tool to reduce inequality? “GENDER” RANDOMIZATION. Do you think that a progressive federal income tax system, in which women with higher incomes pay a higher share of their income in taxes than women with lower incomes is an important tool to reduce inequality?",
+                "description": "Whether the respondent believes a progressive federal income tax system, in which people with higher incomes pay a higher share of income tax than people with lower incomes, is an important tool to reduce inequality?",
                 "type" : "TREATMENT",
                 "sorter" : ["Yes", "No"],
                 "questions" : [
                   {
                     "id" : "Q06009_en",
                     "title" : "Control",
-                    "description" : "Do you think that a progressive federal income tax system, in which people with higher incomes pay a higher share of income in taxes than people with lower incomes is an important tool to reduce inequality?",
+                    "description" : "Do you think that a progressive federal income tax system is an important tool to reduce inequality?",
                     "treatments" : ["Neutral", "You"]
                   },
                   {
                     "id" : "Q06009_en",
                     "title" : "Gender",
-                    "description" : "Do you think that a progressive federal income tax system, in which women with higher incomes pay a higher share of their income in taxes than women with lower incomes is an important tool to reduce inequality?",
+                    "description" : "Do you think that a progressive federal income tax system is an important tool to reduce inequality?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -754,8 +766,8 @@
             "questions": {
               "Q09001_en": {
                 "id": "Q09001_en",
-                "title": "Reduction of income differences",
-                "description": "To reduce income differences between rich and poor people, the government (at the local, state, or federal level) has the ability and the tools to do:",
+                "title": "Reduction of Income Differences",
+                "description": "To reduce income differences between rich and poor people, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
@@ -774,7 +786,7 @@
             "questions": {
               "Q03001_en": {
                 "id": "Q03001_en",
-                "title": "Trade policy affects own life",
+                "title": "Personal Impact of Trade Policy",
                 "description": "Do you feel that U.S. trade policy has important, direct effects on your own life?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes, it has very important direct effects on my own life; It has some effects on my own life", "No, it has no direct effects on my own life"]
@@ -788,37 +800,37 @@
             "questions": {
               "Q04002_en": {
                 "id": "Q04002_en",
-                "title": "Import tariff",
+                "title": "Import Tariff",
                 "description": "Do you know what an import tariff is?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q04004_en": {
                 "id": "Q04004_en",
-                "title": "Import quota",
+                "title": "Import Quota",
                 "description": "Do you know what an import quota is?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q04006_en": {
                 "id": "Q04006_en",
-                "title": "Share of imports that are agricultural",
-                "description": "The U.S. imports both industrial (i.e., non-agricultural) and agricultural goods. What share of the goods that the U.S. imports do you think are agricultural goods?",
+                "title": "Share of Agricultural Imports",
+                "description": "What share of the goods that the U.S. imports are agricultural goods?",
                 "type" : "NUMERIC",
                 "correct" : "4.1",
                 "source" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/"
               },
               "Q04007_en": {
                 "id": "Q04007_en",
-                "title": "Share of imports subject to tariff",
-                "description": "Of all the goods that the U.S. imports, what share do you think is subject to a tariff or import duty?",
+                "title": "Share of Imports Subject to Tariff",
+                "description": "Of all the goods that the U.S. imports, what share is subject to a tariff or import duty?",
                 "type" : "NUMERIC",
                 "correct" : "Approximately one half",
                 "source" : "Office of the US Trade Representative"
               },
               "Q04009_en": {
                 "id": "Q04009_en",
-                "title": "Principal export destination",
+                "title": "Principal Export Destination",
                 "description": "To which country does the U.S. export the most, in terms of the net dollar value?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Brazil", "Canada", "China", "France", "Germany", "India", "Ireland", "Italy", "Japan", "Mexico", "Netherlands", "South Korea", "Switzerland", "Taiwan", "United Kingdom"],
@@ -826,7 +838,7 @@
               },
               "Q04010_en": {
                 "id": "Q04010_en",
-                "title": "Principal import provenance",
+                "title": "Principal Import Provenance",
                 "description": "From which country does the U.S. import the most, in terms of the net dollar value",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Brazil", "Canada", "China", "France", "Germany", "India", "Ireland", "Italy", "Japan", "Mexico", "Netherlands", "South Korea", "Switzerland", "Taiwan", "United Kingdom"],
@@ -834,8 +846,8 @@
               },
               "Q04011_en": {
                 "id": "Q04011_en",
-                "title": "Trade evolution over time",
-                "description": "Over time, do you think trade between the U.S. and other countries has decreased, stayed more or less the same, or increased?",
+                "title": "Trade Evolution Over Time",
+                "description": "Over time, how has the level of trade between the U.S. and other countries changed?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["It has decreased", "It has stayed more or less the same", "It has increased"]
               }
@@ -848,115 +860,59 @@
             "questions": {
               "Q06001_1_en": {
                 "id": "Q06001_1_en",
-                "title": "Effects of Trade",
-                "description": "YOU As trade with other countries has increased, to what extent do you think the following firms have lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
+                "title": "Effects of Trade (Treatment - CONTROL)",
+                "description": "As trade with other countries has increased, how much have the following groups lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06001_1_en",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06001_1_en",
-                            "title" : "CONTROL",
-                            "description" : "Large corporations",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "Large Corporations",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   },
                   {
                     "id" : "Q06001_2_en",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06001_2_en",
-                            "title" : "CONTROL",
-                            "description" : "High-income households",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "High-income Households",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   },
                   {
                     "id" : "Q06001_3_en",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06001_3_en",
-                            "title" : "CONTROL",
-                            "description" : "Middle-income households",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "Middle-income Households",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   },
                   {
                     "id" : "Q06001_4_en",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06001_4_en",
-                            "title" : "CONTROL",
-                            "description" : "Low-income households",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "Low-income Households",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   },
                   {
                     "id" : "Q06001_5_en",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06001_5_en",
-                            "title" : "CONTROL",
-                            "description" : "Small businesses",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "Small Businesses",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   }
                 ]
               },
               "Q06201_1": {
                 "id": "Q06201_1",
-                "title": "Effects of Trade",
-                "description": "YOU As trade with other countries has increased, to what extent do you think the following firms have lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
+                "title": "Effects of Trade (Treatment - YOU)",
+                "description": "As trade with other countries has increased, how much have the following groups lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06201_1",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06201_1",
-                            "title" : "YOU",
-                            "description" : "Large corporations",
-                            "treatments" : ["You"]
-                        }
-                      ]
+                    "title" : "Large Corporations",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   },
                   {
                     "id" : "Q06201_2",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06201_2",
-                            "title" : "YOU",
-                            "description" : "Small businesses",
-                            "treatments" : ["You"]
-                        }
-                      ]
+                    "title" : "Small Businesses",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   }
                 ]
               },
@@ -964,36 +920,20 @@
                 "id": "Q06201B",
                 "title": "Personal situation",
                 "description": "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
-                "type" : "TREATMENT",
-                "sorter" : ["Better off", "Worse off"],
-                "questions" : [
-                  {
-                    "id" : "Q06201B",
-                    "title" : "YOU",
-                    "description" : "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
-                    "treatments" : ["You"]
-                  }
-                ]
+                "type" : "CATEGORICAL",
+                "sorter" : ["Better off", "Worse off"]
               },
               "Q06201C_1": {
                 "id": "Q06201C_1",
                 "title": "Magnitude on personal situation",
-                "description": "Please specify the extent to which you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
-                "type" : "TREATMENT",
-                "sorter" : ["1", "2", "3", "4", "5"],
-                "questions" : [
-                  {
-                    "id" : "Q06201C_1",
-                    "title" : "YOU",
-                    "description" : "Please specify the extent to which you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
-                    "treatments" : ["You"]
-                  }
-                ]
+                "description": "How much do you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
+                "type" : "CATEGORICAL",
+                "sorter" : ["1", "2", "3", "4", "5"]
               },
               "Q06003_en": {
                 "id": "Q06003_en",
                 "title": "Effect on Jobs",
-                "description": "Please specify the extent to which you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
+                "description": "Whether increased trade with other countries affects American jobs, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
                 "type" : "TREATMENT",
                 "sorter" : ["Yes", "No"],
                 "questions" : [
@@ -1021,52 +961,28 @@
               "Q06105": {
                 "id": "Q06105",
                 "title": "Ability to find new job - Low-skilled workers",
-                "description": "CONTROL Do you think it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06105",
-                    "title" : "CONTROL",
-                    "description" : "Do you think it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
-                    "treatments" : ["Neutral"]
-                  }
-                ]
+                "description": "Whether it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"]
               },
               "Q06106": {
                 "id": "Q06106",
                 "title": "Ability to find new job - High-skilled workers",
-                "description": "CONTROL Do you think it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06106",
-                    "title" : "CONTROL",
-                    "description" : "Do you think it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
-                    "treatments" : ["Neutral"]
-                  }
-                ]
+                "description": "Whether it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"]
               },
               "Q06205": {
                 "id": "Q06205",
-                "title": "Ability to find new job",
-                "description": "YOU Would it be easy for you to find a job in a different sector from the one you are currently working in?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06205",
-                    "title" : "YOU",
-                    "description" : "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
-                    "treatments" : ["You"]
-                  }
-                ]
+                "title": "Ability to find new job - Specific",
+                "description": "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
+                "type" : "CAGTEGORICAL",
+                "sorter" : ["Yes", "No"]
               },
               "Q06007_1_en": {
                 "id": "Q06007_1_en",
-                "title": "Effects on Unemployment",
-                "description": "CONTROL Unemployment in some sectors and the decline of some industries in the U.S. ME Unemployment in your sector and the decline of some industries in the U.S.",
+                "title": "Unemployment and Inequality",
+                "description": "How much you think trade with other countries has affected unemployment and inequality",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -1078,20 +994,20 @@
                         {
                             "id" : "Q06007_1_en",
                             "title" : "CONTROL",
-                            "description" : "Unemployment",
+                            "description" : "Unemployment in some sectors and the decline of some industries in the U.S.",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06007_1_en",
                             "title" : "YOU",
-                            "description" : "Unemployment",
+                            "description" : "Unemployment in your sector and the decline of some industries in the U.S.",
                             "treatments" : ["You"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06007_2_en",
-                    "title" : "Inequality rise",
+                    "title" : "Effects on Inequality",
                     "type" : "CATEGORICAL",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
                   }
@@ -1099,8 +1015,8 @@
               },
               "Q06009_en": {
                 "id": "Q06009_en",
-                "title": "Price of goods",
-                "description": "CONTROL Overall, has international trade decreased the prices of goods sold in the U.S.? ME Overall, has international trade decreased the prices of goods that you buy regularly?",
+                "title": "Price of Goods",
+                "description": "Overall, has international trade decreased the prices of goods sold in the U.S.?",
                 "type" : "TREATMENT",
                 "sorter" : ["Yes", "No"],
                 "questions" : [
@@ -1141,15 +1057,15 @@
               },
               "Q06013_en": {
                 "id": "Q06013_en",
-                "title": "Can trade be beneficial for both sides",
-                "description": "When two countries trade with each other, would you say that, in general, both are made better off from the trade or that one gains at the expense of the other one?",
+                "title": "Benefits of Trade",
+                "description": "Does trade make the countries involved better off in general?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["In general, both countries are better off", "In general, one country gains, the other one loses", "In general, both countries lose"]
               },
               "Q06014_en": {
                 "id": "Q06014_en",
-                "title": "Importing a good produced at a lower price abroad",
-                "description": "Imagine the U.S. was better at producing cars than Germany, meaning that it is able to produce better cars at a lower price. Would it still make sense under some circumstances for the U.S. to import cars from Germany?",
+                "title": "Importing Lower-priced Goods",
+                "description": "Imagine the U.S. is able to produce better cars at a lower price than Germany is. Would it still make sense under some circumstances for the U.S. to import cars from Germany?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               }
@@ -1158,81 +1074,81 @@
           "Example" : {
             "id": "Example",
             "title": "Example",
-            "description": "Long example about laptops and cars",
+            "description": "The U.S. is a large net exporter of laptops (meaning that it sells more laptops abroad than it purchases from abroad and that U.S. laptops are a large share of all laptops sold in the world), and a large net importer of cars (meaning that it purchases more cars from abroad than it sells abroad and that cars purchased by customers in the U.S. are a large share of worldwide car purchases). The laptop sector employs many high-skilled, college-educated workers. The car sector em- ploys many low-skilled workers. Cars are produced for cheaper abroad, while laptops are produced for cheaper in the U.S.",
             "questions": {
               "Q06015_en": {
                 "id": "Q06015_en",
                 "title": "Long example",
-                "description": "Long example about laptops and cars",
+                "description": "Imagine now that the U.S. starts importing even more cars and producing less cars domestically.",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06015_en",
-                    "title" : "Price of cars",
+                    "title" : "Price of Cars",
                     "description" : "What will happen to the price of cars in the U.S.?", 
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06016_en",
-                    "title" : "Car consumers",
+                    "title" : "Car Consumers",
                     "description" : "Would you say that households who purchase cars in the U.S. are now better off?", 
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06017_en",
-                    "title" : "Low-skilled workers wages",
+                    "title" : "Low-skilled Workers' Wages",
                     "description" : "What will happen to the wages of low-skilled workers working in the car sector?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
                   },
                   {
                     "id" : "Q06018_en",
-                    "title" : "Price of U.S. laptops abroad",
+                    "title" : "Price of U.S. Laptops Abroad",
                     "description" : "Imagine also that the U.S. starts producing and exporting more laptops. What will happen to the price of U.S. laptops abroad, i.e., in the countries where the U.S. sells laptops?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06019_en",
-                    "title" : "High-skilled workers wages",
+                    "title" : "High-skilled Workers' Wages",
                     "description" : "What will happen to the wages of high-skilled workers working in the laptop sector?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
                   },
                   {
                     "id" : "Q06020_en",
-                    "title" : "Changing sectors and increase in exports",
-                    "description" : "Imagine now that over time, some low-skilled workers from the car sector are able to quit their jobs and find new jobs in the laptop sector. What will happen to their wages now if the U.S. exports more laptops?",
+                    "title" : "Changing Sectors and Increase in Exports",
+                    "description" : "Imagine that over time, some low-skilled workers from the car sector are able to quit their jobs and find new jobs in the laptop sector. What will happen to their wages now if the U.S. exports more laptops?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
                   },
                   {
                     "id" : "Q06021_en",
-                    "title" : "Export tax on laptops",
+                    "title" : "Export Tax on Laptops",
                     "description" : "If the U.S. were to impose an export tax on laptops, what would happen to the price of laptops abroad?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06022_en",
-                    "title" : "Import tariff on cars",
+                    "title" : "Import Tariff on Cars",
                     "description" : "If the U.S. were to impose an import tariff on cars sold in the U.S, what would happen to the price of cars in the U.S?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06023_en",
-                    "title" : "Export increase on wages",
+                    "title" : "Export Increase on Wages",
                     "description" : "If exports from your sector to other countries would increase, what do you think will happen to your wage?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06024_en",
-                    "title" : "Import increase on wages",
-                    "description" : "If the U.S. started to import more of the goods produced in your sector, what do you think would happen to your wage?",
+                    "title" : "Import Increase on Wages",
+                    "description" : "If the U.S. imported more of the goods produced in your sector, what do you think would happen to your wage?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   }
@@ -1255,21 +1171,21 @@
               "Q07002_en": {
                 "id": "Q07002_en",
                 "title": "",
-                "description": "How fair would you rate the current U.S. trade policy?",
+                "description": "Fairness of the current U.S. trade policy?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
               },
               "Q07003_en": {
                 "id": "Q07003_en",
                 "title": "",
-                "description": "How satisfied or dissatisfied are you with the current U.S. trade policy?",
+                "description": "Satisfaction with the current U.S. trade policy?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
               },
               "Q07006_1_en": {
                 "id": "Q07006_1_en",
                 "title": "Effects on Unemployment",
-                "description": "CONTROL In your view, what is the best policy tool to help workers in an industry that's declining and threatened by foreign competition? Please rank the following options from best (1) to worst (3). ME In your view, what is the best policy tool to help workers in your industry against the threat of foreign competition? Please rank the following options from best (1) to worst (3).",
+                "description": "What do you think is the best policy tool to help workers in a declining industry threatened by foreign competition? Please rank the following options from best (1) to worst (3).",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -1281,13 +1197,13 @@
                         {
                             "id" : "Q07006_1_en",
                             "title" : "CONTROL",
-                            "description" : "Restrict imports",
+                            "description" : "How effectively would restricting imports help workers in such an industry?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q07006_1_en",
                             "title" : "YOU",
-                            "description" : "Restrict imports",
+                            "description" : "How effectively would restricting imports help workers in your industry?",
                             "treatments" : ["You"]
                         }
                       ]
@@ -1301,13 +1217,13 @@
                         {
                             "id" : "Q07006_2_en",
                             "title" : "CONTROL",
-                            "description" : "Provide more generous transfers and direct assistance to these workers, such as retraining programs",
+                            "description" : "How effectively would providing generous transfers and direct assistance help workers in such an industry?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q07006_2_en",
                             "title" : "YOU",
-                            "description" : "Provide more generous transfers and direct assistance to these workers, such as retraining programs",
+                            "description" : "How effectively would providing generous transfers and direct assistance help workers in your industry?",
                             "treatments" : ["You"]
                         }
                       ]
@@ -1321,13 +1237,13 @@
                         {
                             "id" : "Q07006_3_en",
                             "title" : "CONTROL",
-                            "description" : "Subsidize production in sector",
+                            "description" : "How effectively would subsidizing production help workers in such an industry?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q07006_3_en",
                             "title" : "YOU",
-                            "description" : "Subsidize production in sector",
+                            "description" : "How effectively would subsidizing production help workers in your industry?",
                             "treatments" : ["You"]
                         }
                       ]
@@ -1336,15 +1252,15 @@
               },
               "Q07007_en": {
                 "id": "Q07007_en",
-                "title": "",
+                "title": "National Food Security",
                 "description": "What do you think is the best policy tool to ensure national food security?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Restrict food imports from abroad", "Provide more production subsidies in the food sector"]
               },
               "Q07008_en": {
                 "id": "Q07008_en",
-                "title": "",
-                "description": "If the U.S. starts imposing tariffs on many goods that it imports, how likely or unlikely do you think it is that other countries follow suit and also impose tariffs?",
+                "title": "Tariff Responses",
+                "description": "If the U.S. imposes tariffs on many imports, how likely or unlikely is it that other countries follow suit and also impose tariffs?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very likely, likely", "Unlikely", "Very unlikely"]
               }
@@ -1357,8 +1273,8 @@
             "questions": {
               "Q09003_en": {
                 "id": "Q09003_en",
-                "title": "Gains and losses of increase in trade",
-                "description": "Which statement comes closest to your views about more trade between the US and other countries? When there is more trade between the US and other countries…",
+                "title": "Gains and Losses of Increase in Trade",
+                "description": "Which statement comes closest to your views? When there is more trade between the US and other countries…",
                 "type" : "CATEGORICAL",
                 "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
               }
@@ -1405,15 +1321,15 @@
             "questions": {
               "Q03001_en": {
                 "id": "Q03001_en",
-                "title": "Federal estate tax affects own life",
+                "title": "Personal Effects of Federal Estate Tax",
                 "description": "Do you feel personally affected by the federal estate tax?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q03004_en": {
                 "id": "Q03004_en",
-                "title": "Likelihood your estate is taxed",
-                "description": "How likely do you think it is that your estate will be subject to the federal estate tax in the future?",
+                "title": "Likelihood Your Estate is Taxed",
+                "description": "How likely is it that your estate will be subject to the federal estate tax in the future?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very likely", "Somewhat likely", "Somewhat unlikely", "Very unlikely"]
               }
@@ -1429,19 +1345,22 @@
                 "title": "Scope of Estate Tax",
                 "description": "Is every individual's estate taxed",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Yes", "No"],
+                "correct" : "Yes",
+                "source" : "https://www.irs.gov/businesses/small-businesses-self-employed/whats-new-estate-and-gift-tax"
               },
               "Q04008_en": {
                 "id": "Q04008_en",
-                "title": "Small businesses subject to estate tax",
-                "description": "Do you think that many or few small business or small farm owners are subject to the federal estate tax?",
+                "title": "Small Businesses",
+                "description": "Do you think small business or small farm owners are subject to the federal estate tax?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Very likely", "Somewhat likely", "Somewhat unlikely", "Very unlikely"]
+                "sorter" : ["Almost all are subject to the estate tax; Many are subject to the estate tax", "Few are subject to the estate tax", "Almost none are subject to the estate tax"],
+                "correct" : "Few"
               },
               "Q04009_en": {
                 "id": "Q04009_en",
-                "title": "Double taxation?",
-                "description": "Do you think that the federal estate tax is mostly taxing assets that have already been taxed and thus leads to ”double taxation” or do you think that it is mostly taxing assets that have not been taxed before during the life of the owner?",
+                "title": "Double Taxation",
+                "description": "Does federal estate tax policy mostly tax assets that have already been taxed, thus leading to ”double taxation”?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["It’s mostly double taxation", "It mostly taxes assets that have not been taxed before"]
               },
@@ -1454,21 +1373,21 @@
               },
               "Q04014_en": {
                 "id": "Q04014_en",
-                "title": "Example about the federal estate tax",
+                "title": "Example",
                 "description": "Let’s work through a concrete example about the federal estate tax now. Jack inherits a house from his father. His father paid $50,000 for the house 30 years ago. This house is now worth $350,000 at the time of the father’s death. But Jack manages to sell the house for $400,000.",
                 "type" : "UMBRELLA",
                 "questions" : [
                     {
                       "id": "Q04014_en",
-                      "title": "Jack's capital gains",
-                      "description": "What is the amount that the IRS will consider as capital gains that Jack made and that will be taxed at the capital gains tax rate?",
+                      "title": "Jack's Capital Gains",
+                      "description": "What amount will the IRS consider as capital gains that Jack made and that will be taxed at the capital gains tax rate?",
                       "type" : "CATEGORICAL",
                       "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"]
                     },
                     {
                       "id": "Q04015_en",
-                      "title": "Jack's father's capital gains",
-                      "description": "What is the amount that the IRS will consider as capital gains that Jack's father made and that will be taxed at the capital gains tax rate?",
+                      "title": "Jack's Father's Capital Gains",
+                      "description": "What amount will the IRS consider as capital gains that Jack's father made and that will be taxed at the capital gains tax rate?",
                       "type" : "CATEGORICAL",
                       "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"]
                     }
@@ -1476,115 +1395,136 @@
               },
               "Q04017_en": {
                 "id": "Q04017_en",
-                "title": "Top 1% wealth share",
-                "description": "How has the share of total U.S. wealth that is held by the top 0.1% evolved over the past 30 years?",
+                "title": "Top 0.1% Wealth Share",
+                "description": "How has the share of wealth held by the top 0.1% evolved over the past 30 years in the U.S.?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"]
               },
               "Q04019_en": {
                 "id": "Q04019_en",
-                "title": "Reasons for wealth",
+                "title": "Reasons for Wealth",
                 "description": "Which has more to do with why a person is wealthy?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Because she or he worked harder than others", "Because she or he had more advantages than others"]
               },
               "Q04010_en": {
                 "id": "Q04010_en",
-                "title": "Share of estates that are unrealized capital gains",
-                "description": "If you think of all the large estates that will be subject to the federal estate tax, what share of those estates would you say is made up of unrealized capital gains that have never been taxed before?",
-                "type" : "NUMERIC"
+                "title": "Share of Estates that are Unrealized Capital Gains",
+                "description": "What share of estates subject to the federal estate tax is made up of unrealized capital gains that have never been taxed before?",
+                "type" : "NUMERIC",
+                "correct" : "55%",
+                "source" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04011_en": {
                 "id": "Q04011_en",
-                "title": "Average rate on taxed estates",
-                "description": "Consider the total value of all estates that are passed on and subject to the federal estate tax. In total, what fraction of the total value of these estates is paid in taxes?",
-                "type" : "NUMERIC"
+                "title": "Average Rate on Taxed Estates",
+                "description": "What fraction of the total value of estates subject to the federal estate tax is paid in taxes?",
+                "type" : "NUMERIC",
+                "correct" : "16.8%",
+                "source" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04006_en": {
                 "id": "Q04006_en",
-                "title": "Estate tax rate above threshold",
+                "title": "Estate Tax Rate Above Threshold",
                 "description": "At what rate is each dollar of estate that is passed on and falls above the exemption threshold taxed?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "40%",
+                "source" : "https://www.cbpp.org/research/federal-tax/policy-basics-the-federal-estate-tax"
               },
               "Q04007_en": {
                 "id": "Q04007_en",
-                "title": "Estate tax rate in 1950s",
-                "description": "Let’s compare this to how things used to be in the U.S. in the past. At what rate was each dollar of estate that is passed on and falls above the threshold taxed in the 1950s?",
-                "type" : "NUMERIC"
+                "title": "Estate Tax Rate in 1950s",
+                "description": "At what rate was each dollar of estate that is passed on and falls above the threshold taxed in the 1950s?",
+                "type" : "NUMERIC",
+                "correct" : "77%",
+                "source" : "https://www.irs.gov/pub/irs-soi/ninetyestate.pdf"
               },
               "Q04003_en": {
                 "id": "Q04003_en",
-                "title": "Number of estates subject to tax at death",
+                "title": "Number of Estates Subject to Tax at Death",
                 "description": "Number of estates subject to tax at death",
                 "type" : "NUMERIC"
               },
               "Q04005_en": {
                 "id": "Q04005_en",
-                "title": "Estate tax exemption threshold",
-                "description": "Please specify the exact threshold.",
-                "type" : "NUMERIC"
+                "title": "Estate Tax Exemption Threshold",
+                "description": "Please specify the exact estate tax exemption threshold.",
+                "type" : "NUMERIC",
+                "correct" : "$11.4 million",
+                "source" : "https://www.irs.gov/businesses/small-businesses-self-employed/whats-new-estate-and-gift-tax"
               },
               "Q04016_top1": {
                 "id": "Q04016_top1",
-                "title": "Share of wealth owned by following groups",
-                "description": "What share of all of the wealth in the U.S. do you think is currently owned by the following groups?",
+                "title": "Share of Wealth Owned by Following Groups",
+                "description": "What share of all of the wealth in the U.S. is currently owned by the following groups?",
                 "type" : "UMBRELLA",
                 "questions" : [
                     {
                       "id": "Q04016_top1",
                       "title": "Share of wealth owned by top 1%",
                       "description": "What share of all of the wealth in the U.S. do you think is currently owned by the top 1%?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "20.4%",
+                      "source" : "World Inequlity Database"
                     },
                     {
                       "id": "Q04016_050_en",
                       "title": "Share of wealth owned by bottom 50%",
                       "description": "What share of all of the wealth in the U.S. do you think is currently owned by the bottom 50%",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "0%",
+                      "source" : "World Inequlity Database"
                     }
                 ]
               },
               "Q04018_en": {
                 "id": "Q04018_en",
-                "title": "Share of wealth inherited",
+                "title": "Share of Wealth Inherited",
                 "description": "What share of total wealth owned by households in the U.S. today is inherited from their parents?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "Between 56 and 64%",
+                "source" : "Alvaredo et al (2017)"
               },
               "Q04021_1_en": {
                 "id": "Q04021_1_en",
-                "title": "Probability of moving in following ways",
-                "description": "What is the probability of moving quintiles in the following ways?",
+                "title": "Moving Income Brackets",
+                "description": "What is the probability of moving income quintiles in the following ways?",
                 "type" : "UMBRELLA",
                 "questions" : [
                     {
                       "id": "Q04021_1_en",
                       "title": "Probability to get from bottom to top quintile",
                       "description": "What is the probability of getting from bottom to top quintile?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "7.5%"
                     },
                     {
                       "id": "Q04021_2_en",
                       "title": "Probability to get from bottom to second quintile",
                       "description": "What is the probability of getting from bottom to second quintile?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "12.3%"
                     },
                     {
                       "id": "Q04021_3_en",
                       "title": "Probability to get from bottom to third quintile",
                       "description": "What is the probability of getting from bottom to third quintile?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "18.4%"
                     },
                     {
                       "id": "Q04021_4_en",
                       "title": "Probability to remain in bottom quintile",
                       "description": "What is the probability of remaining in bottom quintile?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "28.0%"
                     },
                     {
                       "id": "Q04021_5_en",
                       "title": "Probability to get from bottom to top quintile",
                       "description": "What is the probability of getting from bottom to top quintile?",
-                      "type" : "NUMERIC"
+                      "type" : "NUMERIC",
+                      "correct" : "33.7%"
                     }
                 ]
               }
@@ -1597,13 +1537,13 @@
             "questions": {
               "Q06001_1_en": {
                 "id": "Q06001_1_en",
-                "title": "Increase in federal estate taxes",
-                "description": "CONTROL GROUP. If the federal estate tax increases, to what extent would it encourage the very wealthy individuals towards the following behaviors? “ME” RANDOMIZATION. If the federal estate tax were to increase, to what extent would it encourage you towards the following behaviors? “WOMEN” RANDOMIZATION. If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women towards the following behaviors?",
+                "title": "Increasing Federal Estate Taxes - Wealthy",
+                "description": "If the federal estate tax increases, to what extent would it encourage very wealthy individuals towards the following behaviors?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06001_1_en",
-                    "title" : "Evade taxes",
+                    "title" : "Evade Taxes",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1629,7 +1569,7 @@
                   },
                   {
                     "id" : "Q06001_2_en",
-                    "title" : "Work less",
+                    "title" : "Work Less",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1655,7 +1595,7 @@
                   },
                   {
                     "id" : "Q06001_3_en",
-                    "title" : "Stop working",
+                    "title" : "Stop Working",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1681,7 +1621,7 @@
                   },
                   {
                     "id" : "Q06001_4_en",
-                    "title" : "Have spouse stop working",
+                    "title" : "Have Spouse Stop Working",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1707,7 +1647,7 @@
                   },
                   {
                     "id" : "Q06001_5_en",
-                    "title" : "Move state",
+                    "title" : "Move State",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1733,7 +1673,7 @@
                   },
                   {
                     "id" : "Q06001_6_en",
-                    "title" : "Be less entrepreneurial",
+                    "title" : "Be Less Entrepreneurial",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1759,7 +1699,7 @@
                   },
                   {
                     "id" : "Q06001_7_en",
-                    "title" : "Save less",
+                    "title" : "Save Less",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1787,162 +1727,162 @@
               },
               "Q06002_1_en": {
                 "id": "Q06002_1_en",
-                "title": "Young people - increase in federal estate taxes",
-                "description": "CONTROL GROUP AND “ME”. Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people towards the following behaviors? “WOMEN” RANDOMIZATION. Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women towards the following behaviors?",
+                "title": "Increasing Federal Estate Taxes - Young People",
+                "description": "If the federal estate tax were to increase, to what extent would it encourage young people who are not yet rich towards the following behaviors?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06002_1_en",
-                    "title" : "Evade taxes",
+                    "title" : "Evade Taxes",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_1_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to evade taxes?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_1_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_1_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to evade taxes?",
                             "treatments" : ["Gender"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06002_2_en",
-                    "title" : "Work less",
+                    "title" : "Work Less",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_2_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_2_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to work less?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_2_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to work less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to work less?",
                             "treatments" : ["Gender"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06002_3_en",
-                    "title" : "Stop working",
+                    "title" : "Stop Working",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_3_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_3_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_3_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06002_4_en",
-                    "title" : "Have spouse stop working",
+                    "title" : "Have Spouse Stop Working",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_4_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to have spouse stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_4_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to have spouse stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_4_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to have spouse stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06002_5_en",
-                    "title" : "Move state",
+                    "title" : "Move State",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_5_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to move state?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_5_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to move state?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_5_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to move state?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06002_6_en",
-                    "title" : "Be less entrepreneurial",
+                    "title" : "Be Less Entrepreneurial",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_6_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to be less entrepreneurial?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_6_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to be less entrepreneurial?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_6_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to be less entrepreneurial?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1956,19 +1896,19 @@
                         {
                             "id" : "Q06002_7_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_7_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_7_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1978,7 +1918,7 @@
               "Q06004_en": {
                 "id": "Q06004_en",
                 "title": "Economic Activity",
-                "description": "CONTROL GROUP. What effect do you think that increasing the federal estate tax on wealthy households would have on economic activity? “ME” RANDOMIZATION. What effect do you think that increasing the federal estate tax on the estates of households similar to yours would have on economic activity? “WOMEN” RANDOMIZATION. What effect do you think that increasing the federal estate tax on the estates of wealthy women would have on economic activity? Hurt economic activity; Have no effect on economic activity; Help economic activity",
+                "description": "What effect would increasing the federal estate tax on wealthy households would have on economic activity?",
                 "type" : "TREATMENT",
                 "sorter" : ["Hurt economic activity", "Have no effect on economic activity", "Help economic activity"],
                 "questions" : [
@@ -2005,7 +1945,7 @@
               "Q06005_en": {
                 "id": "Q06005_en",
                 "title": "Federal Budget Deficit",
-                "description": "CONTROL GROUP. Which comes closer to your view about the long-term impact that cuts in the federal estate tax for wealthy households may have on the federal budget deficit: “ME” RANDOMIZATION. Which comes closer to your view about the long-term impact that cuts in the federal estate tax on the estates of households similar to yours may have on the federal budget deficit: “WOMEN” RANDOMIZATION. Which comes closer to your view about the long-term im- pact that cuts in the federal estate tax on the estates of wealthy women may have to pay may have on the federal budget deficit:",
+                "description": "View about the long-term impact that cuts in the federal estate tax for wealthy households may have on the federal budget deficit",
                 "type" : "TREATMENT",
                 "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
                 "questions" : [
@@ -2032,7 +1972,7 @@
               "Q06006_en": {
                 "id": "Q06006_en",
                 "title": "Federal Budget Deficit",
-                "description": "CONTROL GROUP. Do you think that increasing the federal estate tax is a good or bad way to reduce wealth inequality? “ME” RANDOMIZATION. Do you think that increasing the federal estate tax on the estates of households similar to yours is a good or bad way to reduce wealth inequality? “WOMEN” RANDOMIZATION. Do you think that increasing the federal estate tax on the estates of wealthy women is a good or bad way to reduce wealth inequality?",
+                "description": "View on whether increasing the federal estate tax is a good way to reduce wealth inequality?",
                 "type" : "TREATMENT",
                 "sorter" : ["It is one of the best ways to reduce wealth inequality", "It is a good way to reduce wealth inequality, but there are better ways", "It is a bad way to reduce wealth inequality", "It is one of the worst ways to reduce wealth inequality"],
                 "questions" : [
@@ -2058,8 +1998,8 @@
               },
               "Q06008_en": {
                 "id": "Q06008_en",
-                "title": "Fairness of wealthy parents paying estate tax at death",
-                "description": "CONTROL GROUP. Would you say that it is fair or unfair that the estate of wealthy parents who have worked hard and saved a lot in order to pass on wealth to their children is subject to the federal estate tax at death? “ME” RANDOMIZATION. Would you say that it is fair or unfair that the estate for which you have worked hard and saved a lot in order to pass on wealth to your children will be subject to the federal estate tax at your death? “WOMEN” RANDOMIZATION. Would you say that it is fair or unfair that the estate of a wealthy woman who has worked hard and saved a lot in order to pass on wealth to her children is subject to the federal estate tax at death?",
+                "title": "Wealthy Paying Estate Tax at Death",
+                "description": "Is it fair that the estate of wealthy parents who have worked hard and saved a lot is subject to the federal estate tax at death?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
                 "questions" : [
@@ -2085,35 +2025,35 @@
               },
               "Q06009_en": {
                 "id": "Q06009_en",
-                "title": "Fairness of wealthy estate tax at death",
-                "description": "CONTROL GROUP. Imagine now wealthy parents who are wealthy because they have them- selves inherited a lot of wealth from their own parents. Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death? “ME” RANDOMIZATION. Imagine now parents wealthier than you, who are wealthier than you because they have themselves inherited a lot more wealth from their own parents than you. Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death? “WOMEN” RANDOMIZATION. Imagine now a woman who is wealthy because she has herself inherited a lot of wealth from her parents. Would you say that it is fair or unfair for her estate to be subject to the federal estate tax at death?",
+                "title": "Inherited Weatlh Estate Tax at Death",
+                "description": "Imagine wealthy parents who inherited weatlh from their own parents. Is it fair that their estate be subject to the federal estate tax at death?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
                 "questions" : [
                   {
                     "id" : "Q06009_en",
                     "title" : "CONTROL",
-                    "description" : "Imagine now wealthy parents who are wealthy because they have them- selves inherited a lot of wealth from their own parents. Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death?",
+                    "description" : "Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death?",
                     "treatments" : ["Neutral"]
                   },
                   {
                     "id" : "Q06009_en",
                     "title" : "YOU",
-                    "description" : "Imagine now parents wealthier than you, who are wealthier than you because they have themselves inherited a lot more wealth from their own parents than you. Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death?",
+                    "description" : "Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06009_en",
                     "title" : "GENDER",
-                    "description" : "Imagine now a woman who is wealthy because she has herself inherited a lot of wealth from her parents. Would you say that it is fair or unfair for her estate to be subject to the federal estate tax at death?",
+                    "description" : "Would you say that it is fair or unfair for her estate to be subject to the federal estate tax at death?",
                     "treatments" : ["Gender"]
                   }
                 ]
               },
               "Q06010_en": {
                 "id": "Q06010_en",
-                "title": "Fairness of wealthy family resources",
-                "description": "CONTROL GROUP. Do you think it is fair or unfair that children born in very wealthy families have access to better schools, better medical care, better neighborhoods, and better professional and social networks than children from less wealthy families? “ME” RANDOMIZATION. Do you think that it is fair or unfair that people born in wealthier families than yours have had access to better schools, better medical care, better neighbor- hoods, and better professional and social networks than you have had? “WOMEN” RANDOMIZATION. Do you think that it is fair or unfair that a girl born to a very wealthy mother has access to better schools, better medical care, better neighborhoods, and better professional and social networks than a girl born to a less wealthy mother?",
+                "title": "Wealthy Family Resource Advantage",
+                "description": "Is it fair that children born in very wealthy families have access to better resources than children from less wealthy families?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
                 "questions" : [
@@ -2139,8 +2079,8 @@
               },
               "Q06011_en": {
                 "id": "Q06011_en",
-                "title": "Fairness of wealthy family inheritance",
-                "description": "CONTROL GROUP. Do you think it is fair or unfair that children born in very wealthy families inherit much more than children born in less wealthy families? “ME” RANDOMIZATION. Do you think it is fair or unfair that people born in wealthier families than yours inherit more than you? “WOMEN” RANDOMIZATION. Do you think that it is fair or unfair that a girl born to a very wealthy mother inherits much more than a girl born to a less wealthy mother?",
+                "title": "Wealthy Family Inheritance",
+                "description": "Is it fair that children born in very wealthy families inherit much more than children born in less wealthy families?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
                 "questions" : [
@@ -2173,42 +2113,42 @@
             "questions": {
               "Q07001_en": {
                 "id": "Q07001_en",
-                "title": "Fairness of wealth and money distribution",
-                "description": "Do you feel that the distribution of money and wealth in this country today is fair, or do you feel that the money and wealth in this country should be more evenly distributed among a larger percentage of the people?",
+                "title": "Wealth/Money Distribution",
+                "description": "Is the distribution of money and wealth in this country today fair?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["The distribution of money and wealth in this country today is fair", "The money and wealth in this country should be more evenly distributed among a larger percentage of the people"]
               },
               "Q07002_en": {
                 "id": "Q07002_en",
-                "title": "Wealth inequality",
+                "title": "Wealth Inequality",
                 "description": "How big of a problem do you think wealth inequality is in America?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Not a problem at all", "A small problem", "A problem", "A serious problem", "A very serious problem"]
               },
               "Q07003_en": {
                 "id": "Q07003_en",
-                "title": "Current state of system",
+                "title": "Fairness of System",
                 "description": "How fair would you say that the current U.S. federal estate tax system is?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
               },
               "Q07004_en": {
                 "id": "Q07004_en",
-                "title": "Satisfaction with system",
+                "title": "Satisfaction with System",
                 "description": "How satisfied are you with the current U.S. federal estate tax system?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
               },
               "Q07005_en": {
                 "id": "Q07005_en",
-                "title": "Existence of system",
+                "title": "Existence of System",
                 "description": "Do you think there should be a federal estate tax in the U.S.?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q07006_en": {
                 "id": "Q07006_en",
-                "title": "Change in estate tax",
+                "title": "Changes in Estate Tax",
                 "description": "Do you think the federal estate tax should be increased, left at the current level, or lowered?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Increased a lot", "Increased somewhat", "Left at the current level", "Lowered somewhat", "Lowered a lot"]
@@ -2222,15 +2162,15 @@
             "questions": {
               "Q09001_en": {
                 "id": "Q09001_en",
-                "title": "Reduce inequalities",
-                "description": "To reduce differences in wealth between rich and poor people, the government (at the local, state or federal level) has the ability and the tools to do:",
+                "title": "Reduce Inequalities",
+                "description": "To reduce differences in wealth between rich and poor people, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               },
               "Q09002_en": {
                 "id": "Q09002_en",
-                "title": "Improve opportunities",
-                "description": "To improve opportunities for children from low-income families, the government (at the local, state, or federal level) has the ability and the tools to do:",
+                "title": "Improve Opportunities",
+                "description": "To improve opportunities for children from low-income families, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
@@ -2277,50 +2217,50 @@
             "questions": {
               "Q03001_en": {
                 "id": "Q03001_en",
-                "title": "Has health insurance",
+                "title": "Have Health Insurance",
                 "description": "Do you currently have health insurance?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q03003_en": {
                 "id": "Q03003_en",
-                "title": "On Medicaid or Medicare",
+                "title": "Medicaid or Medicare",
                 "description": "Are you on Medicaid or Medicare",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q03004_en": {
                 "id": "Q03004_en",
-                "title": "Who pays insurance",
-                "description": "Who pays for the cost of premiums on your health insurance? Do you or someone in your household pay the total costs, does an employer or other organization pay the total cost, or is it the cost shared between the employer or some other organization and you or someone in your household?",
+                "title": "Who Pays for Insurance",
+                "description": "Who pays for the cost of premiums on your health insurance?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Self/Household pays all", "Employer or organization pays all", "Costs are shared"]
               },
               "Q03005_en": {
                 "id": "Q03005_en",
-                "title": "Put off medical treatment recently",
-                "description": "Within the last twelve months, have you or a member of your family put off any sort of medical treatment because of the cost you would have to pay?",
+                "title": "Medical Treatment Delays",
+                "description": "Within the last 12 months, have you or a member of your family put off medical treatment because of the cost?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q03006_w": {
                 "id": "Q03006_w",
-                "title": "Seriousness of condition",
-                "description": "When you put off this medical treatment, how serious was the condition or illness?",
+                "title": "Seriousness of Condition",
+                "description": "If you put off medical treatment because of cost, how serious was the condition or illness?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Serious", "Not Serious"]
+                "sorter" : ["Very serious", "Somewhat serious", "Not very serious", "Not at all serious"]
               },
               "Q03007_en": {
                 "id": "Q03007_en",
-                "title": "Satisfaction with healthcare cost",
-                "description": "Are you generally satisfied or dissatisfied with the total cost you pay for your healthcare?",
+                "title": "Satisfaction with Healthcare Cost",
+                "description": "Satisfaction with the total cost you pay for your healthcare?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Satisfied", "Dissatisfied"]
+                "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
               },
               "Q03008_en": {
                 "id": "Q03008_en",
-                "title": "Quality of healthcare",
-                "description": "Overall, how would you rate the quality of health care you receive?",
+                "title": "Quality of Healthcare",
+                "description": "Quality of the health care you receive?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Excellent", "Good", "Fair", "Poor"]
               }
@@ -2347,7 +2287,7 @@
               },
               "Q04020_1_en" : {
                 "id" : "Q04020_1_en",
-                "title" : "Health insurance coverage programs",
+                "title" : "Health Insurance Coverage Programs",
                 "description" : "Out of 100 Americans, how many get their health insurance coverage through the following programs?",
                 "type" : "UMBRELLA",
                 "questions" : [
@@ -2355,51 +2295,60 @@
                     "id": "Q04020_1_en",
                     "title": "Share of Americans on Medicaid",
                     "description" : "Medicaid",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : "15",
+                    "source" : "https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html"
                   },
                   {
                     "id": "Q04020_2_en",
                     "title": "Share of Americans on Medicare",
                     "description" : "Medicare",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : "14",
+                    "source" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
                   },
                   {
                     "id": "Q04020_3_en",
                     "title": "Share of Americans on Employer-based Insurance",
                     "description" : "Group health insurance through employer",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : "49",
+                    "source" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
                   },
                   {
                     "id": "Q04020_4_en",
                     "title": "Share of Americans on Other Insurance",
-                    "description" : "Other insurance (policies purchased directly from an insurance company, military, other public... )",
-                    "type" : "NUMERIC"
+                    "description" : "Other insurance (policies purchased directly from an insurance company, military, etc.)",
+                    "type" : "NUMERIC",
+                    "correct" : "9.8"
                   },
                   {
                     "id": "Q04020_5_en",
                     "title": "Share of Americans Uninsured",
                     "description" : "Uninsured",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : "12.2",
+                    "source" : "https://news.gallup.com/poll/225383/uninsured-rate-steady-fourth-quarter-2017.aspx"
                   }
                 ]
               },
               "Q04007_en": {
                 "id": "Q04007_en",
-                "title": "Share of American children on Medicaid",
+                "title": "Share of American Children on Medicaid",
                 "description": "Out of 100 American children, aged below 18, how many are enrolled in Medicaid?",
                 "type" : "NUMERIC",
-                "correct" : "49",
-                "source" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
+                "correct" : "37",
+                "source" : "https://www.medicaid.gov/medicaid/benefits/bhs/children-and-youth/index.html"
               },
               "Q04010_1_en" : {
                 "id" : "Q04010_1_en",
-                "title" : "Health insurance premium criteria",
+                "title" : "Health Insurance Premium Criteria",
                 "description" : "Are insurance companies currently allowed to set different premiums based on the following characteristics?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id": "Q04010_1_en",
-                    "title": "Set premiums based on gender",
+                    "title": "Based on gender",
                     "description" : "Gender",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
@@ -2408,14 +2357,16 @@
                   },
                   {
                     "id": "Q04010_2_en",
-                    "title": "Set premiums based on age",
+                    "title": "Based on age",
                     "description" : "Age",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["Yes", "No"]
+                    "sorter" : ["Yes", "No"],
+                    "correct" : "Yes",
+                    "source" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
                   },
                   {
                     "id": "Q04010_3_en",
-                    "title": "Set premiums based on tobacco",
+                    "title": "Based on tobacco",
                     "description" : "Tobacco use",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
@@ -2424,7 +2375,7 @@
                   },
                   {
                     "id": "Q04010_4_en",
-                    "title": "Set premiums based on location",
+                    "title": "Based on location",
                     "description" : "Where the person lives",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
@@ -2433,7 +2384,7 @@
                   },
                   {
                     "id": "Q04010_5_en",
-                    "title": "Set premiums based on pre-existing",
+                    "title": "Based on pre-existing conditions",
                     "description" : "Preexisting conditions (such as having diabetes, obesity, or being pregnant at the time of purchase of the insurance)",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
@@ -2444,64 +2395,64 @@
               },
               "Q04011_en": {
                 "id": "Q04011_en",
-                "title": "Individual mandate in 2018",
+                "title": "Individual Mandate in 2018",
                 "description": "In 2018, was there an individual mandate, whereby everyone was obligated to buy health insurance?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q04012_en": {
                 "id": "Q04012_en",
-                "title": "What happens if you had no insurance before 2018",
+                "title": "No Insurance Before 2018",
                 "description": "What happened if you did not have health insurance, until 2018?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["A penalty had to be paid", "You were forced to buy insurance", "You received a warning",  "Nothing happened"]
               },
               "Q04013_en": {
                 "id": "Q04013_en",
-                "title": "Changes to individual mandate in 2019",
+                "title": "Changes to Individual Mandate in 2019",
                 "description": "Were any changes made to the individual mandate in 2019?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q04014_en": {
                 "id": "Q04014_en",
-                "title": "Individual mandate change in 2019",
+                "title": "Legislation Changes to Individual Mandate in 2019",
                 "description": "How did the legislation on the individual mandate change in 2019?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["The penalty was increased", "The penalty was decreased", "The penalty was reduced to zero", "The individual mandate was canceled", "Other"]
               },
               "Q04015_en": {
                 "id": "Q04015_en",
-                "title": "Is there an employer mandate",
+                "title": "Employer Mandate",
                 "description": "Is there currently an employer mandate, whereby employers have to provide healt insurance to their employees?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes, all employers are required to provide health insurance to their employees", "Yes, but small employers are excluded from this requirement", "No, employers are not required to provide health insurance to their employees"]
               },
               "Q04016_c_en": {
                 "id": "Q04016_c_en",
-                "title": "% of FPL for Medicaid eligibility",
-                "description": "To be eligible for Medicaid, a family's income needs to be below a certain percentage of the Federal Poverty Level for a family of that size. How high is that percentage in your state fo a family like yours to be eligible for Medicaid?",
+                "title": "Federal Poverty Level - Medicaid eligibility",
+                "description": "How high is that FPL threshold percentage for a family like yours to be eligible for Medicaid?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Under 50% of the FPL", "Between 50 and 90% of the FPL", "Between 130 and 160% of the FPL", "Between 160 and 200% of the FPL", "Higher than 200 of the FPL"]
               },
               "Q04017_en": {
                 "id": "Q04017_en",
-                "title": "ACA change eligibility in state",
-                "description": "Please specify the percentage",
+                "title": "Impact of ACA on FPL-based Eligibility",
+                "description": "How did the FPL threshold percentage change, if at all, as a result of the Affordable Care Act",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes, it expanded eligibility", "No, it remained the same", "Yes, it reduced eligibility"]
               },
               "Q04018_en": {
                 "id": "Q04018_en",
-                "title": "Does US spend more on health than other rich countries",
-                "description": "Comparing the U.S. to other rich countries such as France, Germany, or the U.K., how much do you think the U.S. spends on health care as a share of its GDP?",
+                "title": "U.S. Relative Healthcare Spending",
+                "description": "Relative to other rich countries like France, Germany, and the U.K., how much does the U.S. spend on health care as a share of its GDP?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Much more", "More", "About the same", "Less", "Much less"]
               },
               "Q04019_en": {
                 "id": "Q04019_en",
-                "title": "US has better health outcomes than rich countries",
-                "description": "Comparing the U.S. to other rich countries such as France, Germany, or the U.K., how good do you think that important and common measures of health outcomes, such as life expectancy or infant mortality are in the U.S.?",
+                "title": "U.S. Relative Health Outcomes",
+                "description": "Relative to other rich countries like France, Germany, and the U.K., how good are health outcomes, such as life expectancy or infant mortality, in the U.S.?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Much better", "Better", "About the same", "Worse", "Much worse"]
               }
@@ -2514,20 +2465,20 @@
             "questions": {
               "Q06001": {
                 "id": "Q06001",
-                "title": "Main reason for individual mandate",
+                "title": "Reason for Individual Mandate",
                 "description": "In your view, what is the main reason for having an individual mandate?",
                 "type" : "WORDCLOUD"
               },
               "Q06002": {
                 "id": "Q06002",
-                "title": "Individual mandate: beneficial or detrimental?",
-                "description": "Would you say that an individual mandate is beneficial or detrimental? Please explain your reasoning.",
+                "title": "Individual Mandate Evaluation",
+                "description": "Would you say that an individual mandate is beneficial or detrimental?",
                 "type" : "WORDCLOUD"
               },
               "Q06003_en": {
                 "id": "Q06003_en",
-                "title": "Fear of changing job because of health insurance",
-                "description": "CONTROL If people have health insurance through their employer, do you think this would discourage them from quitting a bad job or switching job from fear of losing their health insurance? ME If you have or had health insurance through your employer, do you think this would discourage you from quitting a bad job and switching job for fear of losing your health insurance? WOMEN If women have health insurance through their employer, do you think this would discourage them from quitting a bad job or switching job from fear of losing their health insurance?",
+                "title": "Changing Job because of Health Insurance",
+                "description": "Fear of changing jobs due to fear of losing employer-sponsored health insurance?",
                 "type" : "TREATMENT",
                 "sorter" : ["Yes", "No"],
                 "questions" : [
@@ -2553,13 +2504,13 @@
               },
               "Q06004_1_en": {
                 "id": "Q06004_1_en",
-                "title": "Generous health insurance incentives",
-                "description": "CONTROL If health insurance were to be made more generous, to what extent would it encourage people towards the following behaviors? ME If your health insurance were to be made more generous, to what extent would it encourage you towards the following behaviors? WOMEN If health insurance were to be made more generous, to what extent would it encourage women towards the following behaviors?",
+                "title": "Health Insurance Incentives",
+                "description": "Behavioral effects of more generous health insurance",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06004_1_en",
-                    "title" : "Increase unnecessary use of ER",
+                    "title" : "Increase Unnecessary Use of ER",
                     "type" : "TREATMENT",
                     "sorter" : ["Yes", "No"],
                     "questions" : [
@@ -2585,7 +2536,7 @@
                   },
                   {
                     "id" : "Q06004_2_en",
-                    "title" : "Increase unnecessary medical services",
+                    "title" : "Increase Unnecessary Medical Services",
                     "type" : "TREATMENT",
                     "sorter" : ["Yes", "No"],
                     "questions" : [
@@ -2611,7 +2562,7 @@
                   },
                   {
                     "id" : "Q06004_3_en",
-                    "title" : "Increase  preventive care",
+                    "title" : "Increase Preventive Care",
                     "type" : "TREATMENT",
                     "sorter" : ["Yes", "No"],
                     "questions" : [
@@ -2639,8 +2590,8 @@
               },
               "Q06006_en": {
                 "id": "Q06006_en",
-                "title": "Would less generous coverage worsen medical care",
-                "description": "CONTROL With less generous health insurance, health in the U.S. would be worse since many people could not afford sufficient and appropriate medical care. ME With less generous health insurance, my health would be worse since I could not afford sufficient and appropriate medical care. WOMEN With less generous health insurance for women's health issues, health in the U.S. would be worse since many women could not afford sufficient and appropriate medical care.",
+                "title": "Quality of Healthcare",
+                "description": "Effect of less generous health insurance on health coverage and outcomes",
                 "type" : "TREATMENT",
                 "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
                 "questions" : [
@@ -2666,8 +2617,8 @@
               },
               "Q06007_en": {
                 "id": "Q06007_en",
-                "title": "Would more generous coverage reduce total costs",
-                "description": "CONTROL More generous health insurance coverage for preventive care can lead to a reduction in total medical costs, since medical issues would be caught early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether. ME More generous health insurance coverage for preventive care can lead to a reduction of my total medical costs, since it would allow me to catch medical issues early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether. WOMEN More generous health insurance coverage for preventive care for women can lead to a reduction in total medical costs, since women's medical issues would be caught early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
+                "title": "Total Costs of Healthcare",
+                "description": "Effect of more generous health insurance on healthcare costs",
                 "type" : "TREATMENT",
                 "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
                 "questions" : [
@@ -2693,8 +2644,8 @@
               },
               "Q06008_en": {
                 "id": "Q06008_en",
-                "title": "Would more generous coverage reduce financial stress",
-                "description": "CONTROL More generous health insurance can help people deal with unexpected large medical costs. It can thus reduce financial stress and debt built up to pay the medical bills for families. ME More generous health insurance could help me deal with unexpected large medical costs. It can thus reduce my financial stress and I won't have to build up debt to pay the medical bills for my family. WOMEN More generous health insurance can help women deal with unexpected large medical costs. It can thus reduce women's financial stress and debt built up to pay the medical bills for women's health issues.",
+                "title": "Health-related Financial Stress",
+                "description": "Effect of more generous health insurance on financial stress",
                 "type" : "TREATMENT",
                 "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
                 "questions" : [
@@ -2720,8 +2671,8 @@
               },
               "Q06009_en": {
                 "id": "Q06009_en",
-                "title": "Is it fair that pre-existing conditions pay more",
-                "description": "CONTROL Would you say that it is fair or unfair that people with pre-existing conditions have to pay more for their health insurance than people without pre-existing conditions? ME Would you say that it is fair or unfair if you had to pay more for your health insurance than people with fewer pre-existing conditions than you? WOMEN Would you say that it is fair or unfair that women with pre-existing conditions have to pay more for their health insurance than women without pre-existing conditions?",
+                "title": "Higher Costs of Pre-existing Conditions",
+                "description": "Fairness of people with pre-existing conditions having to pay more for their health insurance than people without pre-existing conditions?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"],
                 "questions" : [
@@ -2747,8 +2698,8 @@
               },
               "Q06010_en": {
                 "id": "Q06010_en",
-                "title": "Is it fair that pre-existing conditions pay more",
-                "description": "CONTROL Is it fair or unfair that people born with worse health have to pay more for health care or insurance than people born with better health? ME Is it fair or unfair if you had to pay more for health care or insurance than people born with better health than you? WOMEN Is it fair or unfair that women born with worse health have to pay more for health care or insurance than women born with better health?",
+                "title": "Higher Costs of Worse Health at Birth",
+                "description": "Fairness of people born with worse health having to pay more for health care or insurance than people born with better health?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"],
                 "questions" : [
@@ -2774,58 +2725,37 @@
               },
               "Q06111_en": {
                 "id": "Q06111_en",
-                "title": "Main responsibility in health issues",
-                "description": "CONTROL Would you say that health issues and medical conditions are mostly the result of circumstances outside of one's control or mostly the result of one's own actions? ME Would you say that your own health issues and your own medical conditions are mostly the result of circumstances outside of your control or mostly the result of your own actions? WOMEN Would you say that health issues and medical conditions that arise for women are mostly the result of circumstances outside of their control or mostly the result of these women's own actions?",
+                "title": "Responsibility for Health Issues",
+                "description": "What is more responsible for the health issues across the U.S. today?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06111_en",
-                    "title" : "CONTROL Main responsibility in health issues",
-                    "type" : "TREATMENT",
-                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"],
-                    "questions" : [
-                        {
-                            "id" : "Q06111_en",
-                            "title" : "CONTROL",
-                            "description" : "Would you say that health issues and medical conditions are mostly the result of circumstances outside of one's control or mostly the result of one's own actions?",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "Main responsibility in health issues (general)",
+                    "description" : "Would you say that health issues and medical conditions are mostly the result of circumstances outside of one's control or mostly the result of one's own actions?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"]
                   },
                   {
                     "id" : "Q06211_en",
-                    "title" : "YOU Main responsibility in health issues",
-                    "type" : "TREATMENT",
-                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"],
-                    "questions" : [
-                        {
-                            "id" : "Q06211_en",
-                            "title" : "YOU",
-                            "description" : "Would you say that your own health issues and your own medical conditions are mostly the result of circumstances outside of your control or mostly the result of your own actions?",
-                            "treatments" : ["You"]
-                        }
-                      ]
+                    "title" : "Main responsibility in health issues (specific to you)",
+                    "description" : "Would you say that your own health issues and your own medical conditions are mostly the result of circumstances outside of your control or mostly the result of your own actions?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"]
                   },
                   {
                     "id" : "Q06311_en",
-                    "title" : "GENDER Main responsibility in health issues",
-                    "type" : "TREATMENT",
-                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"],
-                    "questions" : [
-                        {
-                            "id" : "Q06311_en",
-                            "title" : "GENDER",
-                            "description" : "Would you say that health issues and medical conditions that arise for women are mostly the result of circumstances outside of their control or mostly the result of these women's own actions?",
-                            "treatments" : ["Gender"]
-                        }
-                      ]
+                    "title" : "Main responsibility in health issues (specific to women)",
+                    "description" : "Would you say that health issues and medical conditions that arise for women are mostly the result of circumstances outside of their control or mostly the result of these women's own actions?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"]
                   }
                 ]
               },
               "Q06013_en": {
                 "id": "Q06013_en",
-                "title": "Everyone affords health care to reduce contagion",
-                "description": "CONTROL It is important that everyone can afford health care because people who become sick with a contagious disease that is not treated can have negative effects on others too. ME It is important that I am able to afford health care because if I became sick with a contagious disease that is not treated, I can have negative effects on others too. WOMEN It is important that all women can afford proper health care because women who become sick with a contagious disease that is not treated can have negative effects on others too.",
+                "title": "Healthcare to Reduce Contagion",
+                "description": "Importance of everyone affording healthcare to reduce the chances of contagion spreading.",
                 "type" : "TREATMENT",
                 "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
                 "questions" : [
@@ -2851,8 +2781,8 @@
               },
               "Q06014_en": {
                 "id": "Q06014_en",
-                "title": "Low-income individuals afford medical care",
-                "description": "CONTROL It is important to help low-income families so that they can afford medical care by subsidizing their insurance premiums or by giving them transfers for medical care. ME It is important to help families like mine so that they can afford medical care by subsidizing our insurance premiums or by giving us transfers for medical care. WOMEN It is important to help low-income women so that they can afford medical care by subsidizing their insurance premiums or by giving them transfers for medical care.",
+                "title": "Low-income Families' Medical Care",
+                "description": "Importance of helping low-income families afford medical care",
                 "type" : "TREATMENT",
                 "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
                 "questions" : [
@@ -2878,78 +2808,38 @@
               },
               "Q06015_en": {
                 "id": "Q06015_en",
-                "title": "Employers with religious objections",
+                "title": "Employers with Religious Objections",
                 "description": "If you had to choose, which comes closest to your view? Employers who have religious objections to the use of birth control should be...",
-                "type" : "TREATMENT",
-                "sorter" : ["... able to refuse to provide it in health insurance plans for their employees.", "... required to provide it in health insurance plans for their employees just as other employers are required to do."],
-                "questions" : [
-                  {
-                    "id" : "Q06015_en",
-                    "title" : "GENDER",
-                    "description" : "If you had to choose, which comes closest to your view? Employers who have religious objections to the use of birth control should be...",
-                    "treatments" : ["Gender"]
-                  }
-                ]
+                "type" : "CATEGORICAL",
+                "sorter" : ["... able to refuse to provide it in health insurance plans for their employees.", "... required to provide it in health insurance plans for their employees just as other employers are required to do."]
               },
               "Q06016_en": {
                 "id": "Q06016_en",
-                "title": "Women who use birth control pay for cost on their own",
+                "title": "Cost of Birth Control",
                 "description": "Would you find it fair or unfair that women who use birth control methods pay for the cost of birth control on their own?",
-                "type" : "TREATMENT",
-                "sorter" : ["Very fair", "Fair", "Unfair", "Very unfair"],
-                "questions" : [
-                  {
-                    "id" : "Q06016_en",
-                    "title" : "GENDER",
-                    "description" : "Would you find it fair or unfair that women who use birth control methods pay for the cost of birth control on their own?",
-                    "treatments" : ["Gender"]
-                  }
-                ]
+                "type" : "CATEGORICAL",
+                "sorter" : ["Very fair", "Fair", "Unfair", "Very unfair"]
               },
               "Q06017_en": {
                 "id": "Q06017_en",
-                "title": "Should women using using birth control have increased copays",
+                "title": "Copays for Birth Control",
                 "description": "Should women who are planning on using birth control methods have increased insurance copays because they might cost more for their insurers?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06017_en",
-                    "title" : "GENDER",
-                    "description" : "Should women who are planning on using birth control methods have increased insurance copays because they might cost more for their insurers?",
-                    "treatments" : ["Gender"]
-                  }
-                ]
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"]
               },
               "Q06018_en": {
                 "id": "Q06018_en",
-                "title": "Law allowing pharmacists to opt out in case of abortion",
+                "title": "Pharmacists Opting Out in Abortion Cases",
                 "description": "Do you favor or oppose a law allowing pharmacists and health providers to opt out of providing medicine or surgical procedures that result in abortion?",
-                "type" : "TREATMENT",
-                "sorter" : ["Strongly favor", "Favor", "Oppose", "Strongly oppose"],
-                "questions" : [
-                  {
-                    "id" : "Q06018_en",
-                    "title" : "GENDER",
-                    "description" : "Do you favor or oppose a law allowing pharmacists and health providers to opt out of providing medicine or surgical procedures that result in abortion?",
-                    "treatments" : ["Gender"]
-                  }
-                ]
+                "type" : "CATEGORICAL",
+                "sorter" : ["Strongly favor", "Favor", "Oppose", "Strongly oppose"]
               },
               "Q06019_en": {
                 "id": "Q06019_en",
-                "title": "Should insurance cover abortion",
+                "title": "Insurance for Abortion",
                 "description": "Should insurance providers have to cover medicine or surgical procedures that result in abortion?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06019_en",
-                    "title" : "GENDER",
-                    "description" : "Should insurance providers have to cover medicine or surgical procedures that result in abortion?",
-                    "treatments" : ["Gender"]
-                  }
-                ]
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"]
               }
             }
           },
@@ -2960,15 +2850,15 @@
             "questions": {
               "Q07001_en": {
                 "id": "Q07001_en",
-                "title": "Fairness in access to healthcare",
-                "description": "Do you feel that access to health care in the U.S. today is fair for everyone, even for low-income families, or do you feel that access to healthcare should be improved for many families?",
+                "title": "Access to healthcare",
+                "description": "Is access to health care in the U.S. today fair for everyone?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Access to health care is fair even for low-income families", "Access to health care should be improved for many families"]
               },
               "Q07004_en": {
                 "id": "Q07004_en",
-                "title": "Fairness of US health insurance system",
-                "description": "How fair would you say the current U.S. health insurance system is?",
+                "title": "Fairness of U.S. Health Insurance System",
+                "description": "How fair is the current U.S. health insurance system?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
               },
@@ -2988,15 +2878,15 @@
               },
               "Q07007_en": {
                 "id": "Q07007_en",
-                "title": "Support for additional help for low income families",
-                "description": "Do you support or oppose providing additional transfers or subsidies to low-income families to help them with the costs of their health care?",
+                "title": "Additional Help for Low-income Families",
+                "description": "Do you support additional transfers or subsidies to low-income families to help with the costs of health care?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
               },
               "Q07008_en": {
                 "id": "Q07008_en",
-                "title": "Support for individual mandate",
-                "description": "Do you support or oppose having an individual mandate whereby every individual is obliged to buy health insurance?",
+                "title": "Support for Individual Mandate",
+                "description": "Do you support an individual mandate whereby every individual is obliged to buy health insurance?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
               }
@@ -3004,60 +2894,60 @@
           },
           "Desired design of health insurance" : {
             "id": "Q07010_1_en",
-            "title": "Desired design of health insurance",
+            "title": "Desired Design of Health Insurance",
             "description": "Desired design of health insurance",
             "questions": {
               "Q07010_1_en" : {
                 "id" : "Q07010_1_en",
-                "title" : "Desired design of health insurance",
+                "title" : "Desired Design of Health Insurance",
                 "description" : "Imagine it were up to you to design Americans' health insurance plans such that they are most cost-effective and that patients get the best care while having to pay the lowest insurance premiums. For the following types of medical care, please say which ones should receive: full coverage (the patient pays no costs out of pocket), generous coverage (the patient has only minimal copay or deductibles), low coverage (costs are shared and the patient bears a significant share of total costs), no coverage (meaning the patient has to pay the full costs out of pocket). Bear in mind that the more generous coverage is, the higher health insurance premiums can be expected to be.",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id": "Q07010_1_en",
-                    "title": "Preventive care",
+                    "title": "Preventive Care",
                     "description" : "Preventive care (e.g.: annual physical examinations, recommended cancer screening, or immunizations)",
                     "type" : "CATEGORICAL",
                     "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
                   },
                   {
                     "id": "Q07010_2_en",
-                    "title": "Primary care visits",
+                    "title": "Primary Care Visits",
                     "description" : "Primary care visits for non-life threatening conditions (e.g.: for a cold, flu, or stomach bug)",
                     "type" : "CATEGORICAL",
                     "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
                   },
                   {
                     "id": "Q07010_3_en",
-                    "title": "Maternity and newborn care",
+                    "title": "Maternity and Newborn Care",
                     "description" : "Maternity and newborn care (pre-natal screenings and check-ups, birth and delivery, newborn screening and care)",
                     "type" : "CATEGORICAL",
                     "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
                   },
                   {
                     "id": "Q07010_4_en",
-                    "title": "Specialist visits for non-essential care",
+                    "title": "Specialist Visits for Non-essential Care",
                     "description" : "Specialist visits for non-essential care (e.g.: elective hip replacement, hearing aids)",
                     "type" : "CATEGORICAL",
                     "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
                   },
                   {
                     "id": "Q07010_5_en",
-                    "title": "Medical care for catastrophic situations",
+                    "title": "Medical Care for Catastrophic Situations",
                     "description" : "Medical care for catastrophic situations (e.g.: long-run medical care after bad accidents or serious injuries once one leaves the emergency room, intensive treatment for cancers, management of serious, long-term hear and liver conditions)",
                     "type" : "CATEGORICAL",
                     "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
                   },
                   {
                     "id": "Q07010_6_en",
-                    "title": "Emergency room care",
+                    "title": "Emergency Room Care",
                     "description" : "Emergency room care (emergency, short-term care after accidents, severe illness, life-threatening conditions that require immediate attention)",
                     "type" : "CATEGORICAL",
                     "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
                   },
                   {
                     "id": "Q07010_7_en",
-                    "title": "Pediatric care",
+                    "title": "Pediatric Care",
                     "description" : "Pediatric care (medical care for children)",
                     "type" : "CATEGORICAL",
                     "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
@@ -3069,12 +2959,12 @@
           "Government questions (specific)" : {
             "id": "Government questions (specific)",
             "title": "Government questions (specific)",
-            "description": "?????",
+            "description": "Questions to examine government intervention regarding health policy",
             "questions": {
               "dummy_Q09001": {
                 "id": "dummy_Q09001",
-                "title": "The government can do a lot to improve health care",
-                "description": "To improve access to health care for all Americans, rich or poor, the government (at the local, state, or federal level) has the ability and the tools to do:",
+                "title": "Improve Healthcare",
+                "description": "To improve access to health care for all Americans, rich or poor, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
