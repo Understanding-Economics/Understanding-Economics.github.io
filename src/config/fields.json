@@ -140,14 +140,14 @@
               "Q04004_en": {
                 "id": "Q04004_en",
                 "title": "Perceived Equality of Income Tax Share",
-                "description": "Do you think that, broadly speaking, everyone in the U.S. currently pays approximately the same share of income in federal personal income taxes or do you think people pay very different shares of income in federal personal income taxes?",
+                "description": "How equally the respondent thinks the share of income tax is distributed across people in the U.S.",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Everyone pays more or less the same share", "People pay somewhat different shares of their income in taxes", "People pay very different shares of their incomes in taxes"]
               },
               "Q04005_en": {
                 "id": "Q04005_en",
                 "title": "Taxed Share by Income",
-                "description": "Do you think that people with higher incomes pay a higher or lower share of their total income in federal personal income taxes than people with lower incomes?",
+                "description": "Whether respondent thinks people with higher incomes pay a higher or lower share of their total income in federal taxes than people with lower incomes?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["People with higher incomes pay a higher share of their income in taxes than those with lower incomes.", "People with higher incomes pay a lower share of their income in taxes than those with lower incomes."]
               },
@@ -195,13 +195,13 @@
               "Q04013_en": {
                 "id": "Q04013_en",
                 "title": "Median Tax Share of Income",
-                "description": "Imagine a middle class household that is right at the middle of the income distribution, such that half of all households in the U.S. earn more than this household and half earn less. What share of their income do you think such a household pays in federal income taxes?",
+                "description": "What share of income do you think a middle-class household pays in federal income taxes?",
                 "type" : "NUMERIC"
               },
               "Q04014_en": {
                 "id": "Q04014_en",
                 "title": "U.S. Relative Taxation",
-                "description": "If you compare the U.S. to other rich countries such as Canada or Western Europe, do you think the U.S. has, on average, higher federal personal income taxes, similar levels of federal personal income taxes, or lower federal personal income taxes than these countries?",
+                "description": "How respondent thinks U.S. federal income taxes compare to those of other rich countries such as Canada or Western Europe",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Higher income taxes", "Comparable levels of income taxes", "Lower income taxes"]
               },
@@ -213,7 +213,7 @@
               },
               "Q04019_en": {
                 "id": "Q04019_en",
-                "title": "Reason for wealth",
+                "title": "Reason for Wealth",
                 "description": "Which has more to do with why a person is rich?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Because she or he worked harder than others", "Because she or he had more advantages than others"]
@@ -235,14 +235,14 @@
               "Q07001_en": {
                 "id": "Q07001_en",
                 "title": "Tax System Fairness (Broad)",
-                "description": "Would you say that the current U.S. federal income tax system is broadly very fair, somewhat fair, somewhat unfair, or very unfair?",
+                "description": "How fair the respondent thinks the current U.S. federal income tax system is",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
               },
               "Q07002_en": {
                 "id": "Q07002_en",
                 "title": "Tax System Satisfaction",
-                "description": "How satisfied or dissatisfied are you with the current U.S. federal income tax system?",
+                "description": "How satisfied the respondent is with the current U.S. federal income tax system",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"],
                 "color" : "Gradient4"
@@ -250,7 +250,7 @@
               "Q07003_en": {
                 "id": "Q07003_en",
                 "title": "Tax Share Fairness (Specific)",
-                "description": "How fair the respondent thinks the tax system is, depending on their treatment",
+                "description": "How fair the respondent thinks the tax system is regarding high income housheolds, depending on their treatment",
                 "type" : "TREATMENT",
                 "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
                 "questions" : [
@@ -277,7 +277,7 @@
               "Q07004_en": {
                 "id": "Q07004_en",
                 "title": "Middle Class Tax Share Fairness",
-                "description": "CONTROL: Would you say that middle-class households in the U.S. today: <br/>\u201cGENDER\u201d: Would you say that women in the middle-class in the U.S. today:",
+                "description": "How fair the respondent thinks the tax system is regarding middle-class housheolds, depending on their treatment",
                 "type" : "TREATMENT",
                 "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
                 "questions" : [
@@ -297,8 +297,8 @@
               },
               "Q07005_en": {
                 "id": "Q07005_en",
-                "title": "Distribution Fairness",
-                "description": "Do you feel that the distribution of money and wealth in this country today is fair, or do you feel that the money and wealth in this country should be more evenly distributed among a larger percentage of the people?",
+                "title": "Money/Wealth Distribution Fairness",
+                "description": "How fair the respondent believes the distribution of money and wealth is in the U.S.",
                 "type" : "CATEGORICAL",
                 "sorter" : ["The distribution and money and wealth in this country today is fair", "The money and wealth in this country should be more evenly distributed among a larger percentage of the people"]
               },
@@ -311,8 +311,8 @@
               },
               "Q07008_en": {
                 "id": "Q07008_en",
-                "title": "Support Top Income Tax Increase for lower-incomes",
-                "description": "The additional revenue raised is used to expand programs that support lower-income individuals",
+                "title": "Support Top Income Tax Increase for Lower-Income People",
+                "description": "Support for increasing the top income tax rate if the additional revenue raised supports lower-income individuals",
                 "type" : "TREATMENT",
                 "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"],
                 "questions" : [
@@ -332,8 +332,8 @@
               },
               "Q07009_en": {
                 "id": "Q07009_en",
-                "title": "Support Top Income Tax Increase for investment",
-                "description": "Would you support raising federal income taxes on higher income households in the following cases?",
+                "title": "Support Top Income Tax Increase for Investment",
+                "description": "Support for increasing the top income tax rate if the additional revenue raised supports investment",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"]
               }
@@ -370,12 +370,12 @@
           "Tax Change Behavior": {
             "id": "Tax Change Behavior",
             "title": "Tax Change Behavior",
-            "description": "CONTROL. If the federal personal income tax rate were to increase for the rich- est people in the economy, to what extent would it encourage them towards the following behaviors?<br/>YOU. If your federal personal income tax rate were to increase, to what extent would it encourage you towards the following behaviors?<br/>GENDER. If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman towards the following behaviors?",
+            "description": "How would increasing the federal income tax rate for the richest individuals encourage the following behavior(s)?",
             "questions": {
               "Q06001_1_en" : {
                 "id" : "Q06001_1_en",
-                "title" : "Likeliness to change behavior - Taxes for the rich",
-                "description" : "If federal income taxes change for the richest people in the economy, how likely are people to...",
+                "title" : "Behavioral Effects of Taxes for the Rich",
+                "description" : "If federal income taxes for the richest people in the economy increase, how likely are people to...",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -443,8 +443,8 @@
               },
               "Q06002_1_en" : {
                 "id" : "Q06002_1_en",
-                "title" : "Likeliness to change behavior - Taxes for the middle class",
-                "description" : "If federal income taxes change for the middle class, how likely are people to...",
+                "title" : "Behavioral Effects of Taxes for the Middle Class",
+                "description" : "If federal income taxes change for the middle class increase, how likely are people to...",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -513,7 +513,7 @@
               "Q06003_en": {
                 "id": "Q06003_en",
                 "title": "Middle Class Tax Share Fairness",
-                "description": "CONTROL AND “YOU”. What do you think would ultimately do more to reduce the income differences between poor and rich families? “GENDER”. What do you think would ultimately do more to reduce the income differences between poor and rich women?",
+                "description": "What would ultimately do more to reduce the income differences between poor and rich families?",
                 "type" : "TREATMENT",
                 "sorter" : ["Lowering taxes on wealthy people/women and corporations to encourage more investment in economic growth.", "Raising taxes on wealthy people/women and corporations to expand programs for the poor."],
                 "questions" : [
@@ -533,8 +533,8 @@
               },
               "Q06004_1_en" : {
                 "id" : "Q06004_1_en",
-                "title" : "Effects of Cuts in top tax rates",
-                "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?",
+                "title" : "Effects of Cuts in Top Tax Rates",
+                "description" : "Which of these groups would mostly win or mostly lose from a cut in the top federal income tax rate?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -595,8 +595,8 @@
               },
               "Q06005_1_en" : {
                 "id" : "Q06005_1_en",
-                "title" : "Effects of Cuts in top tax rates",
-                "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?",
+                "title" : "Overall Tax Increase",
+                "description" : "Which of these groups mostly win or mostly lose from increases in overall taxes and government revenues?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -609,19 +609,19 @@
                           "id" : "Q06005_1_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?"
+                          "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which of these groups would you say mostly win or mostly lose from this change?"
                       },
                       {
                         "id" : "Q06005_1_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
                       },
                       {
                         "id" : "Q06005_1_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, women in which of these groups would you say mostly win or mostly lose from this change?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which of these groups would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
@@ -657,8 +657,8 @@
               },
               "Q06006_en": {
                 "id": "Q06006_en",
-                "title": "Effect of high income tax increase on economic activity",
-                "description": "CONTROL GROUP AND “YOU”. Do you think that increasing income taxes on high- income households would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.? “GENDER” RANDOMIZATION. Do you think that increasing income taxes that high- income women have to pay would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.?",
+                "title": "Effect on Economic Activity",
+                "description": "How the respondent thinks increasing the top federal income tax rate would affect economic activity",
                 "type" : "TREATMENT",
                 "sorter" : ["Hurt economic activity in the U.S.", "Not have an effect on economic activity in the U.S.", "Help economic activity in the U.S."],
                 "questions" : [
@@ -678,8 +678,8 @@
               },
               "Q06007_en": {
                 "id": "Q06007_en",
-                "title": "Effect of high income tax cut on deficit",
-                "description": "CONTROL GROUP. Which comes closer to your view about the long-term impact that tax cuts on high-income households may have on the federal budget deficit? “YOU” RANDOMIZATION. Which comes closer to your view about the long-term impact that tax cuts on households with your level of income may have on the federal budget deficit? “GENDER” RANDOMIZATION. Which comes closer to your view about the long-term impact that the cuts on taxes that high-income women have to pay may have on the federal budget deficit?",
+                "title": "Effect of High-Income Tax Cut on Federal Deficit",
+                "description": "How the respondent views the long-term impact of tax cuts on high-income households on the federal budget deficit?",
                 "type" : "TREATMENT",
                 "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
                 "questions" : [
@@ -705,8 +705,8 @@
               },
               "Q06008_en": {
                 "id": "Q06008_en",
-                "title": "Effect of middle class tax cut on deficit",
-                "description": "CONTROL GROUP. What about the long-term impact that tax cuts on the middle-class may have on the federal budget deficit? “GENDER” RANDOMIZATION. What about the long-term impact that cuts on taxes that women from the middle-class have to pay may have on the federal budget deficit?",
+                "title": "Effect of Middle-Class Tax Cut on Federal Deficit",
+                "description": "How the respondent views the long-term impact of tax cuts on middle-class households on the federal budget deficit?",
                 "type" : "TREATMENT",
                 "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
                 "questions" : [
@@ -727,20 +727,20 @@
               "Q06009_en": {
                 "id": "Q06009_en",
                 "title": "Progressive Taxes and Income Inequality",
-                "description": "CONTROL GROUP AND “YOU”. Do you think that a progressive federal income tax system, in which people with higher incomes pay a higher share of income in taxes than people with lower incomes is an important tool to reduce inequality? “GENDER” RANDOMIZATION. Do you think that a progressive federal income tax system, in which women with higher incomes pay a higher share of their income in taxes than women with lower incomes is an important tool to reduce inequality?",
+                "description": "Whether the respondent believes a progressive federal income tax system, in which people with higher incomes pay a higher share of income tax than people with lower incomes, is an important tool to reduce inequality?",
                 "type" : "TREATMENT",
                 "sorter" : ["Yes", "No"],
                 "questions" : [
                   {
                     "id" : "Q06009_en",
                     "title" : "Control",
-                    "description" : "Do you think that a progressive federal income tax system, in which people with higher incomes pay a higher share of income in taxes than people with lower incomes is an important tool to reduce inequality?",
+                    "description" : "Do you think that a progressive federal income tax system is an important tool to reduce inequality?",
                     "treatments" : ["Neutral", "You"]
                   },
                   {
                     "id" : "Q06009_en",
                     "title" : "Gender",
-                    "description" : "Do you think that a progressive federal income tax system, in which women with higher incomes pay a higher share of their income in taxes than women with lower incomes is an important tool to reduce inequality?",
+                    "description" : "Do you think that a progressive federal income tax system is an important tool to reduce inequality?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -754,7 +754,7 @@
             "questions": {
               "Q09001_en": {
                 "id": "Q09001_en",
-                "title": "Reduction of income differences",
+                "title": "Reduction of Income Differences",
                 "description": "To reduce income differences between rich and poor people, the government (at the local, state, or federal level) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
@@ -774,7 +774,7 @@
             "questions": {
               "Q03001_en": {
                 "id": "Q03001_en",
-                "title": "Trade policy affects own life",
+                "title": "Personal Impact of Trade Policy",
                 "description": "Do you feel that U.S. trade policy has important, direct effects on your own life?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes, it has very important direct effects on my own life; It has some effects on my own life", "No, it has no direct effects on my own life"]
@@ -788,37 +788,37 @@
             "questions": {
               "Q04002_en": {
                 "id": "Q04002_en",
-                "title": "Import tariff",
+                "title": "Import Tariff",
                 "description": "Do you know what an import tariff is?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q04004_en": {
                 "id": "Q04004_en",
-                "title": "Import quota",
+                "title": "Import Quota",
                 "description": "Do you know what an import quota is?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q04006_en": {
                 "id": "Q04006_en",
-                "title": "Share of imports that are agricultural",
-                "description": "The U.S. imports both industrial (i.e., non-agricultural) and agricultural goods. What share of the goods that the U.S. imports do you think are agricultural goods?",
+                "title": "Share of Agricultural Imports",
+                "description": "What share of the goods that the U.S. imports are agricultural goods?",
                 "type" : "NUMERIC",
                 "correct" : "4.1%",
                 "source" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/"
               },
               "Q04007_en": {
                 "id": "Q04007_en",
-                "title": "Share of imports subject to tariff",
-                "description": "Of all the goods that the U.S. imports, what share do you think is subject to a tariff or import duty?",
+                "title": "Share of Imports Subject to Tariff",
+                "description": "Of all the goods that the U.S. imports, what share is subject to a tariff or import duty?",
                 "type" : "NUMERIC",
                 "correct" : "Approximately one half",
                 "source" : "Office of the US Trade Representative"
               },
               "Q04009_en": {
                 "id": "Q04009_en",
-                "title": "Principal export destination",
+                "title": "Principal Export Destination",
                 "description": "To which country does the U.S. export the most, in terms of the net dollar value?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Brazil", "Canada", "China", "France", "Germany", "India", "Ireland", "Italy", "Japan", "Mexico", "Netherlands", "South Korea", "Switzerland", "Taiwan", "United Kingdom"],
@@ -826,7 +826,7 @@
               },
               "Q04010_en": {
                 "id": "Q04010_en",
-                "title": "Principal import provenance",
+                "title": "Principal Import Provenance",
                 "description": "From which country does the U.S. import the most, in terms of the net dollar value",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Brazil", "Canada", "China", "France", "Germany", "India", "Ireland", "Italy", "Japan", "Mexico", "Netherlands", "South Korea", "Switzerland", "Taiwan", "United Kingdom"],
@@ -834,8 +834,8 @@
               },
               "Q04011_en": {
                 "id": "Q04011_en",
-                "title": "Trade evolution over time",
-                "description": "Over time, do you think trade between the U.S. and other countries has decreased, stayed more or less the same, or increased?",
+                "title": "Trade Evolution Over Time",
+                "description": "Over time, how has the level of trade between the U.S. and other countries changed?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["It has decreased", "It has stayed more or less the same", "It has increased"]
               }
@@ -848,115 +848,59 @@
             "questions": {
               "Q06001_1_en": {
                 "id": "Q06001_1_en",
-                "title": "Effects of Trade",
-                "description": "YOU As trade with other countries has increased, to what extent do you think the following firms have lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
+                "title": "Effects of Trade (Treatment - CONTROL)",
+                "description": "As trade with other countries has increased, how much have the following groups lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06001_1_en",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06001_1_en",
-                            "title" : "CONTROL",
-                            "description" : "Large corporations",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "Large Corporations",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   },
                   {
                     "id" : "Q06001_2_en",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06001_2_en",
-                            "title" : "CONTROL",
-                            "description" : "High-income households",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "High-income Households",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   },
                   {
                     "id" : "Q06001_3_en",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06001_3_en",
-                            "title" : "CONTROL",
-                            "description" : "Middle-income households",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "Middle-income Households",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   },
                   {
                     "id" : "Q06001_4_en",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06001_4_en",
-                            "title" : "CONTROL",
-                            "description" : "Low-income households",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "Low-income Households",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   },
                   {
                     "id" : "Q06001_5_en",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06001_5_en",
-                            "title" : "CONTROL",
-                            "description" : "Small businesses",
-                            "treatments" : ["Neutral"]
-                        }
-                      ]
+                    "title" : "Small Businesses",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   }
                 ]
               },
               "Q06201_1": {
                 "id": "Q06201_1",
-                "title": "Effects of Trade",
-                "description": "YOU As trade with other countries has increased, to what extent do you think the following firms have lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
+                "title": "Effects of Trade (Treatment - YOU)",
+                "description": "As trade with other countries has increased, how much have the following groups lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06201_1",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06201_1",
-                            "title" : "YOU",
-                            "description" : "Large corporations",
-                            "treatments" : ["You"]
-                        }
-                      ]
+                    "title" : "Large Corporations",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   },
                   {
                     "id" : "Q06201_2",
-                    "title" : "Effects of Trade",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                        {
-                            "id" : "Q06201_2",
-                            "title" : "YOU",
-                            "description" : "Small businesses",
-                            "treatments" : ["You"]
-                        }
-                      ]
+                    "title" : "Small Businesses",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
                   }
                 ]
               },
@@ -964,36 +908,20 @@
                 "id": "Q06201B",
                 "title": "Personal situation",
                 "description": "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
-                "type" : "TREATMENT",
-                "sorter" : ["Better off", "Worse off"],
-                "questions" : [
-                  {
-                    "id" : "Q06201B",
-                    "title" : "YOU",
-                    "description" : "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
-                    "treatments" : ["You"]
-                  }
-                ]
+                "type" : "CATEGORICAL",
+                "sorter" : ["Better off", "Worse off"]
               },
               "Q06201C_1": {
                 "id": "Q06201C_1",
                 "title": "Magnitude on personal situation",
-                "description": "Please specify the extent to which you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
-                "type" : "TREATMENT",
-                "sorter" : ["1", "2", "3", "4", "5"],
-                "questions" : [
-                  {
-                    "id" : "Q06201C_1",
-                    "title" : "YOU",
-                    "description" : "Please specify the extent to which you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
-                    "treatments" : ["You"]
-                  }
-                ]
+                "description": "How much do you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
+                "type" : "CATEGORICAL",
+                "sorter" : ["1", "2", "3", "4", "5"]
               },
               "Q06003_en": {
                 "id": "Q06003_en",
                 "title": "Effect on Jobs",
-                "description": "Please specify the extent to which you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
+                "description": "Whether increased trade with other countries affects American jobs, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
                 "type" : "TREATMENT",
                 "sorter" : ["Yes", "No"],
                 "questions" : [
@@ -1021,52 +949,28 @@
               "Q06105": {
                 "id": "Q06105",
                 "title": "Ability to find new job - Low-skilled workers",
-                "description": "CONTROL Do you think it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06105",
-                    "title" : "CONTROL",
-                    "description" : "Do you think it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
-                    "treatments" : ["Neutral"]
-                  }
-                ]
+                "description": "Whether it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"]
               },
               "Q06106": {
                 "id": "Q06106",
                 "title": "Ability to find new job - High-skilled workers",
-                "description": "CONTROL Do you think it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06106",
-                    "title" : "CONTROL",
-                    "description" : "Do you think it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
-                    "treatments" : ["Neutral"]
-                  }
-                ]
+                "description": "Whether it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"]
               },
               "Q06205": {
                 "id": "Q06205",
-                "title": "Ability to find new job",
-                "description": "YOU Would it be easy for you to find a job in a different sector from the one you are currently working in?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06205",
-                    "title" : "YOU",
-                    "description" : "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
-                    "treatments" : ["You"]
-                  }
-                ]
+                "title": "Ability to find new job - Specific",
+                "description": "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
+                "type" : "CAGTEGORICAL",
+                "sorter" : ["Yes", "No"]
               },
               "Q06007_1_en": {
                 "id": "Q06007_1_en",
-                "title": "Effects on Unemployment",
-                "description": "CONTROL Unemployment in some sectors and the decline of some industries in the U.S. ME Unemployment in your sector and the decline of some industries in the U.S.",
+                "title": "Unemployment and Inequality",
+                "description": "How much you think trade with other countries has affected unemployment and inequality",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -1078,20 +982,20 @@
                         {
                             "id" : "Q06007_1_en",
                             "title" : "CONTROL",
-                            "description" : "Unemployment",
+                            "description" : "Unemployment in some sectors and the decline of some industries in the U.S.",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06007_1_en",
                             "title" : "YOU",
-                            "description" : "Unemployment",
+                            "description" : "Unemployment in your sector and the decline of some industries in the U.S.",
                             "treatments" : ["You"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06007_2_en",
-                    "title" : "Inequality rise",
+                    "title" : "Effects on Inequality",
                     "type" : "CATEGORICAL",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
                   }
@@ -1099,8 +1003,8 @@
               },
               "Q06009_en": {
                 "id": "Q06009_en",
-                "title": "Price of goods",
-                "description": "CONTROL Overall, has international trade decreased the prices of goods sold in the U.S.? ME Overall, has international trade decreased the prices of goods that you buy regularly?",
+                "title": "Price of Goods",
+                "description": "Overall, has international trade decreased the prices of goods sold in the U.S.?",
                 "type" : "TREATMENT",
                 "sorter" : ["Yes", "No"],
                 "questions" : [
@@ -1141,15 +1045,15 @@
               },
               "Q06013_en": {
                 "id": "Q06013_en",
-                "title": "Can trade be beneficial for both sides",
-                "description": "When two countries trade with each other, would you say that, in general, both are made better off from the trade or that one gains at the expense of the other one?",
+                "title": "Benefits of Trade",
+                "description": "Does trade make the countries involved better off in general?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["In general, both countries are better off", "In general, one country gains, the other one loses", "In general, both countries lose"]
               },
               "Q06014_en": {
                 "id": "Q06014_en",
-                "title": "Importing a good produced at a lower price abroad",
-                "description": "Imagine the U.S. was better at producing cars than Germany, meaning that it is able to produce better cars at a lower price. Would it still make sense under some circumstances for the U.S. to import cars from Germany?",
+                "title": "Importing Lower-priced Goods",
+                "description": "Imagine the U.S. is able to produce better cars at a lower price than Germany is. Would it still make sense under some circumstances for the U.S. to import cars from Germany?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               }
@@ -1158,81 +1062,81 @@
           "Example" : {
             "id": "Example",
             "title": "Example",
-            "description": "Long example about laptops and cars",
+            "description": "The U.S. is a large net exporter of laptops (meaning that it sells more laptops abroad than it purchases from abroad and that U.S. laptops are a large share of all laptops sold in the world), and a large net importer of cars (meaning that it purchases more cars from abroad than it sells abroad and that cars purchased by customers in the U.S. are a large share of worldwide car purchases). The laptop sector employs many high-skilled, college-educated workers. The car sector em- ploys many low-skilled workers. Cars are produced for cheaper abroad, while laptops are produced for cheaper in the U.S.",
             "questions": {
               "Q06015_en": {
                 "id": "Q06015_en",
                 "title": "Long example",
-                "description": "Long example about laptops and cars",
+                "description": "Imagine now that the U.S. starts importing even more cars and producing less cars domestically.",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06015_en",
-                    "title" : "Price of cars",
+                    "title" : "Price of Cars",
                     "description" : "What will happen to the price of cars in the U.S.?", 
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06016_en",
-                    "title" : "Car consumers",
+                    "title" : "Car Consumers",
                     "description" : "Would you say that households who purchase cars in the U.S. are now better off?", 
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06017_en",
-                    "title" : "Low-skilled workers wages",
+                    "title" : "Low-skilled Workers' Wages",
                     "description" : "What will happen to the wages of low-skilled workers working in the car sector?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
                   },
                   {
                     "id" : "Q06018_en",
-                    "title" : "Price of U.S. laptops abroad",
+                    "title" : "Price of U.S. Laptops Abroad",
                     "description" : "Imagine also that the U.S. starts producing and exporting more laptops. What will happen to the price of U.S. laptops abroad, i.e., in the countries where the U.S. sells laptops?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06019_en",
-                    "title" : "High-skilled workers wages",
+                    "title" : "High-skilled Workers' Wages",
                     "description" : "What will happen to the wages of high-skilled workers working in the laptop sector?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
                   },
                   {
                     "id" : "Q06020_en",
-                    "title" : "Changing sectors and increase in exports",
-                    "description" : "Imagine now that over time, some low-skilled workers from the car sector are able to quit their jobs and find new jobs in the laptop sector. What will happen to their wages now if the U.S. exports more laptops?",
+                    "title" : "Changing Sectors and Increase in Exports",
+                    "description" : "Imagine that over time, some low-skilled workers from the car sector are able to quit their jobs and find new jobs in the laptop sector. What will happen to their wages now if the U.S. exports more laptops?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
                   },
                   {
                     "id" : "Q06021_en",
-                    "title" : "Export tax on laptops",
+                    "title" : "Export Tax on Laptops",
                     "description" : "If the U.S. were to impose an export tax on laptops, what would happen to the price of laptops abroad?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06022_en",
-                    "title" : "Import tariff on cars",
+                    "title" : "Import Tariff on Cars",
                     "description" : "If the U.S. were to impose an import tariff on cars sold in the U.S, what would happen to the price of cars in the U.S?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06023_en",
-                    "title" : "Export increase on wages",
+                    "title" : "Export Increase on Wages",
                     "description" : "If exports from your sector to other countries would increase, what do you think will happen to your wage?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   },
                   {
                     "id" : "Q06024_en",
-                    "title" : "Import increase on wages",
-                    "description" : "If the U.S. started to import more of the goods produced in your sector, what do you think would happen to your wage?",
+                    "title" : "Import Increase on Wages",
+                    "description" : "If the U.S. imported more of the goods produced in your sector, what do you think would happen to your wage?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
                   }
@@ -1255,21 +1159,21 @@
               "Q07002_en": {
                 "id": "Q07002_en",
                 "title": "",
-                "description": "How fair would you rate the current U.S. trade policy?",
+                "description": "Fairness of the current U.S. trade policy?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
               },
               "Q07003_en": {
                 "id": "Q07003_en",
                 "title": "",
-                "description": "How satisfied or dissatisfied are you with the current U.S. trade policy?",
+                "description": "Satisfaction with the current U.S. trade policy?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
               },
               "Q07006_1_en": {
                 "id": "Q07006_1_en",
                 "title": "Effects on Unemployment",
-                "description": "CONTROL In your view, what is the best policy tool to help workers in an industry that's declining and threatened by foreign competition? Please rank the following options from best (1) to worst (3). ME In your view, what is the best policy tool to help workers in your industry against the threat of foreign competition? Please rank the following options from best (1) to worst (3).",
+                "description": "What do you think is the best policy tool to help workers in a declining industry threatened by foreign competition? Please rank the following options from best (1) to worst (3).",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -1281,13 +1185,13 @@
                         {
                             "id" : "Q07006_1_en",
                             "title" : "CONTROL",
-                            "description" : "Restrict imports",
+                            "description" : "How effectively would restricting imports help workers in such an industry?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q07006_1_en",
                             "title" : "YOU",
-                            "description" : "Restrict imports",
+                            "description" : "How effectively would restricting imports help workers in your industry?",
                             "treatments" : ["You"]
                         }
                       ]
@@ -1301,13 +1205,13 @@
                         {
                             "id" : "Q07006_2_en",
                             "title" : "CONTROL",
-                            "description" : "Provide more generous transfers and direct assistance to these workers, such as retraining programs",
+                            "description" : "How effectively would providing generous transfers and direct assistance help workers in such an industry?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q07006_2_en",
                             "title" : "YOU",
-                            "description" : "Provide more generous transfers and direct assistance to these workers, such as retraining programs",
+                            "description" : "How effectively would providing generous transfers and direct assistance help workers in your industry?",
                             "treatments" : ["You"]
                         }
                       ]
@@ -1321,13 +1225,13 @@
                         {
                             "id" : "Q07006_3_en",
                             "title" : "CONTROL",
-                            "description" : "Subsidize production in sector",
+                            "description" : "How effectively would subsidizing production help workers in such an industry?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q07006_3_en",
                             "title" : "YOU",
-                            "description" : "Subsidize production in sector",
+                            "description" : "How effectively would subsidizing production help workers in your industry?",
                             "treatments" : ["You"]
                         }
                       ]
@@ -1336,15 +1240,15 @@
               },
               "Q07007_en": {
                 "id": "Q07007_en",
-                "title": "",
+                "title": "National Food Security",
                 "description": "What do you think is the best policy tool to ensure national food security?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Restrict food imports from abroad", "Provide more production subsidies in the food sector"]
               },
               "Q07008_en": {
                 "id": "Q07008_en",
-                "title": "",
-                "description": "If the U.S. starts imposing tariffs on many goods that it imports, how likely or unlikely do you think it is that other countries follow suit and also impose tariffs?",
+                "title": "Tariff Responses",
+                "description": "If the U.S. imposes tariffs on many imports, how likely or unlikely is it that other countries follow suit and also impose tariffs?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very likely, likely", "Unlikely", "Very unlikely"]
               }
@@ -1357,8 +1261,8 @@
             "questions": {
               "Q09003_en": {
                 "id": "Q09003_en",
-                "title": "Gains and losses of increase in trade",
-                "description": "Which statement comes closest to your views about more trade between the US and other countries? When there is more trade between the US and other countries…",
+                "title": "Gains and Losses of Increase in Trade",
+                "description": "Which statement comes closest to your views? When there is more trade between the US and other countries…",
                 "type" : "CATEGORICAL",
                 "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
               }
