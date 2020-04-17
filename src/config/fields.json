@@ -755,7 +755,7 @@
               "Q09001_en": {
                 "id": "Q09001_en",
                 "title": "Reduction of Income Differences",
-                "description": "To reduce income differences between rich and poor people, the government (at the local, state, or federal level) has the ability and the tools to do:",
+                "description": "To reduce income differences between rich and poor people, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
@@ -1309,15 +1309,15 @@
             "questions": {
               "Q03001_en": {
                 "id": "Q03001_en",
-                "title": "Federal estate tax affects own life",
+                "title": "Personal Effects of Federal Estate Tax",
                 "description": "Do you feel personally affected by the federal estate tax?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q03004_en": {
                 "id": "Q03004_en",
-                "title": "Likelihood your estate is taxed",
-                "description": "How likely do you think it is that your estate will be subject to the federal estate tax in the future?",
+                "title": "Likelihood Your Estate is Taxed",
+                "description": "How likely is it that your estate will be subject to the federal estate tax in the future?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very likely", "Somewhat likely", "Somewhat unlikely", "Very unlikely"]
               }
@@ -1337,15 +1337,15 @@
               },
               "Q04008_en": {
                 "id": "Q04008_en",
-                "title": "Small businesses subject to estate tax",
-                "description": "Do you think that many or few small business or small farm owners are subject to the federal estate tax?",
+                "title": "Small Businesses",
+                "description": "Do you think small business or small farm owners are subject to the federal estate tax?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Very likely", "Somewhat likely", "Somewhat unlikely", "Very unlikely"]
+                "sorter" : ["Almost all are subject to the estate tax; Many are subject to the estate tax", "Few are subject to the estate tax", "Almost none are subject to the estate tax"]
               },
               "Q04009_en": {
                 "id": "Q04009_en",
-                "title": "Double taxation?",
-                "description": "Do you think that the federal estate tax is mostly taxing assets that have already been taxed and thus leads to ”double taxation” or do you think that it is mostly taxing assets that have not been taxed before during the life of the owner?",
+                "title": "Double Taxation",
+                "description": "Does federal estate tax policy mostly tax assets that have already been taxed, thus leading to ”double taxation”?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["It’s mostly double taxation", "It mostly taxes assets that have not been taxed before"]
               },
@@ -1358,21 +1358,21 @@
               },
               "Q04014_en": {
                 "id": "Q04014_en",
-                "title": "Example about the federal estate tax",
+                "title": "Example",
                 "description": "Let’s work through a concrete example about the federal estate tax now. Jack inherits a house from his father. His father paid $50,000 for the house 30 years ago. This house is now worth $350,000 at the time of the father’s death. But Jack manages to sell the house for $400,000.",
                 "type" : "UMBRELLA",
                 "questions" : [
                     {
                       "id": "Q04014_en",
-                      "title": "Jack's capital gains",
-                      "description": "What is the amount that the IRS will consider as capital gains that Jack made and that will be taxed at the capital gains tax rate?",
+                      "title": "Jack's Capital Gains",
+                      "description": "What amount will the IRS consider as capital gains that Jack made and that will be taxed at the capital gains tax rate?",
                       "type" : "CATEGORICAL",
                       "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"]
                     },
                     {
                       "id": "Q04015_en",
-                      "title": "Jack's father's capital gains",
-                      "description": "What is the amount that the IRS will consider as capital gains that Jack's father made and that will be taxed at the capital gains tax rate?",
+                      "title": "Jack's Father's Capital Gains",
+                      "description": "What amount will the IRS consider as capital gains that Jack's father made and that will be taxed at the capital gains tax rate?",
                       "type" : "CATEGORICAL",
                       "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"]
                     }
@@ -1380,58 +1380,58 @@
               },
               "Q04017_en": {
                 "id": "Q04017_en",
-                "title": "Top 1% wealth share",
-                "description": "How has the share of total U.S. wealth that is held by the top 0.1% evolved over the past 30 years?",
+                "title": "Top 0.1% Wealth Share",
+                "description": "How has the share of wealth held by the top 0.1% evolved over the past 30 years in the U.S.?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"]
               },
               "Q04019_en": {
                 "id": "Q04019_en",
-                "title": "Reasons for wealth",
+                "title": "Reasons for Wealth",
                 "description": "Which has more to do with why a person is wealthy?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Because she or he worked harder than others", "Because she or he had more advantages than others"]
               },
               "Q04010_en": {
                 "id": "Q04010_en",
-                "title": "Share of estates that are unrealized capital gains",
-                "description": "If you think of all the large estates that will be subject to the federal estate tax, what share of those estates would you say is made up of unrealized capital gains that have never been taxed before?",
+                "title": "Share of Estates that are Unrealized Capital Gains",
+                "description": "What share of estates subject to the federal estate tax is made up of unrealized capital gains that have never been taxed before?",
                 "type" : "NUMERIC"
               },
               "Q04011_en": {
                 "id": "Q04011_en",
-                "title": "Average rate on taxed estates",
-                "description": "Consider the total value of all estates that are passed on and subject to the federal estate tax. In total, what fraction of the total value of these estates is paid in taxes?",
+                "title": "Average Rate on Taxed Estates",
+                "description": "What fraction of the total value of estates subject to the federal estate tax is paid in taxes?",
                 "type" : "NUMERIC"
               },
               "Q04006_en": {
                 "id": "Q04006_en",
-                "title": "Estate tax rate above threshold",
+                "title": "Estate Tax Rate Above Threshold",
                 "description": "At what rate is each dollar of estate that is passed on and falls above the exemption threshold taxed?",
                 "type" : "NUMERIC"
               },
               "Q04007_en": {
                 "id": "Q04007_en",
-                "title": "Estate tax rate in 1950s",
-                "description": "Let’s compare this to how things used to be in the U.S. in the past. At what rate was each dollar of estate that is passed on and falls above the threshold taxed in the 1950s?",
+                "title": "Estate Tax Rate in 1950s",
+                "description": "At what rate was each dollar of estate that is passed on and falls above the threshold taxed in the 1950s?",
                 "type" : "NUMERIC"
               },
               "Q04003_en": {
                 "id": "Q04003_en",
-                "title": "Number of estates subject to tax at death",
+                "title": "Number of Estates Subject to Tax at Death",
                 "description": "Number of estates subject to tax at death",
                 "type" : "NUMERIC"
               },
               "Q04005_en": {
                 "id": "Q04005_en",
-                "title": "Estate tax exemption threshold",
-                "description": "Please specify the exact threshold.",
+                "title": "Estate Tax Exemption Threshold",
+                "description": "Please specify the exact estate tax exemption threshold.",
                 "type" : "NUMERIC"
               },
               "Q04016_top1": {
                 "id": "Q04016_top1",
-                "title": "Share of wealth owned by following groups",
-                "description": "What share of all of the wealth in the U.S. do you think is currently owned by the following groups?",
+                "title": "Share of Wealth Owned by Following Groups",
+                "description": "What share of all of the wealth in the U.S. is currently owned by the following groups?",
                 "type" : "UMBRELLA",
                 "questions" : [
                     {
@@ -1450,14 +1450,14 @@
               },
               "Q04018_en": {
                 "id": "Q04018_en",
-                "title": "Share of wealth inherited",
+                "title": "Share of Wealth Inherited",
                 "description": "What share of total wealth owned by households in the U.S. today is inherited from their parents?",
                 "type" : "NUMERIC"
               },
               "Q04021_1_en": {
                 "id": "Q04021_1_en",
-                "title": "Probability of moving in following ways",
-                "description": "What is the probability of moving quintiles in the following ways?",
+                "title": "Moving Income Brackets",
+                "description": "What is the probability of moving income quintiles in the following ways?",
                 "type" : "UMBRELLA",
                 "questions" : [
                     {
@@ -1501,13 +1501,13 @@
             "questions": {
               "Q06001_1_en": {
                 "id": "Q06001_1_en",
-                "title": "Increase in federal estate taxes",
-                "description": "CONTROL GROUP. If the federal estate tax increases, to what extent would it encourage the very wealthy individuals towards the following behaviors? “ME” RANDOMIZATION. If the federal estate tax were to increase, to what extent would it encourage you towards the following behaviors? “WOMEN” RANDOMIZATION. If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women towards the following behaviors?",
+                "title": "Increasing Federal Estate Taxes - Wealthy",
+                "description": "If the federal estate tax increases, to what extent would it encourage very wealthy individuals towards the following behaviors?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06001_1_en",
-                    "title" : "Evade taxes",
+                    "title" : "Evade Taxes",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1533,7 +1533,7 @@
                   },
                   {
                     "id" : "Q06001_2_en",
-                    "title" : "Work less",
+                    "title" : "Work Less",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1559,7 +1559,7 @@
                   },
                   {
                     "id" : "Q06001_3_en",
-                    "title" : "Stop working",
+                    "title" : "Stop Working",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1585,7 +1585,7 @@
                   },
                   {
                     "id" : "Q06001_4_en",
-                    "title" : "Have spouse stop working",
+                    "title" : "Have Spouse Stop Working",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1611,7 +1611,7 @@
                   },
                   {
                     "id" : "Q06001_5_en",
-                    "title" : "Move state",
+                    "title" : "Move State",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1637,7 +1637,7 @@
                   },
                   {
                     "id" : "Q06001_6_en",
-                    "title" : "Be less entrepreneurial",
+                    "title" : "Be Less Entrepreneurial",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1663,7 +1663,7 @@
                   },
                   {
                     "id" : "Q06001_7_en",
-                    "title" : "Save less",
+                    "title" : "Save Less",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
@@ -1691,162 +1691,162 @@
               },
               "Q06002_1_en": {
                 "id": "Q06002_1_en",
-                "title": "Young people - increase in federal estate taxes",
-                "description": "CONTROL GROUP AND “ME”. Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people towards the following behaviors? “WOMEN” RANDOMIZATION. Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women towards the following behaviors?",
+                "title": "Increasing Federal Estate Taxes - Young People",
+                "description": "If the federal estate tax were to increase, to what extent would it encourage young people who are not yet rich towards the following behaviors?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id" : "Q06002_1_en",
-                    "title" : "Evade taxes",
+                    "title" : "Evade Taxes",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_1_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to evade taxes?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_1_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_1_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to evade taxes?",
                             "treatments" : ["Gender"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06002_2_en",
-                    "title" : "Work less",
+                    "title" : "Work Less",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_2_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_2_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to work less?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_2_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to work less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to work less?",
                             "treatments" : ["Gender"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06002_3_en",
-                    "title" : "Stop working",
+                    "title" : "Stop Working",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_3_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_3_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_3_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06002_4_en",
-                    "title" : "Have spouse stop working",
+                    "title" : "Have Spouse Stop Working",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_4_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to have spouse stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_4_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to have spouse stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_4_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to have spouse stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06002_5_en",
-                    "title" : "Move state",
+                    "title" : "Move State",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_5_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to move state?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_5_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to move state?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_5_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to move state?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
                   },
                   {
                     "id" : "Q06002_6_en",
-                    "title" : "Be less entrepreneurial",
+                    "title" : "Be Less Entrepreneurial",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
                     "questions" : [
                         {
                             "id" : "Q06002_6_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to be less entrepreneurial?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_6_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to be less entrepreneurial?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_6_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to be less entrepreneurial?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1860,19 +1860,19 @@
                         {
                             "id" : "Q06002_7_en",
                             "title" : "CONTROL",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these people to work less?",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06002_7_en",
                             "title" : "YOU",
-                            "description" : "Imagine some people who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are 25 2. old. If the federal estate tax were to increase, to what extent would it encourage these people to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_7_en",
                             "title" : "GENDER",
-                            "description" : "Imagine women who are currently young and not yet rich, but could possibly expect to get rich and face a higher federal estate tax when they are old. If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1882,7 +1882,7 @@
               "Q06004_en": {
                 "id": "Q06004_en",
                 "title": "Economic Activity",
-                "description": "CONTROL GROUP. What effect do you think that increasing the federal estate tax on wealthy households would have on economic activity? “ME” RANDOMIZATION. What effect do you think that increasing the federal estate tax on the estates of households similar to yours would have on economic activity? “WOMEN” RANDOMIZATION. What effect do you think that increasing the federal estate tax on the estates of wealthy women would have on economic activity? Hurt economic activity; Have no effect on economic activity; Help economic activity",
+                "description": "What effect would increasing the federal estate tax on wealthy households would have on economic activity?",
                 "type" : "TREATMENT",
                 "sorter" : ["Hurt economic activity", "Have no effect on economic activity", "Help economic activity"],
                 "questions" : [
@@ -1909,7 +1909,7 @@
               "Q06005_en": {
                 "id": "Q06005_en",
                 "title": "Federal Budget Deficit",
-                "description": "CONTROL GROUP. Which comes closer to your view about the long-term impact that cuts in the federal estate tax for wealthy households may have on the federal budget deficit: “ME” RANDOMIZATION. Which comes closer to your view about the long-term impact that cuts in the federal estate tax on the estates of households similar to yours may have on the federal budget deficit: “WOMEN” RANDOMIZATION. Which comes closer to your view about the long-term im- pact that cuts in the federal estate tax on the estates of wealthy women may have to pay may have on the federal budget deficit:",
+                "description": "View about the long-term impact that cuts in the federal estate tax for wealthy households may have on the federal budget deficit",
                 "type" : "TREATMENT",
                 "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
                 "questions" : [
@@ -1936,7 +1936,7 @@
               "Q06006_en": {
                 "id": "Q06006_en",
                 "title": "Federal Budget Deficit",
-                "description": "CONTROL GROUP. Do you think that increasing the federal estate tax is a good or bad way to reduce wealth inequality? “ME” RANDOMIZATION. Do you think that increasing the federal estate tax on the estates of households similar to yours is a good or bad way to reduce wealth inequality? “WOMEN” RANDOMIZATION. Do you think that increasing the federal estate tax on the estates of wealthy women is a good or bad way to reduce wealth inequality?",
+                "description": "View on whether increasing the federal estate tax is a good way to reduce wealth inequality?",
                 "type" : "TREATMENT",
                 "sorter" : ["It is one of the best ways to reduce wealth inequality", "It is a good way to reduce wealth inequality, but there are better ways", "It is a bad way to reduce wealth inequality", "It is one of the worst ways to reduce wealth inequality"],
                 "questions" : [
@@ -1962,8 +1962,8 @@
               },
               "Q06008_en": {
                 "id": "Q06008_en",
-                "title": "Fairness of wealthy parents paying estate tax at death",
-                "description": "CONTROL GROUP. Would you say that it is fair or unfair that the estate of wealthy parents who have worked hard and saved a lot in order to pass on wealth to their children is subject to the federal estate tax at death? “ME” RANDOMIZATION. Would you say that it is fair or unfair that the estate for which you have worked hard and saved a lot in order to pass on wealth to your children will be subject to the federal estate tax at your death? “WOMEN” RANDOMIZATION. Would you say that it is fair or unfair that the estate of a wealthy woman who has worked hard and saved a lot in order to pass on wealth to her children is subject to the federal estate tax at death?",
+                "title": "Wealthy Paying Estate Tax at Death",
+                "description": "Is it fair that the estate of wealthy parents who have worked hard and saved a lot is subject to the federal estate tax at death?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
                 "questions" : [
@@ -1989,35 +1989,35 @@
               },
               "Q06009_en": {
                 "id": "Q06009_en",
-                "title": "Fairness of wealthy estate tax at death",
-                "description": "CONTROL GROUP. Imagine now wealthy parents who are wealthy because they have them- selves inherited a lot of wealth from their own parents. Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death? “ME” RANDOMIZATION. Imagine now parents wealthier than you, who are wealthier than you because they have themselves inherited a lot more wealth from their own parents than you. Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death? “WOMEN” RANDOMIZATION. Imagine now a woman who is wealthy because she has herself inherited a lot of wealth from her parents. Would you say that it is fair or unfair for her estate to be subject to the federal estate tax at death?",
+                "title": "Inherited Weatlh Estate Tax at Death",
+                "description": "Imagine wealthy parents who inherited weatlh from their own parents. Is it fair that their estate be subject to the federal estate tax at death?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
                 "questions" : [
                   {
                     "id" : "Q06009_en",
                     "title" : "CONTROL",
-                    "description" : "Imagine now wealthy parents who are wealthy because they have them- selves inherited a lot of wealth from their own parents. Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death?",
+                    "description" : "Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death?",
                     "treatments" : ["Neutral"]
                   },
                   {
                     "id" : "Q06009_en",
                     "title" : "YOU",
-                    "description" : "Imagine now parents wealthier than you, who are wealthier than you because they have themselves inherited a lot more wealth from their own parents than you. Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death?",
+                    "description" : "Would you say that it is fair or unfair for their estate to be subject to the federal estate tax at death?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06009_en",
                     "title" : "GENDER",
-                    "description" : "Imagine now a woman who is wealthy because she has herself inherited a lot of wealth from her parents. Would you say that it is fair or unfair for her estate to be subject to the federal estate tax at death?",
+                    "description" : "Would you say that it is fair or unfair for her estate to be subject to the federal estate tax at death?",
                     "treatments" : ["Gender"]
                   }
                 ]
               },
               "Q06010_en": {
                 "id": "Q06010_en",
-                "title": "Fairness of wealthy family resources",
-                "description": "CONTROL GROUP. Do you think it is fair or unfair that children born in very wealthy families have access to better schools, better medical care, better neighborhoods, and better professional and social networks than children from less wealthy families? “ME” RANDOMIZATION. Do you think that it is fair or unfair that people born in wealthier families than yours have had access to better schools, better medical care, better neighbor- hoods, and better professional and social networks than you have had? “WOMEN” RANDOMIZATION. Do you think that it is fair or unfair that a girl born to a very wealthy mother has access to better schools, better medical care, better neighborhoods, and better professional and social networks than a girl born to a less wealthy mother?",
+                "title": "Wealthy Family Resource Advantage",
+                "description": "Is it fair that children born in very wealthy families have access to better resources than children from less wealthy families?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
                 "questions" : [
@@ -2043,8 +2043,8 @@
               },
               "Q06011_en": {
                 "id": "Q06011_en",
-                "title": "Fairness of wealthy family inheritance",
-                "description": "CONTROL GROUP. Do you think it is fair or unfair that children born in very wealthy families inherit much more than children born in less wealthy families? “ME” RANDOMIZATION. Do you think it is fair or unfair that people born in wealthier families than yours inherit more than you? “WOMEN” RANDOMIZATION. Do you think that it is fair or unfair that a girl born to a very wealthy mother inherits much more than a girl born to a less wealthy mother?",
+                "title": "Wealthy Family Inheritance",
+                "description": "Is it fair that children born in very wealthy families inherit much more than children born in less wealthy families?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
                 "questions" : [
@@ -2077,42 +2077,42 @@
             "questions": {
               "Q07001_en": {
                 "id": "Q07001_en",
-                "title": "Fairness of wealth and money distribution",
-                "description": "Do you feel that the distribution of money and wealth in this country today is fair, or do you feel that the money and wealth in this country should be more evenly distributed among a larger percentage of the people?",
+                "title": "Wealth/Money Distribution",
+                "description": "Is the distribution of money and wealth in this country today fair?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["The distribution of money and wealth in this country today is fair", "The money and wealth in this country should be more evenly distributed among a larger percentage of the people"]
               },
               "Q07002_en": {
                 "id": "Q07002_en",
-                "title": "Wealth inequality",
+                "title": "Wealth Inequality",
                 "description": "How big of a problem do you think wealth inequality is in America?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Not a problem at all", "A small problem", "A problem", "A serious problem", "A very serious problem"]
               },
               "Q07003_en": {
                 "id": "Q07003_en",
-                "title": "Current state of system",
+                "title": "Fairness of System",
                 "description": "How fair would you say that the current U.S. federal estate tax system is?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
               },
               "Q07004_en": {
                 "id": "Q07004_en",
-                "title": "Satisfaction with system",
+                "title": "Satisfaction with System",
                 "description": "How satisfied are you with the current U.S. federal estate tax system?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
               },
               "Q07005_en": {
                 "id": "Q07005_en",
-                "title": "Existence of system",
+                "title": "Existence of System",
                 "description": "Do you think there should be a federal estate tax in the U.S.?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q07006_en": {
                 "id": "Q07006_en",
-                "title": "Change in estate tax",
+                "title": "Changes in Estate Tax",
                 "description": "Do you think the federal estate tax should be increased, left at the current level, or lowered?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Increased a lot", "Increased somewhat", "Left at the current level", "Lowered somewhat", "Lowered a lot"]
@@ -2126,15 +2126,15 @@
             "questions": {
               "Q09001_en": {
                 "id": "Q09001_en",
-                "title": "Reduce inequalities",
-                "description": "To reduce differences in wealth between rich and poor people, the government (at the local, state or federal level) has the ability and the tools to do:",
+                "title": "Reduce Inequalities",
+                "description": "To reduce differences in wealth between rich and poor people, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               },
               "Q09002_en": {
                 "id": "Q09002_en",
-                "title": "Improve opportunities",
-                "description": "To improve opportunities for children from low-income families, the government (at the local, state, or federal level) has the ability and the tools to do:",
+                "title": "Improve Opportunities",
+                "description": "To improve opportunities for children from low-income families, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
@@ -2978,7 +2978,7 @@
               "dummy_Q09001": {
                 "id": "dummy_Q09001",
                 "title": "The government can do a lot to improve health care",
-                "description": "To improve access to health care for all Americans, rich or poor, the government (at the local, state, or federal level) has the ability and the tools to do:",
+                "description": "To improve access to health care for all Americans, rich or poor, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
