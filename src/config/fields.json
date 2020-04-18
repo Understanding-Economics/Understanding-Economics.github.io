@@ -158,7 +158,8 @@
                 "type" : "NUMERIC",
                 "format" : "dollar",
                 "correct" : "600000",
-                "source" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/"
+                "source" : "NerdWallet", 
+                "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/"
               },
               "Q04008_en": {
                 "id": "Q04008_en",
