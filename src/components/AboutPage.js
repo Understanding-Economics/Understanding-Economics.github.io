@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Section, Subsection} from './TextComponents'
+import { NavLink } from 'react-router-dom';
 
 export default class AboutPage extends React.Component {
     render() {
@@ -10,7 +11,7 @@ export default class AboutPage extends React.Component {
                 <Section>Paper</Section>
 
                 <p>
-                The full paper can be found <a href = "https://www.dropbox.com/s/zlvzvj8pnqvb1iy/Stantcheva_Understanding_Economics.pdf?dl=0" target = "_blank">here</a>
+                The full paper can be found <a href = "https://www.dropbox.com/s/zlvzvj8pnqvb1iy/Stantcheva_Understanding_Economics.pdf?dl=0" target = "_blank">here</a>.
                 </p>
 
                 <Section>Additional resources</Section>
@@ -19,9 +20,9 @@ export default class AboutPage extends React.Component {
 
                 <p>The full survey questionnaire can be found <a href = "https://www.dropbox.com/s/2evbqrrnodbkzet/Survey_Questionnaires.pdf?dl=0" target = "_blank">here</a>.</p>
 
-                <p>Sometimes, the answers were grouped to reduce the numbers of categories to be displayed. You can find how that was done here <strong>[link]</strong>.</p>
+                <p>Sometimes, the answers were grouped to reduce the numbers of categories to be displayed. The distribution of respondents’ characteristics between these categories can be found <NavLink exact to = "/survey/pooled">here</NavLink>. </p>
 
-                <p>Contrarily to the other topic categories, the "text analysis" section displays figures from the paper and are not plotted online in real-time. Data has been cleaned in order to be able to compare answers across respondents. The word clouds shows the words that are the most frequently used with a label size proportional to their frequency. The keywords show all groups of 2 words (separated with at most one word) that are significantly more used by one group compared to another group. More about the methodology used <a href = "https://www.dropbox.com/s/wmr1rk6f59xb35o/Understanding_Economics_Online_Appendix.pdf?dl=0" target = "_blank">here</a>.</p>
+                <p>Unlike the other topic categories, the "text analysis" section displays figures from the paper and are not plotted online in real-time. Data has been cleaned in order to be able to compare answers across respondents. The word clouds shows the words that are the most frequently used with a label size proportional to their frequency. The keywords show all groups of 2 words (separated with at most one word) that are significantly more used by one group compared to another group. More about the methodology used <a href = "https://www.dropbox.com/s/wmr1rk6f59xb35o/Understanding_Economics_Online_Appendix.pdf?dl=0" target = "_blank">here</a>.</p>
 
                 <Subsection>Randomization</Subsection>
                 <p>
