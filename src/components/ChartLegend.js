@@ -36,6 +36,7 @@ export default class ChartLegend extends React.PureComponent {
                 padding: "3px",
                 marginLeft: i == 0 ? "auto" : "3px", 
                 marginRight: i == responses.length - 1 ? "auto" : "3px",
+                marginTop: "10px",
                 opacity : val == this.props.question.correct ? 1.0 : 0.8
         }}>
             <strong>{val}</strong>

@@ -860,7 +860,7 @@
             "questions": {
               "Q06001_1_en": {
                 "id": "Q06001_1_en",
-                "title": "Effects of Trade (Treatment - CONTROL)",
+                "title": "Effects of Trade",
                 "description": "As trade with other countries has increased, how much have the following groups lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
                 "type" : "UMBRELLA",
                 "questions" : [

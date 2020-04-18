@@ -25,7 +25,7 @@ export default class TreatmentDisplay extends React.Component {
         // But bootstrap is too stupid to figure it out by itself
         let columnWidth = `col-md-${10 - 2 * this.props.question.questions.length}`;
         let chartViews = this.props.question.questions.map(question => 
-            <div className = {columnWidth}>
+            <div className = {columnWidth} style = {{paddingLeft: '0px'}}>
                 <TreatmentChartView
                     survey = { this.props.survey } 
                     data = { this.props.data.filter(x => question.treatments.indexOf(x["mechanisms_rando"]) >= 0) }
@@ -63,7 +63,9 @@ export default class TreatmentDisplay extends React.Component {
                         <ScrollableDesc
                             title = {this.props.group.title}
                             content = {" "}
-                            height = {"100px"}
+                            minHeight = {"10px"}
+                            maxHeight = {"100px"}
+                            marginLeft ={"20px !important"}
                         /> 
                     </div>
                     <div className = "col-md-9">
@@ -74,7 +76,7 @@ export default class TreatmentDisplay extends React.Component {
                 </div>
                 <div className = "row">
                     <div className = "col-md-3"></div>
-                    <div className = "col-md-9">
+                    <div className = "col-md-9" style={{paddingLeft: "0px"}}>
                         <ChartLegend 
                             data = { this.props.data }
                             question = { this.props.question }
