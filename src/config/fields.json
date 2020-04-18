@@ -867,14 +867,38 @@
                   {
                     "id" : "Q06001_1_en",
                     "title" : "Large Corporations",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["1", "2", "3", "4", "5"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3", "4", "5"],
+                    "questions" : [
+                      {
+                        "id" : "Q06001_1_en",
+                        "title" : "Control",
+                        "treatments" : ["Neutral", "Gender"]
+                      },
+                      {
+                        "id" : "Q06201_1",
+                        "title" : "You",
+                        "treatments" : ["You"]                        
+                      }
+                    ]
                   },
                   {
                     "id" : "Q06001_2_en",
                     "title" : "High-income Households",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["1", "2", "3", "4", "5"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3", "4", "5"], 
+                    "questions" : [
+                      {
+                        "id" : "Q06001_2_en",
+                        "title" : "Control",
+                        "treatments" : ["Neutral", "Gender"]
+                      },
+                      {
+                        "id" : "Q06201_2",
+                        "title" : "You",
+                        "treatments" : ["You"]                        
+                      }
+                    ]
                   },
                   {
                     "id" : "Q06001_3_en",
@@ -890,26 +914,6 @@
                   },
                   {
                     "id" : "Q06001_5_en",
-                    "title" : "Small Businesses",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["1", "2", "3", "4", "5"]
-                  }
-                ]
-              },
-              "Q06201_1": {
-                "id": "Q06201_1",
-                "title": "Effects of Trade (Treatment - YOU)",
-                "description": "As trade with other countries has increased, how much have the following groups lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
-                "type" : "UMBRELLA",
-                "questions" : [
-                  {
-                    "id" : "Q06201_1",
-                    "title" : "Large Corporations",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["1", "2", "3", "4", "5"]
-                  },
-                  {
-                    "id" : "Q06201_2",
                     "title" : "Small Businesses",
                     "type" : "CATEGORICAL",
                     "sorter" : ["1", "2", "3", "4", "5"]

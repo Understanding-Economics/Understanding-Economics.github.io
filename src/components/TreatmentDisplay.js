@@ -61,7 +61,7 @@ export default class TreatmentDisplay extends React.Component {
                 <div className = "row">
                     <div className = "col-md-3">
                         <ScrollableDesc
-                            title = {this.props.group.title }
+                            title = {this.props.group.title}
                             content = {" "}
                             height = {"100px"}
                         /> 
