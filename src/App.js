@@ -33,7 +33,7 @@ class App extends React.Component {
       <Router basename = "/">
           <div className="App container">
           <NavLink exact to="/">
-              <h2>Understanding Economics</h2>
+              <h2><strong>Understanding Economics</strong></h2>
           </NavLink> 
           <NavigationBar />
           <Switch>
