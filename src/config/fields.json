@@ -167,7 +167,7 @@
                 "description": "Out of 100 households in the U.S., how many are in the top federal personal income tax bracket?",
                 "type" : "NUMERIC",
                 "format" : "percent",
-                "correct" : "65",
+                "correct" : 0.65,
                 "source" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
               },
               "Q04009_en": {
@@ -184,7 +184,7 @@
                 "title": "Top Tax Share of Income",
                 "description": "What share of their total income do people in the top federal personal income tax bracket pay in taxes?",
                 "type" : "NUMERIC",
-                "correct" : "28.5",
+                "correct" : 28.5,
                 "source" : "https://jicinvest.com/how-many-taxpayers-fall-into-each-income-tax-bracket/"
               },
               "Q04011_en": {
@@ -192,7 +192,7 @@
                 "title": "1950s Top Tax Rate",
                 "description": "Can you guess what the top federal personal income tax rate used to be in the 1950s in the U.S.?",
                 "type" : "NUMERIC",
-                "correct" : "95",
+                "correct" : 95,
                 "source" : "https://bradfordtaxinstitute.com/Free_Resources/Federal-Income-Tax-Rates.aspx"
               },
               "Q04012_en": {
@@ -200,7 +200,7 @@
                 "title": "No Federal Income Tax",
                 "description": "Out of 100 U.S. households, how many pay no federal income taxes?",
                 "type" : "NUMERIC",
-                "correct" : "44",
+                "correct" : 44,
                 "source" : "https://www.taxpolicycenter.org/taxvox/closer-look-those-who-pay-no-income-or-payroll-taxes"
               },
               "Q04013_en": {
