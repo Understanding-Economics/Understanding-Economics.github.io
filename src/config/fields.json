@@ -149,7 +149,10 @@
                 "title": "Taxed Share by Income",
                 "description": "Whether respondent thinks people with higher incomes pay a higher or lower share of their total income in federal taxes than people with lower incomes?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["People with higher incomes pay a higher share of their income in taxes than those with lower incomes.", "People with higher incomes pay a lower share of their income in taxes than those with lower incomes."]
+                "sorter" : ["People with higher incomes pay a higher share of their income in taxes than those with lower incomes.", "People with higher incomes pay a lower share of their income in taxes than those with lower incomes."],
+                "correct" : "People pay very different shares of their income in taxes",
+                "source" : "Pew Research",
+                "source_url" : "http://www.pewresearch.org/fact-tank/2017/10/06/a-closer-look-at-who-does-and-doesnt-pay-u-s-income-tax/"
               },
               "Q04007_en": {
                 "id": "Q04007_en",
@@ -157,7 +160,7 @@
                 "description": "How high is the threshold of total annual income for a married household above which the top tax rate applies?",
                 "type" : "NUMERIC",
                 "format" : "dollar",
-                "correct" : "600000",
+                "correct" : 600001,
                 "source" : "NerdWallet", 
                 "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/"
               },
@@ -167,8 +170,9 @@
                 "description": "Out of 100 households in the U.S., how many are in the top federal personal income tax bracket?",
                 "type" : "NUMERIC",
                 "format" : "percent",
-                "correct" : 0.65,
-                "source" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
+                "correct" : 73,
+                "source" : "Tax Foundation",
+                "source_url" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
               },
               "Q04009_en": {
                 "id": "Q04009_en",
@@ -176,7 +180,8 @@
                 "description": "What is the top federal personal income tax rate in the U.S.?",
                 "type" : "NUMERIC",
                 "correct" : 37,
-                "source": "News org",
+                "source": "NerWallet",
+                "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
                 "format" : "percent"
               },
               "Q04010_en": {
@@ -184,16 +189,19 @@
                 "title": "Top Tax Share of Income",
                 "description": "What share of their total income do people in the top federal personal income tax bracket pay in taxes?",
                 "type" : "NUMERIC",
-                "correct" : 28.5,
-                "source" : "https://jicinvest.com/how-many-taxpayers-fall-into-each-income-tax-bracket/"
+                "correct" : 32.7,
+                "source" : "Tax Foundation",
+                "source_url" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
               },
               "Q04011_en": {
                 "id": "Q04011_en",
                 "title": "1950s Top Tax Rate",
                 "description": "Can you guess what the top federal personal income tax rate used to be in the 1950s in the U.S.?",
                 "type" : "NUMERIC",
-                "correct" : 95,
-                "source" : "https://bradfordtaxinstitute.com/Free_Resources/Federal-Income-Tax-Rates.aspx"
+                "correct" : 91,
+                "source" : "Stanford",
+                "source_url" : "https://web.stanford.edu/class/polisci120a/immigration/Federal%20Tax%20Brackets.pdf",
+                "format" : "percent"
               },
               "Q04012_en": {
                 "id": "Q04012_en",
@@ -201,20 +209,28 @@
                 "description": "Out of 100 U.S. households, how many pay no federal income taxes?",
                 "type" : "NUMERIC",
                 "correct" : 44,
-                "source" : "https://www.taxpolicycenter.org/taxvox/closer-look-those-who-pay-no-income-or-payroll-taxes"
+                "source" : "Tax Policy Center",
+                "source_url" : "https://www.taxpolicycenter.org/taxvox/closer-look-those-who-pay-no-income-or-payroll-taxes"
               },
               "Q04013_en": {
                 "id": "Q04013_en",
                 "title": "Median Tax Share of Income",
                 "description": "What share of income do you think a middle-class household pays in federal income taxes?",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : 15,
+                "source" : "NerdWallet",
+                "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
+                "format" : "percent"
               },
               "Q04014_en": {
                 "id": "Q04014_en",
                 "title": "U.S. Relative Taxation",
                 "description": "How respondent thinks U.S. federal income taxes compare to those of other rich countries such as Canada or Western Europe",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Higher income taxes", "Comparable levels of income taxes", "Lower income taxes"]
+                "sorter" : ["Higher income taxes", "Comparable levels of income taxes", "Lower income taxes"],
+                "correct" : "Lower income taxes",
+                "source" : "Time",
+                "source_url" : "http://time.com/money/4862673/us-tax-burden-vs-oecd-countries/"
               },
               "Q04016_en": {
                 "id": "Q04016_en",
@@ -236,7 +252,10 @@
                 "title": "Change in Top 1% Share of Income",
                 "description": "How has the share of total U.S. income that goes to the top 1% in the U.S. evolved over the past 30 years?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"]
+                "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"],
+                "correct" : "It has increased by a lot",
+                "source" : "Inequality.org",
+                "source_url" : "https://inequality.org/facts/income-inequality/"
               }
             }
           },
@@ -804,14 +823,20 @@
                 "title": "Import Tariff",
                 "description": "Do you know what an import tariff is?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Yes", "No"],
+                "correct" : "A tariff on goods coming into a country from abroad, often used by governments as a way of reducing imports and protecting local industries.",
+                "source" : "Lexicon",
+                "source_url" : "http://lexicon.ft.com/Term?term=import-tariff"
               },
               "Q04004_en": {
                 "id": "Q04004_en",
                 "title": "Import Quota",
                 "description": "Do you know what an import quota is?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Yes", "No"],
+                "correct" : "The import quota means physical limitation of the quantities of different products to be imported from foreign countries within a specified period of time, usually one year. The import quota may be fixed either in terms of quantity or the value of the product.",
+                "source" : "Economics Discussion",
+                "source_url" : "http://www.economicsdiscussion.net/import-quotas/import-quotas-meaning-objectives-and-types-international-economics/30454"
               },
               "Q04006_en": {
                 "id": "Q04006_en",
@@ -819,7 +844,8 @@
                 "description": "What share of the goods that the U.S. imports are agricultural goods?",
                 "type" : "NUMERIC",
                 "correct" : "4.1",
-                "source" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/"
+                "source" : "Statista",
+                "source_url" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/"
               },
               "Q04007_en": {
                 "id": "Q04007_en",
@@ -827,7 +853,8 @@
                 "description": "Of all the goods that the U.S. imports, what share is subject to a tariff or import duty?",
                 "type" : "NUMERIC",
                 "correct" : "Approximately one half",
-                "source" : "Office of the US Trade Representative"
+                "source" : "Tax Foundation",
+                "source_url" : "https://taxfoundation.org"
               },
               "Q04009_en": {
                 "id": "Q04009_en",
@@ -835,7 +862,9 @@
                 "description": "To which country does the U.S. export the most, in terms of the net dollar value?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Brazil", "Canada", "China", "France", "Germany", "India", "Ireland", "Italy", "Japan", "Mexico", "Netherlands", "South Korea", "Switzerland", "Taiwan", "United Kingdom"],
-                "correct" : "Canada"
+                "correct" : "Canada",
+                "source" : "Census Trade Statistics",
+                "source_url" : "https://www.census.gov/foreign-trade/statistics/highlights/toppartners.html"
               },
               "Q04010_en": {
                 "id": "Q04010_en",
@@ -843,14 +872,19 @@
                 "description": "From which country does the U.S. import the most, in terms of the net dollar value",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Brazil", "Canada", "China", "France", "Germany", "India", "Ireland", "Italy", "Japan", "Mexico", "Netherlands", "South Korea", "Switzerland", "Taiwan", "United Kingdom"],
-                "correct" : "China"
+                "correct" : "China",
+                "source" : "Census Trade Statistics",
+                "source_url" : "https://www.census.gov/foreign-trade/statistics/highlights/toppartners.html"
               },
               "Q04011_en": {
                 "id": "Q04011_en",
                 "title": "Trade Evolution Over Time",
                 "description": "Over time, how has the level of trade between the U.S. and other countries changed?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["It has decreased", "It has stayed more or less the same", "It has increased"]
+                "sorter" : ["It has decreased", "It has stayed more or less the same", "It has increased"],
+                "correct" : "It has increased",
+                "source" : "Tax Foundation",
+                "source_url" : "https://taxfoundation.org/impact-trade-tariffs-united-states/"
               }
             }
           },
@@ -1351,30 +1385,39 @@
                 "description": "Is every individual's estate taxed",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"],
-                "correct" : "Yes",
-                "source" : "https://www.irs.gov/businesses/small-businesses-self-employed/whats-new-estate-and-gift-tax"
+                "correct" : "No, it is levied only on the portion of an estate’s value that exceeds a specified exemption level",
+                "source" : "IRS",
+                "source_url" : "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
               },
               "Q04008_en": {
                 "id": "Q04008_en",
                 "title": "Small Businesses",
-                "description": "Do you think small business or small farm owners are subject to the federal estate tax?",
+                "description": "Do you think many small business or small farm owners are subject to the federal estate tax?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Almost all are subject to the estate tax; Many are subject to the estate tax", "Few are subject to the estate tax", "Almost none are subject to the estate tax"],
-                "correct" : "Few"
+                "correct" : "Few, only roughly 80 small bussiness and small farm estates nationwidel will face any estate tax in 2017",
+                "source" : "Center on Budget and Policy Priorities",
+                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04009_en": {
                 "id": "Q04009_en",
                 "title": "Double Taxation",
                 "description": "Does federal estate tax policy mostly tax assets that have already been taxed, thus leading to ”double taxation”?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["It’s mostly double taxation", "It mostly taxes assets that have not been taxed before"]
+                "sorter" : ["It’s mostly double taxation", "It mostly taxes assets that have not been taxed before"],
+                "correct" : "It is mostly taxing assets that have not been taxed before during the life of the owner. Under the current tax system, capital gains tax is due on the appreciation of assets, such as real estate, stock, or an art collection, only when the owner “realizes” the gain (usually by selling the asset). Therefore, the increase in the value of an asset is never subject to income tax if the owner holds on to the asset until death.",
+                "source" : "Center on Budget and Policy Priorities",
+                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04012_en": {
                 "id": "Q04012_en",
                 "title": "Cost Basis at Death",
                 "description": "Do you know what the stepped-up cost basis at death is?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Yes", "No"],
+                "correct" : "It is the asset's (receive from the benefactor) market value at the time the benefactor dies",
+                "source" : "Internal Revnue Code § 1014(a)",
+                "source_url" : "https://www.law.cornell.edu/uscode/text/26/1014"
               },
               "Q04014_en": {
                 "id": "Q04014_en",
@@ -1387,14 +1430,22 @@
                       "title": "Jack's Capital Gains",
                       "description": "What amount will the IRS consider as capital gains that Jack made and that will be taxed at the capital gains tax rate?",
                       "type" : "CATEGORICAL",
-                      "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"]
+                      "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"],
+                      "correct" : 50000,
+                      "format" : "dollar",
+                      "source" : "IRS",
+                      "source_url" : "https://www.irs.gov/faqs/interest-dividends-other-types-of-income/gifts-inheritances"
                     },
                     {
                       "id": "Q04015_en",
                       "title": "Jack's Father's Capital Gains",
                       "description": "What amount will the IRS consider as capital gains that Jack's father made and that will be taxed at the capital gains tax rate?",
                       "type" : "CATEGORICAL",
-                      "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"]
+                      "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"],
+                      "correct" : 300000,
+                      "format" : "dollar",
+                      "source" : "IRS",
+                      "source_url" : "https://www.irs.gov/faqs/interest-dividends-other-types-of-income/gifts-inheritances"
                     }
                 ]
               },
@@ -1403,7 +1454,10 @@
                 "title": "Top 0.1% Wealth Share",
                 "description": "How has the share of wealth held by the top 0.1% evolved over the past 30 years in the U.S.?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"]
+                "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"],
+                "correct" : "It has increased a lot",
+                "source" : "Stanford",
+                "source_url" : "https://inequality.stanford.edu/sites/default/files/Pathways-SOTU-2016-Wealth-Inequality-3.pdf"
               },
               "Q04019_en": {
                 "id": "Q04019_en",
@@ -1417,46 +1471,59 @@
                 "title": "Share of Estates that are Unrealized Capital Gains",
                 "description": "What share of estates subject to the federal estate tax is made up of unrealized capital gains that have never been taxed before?",
                 "type" : "NUMERIC",
-                "correct" : "55%",
-                "source" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
+                "correct" : 55,
+                "format" : "percent",
+                "source" : "Center on Budget and Policy Priorities",
+                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04011_en": {
                 "id": "Q04011_en",
                 "title": "Average Rate on Taxed Estates",
                 "description": "What fraction of the total value of estates subject to the federal estate tax is paid in taxes?",
                 "type" : "NUMERIC",
-                "correct" : "16.8%",
-                "source" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
+                "correct" : 16.5,
+                "format" : "percent",
+                "source" : "Center on Budget and Policy Priorities",
+                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04006_en": {
                 "id": "Q04006_en",
                 "title": "Estate Tax Rate Above Threshold",
                 "description": "At what rate is each dollar of estate that is passed on and falls above the exemption threshold taxed?",
                 "type" : "NUMERIC",
-                "correct" : "40%",
-                "source" : "https://www.cbpp.org/research/federal-tax/policy-basics-the-federal-estate-tax"
+                "correct" : 40,
+                "format" : "percent",
+                "source" : "Wikipedia",
+                "source_url" : "https://en.wikipedia.org/wiki/Estate_tax_in_the_United_States"
               },
               "Q04007_en": {
                 "id": "Q04007_en",
                 "title": "Estate Tax Rate in 1950s",
                 "description": "At what rate was each dollar of estate that is passed on and falls above the threshold taxed in the 1950s?",
                 "type" : "NUMERIC",
-                "correct" : "77%",
-                "source" : "https://www.irs.gov/pub/irs-soi/ninetyestate.pdf"
+                "correct" : 77,
+                "format" : "percent",
+                "source" : "IRS",
+                "source_url" : "https://www.irs.gov/pub/irs-soi/ninetyestate.pdf"
               },
               "Q04003_en": {
                 "id": "Q04003_en",
                 "title": "Number of Estates Subject to Tax at Death",
                 "description": "Number of estates subject to tax at death",
-                "type" : "NUMERIC"
+                "type" : "NUMERIC",
+                "correct" : "2 (in 2017); 1 (in 2018)",
+                "source" : "Center on Budget and Policy Priorities",
+                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04005_en": {
                 "id": "Q04005_en",
                 "title": "Estate Tax Exemption Threshold",
                 "description": "Please specify the exact estate tax exemption threshold.",
                 "type" : "NUMERIC",
-                "correct" : "$11.4 million",
-                "source" : "https://www.irs.gov/businesses/small-businesses-self-employed/whats-new-estate-and-gift-tax"
+                "correct" : 11400000,
+                "format" : "dollar",
+                "source" : "IRS",
+                "source_url" : "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
               },
               "Q04016_top1": {
                 "id": "Q04016_top1",
@@ -1469,16 +1536,20 @@
                       "title": "Share of wealth owned by top 1%",
                       "description": "What share of all of the wealth in the U.S. do you think is currently owned by the top 1%?",
                       "type" : "NUMERIC",
-                      "correct" : "20.4%",
-                      "source" : "World Inequlity Database"
+                      "correct" : 22.0,
+                      "format" : "percent",
+                      "source" : "Stanford",
+                      "source_url" : "https://inequality.stanford.edu/sites/default/files/Pathways-SOTU-2016-Wealth-Inequality-3.pdf"
                     },
                     {
                       "id": "Q04016_050_en",
                       "title": "Share of wealth owned by bottom 50%",
                       "description": "What share of all of the wealth in the U.S. do you think is currently owned by the bottom 50%",
                       "type" : "NUMERIC",
-                      "correct" : "0%",
-                      "source" : "World Inequlity Database"
+                      "correct" : 2.50,
+                      "format" : "percent",
+                      "source" : "Stanford",
+                      "source_url" : "https://inequality.stanford.edu/sites/default/files/Pathways-SOTU-2016-Wealth-Inequality-3.pdf"
                     }
                 ]
               },
@@ -1487,8 +1558,9 @@
                 "title": "Share of Wealth Inherited",
                 "description": "What share of total wealth owned by households in the U.S. today is inherited from their parents?",
                 "type" : "NUMERIC",
-                "correct" : "Between 56 and 64%",
-                "source" : "Alvaredo et al (2017)"
+                "correct" : "Approximately 35 to 45 percent",
+                "source" : "Kopczuk, Brookings.edu",
+                "source_url" : "https://www.brookings.edu/blog/social-mobility-memos/2015/01/30/wealth-inheritance-and-social-mobility/"
               },
               "Q04021_1_en": {
                 "id": "Q04021_1_en",
@@ -1501,35 +1573,40 @@
                       "title": "Probability to get from bottom to top quintile",
                       "description": "What is the probability of getting from bottom to top quintile?",
                       "type" : "NUMERIC",
-                      "correct" : "7.5%"
+                      "correct" : 7.5,
+                      "format" : "percent"
                     },
                     {
                       "id": "Q04021_2_en",
                       "title": "Probability to get from bottom to second quintile",
                       "description": "What is the probability of getting from bottom to second quintile?",
                       "type" : "NUMERIC",
-                      "correct" : "12.3%"
+                      "correct" : 12.3,
+                      "format" : "percent"
                     },
                     {
                       "id": "Q04021_3_en",
                       "title": "Probability to get from bottom to third quintile",
                       "description": "What is the probability of getting from bottom to third quintile?",
                       "type" : "NUMERIC",
-                      "correct" : "18.4%"
+                      "correct" : 18.4,
+                      "format" : "percent"
                     },
                     {
                       "id": "Q04021_4_en",
                       "title": "Probability to remain in bottom quintile",
                       "description": "What is the probability of remaining in bottom quintile?",
                       "type" : "NUMERIC",
-                      "correct" : "28.0%"
+                      "correct" : 28.0,
+                      "format" : "percent"
                     },
                     {
                       "id": "Q04021_5_en",
                       "title": "Probability to get from bottom to top quintile",
                       "description": "What is the probability of getting from bottom to top quintile?",
                       "type" : "NUMERIC",
-                      "correct" : "33.7%"
+                      "correct" : 33.7,
+                      "format" : "percent"
                     }
                 ]
               }
@@ -2281,14 +2358,20 @@
                 "title": "Medicaid",
                 "description": "What is Medicaid? Who is eligible for Medicaid?",
                 "type" : "WORDCLOUD",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Yes", "No"],
+                "correct" : "Medicaid provides health coverage to millions of Americans, including eligible low-income adults, children, pregnant women, elderly adults and people with disabilities. Medicaid is administered by states, according to federal requirements. The program is funded jointly by states and the federal government.",
+                "source" : "Medicaid.gov",
+                "source_url" : "https://www.medicaid.gov/medicaid/index.html"
               },
               "dummy_medicare": {
                 "id": "dummy_medicare",
                 "title": "Medicare",
                 "description": "What is Medicare? Who is eligible for Medicare?",
                 "type" : "WORDCLOUD",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Yes", "No"],
+                "correct" : "Medicare is the federal health insurance program for: People who are 65 or older; Certain younger people with disabilities; People with End-Stage Renal Disease (permanent kidney failure requiring dialysis or a transplant, sometimes called ESRD)",
+                "source" : "Medicare.gov",
+                "source_url" : "https://www.medicare.gov/what-medicare-covers/your-medicare-coverage-choices/whats-medicare"
               },
               "Q04020_1_en" : {
                 "id" : "Q04020_1_en",
@@ -2301,39 +2384,42 @@
                     "title": "Share of Americans on Medicaid",
                     "description" : "Medicaid",
                     "type" : "NUMERIC",
-                    "correct" : "15",
-                    "source" : "https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html"
+                    "correct" : 17.6,
+                    "source" : "Medicaid.gov",
+                    "source_url" : "https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html"
                   },
                   {
                     "id": "Q04020_2_en",
                     "title": "Share of Americans on Medicare",
                     "description" : "Medicare",
                     "type" : "NUMERIC",
-                    "correct" : "14",
-                    "source" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
+                    "correct" : 14,
+                    "source" : "Kaiser Family Foundation",
+                    "source_url" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
                   },
                   {
                     "id": "Q04020_3_en",
                     "title": "Share of Americans on Employer-based Insurance",
                     "description" : "Group health insurance through employer",
                     "type" : "NUMERIC",
-                    "correct" : "49",
-                    "source" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
+                    "correct" : 49,
+                    "source" : "Kaiser Family Foundation",
+                    "source_url" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
                   },
                   {
                     "id": "Q04020_4_en",
                     "title": "Share of Americans on Other Insurance",
                     "description" : "Other insurance (policies purchased directly from an insurance company, military, etc.)",
-                    "type" : "NUMERIC",
-                    "correct" : "9.8"
+                    "type" : "NUMERIC"
                   },
                   {
                     "id": "Q04020_5_en",
                     "title": "Share of Americans Uninsured",
                     "description" : "Uninsured",
                     "type" : "NUMERIC",
-                    "correct" : "12.2",
-                    "source" : "https://news.gallup.com/poll/225383/uninsured-rate-steady-fourth-quarter-2017.aspx"
+                    "correct" : 27.4,
+                    "source" : "Kaiser Family Foundation",
+                    "source_url" : "https://www.kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/"
                   }
                 ]
               },
@@ -2342,8 +2428,9 @@
                 "title": "Share of American Children on Medicaid",
                 "description": "Out of 100 American children, aged below 18, how many are enrolled in Medicaid?",
                 "type" : "NUMERIC",
-                "correct" : "37",
-                "source" : "https://www.medicaid.gov/medicaid/benefits/bhs/children-and-youth/index.html"
+                "correct" : 40.2,
+                "source" : "Statista",
+                "source_url" : " https://www.statista.com/topics/1091/medicaid/"
               },
               "Q04010_1_en" : {
                 "id" : "Q04010_1_en",
@@ -2358,7 +2445,8 @@
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
                     "correct" : "No",
-                    "source" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
                   },
                   {
                     "id": "Q04010_2_en",
@@ -2367,7 +2455,8 @@
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
                     "correct" : "Yes",
-                    "source" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
                   },
                   {
                     "id": "Q04010_3_en",
@@ -2376,7 +2465,8 @@
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
                     "correct" : "Yes",
-                    "source" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
                   },
                   {
                     "id": "Q04010_4_en",
@@ -2385,7 +2475,8 @@
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
                     "correct" : "Yes",
-                    "source" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
                   },
                   {
                     "id": "Q04010_5_en",
@@ -2394,7 +2485,8 @@
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
                     "correct" : "No",
-                    "source" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/how-plans-set-your-premiums/"
                   }
                 ]
               },
@@ -2403,63 +2495,88 @@
                 "title": "Individual Mandate in 2018",
                 "description": "In 2018, was there an individual mandate, whereby everyone was obligated to buy health insurance?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Yes", "No"],
+                "correct" : "Yes",
+                "source" : "Healthcare.gov",
+                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
               },
               "Q04012_en": {
                 "id": "Q04012_en",
                 "title": "No Insurance Before 2018",
                 "description": "What happened if you did not have health insurance, until 2018?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["A penalty had to be paid", "You were forced to buy insurance", "You received a warning",  "Nothing happened"]
+                "sorter" : ["A penalty had to be paid", "You were forced to buy insurance", "You received a warning",  "Nothing happened"],
+                "correct" : "A penalty had to be paid",
+                "source" : "Healthcare.gov",
+                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
               },
               "Q04013_en": {
                 "id": "Q04013_en",
                 "title": "Changes to Individual Mandate in 2019",
                 "description": "Were any changes made to the individual mandate in 2019?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Yes", "No"],
+                "correct" : "Yes",
+                "source" : "Healthcare.gov",
+                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
               },
               "Q04014_en": {
                 "id": "Q04014_en",
                 "title": "Legislation Changes to Individual Mandate in 2019",
                 "description": "How did the legislation on the individual mandate change in 2019?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["The penalty was increased", "The penalty was decreased", "The penalty was reduced to zero", "The individual mandate was canceled", "Other"]
+                "sorter" : ["The penalty was increased", "The penalty was decreased", "The penalty was reduced to zero", "The individual mandate was canceled", "Other"],
+                "correct" : "The penalty was reduced to zero",
+                "source" : "Healthcare.gov",
+                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
               },
               "Q04015_en": {
                 "id": "Q04015_en",
                 "title": "Employer Mandate",
                 "description": "Is there currently an employer mandate, whereby employers have to provide healt insurance to their employees?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes, all employers are required to provide health insurance to their employees", "Yes, but small employers are excluded from this requirement", "No, employers are not required to provide health insurance to their employees"]
+                "sorter" : ["Yes, all employers are required to provide health insurance to their employees", "Yes, but small employers are excluded from this requirement", "No, employers are not required to provide health insurance to their employees"],
+                "correct" : "Yes, but small employers are excluded from this requirement",
+                "source" : "Nolo.com",
+                "source_url" : "https://www.nolo.com/legal-encyclopedia/what-employers-healthcare-insurance-requirements-under-obamacare-2015.html"
               },
               "Q04016_c_en": {
                 "id": "Q04016_c_en",
                 "title": "Federal Poverty Level - Medicaid eligibility",
                 "description": "How high is that FPL threshold percentage for a family like yours to be eligible for Medicaid?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Under 50% of the FPL", "Between 50 and 90% of the FPL", "Between 130 and 160% of the FPL", "Between 160 and 200% of the FPL", "Higher than 200 of the FPL"]
+                "sorter" : ["Under 50% of the FPL", "Between 50 and 90% of the FPL", "Between 130 and 160% of the FPL", "Between 160 and 200% of the FPL", "Higher than 200 of the FPL"],
+                "correct" : "Specific to family"
               },
               "Q04017_en": {
                 "id": "Q04017_en",
                 "title": "Impact of ACA on FPL-based Eligibility",
                 "description": "How did the FPL threshold percentage change, if at all, as a result of the Affordable Care Act",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes, it expanded eligibility", "No, it remained the same", "Yes, it reduced eligibility"]
+                "sorter" : ["Yes, it expanded eligibility", "No, it remained the same", "Yes, it reduced eligibility"],
+                "correct" : "Depends on state",
+                "source" : "Kaiser Family Foundation",
+                "source_url" : "https://www.kff.org/health-reform/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
               },
               "Q04018_en": {
                 "id": "Q04018_en",
                 "title": "U.S. Relative Healthcare Spending",
                 "description": "Relative to other rich countries like France, Germany, and the U.K., how much does the U.S. spend on health care as a share of its GDP?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Much more", "More", "About the same", "Less", "Much less"]
+                "sorter" : ["Much more", "More", "About the same", "Less", "Much less"],
+                "correct" : "Much more",
+                "source" : "Commonwealth Fund",
+                "source_url" : "https://www.commonwealthfund.org/publications/issue-briefs/2015/oct/us-health-care-global-perspective"
               },
               "Q04019_en": {
                 "id": "Q04019_en",
                 "title": "U.S. Relative Health Outcomes",
                 "description": "Relative to other rich countries like France, Germany, and the U.K., how good are health outcomes, such as life expectancy or infant mortality, in the U.S.?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Much better", "Better", "About the same", "Worse", "Much worse"]
+                "sorter" : ["Much better", "Better", "About the same", "Worse", "Much worse"],
+                "correct" : "Worse",
+                "source" : "Commonwealth Fund",
+                "source_url" : "https://www.commonwealthfund.org/publications/issue-briefs/2015/oct/us-health-care-global-perspective"
               }
             }
           },
