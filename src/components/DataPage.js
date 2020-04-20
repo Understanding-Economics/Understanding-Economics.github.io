@@ -24,7 +24,8 @@ var dataCache = {
 const noGroupTypes = [
     DataType.KEYNESS,
     DataType.WORDCLOUD,
-    DataType.MULTICHOICE
+    DataType.MULTICHOICE,
+    DataType.FREQUENCY
 ]
 
 

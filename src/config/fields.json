@@ -3096,6 +3096,125 @@
                 "type" : "CATEGORICAL"
               }
             }
+          },
+          "Demographic Groups": {
+            "id" : "Demographic Groups",
+            "title" : "Demographic Groups", 
+            "description" : "The distributions of the demographic groups of respondents",
+            "questions" : {
+              "age3group": {
+                "id": "age3group",
+                "title": "Age Group",
+                "description": "The age group that the respondent belongs to",
+                "type" : "FREQUENCY",
+                "sorter" : ["18-35", "36-50", "51-69"]
+              },
+              "incomegroup": {
+                "id": "incomegroup",
+                "title": "Income Group",
+                "description": "The annual income of the respondent",
+                "type" : "FREQUENCY",
+                "sorter" : [
+                  "$0-$19999", "$20000-$39999", "$40000-$69999", "$70000-$109999", "$110000+"
+                ]
+              },
+              "born_us": {
+                "id": "born_us",
+                "title": "Born in US",
+                "description": "Whether the respondent was born in the United States.",
+                "type" : "FREQUENCY",
+                "sorter" : ["Yes", "No"]
+              },
+              "marital_status": {
+                "id": "marital_status",
+                "title": "Marital Status",
+                "description": "The marital status of the individual",
+                "type" : "FREQUENCY",
+                "sorter" : [
+                  "Single", "Married", "Legally separated or divorced", "Widowed"
+                ]
+              },
+              "gender": {
+                "id": "gender",
+                "title": "Gender",
+                "description": "The gender of the respondent.",
+                "type" : "FREQUENCY"
+              },
+              "children": {
+                "id": "children",
+                "title": "Number of Children",
+                "description": "Number of children the repsondent has.",
+                "type" : "FREQUENCY",
+                "sorter" : ["0", "1", "2", "3+"]
+              },
+              "race": {
+                "id": "race",
+                "title": "Race",
+                "description": "The race of the respondent.",
+                "type" : "FREQUENCY",
+                "sorter" : ["African American", "Asian", "Hispanic", "White non Hispanic", "Other"]
+              },
+              "edugroup": {
+                "id": "edugroup",
+                "title": "Education level",
+                "description": "The highest education level achieved by the repsondent.",
+                "type" : "FREQUENCY",
+                "sorter" : ["Eighth Grade or lower", "Some High School", "High School degree/ GED", "Some College", "2-year College Degree", "4-year College Degree", "Master's Degree", "Professional Degree (JD, MD, MBA)", "Doctoral Degree"]
+              },
+              "employment_agg": {
+                "id": "employment_agg",
+                "title": "Employment Status",
+                "description": "The current employment status of the respondent.",
+                "type" : "FREQUENCY"
+              },
+              "social_class": {
+                "id": "social_class",
+                "title": "Social Class",
+                "description": "The social class that the respondent identifies with.",
+                "type" : "FREQUENCY"
+              },
+              "ideology": {
+                "id": "ideology",
+                "title": "Economic Ideology",
+                "description": "The economic ideology that the respondent self-identifies with.",
+                "type" : "FREQUENCY"
+              },
+              "partygroup": {
+                "id": "partygroup",
+                "title": "Political Party",
+                "description": "The political party that the respondent self-identifies with. ",
+                "type" : "FREQUENCY",
+                "sorter": ["Democrat", "Independent", "Republican", "Other"]
+              },
+              "newsgroup": {
+                "id": "newsgroup",
+                "title": "Source of News",
+                "description": "The medium from which the respondent gets most of their news",
+                "type" : "FREQUENCY",
+                "sorter" : ["Newspaper", "TV, radio", "Internet", "Other", "None"]
+              },
+              "econgroup": {
+                "id": "econgroup",
+                "title": "Knowledge of Economics",
+                "description": "The respondent's self-reported knowedge of economics.",
+                "type" : "FREQUENCY",
+                "sorter" : ["Not highly knowledgeable", "Highly knowledgeable"]
+              },
+              "candidate2016_agg": {
+                "id": "candidate2016_agg",
+                "title": "2016 Presidential Candidate",
+                "description": "The candidate whom the respondent supported in the 2016 presidential election.",
+                "type" : "FREQUENCY",
+                "sorter" : ["Clinton", "Trump", "Other"]
+              }, 
+              "econ" : {
+                "id" : "econ",
+                "title" : "Studied Economics",
+                "description" : "Whether the individual studied economics in college",
+                "type" : "FREQUENCY",
+                "sorter" : ["Yes", "No"]
+              }
+            }
           }
         }
       }

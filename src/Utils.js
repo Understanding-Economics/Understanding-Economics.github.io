@@ -54,6 +54,21 @@ const Utils = {
          return final_result;
 
      },*/
+
+    getCounts : function(data, responseKey) {
+        let responseVals = this.getUniqueDictVals(data, responseKey, undefined);
+        let filteredData = data.filter(x => x[responseKey] != undefined);
+        let countsDict = {}
+        for(let val of responseVals) {
+            countsDict[val] = 0;
+        }
+        filteredData.forEach(x => countsDict[x[responseKey]]++);
+        let propsDict = {};
+        for(let val of responseVals){ 
+            propsDict[val] = countsDict[val]; 
+        }
+        return propsDict;
+    }, 
     getProportions : function(data, groupKey, groupVal, responseKey) {
          let responseVals = this.getUniqueDictVals(data, responseKey, undefined);
          let filteredData = data.filter(x => (x[groupKey] == groupVal || groupVal == "All") && x[responseKey] != undefined);

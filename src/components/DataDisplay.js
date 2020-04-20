@@ -7,6 +7,7 @@ import TreatmentDisplay from './TreatmentDisplay'
 import KeynessDisplay from './KeynessDisplay'
 import WordcloudDisplay from './WordcloudDisplay'
 import UmbrellaDisplay from './UmbrellaDisplay'
+import FrequencyDisplay from './FrequencyDisplay'
 
 export default class DataDisplay extends React.Component {
     render() {
@@ -27,6 +28,12 @@ export default class DataDisplay extends React.Component {
                 specificDisplay = <NumericDisplay
                     data = { this.props.data }
                     group = { this.props.selectedGroup }
+                    question = { this.props.selectedQuestion }
+                />
+                break;
+            case DataType.FREQUENCY:
+                specificDisplay = <FrequencyDisplay 
+                    data = { this.props.data }
                     question = { this.props.selectedQuestion }
                 />
                 break;
