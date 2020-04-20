@@ -1389,6 +1389,45 @@
                 "source" : "IRS",
                 "source_url" : "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
               },
+              "Q04003_en": {
+                "id": "Q04003_en",
+                "title": "Number of Estates Subject to Tax at Death",
+                "description": "Number of estates subject to tax at death",
+                "type" : "NUMERIC",
+                "correct" : "2 (in 2017); 1 (in 2018)",
+                "source" : "Center on Budget and Policy Priorities",
+                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
+              },
+              "Q04005_en": {
+                "id": "Q04005_en",
+                "title": "Estate Tax Exemption Threshold",
+                "description": "Please specify the exact estate tax exemption threshold.",
+                "type" : "NUMERIC",
+                "correct" : 11400000,
+                "format" : "dollar",
+                "source" : "IRS",
+                "source_url" : "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+              },
+              "Q04006_en": {
+                "id": "Q04006_en",
+                "title": "Estate Tax Rate Above Threshold",
+                "description": "At what rate is each dollar of estate that is passed on and falls above the exemption threshold taxed?",
+                "type" : "NUMERIC",
+                "correct" : 40,
+                "format" : "percent",
+                "source" : "Wikipedia",
+                "source_url" : "https://en.wikipedia.org/wiki/Estate_tax_in_the_United_States"
+              },
+              "Q04007_en": {
+                "id": "Q04007_en",
+                "title": "Estate Tax Rate in 1950s",
+                "description": "At what rate was each dollar of estate that is passed on and falls above the threshold taxed in the 1950s?",
+                "type" : "NUMERIC",
+                "correct" : 77,
+                "format" : "percent",
+                "source" : "IRS",
+                "source_url" : "https://www.irs.gov/pub/irs-soi/ninetyestate.pdf"
+              },
               "Q04008_en": {
                 "id": "Q04008_en",
                 "title": "Small Businesses",
@@ -1406,6 +1445,26 @@
                 "type" : "CATEGORICAL",
                 "sorter" : ["It’s mostly double taxation", "It mostly taxes assets that have not been taxed before"],
                 "correct" : "It is mostly taxing assets that have not been taxed before during the life of the owner. Under the current tax system, capital gains tax is due on the appreciation of assets, such as real estate, stock, or an art collection, only when the owner “realizes” the gain (usually by selling the asset). Therefore, the increase in the value of an asset is never subject to income tax if the owner holds on to the asset until death.",
+                "source" : "Center on Budget and Policy Priorities",
+                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
+              },
+              "Q04010_en": {
+                "id": "Q04010_en",
+                "title": "Share of Estates that are Unrealized Capital Gains",
+                "description": "What share of estates subject to the federal estate tax is made up of unrealized capital gains that have never been taxed before?",
+                "type" : "NUMERIC",
+                "correct" : 55,
+                "format" : "percent",
+                "source" : "Center on Budget and Policy Priorities",
+                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
+              },
+              "Q04011_en": {
+                "id": "Q04011_en",
+                "title": "Average Rate on Taxed Estates",
+                "description": "What fraction of the total value of estates subject to the federal estate tax is paid in taxes?",
+                "type" : "NUMERIC",
+                "correct" : 16.5,
+                "format" : "percent",
                 "source" : "Center on Budget and Policy Priorities",
                 "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
@@ -1449,82 +1508,6 @@
                     }
                 ]
               },
-              "Q04017_en": {
-                "id": "Q04017_en",
-                "title": "Top 0.1% Wealth Share",
-                "description": "How has the share of wealth held by the top 0.1% evolved over the past 30 years in the U.S.?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"],
-                "correct" : "It has increased a lot",
-                "source" : "Stanford",
-                "source_url" : "https://inequality.stanford.edu/sites/default/files/Pathways-SOTU-2016-Wealth-Inequality-3.pdf"
-              },
-              "Q04019_en": {
-                "id": "Q04019_en",
-                "title": "Reasons for Wealth",
-                "description": "Which has more to do with why a person is wealthy?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Because she or he worked harder than others", "Because she or he had more advantages than others"]
-              },
-              "Q04010_en": {
-                "id": "Q04010_en",
-                "title": "Share of Estates that are Unrealized Capital Gains",
-                "description": "What share of estates subject to the federal estate tax is made up of unrealized capital gains that have never been taxed before?",
-                "type" : "NUMERIC",
-                "correct" : 55,
-                "format" : "percent",
-                "source" : "Center on Budget and Policy Priorities",
-                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
-              },
-              "Q04011_en": {
-                "id": "Q04011_en",
-                "title": "Average Rate on Taxed Estates",
-                "description": "What fraction of the total value of estates subject to the federal estate tax is paid in taxes?",
-                "type" : "NUMERIC",
-                "correct" : 16.5,
-                "format" : "percent",
-                "source" : "Center on Budget and Policy Priorities",
-                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
-              },
-              "Q04006_en": {
-                "id": "Q04006_en",
-                "title": "Estate Tax Rate Above Threshold",
-                "description": "At what rate is each dollar of estate that is passed on and falls above the exemption threshold taxed?",
-                "type" : "NUMERIC",
-                "correct" : 40,
-                "format" : "percent",
-                "source" : "Wikipedia",
-                "source_url" : "https://en.wikipedia.org/wiki/Estate_tax_in_the_United_States"
-              },
-              "Q04007_en": {
-                "id": "Q04007_en",
-                "title": "Estate Tax Rate in 1950s",
-                "description": "At what rate was each dollar of estate that is passed on and falls above the threshold taxed in the 1950s?",
-                "type" : "NUMERIC",
-                "correct" : 77,
-                "format" : "percent",
-                "source" : "IRS",
-                "source_url" : "https://www.irs.gov/pub/irs-soi/ninetyestate.pdf"
-              },
-              "Q04003_en": {
-                "id": "Q04003_en",
-                "title": "Number of Estates Subject to Tax at Death",
-                "description": "Number of estates subject to tax at death",
-                "type" : "NUMERIC",
-                "correct" : "2 (in 2017); 1 (in 2018)",
-                "source" : "Center on Budget and Policy Priorities",
-                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
-              },
-              "Q04005_en": {
-                "id": "Q04005_en",
-                "title": "Estate Tax Exemption Threshold",
-                "description": "Please specify the exact estate tax exemption threshold.",
-                "type" : "NUMERIC",
-                "correct" : 11400000,
-                "format" : "dollar",
-                "source" : "IRS",
-                "source_url" : "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
-              },
               "Q04016_top1": {
                 "id": "Q04016_top1",
                 "title": "Share of Wealth Owned by Following Groups",
@@ -1553,6 +1536,16 @@
                     }
                 ]
               },
+              "Q04017_en": {
+                "id": "Q04017_en",
+                "title": "Top 0.1% Wealth Share",
+                "description": "How has the share of wealth held by the top 0.1% evolved over the past 30 years in the U.S.?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"],
+                "correct" : "It has increased a lot",
+                "source" : "Stanford",
+                "source_url" : "https://inequality.stanford.edu/sites/default/files/Pathways-SOTU-2016-Wealth-Inequality-3.pdf"
+              },
               "Q04018_en": {
                 "id": "Q04018_en",
                 "title": "Share of Wealth Inherited",
@@ -1561,6 +1554,13 @@
                 "correct" : "Approximately 35 to 45 percent",
                 "source" : "Kopczuk, Brookings.edu",
                 "source_url" : "https://www.brookings.edu/blog/social-mobility-memos/2015/01/30/wealth-inheritance-and-social-mobility/"
+              },
+              "Q04019_en": {
+                "id": "Q04019_en",
+                "title": "Reasons for Wealth",
+                "description": "Which has more to do with why a person is wealthy?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Because she or he worked harder than others", "Because she or he had more advantages than others"]
               },
               "Q04021_1_en": {
                 "id": "Q04021_1_en",
