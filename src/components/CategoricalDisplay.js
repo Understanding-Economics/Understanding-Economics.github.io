@@ -1,6 +1,6 @@
 import React from 'react'
 import CrossTabView from './CrossTabView'
-import ChartView from './ChartView'
+import StackedChartView from './StackedChartView'
 import ChartLegend from './ChartLegend'
 import CorrectDisplay from './CorrectDisplay'
 import '../css/CategoricalDisplay.css'
@@ -34,7 +34,7 @@ export default class CategoricalDisplay extends React.Component {
                     />
                 </div>
                 <div className = "row">
-                    <ChartView
+                    <StackedChartView
                         survey = { this.props.survey } 
                         data = { this.props.data }
                         selectedGroup = { this.props.group }

@@ -6,7 +6,7 @@ import '../css/ChartView.css'
 import Utils from '../Utils'
 import merge from 'deepmerge'
 
-export default class ChartView extends React.PureComponent { 
+export default class StackedChartView extends React.PureComponent { 
     render() {
         return <DataView
                     elementId = {this.props.elementId || "chart"}

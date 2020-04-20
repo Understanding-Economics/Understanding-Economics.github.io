@@ -1,5 +1,5 @@
 import React from 'react'
-import ChartView from './ChartView'
+import StackedChartView from './StackedChartView'
 
 export default class TreatmentChartView extends React.PureComponent {
     render() { 
@@ -18,7 +18,7 @@ export default class TreatmentChartView extends React.PureComponent {
             }
         }
 
-        return <ChartView 
+        return <StackedChartView 
             survey = { this.props.survey } 
             data = { this.props.data }
             selectedGroup = { this.props.selectedGroup }
