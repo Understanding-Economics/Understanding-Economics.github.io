@@ -1302,6 +1302,27 @@
                 "description": "If the U.S. imposes tariffs on many imports, how likely or unlikely is it that other countries follow suit and also impose tariffs?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very likely, likely", "Unlikely", "Very unlikely"]
+              },
+              "Q07009_en": {
+                "id": "Q07009_en",
+                "title": "Protect New Industries",
+                "description": "Let us consider a given relatively new industry in which other countries are currently able to produce goods for cheaper than American firms. Do you think it makes sense to protect American firms in this industry by using tariffs or import restrictions (even if this means higher prices for consumers) or is it better to let the American firms immediately face foreign competition, forcing them to become more competitive?",
+                "type" : "TREATMENT",
+                "sorter" : ["It makes sense to protect for a while", "It makes sense to let these firms face foreign competition to become more competitive"],
+                "questions" : [
+                  {
+                      "id" : "Q07009_en",
+                      "title" : "CONTROL",
+                      "description" : "Let us consider a given relatively new industry in which other countries are currently able to produce goods for cheaper than American firms. In your opinion, does it make sense to protect the American firms in this industry by using tariffs or import restrictions (even if this means higher prices for consumers) or is it better to let the American firms immediately face foreign competition, forcing them to become more competitive?",
+                      "treatments" : ["Neutral"]
+                  },
+                  {
+                      "id" : "Q07009_en",
+                      "title" : "YOU",
+                      "description" : "Imagine that the goods or services currently produced in your sector or industry can actually be produced in a cheaper way in another country. In your opinion, would it make sense to protect the American firms in your sector or industry by using tariffs or import restrictions (even If this means higher prices for consumers) or would it be better to let the American firms in your sector or industry immediately face foreign competition, forcing them to become more competitive?",
+                      "treatments" : ["You"]
+                  }
+                ]
               }
             }
           },
