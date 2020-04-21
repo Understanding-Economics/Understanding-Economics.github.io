@@ -3040,6 +3040,13 @@
                 "description": "Do you support an individual mandate whereby every individual is obliged to buy health insurance?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+              },
+              "Q07009_en": {
+                "id": "Q07009_en",
+                "title": "Support for Employer Mandate",
+                "description": "Do you support or oppose having an employer mandate whereby every large employer, with more than 50 employees, is obliged to offer health insurance plans for their employees?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
               }
             }
           },
@@ -3112,8 +3119,8 @@
             "title": "Government questions (specific)",
             "description": "Questions to examine government intervention regarding health policy",
             "questions": {
-              "dummy_Q09001": {
-                "id": "dummy_Q09001",
+              "Q09001_en": {
+                "id": "Q09001_en",
                 "title": "Improve Healthcare",
                 "description": "To improve access to health care for all Americans, rich or poor, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
