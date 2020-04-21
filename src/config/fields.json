@@ -2904,32 +2904,30 @@
                   }
                 ]
               },
-              "Q06111_en": {
-                "id": "Q06111_en",
+              "Q06011_en": {
+                "id": "Q06011_en",
                 "title": "Responsibility for Health Issues",
                 "description": "What is more responsible for the health issues across the U.S. today?",
-                "type" : "UMBRELLA",
+                "type" : "TREATMENT",
+                "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"],
                 "questions" : [
                   {
-                    "id" : "Q06111_en",
-                    "title" : "Main responsibility in health issues (general)",
+                    "id" : "Q06011_en",
+                    "title" : "CONTROL",
                     "description" : "Would you say that health issues and medical conditions are mostly the result of circumstances outside of one's control or mostly the result of one's own actions?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"]
+                    "treatments" : ["Neutral"]
                   },
                   {
-                    "id" : "Q06211_en",
-                    "title" : "Main responsibility in health issues (specific to you)",
+                    "id" : "Q06011_en",
+                    "title" : "YOU",
                     "description" : "Would you say that your own health issues and your own medical conditions are mostly the result of circumstances outside of your control or mostly the result of your own actions?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"]
+                    "treatments" : ["You"]
                   },
                   {
-                    "id" : "Q06311_en",
-                    "title" : "Main responsibility in health issues (specific to women)",
+                    "id" : "Q06011_en",
+                    "title" : "GENDER",
                     "description" : "Would you say that health issues and medical conditions that arise for women are mostly the result of circumstances outside of their control or mostly the result of these women's own actions?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"]
+                    "treatments" : ["Gender"]
                   }
                 ]
               },
