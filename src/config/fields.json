@@ -1021,7 +1021,7 @@
               "Q06007_1_en": {
                 "id": "Q06007_1_en",
                 "title": "Unemployment and Inequality",
-                "description": "How much you think trade with other countries has affected unemployment and inequality",
+                "description": "To what extent do you think that trade with other countries is a major reason for unemployment and a rise in inequality in the U.S.?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
