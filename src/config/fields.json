@@ -3081,12 +3081,12 @@
           "Desired design of health insurance" : {
             "id": "Q07010_1_en",
             "title": "Desired Design of Health Insurance",
-            "description": "Desired design of health insurance",
+            "description": "",
             "questions": {
               "Q07010_1_en" : {
                 "id" : "Q07010_1_en",
                 "title" : "Desired Design of Health Insurance",
-                "description" : "Imagine it were up to you to design Americans' health insurance plans such that they are most cost-effective and that patients get the best care while having to pay the lowest insurance premiums. For the following types of medical care, please say which ones should receive: full coverage (the patient pays no costs out of pocket), generous coverage (the patient has only minimal copay or deductibles), low coverage (costs are shared and the patient bears a significant share of total costs), no coverage (meaning the patient has to pay the full costs out of pocket). Bear in mind that the more generous coverage is, the higher health insurance premiums can be expected to be.",
+                "description" : "Desired Design of Health Insurance for the following types of of medical care: Preventive care, Primary care visits, Maternity and newborn care, Specialist visits for non-essential care, Medical care for catastrophic situations, Emergency room care, Pediatric care",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
