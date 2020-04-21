@@ -997,26 +997,34 @@
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
-              "Q06105": {
-                "id": "Q06105",
-                "title": "Ability to find new job - Low-skilled workers",
-                "description": "Whether it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
-              },
-              "Q06106": {
-                "id": "Q06106",
-                "title": "Ability to find new job - High-skilled workers",
-                "description": "Whether it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
-              },
-              "Q06205": {
-                "id": "Q06205",
-                "title": "Ability to find new job - Specific",
-                "description": "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
-                "type" : "CAGTEGORICAL",
-                "sorter" : ["Yes", "No"]
+              "Q06105" : {
+                "id" : "Q06005_1_en",
+                "title" : "Ability to find a new job",
+                "description" : "Do you think it is easy for the following types of workers to find jobs in a different sectors from the ones they are currently working in?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q06105",
+                    "title": "Low-skilled workers",
+                    "description": "Whether it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id": "Q06106",
+                    "title": "High-skilled workers",
+                    "description": "Whether it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id": "Q06205",
+                    "title": "Specific (you)",
+                    "description": "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
+                    "type" : "CAGTEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  }
+                ]
               },
               "Q06007_1_en": {
                 "id": "Q06007_1_en",
