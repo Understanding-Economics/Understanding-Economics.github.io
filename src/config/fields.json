@@ -3269,15 +3269,15 @@
               }
             }
           },
-          "Example" : {
-            "id": "Example",
-            "title": "Example",
-            "description": "The U.S. is a large net exporter of laptops (meaning that it sells more laptops abroad than it purchases from abroad and that U.S. laptops are a large share of all laptops sold in the world), and a large net importer of cars (meaning that it purchases more cars from abroad than it sells abroad and that cars purchased by customers in the U.S. are a large share of worldwide car purchases). The laptop sector employs many high-skilled, college-educated workers. The car sector em- ploys many low-skilled workers. Cars are produced for cheaper abroad, while laptops are produced for cheaper in the U.S.",
+          "Case Study" : {
+            "id": "Case Study",
+            "title": "Case Study",
+            "description": "",
             "questions": {
               "Q06015_en": {
                 "id": "Q06015_en",
-                "title": "Long example",
-                "description": "Imagine now that the U.S. starts importing even more cars and producing less cars domestically.",
+                "title": "Case Study",
+                "description": "Let us now consider the following simplified example of what happens economically when there is more trade in some goods. Take for instance the car industry and the laptop industry. (...) Imagine now that the U.S. starts importing even more cars and producing less cars domestically. What will happen to:",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
