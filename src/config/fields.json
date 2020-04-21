@@ -1202,21 +1202,21 @@
             "questions": {
               "Q07001_en": {
                 "id": "Q07001_en",
-                "title": "",
+                "title": "Support for less trade barriers",
                 "description": "Do you agree or disagree with the following statement: 'Increasing trade with other countries and reducing barriers to trade is something the U.S. should aim for.'",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"]
               },
               "Q07002_en": {
                 "id": "Q07002_en",
-                "title": "",
+                "title": "Fairness current trade policy",
                 "description": "Fairness of the current U.S. trade policy?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
               },
               "Q07003_en": {
                 "id": "Q07003_en",
-                "title": "",
+                "title": "Satisfaction with current trade policy",
                 "description": "Satisfaction with the current U.S. trade policy?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
