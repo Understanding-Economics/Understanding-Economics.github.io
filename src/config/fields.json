@@ -125,21 +125,21 @@
               "Q02002": {
                 "id": "Q02002",
                 "title": "Main considerations",
-                "description": "Main considerations",
+                "description": "When you think about federal personal income taxation and whether the U.S. should have higher or lower federal personal income taxes, what are the main considerations that come to your mind?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02002_income.png"
               },
               "Q02003": {
                 "id": "Q02003",
                 "title": "Goals",
-                "description": "Goals",
+                "description": "What would be a “good” federal tax system in your view? What would be the goal of a good tax system?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02003_income.png"
               },
               "Q02004": {
                 "id": "Q02004",
                 "title": "Shortcomings",
-                "description": "Shortcomings",
+                "description": "What do you think are the issues with or shortcomings of the U.S. federal income tax system?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02004_income.png"
               }
@@ -807,21 +807,21 @@
               "Q02002": {
                 "id": "Q02002",
                 "title": "Main considerations",
-                "description": "Main considerations",
+                "description": "When you think about the federal estate tax and whether the U.S. should have a higher or a lower federal estate tax, what are the main considerations that come to your mind?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02002_estate.png"
               },
               "Q02003": {
                 "id": "Q02003",
                 "title": "Goals",
-                "description": "Goals",
+                "description": "n your view, what would be a “good” federal estate tax that you would be satisfied with? What would be the goal of a good estate tax system?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02003_estate.png"
               },
               "Q02004": {
                 "id": "Q02004",
                 "title": "Shortcomings",
-                "description": "Shortcomings",
+                "description": "What do you think are the shortcomings of the U.S. federal estate tax?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02004_estate.png"
               }
@@ -1746,21 +1746,21 @@
               "Q02002": {
                 "id": "Q02002",
                 "title": "Main considerations",
-                "description": "Main considerations",
+                "description": "When you think about health insurance and whether the U.S. should have universal health insurance for all, what are the main considerations — in favor or against it — that come to you mind?",
                 "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02002_health.png"
+                "img_url" : "Question_Q02003_health.png"
               },
               "Q02003": {
                 "id": "Q02003",
                 "title": "Goals",
-                "description": "Goals",
+                "description": "What would be a “good” health insurance system in your view? What would be the goal of a good health insurance system?",
                 "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02003_health.png"
+                "img_url" : "Question_Q02002_health.png"
               },
               "Q02004": {
                 "id": "Q02004",
                 "title": "Shortcomings",
-                "description": "Shortcomings",
+                "description": "What do you personally see as the biggest problem with health insurance in the United States today?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02004_health.png"
               }
@@ -2587,21 +2587,21 @@
               "Q02002": {
                 "id": "Q02002",
                 "title": "Main considerations",
-                "description": "Main considerations",
+                "description": "When you think about trade policy and whether the U.S. should put some restrictions on trade with other countries such as tariffs, what are the main considerations that come to your mind?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02002_trade.png"
               },
               "Q02003": {
                 "id": "Q02003",
                 "title": "Goals",
-                "description": "Goals",
+                "description": "What would be a ”good” trade policy in your view? What would be the goal of a good trade policy?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02003_trade.png"
               },
               "Q02004": {
                 "id": "Q02004",
                 "title": "Shortcomings",
-                "description": "Shortcomings",
+                "description": "What do you think are the issues with or shortcomings of the current U.S. trade policy?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02004_trade.png"
               }
