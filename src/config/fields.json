@@ -117,6 +117,34 @@
       "income_survey": {
         "title": "Income Tax",
         "topics": {
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding income policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "Main considerations",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_income.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "Goals",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_income.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "Shortcomings",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_income.png"
+              }
+            }
+          },
           "Personal Exposure": {
             "id": "Personal Exposure",
             "title": "Personal Exposure",
@@ -368,34 +396,6 @@
                 "description": "Support for increasing the top income tax rate if the additional revenue raised supports investment",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"]
-              }
-            }
-          },
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
-            "description": "Questions to examine textual analysis regarding income policy",
-            "questions": {
-              "Q02002": {
-                "id": "Q02002",
-                "title": "Main considerations",
-                "description": "Main considerations",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02002_income.png"
-              },
-              "Q02003": {
-                "id": "Q02003",
-                "title": "Goals",
-                "description": "Goals",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02003_income.png"
-              },
-              "Q02004": {
-                "id": "Q02004",
-                "title": "Shortcomings",
-                "description": "Shortcomings",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02004_income.png"
               }
             }
           },
@@ -799,6 +799,34 @@
         "title": "Trade Policy",
         "additionalGroups" : {},
         "topics" : {
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding trade policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "Main considerations",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_trade.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "Goals",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_trade.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "Shortcomings",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_trade.png"
+              }
+            }
+          },
           "Personal Exposure" : {
             "id": "Personal Exposure",
             "title": "Personal Exposure",
@@ -1347,34 +1375,6 @@
                 "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
               }
             }
-          },
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
-            "description": "Questions to examine textual analysis regarding trade policy",
-            "questions": {
-              "Q02002": {
-                "id": "Q02002",
-                "title": "Main considerations",
-                "description": "Main considerations",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02002_trade.png"
-              },
-              "Q02003": {
-                "id": "Q02003",
-                "title": "Goals",
-                "description": "Goals",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02003_trade.png"
-              },
-              "Q02004": {
-                "id": "Q02004",
-                "title": "Shortcomings",
-                "description": "Shortcomings",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02004_trade.png"
-              }
-            }
           }
         }
       },
@@ -1382,6 +1382,34 @@
         "title": "Estate Tax",
         "additionalGroups" : {},
         "topics" : {
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding estate tax policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "Main considerations",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_estate.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "Goals",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_estate.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "Shortcomings",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_estate.png"
+              }
+            }
+          },
           "Personal Exposure" : {
             "id": "Personal Exposure",
             "title": "Personal Exposure",
@@ -2286,34 +2314,6 @@
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
             }
-          },
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
-            "description": "Questions to examine textual analysis regarding estate tax policy",
-            "questions": {
-              "Q02002": {
-                "id": "Q02002",
-                "title": "Main considerations",
-                "description": "Main considerations",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02002_estate.png"
-              },
-              "Q02003": {
-                "id": "Q02003",
-                "title": "Goals",
-                "description": "Goals",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02003_estate.png"
-              },
-              "Q02004": {
-                "id": "Q02004",
-                "title": "Shortcomings",
-                "description": "Shortcomings",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02004_estate.png"
-              }
-            }
           }
         }
       },
@@ -2321,6 +2321,34 @@
         "title": "Health Insurance",
         "additionalGroups" : {},
         "topics" : {
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding health policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "Main considerations",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_health.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "Goals",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_health.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "Shortcomings",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_health.png"
+              }
+            }
+          },
           "Personal Exposure" : {
             "id": "Personal Exposure",
             "title": "Personal Exposure",
@@ -3125,34 +3153,6 @@
                 "description": "To improve access to health care for all Americans, rich or poor, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
-              }
-            }
-          },
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
-            "description": "Questions to examine textual analysis regarding health policy",
-            "questions": {
-              "Q02002": {
-                "id": "Q02002",
-                "title": "Main considerations",
-                "description": "Main considerations",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02002_health.png"
-              },
-              "Q02003": {
-                "id": "Q02003",
-                "title": "Goals",
-                "description": "Goals",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02003_health.png"
-              },
-              "Q02004": {
-                "id": "Q02004",
-                "title": "Shortcomings",
-                "description": "Shortcomings",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02004_health.png"
               }
             }
           }
