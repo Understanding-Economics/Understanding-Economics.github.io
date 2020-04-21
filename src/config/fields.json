@@ -2646,13 +2646,15 @@
                 "id": "Q06001",
                 "title": "Reason for Individual Mandate",
                 "description": "In your view, what is the main reason for having an individual mandate?",
-                "type" : "WORDCLOUD"
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q06001_wordcloud.png"
               },
               "Q06002": {
                 "id": "Q06002",
                 "title": "Individual Mandate Evaluation",
                 "description": "Would you say that an individual mandate is beneficial or detrimental?",
-                "type" : "WORDCLOUD"
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q06002_wordcloud.png"
               },
               "Q06003_en": {
                 "id": "Q06003_en",
