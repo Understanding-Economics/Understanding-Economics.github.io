@@ -59,7 +59,7 @@ export default class FrequencyChartView extends React.PureComponent {
             }, 
             bar : {
                 width:{ 
-                    ratio: 0.75
+                    ratio: 0.9
                 }
             }, 
             size : {
