@@ -266,8 +266,9 @@
                 "description": "What share of total national income do you think goes to the top 1% richest households?",
                 "type" : "NUMERIC",
                 "correct" : 20,
-                "format" : "percent"
-                "source" : "https://wir2018.wid.world/executive-summary.html"
+                "format" : "percent", 
+                "source" : "World Inequality Lab",
+                "source_url" : "https://wir2018.wid.world/executive-summary.html"
               },
               "Q04019_en": {
                 "id": "Q04019_en",
