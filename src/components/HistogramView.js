@@ -91,6 +91,9 @@ export default class HistogramView extends React.Component {
                         ratio: 1
                     }
                 },
+                legend : {
+                    show : false
+                }
             });
         }
         else {
