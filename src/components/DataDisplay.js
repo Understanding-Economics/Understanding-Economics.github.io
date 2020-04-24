@@ -4,7 +4,6 @@ import DataType from '../DataType'
 import CategoricalDisplay from './CategoricalDisplay'
 import NumericDisplay from './NumericDisplay'
 import TreatmentDisplay from './TreatmentDisplay'
-import KeynessDisplay from './KeynessDisplay'
 import WordcloudDisplay from './WordcloudDisplay'
 import UmbrellaDisplay from './UmbrellaDisplay'
 import FrequencyDisplay from './FrequencyDisplay'
@@ -13,7 +12,7 @@ export default class DataDisplay extends React.Component {
     render() {
         let question = this.props.selectedQuestion;
         let specificDisplay = null;
-        if(!question /* || !this.props.selectedGroup*/) {
+        if(!question) {
             return null;
         }
         switch(question.type) {
@@ -41,11 +40,6 @@ export default class DataDisplay extends React.Component {
                 specificDisplay =  <TreatmentDisplay
                     data = { this.props.data }
                     group = { this.props.selectedGroup }
-                    question = { this.props.selectedQuestion }
-                />
-                break;
-            case DataType.KEYNESS: 
-                specificDisplay = <KeynessDisplay 
                     question = { this.props.selectedQuestion }
                 />
                 break;

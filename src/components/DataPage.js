@@ -20,7 +20,7 @@ addSurveyType(tradeSurveyData, "Trade Policy");
 addSurveyType(estateSurveyData, "Estate Tax");
 addSurveyType(healthSurveyData, "Health Insurance");
 
-var dataCache = {
+const surveyData = {
     "income_survey" : incomeSurveyData,
     "trade_survey" : tradeSurveyData, 
     "estate_survey" : estateSurveyData,
@@ -105,7 +105,7 @@ export default class DataPage extends React.Component {
                 </div>
                 
                 <DataDisplay
-                    data = { this.state.surveyData }
+                    data = { surveyData[this.surveyId] }
                     selectedGroup = { selectedGroup }
                     selectedQuestion = { selectedQuestion } 
                 />
@@ -126,26 +126,6 @@ export default class DataPage extends React.Component {
         } 
         return true
     }
-
-    componentDidMount() {
-        if(!this.survey){
-            return;
-        }
-        document.title = this.survey.title;
-        if(this.surveyId in dataCache) {
-            this.setState({
-                surveyData : dataCache[this.surveyId]
-            });
-        }
-        else {
-            d3.csv(`${process.env.PUBLIC_URL}/data/data_${this.surveyId}.csv`).then((data) => {
-                dataCache[this.surveyId] = data; 
-                this.setState({
-                  surveyData : data
-                })
-              });
-        }
-      }
 
     updateURL() {
         this.props.history.push({

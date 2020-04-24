@@ -10,14 +10,6 @@ import { surveys } from './config/fields.json'
 
 
 class App extends React.Component {
-  constructor() {
-    super(); 
-    this.state = {
-      surveyData : null,
-      selectedGroup : null,
-      selectedQuestion : null
-    }
-  }
   
   render() {
     // This is a suboptimal way to do this, but I want to treat each DataPage as a separate component
