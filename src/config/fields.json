@@ -1158,7 +1158,7 @@
               "Q02003": {
                 "id": "Q02003",
                 "title": "Goals",
-                "description": "n your view, what would be a “good” federal estate tax that you would be satisfied with? What would be the goal of a good estate tax system?",
+                "description": "In your view, what would be a “good” federal estate tax that you would be satisfied with? What would be the goal of a good estate tax system?",
                 "type" : "WORDCLOUD",
                 "img_url" : "Question_Q02003_estate.png"
               },
@@ -1203,7 +1203,7 @@
                 "description": "Is every individual's estate taxed",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"],
-                "correct" : "No, it is levied only on the portion of an estate’s value that exceeds a specified exemption level",
+                "correct" : "No",
                 "source" : "IRS",
                 "source_url" : "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
               },
@@ -1252,7 +1252,7 @@
                 "description": "Do you think many small business or small farm owners are subject to the federal estate tax?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Almost all are subject to the estate tax; Many are subject to the estate tax", "Few are subject to the estate tax", "Almost none are subject to the estate tax"],
-                "correct" : "Few, only roughly 80 small bussiness and small farm estates nationwidel will face any estate tax in 2017",
+                "correct" : "Few, only roughly 80 small bussiness and small farm estates nationwide will face any estate tax in 2017",
                 "source" : "Center on Budget and Policy Priorities",
                 "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
@@ -1308,7 +1308,7 @@
                       "description": "What amount will the IRS consider as capital gains that Jack made and that will be taxed at the capital gains tax rate?",
                       "type" : "CATEGORICAL",
                       "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"],
-                      "correct" : 50000,
+                      "correct" : "$50,000",
                       "format" : "dollar",
                       "source" : "IRS",
                       "source_url" : "https://www.irs.gov/faqs/interest-dividends-other-types-of-income/gifts-inheritances"

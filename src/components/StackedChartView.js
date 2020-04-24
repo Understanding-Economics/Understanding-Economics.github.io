@@ -97,7 +97,7 @@ export default class StackedChartView extends React.PureComponent {
         // document.getElementById(elementId).getElementsByTagName("p")[0].remove();
 
         if(selectedQuestion.correct != undefined) {
-            let bars = document.getElementsByClassName(`c3-target-${selectedQuestion.correct.replace(" ", "-")}`);
+            let bars = document.getElementsByClassName(`c3-target-${selectedQuestion.correct.toString().replace(" ", "-")}`);
             for(let i = 0; i < bars.length; i++){
                 bars[i].style.setProperty("opacity", "1.0", "!important");
             }

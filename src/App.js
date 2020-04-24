@@ -24,11 +24,10 @@ class App extends React.Component {
     // This way the component mounts and unmounts each time
     let surveyRoutes = Object.keys(surveys).map(surveyId => {
         return (
-            <Route exact path ={`/survey/${surveyId}`} component = {() => <DataPage surveyId = {`${surveyId}`}/> } />
+            <Route exact path ={`/survey/${surveyId}`} 
+              component = {(props) => <DataPage surveyId = {`${surveyId}`} history = {props.history}/> } />
         )
     })
-
-    
     return (
       <Router basename = "/">
           <div className="App container">
