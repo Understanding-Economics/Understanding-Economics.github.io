@@ -39,13 +39,11 @@ const noGroupTypes = [
 
 
 export default class DataPage extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            selectedGroup : undefined,
-            selectedTopic : undefined,
-            selectedQuestion : undefined
-        }
+    constructor(props) {
+        super(props);
+        this.state = {}
+        this.params = new URLSearchParams(props.history.search); 
+        this.updateURL = this.updateURL.bind(this);
         this.handleGroupSelect = this.handleGroupSelect.bind(this);
         this.handleTopicSelect = this.handleTopicSelect.bind(this);
         this.handleQuestionSelect = this.handleQuestionSelect.bind(this); 
@@ -59,10 +57,14 @@ export default class DataPage extends React.Component {
     }
 
     render() {
-        console.log(this.survey)
         if(!this.survey) {
             return <NotFound />
         }
+        this.params = new URLSearchParams(this.props.history.location.search); 
+        let selectedGroup = this.getGroup();
+        let selectedTopic = this.getTopic();
+        let selectedQuestion = this.getQuestion();
+        console.log(selectedGroup);
         return (
             <div className = "container-fluid">
                 <div className = "row">
@@ -71,7 +73,7 @@ export default class DataPage extends React.Component {
                             title = "Topic"
                             description = "Select a topic that you would like to examine"
                             options = { this.survey.topics }
-                            selected = {this.state.selectedTopic ? this.state.selectedTopic.id : null}
+                            selected = {selectedTopic ? selectedTopic.id : null}
                             handleSelect = {this.handleTopicSelect}
                         />
                     </div>
@@ -79,22 +81,22 @@ export default class DataPage extends React.Component {
                         <FieldSelect
                             title = "Question"
                             description = "Select a question to examine"
-                            options = {this.state.selectedTopic ? 
-                                this.state.selectedTopic.questions :
+                            options = {selectedTopic ? 
+                                selectedTopic.questions :
                                 null
                             }
-                            selected = {this.state.selectedQuestion ? this.state.selectedQuestion.id : null}
+                            selected = {selectedQuestion ? selectedQuestion.id : null}
                             handleSelect = {this.handleQuestionSelect}
                         />
                     </div>
                     <div className = "col-md-4">
                         {
-                            this.displayGroupSelect() ?
+                            this.displayGroupSelect(selectedTopic, selectedQuestion, selectedGroup) ?
                             <FieldSelect 
                                 title = "Group by"
                                 description = "Select how you would like to group responses"
                                 options = { this.groups }
-                                selected = {this.state.selectedGroup ? this.state.selectedGroup.id : null}
+                                selected = {selectedGroup ? selectedGroup.id : null}
                                 handleSelect = {this.handleGroupSelect}
                             />
                             : null
@@ -104,22 +106,22 @@ export default class DataPage extends React.Component {
                 
                 <DataDisplay
                     data = { this.state.surveyData }
-                    selectedGroup = { this.state.selectedGroup }
-                    selectedQuestion = { this.state.selectedQuestion } 
+                    selectedGroup = { selectedGroup }
+                    selectedQuestion = { selectedQuestion } 
                 />
             </div>
         )
     }
     // decide whether to display the group
-    displayGroupSelect() {
+    displayGroupSelect(selectedTopic, selectedQuestion, selectedGroup) {
         console.log()
-        if (!this.state.selectedTopic) {
+        if (!selectedTopic) {
             return false;
         }
-        if(!this.state.selectedQuestion && !this.state.selectedGroup) {
+        if(!selectedQuestion && !selectedGroup) {
             return false;
         }
-        if (this.state.selectedQuestion && this.state.selectedQuestion.type && noGroupTypes.includes(this.state.selectedQuestion.type)){
+        if (selectedQuestion && selectedQuestion.type && noGroupTypes.includes(selectedQuestion.type)){
             return false;
         } 
         return true
@@ -145,27 +147,52 @@ export default class DataPage extends React.Component {
         }
       }
 
-    handleGroupSelect(event) {
-        this.setState({
-            selectedGroup : this.groups[event.target.value]
+    updateURL() {
+        this.props.history.push({
+            search : this.params.toString()
         })
     }
 
+    handleGroupSelect(event) {
+        this.params.set("group", this.groups[event.target.value].id)
+        this.updateURL();
+    }
+
     handleTopicSelect(event) {
-        this.setState({
-            selectedTopic : this.survey.topics[event.target.value],
-            selectedQuestion : undefined,
-            //selectedGroup : undefined
-        })
+        this.params.set("topic", this.survey.topics[event.target.value].id);
+        this.params.delete("question")
+        this.updateURL();
+    }
+
+    getTopic() { 
+        let selectedTopicId = this.params.get("topic");
+        return selectedTopicId in this.survey.topics ? this.survey.topics[selectedTopicId] : undefined;
+    }
+    
+    getGroup() {
+        let selectedGroupId = this.params.get("group");
+        return selectedGroupId in this.groups ? this.groups[selectedGroupId] : undefined;
+    }
+
+    getQuestion() {
+        let selectedTopic = this.getTopic();
+        let selectedQuestionId = this.params.get("question");
+        return selectedTopic && selectedQuestionId in selectedTopic.questions ? selectedTopic.questions[selectedQuestionId] : undefined;
     }
     
     handleQuestionSelect(event) {
-        let selectedQuestion = this.state.selectedTopic.questions[event.target.value];
-        this.setState({
-            selectedQuestion : selectedQuestion,
-            selectedGroup : noGroupTypes.includes(selectedQuestion.type) ?
-                                null : this.state.selectedGroup
-        })
+        
+        let selectedQuestion = this.getTopic().questions[event.target.value];
+        let selectedGroup = noGroupTypes.includes(selectedQuestion.type) ?
+        null : this.getGroup();
+        this.params.set("question", selectedQuestion.id);
+        if(selectedGroup) {
+            this.params.set("group", selectedGroup.id);
+        }
+        else {
+            this.params.delete("group");
+        }
+        this.updateURL();
     }
 }
 
