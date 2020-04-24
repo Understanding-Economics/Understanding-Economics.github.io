@@ -30,7 +30,7 @@ export default class FieldSelect extends React.Component {
                     <span>{this.props.description}</span>
                 </div>
                 <div className = "row slctDiv" ref = {this.slctDivRef}>
-                    <select className = "align-left" size = {7} ref = {this.slctRef} value = {this.props.selected} onChange={this.props.handleSelect}>
+                    <select className = "align-left" size = {7} ref = {this.slctRef} value = {this.props.selected} onChange={ e => this.props.handleSelect(e.target.value)}>
                         {optionComponents}
                     </select>
                 </div>

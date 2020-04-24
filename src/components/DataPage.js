@@ -64,7 +64,7 @@ export default class DataPage extends React.Component {
         let selectedGroup = this.getGroup();
         let selectedTopic = this.getTopic();
         let selectedQuestion = this.getQuestion();
-        console.log(selectedGroup);
+
         return (
             <div className = "container-fluid">
                 <div className = "row">
@@ -133,14 +133,30 @@ export default class DataPage extends React.Component {
         })
     }
 
-    handleGroupSelect(event) {
-        this.params.set("group", this.groups[event.target.value].id)
+    handleGroupSelect(value) {
+        this.params.set("group", this.groups[value].id)
         this.updateURL();
     }
 
-    handleTopicSelect(event) {
-        this.params.set("topic", this.survey.topics[event.target.value].id);
+    handleTopicSelect(value) {
+        console.log(event.target.value);
+        this.params.set("topic", this.survey.topics[value].id);
         this.params.delete("question")
+        this.updateURL();
+    }
+
+    
+    handleQuestionSelect(value) {
+        let selectedQuestion = this.getTopic().questions[value];
+        let selectedGroup = noGroupTypes.includes(selectedQuestion.type) ?
+        null : this.getGroup();
+        this.params.set("question", selectedQuestion.id);
+        if(selectedGroup) {
+            this.params.set("group", selectedGroup.id);
+        }
+        else {
+            this.params.delete("group");
+        }
         this.updateURL();
     }
 
@@ -158,21 +174,6 @@ export default class DataPage extends React.Component {
         let selectedTopic = this.getTopic();
         let selectedQuestionId = this.params.get("question");
         return selectedTopic && selectedQuestionId in selectedTopic.questions ? selectedTopic.questions[selectedQuestionId] : undefined;
-    }
-    
-    handleQuestionSelect(event) {
-        
-        let selectedQuestion = this.getTopic().questions[event.target.value];
-        let selectedGroup = noGroupTypes.includes(selectedQuestion.type) ?
-        null : this.getGroup();
-        this.params.set("question", selectedQuestion.id);
-        if(selectedGroup) {
-            this.params.set("group", selectedGroup.id);
-        }
-        else {
-            this.params.delete("group");
-        }
-        this.updateURL();
     }
 }
 

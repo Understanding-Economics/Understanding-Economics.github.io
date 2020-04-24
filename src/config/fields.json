@@ -2186,7 +2186,6 @@
                 "title": "Medicare",
                 "description": "What is Medicare? Who is eligible for Medicare?",
                 "type" : "WORDCLOUD",
-                "sorter" : ["Yes", "No"],
                 "correct" : "Medicare is the federal health insurance program for: People who are 65 or older; Certain younger people with disabilities; People with End-Stage Renal Disease (permanent kidney failure requiring dialysis or a transplant, sometimes called ESRD)",
                 "source" : "Medicare.gov",
                 "source_url" : "https://www.medicare.gov/what-medicare-covers/your-medicare-coverage-choices/whats-medicare"
