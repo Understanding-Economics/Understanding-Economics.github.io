@@ -1262,8 +1262,7 @@
                 "description": "Does federal estate tax policy mostly tax assets that have already been taxed, thus leading to ”double taxation”?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["It’s mostly double taxation", "It mostly taxes assets that have not been taxed before"],
-                "correct" : "It is mostly taxing assets that have not been taxed before during the life of the owner. Under the current tax system, capital gains tax is due on the appreciation of assets, such as real estate, stock, or an art collection, only when the owner “realizes” the gain (usually by selling the asset). Therefore, the increase in the value of an asset is never subject to income tax if the owner holds on to the asset until death.",
-                "source" : "Center on Budget and Policy Priorities",
+                "correct" : "It mostly taxes assets that have not been taxed before",
                 "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04010_en": {
