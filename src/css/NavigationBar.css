@@ -7,3 +7,7 @@
 .nav-link {
     font-weight: bolder !important;
 }
+
+.navbar-nav > li{
+    padding-right: 10px;
+}
