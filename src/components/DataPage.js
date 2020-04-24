@@ -11,7 +11,15 @@ import estateSurveyData from './../json_data/data_estate.json'
 import healthSurveyData from './../json_data/data_health.json'
 import DataType from '../DataType'
 
-// This is to cache the CSV data so that we are not consistently pinging the server for it.
+function addSurveyType(data, survey_id) {
+    data.forEach(x => x["survey"] = survey_id)
+}
+
+addSurveyType(incomeSurveyData, "Income Tax");
+addSurveyType(tradeSurveyData, "Trade Policy");
+addSurveyType(estateSurveyData, "Estate Tax");
+addSurveyType(healthSurveyData, "Health Policy");
+
 var dataCache = {
     "income_survey" : incomeSurveyData,
     "trade_survey" : tradeSurveyData, 
@@ -19,6 +27,7 @@ var dataCache = {
     "health_survey" : healthSurveyData,
     "pooled" : incomeSurveyData.concat(tradeSurveyData, estateSurveyData, healthSurveyData)
 };
+
 
 // Datatypes that should not allow groups
 const noGroupTypes = [

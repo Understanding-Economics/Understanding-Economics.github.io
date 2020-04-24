@@ -37,7 +37,8 @@ export default class FieldSelect extends React.Component {
                 <ScrollableDesc 
                     title = {selectedTitle} 
                     content = {selectedDescription}
-                    height = "125px"
+                    maxHeight = "110px"
+                    minHeight = "75px"
                 />
             </div>
         );

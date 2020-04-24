@@ -52,7 +52,8 @@ export default class TreatmentDisplay extends React.Component {
             <div className = "TreatmentDisplay">
                 <div className = "row">
                     <h5>
-                        Responses to <strong>{this.props.question.title}</strong> by treatment. <br/><br/>
+                        Responses to: <br/> 
+                        <strong>{this.props.question.title}</strong> <br/><br/>
 
                         Grouped by <strong>{this.props.group.title}</strong>
 
@@ -60,13 +61,7 @@ export default class TreatmentDisplay extends React.Component {
                 </div>
                 <div className = "row">
                     <div className = "col-md-3">
-                        <ScrollableDesc
-                            title = {this.props.group.title}
-                            content = {" "}
-                            minHeight = {"10px"}
-                            maxHeight = {"100px"}
-                            marginLeft ={"20px !important"}
-                        /> 
+                        <strong style = {{position: "absolute", bottom: "0", marginLeft: "-20px"}}>{this.props.group.title}</strong>
                     </div>
                     <div className = "col-md-9">
                         <div className = "row">
