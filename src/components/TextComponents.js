@@ -8,7 +8,7 @@ export class Section extends React.PureComponent {
 
 export class Subsection extends React.PureComponent { 
     render() {
-        return <h3>{this.props.children}</h3>
+        return <h4>{this.props.children}</h4>
     }
 }
 

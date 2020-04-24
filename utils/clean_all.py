@@ -12,9 +12,16 @@ keywords = [
 def get_question_ids(survey):
     ids = ["mechanisms_rando"]
     flatten = lambda l: [item for sublist in l for item in sublist]
-    questions = flatten([list(topic["questions"].values()) for topic in survey["topics"].values()])
+    questions = flatten([list(topic["questions"].items()) for topic in survey["topics"].values()])
     while len(questions) > 0:
-        question = questions.pop(0)
+        if type(questions[0]) is tuple:
+            q_id, question = questions.pop(0)
+            if q_id != question["id"]:
+                print("ERROR: Id is not equal to dict key")
+                print(question)
+                raise Exception()
+        else:
+            question = questions.pop(0)
         if ("questions" in question):
             questions.extend(question["questions"])
         ids.append(question["id"])

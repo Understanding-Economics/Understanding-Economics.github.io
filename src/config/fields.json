@@ -3150,7 +3150,7 @@
                 "sorter" : ["Yes", "No"]
               },
               "Q06105" : {
-                "id" : "Q06005_1_en",
+                "id" : "Q06105",
                 "title" : "Ability to find a new job",
                 "description" : "Do you think it is easy for the following types of workers to find jobs in a different sectors from the ones they are currently working in?",
                 "type" : "UMBRELLA",
@@ -3173,7 +3173,7 @@
                     "id": "Q06205",
                     "title": "Specific (you)",
                     "description": "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
-                    "type" : "CAGTEGORICAL",
+                    "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"]
                   }
                 ]
