@@ -117,6 +117,34 @@
       "income_survey": {
         "title": "Income Tax",
         "topics": {
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding income policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "When you think about federal personal income taxation and whether the U.S. should have higher or lower federal personal income taxes, what are the main considerations that come to your mind?",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_income.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "What would be a “good” federal tax system in your view? What would be the goal of a good tax system?",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_income.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "What do you think are the issues with or shortcomings of the U.S. federal income tax system?",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_income.png"
+              }
+            }
+          },
           "Personal Exposure": {
             "id": "Personal Exposure",
             "title": "Personal Exposure",
@@ -237,7 +265,8 @@
                 "title": "Top 1% Share of Income",
                 "description": "What share of total national income do you think goes to the top 1% richest households?",
                 "type" : "NUMERIC",
-                "correct" : "20",
+                "correct" : 20,
+                "format" : "percent"
                 "source" : "https://wir2018.wid.world/executive-summary.html"
               },
               "Q04019_en": {
@@ -371,34 +400,6 @@
               }
             }
           },
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
-            "description": "Questions to examine textual analysis regarding income policy",
-            "questions": {
-              "Q02002": {
-                "id": "Q02002",
-                "title": "Main considerations",
-                "description": "Main considerations",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02002_income.png"
-              },
-              "Q02003": {
-                "id": "Q02003",
-                "title": "Goals",
-                "description": "Goals",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02003_income.png"
-              },
-              "Q02004": {
-                "id": "Q02004",
-                "title": "Shortcomings",
-                "description": "Shortcomings",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02004_income.png"
-              }
-            }
-          },
           "Tax Change Behavior": {
             "id": "Tax Change Behavior",
             "title": "Tax Change Behavior",
@@ -438,38 +439,133 @@
                   },
                   {
                     "id": "Q06001_2_en",
-                    "title": "Work less ",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                    "title": "Work less",
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06001_2_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to work less"
+                      },
+                      {
+                        "id" : "Q06001_2_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to work less"
+                      },
+                      {
+                        "id" : "Q06001_2_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to work less"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06001_3_en",
                     "title": "Stop working altogether",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06001_3_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to stop working altogether"
+                      },
+                      {
+                        "id" : "Q06001_3_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to stop working altogether"
+                      },
+                      {
+                        "id" : "Q06001_3_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to stop working altogether"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06001_4_en",
                     "title": "Have spouse stop working",
-                    "description": "Have their/your/her spouse stop working",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06001_4_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to have their spouse stop working"
+                      },
+                      {
+                        "id" : "Q06001_4_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to have your spouse stop working"
+                      },
+                      {
+                        "id" : "Q06001_4_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to have her spouse stop working"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06001_5_en",
                     "title": "Move to state with lower taxes",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06001_5_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to move to a state with lower taxes"
+                      },
+                      {
+                        "id" : "Q06001_5_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to move to a state with lower taxes"
+                      },
+                      {
+                        "id" : "Q06001_5_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to move to a state with lower taxes"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06001_6_en",
                     "title": "Be less entrepreneurial",
-                    "description": "Be less entrepreneurial and create fewer businesses",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06001_6_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to be less entrepreneurial"
+                      },
+                      {
+                        "id" : "Q06001_6_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to move to be less entrepreneurial"
+                      },
+                      {
+                        "id" : "Q06001_6_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to be less entrepreneurial"
+                      }
+                    ]
                   }
                 ]
               },
@@ -507,38 +603,133 @@
                   },
                   {
                     "id": "Q06002_2_en",
-                    "title": "Work less ",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                    "title": "Work less",
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06002_2_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to work less"
+                      },
+                      {
+                        "id" : "Q06002_2_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to work less"
+                      },
+                      {
+                        "id" : "Q06002_2_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to work less"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06002_3_en",
                     "title": "Stop working altogether",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06002_3_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to stop working altogether"
+                      },
+                      {
+                        "id" : "Q06002_3_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to stop working altogether"
+                      },
+                      {
+                        "id" : "Q06002_3_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to stop working altogether"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06002_4_en",
                     "title": "Have spouse stop working",
-                    "description": "Have their/your/her spouse stop working",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06002_4_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to have their spouse stop working"
+                      },
+                      {
+                        "id" : "Q06002_4_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to have your spouse stop working"
+                      },
+                      {
+                        "id" : "Q06002_4_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to have her spouse stop working"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06002_5_en",
                     "title": "Move to state with lower taxes",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06002_5_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to move to a state with lower taxes"
+                      },
+                      {
+                        "id" : "Q06002_5_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to move to a state with lower taxes"
+                      },
+                      {
+                        "id" : "Q06002_5_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to move to a state with lower taxes"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06002_6_en",
                     "title": "Be less entrepreneurial",
-                    "description": "Be less entrepreneurial and create fewer businesses",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                      {
+                          "id" : "Q06002_6_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to be less entrepreneurial"
+                      },
+                      {
+                        "id" : "Q06002_6_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to be less entrepreneurial"
+                      },
+                      {
+                        "id" : "Q06002_6_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to be less entrepreneurial"
+                      }
+                    ]
                   }
                 ]
               },
@@ -579,7 +770,7 @@
                           "id" : "Q06004_1_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "Typically, when the top federal income tax rate on high earners is cut, which of these groups would you say mostly win or mostly lose from this change?"
+                          "description" : "Typically, when the top federal income tax rate on high earners is cut, would you say people in the lower class/poor mostly win or mostly lose from this change?"
                       },
                       {
                         "id" : "Q06004_1_en",
@@ -591,37 +782,113 @@
                         "id" : "Q06004_1_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in these groups would you say mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the lower class/poor would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
                   {
                     "id": "Q06004_2_en",
-                    "title": "Working Class",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                    "title": "Working class",
+                    "type" : "TREATMENT",
+                    "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "questions" : [
+                      {
+                          "id" : "Q06004_2_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "Typically, when the top federal income tax rate on high earners is cut, would you say people in the working class mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06004_2_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06004_2_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the working class would you say mostly win or mostly lose from this change?"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06002_3_en",
-                    "title": "Middle Class",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                    "title": "Middle class",
+                    "type" : "TREATMENT",
+                    "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "questions" : [
+                      {
+                          "id" : "Q06002_3_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "Typically, when the top federal income tax rate on high earners is cut, would you say people in the middle class mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06002_3_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06002_3_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the middle class would you say mostly win or mostly lose from this change?"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06002_4_en",
                     "title": "Upper-middle class",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "questions" : [
+                      {
+                          "id" : "Q06002_4_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "Typically, when the top federal income tax rate on high earners is cut, would you say people in the upper-middle class mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06002_4_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06002_4_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the upper-middle class would you say mostly win or mostly lose from this change?"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06002_5_en",
                     "title": "Upper class",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "questions" : [
+                      {
+                          "id" : "Q06002_5_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "Typically, when the top federal income tax rate on high earners is cut, would you say people in the upper class mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06002_5_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06002_5_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the upper class would you say mostly win or mostly lose from this change?"
+                      }
+                    ]
                   }
                 ]
               },
@@ -641,7 +908,7 @@
                           "id" : "Q06005_1_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which of these groups would you say mostly win or mostly lose from this change?"
+                          "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you say people in the lower class/poor mostly win or mostly lose from this change?"
                       },
                       {
                         "id" : "Q06005_1_en",
@@ -653,37 +920,113 @@
                         "id" : "Q06005_1_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which of these groups would you say mostly win or mostly lose from this change?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which women in the lower class/poor would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
                   {
                     "id": "Q06005_2_en",
-                    "title": "Working Class",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                    "title": "Working class",
+                    "type" : "TREATMENT",
+                    "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "questions" : [
+                      {
+                          "id" : "Q06005_2_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you say people in the working class mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06005_2_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
+                      },
+                      {
+                        "id" : "Q06005_2_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which women in the working class would you say mostly win or mostly lose from this change?"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06005_3_en",
-                    "title": "Middle Class",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                    "title": "Middle class",
+                    "type" : "TREATMENT",
+                    "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "questions" : [
+                      {
+                          "id" : "Q06005_3_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you say people in the middle class mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06005_3_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
+                      },
+                      {
+                        "id" : "Q06005_3_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which women in the middle class would you say mostly win or mostly lose from this change?"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06005_4_en",
                     "title": "Upper-middle class",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "questions" : [
+                      {
+                          "id" : "Q06005_4_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you say people in the upper-middle class mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06005_4_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
+                      },
+                      {
+                        "id" : "Q06005_4_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which women in the upper-middle class would you say mostly win or mostly lose from this change?"
+                      }
+                    ]
                   },
                   {
                     "id": "Q06005_5_en",
                     "title": "Upper class",
-                    "description": "",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly Lose", "Mostly Win"]
+                    "type" : "TREATMENT",
+                    "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "questions" : [
+                      {
+                          "id" : "Q06005_5_en",
+                          "title" : "CONTROL",
+                          "treatments" : ["Neutral"],
+                          "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you say people in the upper class mostly win or mostly lose from this change?"
+                      },
+                      {
+                        "id" : "Q06005_5_en",
+                        "title" : "YOU",
+                        "treatments" : ["You"],
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
+                      },
+                      {
+                        "id" : "Q06005_5_en",
+                        "title" : "GENDER",
+                        "treatments" : ["Gender"],
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which women in the upper class would you say mostly win or mostly lose from this change?"
+                      }
+                    ]
                   }
                 ]
               },
@@ -795,564 +1138,38 @@
           }
         }
       },
-      "trade_survey" : {
-        "title": "Trade Policy",
-        "additionalGroups" : {},
-        "topics" : {
-          "Personal Exposure" : {
-            "id": "Personal Exposure",
-            "title": "Personal Exposure",
-            "description": "Questions to examine the individual's exposure to trade policy",
-            "questions": {
-              "Q03001_en": {
-                "id": "Q03001_en",
-                "title": "Personal Impact of Trade Policy",
-                "description": "Do you feel that U.S. trade policy has important, direct effects on your own life?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes, it has very important direct effects on my own life; It has some effects on my own life", "No, it has no direct effects on my own life"]
-              }
-            }
-          },
-          "Knowledge about policy" : {
-            "id": "Knowledge about policy",
-            "title": "Knowledge about policy",
-            "description": "Questions to examine the individual's knowledge about trade policy",
-            "questions": {
-              "Q04002_en": {
-                "id": "Q04002_en",
-                "title": "Import Tariff",
-                "description": "Do you know what an import tariff is?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"],
-                "correct" : "A tariff on goods coming into a country from abroad, often used by governments as a way of reducing imports and protecting local industries.",
-                "source" : "Lexicon",
-                "source_url" : "http://lexicon.ft.com/Term?term=import-tariff"
-              },
-              "Q04004_en": {
-                "id": "Q04004_en",
-                "title": "Import Quota",
-                "description": "Do you know what an import quota is?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"],
-                "correct" : "The import quota means physical limitation of the quantities of different products to be imported from foreign countries within a specified period of time, usually one year. The import quota may be fixed either in terms of quantity or the value of the product.",
-                "source" : "Economics Discussion",
-                "source_url" : "http://www.economicsdiscussion.net/import-quotas/import-quotas-meaning-objectives-and-types-international-economics/30454"
-              },
-              "Q04006_en": {
-                "id": "Q04006_en",
-                "title": "Share of Agricultural Imports",
-                "description": "What share of the goods that the U.S. imports are agricultural goods?",
-                "type" : "NUMERIC",
-                "correct" : "4.1",
-                "source" : "Statista",
-                "source_url" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/"
-              },
-              "Q04007_en": {
-                "id": "Q04007_en",
-                "title": "Share of Imports Subject to Tariff",
-                "description": "Of all the goods that the U.S. imports, what share is subject to a tariff or import duty?",
-                "type" : "NUMERIC",
-                "correct" : "Approximately one half",
-                "source" : "Tax Foundation",
-                "source_url" : "https://taxfoundation.org"
-              },
-              "Q04009_en": {
-                "id": "Q04009_en",
-                "title": "Principal Export Destination",
-                "description": "To which country does the U.S. export the most, in terms of the net dollar value?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Brazil", "Canada", "China", "France", "Germany", "India", "Ireland", "Italy", "Japan", "Mexico", "Netherlands", "South Korea", "Switzerland", "Taiwan", "United Kingdom"],
-                "correct" : "Canada",
-                "source" : "Census Trade Statistics",
-                "source_url" : "https://www.census.gov/foreign-trade/statistics/highlights/toppartners.html"
-              },
-              "Q04010_en": {
-                "id": "Q04010_en",
-                "title": "Principal Import Provenance",
-                "description": "From which country does the U.S. import the most, in terms of the net dollar value",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Brazil", "Canada", "China", "France", "Germany", "India", "Ireland", "Italy", "Japan", "Mexico", "Netherlands", "South Korea", "Switzerland", "Taiwan", "United Kingdom"],
-                "correct" : "China",
-                "source" : "Census Trade Statistics",
-                "source_url" : "https://www.census.gov/foreign-trade/statistics/highlights/toppartners.html"
-              },
-              "Q04011_en": {
-                "id": "Q04011_en",
-                "title": "Trade Evolution Over Time",
-                "description": "Over time, how has the level of trade between the U.S. and other countries changed?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["It has decreased", "It has stayed more or less the same", "It has increased"],
-                "correct" : "It has increased",
-                "source" : "Tax Foundation",
-                "source_url" : "https://taxfoundation.org/impact-trade-tariffs-united-states/"
-              }
-            }
-          },
-          "Expected Effects" : {
-            "id": "Expected Effects",
-            "title": "Expected Effects",
-            "description": "Questions to examine the expected effects of trade policy",
-            "questions": {
-              "Q06001_1_en": {
-                "id": "Q06001_1_en",
-                "title": "Effects of Trade",
-                "description": "As trade with other countries has increased, how much have the following groups lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
-                "type" : "UMBRELLA",
-                "questions" : [
-                  {
-                    "id" : "Q06001_1_en",
-                    "title" : "Large Corporations",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"],
-                    "questions" : [
-                      {
-                        "id" : "Q06001_1_en",
-                        "title" : "Control",
-                        "treatments" : ["Neutral", "Gender"]
-                      },
-                      {
-                        "id" : "Q06201_1",
-                        "title" : "You",
-                        "treatments" : ["You"]                        
-                      }
-                    ]
-                  },
-                  {
-                    "id" : "Q06001_2_en",
-                    "title" : "High-income Households",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3", "4", "5"], 
-                    "questions" : [
-                      {
-                        "id" : "Q06001_2_en",
-                        "title" : "Control",
-                        "treatments" : ["Neutral", "Gender"]
-                      },
-                      {
-                        "id" : "Q06201_2",
-                        "title" : "You",
-                        "treatments" : ["You"]                        
-                      }
-                    ]
-                  },
-                  {
-                    "id" : "Q06001_3_en",
-                    "title" : "Middle-income Households",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["1", "2", "3", "4", "5"]
-                  },
-                  {
-                    "id" : "Q06001_4_en",
-                    "title" : "Low-income Households",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["1", "2", "3", "4", "5"]
-                  },
-                  {
-                    "id" : "Q06001_5_en",
-                    "title" : "Small Businesses",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["1", "2", "3", "4", "5"]
-                  }
-                ]
-              },
-              "Q06201B": {
-                "id": "Q06201B",
-                "title": "Personal situation",
-                "description": "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Better off", "Worse off"]
-              },
-              "Q06201C_1": {
-                "id": "Q06201C_1",
-                "title": "Magnitude on personal situation",
-                "description": "How much do you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
-                "type" : "CATEGORICAL",
-                "sorter" : ["1", "2", "3", "4", "5"]
-              },
-              "Q06003_en": {
-                "id": "Q06003_en",
-                "title": "Effect on Jobs",
-                "description": "Whether increased trade with other countries affects American jobs, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06003_en",
-                    "title" : "CONTROL",
-                    "description" : "Do you feel that most American jobs are being affected by US trade policy?",
-                    "treatments" : ["Neutral"]
-                  },
-                  {
-                    "id" : "Q06003_en",
-                    "title" : "YOU",
-                    "description" : "Do you feel that your own job is being affected by U.S. trade policy?",
-                    "treatments" : ["You"]
-                  }
-                ]
-              },
-              "Q06004_en": {
-                "id": "Q06004_en",
-                "title": "Effect on Workers",
-                "description": "Overall, has international trade helped or hurt U.S. workers?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
-              },
-              "Q06105": {
-                "id": "Q06105",
-                "title": "Ability to find new job - Low-skilled workers",
-                "description": "Whether it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
-              },
-              "Q06106": {
-                "id": "Q06106",
-                "title": "Ability to find new job - High-skilled workers",
-                "description": "Whether it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
-              },
-              "Q06205": {
-                "id": "Q06205",
-                "title": "Ability to find new job - Specific",
-                "description": "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
-                "type" : "CAGTEGORICAL",
-                "sorter" : ["Yes", "No"]
-              },
-              "Q06007_1_en": {
-                "id": "Q06007_1_en",
-                "title": "Unemployment and Inequality",
-                "description": "How much you think trade with other countries has affected unemployment and inequality",
-                "type" : "UMBRELLA",
-                "questions" : [
-                  {
-                    "id" : "Q06007_1_en",
-                    "title" : "Effects on Unemployment",
-                    "type" : "TREATMENT",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
-                    "questions" : [
-                        {
-                            "id" : "Q06007_1_en",
-                            "title" : "CONTROL",
-                            "description" : "Unemployment in some sectors and the decline of some industries in the U.S.",
-                            "treatments" : ["Neutral"]
-                        },
-                        {
-                            "id" : "Q06007_1_en",
-                            "title" : "YOU",
-                            "description" : "Unemployment in your sector and the decline of some industries in the U.S.",
-                            "treatments" : ["You"]
-                        }
-                      ]
-                  },
-                  {
-                    "id" : "Q06007_2_en",
-                    "title" : "Effects on Inequality",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
-                  }
-                ]
-              },
-              "Q06009_en": {
-                "id": "Q06009_en",
-                "title": "Price of Goods",
-                "description": "Overall, has international trade decreased the prices of goods sold in the U.S.?",
-                "type" : "TREATMENT",
-                "sorter" : ["Yes", "No"],
-                "questions" : [
-                  {
-                    "id" : "Q06009_en",
-                    "title" : "CONTROL",
-                    "description" : "Overall, has international trade decreased the prices of goods sold in the U.S.?",
-                    "treatments" : ["Neutral"]
-                  },
-                  {
-                    "id" : "Q06009_en",
-                    "title" : "YOU",
-                    "description" : "Overall, has international trade decreased the prices of goods that you buy regularly?",
-                    "treatments" : ["You"]
-                  }
-                ]
-              },
-              "Q06010_en": {
-                "id": "Q06010_en",
-                "title": "Innovation",
-                "description": "Do you think that the competitive pressure from international trade has increased innovation in the U.S.?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
-              },
-              "Q06011_en": {
-                "id": "Q06011_en",
-                "title": "GDP",
-                "description": "Overall, do you think that international trade has increased the growth of the GDP in the U.S.?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
-              },
-              "Q06012_en": {
-                "id": "Q06012_en",
-                "title": "Dollar value",
-                "description": "If the U.S. exports more goods abroad, what do you think will happen to the value of the dollar?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["It will increase", "It will not change", "It will decrease"]
-              },
-              "Q06013_en": {
-                "id": "Q06013_en",
-                "title": "Benefits of Trade",
-                "description": "Does trade make the countries involved better off in general?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["In general, both countries are better off", "In general, one country gains, the other one loses", "In general, both countries lose"]
-              },
-              "Q06014_en": {
-                "id": "Q06014_en",
-                "title": "Importing Lower-priced Goods",
-                "description": "Imagine the U.S. is able to produce better cars at a lower price than Germany is. Would it still make sense under some circumstances for the U.S. to import cars from Germany?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
-              }
-            }
-          },
-          "Example" : {
-            "id": "Example",
-            "title": "Example",
-            "description": "The U.S. is a large net exporter of laptops (meaning that it sells more laptops abroad than it purchases from abroad and that U.S. laptops are a large share of all laptops sold in the world), and a large net importer of cars (meaning that it purchases more cars from abroad than it sells abroad and that cars purchased by customers in the U.S. are a large share of worldwide car purchases). The laptop sector employs many high-skilled, college-educated workers. The car sector em- ploys many low-skilled workers. Cars are produced for cheaper abroad, while laptops are produced for cheaper in the U.S.",
-            "questions": {
-              "Q06015_en": {
-                "id": "Q06015_en",
-                "title": "Long example",
-                "description": "Imagine now that the U.S. starts importing even more cars and producing less cars domestically.",
-                "type" : "UMBRELLA",
-                "questions" : [
-                  {
-                    "id" : "Q06015_en",
-                    "title" : "Price of Cars",
-                    "description" : "What will happen to the price of cars in the U.S.?", 
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
-                  },
-                  {
-                    "id" : "Q06016_en",
-                    "title" : "Car Consumers",
-                    "description" : "Would you say that households who purchase cars in the U.S. are now better off?", 
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
-                  },
-                  {
-                    "id" : "Q06017_en",
-                    "title" : "Low-skilled Workers' Wages",
-                    "description" : "What will happen to the wages of low-skilled workers working in the car sector?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
-                  },
-                  {
-                    "id" : "Q06018_en",
-                    "title" : "Price of U.S. Laptops Abroad",
-                    "description" : "Imagine also that the U.S. starts producing and exporting more laptops. What will happen to the price of U.S. laptops abroad, i.e., in the countries where the U.S. sells laptops?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
-                  },
-                  {
-                    "id" : "Q06019_en",
-                    "title" : "High-skilled Workers' Wages",
-                    "description" : "What will happen to the wages of high-skilled workers working in the laptop sector?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
-                  },
-                  {
-                    "id" : "Q06020_en",
-                    "title" : "Changing Sectors and Increase in Exports",
-                    "description" : "Imagine that over time, some low-skilled workers from the car sector are able to quit their jobs and find new jobs in the laptop sector. What will happen to their wages now if the U.S. exports more laptops?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
-                  },
-                  {
-                    "id" : "Q06021_en",
-                    "title" : "Export Tax on Laptops",
-                    "description" : "If the U.S. were to impose an export tax on laptops, what would happen to the price of laptops abroad?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
-                  },
-                  {
-                    "id" : "Q06022_en",
-                    "title" : "Import Tariff on Cars",
-                    "description" : "If the U.S. were to impose an import tariff on cars sold in the U.S, what would happen to the price of cars in the U.S?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
-                  },
-                  {
-                    "id" : "Q06023_en",
-                    "title" : "Export Increase on Wages",
-                    "description" : "If exports from your sector to other countries would increase, what do you think will happen to your wage?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
-                  },
-                  {
-                    "id" : "Q06024_en",
-                    "title" : "Import Increase on Wages",
-                    "description" : "If the U.S. imported more of the goods produced in your sector, what do you think would happen to your wage?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
-                  }
-                ]
-              }
-            }
-          },
-          "Results" : {
-            "id": "Results",
-            "title": "Results",
-            "description": "Questions to examine the results of trade policy",
-            "questions": {
-              "Q07001_en": {
-                "id": "Q07001_en",
-                "title": "",
-                "description": "Do you agree or disagree with the following statement: 'Increasing trade with other countries and reducing barriers to trade is something the U.S. should aim for.'",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"]
-              },
-              "Q07002_en": {
-                "id": "Q07002_en",
-                "title": "",
-                "description": "Fairness of the current U.S. trade policy?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
-              },
-              "Q07003_en": {
-                "id": "Q07003_en",
-                "title": "",
-                "description": "Satisfaction with the current U.S. trade policy?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
-              },
-              "Q07006_1_en": {
-                "id": "Q07006_1_en",
-                "title": "Effects on Unemployment",
-                "description": "What do you think is the best policy tool to help workers in a declining industry threatened by foreign competition? Please rank the following options from best (1) to worst (3).",
-                "type" : "UMBRELLA",
-                "questions" : [
-                  {
-                    "id" : "Q07006_1_en",
-                    "title" : "Restrict imports in industry",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3"],
-                    "questions" : [
-                        {
-                            "id" : "Q07006_1_en",
-                            "title" : "CONTROL",
-                            "description" : "How effectively would restricting imports help workers in such an industry?",
-                            "treatments" : ["Neutral"]
-                        },
-                        {
-                            "id" : "Q07006_1_en",
-                            "title" : "YOU",
-                            "description" : "How effectively would restricting imports help workers in your industry?",
-                            "treatments" : ["You"]
-                        }
-                      ]
-                  },
-                  {
-                    "id" : "Q07006_2_en",
-                    "title" : "Provide more generous transfers and direct assistance",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3"],
-                    "questions" : [
-                        {
-                            "id" : "Q07006_2_en",
-                            "title" : "CONTROL",
-                            "description" : "How effectively would providing generous transfers and direct assistance help workers in such an industry?",
-                            "treatments" : ["Neutral"]
-                        },
-                        {
-                            "id" : "Q07006_2_en",
-                            "title" : "YOU",
-                            "description" : "How effectively would providing generous transfers and direct assistance help workers in your industry?",
-                            "treatments" : ["You"]
-                        }
-                      ]
-                  },
-                  {
-                    "id" : "Q07006_3_en",
-                    "title" : "Subsidize production",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3"],
-                    "questions" : [
-                        {
-                            "id" : "Q07006_3_en",
-                            "title" : "CONTROL",
-                            "description" : "How effectively would subsidizing production help workers in such an industry?",
-                            "treatments" : ["Neutral"]
-                        },
-                        {
-                            "id" : "Q07006_3_en",
-                            "title" : "YOU",
-                            "description" : "How effectively would subsidizing production help workers in your industry?",
-                            "treatments" : ["You"]
-                        }
-                      ]
-                  }
-                ]
-              },
-              "Q07007_en": {
-                "id": "Q07007_en",
-                "title": "National Food Security",
-                "description": "What do you think is the best policy tool to ensure national food security?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Restrict food imports from abroad", "Provide more production subsidies in the food sector"]
-              },
-              "Q07008_en": {
-                "id": "Q07008_en",
-                "title": "Tariff Responses",
-                "description": "If the U.S. imposes tariffs on many imports, how likely or unlikely is it that other countries follow suit and also impose tariffs?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very likely, likely", "Unlikely", "Very unlikely"]
-              }
-            }
-          },
-          "Views on government" : {
-            "id": "Views on government",
-            "title": "Views on government",
-            "description": "Questions to examine views on government",
-            "questions": {
-              "Q09003_en": {
-                "id": "Q09003_en",
-                "title": "Gains and Losses of Increase in Trade",
-                "description": "Which statement comes closest to your views? When there is more trade between the US and other countries…",
-                "type" : "CATEGORICAL",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
-              }
-            }
-          },
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
-            "description": "Questions to examine textual analysis regarding trade policy",
-            "questions": {
-              "Q02002": {
-                "id": "Q02002",
-                "title": "Main considerations",
-                "description": "Main considerations",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02002_trade.png"
-              },
-              "Q02003": {
-                "id": "Q02003",
-                "title": "Goals",
-                "description": "Goals",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02003_trade.png"
-              },
-              "Q02004": {
-                "id": "Q02004",
-                "title": "Shortcomings",
-                "description": "Shortcomings",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02004_trade.png"
-              }
-            }
-          }
-        }
-      },
       "estate_survey" : {
         "title": "Estate Tax",
         "additionalGroups" : {},
         "topics" : {
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding estate tax policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "When you think about the federal estate tax and whether the U.S. should have a higher or a lower federal estate tax, what are the main considerations that come to your mind?",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_estate.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "n your view, what would be a “good” federal estate tax that you would be satisfied with? What would be the goal of a good estate tax system?",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_estate.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "What do you think are the shortcomings of the U.S. federal estate tax?",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_estate.png"
+              }
+            }
+          },
           "Personal Exposure" : {
             "id": "Personal Exposure",
             "title": "Personal Exposure",
@@ -2257,34 +2074,6 @@
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
             }
-          },
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
-            "description": "Questions to examine textual analysis regarding estate tax policy",
-            "questions": {
-              "Q02002": {
-                "id": "Q02002",
-                "title": "Main considerations",
-                "description": "Main considerations",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02002_estate.png"
-              },
-              "Q02003": {
-                "id": "Q02003",
-                "title": "Goals",
-                "description": "Goals",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02003_estate.png"
-              },
-              "Q02004": {
-                "id": "Q02004",
-                "title": "Shortcomings",
-                "description": "Shortcomings",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02004_estate.png"
-              }
-            }
           }
         }
       },
@@ -2292,6 +2081,34 @@
         "title": "Health Insurance",
         "additionalGroups" : {},
         "topics" : {
+          "Text Anaysis" : {
+            "id": "Text Anaysis",
+            "title": "Text Anaysis",
+            "description": "Questions to examine textual analysis regarding health policy",
+            "questions": {
+              "Q02002": {
+                "id": "Q02002",
+                "title": "Main considerations",
+                "description": "When you think about health insurance and whether the U.S. should have universal health insurance for all, what are the main considerations — in favor or against it — that come to you mind?",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02003_health.png"
+              },
+              "Q02003": {
+                "id": "Q02003",
+                "title": "Goals",
+                "description": "What would be a “good” health insurance system in your view? What would be the goal of a good health insurance system?",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02002_health.png"
+              },
+              "Q02004": {
+                "id": "Q02004",
+                "title": "Shortcomings",
+                "description": "What do you personally see as the biggest problem with health insurance in the United States today?",
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q02004_health.png"
+              }
+            }
+          },
           "Personal Exposure" : {
             "id": "Personal Exposure",
             "title": "Personal Exposure",
@@ -2589,13 +2406,15 @@
                 "id": "Q06001",
                 "title": "Reason for Individual Mandate",
                 "description": "In your view, what is the main reason for having an individual mandate?",
-                "type" : "WORDCLOUD"
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q06001_wordcloud.png"
               },
               "Q06002": {
                 "id": "Q06002",
                 "title": "Individual Mandate Evaluation",
                 "description": "Would you say that an individual mandate is beneficial or detrimental?",
-                "type" : "WORDCLOUD"
+                "type" : "WORDCLOUD",
+                "img_url" : "Question_Q06002_wordcloud.png"
               },
               "Q06003_en": {
                 "id": "Q06003_en",
@@ -2845,32 +2664,30 @@
                   }
                 ]
               },
-              "Q06111_en": {
-                "id": "Q06111_en",
+              "Q06011_en": {
+                "id": "Q06011_en",
                 "title": "Responsibility for Health Issues",
                 "description": "What is more responsible for the health issues across the U.S. today?",
-                "type" : "UMBRELLA",
+                "type" : "TREATMENT",
+                "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"],
                 "questions" : [
                   {
-                    "id" : "Q06111_en",
-                    "title" : "Main responsibility in health issues (general)",
+                    "id" : "Q06011_en",
+                    "title" : "CONTROL",
                     "description" : "Would you say that health issues and medical conditions are mostly the result of circumstances outside of one's control or mostly the result of one's own actions?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"]
+                    "treatments" : ["Neutral"]
                   },
                   {
-                    "id" : "Q06211_en",
-                    "title" : "Main responsibility in health issues (specific to you)",
+                    "id" : "Q06011_en",
+                    "title" : "YOU",
                     "description" : "Would you say that your own health issues and your own medical conditions are mostly the result of circumstances outside of your control or mostly the result of your own actions?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"]
+                    "treatments" : ["You"]
                   },
                   {
-                    "id" : "Q06311_en",
-                    "title" : "Main responsibility in health issues (specific to women)",
+                    "id" : "Q06011_en",
+                    "title" : "GENDER",
                     "description" : "Would you say that health issues and medical conditions that arise for women are mostly the result of circumstances outside of their control or mostly the result of these women's own actions?",
-                    "type" : "CATEGORICAL",
-                    "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"]
+                    "treatments" : ["Gender"]
                   }
                 ]
               },
@@ -3011,18 +2828,25 @@
                 "description": "Do you support an individual mandate whereby every individual is obliged to buy health insurance?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+              },
+              "Q07009_en": {
+                "id": "Q07009_en",
+                "title": "Support for Employer Mandate",
+                "description": "Do you support or oppose having an employer mandate whereby every large employer, with more than 50 employees, is obliged to offer health insurance plans for their employees?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
               }
             }
           },
-          "Desired Design of Health Insurance" : {
-            "id": "Desired Design of Health Insurance",
+          "Desired design of health insurance" : {
+            "id": "Q07010_1_en",
             "title": "Desired Design of Health Insurance",
-            "description": "Desired design of health insurance",
+            "description": "",
             "questions": {
               "Q07010_1_en" : {
                 "id" : "Q07010_1_en",
                 "title" : "Desired Design of Health Insurance",
-                "description" : "Imagine it were up to you to design Americans' health insurance plans such that they are most cost-effective and that patients get the best care while having to pay the lowest insurance premiums. For the following types of medical care, please say which ones should receive: full coverage (the patient pays no costs out of pocket), generous coverage (the patient has only minimal copay or deductibles), low coverage (costs are shared and the patient bears a significant share of total costs), no coverage (meaning the patient has to pay the full costs out of pocket). Bear in mind that the more generous coverage is, the higher health insurance premiums can be expected to be.",
+                "description" : "Desired Design of Health Insurance for the following types of of medical care: Preventive care, Primary care visits, Maternity and newborn care, Specialist visits for non-essential care, Medical care for catastrophic situations, Emergency room care, Pediatric care",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -3083,40 +2907,595 @@
             "title": "Government questions (specific)",
             "description": "Questions to examine government intervention regarding health policy",
             "questions": {
-              "dummy_Q09001": {
-                "id": "dummy_Q09001",
+              "Q09001_en": {
+                "id": "Q09001_en",
                 "title": "Improve Healthcare",
                 "description": "To improve access to health care for all Americans, rich or poor, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
               }
             }
-          },
+          }
+        }
+      },
+      "trade_survey" : {
+        "title": "Trade Policy",
+        "additionalGroups" : {},
+        "topics" : {
           "Text Anaysis" : {
             "id": "Text Anaysis",
             "title": "Text Anaysis",
-            "description": "Questions to examine textual analysis regarding health policy",
+            "description": "Questions to examine textual analysis regarding trade policy",
             "questions": {
               "Q02002": {
                 "id": "Q02002",
                 "title": "Main considerations",
-                "description": "Main considerations",
+                "description": "When you think about trade policy and whether the U.S. should put some restrictions on trade with other countries such as tariffs, what are the main considerations that come to your mind?",
                 "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02002_health.png"
+                "img_url" : "Question_Q02002_trade.png"
               },
               "Q02003": {
                 "id": "Q02003",
                 "title": "Goals",
-                "description": "Goals",
+                "description": "What would be a ”good” trade policy in your view? What would be the goal of a good trade policy?",
                 "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02003_health.png"
+                "img_url" : "Question_Q02003_trade.png"
               },
               "Q02004": {
                 "id": "Q02004",
                 "title": "Shortcomings",
-                "description": "Shortcomings",
+                "description": "What do you think are the issues with or shortcomings of the current U.S. trade policy?",
                 "type" : "WORDCLOUD",
-                "img_url" : "Question_Q02004_health.png"
+                "img_url" : "Question_Q02004_trade.png"
+              }
+            }
+          },
+          "Personal Exposure" : {
+            "id": "Personal Exposure",
+            "title": "Personal Exposure",
+            "description": "Questions to examine the individual's exposure to trade policy",
+            "questions": {
+              "Q03001_en": {
+                "id": "Q03001_en",
+                "title": "Personal Impact of Trade Policy",
+                "description": "Do you feel that U.S. trade policy has important, direct effects on your own life?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes, it has very important direct effects on my own life; It has some effects on my own life", "No, it has no direct effects on my own life"]
+              }
+            }
+          },
+          "Knowledge about policy" : {
+            "id": "Knowledge about policy",
+            "title": "Knowledge about policy",
+            "description": "Questions to examine the individual's knowledge about trade policy",
+            "questions": {
+              "Q04002_en": {
+                "id": "Q04002_en",
+                "title": "Import Tariff",
+                "description": "Do you know what an import tariff is?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"],
+                "correct" : "A tariff on goods coming into a country from abroad, often used by governments as a way of reducing imports and protecting local industries.",
+                "source" : "Lexicon",
+                "source_url" : "http://lexicon.ft.com/Term?term=import-tariff"
+              },
+              "Q04004_en": {
+                "id": "Q04004_en",
+                "title": "Import Quota",
+                "description": "Do you know what an import quota is?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"],
+                "correct" : "The import quota means physical limitation of the quantities of different products to be imported from foreign countries within a specified period of time, usually one year. The import quota may be fixed either in terms of quantity or the value of the product.",
+                "source" : "Economics Discussion",
+                "source_url" : "http://www.economicsdiscussion.net/import-quotas/import-quotas-meaning-objectives-and-types-international-economics/30454"
+              },
+              "Q04006_en": {
+                "id": "Q04006_en",
+                "title": "Share of Agricultural Imports",
+                "description": "What share of the goods that the U.S. imports are agricultural goods?",
+                "type" : "NUMERIC",
+                "correct" : "4.1",
+                "source" : "Statista",
+                "source_url" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/"
+              },
+              "Q04007_en": {
+                "id": "Q04007_en",
+                "title": "Share of Imports Subject to Tariff",
+                "description": "Of all the goods that the U.S. imports, what share is subject to a tariff or import duty?",
+                "type" : "NUMERIC",
+                "correct" : "Approximately one half",
+                "source" : "Tax Foundation",
+                "source_url" : "https://taxfoundation.org"
+              },
+              "Q04009_en": {
+                "id": "Q04009_en",
+                "title": "Principal Export Destination",
+                "description": "To which country does the U.S. export the most, in terms of the net dollar value?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Brazil", "Canada", "China", "France", "Germany", "India", "Ireland", "Italy", "Japan", "Mexico", "Netherlands", "South Korea", "Switzerland", "Taiwan", "United Kingdom"],
+                "correct" : "Canada",
+                "source" : "Census Trade Statistics",
+                "source_url" : "https://www.census.gov/foreign-trade/statistics/highlights/toppartners.html"
+              },
+              "Q04010_en": {
+                "id": "Q04010_en",
+                "title": "Principal Import Provenance",
+                "description": "From which country does the U.S. import the most, in terms of the net dollar value",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Brazil", "Canada", "China", "France", "Germany", "India", "Ireland", "Italy", "Japan", "Mexico", "Netherlands", "South Korea", "Switzerland", "Taiwan", "United Kingdom"],
+                "correct" : "China",
+                "source" : "Census Trade Statistics",
+                "source_url" : "https://www.census.gov/foreign-trade/statistics/highlights/toppartners.html"
+              },
+              "Q04011_en": {
+                "id": "Q04011_en",
+                "title": "Trade Evolution Over Time",
+                "description": "Over time, how has the level of trade between the U.S. and other countries changed?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["It has decreased", "It has stayed more or less the same", "It has increased"],
+                "correct" : "It has increased",
+                "source" : "Tax Foundation",
+                "source_url" : "https://taxfoundation.org/impact-trade-tariffs-united-states/"
+              }
+            }
+          },
+          "Expected Effects" : {
+            "id": "Expected Effects",
+            "title": "Expected Effects",
+            "description": "Questions to examine the expected effects of trade policy",
+            "questions": {
+              "Q06001_1_en": {
+                "id": "Q06001_1_en",
+                "title": "Effects of Trade",
+                "description": "As trade with other countries has increased, how much have the following groups lost or gained from it? Please rate on a scale of 1 to 5, 1 being 'lost a lot' and 5 'gained a lot'.",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "Q06001_1_en",
+                    "title" : "Large Corporations",
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3", "4", "5"],
+                    "questions" : [
+                      {
+                        "id" : "Q06001_1_en",
+                        "title" : "Control",
+                        "treatments" : ["Neutral", "Gender"]
+                      },
+                      {
+                        "id" : "Q06201_1",
+                        "title" : "You",
+                        "treatments" : ["You"]                        
+                      }
+                    ]
+                  },
+                  {
+                    "id" : "Q06001_2_en",
+                    "title" : "High-income Households",
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3", "4", "5"], 
+                    "questions" : [
+                      {
+                        "id" : "Q06001_2_en",
+                        "title" : "Control",
+                        "treatments" : ["Neutral", "Gender"]
+                      },
+                      {
+                        "id" : "Q06201_2",
+                        "title" : "You",
+                        "treatments" : ["You"]                        
+                      }
+                    ]
+                  },
+                  {
+                    "id" : "Q06001_3_en",
+                    "title" : "Middle-income Households",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
+                  },
+                  {
+                    "id" : "Q06001_4_en",
+                    "title" : "Low-income Households",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
+                  },
+                  {
+                    "id" : "Q06001_5_en",
+                    "title" : "Small Businesses",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["1", "2", "3", "4", "5"]
+                  }
+                ]
+              },
+              "Q06201B": {
+                "id": "Q06201B",
+                "title": "Personal situation",
+                "description": "On balance, would you say that trade between the U.S. and other countries has made you better off or worse off?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Better off", "Worse off"]
+              },
+              "Q06201C_1": {
+                "id": "Q06201C_1",
+                "title": "Magnitude on personal situation",
+                "description": "How much do you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
+                "type" : "CATEGORICAL",
+                "sorter" : ["1", "2", "3", "4", "5"]
+              },
+              "Q06003_en": {
+                "id": "Q06003_en",
+                "title": "Effect on Jobs",
+                "description": "Whether increased trade with other countries affects American jobs, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
+                "type" : "TREATMENT",
+                "sorter" : ["Yes", "No"],
+                "questions" : [
+                  {
+                    "id" : "Q06003_en",
+                    "title" : "CONTROL",
+                    "description" : "Do you feel that most American jobs are being affected by US trade policy?",
+                    "treatments" : ["Neutral"]
+                  },
+                  {
+                    "id" : "Q06003_en",
+                    "title" : "YOU",
+                    "description" : "Do you feel that your own job is being affected by U.S. trade policy?",
+                    "treatments" : ["You"]
+                  }
+                ]
+              },
+              "Q06004_en": {
+                "id": "Q06004_en",
+                "title": "Effect on Workers",
+                "description": "Overall, has international trade helped or hurt U.S. workers?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"]
+              },
+              "Q06105" : {
+                "id" : "Q06005_1_en",
+                "title" : "Ability to find a new job",
+                "description" : "Do you think it is easy for the following types of workers to find jobs in a different sectors from the ones they are currently working in?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q06105",
+                    "title": "Low-skilled workers",
+                    "description": "Whether it is easy for low-skilled workers to find a job in a different sector from the one they are currently working in?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id": "Q06106",
+                    "title": "High-skilled workers",
+                    "description": "Whether it is easy for high-skilled workers to find a job in a different sector from the one they are currently working in?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id": "Q06205",
+                    "title": "Specific (you)",
+                    "description": "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
+                    "type" : "CAGTEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  }
+                ]
+              },
+              "Q06007_1_en": {
+                "id": "Q06007_1_en",
+                "title": "Unemployment and Inequality",
+                "description": "To what extent do you think that trade with other countries is a major reason for unemployment and a rise in inequality in the U.S.?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "Q06007_1_en",
+                    "title" : "Effects on Unemployment",
+                    "type" : "TREATMENT",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "questions" : [
+                        {
+                            "id" : "Q06007_1_en",
+                            "title" : "CONTROL",
+                            "description" : "Unemployment in some sectors and the decline of some industries in the U.S.",
+                            "treatments" : ["Neutral"]
+                        },
+                        {
+                            "id" : "Q06007_1_en",
+                            "title" : "YOU",
+                            "description" : "Unemployment in your sector and the decline of some industries in the U.S.",
+                            "treatments" : ["You"]
+                        }
+                      ]
+                  },
+                  {
+                    "id" : "Q06007_2_en",
+                    "title" : "Effects on Inequality",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"]
+                  }
+                ]
+              },
+              "Q06009_en": {
+                "id": "Q06009_en",
+                "title": "Price of Goods",
+                "description": "Overall, has international trade decreased the prices of goods sold in the U.S.?",
+                "type" : "TREATMENT",
+                "sorter" : ["Yes", "No"],
+                "questions" : [
+                  {
+                    "id" : "Q06009_en",
+                    "title" : "CONTROL",
+                    "description" : "Overall, has international trade decreased the prices of goods sold in the U.S.?",
+                    "treatments" : ["Neutral"]
+                  },
+                  {
+                    "id" : "Q06009_en",
+                    "title" : "YOU",
+                    "description" : "Overall, has international trade decreased the prices of goods that you buy regularly?",
+                    "treatments" : ["You"]
+                  }
+                ]
+              },
+              "Q06010_en": {
+                "id": "Q06010_en",
+                "title": "Innovation",
+                "description": "Do you think that the competitive pressure from international trade has increased innovation in the U.S.?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"]
+              },
+              "Q06011_en": {
+                "id": "Q06011_en",
+                "title": "GDP",
+                "description": "Overall, do you think that international trade has increased the growth of the GDP in the U.S.?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"]
+              },
+              "Q06012_en": {
+                "id": "Q06012_en",
+                "title": "Dollar value",
+                "description": "If the U.S. exports more goods abroad, what do you think will happen to the value of the dollar?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["It will increase", "It will not change", "It will decrease"]
+              },
+              "Q06013_en": {
+                "id": "Q06013_en",
+                "title": "Benefits of Trade",
+                "description": "Does trade make the countries involved better off in general?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["In general, both countries are better off", "In general, one country gains, the other one loses", "In general, both countries lose"]
+              },
+              "Q06014_en": {
+                "id": "Q06014_en",
+                "title": "Importing Lower-priced Goods",
+                "description": "Imagine the U.S. is able to produce better cars at a lower price than Germany is. Would it still make sense under some circumstances for the U.S. to import cars from Germany?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Yes", "No"]
+              }
+            }
+          },
+          "Case Study" : {
+            "id": "Case Study",
+            "title": "Case Study",
+            "description": "A case study presented to repsondents",
+            "questions": {
+              "Q06015_en": {
+                "id": "Q06015_en",
+                "title": "Case Study",
+                "description": "Let us now consider the following simplified example of what happens economically when there is more trade in some goods. Take for instance the car industry and the laptop industry. (...) Imagine now that the U.S. starts importing even more cars and producing less cars domestically. What will happen to:",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "Q06015_en",
+                    "title" : "Price of Cars",
+                    "description" : "What will happen to the price of cars in the U.S.?", 
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                  },
+                  {
+                    "id" : "Q06016_en",
+                    "title" : "Car Consumers",
+                    "description" : "Would you say that households who purchase cars in the U.S. are now better off?", 
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                  },
+                  {
+                    "id" : "Q06017_en",
+                    "title" : "Low-skilled Workers' Wages",
+                    "description" : "What will happen to the wages of low-skilled workers working in the car sector?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
+                  },
+                  {
+                    "id" : "Q06018_en",
+                    "title" : "Price of U.S. Laptops Abroad",
+                    "description" : "Imagine also that the U.S. starts producing and exporting more laptops. What will happen to the price of U.S. laptops abroad, i.e., in the countries where the U.S. sells laptops?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                  },
+                  {
+                    "id" : "Q06019_en",
+                    "title" : "High-skilled Workers' Wages",
+                    "description" : "What will happen to the wages of high-skilled workers working in the laptop sector?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
+                  },
+                  {
+                    "id" : "Q06020_en",
+                    "title" : "Changing Sectors and Increase in Exports",
+                    "description" : "Imagine that over time, some low-skilled workers from the car sector are able to quit their jobs and find new jobs in the laptop sector. What will happen to their wages now if the U.S. exports more laptops?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
+                  },
+                  {
+                    "id" : "Q06021_en",
+                    "title" : "Export Tax on Laptops",
+                    "description" : "If the U.S. were to impose an export tax on laptops, what would happen to the price of laptops abroad?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                  },
+                  {
+                    "id" : "Q06022_en",
+                    "title" : "Import Tariff on Cars",
+                    "description" : "If the U.S. were to impose an import tariff on cars sold in the U.S, what would happen to the price of cars in the U.S?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                  },
+                  {
+                    "id" : "Q06023_en",
+                    "title" : "Export Increase on Wages",
+                    "description" : "If exports from your sector to other countries would increase, what do you think will happen to your wage?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                  },
+                  {
+                    "id" : "Q06024_en",
+                    "title" : "Import Increase on Wages",
+                    "description" : "If the U.S. imported more of the goods produced in your sector, what do you think would happen to your wage?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                  }
+                ]
+              }
+            }
+          },
+          "Results" : {
+            "id": "Results",
+            "title": "Results",
+            "description": "Questions to examine the results of trade policy",
+            "questions": {
+              "Q07001_en": {
+                "id": "Q07001_en",
+                "title": "Support for less trade barriers",
+                "description": "Do you agree or disagree with the following statement: 'Increasing trade with other countries and reducing barriers to trade is something the U.S. should aim for.'",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"]
+              },
+              "Q07002_en": {
+                "id": "Q07002_en",
+                "title": "Fairness current trade policy",
+                "description": "Fairness of the current U.S. trade policy?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
+              },
+              "Q07003_en": {
+                "id": "Q07003_en",
+                "title": "Satisfaction with current trade policy",
+                "description": "Satisfaction with the current U.S. trade policy?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
+              },
+              "Q07006_1_en": {
+                "id": "Q07006_1_en",
+                "title": "Effects on Unemployment",
+                "description": "What do you think is the best policy tool to help workers in a declining industry threatened by foreign competition? Please rank the following options from best (1) to worst (3).",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "Q07006_1_en",
+                    "title" : "Restrict imports in industry",
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3"],
+                    "questions" : [
+                        {
+                            "id" : "Q07006_1_en",
+                            "title" : "CONTROL",
+                            "description" : "How effectively would restricting imports help workers in such an industry?",
+                            "treatments" : ["Neutral"]
+                        },
+                        {
+                            "id" : "Q07006_1_en",
+                            "title" : "YOU",
+                            "description" : "How effectively would restricting imports help workers in your industry?",
+                            "treatments" : ["You"]
+                        }
+                      ]
+                  },
+                  {
+                    "id" : "Q07006_2_en",
+                    "title" : "Provide more generous transfers and direct assistance",
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3"],
+                    "questions" : [
+                        {
+                            "id" : "Q07006_2_en",
+                            "title" : "CONTROL",
+                            "description" : "How effectively would providing generous transfers and direct assistance help workers in such an industry?",
+                            "treatments" : ["Neutral"]
+                        },
+                        {
+                            "id" : "Q07006_2_en",
+                            "title" : "YOU",
+                            "description" : "How effectively would providing generous transfers and direct assistance help workers in your industry?",
+                            "treatments" : ["You"]
+                        }
+                      ]
+                  },
+                  {
+                    "id" : "Q07006_3_en",
+                    "title" : "Subsidize production",
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3"],
+                    "questions" : [
+                        {
+                            "id" : "Q07006_3_en",
+                            "title" : "CONTROL",
+                            "description" : "How effectively would subsidizing production help workers in such an industry?",
+                            "treatments" : ["Neutral"]
+                        },
+                        {
+                            "id" : "Q07006_3_en",
+                            "title" : "YOU",
+                            "description" : "How effectively would subsidizing production help workers in your industry?",
+                            "treatments" : ["You"]
+                        }
+                      ]
+                  }
+                ]
+              },
+              "Q07007_en": {
+                "id": "Q07007_en",
+                "title": "National Food Security",
+                "description": "What do you think is the best policy tool to ensure national food security?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Restrict food imports from abroad", "Provide more production subsidies in the food sector"]
+              },
+              "Q07008_en": {
+                "id": "Q07008_en",
+                "title": "Tariff Responses",
+                "description": "If the U.S. imposes tariffs on many imports, how likely or unlikely is it that other countries follow suit and also impose tariffs?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Very likely, likely", "Unlikely", "Very unlikely"]
+              },
+              "Q07009_en": {
+                "id": "Q07009_en",
+                "title": "Protect New Industries",
+                "description": "Let us consider a given relatively new industry in which other countries are currently able to produce goods for cheaper than American firms. Do you think it makes sense to protect American firms in this industry by using tariffs or import restrictions (even if this means higher prices for consumers) or is it better to let the American firms immediately face foreign competition, forcing them to become more competitive?",
+                "type" : "TREATMENT",
+                "sorter" : ["It makes sense to protect for a while", "It makes sense to let these firms face foreign competition to become more competitive"],
+                "questions" : [
+                  {
+                      "id" : "Q07009_en",
+                      "title" : "CONTROL",
+                      "description" : "Let us consider a given relatively new industry in which other countries are currently able to produce goods for cheaper than American firms. In your opinion, does it make sense to protect the American firms in this industry by using tariffs or import restrictions (even if this means higher prices for consumers) or is it better to let the American firms immediately face foreign competition, forcing them to become more competitive?",
+                      "treatments" : ["Neutral"]
+                  },
+                  {
+                      "id" : "Q07009_en",
+                      "title" : "YOU",
+                      "description" : "Imagine that the goods or services currently produced in your sector or industry can actually be produced in a cheaper way in another country. In your opinion, would it make sense to protect the American firms in your sector or industry by using tariffs or import restrictions (even If this means higher prices for consumers) or would it be better to let the American firms in your sector or industry immediately face foreign competition, forcing them to become more competitive?",
+                      "treatments" : ["You"]
+                  }
+                ]
+              }
+            }
+          },
+          "Views on government" : {
+            "id": "Views on government",
+            "title": "Views on government",
+            "description": "Questions to examine views on government",
+            "questions": {
+              "Q09003_en": {
+                "id": "Q09003_en",
+                "title": "Gains and Losses of Increase in Trade",
+                "description": "Which statement comes closest to your views? When there is more trade between the US and other countries…",
+                "type" : "CATEGORICAL",
+                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
               }
             }
           }
