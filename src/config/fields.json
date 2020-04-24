@@ -117,9 +117,9 @@
       "income_survey": {
         "title": "Income Tax",
         "topics": {
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
+          "Text Analysis" : {
+            "id": "Text Analysis",
+            "title": "Text Analysis",
             "description": "Questions to examine textual analysis regarding income policy",
             "questions": {
               "Q02002": {
@@ -1143,9 +1143,9 @@
         "title": "Estate Tax",
         "additionalGroups" : {},
         "topics" : {
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
+          "Text Analysis" : {
+            "id": "Text Analysis",
+            "title": "Text Analysis",
             "description": "Questions to examine textual analysis regarding estate tax policy",
             "questions": {
               "Q02002": {
@@ -2082,9 +2082,9 @@
         "title": "Health Insurance",
         "additionalGroups" : {},
         "topics" : {
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
+          "Text Analysis" : {
+            "id": "Text Analysis",
+            "title": "Text Analysis",
             "description": "Questions to examine textual analysis regarding health policy",
             "questions": {
               "Q02002": {
@@ -2923,9 +2923,9 @@
         "title": "Trade Policy",
         "additionalGroups" : {},
         "topics" : {
-          "Text Anaysis" : {
-            "id": "Text Anaysis",
-            "title": "Text Anaysis",
+          "Text Analysis" : {
+            "id": "Text Analysis",
+            "title": "Text Analysis",
             "description": "Questions to examine textual analysis regarding trade policy",
             "questions": {
               "Q02002": {
