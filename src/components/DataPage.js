@@ -18,7 +18,7 @@ function addSurveyType(data, survey_id) {
 addSurveyType(incomeSurveyData, "Income Tax");
 addSurveyType(tradeSurveyData, "Trade Policy");
 addSurveyType(estateSurveyData, "Estate Tax");
-addSurveyType(healthSurveyData, "Health Policy");
+addSurveyType(healthSurveyData, "Health Insurance");
 
 var dataCache = {
     "income_survey" : incomeSurveyData,
