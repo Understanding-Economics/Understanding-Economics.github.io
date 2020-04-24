@@ -42,12 +42,14 @@ export default class HistogramView extends React.Component {
         let nticks = selectedQuestion.nticks ? selectedQuestion.nticks : 15;
         let correctList = selectedQuestion.correct ? [selectedQuestion.correct] : [];
         let dataWithCorrect = dataNumeric.concat(correctList);
+        let minValue = selectedQuestion.min_val || d3.min(dataWithCorrect);
+        let maxValue = selectedQuestion.max_val || d3.max(dataWithCorrect)
         let scale = d3.scaleLinear()
-                        .domain([d3.min(dataWithCorrect), d3.max(dataWithCorrect)])
-                        .range([d3.min(dataWithCorrect), d3.max(dataWithCorrect)]);
+                        .domain([minValue, maxValue])
+                        .range([minValue, maxValue]);
 
         let histogram = d3.histogram()
-                            .domain([d3.min(dataWithCorrect), d3.max(dataWithCorrect)])
+                            .domain([minValue, maxValue])
                             .thresholds(scale.ticks(nticks));
         
         let bins = histogram(cleanData);
