@@ -34,9 +34,9 @@ export default class NumericDisplay extends React.Component {
         return (
             <div className = "NumericDisplay">
                 <div className = "row header">
-                    <h5>Average response to: <br/> <strong>{this.props.question.description}</strong>
+                    <span>Average response to:<br/><strong>{this.props.question.description}</strong>
                     <br/><br/>
-                    By <strong>{this.props.group.title}</strong></h5>
+                    By <strong>{this.props.group.title}</strong></span>
                 </div>
                 <div className = "row">
                     <CorrectDisplay question ={this.props.question} formatter = {formatter} />

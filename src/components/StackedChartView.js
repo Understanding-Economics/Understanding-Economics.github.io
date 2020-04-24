@@ -83,17 +83,13 @@ export default class StackedChartView extends React.PureComponent {
                 }, 
                 y : {
                     // This is some hacky shit to get rid of the 110% display
-                    max : 0.95,
-                    label: "Proportion",
                     tick : {
+                        values : [0, 0.5, 1], 
                         format: d3.format(".0%")
                     }
                 }
-            },
+            }
         }, this.props.c3Override || {}]));
-        for(let elt of document.getElementsByClassName("c3-axis-y-label")) {
-            elt.innerHTML = "Proportion";
-        }
         // document.getElementById(elementId).getElementsByTagName("p")[0].remove();
 
         if(selectedQuestion.correct != undefined) {

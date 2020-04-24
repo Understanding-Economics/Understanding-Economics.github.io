@@ -50,14 +50,14 @@ export default class TreatmentDisplay extends React.Component {
             )
         return(
             <div className = "TreatmentDisplay">
-                <div className = "row">
-                    <h5>
+                <div className = "row header">
+                    <span>
                         Responses to: <br/> 
                         <strong>{this.props.question.title}</strong> <br/><br/>
 
                         Grouped by <strong>{this.props.group.title}</strong>
 
-                    </h5>
+                    </span>
                 </div>
                 <div className = "row">
                     <div className = "col-md-3">

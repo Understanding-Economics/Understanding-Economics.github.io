@@ -31,11 +31,11 @@ export default class FrequencyDisplay extends React.Component {
         return (
             <div className = "FrequencyDisplay">
                 <div className = "row header">
-                    <h5>Distribution of responses to:
+                    <span>Distribution of responses to:
                     <br/><strong>{this.props.question.description || this.props.question.title}</strong>
                     <br/> <br/>
                     Among {this.state.selectedSurvey.toLowerCase()} respondents. 
-                    </h5>
+                    </span>
                 </div>
                 <div className = "row">
                     { bubbles }

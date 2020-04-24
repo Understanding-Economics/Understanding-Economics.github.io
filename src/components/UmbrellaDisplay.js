@@ -30,8 +30,8 @@ export default class UmbrellaDisplay extends React.Component {
 
         return (
             <div className = "UmbrellaDisplay">
-                <div className = "row">
-                    <h5>{ this.props.question.description }</h5>
+                <div className = "row header">
+                    <span>{ this.props.question.description }</span>
                 </div>
                 <div className = "row">
                     { bubbles }
