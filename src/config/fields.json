@@ -2227,14 +2227,15 @@
                     "id": "Q04020_4_en",
                     "title": "Share of Americans on Other Insurance",
                     "description" : "Other insurance (policies purchased directly from an insurance company, military, etc.)",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : 10.7
                   },
                   {
                     "id": "Q04020_5_en",
                     "title": "Share of Americans Uninsured",
                     "description" : "Uninsured",
                     "type" : "NUMERIC",
-                    "correct" : 27.4,
+                    "correct" : 8.7,
                     "source" : "Kaiser Family Foundation",
                     "source_url" : "https://www.kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/"
                   }
