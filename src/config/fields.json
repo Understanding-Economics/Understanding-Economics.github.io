@@ -246,8 +246,8 @@
                 "description": "What share of income do you think a middle-class household pays in federal income taxes?",
                 "type" : "NUMERIC",
                 "correct" : 15,
-                "source" : "NerdWallet",
-                "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
+                "source" : ["NerdWallet", "Dept. of Numbers"],
+                "source_url" : ["https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/", "https://www.deptofnumbers.com/income/us/"],
                 "format" : "percent"
               },
               "Q04014_en": {
@@ -1212,8 +1212,8 @@
                 "title": "How many people are subject to estate tax",
                 "description": "Out of 1000 people, how many would you say pay the federal estate tax at death?",
                 "type" : "NUMERIC",
-                "correct" : "2 (in 2017); 1 (in 2018)",
-                "source" : "Center on Budget and Policy Priorities",
+                "correct" : 1,
+                "source" : "Center on Budget and Policy Priorities (2018)",
                 "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04005_en": {
@@ -1283,7 +1283,7 @@
                 "type" : "NUMERIC",
                 "correct" : 16.5,
                 "format" : "percent",
-                "source" : "Center on Budget and Policy Priorities",
+                "source" : "Center on Budget and Policy Priorities (2018)",
                 "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04012_en": {
@@ -2248,8 +2248,8 @@
                 "description": "Out of 100 American children, aged below 18, how many are enrolled in Medicaid?",
                 "type" : "NUMERIC",
                 "correct" : 40.2,
-                "source" : "Statista",
-                "source_url" : " https://www.statista.com/topics/1091/medicaid/"
+                "source" : ["Statista", "Kids Count Datacenter"],
+                "source_url" : ["https://www.statista.com/topics/1091/medicaid/", "https://datacenter.kidscount.org/data/tables/99-total-population-by-child-and-adult#detailed/1/any/false/871/39,40/416,417"]
               },
               "Q04010_1_en" : {
                 "id" : "Q04010_1_en",
