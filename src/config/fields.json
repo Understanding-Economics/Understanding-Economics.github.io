@@ -7,6 +7,25 @@
         "type" : "CATEGORICAL",
         "sorter" : ["18-35", "36-50", "51-69"]
       },
+      "edugroup": {
+        "id": "edugroup",
+        "title": "Education level",
+        "description": "The highest education level achieved by the repsondent.",
+        "type" : "CATEGORICAL",
+        "sorter" : ["Eighth Grade or lower", "Some High School", "High School degree/ GED", "Some College", "2-year College Degree", "4-year College Degree", "Master's Degree", "Professional Degree (JD, MD, MBA)", "Doctoral Degree"]
+      },
+      "employment_agg": {
+        "id": "employment_agg",
+        "title": "Employment Status",
+        "description": "The current employment status of the respondent.",
+        "type" : "CATEGORICAL"
+      },
+      "gender": {
+        "id": "gender",
+        "title": "Gender",
+        "description": "The gender of the respondent.",
+        "type" : "CATEGORICAL"
+      },
       "incomegroup": {
         "id": "incomegroup",
         "title": "Income Group",
@@ -16,13 +35,6 @@
           "$0-$19999", "$20000-$39999", "$40000-$69999", "$70000-$109999", "$110000+"
         ]
       },
-      "born_us": {
-        "id": "born_us",
-        "title": "Born in US",
-        "description": "Whether the respondent was born in the United States.",
-        "type" : "CATEGORICAL",
-        "sorter" : ["Yes", "No"]
-      },
       "married": {
         "id": "married",
         "title": "Married",
@@ -31,12 +43,6 @@
         "sorter" : [
           "Married", "Non-married"
         ]
-      },
-      "gender": {
-        "id": "gender",
-        "title": "Gender",
-        "description": "The gender of the respondent.",
-        "type" : "CATEGORICAL"
       },
       "children": {
         "id": "children",
@@ -52,29 +58,17 @@
         "type" : "CATEGORICAL",
         "sorter" : ["African American", "Asian", "Hispanic", "White non Hispanic", "Other"]
       },
-      "edugroup": {
-        "id": "edugroup",
-        "title": "Education level",
-        "description": "The highest education level achieved by the repsondent.",
+      "born_us": {
+        "id": "born_us",
+        "title": "Born in US",
+        "description": "Whether the respondent was born in the United States.",
         "type" : "CATEGORICAL",
-        "sorter" : ["Eighth Grade or lower", "Some High School", "High School degree/ GED", "Some College", "2-year College Degree", "4-year College Degree", "Master's Degree", "Professional Degree (JD, MD, MBA)", "Doctoral Degree"]
-      },
-      "employment_agg": {
-        "id": "employment_agg",
-        "title": "Employment Status",
-        "description": "The current employment status of the respondent.",
-        "type" : "CATEGORICAL"
+        "sorter" : ["Yes", "No"]
       },
       "social_class": {
         "id": "social_class",
         "title": "Social Class",
         "description": "The social class that the respondent identifies with.",
-        "type" : "CATEGORICAL"
-      },
-      "ideology": {
-        "id": "ideology",
-        "title": "Economic Ideology",
-        "description": "The economic ideology that the respondent self-identifies with.",
         "type" : "CATEGORICAL"
       },
       "partygroup": {
@@ -84,33 +78,39 @@
         "type" : "CATEGORICAL",
         "sorter": ["Democrat", "Independent", "Republican", "Other"]
       },
-      "newsgroup": {
-        "id": "newsgroup",
-        "title": "Source of News",
-        "description": "The medium from which the respondent gets most of their news",
+      "candidate2016_agg": {
+        "id": "candidate2016_agg",
+        "title": "2016 Presidential Candidate",
+        "description": "Among those on the ballot, the candidate whom the respondent supported in the 2016 presidential election.",
         "type" : "CATEGORICAL",
-        "sorter" : ["Newspaper", "TV, radio", "Internet", "Other", "None"]
+        "sorter" : ["Clinton", "Trump", "Other"]
+      }, 
+      "ideology": {
+        "id": "ideology",
+        "title": "Economic Ideology",
+        "description": "The economic ideology that the respondent self-identifies with.",
+        "type" : "CATEGORICAL"
       },
       "econgroup": {
         "id": "econgroup",
-        "title": "Knowledge of Economics",
+        "title": "Economics Knowledge",
         "description": "The respondent's self-reported knowedge of economics.",
         "type" : "CATEGORICAL",
         "sorter" : ["Not highly knowledgeable", "Highly knowledgeable"]
       },
-      "candidate2016_agg": {
-        "id": "candidate2016_agg",
-        "title": "2016 Presidential Candidate",
-        "description": "The candidate whom the respondent supported in the 2016 presidential election.",
-        "type" : "CATEGORICAL",
-        "sorter" : ["Clinton", "Trump", "Other"]
-      }, 
       "econ" : {
         "id" : "econ",
         "title" : "Studied Economics",
         "description" : "Whether the individual studied economics in college",
         "type" : "CATEGORICAL",
         "sorter" : ["Yes", "No"]
+      },
+      "newsgroup": {
+        "id": "newsgroup",
+        "title": "Source of News",
+        "description": "The medium from which the respondent gets most of their news",
+        "type" : "CATEGORICAL",
+        "sorter" : ["Newspaper", "TV, radio", "Internet", "Other", "None"]
       }
     },
     "surveys": {
@@ -190,7 +190,8 @@
                 "format" : "dollar",
                 "correct" : 600001,
                 "source" : "NerdWallet", 
-                "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/"
+                "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
+                "nticks" : 5
               },
               "Q04008_en": {
                 "id": "Q04008_en",
@@ -246,8 +247,8 @@
                 "description": "What share of income do you think a middle-class household pays in federal income taxes?",
                 "type" : "NUMERIC",
                 "correct" : 15,
-                "source" : "NerdWallet",
-                "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
+                "source" : ["NerdWallet", "Dept. of Numbers"],
+                "source_url" : ["https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/", "https://www.deptofnumbers.com/income/us/"],
                 "format" : "percent"
               },
               "Q04014_en": {
@@ -1199,8 +1200,8 @@
             "questions": {
               "Q04002_en": {
                 "id": "Q04002_en",
-                "title": "Scope of Estate Tax",
-                "description": "Is every individual's estate taxed?",
+                "title": "Is everyone subject to estate tax",
+                "description": "Is every individual's estate taxed",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"],
                 "correct" : "No",
@@ -1209,12 +1210,15 @@
               },
               "Q04003_en": {
                 "id": "Q04003_en",
-                "title": "Number of Estates Subject to Tax at Death",
-                "description": "Number of estates out of every thousand subject to tax at death",
+                "title": "How many people are subject to estate tax",
+                "description": "Out of 1000 people, how many would you say pay the federal estate tax at death?",
                 "type" : "NUMERIC",
-                "correct" : "2",
-                "source" : "Center on Budget and Policy Priorities, 2017",
-                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
+                "correct" : 1,
+                "source" : "Center on Budget and Policy Priorities (2018)",
+                "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax",
+                "max_val" : 999,
+                "min_val" : 0,
+                "nticks" : 10
               },
               "Q04005_en": {
                 "id": "Q04005_en",
@@ -1282,7 +1286,7 @@
                 "type" : "NUMERIC",
                 "correct" : 16.5,
                 "format" : "percent",
-                "source" : "Center on Budget and Policy Priorities",
+                "source" : "Center on Budget and Policy Priorities (2018)",
                 "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04012_en": {
@@ -2174,9 +2178,9 @@
                 "id": "dummy_medicaid",
                 "title": "Medicaid",
                 "description": "What is Medicaid? Who is eligible for Medicaid?",
-                "type" : "WORDCLOUD",
-                "sorter" : ["Yes", "No"],
-                "correct" : "Medicaid provides health coverage to millions of Americans, including eligible low-income adults, children, pregnant women, elderly adults and people with disabilities. Medicaid is administered by states, according to federal requirements. The program is funded jointly by states and the federal government.",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Correct", "Incorrect"],
+                "correct" : "An answer is considered correct if it mentions the words 'poor', 'income', or 'poverty'. An answer is incorrect if it does not mention any of those words, or if it mentions the words 'elderly', 'old', 'retire', '65', or 'senior'.",
                 "source" : "Medicaid.gov",
                 "source_url" : "https://www.medicaid.gov/medicaid/index.html"
               },
@@ -2184,8 +2188,9 @@
                 "id": "dummy_medicare",
                 "title": "Medicare",
                 "description": "What is Medicare? Who is eligible for Medicare?",
-                "type" : "WORDCLOUD",
-                "correct" : "Medicare is the federal health insurance program for: People who are 65 or older; Certain younger people with disabilities; People with End-Stage Renal Disease (permanent kidney failure requiring dialysis or a transplant, sometimes called ESRD)",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Correct", "Incorrect"],
+                "correct" : "An answer is considered correct if it mentions the words 'elderly', 'old', 'retire', '65', or 'senior'. An answer is incorrect if it does not mention any of those words, or if it mentions the words 'poor', 'income', or 'poverty'.",
                 "source" : "Medicare.gov",
                 "source_url" : "https://www.medicare.gov/what-medicare-covers/your-medicare-coverage-choices/whats-medicare"
               },
@@ -2226,14 +2231,15 @@
                     "id": "Q04020_4_en",
                     "title": "Share of Americans on Other Insurance",
                     "description" : "Other insurance (policies purchased directly from an insurance company, military, etc.)",
-                    "type" : "NUMERIC"
+                    "type" : "NUMERIC",
+                    "correct" : 10.7
                   },
                   {
                     "id": "Q04020_5_en",
                     "title": "Share of Americans Uninsured",
                     "description" : "Uninsured",
                     "type" : "NUMERIC",
-                    "correct" : 27.4,
+                    "correct" : 8.7,
                     "source" : "Kaiser Family Foundation",
                     "source_url" : "https://www.kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/"
                   }
@@ -2245,8 +2251,8 @@
                 "description": "Out of 100 American children, aged below 18, how many are enrolled in Medicaid?",
                 "type" : "NUMERIC",
                 "correct" : 40.2,
-                "source" : "Statista",
-                "source_url" : " https://www.statista.com/topics/1091/medicaid/"
+                "source" : ["Statista", "Kids Count Datacenter"],
+                "source_url" : ["https://www.statista.com/topics/1091/medicaid/", "https://datacenter.kidscount.org/data/tables/99-total-population-by-child-and-adult#detailed/1/any/false/871/39,40/416,417"]
               },
               "Q04010_1_en" : {
                 "id" : "Q04010_1_en",
@@ -2309,42 +2315,58 @@
               "Q04011_en": {
                 "id": "Q04011_en",
                 "title": "Individual Mandate in 2018",
-                "description": "In 2018, was there an individual mandate, whereby everyone was obligated to buy health insurance?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"],
-                "correct" : "Yes",
-                "source" : "Healthcare.gov",
-                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
-              },
-              "Q04012_en": {
-                "id": "Q04012_en",
-                "title": "No Insurance Before 2018",
-                "description": "What happened if you did not have health insurance, until 2018?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["A penalty had to be paid", "You were forced to buy insurance", "You received a warning",  "Nothing happened"],
-                "correct" : "A penalty had to be paid",
-                "source" : "Healthcare.gov",
-                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                "description": "Questions regarding the individual mandate for health insurance in 2018",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "Q04011_en",
+                    "title": "Existence",
+                    "description": "In 2018, was there an individual mandate, whereby everyone was obligated to buy health insurance?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"],
+                    "correct" : "Yes",
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                  },
+                  {
+                    "id": "Q04012_en",
+                    "title": "Consequences",
+                    "description": "What happened if you did not have health insurance, until 2018?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A penalty had to be paid", "You were forced to buy insurance", "You received a warning",  "Nothing happened"],
+                    "correct" : "A penalty had to be paid",
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                  }
+                ]
               },
               "Q04013_en": {
                 "id": "Q04013_en",
-                "title": "Changes to Individual Mandate in 2019",
-                "description": "Were any changes made to the individual mandate in 2019?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"],
-                "correct" : "Yes",
-                "source" : "Healthcare.gov",
-                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
-              },
-              "Q04014_en": {
-                "id": "Q04014_en",
-                "title": "Legislation Changes to Individual Mandate in 2019",
-                "description": "How did the legislation on the individual mandate change in 2019?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["The penalty was increased", "The penalty was decreased", "The penalty was reduced to zero", "The individual mandate was canceled", "Other"],
-                "correct" : "The penalty was reduced to zero",
-                "source" : "Healthcare.gov",
-                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                "title": "Individual Mandate in 2019",
+                "description": "Questions regarding the individual mandate for health insurance in 2019",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q04013_en",
+                    "title": "Changes to Individual Mandate",
+                    "description": "Were any changes made to the individual mandate in 2019?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"],
+                    "correct" : "Yes",
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                  },
+                  {
+                    "id": "Q04014_en",
+                    "title": "How did the Individual Mandate Change",
+                    "description": "How did the legislation on the individual mandate change in 2019?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["The penalty was increased", "The penalty was decreased", "The penalty was reduced to zero", "The individual mandate was canceled", "Other"],
+                    "correct" : "The penalty was reduced to zero",
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                  }
+                ]
               },
               "Q04015_en": {
                 "id": "Q04015_en",
@@ -3378,6 +3400,184 @@
                 "description": "Satisfaction with the current U.S. trade policy?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
+              },
+              "Q07004": {
+                "id": "Q07004",
+                "title": "Industry Protection from foreign competition",
+                "description": "Do you think the following industries should be protected from foreign competition using tariffs or other import restrictions?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "indus_1",
+                    "title" : "Dairy products",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_2",
+                    "title" : "Agricultural products (fruit, vegetables, plants)",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_3",
+                    "title" : "Beverages and tobaccos",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_4",
+                    "title" : "Minerals and metals",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_5",
+                    "title" : "Petroleum",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_6",
+                    "title" : "Chemicals",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_7",
+                    "title" : "Animal products (meat, fish)",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_8",
+                    "title" : "Textiles, clothing leather and footwear",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_9",
+                    "title" : "Machinery, transport, equipment and cars",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_10",
+                    "title" : "Manufactured goods",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  }
+                ]
+              },
+              "Q07005": {
+                "id": "Q07005",
+                "title": "Production Protection from foreign competition",
+                "description": "Do you think the following particular goods should be protected from foreign competition using tariffs or other import restrictions?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "prod_1",
+                    "title" : "Cars",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_2",
+                    "title" : "Washing machines",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_3",
+                    "title" : "Solar panels",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_4",
+                    "title" : "Shoes",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_5",
+                    "title" : "Machinery",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_6",
+                    "title" : "Oil",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_7",
+                    "title" : "Vegetables",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_8",
+                    "title" : "Fruits",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_9",
+                    "title" : "Toys",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_10",
+                    "title" : "Meat",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_11",
+                    "title" : "Fish",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_12",
+                    "title" : "Milk",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_13",
+                    "title" : "Steel",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_14",
+                    "title" : "Textiles",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_15",
+                    "title" : "Clothing",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_16",
+                    "title" : "Coffee and tea",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_17",
+                    "title" : "Chemicals",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  }
+                ]
               },
               "Q07006_1_en": {
                 "id": "Q07006_1_en",
