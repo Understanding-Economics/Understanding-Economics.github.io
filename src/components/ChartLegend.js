@@ -29,7 +29,7 @@ export default class ChartLegend extends React.PureComponent {
                 color : "black",
                 backgroundColor: colorPattern[i % colorPattern.length],
                 margin: "3px",
-                fontSize : val == this.props.question.correct ? "12pt" : "10pt",
+                fontSize : "10pt",
                 minHeight: "30px",
                 maxWidth: responses.length > 5 ? "18%" : `${(100 / responses.length) - 2}%`,
                 minWidth: "18%", 

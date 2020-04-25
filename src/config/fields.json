@@ -1344,7 +1344,7 @@
                       "title": "Share of wealth owned by top 1%",
                       "description": "What share of all of the wealth in the U.S. do you think is currently owned by the top 1%?",
                       "type" : "NUMERIC",
-                      "correct" : 22.0,
+                      "correct" : 22,
                       "format" : "percent",
                       "source" : "Stanford",
                       "source_url" : "https://inequality.stanford.edu/sites/default/files/Pathways-SOTU-2016-Wealth-Inequality-3.pdf"
@@ -1399,7 +1399,8 @@
                       "description": "What is the probability of getting from bottom to top quintile?",
                       "type" : "NUMERIC",
                       "correct" : 7.5,
-                      "format" : "percent"
+                      "format" : "percent",
+                      "nticks" : 10
                     },
                     {
                       "id": "Q04021_2_en",
@@ -1407,7 +1408,8 @@
                       "description": "What is the probability of getting from bottom to second quintile?",
                       "type" : "NUMERIC",
                       "correct" : 12.3,
-                      "format" : "percent"
+                      "format" : "percent",
+                      "nticks" : 6
                     },
                     {
                       "id": "Q04021_3_en",
@@ -1415,7 +1417,8 @@
                       "description": "What is the probability of getting from bottom to third quintile?",
                       "type" : "NUMERIC",
                       "correct" : 18.4,
-                      "format" : "percent"
+                      "format" : "percent",
+                      "nticks" : 10
                     },
                     {
                       "id": "Q04021_4_en",
@@ -1423,7 +1426,8 @@
                       "description": "What is the probability of remaining in bottom quintile?",
                       "type" : "NUMERIC",
                       "correct" : 28.0,
-                      "format" : "percent"
+                      "format" : "percent",
+                      "nticks" : 10
                     },
                     {
                       "id": "Q04021_5_en",
@@ -1431,7 +1435,8 @@
                       "description": "What is the probability of getting from bottom to top quintile?",
                       "type" : "NUMERIC",
                       "correct" : 33.7,
-                      "format" : "percent"
+                      "format" : "percent",
+                      "nticks" : 10
                     }
                 ]
               }
@@ -1828,6 +1833,7 @@
                 "description": "What effect would increasing the federal estate tax on wealthy households would have on economic activity?",
                 "type" : "TREATMENT",
                 "sorter" : ["Hurt economic activity", "Have no effect on economic activity", "Help economic activity"],
+                "color" : "ReverseGradient3",
                 "questions" : [
                   {
                     "id" : "Q06004_en",
@@ -1878,10 +1884,11 @@
               },
               "Q06006_en": {
                 "id": "Q06006_en",
-                "title": "Federal Budget Deficit",
+                "title": "Reducing Wealth Inequality",
                 "description": "View on whether increasing the federal estate tax is a good way to reduce wealth inequality?",
                 "type" : "TREATMENT",
                 "sorter" : ["It is one of the best ways to reduce wealth inequality", "It is a good way to reduce wealth inequality, but there are better ways", "It is a bad way to reduce wealth inequality", "It is one of the worst ways to reduce wealth inequality"],
+                "color" : "Gradient4", 
                 "questions" : [
                   {
                     "id" : "Q06006_en",
@@ -1909,6 +1916,7 @@
                 "description": "Is it fair that the estate of wealthy parents who have worked hard and saved a lot is subject to the federal estate tax at death?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
+                "color" : "ReverseGradient4", 
                 "questions" : [
                   {
                     "id" : "Q06008_en",
@@ -1936,6 +1944,7 @@
                 "description": "Imagine wealthy parents who inherited weatlh from their own parents. Is it fair that their estate be subject to the federal estate tax at death?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
+                "color" : "ReverseGradient4",
                 "questions" : [
                   {
                     "id" : "Q06009_en",
@@ -1963,6 +1972,7 @@
                 "description": "Is it fair that children born in very wealthy families have access to better resources than children from less wealthy families?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
+                "color" : "ReverseGradient4",
                 "questions" : [
                   {
                     "id" : "Q06010_en",
@@ -1990,6 +2000,7 @@
                 "description": "Is it fair that children born in very wealthy families inherit much more than children born in less wealthy families?",
                 "type" : "TREATMENT",
                 "sorter" : ["Very unfair", "Somewhat unfair", "Somewhat fair", "Very fair"],
+                "color" : "ReverseGradient4",
                 "questions" : [
                   {
                     "id" : "Q06011_en",

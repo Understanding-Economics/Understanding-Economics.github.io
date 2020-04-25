@@ -67,7 +67,7 @@ export default class HistogramView extends React.Component {
             bins[bins.length - 1]["x1"] = bins[bins.length - 1]["x0"] + (bins[bins.length - 2]["x1"] - bins[bins.length - 2]["x0"]) + 1;
         }
         let categories = bins.map(bin => `${bin["x0"]}-${bin["x1"]}`);
-        let correctBin = selectedQuestion.correct ? histogram([selectedQuestion.correct]).filter(x => x.length > 0)[0] : null;
+        let correctBin = selectedQuestion.correct ? bins.filter(bin => selectedQuestion.correct >= bin["x0"] && selectedQuestion.correct <= bin["x1"])[0] : null;
         if(!this.chart) {
             this.chart = c3.generate({
                 bindto: `#${elementId}`,
