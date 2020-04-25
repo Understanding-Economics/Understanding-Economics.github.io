@@ -64,7 +64,12 @@ export default class StackedChartView extends React.PureComponent {
                 left : 150
             },
             tooltip: {
-                grouped : false
+                grouped : false,
+                format : {
+                    name : (name, ratio, id, index) => {
+                        return wrap(name, 60);
+                    }
+                }
             }, 
             bar : {
                 width:{ 
@@ -111,3 +116,7 @@ export default class StackedChartView extends React.PureComponent {
         }
     }
 }
+
+const wrap = (s, w) => s.replace(
+    new RegExp(`(?![^\\n]{1,${w}}$)([^\\n]{1,${w}})\\s`, 'g'), '$1\n'
+);

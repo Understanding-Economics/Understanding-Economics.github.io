@@ -5,3 +5,7 @@
 .c3-chart-bar {
     opacity : 0.8 !important;
 }
+
+.name {
+    white-space:pre-wrap;
+}
