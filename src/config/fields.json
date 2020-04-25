@@ -2143,7 +2143,7 @@
               "Q03003_en": {
                 "id": "Q03003_en",
                 "title": "Medicaid or Medicare",
-                "description": "Are you on Medicaid or Medicare",
+                "description": "Are you on Medicaid or Medicare?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
@@ -2231,7 +2231,8 @@
                     "type" : "NUMERIC",
                     "correct" : 14,
                     "source" : "Kaiser Family Foundation",
-                    "source_url" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
+                    "source_url" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D",
+                    "nticks" : 10
                   },
                   {
                     "id": "Q04020_3_en",
@@ -2240,14 +2241,16 @@
                     "type" : "NUMERIC",
                     "correct" : 49,
                     "source" : "Kaiser Family Foundation",
-                    "source_url" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
+                    "source_url" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D", 
+                    "nticks" : 10
                   },
                   {
                     "id": "Q04020_4_en",
                     "title": "Share of Americans on Other Insurance",
                     "description" : "Other insurance (policies purchased directly from an insurance company, military, etc.)",
                     "type" : "NUMERIC",
-                    "correct" : 10.7
+                    "correct" : 10.7,
+                    "nticks" : 5
                   },
                   {
                     "id": "Q04020_5_en",
@@ -2256,7 +2259,8 @@
                     "type" : "NUMERIC",
                     "correct" : 8.7,
                     "source" : "Kaiser Family Foundation",
-                    "source_url" : "https://www.kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/"
+                    "source_url" : "https://www.kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/",
+                    "nticks" : 10
                   }
                 ]
               },
@@ -2267,7 +2271,8 @@
                 "type" : "NUMERIC",
                 "correct" : 40.2,
                 "source" : ["Statista", "Kids Count Datacenter"],
-                "source_url" : ["https://www.statista.com/topics/1091/medicaid/", "https://datacenter.kidscount.org/data/tables/99-total-population-by-child-and-adult#detailed/1/any/false/871/39,40/416,417"]
+                "source_url" : ["https://www.statista.com/topics/1091/medicaid/", "https://datacenter.kidscount.org/data/tables/99-total-population-by-child-and-adult#detailed/1/any/false/871/39,40/416,417"],
+                "nticks" : 10
               },
               "Q04010_1_en" : {
                 "id" : "Q04010_1_en",
@@ -2849,40 +2854,43 @@
                 "title": "Support for Medicare-for-all",
                 "description": "As you may know, some have proposed a 'Medicare-for-all' single payer health insurance program that would be administered by the federal government advanced through taxes. Please tell us if you favor or oppose this proposal, or if you don't know enough to say?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
               },
               "Q07007_en": {
                 "id": "Q07007_en",
                 "title": "Additional Help for Low-income Families",
                 "description": "Do you support additional transfers or subsidies to low-income families to help with the costs of health care?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                "color" : "ReverseGradient5", 
+                "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
               },
               "Q07008_en": {
                 "id": "Q07008_en",
                 "title": "Support for Individual Mandate",
                 "description": "Do you support an individual mandate whereby every individual is obliged to buy health insurance?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                "color" : "ReverseGradient5",
+                "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
               },
               "Q07009_en": {
                 "id": "Q07009_en",
                 "title": "Support for Employer Mandate",
                 "description": "Do you support or oppose having an employer mandate whereby every large employer, with more than 50 employees, is obliged to offer health insurance plans for their employees?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                "color" : "ReverseGradient5",
+                "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
               }
             }
           },
-          "Desired design of health insurance" : {
-            "id": "Q07010_1_en",
+          "Desired Design of Health Insurance" : {
+            "id": "Desired Design of Health Insurance",
             "title": "Desired Design of Health Insurance",
             "description": "",
             "questions": {
               "Q07010_1_en" : {
                 "id" : "Q07010_1_en",
                 "title" : "Desired Design of Health Insurance",
-                "description" : "Desired Design of Health Insurance for the following types of of medical care: Preventive care, Primary care visits, Maternity and newborn care, Specialist visits for non-essential care, Medical care for catastrophic situations, Emergency room care, Pediatric care",
+                "description" : "Desired Design of Health Insurance for the following types of of medical care:",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -2996,7 +3004,7 @@
                 "title": "Personal Impact of Trade Policy",
                 "description": "Do you feel that U.S. trade policy has important, direct effects on your own life?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes, it has very important direct effects on my own life; It has some effects on my own life", "No, it has no direct effects on my own life"]
+                "sorter" : ["Yes", "No"]
               }
             }
           },
@@ -3032,7 +3040,9 @@
                 "type" : "NUMERIC",
                 "correct" : "4.1",
                 "source" : "Statista",
-                "source_url" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/"
+                "source_url" : "https://www.statista.com/statistics/221737/total-value-of-us-agricultural-imports-since-1990/",
+                "nticks" : 10,
+                "max_val" : 100
               },
               "Q04007_en": {
                 "id": "Q04007_en",
@@ -3041,7 +3051,9 @@
                 "type" : "NUMERIC",
                 "correct" : "Approximately one half",
                 "source" : "Tax Foundation",
-                "source_url" : "https://taxfoundation.org"
+                "source_url" : "https://taxfoundation.org",
+                "nticks" : 10,
+                "max_val" : 100
               },
               "Q04009_en": {
                 "id": "Q04009_en",
@@ -3071,6 +3083,7 @@
                 "sorter" : ["It has decreased", "It has stayed more or less the same", "It has increased"],
                 "correct" : "It has increased",
                 "source" : "Tax Foundation",
+                "color" : "ReverseGradient3",
                 "source_url" : "https://taxfoundation.org/impact-trade-tariffs-united-states/"
               }
             }
@@ -3091,6 +3104,7 @@
                     "title" : "Large Corporations",
                     "type" : "TREATMENT",
                     "sorter" : ["1", "2", "3", "4", "5"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                         "id" : "Q06001_1_en",
@@ -3109,6 +3123,7 @@
                     "title" : "High-income Households",
                     "type" : "TREATMENT",
                     "sorter" : ["1", "2", "3", "4", "5"], 
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                         "id" : "Q06001_2_en",
@@ -3126,19 +3141,22 @@
                     "id" : "Q06001_3_en",
                     "title" : "Middle-income Households",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["1", "2", "3", "4", "5"]
+                    "sorter" : ["1", "2", "3", "4", "5"],
+                    "color" : "ReverseGradient5"
                   },
                   {
                     "id" : "Q06001_4_en",
                     "title" : "Low-income Households",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["1", "2", "3", "4", "5"]
+                    "sorter" : ["1", "2", "3", "4", "5"],
+                    "color" : "ReverseGradient5"
                   },
                   {
                     "id" : "Q06001_5_en",
                     "title" : "Small Businesses",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["1", "2", "3", "4", "5"]
+                    "sorter" : ["1", "2", "3", "4", "5"],
+                    "color" : "ReverseGradient5"
                   }
                 ]
               },
@@ -3154,7 +3172,8 @@
                 "title": "Magnitude on personal situation",
                 "description": "How much do you think you have lost or won as trade with other countries has increased, on a scale of 1 to 5 (1 being 'lost a lot' and 5 'gained a lot').",
                 "type" : "CATEGORICAL",
-                "sorter" : ["1", "2", "3", "4", "5"]
+                "sorter" : ["1", "2", "3", "4", "5"],
+                "color" : "ReverseGradient5"
               },
               "Q06003_en": {
                 "id": "Q06003_en",
@@ -3287,21 +3306,23 @@
                 "title": "Dollar value",
                 "description": "If the U.S. exports more goods abroad, what do you think will happen to the value of the dollar?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["It will increase", "It will not change", "It will decrease"]
+                "sorter" : ["It will increase", "It will not change", "It will decrease"],
+                "color" : "Gradient3"
               },
               "Q06013_en": {
                 "id": "Q06013_en",
                 "title": "Benefits of Trade",
                 "description": "Does trade make the countries involved better off in general?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["In general, both countries are better off", "In general, one country gains, the other one loses", "In general, both countries lose"]
+                "sorter" : ["In general, both countries are better off", "In general, one country gains, the other one loses", "In general, both countries lose"],
+                "color" : "Gradient3"
               },
               "Q06014_en": {
                 "id": "Q06014_en",
                 "title": "Importing Lower-priced Goods",
                 "description": "Imagine the U.S. is able to produce better cars at a lower price than Germany is. Would it still make sense under some circumstances for the U.S. to import cars from Germany?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Yes, it makes sense for the U.S. to import cars from Germany under some circumstances", "No, the U.S. should not import cars from Germany if it's better at producing them"]
               }
             }
           },
@@ -3321,70 +3342,80 @@
                     "title" : "Price of Cars",
                     "description" : "What will happen to the price of cars in the U.S.?", 
                     "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"],
+                    "color" : "ReverseGradient3"
                   },
                   {
                     "id" : "Q06016_en",
                     "title" : "Car Consumers",
                     "description" : "Would you say that households who purchase cars in the U.S. are now better off?", 
                     "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                    "sorter" : ["Yes", "No"],
+                    "color" : "Binary"
                   },
                   {
                     "id" : "Q06017_en",
                     "title" : "Low-skilled Workers' Wages",
                     "description" : "What will happen to the wages of low-skilled workers working in the car sector?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
+                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"],
+                    "color" : "ReverseGradient3"
                   },
                   {
                     "id" : "Q06018_en",
                     "title" : "Price of U.S. Laptops Abroad",
                     "description" : "Imagine also that the U.S. starts producing and exporting more laptops. What will happen to the price of U.S. laptops abroad, i.e., in the countries where the U.S. sells laptops?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"],
+                    "color" : "ReverseGradient3"
                   },
                   {
                     "id" : "Q06019_en",
                     "title" : "High-skilled Workers' Wages",
                     "description" : "What will happen to the wages of high-skilled workers working in the laptop sector?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
+                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"],
+                    "color" : "ReverseGradient3"
                   },
                   {
                     "id" : "Q06020_en",
                     "title" : "Changing Sectors and Increase in Exports",
                     "description" : "Imagine that over time, some low-skilled workers from the car sector are able to quit their jobs and find new jobs in the laptop sector. What will happen to their wages now if the U.S. exports more laptops?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"]
+                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"],
+                    "color" : "ReverseGradient3"
                   },
                   {
                     "id" : "Q06021_en",
                     "title" : "Export Tax on Laptops",
                     "description" : "If the U.S. were to impose an export tax on laptops, what would happen to the price of laptops abroad?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"],
+                    "color" : "ReverseGradient3"
                   },
                   {
                     "id" : "Q06022_en",
                     "title" : "Import Tariff on Cars",
                     "description" : "If the U.S. were to impose an import tariff on cars sold in the U.S, what would happen to the price of cars in the U.S?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"],
+                    "color" : "ReverseGradient3"
                   },
                   {
                     "id" : "Q06023_en",
                     "title" : "Export Increase on Wages",
                     "description" : "If exports from your sector to other countries would increase, what do you think will happen to your wage?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"],
+                    "color" : "ReverseGradient3"
                   },
                   {
                     "id" : "Q06024_en",
                     "title" : "Import Increase on Wages",
                     "description" : "If the U.S. imported more of the goods produced in your sector, what do you think would happen to your wage?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"]
+                    "sorter" : ["It will decrease", "It will remain the same", "It will increase"],
+                    "color" : "ReverseGradient3"
                   }
                 ]
               }
@@ -3674,7 +3705,7 @@
                 "title": "Tariff Responses",
                 "description": "If the U.S. imposes tariffs on many imports, how likely or unlikely is it that other countries follow suit and also impose tariffs?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Very likely, likely", "Unlikely", "Very unlikely"]
+                "sorter" : ["Very likely", "Likely", "Unlikely", "Very unlikely"]
               },
               "Q07009_en": {
                 "id": "Q07009_en",
@@ -3847,7 +3878,8 @@
                 "title" : "Trust",
                 "description" : "How much of the time do you think you can trust our federal government to do what is right?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Almost never", "Not very often", "A lot of the time", "Almost always"]
+                "sorter" : ["Almost never", "Not very often", "A lot of the time", "Almost always"],
+                "color" : "ReverseGradient4"
               },
               "G10002_en" : {
                 "id" : "G10002_en",
@@ -3867,7 +3899,8 @@
                 "title" : "Satisfaction",
                 "description" : "Are you very satisfied, somewhat satisfied, somewhat dissatisfied, or very dissatisfied with the way the federal government in Washington is dealing with the problems the country is facing today?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Very dissatisfied", "Somewhat dissatisfied", "Somewhat satisfied", "Very satisfied"]
+                "sorter" : ["Very dissatisfied", "Somewhat dissatisfied", "Somewhat satisfied", "Very satisfied"],
+                "color" : "ReverseGradient4"
               },
               "G10006_1_en" : {
                 "id" : "G10006_1_en",

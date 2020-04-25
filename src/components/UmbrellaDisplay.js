@@ -14,7 +14,7 @@ export default class UmbrellaDisplay extends React.Component {
             return null;
         }
         let subquestions = this.props.question.questions;
-        let selectedQuestion = this.state.question || subquestions[0];
+        let selectedQuestion = this.state.question && subquestions.some(x => x.id == this.state.question.id) ? this.state.question : subquestions[0];
         if(subquestions == undefined) {
             throw new Error("No subquestions for Umbrella display")
         }

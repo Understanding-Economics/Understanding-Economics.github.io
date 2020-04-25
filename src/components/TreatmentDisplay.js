@@ -55,7 +55,9 @@ export default class TreatmentDisplay extends React.Component {
                         Responses to: <br/> 
                         <strong>{this.props.question.title}</strong> <br/><br/>
 
-                        Grouped by <strong>{this.props.group.title}</strong>
+                        Grouped by <strong>{this.props.group.title}</strong> <br/><br/>
+
+                        Separated by randomized question wording.
 
                     </span>
                 </div>
