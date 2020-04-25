@@ -68,6 +68,10 @@ export default class StackedChartView extends React.PureComponent {
                 format : {
                     name : (name, ratio, id, index) => {
                         return wrap(name, 60);
+                    },
+                    value : (value, ratio, id, index) => {
+                        let count = proportions[groupVals[index]]["total"] * value;
+                        return `${d3.format(".0%")(value)} - ${Math.round(count)}`;
                     }
                 }
             }, 

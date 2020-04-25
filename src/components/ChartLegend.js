@@ -29,7 +29,7 @@ export default class ChartLegend extends React.PureComponent {
                 color : "black",
                 backgroundColor: colorPattern[i % colorPattern.length],
                 margin: "3px",
-                fontSize : "10pt",
+                fontSize : val == this.props.question.correct ? "12pt" : "10pt",
                 minHeight: "30px",
                 maxWidth: responses.length > 5 ? "18%" : `${(100 / responses.length) - 2}%`,
                 minWidth: "18%", 
@@ -39,7 +39,9 @@ export default class ChartLegend extends React.PureComponent {
                 marginLeft: i % 5 == 0 ? "auto" : "3px", 
                 marginRight: (i + 1) % 5 == 0 || i == responses.length - 1 ? "auto" : "3px",
                 marginTop: "10px",
-                opacity : val == this.props.question.correct ? 1.0 : 0.8
+                opacity : val == this.props.question.correct ? 1.0 : 0.8,
+                fontWeight : val == this.props.question.correct ? 900 : undefined,
+                textDecoration : val == this.props.question.correct ? "underline" : undefined
         }}>
             <strong>{val}</strong>
         </div>)

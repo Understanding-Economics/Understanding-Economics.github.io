@@ -83,6 +83,7 @@ const Utils = {
          for(let val of responseVals){ 
              propsDict[val] = countsDict[val] / total;
          }
+         propsDict["total"] = total;
          return propsDict;
     },
 

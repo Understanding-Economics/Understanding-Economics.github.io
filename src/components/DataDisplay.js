@@ -62,6 +62,7 @@ export default class DataDisplay extends React.Component {
         return (
             <div className = "DataDisplay">
                 { specificDisplay }
+                <div style = {{height: 100}}></div>
             </div>
         )
     }

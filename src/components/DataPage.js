@@ -56,6 +56,10 @@ export default class DataPage extends React.Component {
         this.groups = {...groups, ... (this.survey.additionalGroups || {})}
     }
 
+    componentDidMount() {
+        document.title = `${this.survey.title} - Understanding Economics`;
+    }
+
     render() {
         if(!this.survey) {
             return <NotFound />
@@ -103,12 +107,13 @@ export default class DataPage extends React.Component {
                         }
                     </div> 
                 </div>
-                
-                <DataDisplay
-                    data = { surveyData[this.surveyId] }
-                    selectedGroup = { selectedGroup }
-                    selectedQuestion = { selectedQuestion } 
-                />
+                <div style={{minHeight: 500}}>
+                    <DataDisplay
+                        data = { surveyData[this.surveyId] }
+                        selectedGroup = { selectedGroup }
+                        selectedQuestion = { selectedQuestion } 
+                    />
+                </div>
             </div>
         )
     }
