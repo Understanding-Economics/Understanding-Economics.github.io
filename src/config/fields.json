@@ -2312,42 +2312,58 @@
               "Q04011_en": {
                 "id": "Q04011_en",
                 "title": "Individual Mandate in 2018",
-                "description": "In 2018, was there an individual mandate, whereby everyone was obligated to buy health insurance?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"],
-                "correct" : "Yes",
-                "source" : "Healthcare.gov",
-                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
-              },
-              "Q04012_en": {
-                "id": "Q04012_en",
-                "title": "No Insurance Before 2018",
-                "description": "What happened if you did not have health insurance, until 2018?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["A penalty had to be paid", "You were forced to buy insurance", "You received a warning",  "Nothing happened"],
-                "correct" : "A penalty had to be paid",
-                "source" : "Healthcare.gov",
-                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                "description": "Questions regarding the individual mandate for health insurance in 2018",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "Q04011_en",
+                    "title": "Existence",
+                    "description": "In 2018, was there an individual mandate, whereby everyone was obligated to buy health insurance?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"],
+                    "correct" : "Yes",
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                  },
+                  {
+                    "id": "Q04012_en",
+                    "title": "Consequences",
+                    "description": "What happened if you did not have health insurance, until 2018?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["A penalty had to be paid", "You were forced to buy insurance", "You received a warning",  "Nothing happened"],
+                    "correct" : "A penalty had to be paid",
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                  }
+                ]
               },
               "Q04013_en": {
                 "id": "Q04013_en",
-                "title": "Changes to Individual Mandate in 2019",
-                "description": "Were any changes made to the individual mandate in 2019?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"],
-                "correct" : "Yes",
-                "source" : "Healthcare.gov",
-                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
-              },
-              "Q04014_en": {
-                "id": "Q04014_en",
-                "title": "Legislation Changes to Individual Mandate in 2019",
-                "description": "How did the legislation on the individual mandate change in 2019?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["The penalty was increased", "The penalty was decreased", "The penalty was reduced to zero", "The individual mandate was canceled", "Other"],
-                "correct" : "The penalty was reduced to zero",
-                "source" : "Healthcare.gov",
-                "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                "title": "Individual Mandate in 2019",
+                "description": "Questions regarding the individual mandate for health insurance in 2019",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q04013_en",
+                    "title": "Changes to Individual Mandate",
+                    "description": "Were any changes made to the individual mandate in 2019?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"],
+                    "correct" : "Yes",
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                  },
+                  {
+                    "id": "Q04014_en",
+                    "title": "How did the Individual Mandate Change",
+                    "description": "How did the legislation on the individual mandate change in 2019?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["The penalty was increased", "The penalty was decreased", "The penalty was reduced to zero", "The individual mandate was canceled", "Other"],
+                    "correct" : "The penalty was reduced to zero",
+                    "source" : "Healthcare.gov",
+                    "source_url" : "https://www.healthcare.gov/fees/fee-for-not-being-covered/"
+                  }
+                ]
               },
               "Q04015_en": {
                 "id": "Q04015_en",
