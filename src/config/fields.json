@@ -3381,6 +3381,184 @@
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
               },
+              "Q07004": {
+                "id": "Q07004",
+                "title": "Industry Protection from foreign competition",
+                "description": "Do you think the following industries should be protected from foreign competition using tariffs or other import restrictions?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "indus_1",
+                    "title" : "Dairy products",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_2",
+                    "title" : "Agricultural products (fruit, vegetables, plants)",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_3",
+                    "title" : "Beverages and tobaccos",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_4",
+                    "title" : "Minerals and metals",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_5",
+                    "title" : "Petroleum",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_6",
+                    "title" : "Chemicals",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_7",
+                    "title" : "Animal products (meat, fish)",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_8",
+                    "title" : "Textiles, clothing leather and footwear",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_9",
+                    "title" : "Machinery, transport, equipment and cars",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "indus_10",
+                    "title" : "Manufactured goods",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  }
+                ]
+              },
+              "Q07005": {
+                "id": "Q07005",
+                "title": "Production Protection from foreign competition",
+                "description": "Do you think the following particular goods should be protected from foreign competition using tariffs or other import restrictions?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "prod_1",
+                    "title" : "Cars",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_2",
+                    "title" : "Washing machines",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_3",
+                    "title" : "Solar panels",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_4",
+                    "title" : "Shoes",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_5",
+                    "title" : "Machinery",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_6",
+                    "title" : "Oil",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_7",
+                    "title" : "Vegetables",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_8",
+                    "title" : "Fruits",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_9",
+                    "title" : "Toys",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_10",
+                    "title" : "Meat",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_11",
+                    "title" : "Fish",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_12",
+                    "title" : "Milk",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_13",
+                    "title" : "Steel",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_14",
+                    "title" : "Textiles",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_15",
+                    "title" : "Clothing",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_16",
+                    "title" : "Coffee and tea",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  },
+                  {
+                    "id" : "prod_17",
+                    "title" : "Chemicals",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  }
+                ]
+              },
               "Q07006_1_en": {
                 "id": "Q07006_1_en",
                 "title": "Effects on Unemployment",
