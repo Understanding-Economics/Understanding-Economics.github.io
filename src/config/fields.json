@@ -1199,7 +1199,7 @@
             "questions": {
               "Q04002_en": {
                 "id": "Q04002_en",
-                "title": "Scope of Estate Tax",
+                "title": "Is everyone subject to estate tax",
                 "description": "Is every individual's estate taxed",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"],
@@ -1209,8 +1209,8 @@
               },
               "Q04003_en": {
                 "id": "Q04003_en",
-                "title": "Number of Estates Subject to Tax at Death",
-                "description": "Number of estates subject to tax at death",
+                "title": "How many people are subject to estate tax",
+                "description": "Out of 1000 people, how many would you say pay the federal estate tax at death?",
                 "type" : "NUMERIC",
                 "correct" : "2 (in 2017); 1 (in 2018)",
                 "source" : "Center on Budget and Policy Priorities",
