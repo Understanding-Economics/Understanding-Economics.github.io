@@ -8,18 +8,36 @@ export default class CorrectDisplay extends React.PureComponent {
         let formatter =  this.props.formatter || (x => x);
         let sourceText = null; 
         if(this.props.question.source) {
-            if (this.props.question.source_url) {
-                sourceText = <span>    (Source: <a href = {this.props.question.source_url} target = "_blank">{this.props.question.source}</a>)</span>
+            if(Array.isArray(this.props.question.source)){
+                if(this.props.question.source_url && (!Array.isArray(this.props.question.source_url) || this.props.question.source_url.length != this.props.question.source.length)) {
+                    throw new Error("Both source and source_url must be arrays of same length")
+                }
+                let sources = this.props.question.source.map((src, i) => {
+                    if (this.props.question.source_url[i]){
+                        return <a href = {this.props.question.source_url[i]} target = "_blank">{src}</a>;
+                    }
+                    else {
+                        return src;
+                    }
+                }).reduce((acc, cur) => [acc, ", ", cur]);
+                sourceText = <span>Source: {sources}</span>
             }
-            else{
-                sourceText = <span>    (Source: {this.props.question.source})</span>
+            else {
+                if (this.props.question.source_url) {
+                    sourceText = <span>Source: <a href = {this.props.question.source_url} target = "_blank">{this.props.question.source}</a></span>
+                }
+                else{
+                    sourceText = <span>Source: {this.props.question.source}</span>
+                }
             }
-        }
+            }
         return <div className = "header">
-            <strong style={{color:"green", fontSize:"14pt"}}>Correct Answer: {formatter(this.props.question.correct)}</strong>
-            <em style={{fontSize:"8pt", marginLeft: "5px", verticalAlign: "top"}}>
-                {sourceText ? sourceText : null}
-            </em>
+            <span>
+                <strong style={{color:"green", fontSize:"14pt"}}>Correct Answer: {formatter(this.props.question.correct)}</strong><br/>
+                <em style={{fontSize:"9pt", verticalAlign: "top"}}>
+                    {sourceText ? sourceText : null}
+                </em>
+            </span>
         </div>
     }
 }

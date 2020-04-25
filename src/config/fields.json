@@ -208,7 +208,7 @@
                 "description": "What is the top federal personal income tax rate in the U.S.?",
                 "type" : "NUMERIC",
                 "correct" : 37,
-                "source": "NerWallet",
+                "source": "NerdWallet",
                 "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
                 "format" : "percent"
               },
@@ -1200,7 +1200,7 @@
               "Q04002_en": {
                 "id": "Q04002_en",
                 "title": "Scope of Estate Tax",
-                "description": "Is every individual's estate taxed",
+                "description": "Is every individual's estate taxed?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"],
                 "correct" : "No",
@@ -1210,10 +1210,10 @@
               "Q04003_en": {
                 "id": "Q04003_en",
                 "title": "Number of Estates Subject to Tax at Death",
-                "description": "Number of estates subject to tax at death",
+                "description": "Number of estates out of every thousand subject to tax at death",
                 "type" : "NUMERIC",
-                "correct" : "2 (in 2017); 1 (in 2018)",
-                "source" : "Center on Budget and Policy Priorities",
+                "correct" : "2",
+                "source" : "Center on Budget and Policy Priorities, 2017",
                 "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
               "Q04005_en": {
