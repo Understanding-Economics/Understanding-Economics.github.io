@@ -77,7 +77,7 @@ export default class DataPage extends React.Component {
                             title = "Topic"
                             description = "Select a topic that you would like to examine"
                             options = { this.survey.topics }
-                            selected = {selectedTopic ? selectedTopic.id : null}
+                            selected = {selectedTopic ? selectedTopic.id : undefined}
                             handleSelect = {this.handleTopicSelect}
                         />
                     </div>
@@ -89,7 +89,7 @@ export default class DataPage extends React.Component {
                                 selectedTopic.questions :
                                 null
                             }
-                            selected = {selectedQuestion ? selectedQuestion.id : null}
+                            selected = {selectedQuestion ? selectedQuestion.id : undefined}
                             handleSelect = {this.handleQuestionSelect}
                         />
                     </div>
@@ -100,7 +100,7 @@ export default class DataPage extends React.Component {
                                 title = "Group by"
                                 description = "Select how you would like to group responses"
                                 options = { this.groups }
-                                selected = {selectedGroup ? selectedGroup.id : null}
+                                selected = {selectedGroup ? selectedGroup.id : undefined}
                                 handleSelect = {this.handleGroupSelect}
                             />
                             : null
