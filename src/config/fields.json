@@ -7,6 +7,25 @@
         "type" : "CATEGORICAL",
         "sorter" : ["18-35", "36-50", "51-69"]
       },
+      "edugroup": {
+        "id": "edugroup",
+        "title": "Education level",
+        "description": "The highest education level achieved by the repsondent.",
+        "type" : "CATEGORICAL",
+        "sorter" : ["Eighth Grade or lower", "Some High School", "High School degree/ GED", "Some College", "2-year College Degree", "4-year College Degree", "Master's Degree", "Professional Degree (JD, MD, MBA)", "Doctoral Degree"]
+      },
+      "employment_agg": {
+        "id": "employment_agg",
+        "title": "Employment Status",
+        "description": "The current employment status of the respondent.",
+        "type" : "CATEGORICAL"
+      },
+      "gender": {
+        "id": "gender",
+        "title": "Gender",
+        "description": "The gender of the respondent.",
+        "type" : "CATEGORICAL"
+      },
       "incomegroup": {
         "id": "incomegroup",
         "title": "Income Group",
@@ -16,13 +35,6 @@
           "$0-$19999", "$20000-$39999", "$40000-$69999", "$70000-$109999", "$110000+"
         ]
       },
-      "born_us": {
-        "id": "born_us",
-        "title": "Born in US",
-        "description": "Whether the respondent was born in the United States.",
-        "type" : "CATEGORICAL",
-        "sorter" : ["Yes", "No"]
-      },
       "married": {
         "id": "married",
         "title": "Married",
@@ -31,12 +43,6 @@
         "sorter" : [
           "Married", "Non-married"
         ]
-      },
-      "gender": {
-        "id": "gender",
-        "title": "Gender",
-        "description": "The gender of the respondent.",
-        "type" : "CATEGORICAL"
       },
       "children": {
         "id": "children",
@@ -52,29 +58,17 @@
         "type" : "CATEGORICAL",
         "sorter" : ["African American", "Asian", "Hispanic", "White non Hispanic", "Other"]
       },
-      "edugroup": {
-        "id": "edugroup",
-        "title": "Education level",
-        "description": "The highest education level achieved by the repsondent.",
+      "born_us": {
+        "id": "born_us",
+        "title": "Born in US",
+        "description": "Whether the respondent was born in the United States.",
         "type" : "CATEGORICAL",
-        "sorter" : ["Eighth Grade or lower", "Some High School", "High School degree/ GED", "Some College", "2-year College Degree", "4-year College Degree", "Master's Degree", "Professional Degree (JD, MD, MBA)", "Doctoral Degree"]
-      },
-      "employment_agg": {
-        "id": "employment_agg",
-        "title": "Employment Status",
-        "description": "The current employment status of the respondent.",
-        "type" : "CATEGORICAL"
+        "sorter" : ["Yes", "No"]
       },
       "social_class": {
         "id": "social_class",
         "title": "Social Class",
         "description": "The social class that the respondent identifies with.",
-        "type" : "CATEGORICAL"
-      },
-      "ideology": {
-        "id": "ideology",
-        "title": "Economic Ideology",
-        "description": "The economic ideology that the respondent self-identifies with.",
         "type" : "CATEGORICAL"
       },
       "partygroup": {
@@ -84,33 +78,39 @@
         "type" : "CATEGORICAL",
         "sorter": ["Democrat", "Independent", "Republican", "Other"]
       },
-      "newsgroup": {
-        "id": "newsgroup",
-        "title": "Source of News",
-        "description": "The medium from which the respondent gets most of their news",
+      "candidate2016_agg": {
+        "id": "candidate2016_agg",
+        "title": "2016 Presidential Candidate",
+        "description": "Among those on the ballot, the candidate whom the respondent supported in the 2016 presidential election.",
         "type" : "CATEGORICAL",
-        "sorter" : ["Newspaper", "TV, radio", "Internet", "Other", "None"]
+        "sorter" : ["Clinton", "Trump", "Other"]
+      }, 
+      "ideology": {
+        "id": "ideology",
+        "title": "Economic Ideology",
+        "description": "The economic ideology that the respondent self-identifies with.",
+        "type" : "CATEGORICAL"
       },
       "econgroup": {
         "id": "econgroup",
-        "title": "Knowledge of Economics",
+        "title": "Economics Knowledge",
         "description": "The respondent's self-reported knowedge of economics.",
         "type" : "CATEGORICAL",
         "sorter" : ["Not highly knowledgeable", "Highly knowledgeable"]
       },
-      "candidate2016_agg": {
-        "id": "candidate2016_agg",
-        "title": "2016 Presidential Candidate",
-        "description": "The candidate whom the respondent supported in the 2016 presidential election.",
-        "type" : "CATEGORICAL",
-        "sorter" : ["Clinton", "Trump", "Other"]
-      }, 
       "econ" : {
         "id" : "econ",
         "title" : "Studied Economics",
         "description" : "Whether the individual studied economics in college",
         "type" : "CATEGORICAL",
         "sorter" : ["Yes", "No"]
+      },
+      "newsgroup": {
+        "id": "newsgroup",
+        "title": "Source of News",
+        "description": "The medium from which the respondent gets most of their news",
+        "type" : "CATEGORICAL",
+        "sorter" : ["Newspaper", "TV, radio", "Internet", "Other", "None"]
       }
     },
     "surveys": {
