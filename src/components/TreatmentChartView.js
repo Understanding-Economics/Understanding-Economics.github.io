@@ -9,7 +9,8 @@ export default class TreatmentChartView extends React.PureComponent {
                     show : false
                 }, 
                 y : {
-                    show : false
+                    show : false,
+                    max : 0.9
                 }
             },
             padding : {

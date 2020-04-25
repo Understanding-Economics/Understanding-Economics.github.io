@@ -83,6 +83,7 @@ export default class StackedChartView extends React.PureComponent {
                 }, 
                 y : {
                     // This is some hacky shit to get rid of the 110% display
+                    max: 0.95, 
                     tick : {
                         values : [0, 0.5, 1], 
                         format: d3.format(".0%")
