@@ -1378,7 +1378,8 @@
                 "type" : "NUMERIC",
                 "correct" : "Approximately 35 to 45 percent",
                 "source" : "Kopczuk, Brookings.edu",
-                "source_url" : "https://www.brookings.edu/blog/social-mobility-memos/2015/01/30/wealth-inheritance-and-social-mobility/"
+                "source_url" : "https://www.brookings.edu/blog/social-mobility-memos/2015/01/30/wealth-inheritance-and-social-mobility/",
+                "nticks" : 9
               },
               "Q04019_en": {
                 "id": "Q04019_en",
@@ -2083,14 +2084,16 @@
                 "title": "Reduce Inequalities",
                 "description": "To reduce differences in wealth between rich and poor people, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
+                "sorter" : ["Nothing at all", "Not much", "Some", "A lot"],
+                "color" : "ReverseGradient4"
               },
               "Q09002_en": {
                 "id": "Q09002_en",
                 "title": "Improve Opportunities",
                 "description": "To improve opportunities for children from low-income families, the government (local, state, or federal) has the ability and the tools to do:",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Nothing at all", "Not much", "Some", "A lot"]
+                "sorter" : ["Nothing at all", "Not much", "Some", "A lot"],
+                "color" : "ReverseGradient4"
               }
             }
           }
