@@ -53,7 +53,19 @@ export default class HistogramView extends React.Component {
                             .thresholds(scale.ticks(nticks));
         
         let bins = histogram(cleanData);
+        for(var i = 0; i < bins.length - 1; i++){
+            bins[i]["x1"] -= 1;
+        }
         let binSizes = bins.map(x => x.length);
+        if (bins[bins.length - 1]["x0"] == bins[bins.length - 1]["x1"]) {
+            binSizes[bins.length - 2] += binSizes[bins.length - 1];
+            bins[bins.length - 2]["x1"] = bins[bins.length - 1]["x0"];
+            bins.pop();
+            binSizes.pop();
+        }
+        else {
+            bins[bins.length - 1]["x1"] = bins[bins.length - 1]["x0"] + (bins[bins.length - 2]["x1"] - bins[bins.length - 2]["x0"]) + 1;
+        }
         let categories = bins.map(bin => `${bin["x0"]}-${bin["x1"]}`);
         let correctBin = selectedQuestion.correct ? histogram([selectedQuestion.correct]).filter(x => x.length > 0)[0] : null;
         if(!this.chart) {
