@@ -156,7 +156,7 @@
                 "description": "Do you feel that U.S. federal income tax policy has important direct effects on your own life?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["No, It has no direct effects on my own life", "It has some effects on my own life", "Yes, it has very important direct effects on my own life"],
-                "color" : "Gradient3"
+                "color" : "ReverseGradient3"
               }
             }
           },

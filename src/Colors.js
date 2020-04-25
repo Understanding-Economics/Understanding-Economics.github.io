@@ -21,10 +21,10 @@ Colors.Binary = [GREEN, RED],
 Colors.Gradient3 = [GREEN, YELLOW, RED], 
 Colors.Gradient4 = [GREEN, YELLOW, ORANGE, RED], 
 Colors.Gradient5 = [GREEN, BLUE, YELLOW, ORANGE, RED],
-Colors.ReverseBinary = Colors.Binary.reverse(), 
-Colors.ReverseGradient3 = Colors.Gradient3.reverse(),
-Colors.ReverseGradient4= Colors.Gradient4.reverse(),
-Colors.ReverseGradient5 = Colors.Gradient5.reverse()
+Colors.ReverseBinary = Colors.Binary.slice().reverse(), 
+Colors.ReverseGradient3 = Colors.Gradient3.slice().reverse(),
+Colors.ReverseGradient4= Colors.Gradient4.slice().reverse(),
+Colors.ReverseGradient5 = Colors.Gradient5.slice().reverse()
 
 
 export default Colors
