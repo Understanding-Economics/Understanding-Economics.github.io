@@ -419,6 +419,7 @@
                     "title": "Evade taxes",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06001_1_en",
@@ -445,6 +446,7 @@
                     "title": "Work less",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06001_2_en",
@@ -471,6 +473,7 @@
                     "title": "Stop working altogether",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06001_3_en",
@@ -497,6 +500,7 @@
                     "title": "Have spouse stop working",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06001_4_en",
@@ -523,6 +527,7 @@
                     "title": "Move to state with lower taxes",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06001_5_en",
@@ -549,6 +554,7 @@
                     "title": "Be less entrepreneurial",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06001_6_en",
@@ -583,6 +589,7 @@
                     "title": "Evade taxes",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06002_1_en",
@@ -609,6 +616,7 @@
                     "title": "Work less",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06002_2_en",
@@ -635,6 +643,7 @@
                     "title": "Stop working altogether",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06002_3_en",
@@ -661,6 +670,7 @@
                     "title": "Have spouse stop working",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06002_4_en",
@@ -687,6 +697,7 @@
                     "title": "Move to state with lower taxes",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06002_5_en",
@@ -713,6 +724,7 @@
                     "title": "Be less entrepreneurial",
                     "type" : "TREATMENT",
                     "sorter" : ["A great deal", "A lot", "A moderate amount", "A little", "None at all"],
+                    "color" : "ReverseGradient5", 
                     "questions" : [
                       {
                           "id" : "Q06002_6_en",
@@ -738,7 +750,7 @@
               },
               "Q06003_en": {
                 "id": "Q06003_en",
-                "title": "Middle Class Tax Share Fairness",
+                "title": "Reducing income differences",
                 "description": "What would ultimately do more to reduce the income differences between poor and rich families?",
                 "type" : "TREATMENT",
                 "sorter" : ["Lowering taxes on wealthy people/women and corporations to encourage more investment in economic growth.", "Raising taxes on wealthy people/women and corporations to expand programs for the poor."],
@@ -816,25 +828,25 @@
                     ]
                   },
                   {
-                    "id": "Q06002_3_en",
+                    "id": "Q06004_3_en",
                     "title": "Middle class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
                     "questions" : [
                       {
-                          "id" : "Q06002_3_en",
+                          "id" : "Q06004_3_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
                           "description" : "Typically, when the top federal income tax rate on high earners is cut, would you say people in the middle class mostly win or mostly lose from this change?"
                       },
                       {
-                        "id" : "Q06002_3_en",
+                        "id" : "Q06004_3_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
                         "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
                       },
                       {
-                        "id" : "Q06002_3_en",
+                        "id" : "Q06004_3_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
                         "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the middle class would you say mostly win or mostly lose from this change?"
@@ -842,25 +854,25 @@
                     ]
                   },
                   {
-                    "id": "Q06002_4_en",
+                    "id": "Q06004_4_en",
                     "title": "Upper-middle class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
                     "questions" : [
                       {
-                          "id" : "Q06002_4_en",
+                          "id" : "Q06004_4_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
                           "description" : "Typically, when the top federal income tax rate on high earners is cut, would you say people in the upper-middle class mostly win or mostly lose from this change?"
                       },
                       {
-                        "id" : "Q06002_4_en",
+                        "id" : "Q06004_4_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
                         "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
                       },
                       {
-                        "id" : "Q06002_4_en",
+                        "id" : "Q06004_4_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
                         "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the upper-middle class would you say mostly win or mostly lose from this change?"
@@ -868,25 +880,25 @@
                     ]
                   },
                   {
-                    "id": "Q06002_5_en",
+                    "id": "Q06004_5_en",
                     "title": "Upper class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
                     "questions" : [
                       {
-                          "id" : "Q06002_5_en",
+                          "id" : "Q06004_5_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
                           "description" : "Typically, when the top federal income tax rate on high earners is cut, would you say people in the upper class mostly win or mostly lose from this change?"
                       },
                       {
-                        "id" : "Q06002_5_en",
+                        "id" : "Q06004_5_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
                         "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
                       },
                       {
-                        "id" : "Q06002_5_en",
+                        "id" : "Q06004_5_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
                         "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the upper class would you say mostly win or mostly lose from this change?"
@@ -1039,6 +1051,7 @@
                 "description": "How the respondent thinks increasing the top federal income tax rate would affect economic activity",
                 "type" : "TREATMENT",
                 "sorter" : ["Hurt economic activity in the U.S.", "Not have an effect on economic activity in the U.S.", "Help economic activity in the U.S."],
+                "color" : "ReverseGradient3", 
                 "questions" : [
                   {
                     "id" : "Q06006_en",
@@ -3890,7 +3903,8 @@
                 "title" : "Current intervention level",
                 "description" : "Some people think the government is trying to do too many things that should be left to individuals and businesses. Others think that government should do more to solve our country's problems. Which come closer to your own view?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Government should do more", "Government is doing just the right amount", "Government is doing too much"]
+                "sorter" : ["Government should do more", "Government is doing just the right amount", "Government is doing too much"],
+                "color" : "Gradient3"
               },
               "G10003_en" : {
                 "id" : "G10003_en",
