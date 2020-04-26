@@ -7,6 +7,9 @@ import ReactGA from 'react-ga';
 export default class AboutPage extends React.Component {
     render() {
         document.title = "About - Understanding Economics";
+        let trackingUrl = "/about";
+        ReactGA.set({page : trackingUrl});
+        ReactGA.pageview(trackingUrl);
         return (
             <div className = "AboutPage">
                 <Section>Paper</Section>
