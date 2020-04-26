@@ -1252,7 +1252,8 @@
                 "correct" : 77,
                 "format" : "percent",
                 "source" : "IRS",
-                "source_url" : "https://www.irs.gov/pub/irs-soi/ninetyestate.pdf"
+                "source_url" : "https://www.irs.gov/pub/irs-soi/ninetyestate.pdf", 
+                "nticks" : 10
               },
               "Q04008_en": {
                 "id": "Q04008_en",
