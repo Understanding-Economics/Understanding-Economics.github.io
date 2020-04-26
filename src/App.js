@@ -8,7 +8,10 @@ import { NavLink, Route, Switch, HashRouter as Router } from 'react-router-dom'
 import NotFound from './components/NotFound'
 import { surveys } from './config/fields.json'
 import Footer from './components/Footer';
+import ReactGA from 'react-ga'
 
+const trackingId = "UA-164614154-1";
+ReactGA.initialize(trackingId);
 
 class App extends React.Component {
   

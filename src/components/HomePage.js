@@ -7,6 +7,8 @@ export default class HomePage extends React.Component {
     // NOTE: 
     // Make a tab "About" with [link to SS website].
     render() {
+        ReactGA.set({ page: window.location.pathname });
+        ReactGA.pageview(window.location.pathname);
         document.title = "Understanding Economics";
         return (
             <div className = "HomePage">
