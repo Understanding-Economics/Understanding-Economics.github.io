@@ -58,7 +58,7 @@ export default class HomePage extends React.Component {
                 </p>
 
                 <p>
-                More information about the project and the surveys can be found <a href = "https://stefanie-stantcheva.onrender.com">here</a>
+                More information about the project and the surveys can be found <a href = "https://stefanie-stantcheva.onrender.com" target = "_blank">here</a>.
                 </p>
             </div>
         )

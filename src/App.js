@@ -7,6 +7,7 @@ import AboutPage from './components/AboutPage'
 import { NavLink, Route, Switch, HashRouter as Router } from 'react-router-dom'
 import NotFound from './components/NotFound'
 import { surveys } from './config/fields.json'
+import Footer from './components/Footer';
 
 
 class App extends React.Component {
@@ -33,6 +34,7 @@ class App extends React.Component {
             {surveyRoutes}
             <Route component={NotFound} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     );
