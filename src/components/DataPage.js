@@ -65,8 +65,9 @@ export default class DataPage extends React.Component {
         if(!this.survey) {
             return <NotFound />
         }
-        ReactGA.set({ page: window.location.pathname + window.location.search });
-        ReactGA.pageview(window.location.pathname + window.location.search);
+        let trackingUrl = this.props.history.location.pathname + this.props.history.location.search;
+        ReactGA.set({ page: trackingUrl});
+        ReactGA.pageview(trackingUrl);
         this.params = new URLSearchParams(this.props.history.location.search); 
         let selectedGroup = this.getGroup();
         let selectedTopic = this.getTopic();

@@ -1,14 +1,11 @@
 import React from 'react'
 import DemoImage from './DemoImage'
 import { Section } from './TextComponents'
-import { NavLink } from 'react-router-dom';
 
 export default class HomePage extends React.Component {
     // NOTE: 
     // Make a tab "About" with [link to SS website].
     render() {
-        ReactGA.set({ page: window.location.pathname });
-        ReactGA.pageview(window.location.pathname);
         document.title = "Understanding Economics";
         return (
             <div className = "HomePage">

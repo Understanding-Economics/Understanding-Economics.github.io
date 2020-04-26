@@ -2,12 +2,11 @@ import React from 'react'
 
 import { Section, Subsection} from './TextComponents'
 import { NavLink } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 export default class AboutPage extends React.Component {
     render() {
         document.title = "About - Understanding Economics";
-        ReactGA.set({ page: window.location.pathname });
-        ReactGA.pageview(window.location.pathname);
         return (
             <div className = "AboutPage">
                 <Section>Paper</Section>
