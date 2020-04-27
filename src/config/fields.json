@@ -327,13 +327,13 @@
                   {
                     "id" : "Q07003_en",
                     "title" : "YOU",
-                    "description" : "Would you say that you...",
+                    "description" : "Would you say that <strong>you</strong>...",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q07003_en",
                     "title" : "GENDER",
-                    "description" : "Would you say that high income, upper-class women in the U.S. today...",
+                    "description" : "Would you say that high income, upper-class <strong>women</strong> in the U.S. today...",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -354,7 +354,7 @@
                   {
                     "id" : "Q07004_en",
                     "title" : "Gender",
-                    "description" : "Would you say that women in the middle-class in the U.S. today...",
+                    "description" : "Would you say that <strong>women</strong> in the middle-class in the U.S. today...",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -389,7 +389,7 @@
                   {
                     "id" : "Q07008_en",
                     "title" : "Gender",
-                    "description" : "The additional revenue raised is used to expand programs that support lower-income women",
+                    "description" : "The additional revenue raised is used to expand programs that support lower-income <strong>women</strong>",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -425,19 +425,19 @@
                           "id" : "Q06001_1_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to evade taxes"
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage <strong>them</strong> to evade taxes"
                       },
                       {
                         "id" : "Q06001_1_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to evade taxes"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to evade taxes"
                       },
                       {
                         "id" : "Q06001_1_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to evade taxes"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this <strong>woman</strong> to evade taxes"
                       }
                     ]
                   },
@@ -452,19 +452,19 @@
                           "id" : "Q06001_2_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to work less"
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage <strong>them</strong> to work less"
                       },
                       {
                         "id" : "Q06001_2_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to work less"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to work less"
                       },
                       {
                         "id" : "Q06001_2_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to work less"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this <strong>woman</strong> to work less"
                       }
                     ]
                   },
@@ -479,19 +479,19 @@
                           "id" : "Q06001_3_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to stop working altogether"
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage <strong>them</strong> to stop working altogether"
                       },
                       {
                         "id" : "Q06001_3_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to stop working altogether"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to stop working altogether"
                       },
                       {
                         "id" : "Q06001_3_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to stop working altogether"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this <strong>woman</strong> to stop working altogether"
                       }
                     ]
                   },
@@ -506,19 +506,19 @@
                           "id" : "Q06001_4_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to have their spouse stop working"
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage <strong>them</strong> to have their spouse stop working"
                       },
                       {
                         "id" : "Q06001_4_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to have your spouse stop working"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to have your spouse stop working"
                       },
                       {
                         "id" : "Q06001_4_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to have her spouse stop working"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this <strong>woman</strong> to have her spouse stop working"
                       }
                     ]
                   },
@@ -533,19 +533,19 @@
                           "id" : "Q06001_5_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to move to a state with lower taxes"
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage <strong>them</strong> to move to a state with lower taxes"
                       },
                       {
                         "id" : "Q06001_5_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to move to a state with lower taxes"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to move to a state with lower taxes"
                       },
                       {
                         "id" : "Q06001_5_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to move to a state with lower taxes"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this <strong>woman</strong> to move to a state with lower taxes"
                       }
                     ]
                   },
@@ -560,19 +560,19 @@
                           "id" : "Q06001_6_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage them to be less entrepreneurial"
+                          "description" : "If the federal personal income tax rate were to increase for the richest people in the economy, to what extent would it encourage <strong>them</strong> to be less entrepreneurial"
                       },
                       {
                         "id" : "Q06001_6_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to move to be less entrepreneurial"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to move to be less entrepreneurial"
                       },
                       {
                         "id" : "Q06001_6_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this woman to be less entrepreneurial"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the richest people in the economy, to what extent would it encourage this <strong>woman</strong> to be less entrepreneurial"
                       }
                     ]
                   }
@@ -595,19 +595,19 @@
                           "id" : "Q06002_1_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to evade taxes"
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage <strong>them</strong> to evade taxes"
                       },
                       {
                         "id" : "Q06002_1_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to evade taxes"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to evade taxes"
                       },
                       {
                         "id" : "Q06002_1_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to evade taxes"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this <strong>woman</strong> to evade taxes"
                       }
                     ]
                   },
@@ -622,19 +622,19 @@
                           "id" : "Q06002_2_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to work less"
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage <strong>them</strong> to work less"
                       },
                       {
                         "id" : "Q06002_2_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to work less"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to work less"
                       },
                       {
                         "id" : "Q06002_2_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to work less"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this <strong>woman</strong> to work less"
                       }
                     ]
                   },
@@ -649,19 +649,19 @@
                           "id" : "Q06002_3_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to stop working altogether"
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage <strong>them</strong> to stop working altogether"
                       },
                       {
                         "id" : "Q06002_3_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to stop working altogether"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to stop working altogether"
                       },
                       {
                         "id" : "Q06002_3_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to stop working altogether"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this <strong>woman</strong> to stop working altogether"
                       }
                     ]
                   },
@@ -676,19 +676,19 @@
                           "id" : "Q06002_4_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to have their spouse stop working"
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage <strong>them</strong> to have their spouse stop working"
                       },
                       {
                         "id" : "Q06002_4_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to have your spouse stop working"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to have your spouse stop working"
                       },
                       {
                         "id" : "Q06002_4_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to have her spouse stop working"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this <strong>woman</strong> to have her spouse stop working"
                       }
                     ]
                   },
@@ -703,19 +703,19 @@
                           "id" : "Q06002_5_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to move to a state with lower taxes"
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage <strong>them</strong> to move to a state with lower taxes"
                       },
                       {
                         "id" : "Q06002_5_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to move to a state with lower taxes"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to move to a state with lower taxes"
                       },
                       {
                         "id" : "Q06002_5_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to move to a state with lower taxes"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this <strong>woman</strong> to move to a state with lower taxes"
                       }
                     ]
                   },
@@ -730,19 +730,19 @@
                           "id" : "Q06002_6_en",
                           "title" : "CONTROL",
                           "treatments" : ["Neutral"],
-                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage them to be less entrepreneurial"
+                          "description" : "If the federal personal income tax rate were to increase for the middle class in the economy, to what extent would it encourage <strong>them</strong> to be less entrepreneurial"
                       },
                       {
                         "id" : "Q06002_6_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage you to be less entrepreneurial"
+                        "description" : "If your federal personal income tax rate were to increase, to what extent would it encourage <strong>you</strong> to be less entrepreneurial"
                       },
                       {
                         "id" : "Q06002_6_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this woman to be less entrepreneurial"
+                        "description" : "If the federal personal income tax rate were to increase for a given woman among the middle class, to what extent would it encourage this <strong>woman</strong> to be less entrepreneurial"
                       }
                     ]
                   }
@@ -764,7 +764,7 @@
                   {
                     "id" : "Q06003_en",
                     "title" : "Gender",
-                    "description" : "What do you think would ultimately do more to reduce the income differences between poor and rich women?",
+                    "description" : "What do you think would ultimately do more to reduce the income differences between poor and rich <strong>women</strong>?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -791,13 +791,13 @@
                         "id" : "Q06004_1_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would <strong>you</strong> mostly win or mostly lose from this change?"
                       },
                       {
                         "id" : "Q06004_1_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the lower class/poor would you say mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which <strong>women</strong> in the lower class/poor would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
@@ -817,13 +817,13 @@
                         "id" : "Q06004_2_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would <strong>you</strong> mostly win or mostly lose from this change?"
                       },
                       {
                         "id" : "Q06004_2_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the working class would you say mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which <strong>women</strong> in the working class would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
@@ -843,13 +843,13 @@
                         "id" : "Q06004_3_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would <strong>you</strong> mostly win or mostly lose from this change?"
                       },
                       {
                         "id" : "Q06004_3_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the middle class would you say mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which <strong>women</strong> in the middle class would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
@@ -869,13 +869,13 @@
                         "id" : "Q06004_4_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would <strong>you</strong> mostly win or mostly lose from this change?"
                       },
                       {
                         "id" : "Q06004_4_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the upper-middle class would you say mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which <strong>women</strong> in the upper-middle class would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
@@ -895,13 +895,13 @@
                         "id" : "Q06004_5_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would you mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, would <strong>you</strong> mostly win or mostly lose from this change?"
                       },
                       {
                         "id" : "Q06004_5_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which women in the upper class would you say mostly win or mostly lose from this change?"
+                        "description" : "Typically, when the top federal income tax rate on high earners is cut, which <strong>women</strong> in the upper class would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   }
@@ -929,13 +929,13 @@
                         "id" : "Q06005_1_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would <strong>you</strong> mostly win or mostly lose from the increase in government tax revenue?"
                       },
                       {
                         "id" : "Q06005_1_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which women in the lower class/poor would you say mostly win or mostly lose from this change?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which <strong>women</strong> in the lower class/poor would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
@@ -955,13 +955,13 @@
                         "id" : "Q06005_2_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would <strong>you</strong> mostly win or mostly lose from the increase in government tax revenue?"
                       },
                       {
                         "id" : "Q06005_2_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which women in the working class would you say mostly win or mostly lose from this change?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which <strong>women</strong> in the working class would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
@@ -981,13 +981,13 @@
                         "id" : "Q06005_3_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would <strong>you</strong> mostly win or mostly lose from the increase in government tax revenue?"
                       },
                       {
                         "id" : "Q06005_3_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which women in the middle class would you say mostly win or mostly lose from this change?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which <strong>women</strong> in the middle class would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
@@ -1007,13 +1007,13 @@
                         "id" : "Q06005_4_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would <strong>you</strong> mostly win or mostly lose from the increase in government tax revenue?"
                       },
                       {
                         "id" : "Q06005_4_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which women in the upper-middle class would you say mostly win or mostly lose from this change?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which <strong>women</strong> in the upper-middle class would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   },
@@ -1033,13 +1033,13 @@
                         "id" : "Q06005_5_en",
                         "title" : "YOU",
                         "treatments" : ["You"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would you mostly win or mostly lose from the increase in government tax revenue?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, would <strong>you</strong> mostly win or mostly lose from the increase in government tax revenue?"
                       },
                       {
                         "id" : "Q06005_5_en",
                         "title" : "GENDER",
                         "treatments" : ["Gender"],
-                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which women in the upper class would you say mostly win or mostly lose from this change?"
+                        "description" : "When overall taxes are raised and there are extra revenues to spend on government programs, which <strong>women</strong> in the upper class would you say mostly win or mostly lose from this change?"
                       }
                     ]
                   }
@@ -1056,13 +1056,13 @@
                   {
                     "id" : "Q06006_en",
                     "title" : "Control",
-                    "description" : "Do you think that increasing income taxes on high- income households would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.?",
+                    "description" : "Do you think that increasing income taxes on high-income <strong>households</strong> would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.?",
                     "treatments" : ["Neutral", "You"]
                   },
                   {
                     "id" : "Q06006_en",
                     "title" : "Gender",
-                    "description" : "Do you think that increasing income taxes that high- income women have to pay would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.?",
+                    "description" : "Do you think that increasing income taxes that high-income <strong>women</strong> have to pay would hurt economic activity, not have an effect on economic activity, or help economic activity in the U.S.?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -1077,19 +1077,19 @@
                   {
                     "id" : "Q06007_en",
                     "title" : "Control",
-                    "description" : "Which comes closer to your view about the long-term impact that tax cuts on high-income households may have on the federal budget deficit?",
+                    "description" : "Which comes closer to your view about the long-term impact that tax cuts on <strong>high-income households</strong> may have on the federal budget deficit?",
                     "treatments" : ["Neutral"]
                   },
                   {
                     "id" : "Q06007_en",
                     "title" : "You",
-                    "description" : "Which comes closer to your view about the long-term impact that tax cuts on households with your level of income may have on the federal budget deficit?",
+                    "description" : "Which comes closer to your view about the long-term impact that tax cuts on households with <strong>your</strong> level of income may have on the federal budget deficit?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06007_en",
                     "title" : "Gender",
-                    "description" : "Which comes closer to your view about the long-term impact that the cuts on taxes that high-income women have to pay may have on the federal budget deficit?",
+                    "description" : "Which comes closer to your view about the long-term impact that the cuts on taxes that high-income <strong>women</strong> have to pay may have on the federal budget deficit?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -1110,7 +1110,7 @@
                   {
                     "id" : "Q06008_en",
                     "title" : "Gender",
-                    "description" : "What about the long-term impact that cuts on taxes that women from the middle-class have to pay may have on the federal budget deficit?",
+                    "description" : "What about the long-term impact that cuts on taxes that <strong>women</strong> from the middle-class have to pay may have on the federal budget deficit?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -1483,13 +1483,13 @@
                         {
                             "id" : "Q06001_1_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06001_1_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women to evade taxes?",
+                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these <strong>women</strong> to evade taxes?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1509,13 +1509,13 @@
                         {
                             "id" : "Q06001_2_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to work less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to work less?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06001_2_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women to work less?",
+                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these <strong>women</strong> to work less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1535,13 +1535,13 @@
                         {
                             "id" : "Q06001_3_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to stop working?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06001_3_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women to stop working?",
+                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these <strong>women</strong> to stop working?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1561,13 +1561,13 @@
                         {
                             "id" : "Q06001_4_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to have spouse stop working?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to have spouse stop working?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06001_4_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women to have spouse stop working?",
+                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these <strong>women</strong> to have spouse stop working?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1587,13 +1587,13 @@
                         {
                             "id" : "Q06001_5_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to move state?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to move state?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06001_5_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women to move state?",
+                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these <strong>women</strong> to move state?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1613,13 +1613,13 @@
                         {
                             "id" : "Q06001_6_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to be less entrepreneurial?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to be less entrepreneurial?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06001_6_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women to be less entrepreneurial?",
+                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these <strong>women</strong> to be less entrepreneurial?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1639,13 +1639,13 @@
                         {
                             "id" : "Q06001_7_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to save less?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06001_7_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these women to save less?",
+                            "description" : "If the federal estate tax were to increase for women among the richest in the economy, to what extent would it encourage these <strong>women</strong> to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1655,7 +1655,7 @@
               "Q06002_1_en": {
                 "id": "Q06002_1_en",
                 "title": "Increasing Federal Estate Taxes - Young People",
-                "description": "If the federal estate tax were to increase, to what extent would it encourage young people who are not yet rich towards the following behaviors?",
+                "description": "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong>ng people who are not yet rich towards the following behaviors?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -1673,13 +1673,13 @@
                         {
                             "id" : "Q06002_1_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_1_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these <strong>women</strong> to evade taxes?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1699,13 +1699,13 @@
                         {
                             "id" : "Q06002_2_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to work less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to work less?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_2_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to work less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these <strong>women</strong> to work less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1725,13 +1725,13 @@
                         {
                             "id" : "Q06002_3_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_3_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these <strong>women</strong> to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1751,13 +1751,13 @@
                         {
                             "id" : "Q06002_4_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_4_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these <strong>women</strong> to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1777,13 +1777,13 @@
                         {
                             "id" : "Q06002_5_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_5_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these <strong>women</strong> to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1803,13 +1803,13 @@
                         {
                             "id" : "Q06002_6_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_6_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these <strong>women</strong> to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1829,13 +1829,13 @@
                         {
                             "id" : "Q06002_7_en",
                             "title" : "YOU",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage you to evade taxes?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong> to evade taxes?",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06002_7_en",
                             "title" : "GENDER",
-                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these women to save less?",
+                            "description" : "If the federal estate tax were to increase, to what extent would it encourage these <strong>women</strong> to save less?",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -1853,19 +1853,19 @@
                   {
                     "id" : "Q06004_en",
                     "title" : "CONTROL",
-                    "description" : "What effect do you think that increasing the federal estate tax on wealthy households would have on economic activity?",
+                    "description" : "What effect do you think that increasing the federal estate tax on <strong>wealthy</strong> households would have on economic activity?",
                     "treatments" : ["Neutral"]
                   },
                   {
                     "id" : "Q06004_en",
                     "title" : "YOU",
-                    "description" : "What effect do you think that increasing the federal estate tax on the estates of households similar to yours would have on economic activity?",
+                    "description" : "What effect do you think that increasing the federal estate tax on the estates of households similar to <strong>yours</strong> would have on economic activity?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06004_en",
                     "title" : "GENDER",
-                    "description" : "What effect do you think that increasing the federal estate tax on the estates of wealthy women would have on economic activity? ",
+                    "description" : "What effect do you think that increasing the federal estate tax on the estates of wealthy <strong>women</strong> would have on economic activity? ",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -1886,13 +1886,13 @@
                   {
                     "id" : "Q06005_en",
                     "title" : "YOU",
-                    "description" : "Which comes closer to your view about the long-term impact that cuts in the federal estate tax on the estates of households similar to yours may have on the federal budget deficit:",
+                    "description" : "Which comes closer to your view about the long-term impact that cuts in the federal estate tax on the estates of households similar to <strong>yours</strong> may have on the federal budget deficit:",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06005_en",
                     "title" : "GENDER",
-                    "description" : "Which comes closer to your view about the long-term im- pact that cuts in the federal estate tax on the estates of wealthy women may have to pay may have on the federal budget deficit:",
+                    "description" : "Which comes closer to your view about the long-term im- pact that cuts in the federal estate tax on the estates of wealthy <strong>women</strong> may have to pay may have on the federal budget deficit:",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -1914,13 +1914,13 @@
                   {
                     "id" : "Q06006_en",
                     "title" : "YOU",
-                    "description" : "Do you think that increasing the federal estate tax on the estates of households similar to yours is a good or bad way to reduce wealth inequality?",
+                    "description" : "Do you think that increasing the federal estate tax on the estates of households similar to <strong>yours</strong> is a good or bad way to reduce wealth inequality?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06006_en",
                     "title" : "GENDER",
-                    "description" : "Do you think that increasing the federal estate tax on the estates of wealthy women is a good or bad way to reduce wealth inequality?",
+                    "description" : "Do you think that increasing the federal estate tax on the estates of wealthy <strong>women</strong> is a good or bad way to reduce wealth inequality?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -1942,13 +1942,13 @@
                   {
                     "id" : "Q06008_en",
                     "title" : "YOU",
-                    "description" : "Would you say that it is fair or unfair that the estate for which you have worked hard and saved a lot in order to pass on wealth to your children will be subject to the federal estate tax at your death?",
+                    "description" : "Would you say that it is fair or unfair that the estate for which <strong>you</strong> have worked hard and saved a lot in order to pass on wealth to your children will be subject to the federal estate tax at your death?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06008_en",
                     "title" : "GENDER",
-                    "description" : "Would you say that it is fair or unfair that the estate of a wealthy woman who has worked hard and saved a lot in order to pass on wealth to her children is subject to the federal estate tax at death?",
+                    "description" : "Would you say that it is fair or unfair that the estate of a wealthy <strong>woman</strong> who has worked hard and saved a lot in order to pass on wealth to her children is subject to the federal estate tax at death?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -1998,13 +1998,13 @@
                   {
                     "id" : "Q06010_en",
                     "title" : "YOU",
-                    "description" : "Do you think that it is fair or unfair that people born in wealthier families than yours have had access to better schools, better medical care, better neighbor- hoods, and better professional and social networks than you have had?",
+                    "description" : "Do you think that it is fair or unfair that people born in wealthier families than <strong>yours</strong> have had access to better schools, better medical care, better neighbor- hoods, and better professional and social networks than you have had?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06010_en",
                     "title" : "GENDER",
-                    "description" : "Do you think that it is fair or unfair that a girl born to a very wealthy mother has access to better schools, better medical care, better neighborhoods, and better professional and social networks than a girl born to a less wealthy mother?",
+                    "description" : "Do you think that it is fair or unfair that a <strong>girl</strong> born to a very wealthy <strong>mother</strong> has access to better schools, better medical care, better neighborhoods, and better professional and social networks than a girl born to a less wealthy mother?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -2026,13 +2026,13 @@
                   {
                     "id" : "Q06011_en",
                     "title" : "YOU",
-                    "description" : "Do you think it is fair or unfair that people born in wealthier families than yours inherit more than you?",
+                    "description" : "Do you think it is fair or unfair that people born in wealthier families than <strong>yours<strong> inherit more than you?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06011_en",
                     "title" : "GENDER",
-                    "description" : "Do you think that it is fair or unfair that a girl born to a very wealthy mother inherits much more than a girl born to a less wealthy mother?",
+                    "description" : "Do you think that it is fair or unfair that a <strong>girl</strong> born to a very wealthy <strong>mother</strong> inherits much more than a girl born to a less wealthy mother?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -2490,13 +2490,13 @@
                   {
                     "id" : "Q06003_en",
                     "title" : "YOU",
-                    "description" : "If you have or had health insurance through your employer, do you think this would discourage you from quitting a bad job and switching job for fear of losing your health insurance?",
+                    "description" : "If <strong>you</strong> have or had health insurance through your employer, do you think this would discourage you from quitting a bad job and switching job for fear of losing your health insurance?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06003_en",
                     "title" : "GENDER",
-                    "description" : "If women have health insurance through their employer, do you think this would discourage them from quitting a bad job or switching job from fear of losing their health insurance?",
+                    "description" : "If <strong>women</strong> have health insurance through their employer, do you think this would discourage them from quitting a bad job or switching job from fear of losing their health insurance?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -2603,13 +2603,13 @@
                   {
                     "id" : "Q06006_en",
                     "title" : "YOU",
-                    "description" : "With less generous health insurance, my health would be worse since I could not afford sufficient and appropriate medical care.",
+                    "description" : "With less generous health insurance, <strong>my</strong. health would be worse since I could not afford sufficient and appropriate medical care.",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06006_en",
                     "title" : "GENDER",
-                    "description" : "With less generous health insurance for women's health issues, health in the U.S. would be worse since many women could not afford sufficient and appropriate medical care.",
+                    "description" : "With less generous health insurance for <strong>women's</strong> health issues, health in the U.S. would be worse since many women could not afford sufficient and appropriate medical care.",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -2630,13 +2630,13 @@
                   {
                     "id" : "Q06007_en",
                     "title" : "YOU",
-                    "description" : "More generous health insurance coverage for preventive care can lead to a reduction of my total medical costs, since it would allow me to catch medical issues early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
+                    "description" : "More generous health insurance coverage for preventive care can lead to a reduction of <strong>my</strong> total medical costs, since it would allow me to catch medical issues early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06007_en",
                     "title" : "GENDER",
-                    "description" : "More generous health insurance coverage for preventive care for women can lead to a reduction in total medical costs, since women's medical issues would be caught early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
+                    "description" : "More generous health insurance coverage for preventive care for <strong>women</strong> can lead to a reduction in total medical costs, since women's medical issues would be caught early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -2657,13 +2657,13 @@
                   {
                     "id" : "Q06008_en",
                     "title" : "YOU",
-                    "description" : "More generous health insurance could help me deal with unexpected large medical costs. It can thus reduce my financial stress and I won't have to build up debt to pay the medical bills for my family.",
+                    "description" : "More generous health insurance could help <strong>me</strong> deal with unexpected large medical costs. It can thus reduce my financial stress and I won't have to build up debt to pay the medical bills for my family.",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06008_en",
                     "title" : "GENDER",
-                    "description" : "More generous health insurance can help women deal with unexpected large medical costs. It can thus reduce women's financial stress and debt built up to pay the medical bills for women's health issues.",
+                    "description" : "More generous health insurance can help <strong>women</strong> deal with unexpected large medical costs. It can thus reduce women's financial stress and debt built up to pay the medical bills for women's health issues.",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -2684,13 +2684,13 @@
                   {
                     "id" : "Q06009_en",
                     "title" : "YOU",
-                    "description" : "Would you say that it is fair or unfair if you had to pay more for your health insurance than people with fewer pre-existing conditions than you?",
+                    "description" : "Would you say that it is fair or unfair if <strong>you</strong> had to pay more for your health insurance than people with fewer pre-existing conditions than you?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06009_en",
                     "title" : "GENDER",
-                    "description" : "Would you say that it is fair or unfair that women with pre-existing conditions have to pay more for their health insurance than women without pre-existing conditions?",
+                    "description" : "Would you say that it is fair or unfair that <strong>women</strong> with pre-existing conditions have to pay more for their health insurance than women without pre-existing conditions?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -2711,13 +2711,13 @@
                   {
                     "id" : "Q06010_en",
                     "title" : "YOU",
-                    "description" : "Is it fair or unfair if you had to pay more for health care or insurance than people born with better health than you?",
+                    "description" : "Is it fair or unfair if <strong>you</strong> had to pay more for health care or insurance than people born with better health than you?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06010_en",
                     "title" : "GENDER",
-                    "description" : "Is it fair or unfair that women born with worse health have to pay more for health care or insurance than women born with better health?",
+                    "description" : "Is it fair or unfair that <strong>women</strong> born with worse health have to pay more for health care or insurance than women born with better health?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -2738,13 +2738,13 @@
                   {
                     "id" : "Q06011_en",
                     "title" : "YOU",
-                    "description" : "Would you say that your own health issues and your own medical conditions are mostly the result of circumstances outside of your control or mostly the result of your own actions?",
+                    "description" : "Would you say that <strong>your</strong> own health issues and your own medical conditions are mostly the result of circumstances outside of your control or mostly the result of your own actions?",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06011_en",
                     "title" : "GENDER",
-                    "description" : "Would you say that health issues and medical conditions that arise for women are mostly the result of circumstances outside of their control or mostly the result of these women's own actions?",
+                    "description" : "Would you say that health issues and medical conditions that arise for <strong>women</strong> are mostly the result of circumstances outside of their control or mostly the result of these women's own actions?",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -2765,13 +2765,13 @@
                   {
                     "id" : "Q06013_en",
                     "title" : "YOU",
-                    "description" : "It is important that I am able to afford health care because if I became sick with a contagious disease that is not treated, I can have negative effects on others too.",
+                    "description" : "It is important that <strong>I</strong> am able to afford health care because if I became sick with a contagious disease that is not treated, I can have negative effects on others too.",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06013_en",
                     "title" : "GENDER",
-                    "description" : "It is important that all women can afford proper health care because women who become sick with a contagious disease that is not treated can have negative effects on others too.",
+                    "description" : "It is important that all <strong>women</strong> can afford proper health care because women who become sick with a contagious disease that is not treated can have negative effects on others too.",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -2792,13 +2792,13 @@
                   {
                     "id" : "Q06014_en",
                     "title" : "YOU",
-                    "description" : "It is important to help families like mine so that they can afford medical care by subsidizing our insurance premiums or by giving us transfers for medical care.",
+                    "description" : "It is important to help families like <strong>mine</strong> so that they can afford medical care by subsidizing our insurance premiums or by giving us transfers for medical care.",
                     "treatments" : ["You"]
                   },
                   {
                     "id" : "Q06014_en",
                     "title" : "GENDER",
-                    "description" : "It is important to help low-income women so that they can afford medical care by subsidizing their insurance premiums or by giving them transfers for medical care.",
+                    "description" : "It is important to help low-income <strong>women</strong> so that they can afford medical care by subsidizing their insurance premiums or by giving them transfers for medical care.",
                     "treatments" : ["Gender"]
                   }
                 ]
@@ -3209,7 +3209,7 @@
                   {
                     "id" : "Q06003_en",
                     "title" : "YOU",
-                    "description" : "Do you feel that your own job is being affected by U.S. trade policy?",
+                    "description" : "Do you feel that <strong>your</strong> own job is being affected by U.S. trade policy?",
                     "treatments" : ["You"]
                   }
                 ]
@@ -3271,7 +3271,7 @@
                         {
                             "id" : "Q06007_1_en",
                             "title" : "YOU",
-                            "description" : "Unemployment in your sector and the decline of some industries in the U.S.",
+                            "description" : "Unemployment in <strong>your</strong> sector and the decline of some industries in the U.S.",
                             "treatments" : ["You"]
                         }
                       ]
@@ -3300,7 +3300,7 @@
                   {
                     "id" : "Q06009_en",
                     "title" : "YOU",
-                    "description" : "Overall, has international trade decreased the prices of goods that you buy regularly?",
+                    "description" : "Overall, has international trade decreased the prices of goods that <strong>you</strong> buy regularly?",
                     "treatments" : ["You"]
                   }
                 ]
@@ -3664,7 +3664,7 @@
                         {
                             "id" : "Q07006_1_en",
                             "title" : "YOU",
-                            "description" : "How effectively would restricting imports help workers in your industry?",
+                            "description" : "How effectively would restricting imports help workers in <strong>your</strong> industry?",
                             "treatments" : ["You"]
                         }
                       ]
@@ -3684,7 +3684,7 @@
                         {
                             "id" : "Q07006_2_en",
                             "title" : "YOU",
-                            "description" : "How effectively would providing generous transfers and direct assistance help workers in your industry?",
+                            "description" : "How effectively would providing generous transfers and direct assistance help workers in <strong>your</strong> industry?",
                             "treatments" : ["You"]
                         }
                       ]
@@ -3704,7 +3704,7 @@
                         {
                             "id" : "Q07006_3_en",
                             "title" : "YOU",
-                            "description" : "How effectively would subsidizing production help workers in your industry?",
+                            "description" : "How effectively would subsidizing production help workers in <strong>your</strong> industry?",
                             "treatments" : ["You"]
                         }
                       ]
@@ -3741,7 +3741,7 @@
                   {
                       "id" : "Q07009_en",
                       "title" : "YOU",
-                      "description" : "Imagine that the goods or services currently produced in your sector or industry can actually be produced in a cheaper way in another country. In your opinion, would it make sense to protect the American firms in your sector or industry by using tariffs or import restrictions (even If this means higher prices for consumers) or would it be better to let the American firms in your sector or industry immediately face foreign competition, forcing them to become more competitive?",
+                      "description" : "Imagine that the goods or services currently produced in <strong>your</strong> sector or industry can actually be produced in a cheaper way in another country. In your opinion, would it make sense to protect the American firms in your sector or industry by using tariffs or import restrictions (even If this means higher prices for consumers) or would it be better to let the American firms in your sector or industry immediately face foreign competition, forcing them to become more competitive?",
                       "treatments" : ["You"]
                   }
                 ]
