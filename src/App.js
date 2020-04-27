@@ -9,9 +9,13 @@ import NotFound from './components/NotFound'
 import { surveys } from './config/fields.json'
 import Footer from './components/Footer';
 import ReactGA from 'react-ga'
+import Utils from './Utils'
 
 const trackingId = "UA-164717476-1";
-ReactGA.initialize(trackingId);
+// Only enable if not in a European timezone
+if(Utils.analyticsActive) {
+  ReactGA.initialize(trackingId);
+}
 
 class App extends React.Component {
   

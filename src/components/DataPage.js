@@ -10,7 +10,7 @@ import tradeSurveyData from './../json_data/data_trade.json'
 import estateSurveyData from './../json_data/data_estate.json'
 import healthSurveyData from './../json_data/data_health.json'
 import DataType from '../DataType'
-import ReactGA from 'react-ga';
+import Utils from '../Utils'
 
 function addSurveyType(data, survey_id) {
     data.forEach(x => x["survey"] = survey_id)
@@ -66,8 +66,7 @@ export default class DataPage extends React.Component {
             return <NotFound />
         }
         let trackingUrl = this.props.history.location.pathname + this.props.history.location.search;
-        ReactGA.set({ page: trackingUrl});
-        ReactGA.pageview(trackingUrl);
+        Utils.logPageview(trackingUrl);
         this.params = new URLSearchParams(this.props.history.location.search); 
         let selectedGroup = this.getGroup();
         let selectedTopic = this.getTopic();

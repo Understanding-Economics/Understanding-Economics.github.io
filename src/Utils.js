@@ -1,5 +1,14 @@
 /* eslint no-undef: "off"*/
 import Colors from './Colors'
+import ReactGA from 'react-ga'
+
+
+let date = new Date();
+let timezone = date.getTimezoneOffset() / 60;
+console.log(timezone);
+// Only enable if not in a European timezone
+let analyticsActive = timezone > 0 || timezone > -4;
+
 const Utils = {
     getUniqueDictVals: function(data, key, sorter) {
         let vals = data.map(x => x[key]);
@@ -118,6 +127,15 @@ const Utils = {
         && question.color in Colors ? Colors[question.color] : question.color;
         if(colorPattern) return colorPattern
         else return Colors.Categorical
+    },
+
+    analyticsActive : analyticsActive,
+
+    logPageview : (url) => {
+        if(analyticsActive) {
+            ReactGA.set({ page: url});
+            ReactGA.pageview(url);
+        }
     }
 }
 

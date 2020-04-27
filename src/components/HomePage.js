@@ -1,7 +1,7 @@
 import React from 'react'
 import DemoImage from './DemoImage'
 import { Section } from './TextComponents'
-import ReactGA from 'react-ga';
+import Utils from '../Utils'
 
 export default class HomePage extends React.Component {
     // NOTE: 
@@ -9,8 +9,7 @@ export default class HomePage extends React.Component {
     render() {
         document.title = "Understanding Economics";
         let trackingUrl = "/";
-        ReactGA.set({ page : trackingUrl})
-        ReactGA.pageview(trackingUrl);
+        Utils.logPageview(trackingUrl);
         return (
             <div className = "HomePage">
                 <h2 style = {{marginBottom : "20px"}}>Welcome to the Understanding Economics Project!</h2>

@@ -2,14 +2,13 @@ import React from 'react'
 
 import { Section, Subsection} from './TextComponents'
 import { NavLink } from 'react-router-dom';
-import ReactGA from 'react-ga';
+import Utils from '../Utils'
 
 export default class AboutPage extends React.Component {
     render() {
         document.title = "About - Understanding Economics";
         let trackingUrl = "/about";
-        ReactGA.set({page : trackingUrl});
-        ReactGA.pageview(trackingUrl);
+        Utils.logPageview(trackingUrl);
         return (
             <div className = "AboutPage">
                 <Section>Paper</Section>
