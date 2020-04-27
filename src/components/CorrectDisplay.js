@@ -2,7 +2,7 @@ import React from 'react'
 
 export default class CorrectDisplay extends React.PureComponent {
     render() {
-        if (!this.props.question || !this.props.question.correct) {
+        if (!this.props.question || (!this.props.question.correct && !this.props.question.correct_text)) {
             return null;
         }
         let formatter =  this.props.formatter || (x => x);
@@ -31,9 +31,10 @@ export default class CorrectDisplay extends React.PureComponent {
                 }
             }
             }
+        let correctText = this.props.question.correct_text || formatter(this.props.question.correct);
         return <div className = "header">
             <span>
-                <strong style={{color:"green", fontSize:"14pt"}}>Correct Answer: {formatter(this.props.question.correct)}</strong><br/>
+                <strong style={{color:"green", fontSize:"14pt"}}>Correct Answer: {correctText}</strong><br/>
                 <em style={{fontSize:"9pt", verticalAlign: "top"}}>
                     {sourceText ? sourceText : null}
                 </em>

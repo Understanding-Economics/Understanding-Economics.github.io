@@ -82,7 +82,7 @@ export default class HistogramView extends React.Component {
                         lines : (correctBin ? 
                                 [{
                                     value : `${correctBin["x0"]}-${correctBin["x1"]}`, 
-                                    text : `Correct: ${this.props.formatter(selectedQuestion.correct)}`, 
+                                    text : `Correct: ${selectedQuestion.correct_text || this.props.formatter(selectedQuestion.correct)}`, 
                                     class: "correct_line",
                                     position: "middle", 
                                 }
