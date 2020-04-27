@@ -1381,7 +1381,7 @@
                 "description": "How has the share of wealth held by the top 0.1% evolved over the past 30 years in the U.S.?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"],
-                "correct" : "It has increased a lot",
+                "correct" : "It has increased by a lot",
                 "source" : "Stanford",
                 "source_url" : "https://inequality.stanford.edu/sites/default/files/Pathways-SOTU-2016-Wealth-Inequality-3.pdf"
               },
