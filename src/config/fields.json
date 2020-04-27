@@ -1340,8 +1340,7 @@
                       "description": "What amount will the IRS consider as capital gains that Jack's father made and that will be taxed at the capital gains tax rate?",
                       "type" : "CATEGORICAL",
                       "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"],
-                      "correct" : 300000,
-                      "format" : "dollar",
+                      "correct" : "$300,000",
                       "source" : "IRS",
                       "source_url" : "https://www.irs.gov/faqs/interest-dividends-other-types-of-income/gifts-inheritances"
                     }
