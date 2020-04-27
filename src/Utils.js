@@ -5,7 +5,6 @@ import ReactGA from 'react-ga'
 
 let date = new Date();
 let timezone = date.getTimezoneOffset() / 60;
-console.log(timezone);
 // Only enable if not in a European timezone
 let analyticsActive = timezone > 0 || timezone > -4;
 

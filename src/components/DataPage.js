@@ -122,7 +122,6 @@ export default class DataPage extends React.Component {
     }
     // decide whether to display the group
     displayGroupSelect(selectedTopic, selectedQuestion, selectedGroup) {
-        console.log()
         if (!selectedTopic) {
             return false;
         }
@@ -147,7 +146,6 @@ export default class DataPage extends React.Component {
     }
 
     handleTopicSelect(value) {
-        console.log(event.target.value);
         this.params.set("topic", this.survey.topics[value].id);
         this.params.delete("question")
         if(Object.values(this.survey.topics[value].questions).filter(q => !noGroupTypes.includes(q.type)).length == 0) {
