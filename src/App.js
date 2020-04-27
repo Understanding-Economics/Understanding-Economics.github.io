@@ -10,7 +10,7 @@ import { surveys } from './config/fields.json'
 import Footer from './components/Footer';
 import ReactGA from 'react-ga'
 
-const trackingId = "UA-164614154-1";
+const trackingId = "UA-164717476-1";
 ReactGA.initialize(trackingId);
 
 class App extends React.Component {
