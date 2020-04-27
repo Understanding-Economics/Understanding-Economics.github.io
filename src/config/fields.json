@@ -2239,7 +2239,9 @@
                     "type" : "NUMERIC",
                     "correct" : 17.6,
                     "source" : "Medicaid.gov",
-                    "source_url" : "https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html"
+                    "source_url" : "https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html",
+                    "max_val" : 60,
+                    "nticks" : 12
                   },
                   {
                     "id": "Q04020_2_en",
@@ -2249,7 +2251,8 @@
                     "correct" : 14,
                     "source" : "Kaiser Family Foundation",
                     "source_url" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D",
-                    "nticks" : 10
+                    "max_val" : 60,
+                    "nticks" : 12
                   },
                   {
                     "id": "Q04020_3_en",
@@ -2258,8 +2261,9 @@
                     "type" : "NUMERIC",
                     "correct" : 49,
                     "source" : "Kaiser Family Foundation",
-                    "source_url" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D", 
-                    "nticks" : 10
+                    "source_url" : "https://www.kff.org/other/state-indicator/total-population/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D",
+                    "max_val" : 60,
+                    "nticks" : 12
                   },
                   {
                     "id": "Q04020_4_en",
@@ -2267,7 +2271,8 @@
                     "description" : "Other insurance (policies purchased directly from an insurance company, military, etc.)",
                     "type" : "NUMERIC",
                     "correct" : 10.7,
-                    "nticks" : 5
+                    "max_val" : 60,
+                    "nticks" : 12
                   },
                   {
                     "id": "Q04020_5_en",
@@ -2277,7 +2282,8 @@
                     "correct" : 8.7,
                     "source" : "Kaiser Family Foundation",
                     "source_url" : "https://www.kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/",
-                    "nticks" : 10
+                    "max_val" : 60,
+                    "nticks" : 12
                   }
                 ]
               },
