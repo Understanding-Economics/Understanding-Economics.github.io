@@ -3358,6 +3358,7 @@
               "Q06015_en": {
                 "id": "Q06015_en",
                 "title": "Case Study",
+                "short_description" : "What will happen if the U.S. starts importing more cars and producing less cars domestically", 
                 "description": "Let us now consider the following simplified example of what happens economically when there is more trade in some goods. Take for instance the car industry and the laptop industry. (...) Imagine now that the U.S. starts importing even more cars and producing less cars domestically. What will happen to:",
                 "type" : "UMBRELLA",
                 "questions" : [
