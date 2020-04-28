@@ -13,7 +13,7 @@ export default class HomePage extends React.Component {
         return (
             <div className = "HomePage">
                 <h2 style = {{marginBottom : "20px"}}>Welcome to the Understanding Economics Project!</h2>
-                <img src = {`${process.env.PUBLIC_URL}/home_images/lecture.jpg`} style={{height: "250px", marginBottom: "20px"}}/>
+                <img src = {`${process.env.PUBLIC_URL}/home_images/cargo.jpeg`} style={{height: "250px", marginBottom: "20px"}}/>
 
                 <Section>Project</Section>
 
