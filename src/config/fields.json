@@ -74,7 +74,7 @@
       "partygroup": {
         "id": "partygroup",
         "title": "Political Party",
-        "description": "The political party that the respondent self-identifies with. ",
+        "description": "The political party that the respondent self-identifies with.",
         "type" : "CATEGORICAL",
         "sorter": ["Democrat", "Independent", "Republican", "Other"]
       },
@@ -280,7 +280,7 @@
               },
               "Q04016_en": {
                 "id": "Q04016_en",
-                "title": "Top 1% ",
+                "title": "Top 1%",
                 "description": "Questions about the top 1%",
                 "type" : "UMBRELLA",
                 "questions" : [
@@ -1088,7 +1088,7 @@
               },
               "Q07003_en" : {
                 "id" : "Q07003_en",
-                "title" : "Fairness ",
+                "title" : "Fairness",
                 "description" : "Questions regarding fairness of U.S. income tax policies",
                 "type" : "UMBRELLA",
                 "questions" : [
@@ -1944,7 +1944,7 @@
                         {
                           "id" : "Q06004_en",
                           "title" : "GENDER",
-                          "description" : "What effect do you think that increasing the federal estate tax on the estates of wealthy <strong>women</strong> would have on economic activity? ",
+                          "description" : "What effect do you think that increasing the federal estate tax on the estates of wealthy <strong>women</strong> would have on economic activity?",
                           "treatments" : ["Gender"]
                         }
                       ]
@@ -2009,7 +2009,7 @@
               },
               "Q06008_en": {
                 "id" : "Q06008_en",
-                "title" : "Fairness ",
+                "title" : "Fairness",
                 "description" : "Questions regarding fairness of the estate tax",
                 "type" : "UMBRELLA",
                 "questions" : [
@@ -2260,14 +2260,14 @@
             "questions": {
               "Q03001_en": {
                 "id": "Q03001_en",
-                "title": "Have Health Insurance",
+                "title": "Has Health Insurance",
                 "description": "Do you currently have health insurance?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
               },
               "Q03003_en": {
                 "id": "Q03003_en",
-                "title": "Medicaid or Medicare",
+                "title": "On Medicaid or Medicare?",
                 "description": "Are you on Medicaid or Medicare?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
@@ -2281,7 +2281,7 @@
               },
               "Q03005_en": {
                 "id": "Q03005_en",
-                "title": "Medical Treatment Delays",
+                "title": "Have delayed medical treatment",
                 "description": "Within the last 12 months, have you or a member of your family put off medical treatment because of the cost?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes", "No"]
@@ -2296,14 +2296,14 @@
               "Q03007_en": {
                 "id": "Q03007_en",
                 "title": "Satisfaction with Healthcare Cost",
-                "description": "Satisfaction with the total cost you pay for your healthcare?",
+                "description": "Satisfaction with the total cost you pay for your healthcare",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
               },
               "Q03008_en": {
                 "id": "Q03008_en",
-                "title": "Quality of Healthcare",
-                "description": "Quality of the health care you receive?",
+                "title": "Quality of Healthcare Received",
+                "description": "Quality of the health care you receive",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Excellent", "Good", "Fair", "Poor"]
               }
@@ -2407,14 +2407,14 @@
               },
               "Q04010_1_en" : {
                 "id" : "Q04010_1_en",
-                "title" : "Health Insurance Premium Criteria",
+                "title" : "Premiums criteria",
                 "description" : "Are insurance companies currently allowed to set different premiums based on the following characteristics?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
                     "id": "Q04010_1_en",
-                    "title": "Based on gender",
-                    "description" : "Gender",
+                    "title": "Gender",
+                    "description" : "Based on Gender",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
                     "correct" : "No",
@@ -2423,8 +2423,8 @@
                   },
                   {
                     "id": "Q04010_2_en",
-                    "title": "Based on age",
-                    "description" : "Age",
+                    "title": "Age",
+                    "description" : "Based on Age",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
                     "correct" : "Yes",
@@ -2433,8 +2433,8 @@
                   },
                   {
                     "id": "Q04010_3_en",
-                    "title": "Based on tobacco",
-                    "description" : "Tobacco use",
+                    "title": "Tobacco",
+                    "description" : "Based on Tobacco use",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
                     "correct" : "Yes",
@@ -2443,8 +2443,8 @@
                   },
                   {
                     "id": "Q04010_4_en",
-                    "title": "Based on location",
-                    "description" : "Where the person lives",
+                    "title": "Location",
+                    "description" : "Based on Where the person lives",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
                     "correct" : "Yes",
@@ -2453,8 +2453,8 @@
                   },
                   {
                     "id": "Q04010_5_en",
-                    "title": "Based on pre-existing conditions",
-                    "description" : "Preexisting conditions (such as having diabetes, obesity, or being pregnant at the time of purchase of the insurance)",
+                    "title": "Pre-existing Conditions",
+                    "description" : "Based on Preexisting conditions (such as having diabetes, obesity, or being pregnant at the time of purchase of the insurance)",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"],
                     "correct" : "No",
@@ -2539,7 +2539,7 @@
               },
               "Q04017_en": {
                 "id": "Q04017_en",
-                "title": "Impact of ACA on FPL-based Eligibility",
+                "title": "Impact of ACA on Eligibility",
                 "description": "How did the FPL threshold percentage change, if at all, as a result of the Affordable Care Act",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Yes, it expanded eligibility", "No, it remained the same", "Yes, it reduced eligibility"],
@@ -2549,23 +2549,31 @@
               },
               "Q04018_en": {
                 "id": "Q04018_en",
-                "title": "U.S. Relative Healthcare Spending",
-                "description": "Relative to other rich countries like France, Germany, and the U.K., how much does the U.S. spend on health care as a share of its GDP?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Much more", "More", "About the same", "Less", "Much less"],
-                "correct" : "Much more",
-                "source" : "Commonwealth Fund",
-                "source_url" : "https://www.commonwealthfund.org/publications/issue-briefs/2015/oct/us-health-care-global-perspective"
-              },
-              "Q04019_en": {
-                "id": "Q04019_en",
-                "title": "U.S. Relative Health Outcomes",
-                "description": "Relative to other rich countries like France, Germany, and the U.K., how good are health outcomes, such as life expectancy or infant mortality, in the U.S.?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Much better", "Better", "About the same", "Worse", "Much worse"],
-                "correct" : "Worse",
-                "source" : "Commonwealth Fund",
-                "source_url" : "https://www.commonwealthfund.org/publications/issue-briefs/2015/oct/us-health-care-global-perspective"
+                "title": "U.S. Compared to Other Rich Countries",
+                "description": "Questions regarding U.S. healthcare compared to that of other rich countries",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q04018_en",
+                    "title": "Spend More on Health",
+                    "description": "Relative to other rich countries like France, Germany, and the U.K., how much does the U.S. spend on health care as a share of its GDP?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Much more", "More", "About the same", "Less", "Much less"],
+                    "correct" : "Much more",
+                    "source" : "Commonwealth Fund",
+                    "source_url" : "https://www.commonwealthfund.org/publications/issue-briefs/2015/oct/us-health-care-global-perspective"
+                  },
+                  {
+                    "id": "Q04019_en",
+                    "title": "Better Health Outcomes",
+                    "description": "Relative to other rich countries like France, Germany, and the U.K., how good are health outcomes, such as life expectancy or infant mortality, in the U.S.?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Much better", "Better", "About the same", "Worse", "Much worse"],
+                    "correct" : "Worse",
+                    "source" : "Commonwealth Fund",
+                    "source_url" : "https://www.commonwealthfund.org/publications/issue-briefs/2015/oct/us-health-care-global-perspective"
+                  }
+                ]
               }
             }
           },
@@ -2576,17 +2584,25 @@
             "questions": {
               "Q06001": {
                 "id": "Q06001",
-                "title": "Reason for Individual Mandate",
-                "description": "In your view, what is the main reason for having an individual mandate?",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q06001_wordcloud.png"
-              },
-              "Q06002": {
-                "id": "Q06002",
-                "title": "Individual Mandate Evaluation",
-                "description": "Would you say that an individual mandate is beneficial or detrimental?",
-                "type" : "WORDCLOUD",
-                "img_url" : "Question_Q06002_wordcloud.png"
+                "title": "Individual Mandate",
+                "description": "Questions regarding individual mandate",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q06001",
+                    "title": "Main Reason",
+                    "description": "In your view, what is the main reason for having an individual mandate?",
+                    "type" : "WORDCLOUD",
+                    "img_url" : "Question_Q06001_wordcloud.png"
+                  },
+                  {
+                    "id": "Q06002",
+                    "title": "Beneficial or Detrimental?",
+                    "description": "Would you say that an individual mandate is beneficial or detrimental?",
+                    "type" : "WORDCLOUD",
+                    "img_url" : "Question_Q06002_wordcloud.png"
+                  }
+                ]
               },
               "Q06003_en": {
                 "id": "Q06003_en",
@@ -2702,56 +2718,66 @@
                 ]
               },
               "Q06006_en": {
-                "id": "Q06006_en",
-                "title": "Quality of Healthcare",
-                "description": "Effect of less generous health insurance on health coverage and outcomes",
-                "type" : "TREATMENT",
-                "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
+                "id" : "Q06006_en",
+                "title" : "Satisfaction with Healthcare",
+                "description" : "Questions regarding satisfaction with healthcare",
+                "type" : "UMBRELLA",
                 "questions" : [
                   {
-                    "id" : "Q06006_en",
-                    "title" : "CONTROL",
-                    "description" : "With less generous health insurance, health in the U.S. would be worse since many people could not afford sufficient and appropriate medical care.",
-                    "treatments" : ["Neutral"]
-                  },
-                  {
-                    "id" : "Q06006_en",
-                    "title" : "YOU",
-                    "description" : "With less generous health insurance, <strong>my</strong. health would be worse since I could not afford sufficient and appropriate medical care.",
-                    "treatments" : ["You"]
-                  },
-                  {
-                    "id" : "Q06006_en",
-                    "title" : "GENDER",
-                    "description" : "With less generous health insurance for <strong>women's</strong> health issues, health in the U.S. would be worse since many women could not afford sufficient and appropriate medical care.",
-                    "treatments" : ["Gender"]
-                  }
-                ]
-              },
-              "Q06007_en": {
-                "id": "Q06007_en",
-                "title": "Total Costs of Healthcare",
-                "description": "Effect of more generous health insurance on healthcare costs",
-                "type" : "TREATMENT",
-                "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
-                "questions" : [
-                  {
-                    "id" : "Q06007_en",
-                    "title" : "CONTROL",
-                    "description" : "More generous health insurance coverage for preventive care can lead to a reduction in total medical costs, since medical issues would be caught early on before they  turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
-                    "treatments" : ["Neutral"]
-                  },
-                  {
-                    "id" : "Q06007_en",
-                    "title" : "YOU",
-                    "description" : "More generous health insurance coverage for preventive care can lead to a reduction of <strong>my</strong> total medical costs, since it would allow me to catch medical issues early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
-                    "treatments" : ["You"]
-                  },
-                  {
-                    "id" : "Q06007_en",
-                    "title" : "GENDER",
-                    "description" : "More generous health insurance coverage for preventive care for <strong>women</strong> can lead to a reduction in total medical costs, since women's medical issues would be caught early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
-                    "treatments" : ["Gender"]
+                    "Q06006_en": {
+                      "id": "Q06006_en",
+                      "title": "Quality",
+                      "description": "Effect of less generous health insurance on health coverage and outcomes",
+                      "type" : "TREATMENT",
+                      "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
+                      "questions" : [
+                        {
+                          "id" : "Q06006_en",
+                          "title" : "CONTROL",
+                          "description" : "With less generous health insurance, health in the U.S. would be worse since many people could not afford sufficient and appropriate medical care.",
+                          "treatments" : ["Neutral"]
+                        },
+                        {
+                          "id" : "Q06006_en",
+                          "title" : "YOU",
+                          "description" : "With less generous health insurance, <strong>my</strong. health would be worse since I could not afford sufficient and appropriate medical care.",
+                          "treatments" : ["You"]
+                        },
+                        {
+                          "id" : "Q06006_en",
+                          "title" : "GENDER",
+                          "description" : "With less generous health insurance for <strong>women's</strong> health issues, health in the U.S. would be worse since many women could not afford sufficient and appropriate medical care.",
+                          "treatments" : ["Gender"]
+                        }
+                      ]
+                    },
+                    "Q06007_en": {
+                      "id": "Q06007_en",
+                      "title": "Total Costs",
+                      "description": "Effect of more generous health insurance on healthcare costs",
+                      "type" : "TREATMENT",
+                      "sorter" : ["Strongly agree", "Agree", "Neither agree nor disagree", "Disagree", "Strongly disagree"],
+                      "questions" : [
+                        {
+                          "id" : "Q06007_en",
+                          "title" : "CONTROL",
+                          "description" : "More generous health insurance coverage for preventive care can lead to a reduction in total medical costs, since medical issues would be caught early on before they  turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
+                          "treatments" : ["Neutral"]
+                        },
+                        {
+                          "id" : "Q06007_en",
+                          "title" : "YOU",
+                          "description" : "More generous health insurance coverage for preventive care can lead to a reduction of <strong>my</strong> total medical costs, since it would allow me to catch medical issues early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
+                          "treatments" : ["You"]
+                        },
+                        {
+                          "id" : "Q06007_en",
+                          "title" : "GENDER",
+                          "description" : "More generous health insurance coverage for preventive care for <strong>women</strong> can lead to a reduction in total medical costs, since women's medical issues would be caught early on before they turn into more serious and expensive health conditions and because many medical problems could be avoided altogether.",
+                          "treatments" : ["Gender"]
+                        }
+                      ]
+                    }
                   }
                 ]
               },
@@ -2783,56 +2809,66 @@
                 ]
               },
               "Q06009_en": {
-                "id": "Q06009_en",
-                "title": "Higher Costs of Pre-existing Conditions",
-                "description": "Fairness of people with pre-existing conditions having to pay more for their health insurance than people without pre-existing conditions?",
-                "type" : "TREATMENT",
-                "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"],
+                "id" : "Q06009_en",
+                "title" : "Fairness",
+                "description" : "Questions regarding fairness of healthcare",
+                "type" : "UMBRELLA",
                 "questions" : [
                   {
-                    "id" : "Q06009_en",
-                    "title" : "CONTROL",
-                    "description" : "Would you say that it is fair or unfair that people with pre-existing conditions have to pay more for their health insurance than people without pre-existing conditions?",
-                    "treatments" : ["Neutral"]
-                  },
-                  {
-                    "id" : "Q06009_en",
-                    "title" : "YOU",
-                    "description" : "Would you say that it is fair or unfair if <strong>you</strong> had to pay more for your health insurance than people with fewer pre-existing conditions than you?",
-                    "treatments" : ["You"]
-                  },
-                  {
-                    "id" : "Q06009_en",
-                    "title" : "GENDER",
-                    "description" : "Would you say that it is fair or unfair that <strong>women</strong> with pre-existing conditions have to pay more for their health insurance than women without pre-existing conditions?",
-                    "treatments" : ["Gender"]
-                  }
-                ]
-              },
-              "Q06010_en": {
-                "id": "Q06010_en",
-                "title": "Higher Costs of Worse Health at Birth",
-                "description": "Fairness of people born with worse health having to pay more for health care or insurance than people born with better health?",
-                "type" : "TREATMENT",
-                "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"],
-                "questions" : [
-                  {
-                    "id" : "Q06010_en",
-                    "title" : "CONTROL",
-                    "description" : "Is it fair or unfair that people born with worse health have to pay more for health care or insurance than people born with better health?",
-                    "treatments" : ["Neutral"]
-                  },
-                  {
-                    "id" : "Q06010_en",
-                    "title" : "YOU",
-                    "description" : "Is it fair or unfair if <strong>you</strong> had to pay more for health care or insurance than people born with better health than you?",
-                    "treatments" : ["You"]
-                  },
-                  {
-                    "id" : "Q06010_en",
-                    "title" : "GENDER",
-                    "description" : "Is it fair or unfair that <strong>women</strong> born with worse health have to pay more for health care or insurance than women born with better health?",
-                    "treatments" : ["Gender"]
+                    "Q06009_en": {
+                      "id": "Q06009_en",
+                      "title": "Pre-existing Conditions Pay More",
+                      "description": "Fairness of people with pre-existing conditions having to pay more for their health insurance than people without pre-existing conditions?",
+                      "type" : "TREATMENT",
+                      "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"],
+                      "questions" : [
+                        {
+                          "id" : "Q06009_en",
+                          "title" : "CONTROL",
+                          "description" : "Would you say that it is fair or unfair that people with pre-existing conditions have to pay more for their health insurance than people without pre-existing conditions?",
+                          "treatments" : ["Neutral"]
+                        },
+                        {
+                          "id" : "Q06009_en",
+                          "title" : "YOU",
+                          "description" : "Would you say that it is fair or unfair if <strong>you</strong> had to pay more for your health insurance than people with fewer pre-existing conditions than you?",
+                          "treatments" : ["You"]
+                        },
+                        {
+                          "id" : "Q06009_en",
+                          "title" : "GENDER",
+                          "description" : "Would you say that it is fair or unfair that <strong>women</strong> with pre-existing conditions have to pay more for their health insurance than women without pre-existing conditions?",
+                          "treatments" : ["Gender"]
+                        }
+                      ]
+                    },
+                    "Q06010_en": {
+                      "id": "Q06010_en",
+                      "title": "People with Worse Health at Birth Pay More",
+                      "description": "Fairness of people born with worse health having to pay more for health care or insurance than people born with better health?",
+                      "type" : "TREATMENT",
+                      "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"],
+                      "questions" : [
+                        {
+                          "id" : "Q06010_en",
+                          "title" : "CONTROL",
+                          "description" : "Is it fair or unfair that people born with worse health have to pay more for health care or insurance than people born with better health?",
+                          "treatments" : ["Neutral"]
+                        },
+                        {
+                          "id" : "Q06010_en",
+                          "title" : "YOU",
+                          "description" : "Is it fair or unfair if <strong>you</strong> had to pay more for health care or insurance than people born with better health than you?",
+                          "treatments" : ["You"]
+                        },
+                        {
+                          "id" : "Q06010_en",
+                          "title" : "GENDER",
+                          "description" : "Is it fair or unfair that <strong>women</strong> born with worse health have to pay more for health care or insurance than women born with better health?",
+                          "treatments" : ["Gender"]
+                        }
+                      ]
+                    }
                   }
                 ]
               },
@@ -2926,31 +2962,47 @@
               },
               "Q06016_en": {
                 "id": "Q06016_en",
-                "title": "Cost of Birth Control",
-                "description": "Would you find it fair or unfair that women who use birth control methods pay for the cost of birth control on their own?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very fair", "Fair", "Unfair", "Very unfair"]
-              },
-              "Q06017_en": {
-                "id": "Q06017_en",
-                "title": "Copays for Birth Control",
-                "description": "Should women who are planning on using birth control methods have increased insurance copays because they might cost more for their insurers?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "title": "Birth Control",
+                "description": "Questions regarding birth control",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q06016_en",
+                    "title": "Coverage",
+                    "description": "Would you find it fair or unfair that women who use birth control methods pay for the cost of birth control on their own?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Very fair", "Fair", "Unfair", "Very unfair"]
+                  },
+                  {
+                    "id": "Q06017_en",
+                    "title": "Copays",
+                    "description": "Should women who are planning on using birth control methods have increased insurance copays because they might cost more for their insurers?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  }
+                ]
               },
               "Q06018_en": {
                 "id": "Q06018_en",
-                "title": "Pharmacists Opting Out in Abortion Cases",
-                "description": "Do you favor or oppose a law allowing pharmacists and health providers to opt out of providing medicine or surgical procedures that result in abortion?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Strongly favor", "Favor", "Oppose", "Strongly oppose"]
-              },
-              "Q06019_en": {
-                "id": "Q06019_en",
-                "title": "Insurance for Abortion",
-                "description": "Should insurance providers have to cover medicine or surgical procedures that result in abortion?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "title": "Abortion",
+                "description": "Questions regarding abortion",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q06018_en",
+                    "title": "Health Providers Opting Out",
+                    "description": "Do you favor or oppose a law allowing pharmacists and health providers to opt out of providing medicine or surgical procedures that result in abortion?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Strongly favor", "Favor", "Oppose", "Strongly oppose"]
+                  },
+                  {
+                    "id": "Q06019_en",
+                    "title": "Coverage",
+                    "description": "Should insurance providers have to cover medicine or surgical procedures that result in abortion?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Yes", "No"]
+                  }
+                ]
               }
             }
           },
@@ -2961,55 +3013,71 @@
             "questions": {
               "Q07001_en": {
                 "id": "Q07001_en",
-                "title": "Access to healthcare",
-                "description": "Is access to health care in the U.S. today fair for everyone?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Access to health care is fair even for low-income families", "Access to health care should be improved for many families"]
-              },
-              "Q07004_en": {
-                "id": "Q07004_en",
-                "title": "Fairness of U.S. Health Insurance System",
-                "description": "How fair is the current U.S. health insurance system?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
-              },
-              "Q07005_en": {
-                "id": "Q07005_en",
-                "title": "Satisfaction with US health insurance system",
-                "description": "How satisfied or dissatisfied are you with health insurance in the U.S.?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
+                "title": "U.S. Health Insurance System",
+                "description": "Questions regarding U.S. health insurance system",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q07001_en",
+                    "title": "Fairness in Access",
+                    "description": "Is access to health care in the U.S. today fair for everyone?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Access to health care is fair even for low-income families", "Access to health care should be improved for many families"]
+                  },
+                  {
+                    "id": "Q07004_en",
+                    "title": "Overall Fairness",
+                    "description": "How fair is the current U.S. health insurance system?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
+                  },
+                  {
+                    "id": "Q07005_en",
+                    "title": "Satisfaction",
+                    "description": "How satisfied or dissatisfied are you with health insurance in the U.S.?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
+                  }
+                ]
               },
               "Q07006_en": {
                 "id": "Q07006_en",
-                "title": "Support for Medicare-for-all",
-                "description": "As you may know, some have proposed a 'Medicare-for-all' single payer health insurance program that would be administered by the federal government advanced through taxes. Please tell us if you favor or oppose this proposal, or if you don't know enough to say?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
-              },
-              "Q07007_en": {
-                "id": "Q07007_en",
-                "title": "Additional Help for Low-income Families",
-                "description": "Do you support additional transfers or subsidies to low-income families to help with the costs of health care?",
-                "type" : "CATEGORICAL",
-                "color" : "ReverseGradient5", 
-                "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
-              },
-              "Q07008_en": {
-                "id": "Q07008_en",
-                "title": "Support for Individual Mandate",
-                "description": "Do you support an individual mandate whereby every individual is obliged to buy health insurance?",
-                "type" : "CATEGORICAL",
-                "color" : "ReverseGradient5",
-                "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
-              },
-              "Q07009_en": {
-                "id": "Q07009_en",
-                "title": "Support for Employer Mandate",
-                "description": "Do you support or oppose having an employer mandate whereby every large employer, with more than 50 employees, is obliged to offer health insurance plans for their employees?",
-                "type" : "CATEGORICAL",
-                "color" : "ReverseGradient5",
-                "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                "title": "Supports",
+                "description": "What do you support with regard to healthcare programs?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q07006_en",
+                    "title": "Medicare-for-all",
+                    "description": "As you may know, some have proposed a 'Medicare-for-all' single payer health insurance program that would be administered by the federal government advanced through taxes. Please tell us if you favor or oppose this proposal, or if you don't know enough to say?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                  },
+                  {
+                    "id": "Q07007_en",
+                    "title": "Help to Low-income Families",
+                    "description": "Do you support additional transfers or subsidies to low-income families to help with the costs of health care?",
+                    "type" : "CATEGORICAL",
+                    "color" : "ReverseGradient5", 
+                    "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                  },
+                  {
+                    "id": "Q07008_en",
+                    "title": "Individual Mandate",
+                    "description": "Do you support an individual mandate whereby every individual is obliged to buy health insurance?",
+                    "type" : "CATEGORICAL",
+                    "color" : "ReverseGradient5",
+                    "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                  },
+                  {
+                    "id": "Q07009_en",
+                    "title": "Employer Mandate",
+                    "description": "Do you support or oppose having an employer mandate whereby every large employer, with more than 50 employees, is obliged to offer health insurance plans for their employees?",
+                    "type" : "CATEGORICAL",
+                    "color" : "ReverseGradient5",
+                    "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                  }
+                ]
               }
             }
           },
@@ -3967,7 +4035,7 @@
               "partygroup": {
                 "id": "partygroup",
                 "title": "Political Party",
-                "description": "The political party that the respondent self-identifies with. ",
+                "description": "The political party that the respondent self-identifies with.",
                 "type" : "FREQUENCY",
                 "sorter": ["Democrat", "Independent", "Republican", "Other"]
               },
