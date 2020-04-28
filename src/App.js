@@ -10,6 +10,7 @@ import { surveys } from './config/fields.json'
 import Footer from './components/Footer';
 import ReactGA from 'react-ga'
 import Utils from './Utils'
+import ContactPage from './components/ContactPage';
 
 const trackingId = "UA-164717476-1";
 // Only enable if not in a European timezone
@@ -39,6 +40,7 @@ class App extends React.Component {
             <Route exact path="/" component={HomePage}/>
             <Route exact path="/about" component={AboutPage}/>
             {surveyRoutes}
+            <Route exact path = "/contact" component={ContactPage} />
             <Route component={NotFound} />
           </Switch>
           <Footer />
