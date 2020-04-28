@@ -19,8 +19,9 @@ export default class FieldSelect extends React.Component {
         let optionComponents = getValues(this.props.options).map((option) => {
             return <option value = {option.id}>{option.title}</option>
         });
-        let selectedTitle = this.props.selected ? this.props.options[this.props.selected].title : "";
-        let selectedDescription = this.props.selected ? this.props.options[this.props.selected].description : "";
+        let options = this.props.options;
+        let selectedTitle = this.props.selected ? options[this.props.selected].title : "";
+        let selectedDescription = this.props.selected ? options[this.props.selected].short_description || options[this.props.selected].description : "";
         return (
             <div className = "FieldSelect">
                 <div className = "row">

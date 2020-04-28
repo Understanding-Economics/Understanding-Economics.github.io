@@ -18,7 +18,6 @@ export default class FrequencyChartView extends React.PureComponent {
     }
 
     renderChart(elementId, selectedGroup, selectedQuestion, data) {
-        console.log("Rendering");
         let cleanData = data.map(x => {
             return {
                 [selectedQuestion.id]: x[selectedQuestion.id] || " No response"
@@ -29,7 +28,6 @@ export default class FrequencyChartView extends React.PureComponent {
         let responseVals = Utils.getUniqueDictVals(cleanData, selectedQuestion.id, responseSorter);
         let counts = Utils.getCounts(data, selectedQuestion.id);
 
-        console.log(counts);
         const barWidth = 75;
         let chart = c3.generate(merge.all([{
             bindto: `#${elementId}`,

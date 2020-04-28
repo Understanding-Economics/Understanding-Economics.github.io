@@ -10,6 +10,7 @@ import tradeSurveyData from './../json_data/data_trade.json'
 import estateSurveyData from './../json_data/data_estate.json'
 import healthSurveyData from './../json_data/data_health.json'
 import DataType from '../DataType'
+import Utils from '../Utils'
 
 function addSurveyType(data, survey_id) {
     data.forEach(x => x["survey"] = survey_id)
@@ -64,6 +65,8 @@ export default class DataPage extends React.Component {
         if(!this.survey) {
             return <NotFound />
         }
+        let trackingUrl = this.props.history.location.pathname + this.props.history.location.search;
+        Utils.logPageview(trackingUrl);
         this.params = new URLSearchParams(this.props.history.location.search); 
         let selectedGroup = this.getGroup();
         let selectedTopic = this.getTopic();
@@ -119,7 +122,6 @@ export default class DataPage extends React.Component {
     }
     // decide whether to display the group
     displayGroupSelect(selectedTopic, selectedQuestion, selectedGroup) {
-        console.log()
         if (!selectedTopic) {
             return false;
         }
@@ -144,9 +146,11 @@ export default class DataPage extends React.Component {
     }
 
     handleTopicSelect(value) {
-        console.log(event.target.value);
         this.params.set("topic", this.survey.topics[value].id);
         this.params.delete("question")
+        if(Object.values(this.survey.topics[value].questions).filter(q => !noGroupTypes.includes(q.type)).length == 0) {
+            this.params.delete("group");
+        }
         this.updateURL();
     }
 

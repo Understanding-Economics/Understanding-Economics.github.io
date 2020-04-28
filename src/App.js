@@ -7,7 +7,15 @@ import AboutPage from './components/AboutPage'
 import { NavLink, Route, Switch, HashRouter as Router } from 'react-router-dom'
 import NotFound from './components/NotFound'
 import { surveys } from './config/fields.json'
+import Footer from './components/Footer';
+import ReactGA from 'react-ga'
+import Utils from './Utils'
 
+const trackingId = "UA-164717476-1";
+// Only enable if not in a European timezone
+if(Utils.analyticsActive) {
+  ReactGA.initialize(trackingId);
+}
 
 class App extends React.Component {
   
@@ -33,6 +41,7 @@ class App extends React.Component {
             {surveyRoutes}
             <Route component={NotFound} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     );

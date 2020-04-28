@@ -1,13 +1,15 @@
 import React from 'react'
 import DemoImage from './DemoImage'
 import { Section } from './TextComponents'
-import { NavLink } from 'react-router-dom';
+import Utils from '../Utils'
 
 export default class HomePage extends React.Component {
     // NOTE: 
     // Make a tab "About" with [link to SS website].
     render() {
         document.title = "Understanding Economics";
+        let trackingUrl = "/";
+        Utils.logPageview(trackingUrl);
         return (
             <div className = "HomePage">
                 <h2 style = {{marginBottom : "20px"}}>Welcome to the Understanding Economics Project!</h2>
@@ -58,7 +60,7 @@ export default class HomePage extends React.Component {
                 </p>
 
                 <p>
-                More information about the project and the surveys can be found <a href = "https://stefanie-stantcheva.onrender.com">here</a>
+                More information about the project and the surveys can be found <a href = "https://stefanie-stantcheva.onrender.com" target = "_blank">here</a>.
                 </p>
             </div>
         )

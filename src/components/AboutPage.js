@@ -2,10 +2,13 @@ import React from 'react'
 
 import { Section, Subsection} from './TextComponents'
 import { NavLink } from 'react-router-dom';
+import Utils from '../Utils'
 
 export default class AboutPage extends React.Component {
     render() {
         document.title = "About - Understanding Economics";
+        let trackingUrl = "/about";
+        Utils.logPageview(trackingUrl);
         return (
             <div className = "AboutPage">
                 <Section>Paper</Section>
@@ -40,10 +43,10 @@ export default class AboutPage extends React.Component {
                 The videos are made to assess whether explaining the stakes behind a policy can modify people's perceptions and supports. There are three versions of each video: an "efficiency" version, that focuses on comparing costs to benefits, a "distributional" version, that focuses on the effects on the distribution of outcomes across the whole population, and an "economist" version, that gathers both arguments in order to give a general view of what is at stake with the policy. 
                 </p>
                 <ul>
-                    <li>Income <a href = "https://youtu.be/9xd-RHMiIcE" target = "_blank">Efficiency</a> <a href ="{https://youtu.be/_vq7ZTjBN3Y" target = "_blank">Distributional</a> <a href = "https://youtu.be/e3NBmrzEmUQ" target = "_blank">Economist</a></li>
-                    <li>Estate <a href = "https://www.youtube.com/watch?v=pZ47JuiqoOU" target = "_blank">Efficiency</a> <a href = "https://www.youtube.com/watch?v=Wz5Xr723tJk" target = "_blank">Distributional</a> <a href = "https://www.youtube.com/watch?v=qnT07wO8nVA" target = "_blank">Economist</a></li>
-                    <li>Health <a href = "https://www.youtube.com/watch?v=Nai0nXX6VeQ" target = "_blank">Efficiency</a> <a href = "https://www.youtube.com/watch?v=Agexfb6apgY" target = "_blank">Distributional</a> <a href = "https://www.youtube.com/watch?time_continue=5&v=Se3SS4w5kNU" target = "_blank">Economist</a></li>
-                    <li>Trade <a href = "https://www.youtube.com/watch?v=3GvqLq16e6s" target = "_blank">Efficiency</a> <a href = "https://www.youtube.com/watch?v=rgvI1g0ldh8" target = "_blank">Distributional</a> <a href = "https://www.youtube.com/watch?v=5LrbF7TrGq0" target = "_blank">Economist</a></li>
+                    <li>Income: <a href = "https://youtu.be/9xd-RHMiIcE" target = "_blank">Efficiency</a> <a href ="https://youtu.be/_vq7ZTjBN3Y" target = "_blank">Distributional</a> <a href = "https://youtu.be/e3NBmrzEmUQ" target = "_blank">Economist</a></li>
+                    <li>Estate: <a href = "https://www.youtube.com/watch?v=pZ47JuiqoOU" target = "_blank">Efficiency</a> <a href = "https://www.youtube.com/watch?v=Wz5Xr723tJk" target = "_blank">Distributional</a> <a href = "https://www.youtube.com/watch?v=qnT07wO8nVA" target = "_blank">Economist</a></li>
+                    <li>Health: <a href = "https://www.youtube.com/watch?v=Nai0nXX6VeQ" target = "_blank">Efficiency</a> <a href = "https://www.youtube.com/watch?v=Agexfb6apgY" target = "_blank">Distributional</a> <a href = "https://www.youtube.com/watch?time_continue=5&v=Se3SS4w5kNU" target = "_blank">Economist</a></li>
+                    <li>Trade: <a href = "https://www.youtube.com/watch?v=3GvqLq16e6s" target = "_blank">Efficiency</a> <a href = "https://www.youtube.com/watch?v=rgvI1g0ldh8" target = "_blank">Distributional</a> <a href = "https://www.youtube.com/watch?v=5LrbF7TrGq0" target = "_blank">Economist</a></li>
                 </ul>
 
                 

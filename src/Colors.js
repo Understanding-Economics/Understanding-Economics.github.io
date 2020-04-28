@@ -17,9 +17,9 @@ const Colors = {}
 
 Colors.Histogram = [GREEN],
 Colors.Categorical = [GREEN, BLUE, YELLOW, ORANGE, RED, PURPLE, PINK, MAROON, IVORY, FOREST, GOLD, SKY, TAN, BABY ,CRIMSON],
-Colors.Binary = [GREEN, RED],
-Colors.Gradient3 = [GREEN, BLUE, RED], 
-Colors.Gradient4 = [GREEN, BLUE, ORANGE, RED], 
+Colors.Binary = [GREEN, BLUE],
+Colors.Gradient3 = [GREEN, YELLOW, ORANGE], 
+Colors.Gradient4 = [GREEN, BLUE, YELLOW, ORANGE], 
 Colors.Gradient5 = [GREEN, BLUE, YELLOW, ORANGE, RED],
 Colors.ReverseBinary = Colors.Binary.slice().reverse(), 
 Colors.ReverseGradient3 = Colors.Gradient3.slice().reverse(),
