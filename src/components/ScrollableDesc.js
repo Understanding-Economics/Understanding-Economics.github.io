@@ -13,8 +13,10 @@ export default class ScrollableDesc extends React.PureComponent {
                 <div className = "row">
                     <strong>{this.props.title}</strong>
                 </div>
-                <span className = "row scrolling" dangerouslySetInnerHTML={{__html : this.props.content}} style = {textStyle} ref = {this.descDivRef}>
-                </span>
+                <div className = "row">
+                    <span className = "scrolling" dangerouslySetInnerHTML={{__html : this.props.content}} style = {textStyle} ref = {this.descDivRef}>
+                    </span>
+                </div>
             </div>
         )
     }

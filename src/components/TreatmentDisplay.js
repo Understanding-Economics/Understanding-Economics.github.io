@@ -61,6 +61,16 @@ export default class TreatmentDisplay extends React.Component {
 
                     </span>
                 </div>
+                <div className = "row" >
+                    <div className = "col-md-3"></div>
+                    <div className = "col-md-9" style={{paddingLeft: "0px"}}>
+                        <ChartLegend 
+                            data = { this.props.data }
+                            question = { this.props.question }
+                            charts = { this.state.charts }
+                        />
+                    </div>
+                </div>
                 <div className = "row">
                     <div className = "col-md-3">
                         <strong style = {{position: "absolute", bottom: "0", marginLeft: "-20px"}}>{this.props.group.title}</strong>
@@ -69,16 +79,6 @@ export default class TreatmentDisplay extends React.Component {
                         <div className = "row">
                             {descriptions}
                         </div>
-                    </div>
-                </div>
-                <div className = "row">
-                    <div className = "col-md-3"></div>
-                    <div className = "col-md-9" style={{paddingLeft: "0px"}}>
-                        <ChartLegend 
-                            data = { this.props.data }
-                            question = { this.props.question }
-                            charts = { this.state.charts }
-                        />
                     </div>
                 </div>
                 <div className = "row">
