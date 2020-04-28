@@ -1437,8 +1437,8 @@
                     },
                     {
                       "id": "Q04021_4_en",
-                      "title": "Probability to remain in bottom quintile",
-                      "description": "What is the probability of remaining in bottom quintile?",
+                      "title": "Probability to get from bottom to fourth quintile",
+                      "description": "What is the probability of getting from bottom to fourth quintile?",
                       "type" : "NUMERIC",
                       "correct" : 28.0,
                       "format" : "percent",
@@ -1446,8 +1446,8 @@
                     },
                     {
                       "id": "Q04021_5_en",
-                      "title": "Probability to get from bottom to top quintile",
-                      "description": "What is the probability of getting from bottom to top quintile?",
+                      "title": "Probability to remain in bottom quintile",
+                      "description": "What is the probability of remaining in bottom quintile?",
                       "type" : "NUMERIC",
                       "correct" : 33.7,
                       "format" : "percent",
