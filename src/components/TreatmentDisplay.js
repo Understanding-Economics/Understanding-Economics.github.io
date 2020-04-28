@@ -40,7 +40,7 @@ export default class TreatmentDisplay extends React.Component {
         let colorPattern = Utils.getColorPattern(this.props.question);
 
         let descriptions = this.props.question.questions.map(question => 
-            <div className = {columnWidth}>
+            <div className = {columnWidth} style={{paddingRight: 40}}>
                 <ScrollableDesc
                     title = {question.title}
                     content = {question.description}
