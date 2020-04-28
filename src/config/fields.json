@@ -2334,6 +2334,78 @@
                 "source" : "Medicare.gov",
                 "source_url" : "https://www.medicare.gov/what-medicare-covers/your-medicare-coverage-choices/whats-medicare"
               },
+              "ltcare_1" : {
+                "id" : "ltcare_1",
+                "title" : "Who pays for long-term care",
+                "description" : "If an elderly person is in need of long-term care, which program(s) will pay for that?",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "ltcare_1",
+                    "title": "Medicare will pay for all of long-term care for all elderly above 65",
+                    "type" : "CATEGORICAL",
+                    "correct" : "No",
+                    "source" : "Medicare.com",
+                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
+                  },
+                  {
+                    "id": "ltcare_2",
+                    "title": "Medicare supplements will pay for all of long-term care for elderly who purchase them",
+                    "type" : "CATEGORICAL",
+                    "correct" : "No",
+                    "source" : "Medicare.com",
+                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
+                  },
+                  {
+                    "id": "ltcare_3",
+                    "title": "Medicare with or without supplements will only pay for short periods of long-term care for all the elderly above 65",
+                    "type" : "CATEGORICAL",
+                    "correct" : "No",
+                    "source" : "Medicare.com",
+                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
+                  },
+                  {
+                    "id": "ltcare_4",
+                    "title": "Private long-term care insurance plans will only pay for long-term care for all elderly who purchased them",
+                    "type" : "CATEGORICAL",
+                    "correct" : "Yes",
+                    "source" : "Medicare.com",
+                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
+                  },
+                  {
+                    "id": "ltcare_5",
+                    "title": "Employer health insurance plans will pay for the long-term care of retired employees",
+                    "type" : "CATEGORICAL",
+                    "correct" : "No",
+                    "source" : "Medicare.com",
+                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
+                  },
+                  {
+                    "id": "ltcare_6",
+                    "title": "Medicaid will pay for all of long-term care for all elderly",
+                    "type" : "CATEGORICAL",
+                    "correct" : "No",
+                    "source" : "Medicare.com",
+                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
+                  },
+                  {
+                    "id": "ltcare_7",
+                    "title": "Medicaid will pay for all of long-term care only for elderly who have a low income and low assets",
+                    "type" : "CATEGORICAL",
+                    "correct" : "Yes",
+                    "source" : "Medicare.com",
+                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
+                  },
+                  {
+                    "id": "ltcare_8",
+                    "title": "Medicaid will pay part of the long-term care for all the elderly",
+                    "type" : "CATEGORICAL",
+                    "correct" : "No",
+                    "source" : "Medicare.com",
+                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
+                  }
+                ]
+              },
               "Q04020_1_en" : {
                 "id" : "Q04020_1_en",
                 "title" : "Health Insurance Coverage Programs",
