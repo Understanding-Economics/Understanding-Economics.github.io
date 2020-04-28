@@ -57,7 +57,7 @@ export default class FrequencyChartView extends React.PureComponent {
             }, 
             bar : {
                 width:{ 
-                    ratio: 0.9
+                    ratio: 0.8
                 }
             }, 
             size : {
@@ -67,7 +67,7 @@ export default class FrequencyChartView extends React.PureComponent {
                 rotated : true, 
                 x : {
                     type: "category", 
-                    categories: responseVals
+                    categories: responseVals.map(x => x.replace("-", " - "))
                 }
             },
         }, this.props.c3Override || {}]));
