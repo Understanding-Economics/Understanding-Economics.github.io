@@ -3277,7 +3277,7 @@
               },
               "Q04011_en": {
                 "id": "Q04011_en",
-                "title": "Trade Evolution Over Time",
+                "title": "Evolution of Trade Over Time",
                 "description": "Over time, how has the level of trade between the U.S. and other countries changed?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["It has decreased", "It has stayed more or less the same", "It has increased"],
@@ -3425,7 +3425,7 @@
                   },
                   {
                     "id": "Q06205",
-                    "title": "Specific (you)",
+                    "title": "You",
                     "description": "Would it be easy for you to find a job in a different sector from the one you are currently working in?",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"]
@@ -3636,18 +3636,136 @@
               },
               "Q07002_en": {
                 "id": "Q07002_en",
-                "title": "Fairness current trade policy",
-                "description": "Fairness of the current U.S. trade policy?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
+                "title": "Current Trade Policy",
+                "description": "Questions regarding current trade policy",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q07002_en",
+                    "title": "Fairness",
+                    "description": "Fairness of the current U.S. trade policy?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
+                  },
+                  {
+                    "id": "Q07003_en",
+                    "title": "Satisfaction",
+                    "description": "Satisfaction with the current U.S. trade policy?",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
+                  }
+                ]
               },
-              "Q07003_en": {
-                "id": "Q07003_en",
-                "title": "Satisfaction with current trade policy",
-                "description": "Satisfaction with the current U.S. trade policy?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"]
+              "Q07006_1_en": {
+                "id": "Q07006_1_en",
+                "title": "Effects on Unemployment",
+                "description": "What do you think is the best policy tool to help workers in a declining industry threatened by foreign competition? Please rank the following options from best (1) to worst (3).",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id" : "Q07006_1_en",
+                    "title" : "Restrict imports in industry",
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3"],
+                    "questions" : [
+                        {
+                            "id" : "Q07006_1_en",
+                            "title" : "CONTROL",
+                            "description" : "How effectively would restricting imports help workers in such an industry?",
+                            "treatments" : ["Neutral"]
+                        },
+                        {
+                            "id" : "Q07006_1_en",
+                            "title" : "YOU",
+                            "description" : "How effectively would restricting imports help workers in <strong>your</strong> industry?",
+                            "treatments" : ["You"]
+                        }
+                      ]
+                  },
+                  {
+                    "id" : "Q07006_2_en",
+                    "title" : "Provide more generous transfers and direct assistance",
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3"],
+                    "questions" : [
+                        {
+                            "id" : "Q07006_2_en",
+                            "title" : "CONTROL",
+                            "description" : "How effectively would providing generous transfers and direct assistance help workers in such an industry?",
+                            "treatments" : ["Neutral"]
+                        },
+                        {
+                            "id" : "Q07006_2_en",
+                            "title" : "YOU",
+                            "description" : "How effectively would providing generous transfers and direct assistance help workers in <strong>your</strong> industry?",
+                            "treatments" : ["You"]
+                        }
+                      ]
+                  },
+                  {
+                    "id" : "Q07006_3_en",
+                    "title" : "Subsidize production",
+                    "type" : "TREATMENT",
+                    "sorter" : ["1", "2", "3"],
+                    "questions" : [
+                        {
+                            "id" : "Q07006_3_en",
+                            "title" : "CONTROL",
+                            "description" : "How effectively would subsidizing production help workers in such an industry?",
+                            "treatments" : ["Neutral"]
+                        },
+                        {
+                            "id" : "Q07006_3_en",
+                            "title" : "YOU",
+                            "description" : "How effectively would subsidizing production help workers in <strong>your</strong> industry?",
+                            "treatments" : ["You"]
+                        }
+                      ]
+                  }
+                ]
               },
+              "Q07007_en": {
+                "id": "Q07007_en",
+                "title": "National Food Security",
+                "description": "What do you think is the best policy tool to ensure national food security?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Restrict food imports from abroad", "Provide more production subsidies in the food sector"]
+              },
+              "Q07008_en": {
+                "id": "Q07008_en",
+                "title": "Tariff Responses",
+                "description": "If the U.S. imposes tariffs on many imports, how likely or unlikely is it that other countries follow suit and also impose tariffs?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Very likely", "Likely", "Unlikely", "Very unlikely"]
+              },
+              "Q07009_en": {
+                "id": "Q07009_en",
+                "title": "Protect New Industries",
+                "description": "Let us consider a given relatively new industry in which other countries are currently able to produce goods for cheaper than American firms. Do you think it makes sense to protect American firms in this industry by using tariffs or import restrictions (even if this means higher prices for consumers) or is it better to let the American firms immediately face foreign competition, forcing them to become more competitive?",
+                "type" : "TREATMENT",
+                "sorter" : ["It makes sense to protect for a while", "It makes sense to let these firms face foreign competition to become more competitive"],
+                "questions" : [
+                  {
+                      "id" : "Q07009_en",
+                      "title" : "CONTROL",
+                      "description" : "Let us consider a given relatively new industry in which other countries are currently able to produce goods for cheaper than American firms. In your opinion, does it make sense to protect the American firms in this industry by using tariffs or import restrictions (even if this means higher prices for consumers) or is it better to let the American firms immediately face foreign competition, forcing them to become more competitive?",
+                      "treatments" : ["Neutral"]
+                  },
+                  {
+                      "id" : "Q07009_en",
+                      "title" : "YOU",
+                      "description" : "Imagine that the goods or services currently produced in <strong>your</strong> sector or industry can actually be produced in a cheaper way in another country. In your opinion, would it make sense to protect the American firms in your sector or industry by using tariffs or import restrictions (even If this means higher prices for consumers) or would it be better to let the American firms in your sector or industry immediately face foreign competition, forcing them to become more competitive?",
+                      "treatments" : ["You"]
+                  }
+                ]
+              }
+            }
+          },
+          "Protection from Foreign Competition" : {
+            "id" : "Protection from Foreign Competition",
+            "title" : "Protection from Foreign Competition",
+            "description" : "Questions regarding protection from foreign competition",
+            "questions" : {
               "Q07004": {
                 "id": "Q07004",
                 "title": "Industry Protection from foreign competition",
@@ -3823,109 +3941,6 @@
                     "title" : "Chemicals",
                     "type" : "CATEGORICAL",
                     "sorter" : ["Yes", "No"]
-                  }
-                ]
-              },
-              "Q07006_1_en": {
-                "id": "Q07006_1_en",
-                "title": "Effects on Unemployment",
-                "description": "What do you think is the best policy tool to help workers in a declining industry threatened by foreign competition? Please rank the following options from best (1) to worst (3).",
-                "type" : "UMBRELLA",
-                "questions" : [
-                  {
-                    "id" : "Q07006_1_en",
-                    "title" : "Restrict imports in industry",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3"],
-                    "questions" : [
-                        {
-                            "id" : "Q07006_1_en",
-                            "title" : "CONTROL",
-                            "description" : "How effectively would restricting imports help workers in such an industry?",
-                            "treatments" : ["Neutral"]
-                        },
-                        {
-                            "id" : "Q07006_1_en",
-                            "title" : "YOU",
-                            "description" : "How effectively would restricting imports help workers in <strong>your</strong> industry?",
-                            "treatments" : ["You"]
-                        }
-                      ]
-                  },
-                  {
-                    "id" : "Q07006_2_en",
-                    "title" : "Provide more generous transfers and direct assistance",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3"],
-                    "questions" : [
-                        {
-                            "id" : "Q07006_2_en",
-                            "title" : "CONTROL",
-                            "description" : "How effectively would providing generous transfers and direct assistance help workers in such an industry?",
-                            "treatments" : ["Neutral"]
-                        },
-                        {
-                            "id" : "Q07006_2_en",
-                            "title" : "YOU",
-                            "description" : "How effectively would providing generous transfers and direct assistance help workers in <strong>your</strong> industry?",
-                            "treatments" : ["You"]
-                        }
-                      ]
-                  },
-                  {
-                    "id" : "Q07006_3_en",
-                    "title" : "Subsidize production",
-                    "type" : "TREATMENT",
-                    "sorter" : ["1", "2", "3"],
-                    "questions" : [
-                        {
-                            "id" : "Q07006_3_en",
-                            "title" : "CONTROL",
-                            "description" : "How effectively would subsidizing production help workers in such an industry?",
-                            "treatments" : ["Neutral"]
-                        },
-                        {
-                            "id" : "Q07006_3_en",
-                            "title" : "YOU",
-                            "description" : "How effectively would subsidizing production help workers in <strong>your</strong> industry?",
-                            "treatments" : ["You"]
-                        }
-                      ]
-                  }
-                ]
-              },
-              "Q07007_en": {
-                "id": "Q07007_en",
-                "title": "National Food Security",
-                "description": "What do you think is the best policy tool to ensure national food security?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Restrict food imports from abroad", "Provide more production subsidies in the food sector"]
-              },
-              "Q07008_en": {
-                "id": "Q07008_en",
-                "title": "Tariff Responses",
-                "description": "If the U.S. imposes tariffs on many imports, how likely or unlikely is it that other countries follow suit and also impose tariffs?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very likely", "Likely", "Unlikely", "Very unlikely"]
-              },
-              "Q07009_en": {
-                "id": "Q07009_en",
-                "title": "Protect New Industries",
-                "description": "Let us consider a given relatively new industry in which other countries are currently able to produce goods for cheaper than American firms. Do you think it makes sense to protect American firms in this industry by using tariffs or import restrictions (even if this means higher prices for consumers) or is it better to let the American firms immediately face foreign competition, forcing them to become more competitive?",
-                "type" : "TREATMENT",
-                "sorter" : ["It makes sense to protect for a while", "It makes sense to let these firms face foreign competition to become more competitive"],
-                "questions" : [
-                  {
-                      "id" : "Q07009_en",
-                      "title" : "CONTROL",
-                      "description" : "Let us consider a given relatively new industry in which other countries are currently able to produce goods for cheaper than American firms. In your opinion, does it make sense to protect the American firms in this industry by using tariffs or import restrictions (even if this means higher prices for consumers) or is it better to let the American firms immediately face foreign competition, forcing them to become more competitive?",
-                      "treatments" : ["Neutral"]
-                  },
-                  {
-                      "id" : "Q07009_en",
-                      "title" : "YOU",
-                      "description" : "Imagine that the goods or services currently produced in <strong>your</strong> sector or industry can actually be produced in a cheaper way in another country. In your opinion, would it make sense to protect the American firms in your sector or industry by using tariffs or import restrictions (even If this means higher prices for consumers) or would it be better to let the American firms in your sector or industry immediately face foreign competition, forcing them to become more competitive?",
-                      "treatments" : ["You"]
                   }
                 ]
               }
