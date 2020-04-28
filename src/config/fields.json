@@ -184,54 +184,70 @@
               },
               "Q04007_en": {
                 "id": "Q04007_en",
-                "title": "Top Tax Rate Threshold",
-                "description": "How high is the threshold of total annual income for a married household above which the top tax rate applies?",
-                "type" : "NUMERIC",
-                "format" : "dollar",
-                "correct" : 600001,
-                "source" : "NerdWallet", 
-                "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
-                "nticks" : 5
-              },
-              "Q04008_en": {
-                "id": "Q04008_en",
-                "title": "Proportion in Top Tax Rate",
-                "description": "Out of 100 households in the U.S., how many are in the top federal personal income tax bracket?",
-                "type" : "NUMERIC",
-                "format" : "percent",
-                "correct" : 73,
-                "source" : "Tax Foundation",
-                "source_url" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
+                "title": "Top tax bracket",
+                "description": "Questions about the top income tax bracket",
+                "type" : "UMBRELLA",
+                "questions" : [
+                    {
+                      "id": "Q04007_en",
+                      "title": "Threshold",
+                      "description": "How high is the threshold of total annual income for a married household above which the top tax rate applies?",
+                      "type" : "NUMERIC",
+                      "format" : "dollar",
+                      "correct" : 600001,
+                      "source" : "NerdWallet", 
+                      "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
+                      "nticks" : 5
+                    },
+                    {
+                      "id": "Q04008_en",
+                      "title": "Share of households",
+                      "description": "Out of 100 households in the U.S., how many are in the top federal personal income tax bracket?",
+                      "type" : "NUMERIC",
+                      "format" : "percent",
+                      "correct" : 73,
+                      "source" : "Tax Foundation",
+                      "source_url" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
+                    },
+                    {
+                      "id": "Q04010_en",
+                      "title": "Total income share in tax",
+                      "description": "What share of their total income do people in the top federal personal income tax bracket pay in taxes?",
+                      "type" : "NUMERIC",
+                      "correct" : 32.7,
+                      "source" : "Tax Foundation",
+                      "source_url" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
+                    }
+                ]
               },
               "Q04009_en": {
                 "id": "Q04009_en",
-                "title": "Top Tax Rate Today",
-                "description": "What is the top federal personal income tax rate in the U.S.?",
-                "type" : "NUMERIC",
-                "correct" : 37,
-                "source": "NerdWallet",
-                "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
-                "format" : "percent"
-              },
-              "Q04010_en": {
-                "id": "Q04010_en",
-                "title": "Top Tax Share of Income",
-                "description": "What share of their total income do people in the top federal personal income tax bracket pay in taxes?",
-                "type" : "NUMERIC",
-                "correct" : 32.7,
-                "source" : "Tax Foundation",
-                "source_url" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
-              },
-              "Q04011_en": {
-                "id": "Q04011_en",
-                "title": "1950s Top Tax Rate",
-                "description": "Can you guess what the top federal personal income tax rate used to be in the 1950s in the U.S.?",
-                "type" : "NUMERIC",
-                "correct" : 91,
-                "source" : "Stanford",
-                "source_url" : "https://web.stanford.edu/class/polisci120a/immigration/Federal%20Tax%20Brackets.pdf",
-                "format" : "percent",
-                "max_val" : 95
+                "title": "Top marginal tax rate",
+                "description": "Questions about the top marginal tax rate",
+                "type" : "UMBRELLA",
+                "questions" : [
+                    {
+                      "id": "Q04009_en",
+                      "title": "Today",
+                      "description": "What is the top federal personal income tax rate in the U.S.?",
+                      "type" : "NUMERIC",
+                      "correct" : 37,
+                      "source": "NerdWallet",
+                      "source_url" : "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
+                      "format" : "percent"
+                    },
+                    {
+                      "id": "Q04011_en",
+                      "title": "In the 1950s",
+                      "description": "Can you guess what the top federal personal income tax rate used to be in the 1950s in the U.S.?",
+                      "type" : "NUMERIC",
+                      "correct" : 91,
+                      "source" : "Stanford",
+                      "source_url" : "https://web.stanford.edu/class/polisci120a/immigration/Federal%20Tax%20Brackets.pdf",
+                      "format" : "percent",
+                      "max_val" : 95
+                    }
+                ]
               },
               "Q04012_en": {
                 "id": "Q04012_en",
@@ -264,13 +280,31 @@
               },
               "Q04016_en": {
                 "id": "Q04016_en",
-                "title": "Top 1% Share of Income",
-                "description": "What share of total national income do you think goes to the top 1% richest households?",
-                "type" : "NUMERIC",
-                "correct" : 20,
-                "format" : "percent", 
-                "source" : "World Inequality Lab",
-                "source_url" : "https://wir2018.wid.world/executive-summary.html"
+                "title": "Top 1% ",
+                "description": "Questions about the top 1%",
+                "type" : "UMBRELLA",
+                "questions" : [
+                    {
+                      "id": "Q04016_en",
+                      "title": "Total income share",
+                      "description": "What share of total national income do you think goes to the top 1% richest households?",
+                      "type" : "NUMERIC",
+                      "correct" : 20,
+                      "format" : "percent", 
+                      "source" : "World Inequality Lab",
+                      "source_url" : "https://wir2018.wid.world/executive-summary.html"
+                    },
+                    {
+                      "id": "Q04020_en",
+                      "title": "Change in total income share",
+                      "description": "How has the share of total U.S. income that goes to the top 1% in the U.S. evolved over the past 30 years?",
+                      "type" : "CATEGORICAL",
+                      "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"],
+                      "correct" : "It has increased by a lot",
+                      "source" : "Inequality.org",
+                      "source_url" : "https://inequality.org/facts/income-inequality/"
+                    }
+                ]
               },
               "Q04019_en": {
                 "id": "Q04019_en",
@@ -278,128 +312,6 @@
                 "description": "Which has more to do with why a person is rich?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Because she or he worked harder than others", "Because she or he had more advantages than others"]
-              },
-              "Q04020_en": {
-                "id": "Q04020_en",
-                "title": "Change in Top 1% Share of Income",
-                "description": "How has the share of total U.S. income that goes to the top 1% in the U.S. evolved over the past 30 years?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["It has increased by a lot", "It has increased somewhat", "It has remained the same", "It has decreased somewhat", "It has decreased by a lot"],
-                "correct" : "It has increased by a lot",
-                "source" : "Inequality.org",
-                "source_url" : "https://inequality.org/facts/income-inequality/"
-              }
-            }
-          },
-          "Outcomes": {
-            "id": "Outcomes",
-            "title": "Outcomes",
-            "description": "Questions to test the individual's perception of income tax policy outcomes",
-            "questions": {
-              "Q07001_en": {
-                "id": "Q07001_en",
-                "title": "Tax System Fairness (Broad)",
-                "description": "How fair the respondent thinks the current U.S. federal income tax system is",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
-              },
-              "Q07002_en": {
-                "id": "Q07002_en",
-                "title": "Tax System Satisfaction",
-                "description": "How satisfied the respondent is with the current U.S. federal income tax system",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"],
-                "color" : "Gradient4"
-              },
-              "Q07003_en": {
-                "id": "Q07003_en",
-                "title": "Tax Share Fairness (Specific)",
-                "description": "How fair the respondent thinks the tax system is regarding high income housheolds, depending on their treatment",
-                "type" : "TREATMENT",
-                "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
-                "questions" : [
-                  {
-                    "id" : "Q07003_en",
-                    "title" : "CONTROL",
-                    "description" : "Would you say that high income, upper-class households in the U.S. today...",
-                    "treatments" : ["Neutral"]
-                  },
-                  {
-                    "id" : "Q07003_en",
-                    "title" : "YOU",
-                    "description" : "Would you say that <strong>you</strong>...",
-                    "treatments" : ["You"]
-                  },
-                  {
-                    "id" : "Q07003_en",
-                    "title" : "GENDER",
-                    "description" : "Would you say that high income, upper-class <strong>women</strong> in the U.S. today...",
-                    "treatments" : ["Gender"]
-                  }
-                ]
-              },
-              "Q07004_en": {
-                "id": "Q07004_en",
-                "title": "Middle Class Tax Share Fairness",
-                "description": "How fair the respondent thinks the tax system is regarding middle-class housheolds, depending on their treatment",
-                "type" : "TREATMENT",
-                "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
-                "questions" : [
-                  {
-                    "id" : "Q07004_en",
-                    "title" : "Control",
-                    "description" : "Would you say that middle-class households in the U.S. today...",
-                    "treatments" : ["Neutral", "You"]
-                  },
-                  {
-                    "id" : "Q07004_en",
-                    "title" : "Gender",
-                    "description" : "Would you say that <strong>women</strong> in the middle-class in the U.S. today...",
-                    "treatments" : ["Gender"]
-                  }
-                ]
-              },
-              "Q07005_en": {
-                "id": "Q07005_en",
-                "title": "Money/Wealth Distribution Fairness",
-                "description": "How fair the respondent believes the distribution of money and wealth is in the U.S.",
-                "type" : "CATEGORICAL",
-                "sorter" : ["The distribution and money and wealth in this country today is fair", "The money and wealth in this country should be more evenly distributed among a larger percentage of the people"]
-              },
-              "Q07006_en": {
-                "id": "Q07006_en",
-                "title": "Income Inequality Issue",
-                "description": "How big of an issue do you think income inequality is in America?",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Not an issue at all", "A small issue", "An issue", "A serious issue", "A very serious issue"]
-              },
-              "Q07008_en": {
-                "id": "Q07008_en",
-                "title": "Support Top Income Tax Increase for Lower-Income People",
-                "description": "Support for increasing the top income tax rate if the additional revenue raised supports lower-income individuals",
-                "type" : "TREATMENT",
-                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"],
-                "questions" : [
-                  {
-                    "id" : "Q07008_en",
-                    "title" : "Control",
-                    "description" : "The additional revenue raised is used to expand programs that support lower-income individuals",
-                    "treatments" : ["Neutral", "You"]
-                  },
-                  {
-                    "id" : "Q07008_en",
-                    "title" : "Gender",
-                    "description" : "The additional revenue raised is used to expand programs that support lower-income <strong>women</strong>",
-                    "treatments" : ["Gender"]
-                  }
-                ]
-              },
-              "Q07009_en": {
-                "id": "Q07009_en",
-                "title": "Support Top Income Tax Increase for Investment",
-                "description": "Support for increasing the top income tax rate if the additional revenue raised supports investment",
-                "type" : "CATEGORICAL",
-                "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"]
               }
             }
           },
@@ -1067,51 +979,59 @@
                   }
                 ]
               },
-              "Q06007_en": {
-                "id": "Q06007_en",
-                "title": "Effect of High-Income Tax Cut on Federal Deficit",
-                "description": "How the respondent views the long-term impact of tax cuts on high-income households on the federal budget deficit?",
-                "type" : "TREATMENT",
-                "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
+              "Q06007_en" : {
+                "id" : "Q06007_en",
+                "title" : "Effect of tax cut on deficit",
+                "description" : "Questions about the effects of tax cuts on the federal deficit",
+                "type" : "UMBRELLA",
                 "questions" : [
                   {
-                    "id" : "Q06007_en",
-                    "title" : "Control",
-                    "description" : "Which comes closer to your view about the long-term impact that tax cuts on <strong>high-income households</strong> may have on the federal budget deficit?",
-                    "treatments" : ["Neutral"]
+                    "id": "Q06007_en",
+                    "title": "High income",
+                    "description": "How the respondent views the long-term impact of tax cuts on high-income households on the federal budget deficit?",
+                    "type" : "TREATMENT",
+                    "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
+                    "questions" : [
+                      {
+                        "id" : "Q06007_en",
+                        "title" : "Control",
+                        "description" : "Which comes closer to your view about the long-term impact that tax cuts on <strong>high-income households</strong> may have on the federal budget deficit?",
+                        "treatments" : ["Neutral"]
+                      },
+                      {
+                        "id" : "Q06007_en",
+                        "title" : "You",
+                        "description" : "Which comes closer to your view about the long-term impact that tax cuts on households with <strong>your</strong> level of income may have on the federal budget deficit?",
+                        "treatments" : ["You"]
+                      },
+                      {
+                        "id" : "Q06007_en",
+                        "title" : "Gender",
+                        "description" : "Which comes closer to your view about the long-term impact that the cuts on taxes that high-income <strong>women</strong> have to pay may have on the federal budget deficit?",
+                        "treatments" : ["Gender"]
+                      }
+                    ]
                   },
                   {
-                    "id" : "Q06007_en",
-                    "title" : "You",
-                    "description" : "Which comes closer to your view about the long-term impact that tax cuts on households with <strong>your</strong> level of income may have on the federal budget deficit?",
-                    "treatments" : ["You"]
-                  },
-                  {
-                    "id" : "Q06007_en",
-                    "title" : "Gender",
-                    "description" : "Which comes closer to your view about the long-term impact that the cuts on taxes that high-income <strong>women</strong> have to pay may have on the federal budget deficit?",
-                    "treatments" : ["Gender"]
-                  }
-                ]
-              },
-              "Q06008_en": {
-                "id": "Q06008_en",
-                "title": "Effect of Middle-Class Tax Cut on Federal Deficit",
-                "description": "How the respondent views the long-term impact of tax cuts on middle-class households on the federal budget deficit?",
-                "type" : "TREATMENT",
-                "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
-                "questions" : [
-                  {
-                    "id" : "Q06008_en",
-                    "title" : "Control",
-                    "description" : "What about the long-term impact that tax cuts on the middle-class may have on the federal budget deficit?",
-                    "treatments" : ["Neutral"]
-                  },
-                  {
-                    "id" : "Q06008_en",
-                    "title" : "Gender",
-                    "description" : "What about the long-term impact that cuts on taxes that <strong>women</strong> from the middle-class have to pay may have on the federal budget deficit?",
-                    "treatments" : ["Gender"]
+                    "id": "Q06008_en",
+                    "title": "Middle class",
+                    "description": "How the respondent views the long-term impact of tax cuts on middle-class households on the federal budget deficit?",
+                    "type" : "TREATMENT",
+                    "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
+                    "questions" : [
+                      {
+                        "id" : "Q06008_en",
+                        "title" : "Control",
+                        "description" : "What about the long-term impact that tax cuts on the middle-class may have on the federal budget deficit?",
+                        "treatments" : ["Neutral"]
+                      },
+                      {
+                        "id" : "Q06008_en",
+                        "title" : "Gender",
+                        "description" : "What about the long-term impact that cuts on taxes that <strong>women</strong> from the middle-class have to pay may have on the federal budget deficit?",
+                        "treatments" : ["Gender"]
+                      }
+                    ]
                   }
                 ]
               },
@@ -1133,6 +1053,142 @@
                     "title" : "Gender",
                     "description" : "Do you think that a progressive federal income tax system is an important tool to reduce inequality?",
                     "treatments" : ["Gender"]
+                  }
+                ]
+              }
+            }
+          },
+          "Outcomes": {
+            "id": "Outcomes",
+            "title": "Outcomes",
+            "description": "Questions to test the individual's perception of income tax policy outcomes",
+            "questions": {
+              "Q07001_en" : {
+                "id" : "Q07001_en",
+                "title" : "U.S. Tax System",
+                "description" : "Questions regarding fairness of and satisfaction with U.S. tax system",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q07001_en",
+                    "title": "Fairness",
+                    "description": "How fair the respondent thinks the current U.S. federal income tax system is",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Very fair", "Somewhat fair", "Somewhat unfair", "Very unfair"]
+                  },
+                  {
+                    "id": "Q07002_en",
+                    "title": "Satisfaction",
+                    "description": "How satisfied the respondent is with the current U.S. federal income tax system",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Very satisfied", "Somewhat satisfied", "Somewhat dissatisfied", "Very dissatisfied"],
+                    "color" : "Gradient4"
+                  }
+                ]
+              },
+              "Q07003_en" : {
+                "id" : "Q07003_en",
+                "title" : "Fairness ",
+                "description" : "Questions regarding fairness of U.S. income tax policies",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q07003_en",
+                    "title": "High incomes",
+                    "description": "How fair the respondent thinks the tax system is regarding high income housheolds, depending on their treatment",
+                    "type" : "TREATMENT",
+                    "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
+                    "questions" : [
+                      {
+                        "id" : "Q07003_en",
+                        "title" : "CONTROL",
+                        "description" : "Would you say that high income, upper-class households in the U.S. today...",
+                        "treatments" : ["Neutral"]
+                      },
+                      {
+                        "id" : "Q07003_en",
+                        "title" : "YOU",
+                        "description" : "Would you say that <strong>you</strong>...",
+                        "treatments" : ["You"]
+                      },
+                      {
+                        "id" : "Q07003_en",
+                        "title" : "GENDER",
+                        "description" : "Would you say that high income, upper-class <strong>women</strong> in the U.S. today...",
+                        "treatments" : ["Gender"]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "Q07004_en",
+                    "title": "Middle Class",
+                    "description": "How fair the respondent thinks the tax system is regarding middle-class housheolds, depending on their treatment",
+                    "type" : "TREATMENT",
+                    "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
+                    "questions" : [
+                      {
+                        "id" : "Q07004_en",
+                        "title" : "Control",
+                        "description" : "Would you say that middle-class households in the U.S. today...",
+                        "treatments" : ["Neutral", "You"]
+                      },
+                      {
+                        "id" : "Q07004_en",
+                        "title" : "Gender",
+                        "description" : "Would you say that <strong>women</strong> in the middle-class in the U.S. today...",
+                        "treatments" : ["Gender"]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "Q07005_en",
+                    "title": "Wealth distribution",
+                    "description": "How fair the respondent believes the distribution of money and wealth is in the U.S.",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["The distribution and money and wealth in this country today is fair", "The money and wealth in this country should be more evenly distributed among a larger percentage of the people"]
+                  }
+                ]
+              },
+              "Q07006_en": {
+                "id": "Q07006_en",
+                "title": "Income Inequality Issue",
+                "description": "How big of an issue do you think income inequality is in America?",
+                "type" : "CATEGORICAL",
+                "sorter" : ["Not an issue at all", "A small issue", "An issue", "A serious issue", "A very serious issue"]
+              },
+              "Q07008_en" : {
+                "id" : "Q07008_en",
+                "title" : "Reason for top rate increases",
+                "description" : "Reason for increasing the top federal income tax rate",
+                "type" : "UMBRELLA",
+                "questions" : [
+                  {
+                    "id": "Q07008_en",
+                    "title": "Support Top Income Tax Increase for Lower-Income People",
+                    "description": "Support for increasing the top income tax rate if the additional revenue raised supports lower-income individuals",
+                    "type" : "TREATMENT",
+                    "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"],
+                    "questions" : [
+                      {
+                        "id" : "Q07008_en",
+                        "title" : "Control",
+                        "description" : "The additional revenue raised is used to expand programs that support lower-income individuals",
+                        "treatments" : ["Neutral", "You"]
+                      },
+                      {
+                        "id" : "Q07008_en",
+                        "title" : "Gender",
+                        "description" : "The additional revenue raised is used to expand programs that support lower-income <strong>women</strong>",
+                        "treatments" : ["Gender"]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "Q07009_en",
+                    "title": "Support Top Income Tax Increase for Investment",
+                    "description": "Support for increasing the top income tax rate if the additional revenue raised supports investment",
+                    "type" : "CATEGORICAL",
+                    "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"]
                   }
                 ]
               }
