@@ -1920,8 +1920,7 @@
                 "description" : "Questions regarding the effects of changing the estate tax",
                 "type" : "UMBRELLA",
                 "questions" : [
-                  {
-                    "Q06004_en": {
+                    {
                       "id": "Q06004_en",
                       "title": "On Economic Activity",
                       "description": "What effect would increasing the federal estate tax on wealthy households would have on economic activity?",
@@ -1949,7 +1948,7 @@
                         }
                       ]
                     },
-                    "Q06005_en": {
+                    {
                       "id": "Q06005_en",
                       "title": "On Federal Deficit",
                       "description": "View about the long-term impact that cuts in the federal estate tax for wealthy households may have on the federal budget deficit",
@@ -1976,7 +1975,7 @@
                         }
                       ]
                     },
-                    "Q06006_en": {
+                    {
                       "id": "Q06006_en",
                       "title": "On Wealth Inequality",
                       "description": "View on whether increasing the federal estate tax is a good way to reduce wealth inequality?",
@@ -2004,7 +2003,6 @@
                         }
                       ]
                     }
-                  }
                 ]
               },
               "Q06008_en": {
@@ -2013,8 +2011,7 @@
                 "description" : "Questions regarding fairness of the estate tax",
                 "type" : "UMBRELLA",
                 "questions" : [
-                  {
-                    "Q06008_en": {
+                    {
                       "id": "Q06008_en",
                       "title": "Overall",
                       "description": "Is it fair that the estate of wealthy parents who have worked hard and saved a lot is subject to the federal estate tax at death?",
@@ -2042,7 +2039,7 @@
                         }
                       ]
                     },
-                    "Q06009_en": {
+                    {
                       "id": "Q06009_en",
                       "title": "Estate Taxation",
                       "description": "Imagine wealthy parents who inherited weatlh from their own parents. Is it fair that their estate be subject to the federal estate tax at death?",
@@ -2070,7 +2067,7 @@
                         }
                       ]
                     },
-                    "Q060010_en": {
+                    {
                       "id": "Q06010_en",
                       "title": "Access to Resources",
                       "description": "Is it fair that children born in very wealthy families have access to better resources than children from less wealthy families?",
@@ -2098,7 +2095,7 @@
                         }
                       ]
                     },
-                    "Q06011_en": {
+                    {
                       "id": "Q06011_en",
                       "title": "Wealth Inheritance",
                       "description": "Is it fair that children born in very wealthy families inherit much more than children born in less wealthy families?",
@@ -2126,7 +2123,6 @@
                         }
                       ]
                     }
-                  }
                 ]
               }
             }
@@ -2333,78 +2329,6 @@
                 "correct" : "An answer is considered correct if it mentions the words 'elderly', 'old', 'retire', '65', or 'senior'. An answer is incorrect if it does not mention any of those words, or if it mentions the words 'poor', 'income', or 'poverty'.",
                 "source" : "Medicare.gov",
                 "source_url" : "https://www.medicare.gov/what-medicare-covers/your-medicare-coverage-choices/whats-medicare"
-              },
-              "ltcare_1" : {
-                "id" : "ltcare_1",
-                "title" : "Who pays for long-term care",
-                "description" : "If an elderly person is in need of long-term care, which program(s) will pay for that?",
-                "type" : "UMBRELLA",
-                "questions" : [
-                  {
-                    "id": "ltcare_1",
-                    "title": "Medicare will pay for all of long-term care for all elderly above 65",
-                    "type" : "CATEGORICAL",
-                    "correct" : "No",
-                    "source" : "Medicare.com",
-                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
-                  },
-                  {
-                    "id": "ltcare_2",
-                    "title": "Medicare supplements will pay for all of long-term care for elderly who purchase them",
-                    "type" : "CATEGORICAL",
-                    "correct" : "No",
-                    "source" : "Medicare.com",
-                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
-                  },
-                  {
-                    "id": "ltcare_3",
-                    "title": "Medicare with or without supplements will only pay for short periods of long-term care for all the elderly above 65",
-                    "type" : "CATEGORICAL",
-                    "correct" : "No",
-                    "source" : "Medicare.com",
-                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
-                  },
-                  {
-                    "id": "ltcare_4",
-                    "title": "Private long-term care insurance plans will only pay for long-term care for all elderly who purchased them",
-                    "type" : "CATEGORICAL",
-                    "correct" : "Yes",
-                    "source" : "Medicare.com",
-                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
-                  },
-                  {
-                    "id": "ltcare_5",
-                    "title": "Employer health insurance plans will pay for the long-term care of retired employees",
-                    "type" : "CATEGORICAL",
-                    "correct" : "No",
-                    "source" : "Medicare.com",
-                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
-                  },
-                  {
-                    "id": "ltcare_6",
-                    "title": "Medicaid will pay for all of long-term care for all elderly",
-                    "type" : "CATEGORICAL",
-                    "correct" : "No",
-                    "source" : "Medicare.com",
-                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
-                  },
-                  {
-                    "id": "ltcare_7",
-                    "title": "Medicaid will pay for all of long-term care only for elderly who have a low income and low assets",
-                    "type" : "CATEGORICAL",
-                    "correct" : "Yes",
-                    "source" : "Medicare.com",
-                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
-                  },
-                  {
-                    "id": "ltcare_8",
-                    "title": "Medicaid will pay part of the long-term care for all the elderly",
-                    "type" : "CATEGORICAL",
-                    "correct" : "No",
-                    "source" : "Medicare.com",
-                    "source_url" : "https://medicare.com/coverage/medicare-cover-long-term-care/"
-                  }
-                ]
               },
               "Q04020_1_en" : {
                 "id" : "Q04020_1_en",
@@ -2795,8 +2719,7 @@
                 "description" : "Questions regarding satisfaction with healthcare",
                 "type" : "UMBRELLA",
                 "questions" : [
-                  {
-                    "Q06006_en": {
+                    {
                       "id": "Q06006_en",
                       "title": "Quality",
                       "description": "Effect of less generous health insurance on health coverage and outcomes",
@@ -2823,7 +2746,7 @@
                         }
                       ]
                     },
-                    "Q06007_en": {
+                    {
                       "id": "Q06007_en",
                       "title": "Total Costs",
                       "description": "Effect of more generous health insurance on healthcare costs",
@@ -2850,7 +2773,6 @@
                         }
                       ]
                     }
-                  }
                 ]
               },
               "Q06008_en": {
@@ -2886,8 +2808,7 @@
                 "description" : "Questions regarding fairness of healthcare",
                 "type" : "UMBRELLA",
                 "questions" : [
-                  {
-                    "Q06009_en": {
+                    {
                       "id": "Q06009_en",
                       "title": "Pre-existing Conditions Pay More",
                       "description": "Fairness of people with pre-existing conditions having to pay more for their health insurance than people without pre-existing conditions?",
@@ -2914,7 +2835,7 @@
                         }
                       ]
                     },
-                    "Q06010_en": {
+                    {
                       "id": "Q06010_en",
                       "title": "People with Worse Health at Birth Pay More",
                       "description": "Fairness of people born with worse health having to pay more for health care or insurance than people born with better health?",
@@ -2941,7 +2862,6 @@
                         }
                       ]
                     }
-                  }
                 ]
               },
               "Q06011_en": {

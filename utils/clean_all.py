@@ -24,6 +24,8 @@ def get_question_ids(survey):
             question = questions.pop(0)
         if ("questions" in question):
             questions.extend(question["questions"])
+        if "id" not in question:
+            raise Exception(question)
         ids.append(question["id"])
     return sorted(list(set(ids)))
 
