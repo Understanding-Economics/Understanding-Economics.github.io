@@ -27,9 +27,11 @@ export default class HomePage extends React.Component {
                 </p>
 
                 <p>
-                You can explore four big policy issues: Income Tax, Estate Tax, Health Insurance, and Trade Policy. Click on the tab you are interested in to explore the data.
+                You can explore four big policy issues: Income Tax, Estate Tax, Health Insurance, and Trade Policy. Click on the tab above that you are interested in to explore the data.
                 </p>
 
+                <Section>Highlights</Section>
+                Jump right into the data by taking a look at some of the questions that we thought were really interesting!
                 <HighlightBar />
                 <Section>How does this website work?</Section>
 
