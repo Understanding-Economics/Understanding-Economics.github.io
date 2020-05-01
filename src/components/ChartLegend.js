@@ -28,7 +28,6 @@ export default class ChartLegend extends React.PureComponent {
             style = {{
                 color : "black",
                 backgroundColor: colorPattern[i % colorPattern.length],
-                margin: "3px",
                 fontSize : "10pt",
                 minHeight: "30px",
                 maxWidth: responses.length > 6 ? "15%" : `${(100 / responses.length) - 2}%`,
