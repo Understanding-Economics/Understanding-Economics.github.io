@@ -31,7 +31,7 @@ export default class HomePage extends React.Component {
                 </p>
 
                 <Section>Highlights</Section>
-                Jump right into the data by taking a look at some of the questions that we thought were really interesting!
+                Jump right into the data by taking a look at some of the questions that we thought were really interesting! You can also learn more about how the website works below.
                 <HighlightBar />
                 <Section>How does this website work?</Section>
 

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export default class HighlightBlock extends React.PureComponent {
     render() {
-        return <div className = "col-md-3">
+        return <div className = "col-3" style ={{marginRight: -10}}>
             <div className = "text-center card h-100"
                 style = {{
                     padding : 10,
@@ -11,9 +11,13 @@ export default class HighlightBlock extends React.PureComponent {
                     borderWidth: 10
                 }}
             >
-                <NavLink to = {this.props.url}><strong style={{color: "dimgray"}}>
-                    {this.props.text}
-                </strong></NavLink>
+                <span style = {{marginTop: "auto", marginBottom: "auto"}}>
+                    <NavLink to = {this.props.url}>
+                        <strong style={{color: "dimgray"}}>
+                            {this.props.text}
+                        </strong>
+                    </NavLink>
+                </span>
             </div>
         </div>
     }

@@ -3,5 +3,6 @@
     max-height: 250px;
     height: auto;
     border: 2px solid grey;
+    border-radius: 5px;
     margin-bottom: 20px;
 }

@@ -18,6 +18,10 @@ export default class HighlightBar extends React.PureComponent{
                 marginBottom: 10,
                 paddingTop: 10,
                 paddingBottom: 10,
+                borderWidth: 2,
+                borderRadius: 5,  
+                borderStyle: 'solid',
+                borderColor: 'grey', 
                 overflowX: "scroll"}}>
                 {highlightBlocks}
             </div> 
