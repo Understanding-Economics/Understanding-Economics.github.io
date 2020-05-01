@@ -2122,6 +2122,33 @@
                           "treatments" : ["Gender"]
                         }
                       ]
+                    },
+                    {
+                      "id": "Q06012_en",
+                      "title": "Pass wealth or tax wealth?",
+                      "description": "Which statement do you agree with most?",
+                      "type" : "TREATMENT",
+                      "sorter" : ["Yes", "No"],
+                      "questions" : [
+                        {
+                          "id" : "Q06003_en",
+                          "title" : "CONTROL",
+                          "description" : "Statement 1: Wealthy parents should be allowed to pass on all of their wealth to their children. As a result, some children will start their own life with much larger wealth just by virtue of being born in a richer family. OR Statement 2: Children should not start their life with much larger wealth just by virtue of being born in a richer family. Part of the wealth passed on by parents to their children should therefore be taxed, even if that means that some parents who have worked hard will be taxed.",
+                          "treatments" : ["Neutral"]
+                        },
+                        {
+                          "id" : "Q06003_en",
+                          "title" : "YOU",
+                          "description" : "Statement 1: Individuals with similar levels of wealth to mine should be al- lowed to pass on all of their wealth to their children. As a result, some children will start their own life with larger wealth just by virtue of being born in a richer family than others. OR Statement 2: Children should not start their life with larger wealth just by virtue of being born in a richer family. Part of the wealth passed on by parents with wealth similar to mine to their children should be taxed, even if I and some of those other parents have worked hard for it.",
+                          "treatments" : ["You"]
+                        },
+                        {
+                          "id" : "Q06003_en",
+                          "title" : "GENDER",
+                          "description" : "Statement 1: A wealthy mother should be able to pass on all of her wealth to her children. As a result, some children will start their own life with much larger wealth just by virtue of being born with to richer mother. OR Statement 2: Children should not start their life with much larger wealth just by virtue of being born to a richer mother. Part of the wealth passed on by wealthy mothers to their children should be taxed, even if some mothers have worked hard for it.",
+                          "treatments" : ["Gender"]
+                        }
+                      ]
                     }
                 ]
               }
