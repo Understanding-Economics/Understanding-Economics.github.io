@@ -2741,19 +2741,19 @@
                         {
                             "id" : "Q06004_1_en",
                             "title" : "CONTROL",
-                            "description" : "Make less use of the emergency room for conditions that do not warrant it",
+                            "description" : "If health insurance were to be made more generous, to what extent would it encourage people to make less use of the emergency room for conditions that do not warrant it",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06004_1_en",
                             "title" : "YOU",
-                            "description" : "Make less use of the emergency room for conditions that do not warrant it",
+                            "description" : "If your health insurance were to be made more generous, to what extent would it encourage you to make less use of the emergency room for conditions that do not warrant it",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06004_1_en",
                             "title" : "GENDER",
-                            "description" : "Make less use of the emergency room for conditions that do not warrant it",
+                            "description" : "If health insurance were to be made more generous, to what extent would it encourage women to make less use of the emergency room for conditions that do not warrant it",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -2767,19 +2767,19 @@
                         {
                             "id" : "Q06004_2_en",
                             "title" : "CONTROL",
-                            "description" : "Use more medical services they do not really need simply because they do not have to pay the full cost of them",
+                            "description" : "If health insurance were to be made more generous, to what extent would it encourage people to use more medical services they do not really need simply because they do not have to pay the full cost of them",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06004_2_en",
                             "title" : "YOU",
-                            "description" : "Use more medical services they do not really need simply because they do not have to pay the full cost of them",
+                            "description" : "If your health insurance were to be made more generous, to what extent would it encourage you to use more medical services they do not really need simply because they do not have to pay the full cost of them",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06004_2_en",
                             "title" : "GENDER",
-                            "description" : "Use more medical services they do not really need simply because they do not have to pay the full cost of them",
+                            "description" : "If health insurance were to be made more generous, to what extent would it encourage women to use more medical services they do not really need simply because they do not have to pay the full cost of them",
                             "treatments" : ["Gender"]
                         }
                       ]
@@ -2793,19 +2793,19 @@
                         {
                             "id" : "Q06004_3_en",
                             "title" : "CONTROL",
-                            "description" : "Use more preventive medical care such as regular screenings and check-ups",
+                            "description" : "If health insurance were to be made more generous, to what extent would it encourage people to use more preventive medical care such as regular screenings and check-ups",
                             "treatments" : ["Neutral"]
                         },
                         {
                             "id" : "Q06004_3_en",
                             "title" : "YOU",
-                            "description" : "Use more preventive medical care such as regular screenings and check-ups",
+                            "description" : "If your health insurance were to be made more generous, to what extent would it encourage you to use more preventive medical care such as regular screenings and check-ups",
                             "treatments" : ["You"]
                         },
                         {
                             "id" : "Q06004_3_en",
                             "title" : "GENDER",
-                            "description" : "Use more preventive medical care such as regular screenings and check-ups",
+                            "description" : "If health insurance were to be made more generous, to what extent would it encourage women to use more preventive medical care such as regular screenings and check-ups",
                             "treatments" : ["Gender"]
                         }
                       ]
