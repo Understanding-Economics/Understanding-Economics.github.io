@@ -1,0 +1,34 @@
+[
+    {
+        "url" : "/survey/income_survey?topic=Text+Analysis&question=Q02003",
+        "text" : "What makes a good income tax system?"
+    },
+    {
+        "url" : "/survey/income_survey?topic=Views+on+government&group=employment_agg&question=Q09001_en",
+        "text" : "How much can the government do to reduce income differences?"
+    },
+    {
+        "url" : "/survey/estate_survey?topic=Knowledge+about+policy&question=Q04002_en&group=edugroup",
+        "text" : "Who is subject to the estate tax?"
+    },
+    {
+        "url" : "/survey/estate_survey?topic=Results&group=edugroup&question=Q07001_en",
+        "text" : "How problematic are current wealth differences?"
+    },
+    {
+        "url" : "/survey/health_survey?topic=Expected+effects&question=Q06004_1_en&group=age3group",
+        "text" : "How would more generous health insurance change behavior?"
+    },
+    {
+        "url" : "/survey/health_survey?topic=Desired+Design+of+Health+Insurance&group=incomegroup&question=Q07010_1_en",
+        "text" : "How should health insurance be designed?"
+    },
+    {
+        "url" : "/survey/trade_survey?topic=Knowledge+about+policy&question=Q04007_en&group=econgroup",
+        "text" : "What share of imports are subject to tariff?"
+    },
+    {
+        "url" : "/survey/trade_survey?topic=Expected+Effects&group=econgroup&question=Q06105",
+        "text" : "How easy is it for workers to find a new job?"
+    }
+]

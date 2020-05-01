@@ -2,6 +2,7 @@ import React from 'react'
 import DemoImage from './DemoImage'
 import { Section } from './TextComponents'
 import Utils from '../Utils'
+import HighlightBar from './HighlightBar'
 
 export default class HomePage extends React.Component {
     // NOTE: 
@@ -26,9 +27,10 @@ export default class HomePage extends React.Component {
                 </p>
 
                 <p>
-                You can explore four big policy issues: Income Tax, Estate Tax, Health Insurance, and Trade Policy. Click on the tab you are interested in to explore the data. 
+                You can explore four big policy issues: Income Tax, Estate Tax, Health Insurance, and Trade Policy. Click on the tab you are interested in to explore the data.
                 </p>
 
+                <HighlightBar />
                 <Section>How does this website work?</Section>
 
                 <p>
