@@ -205,7 +205,7 @@
                       "description": "Out of 100 households in the U.S., how many are in the top federal personal income tax bracket?",
                       "type" : "NUMERIC",
                       "format" : "percent",
-                      "correct" : 73,
+                      "correct" : 0.73,
                       "source" : "Tax Foundation",
                       "source_url" : "https://taxfoundation.org/how-many-taxpayers-fall-each-income-tax-bracket"
                     },
