@@ -69,7 +69,8 @@
         "id": "social_class",
         "title": "Social Class",
         "description": "The social class that the respondent identifies with.",
-        "type" : "CATEGORICAL"
+        "type" : "CATEGORICAL",
+        "sorter" : ["All", "Lower", "Working", "Middle", "Upper-middle", "Upper"]
       },
       "partygroup": {
         "id": "partygroup",
