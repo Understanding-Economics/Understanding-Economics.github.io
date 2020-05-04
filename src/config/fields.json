@@ -1533,7 +1533,7 @@
           "Effects of the Policy" : {
             "id": "Effects of the Policy",
             "title": "Effects of the Policy",
-            "description": "Questions to examine Effects of the Policy of estate tax policy",
+            "description": "Questions to examine the effects of estate tax policy",
             "questions": {
               "Q06001_1_en": {
                 "id": "Q06001_1_en",
@@ -2676,7 +2676,7 @@
           "Effects of the Policy" : {
             "id": "Effects of the Policy",
             "title": "Effects of the Policy",
-            "description": "Questions to examine the Effects of the Policy of health policy",
+            "description": "Questions to examine the effects of health policy",
             "questions": {
               "Q06001": {
                 "id": "Q06001",
@@ -3383,7 +3383,7 @@
           "Effects of the Policy" : {
             "id": "Effects of the Policy",
             "title": "Effects of the Policy",
-            "description": "Questions to examine the Effects of the Policy of trade policy",
+            "description": "Questions to examine the effects of trade policy",
             "questions": {
               "Q06001_1_en": {
                 "id": "Q06001_1_en",
