@@ -69,7 +69,8 @@
         "id": "social_class",
         "title": "Social Class",
         "description": "The social class that the respondent identifies with.",
-        "type" : "CATEGORICAL"
+        "type" : "CATEGORICAL",
+        "sorter" : ["All", "Lower", "Working", "Middle", "Upper-middle", "Upper"]
       },
       "partygroup": {
         "id": "partygroup",
@@ -1529,10 +1530,10 @@
               }
             }
           },
-          "Expected Effects" : {
-            "id": "Expected Effects",
-            "title": "Expected Effects",
-            "description": "Questions to examine expected effects of estate tax policy",
+          "Effects of the Policy" : {
+            "id": "Effects of the Policy",
+            "title": "Effects of the Policy",
+            "description": "Questions to examine Effects of the Policy of estate tax policy",
             "questions": {
               "Q06001_1_en": {
                 "id": "Q06001_1_en",
@@ -2154,9 +2155,9 @@
               }
             }
           },
-          "Results" : {
-            "id": "Results",
-            "title": "Results",
+          "Policy Views" : {
+            "id": "Policy Views",
+            "title": "Policy Views",
             "description": "Questions to examine results of estate tax policy",
             "questions": {
               "Q07001_en": {
@@ -2672,10 +2673,10 @@
               }
             }
           },
-          "Expected effects" : {
-            "id": "Expected effects",
-            "title": "Expected effects",
-            "description": "Questions to examine the expected effects of health policy",
+          "Effects of the Policy" : {
+            "id": "Effects of the Policy",
+            "title": "Effects of the Policy",
+            "description": "Questions to examine the Effects of the Policy of health policy",
             "questions": {
               "Q06001": {
                 "id": "Q06001",
@@ -3097,9 +3098,9 @@
               }
             }
           },
-          "Results" : {
-            "id": "Results",
-            "title": "Results",
+          "Policy Views" : {
+            "id": "Policy Views",
+            "title": "Policy Views",
             "description": "Questions to examine the results health policy",
             "questions": {
               "Q07001_en": {
@@ -3379,10 +3380,10 @@
               }
             }
           },
-          "Expected Effects" : {
-            "id": "Expected Effects",
-            "title": "Expected Effects",
-            "description": "Questions to examine the expected effects of trade policy",
+          "Effects of the Policy" : {
+            "id": "Effects of the Policy",
+            "title": "Effects of the Policy",
+            "description": "Questions to examine the Effects of the Policy of trade policy",
             "questions": {
               "Q06001_1_en": {
                 "id": "Q06001_1_en",
@@ -3713,9 +3714,9 @@
               }
             }
           },
-          "Results" : {
-            "id": "Results",
-            "title": "Results",
+          "Policy Views" : {
+            "id": "Policy Views",
+            "title": "Policy Views",
             "description": "Questions to examine the results of trade policy",
             "questions": {
               "Q07001_en": {
