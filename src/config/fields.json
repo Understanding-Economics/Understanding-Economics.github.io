@@ -3134,7 +3134,7 @@
               },
               "Q07006_en": {
                 "id": "Q07006_en",
-                "title": "Supports",
+                "title": "Supported policies",
                 "description": "What do you support with regard to healthcare programs?",
                 "type" : "UMBRELLA",
                 "questions" : [
