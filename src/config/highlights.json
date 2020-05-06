@@ -12,11 +12,11 @@
         "text" : "Who is subject to the estate tax?"
     },
     {
-        "url" : "/survey/estate_survey?topic=Results&group=edugroup&question=Q07001_en",
+        "url" : "/survey/estate_survey?topic=Policy+Views&group=edugroup&question=Q07001_en",
         "text" : "How problematic are current wealth differences?"
     },
     {
-        "url" : "/survey/health_survey?topic=Expected+effects&question=Q06004_1_en&group=age3group",
+        "url" : "/survey/health_survey?topic=Effects+of+the+Policy&question=Q06004_1_en&group=age3group",
         "text" : "How would more generous health insurance change behavior?"
     },
     {
@@ -28,7 +28,7 @@
         "text" : "What share of imports are subject to tariff?"
     },
     {
-        "url" : "/survey/trade_survey?topic=Expected+Effects&group=econgroup&question=Q06105",
+        "url" : "/survey/trade_survey?topic=Effects+of+the+Policy&group=econgroup&question=Q06105",
         "text" : "How easy is it for workers to find a new job?"
     }
 ]
