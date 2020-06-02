@@ -161,9 +161,9 @@
               }
             }
           },
-          "Policy Knowledge": {
-            "id": "Policy Knowledge",
-            "title": "Policy Knowledge",
+          "Knowledge about policy": {
+            "id": "Knowledge about policy",
+            "title": "Knowledge about policy",
             "description": "Questions to examine the individual's knowledge of income tax policy",
             "questions": {
               "Q04004_en": {
@@ -316,9 +316,9 @@
               }
             }
           },
-          "Tax Change Behavior": {
-            "id": "Tax Change Behavior",
-            "title": "Tax Change Behavior",
+          "Expected Effects": {
+            "id": "Expected Effects",
+            "title": "Expected Effects",
             "description": "How would increasing the federal income tax rate for the richest individuals encourage the following behavior(s)?",
             "questions": {
               "Q06001_1_en" : {
@@ -1059,7 +1059,7 @@
               }
             }
           },
-          "Outcomes": {
+          "Results": {
             "id": "Outcomes",
             "title": "Outcomes",
             "description": "Questions to test the individual's perception of income tax policy outcomes",
