@@ -1060,8 +1060,8 @@
             }
           },
           "Results": {
-            "id": "Outcomes",
-            "title": "Outcomes",
+            "id": "Results",
+            "title": "Results",
             "description": "Questions to test the individual's perception of income tax policy outcomes",
             "questions": {
               "Q07001_en" : {
@@ -1392,7 +1392,7 @@
               },
               "Q04014_en": {
                 "id": "Q04014_en",
-                "title": "Example",
+                "title": "Capital Gains Example",
                 "description": "Let’s work through a concrete example about the federal estate tax now. Jack inherits a house from his father. His father paid $50,000 for the house 30 years ago. This house is now worth $350,000 at the time of the father’s death. But Jack manages to sell the house for $400,000.",
                 "type" : "UMBRELLA",
                 "questions" : [
