@@ -3,6 +3,8 @@ import DemoImage from './DemoImage'
 import { Section } from './TextComponents'
 import Utils from '../Utils'
 import HighlightBar from './HighlightBar'
+import { NavLink } from 'react-router-dom'
+import ResetLink from './ResetLink'
 
 export default class HomePage extends React.Component {
     // NOTE: 
@@ -27,9 +29,8 @@ export default class HomePage extends React.Component {
                 </p>
 
                 <p>
-                You can explore four big policy issues: Income Tax, Estate Tax, Health Insurance, and Trade Policy. Click on the tab above that you are interested in to explore the data.
+                You can explore four big policy issues: <ResetLink to = "/survey/income_survey">Income Tax</ResetLink>, <ResetLink to = "/survey/estate_survey">Estate Tax</ResetLink>, <ResetLink to ="/survey/health_survey">Health Insurance</ResetLink>, and <ResetLink to ="/survey/trade_survey">Trade Policy</ResetLink>. Click on the tab above that you are interested in to explore the data.
                 </p>
-
                 <Section>Highlights</Section>
                 Jump right into the data by taking a look at some of the questions that we thought were really interesting! You can also learn more about how the website works below.
                 <HighlightBar />
