@@ -46,7 +46,7 @@ export default class HomePage extends React.Component {
 
                 <DemoImage src = "tabs.png"/>
                 
-                <p> Then, choose a topic area that you are interested in exploring:</p>
+                <p>Then, choose a topic area that you are interested in exploring:</p>
                 
                 <DemoImage src = "topic.png" />
                 

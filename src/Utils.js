@@ -5,8 +5,7 @@ import ReactGA from 'react-ga'
 
 let date = new Date();
 let timezone = date.getTimezoneOffset() / 60;
-// Only enable if not in a European timezone
-let analyticsActive = timezone > 0 || timezone > -4;
+let analyticsActive = true;
 
 const Utils = {
     getUniqueDictVals: function(data, key, sorter) {
