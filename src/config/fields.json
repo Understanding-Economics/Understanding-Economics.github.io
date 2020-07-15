@@ -12,7 +12,7 @@
         "title": "Education level",
         "description": "The highest education level achieved by the repsondent.",
         "type" : "CATEGORICAL",
-        "sorter" : ["Eighth Grade or lower", "Some High School", "High School degree/ GED", "Some College", "2-year College Degree", "4-year College Degree", "Master's Degree", "Professional Degree (JD, MD, MBA)", "Doctoral Degree"]
+        "sorter" : ["College Degree", "High-School Degree", "No High-School Degree"]
       },
       "employment_agg": {
         "id": "employment_agg",
@@ -90,7 +90,8 @@
         "id": "ideology",
         "title": "Economic Ideology",
         "description": "The economic ideology that the respondent self-identifies with.",
-        "type" : "CATEGORICAL"
+        "type" : "CATEGORICAL",
+        "sorter" : ["Conservative", "Moderate", "Liberal"]
       },
       "econgroup": {
         "id": "econgroup",
