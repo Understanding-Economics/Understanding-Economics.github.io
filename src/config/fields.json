@@ -1098,7 +1098,7 @@
                     "title": "High incomes",
                     "description": "How fair the respondent thinks the tax system is regarding high income housheolds, depending on their treatment",
                     "type" : "TREATMENT",
-                    "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
+                    "sorter" : ["Pay much less than fair share", "Pay less than fair share", "Pay fair share", "Pay more than fair share", "Pay much more than fair share"],
                     "questions" : [
                       {
                         "id" : "Q07003_en",
@@ -1125,7 +1125,7 @@
                     "title": "Middle Class",
                     "description": "How fair the respondent thinks the tax system is regarding middle-class housheolds, depending on their treatment",
                     "type" : "TREATMENT",
-                    "sorter" : ["Pay much more than their fair share in income taxes", "Pay more than their fair share in income taxes", "Pay their fair share in income taxes", "Pay less than their fair share in income taxes", "Pay much less than their fair share in income taxes"],
+                    "sorter" : ["Pay much less than fair share", "Pay less than fair share", "Pay fair share", "Pay more than fair share", "Pay much more than fair share"],
                     "questions" : [
                       {
                         "id" : "Q07004_en",
@@ -4119,7 +4119,7 @@
                 "title": "Education level",
                 "description": "The highest education level achieved by the repsondent.",
                 "type" : "FREQUENCY",
-                "sorter" : ["Eighth Grade or lower", "Some High School", "High School degree/ GED", "Some College", "2-year College Degree", "4-year College Degree", "Master's Degree", "Professional Degree (JD, MD, MBA)", "Doctoral Degree"]
+                "sorter" : ["College Degree", "High-School Degree", "No High-School Degree"]
               },
               "employment_agg": {
                 "id": "employment_agg",
