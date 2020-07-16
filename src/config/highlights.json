@@ -4,11 +4,11 @@
         "text" : "What makes a good income tax system?"
     },
     {
-        "url" : "/survey/income_survey?topic=Views+on+government&group=employment_agg&question=Q09001_en",
+        "url" : "/survey/income_survey?topic=Views+on+Government&group=employment_agg&question=Q09001_en",
         "text" : "How much can the government do to reduce income differences?"
     },
     {
-        "url" : "/survey/estate_survey?topic=Knowledge+about+policy&question=Q04002_en&group=edugroup",
+        "url" : "/survey/estate_survey?topic=Knowledge+about+Policy&question=Q04002_en&group=edugroup",
         "text" : "Who is subject to the estate tax?"
     },
     {
@@ -24,7 +24,7 @@
         "text" : "How should health insurance be designed?"
     },
     {
-        "url" : "/survey/trade_survey?topic=Knowledge+about+policy&question=Q04007_en&group=econgroup",
+        "url" : "/survey/trade_survey?topic=Knowledge+about+Policy&question=Q04007_en&group=econgroup",
         "text" : "What share of imports are subject to tariff?"
     },
     {

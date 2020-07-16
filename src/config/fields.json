@@ -3178,6 +3178,8 @@
                   "title": "Medicare will pay for all of long-term care for all elderly above 65",
                   "type": "CATEGORICAL",
                   "correct": "No",
+                  "sorter" : ["Yes", "No"],
+                  "color" : "Binary", 
                   "source": "Medicare.com",
                   "source_url": "https://medicare.com/coverage/medicare-cover-long-term-care/"
                 },
@@ -3186,6 +3188,8 @@
                   "title": "Medicare supplements will pay for all of long-term care for elderly who purchase them",
                   "type": "CATEGORICAL",
                   "correct": "No",
+                  "sorter" : ["Yes", "No"],
+                  "color" : "Binary", 
                   "source": "Medicare.com",
                   "source_url": "https://medicare.com/coverage/medicare-cover-long-term-care/"
                 },
@@ -3194,6 +3198,8 @@
                   "title": "Medicare with or without supplements will only pay for short periods of long-term care for all the elderly above 65",
                   "type": "CATEGORICAL",
                   "correct": "No",
+                  "sorter" : ["Yes", "No"],
+                  "color" : "Binary", 
                   "source": "Medicare.com",
                   "source_url": "https://medicare.com/coverage/medicare-cover-long-term-care/"
                 },
@@ -3202,6 +3208,8 @@
                   "title": "Private long-term care insurance plans will only pay for long-term care for all elderly who purchased them",
                   "type": "CATEGORICAL",
                   "correct": "Yes",
+                  "sorter" : ["Yes", "No"],
+                  "color" : "Binary", 
                   "source": "Medicare.com",
                   "source_url": "https://medicare.com/coverage/medicare-cover-long-term-care/"
                 },
@@ -3210,6 +3218,8 @@
                   "title": "Employer health insurance plans will pay for the long-term care of retired employees",
                   "type": "CATEGORICAL",
                   "correct": "No",
+                  "sorter" : ["Yes", "No"],
+                  "color" : "Binary", 
                   "source": "Medicare.com",
                   "source_url": "https://medicare.com/coverage/medicare-cover-long-term-care/"
                 },
@@ -3218,6 +3228,8 @@
                   "title": "Medicaid will pay for all of long-term care for all elderly",
                   "type": "CATEGORICAL",
                   "correct": "No",
+                  "sorter" : ["Yes", "No"],
+                  "color" : "Binary", 
                   "source": "Medicare.com",
                   "source_url": "https://medicare.com/coverage/medicare-cover-long-term-care/"
                 },
@@ -3226,6 +3238,8 @@
                   "title": "Medicaid will pay for all of long-term care only for elderly who have a low income and low assets",
                   "type": "CATEGORICAL",
                   "correct": "Yes",
+                  "sorter" : ["Yes", "No"],
+                  "color" : "Binary", 
                   "source": "Medicare.com",
                   "source_url": "https://medicare.com/coverage/medicare-cover-long-term-care/"
                 },
@@ -3234,6 +3248,8 @@
                   "title": "Medicaid will pay part of the long-term care for all the elderly",
                   "type": "CATEGORICAL",
                   "correct": "No",
+                  "sorter" : ["Yes", "No"],
+                  "color" : "Binary", 
                   "source": "Medicare.com",
                   "source_url": "https://medicare.com/coverage/medicare-cover-long-term-care/"
                 }
@@ -3495,7 +3511,7 @@
             },
             "Q04017_en": {
               "id": "Q04017_en",
-              "title": "Impact of aca on eligibility",
+              "title": "Impact of ACA on eligibility",
               "description": "How did the FPL threshold percentage change, if at all, as a result of the Affordable Care Act?",
               "type": "CATEGORICAL",
               "sorter": [
@@ -3620,7 +3636,7 @@
               "questions": [
                 {
                   "id": "Q06004_1_en",
-                  "title": "Increase unnecessary use of er",
+                  "title": "Increase unnecessary use of ER",
                   "type": "TREATMENT",
                   "sorter": [
                     "None at all",
@@ -4357,7 +4373,8 @@
                 "Not much",
                 "Some",
                 "A lot"
-              ]
+              ],
+              "color" : "ReverseGradient4"
             }
           }
         }
@@ -4492,7 +4509,7 @@
             "Q04010_en": {
               "id": "Q04010_en",
               "title": "Principal import provenance",
-              "description": "From which country does the U.S. import the most, in terms of the net dollar value",
+              "description": "From which country does the U.S. import the most, in terms of the net dollar value?",
               "type": "CATEGORICAL",
               "sorter": [
                 "Brazil",
@@ -5078,6 +5095,7 @@
                     "2",
                     "3"
                   ],
+                  "color" : "Gradient3", 
                   "questions": [
                     {
                       "id": "Q07006_1_en",
@@ -5106,6 +5124,7 @@
                     "2",
                     "3"
                   ],
+                  "color" : "Gradient3", 
                   "questions": [
                     {
                       "id": "Q07006_2_en",
@@ -5134,6 +5153,7 @@
                     "2",
                     "3"
                   ],
+                  "color" : "Gradient3", 
                   "questions": [
                     {
                       "id": "Q07006_3_en",
