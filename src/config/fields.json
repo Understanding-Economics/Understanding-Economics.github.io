@@ -10,20 +10,21 @@
       "edugroup": {
         "id": "edugroup",
         "title": "Education level",
-        "description": "The highest education level achieved by the repsondent.",
+        "description": "The highest education level achieved by the repsondent",
         "type" : "CATEGORICAL",
         "sorter" : ["College Degree", "High-School Degree", "No High-School Degree"]
       },
       "employment_agg": {
         "id": "employment_agg",
         "title": "Employment Status",
-        "description": "The current employment status of the respondent.",
+        "description": "The current employment status of the respondent",
+        "sorter" : ["Working", "Not working", "Student", "Retiree"],
         "type" : "CATEGORICAL"
       },
       "gender": {
         "id": "gender",
         "title": "Gender",
-        "description": "The gender of the respondent.",
+        "description": "The gender of the respondent",
         "type" : "CATEGORICAL"
       },
       "incomegroup": {
@@ -47,7 +48,7 @@
       "children": {
         "id": "children",
         "title": "Number of Children",
-        "description": "Number of children the repsondent has.",
+        "description": "Number of children the respondent has",
         "type" : "CATEGORICAL",
         "sorter" : ["0", "1", "2", "3+"]
       },
@@ -61,21 +62,21 @@
       "born_us": {
         "id": "born_us",
         "title": "Born in US",
-        "description": "Whether the respondent was born in the United States.",
+        "description": "Whether the respondent was born in the United States",
         "type" : "CATEGORICAL",
         "sorter" : ["Yes", "No"]
       },
       "social_class": {
         "id": "social_class",
         "title": "Social Class",
-        "description": "The social class that the respondent identifies with.",
+        "description": "The social class that the respondent identifies with",
         "type" : "CATEGORICAL",
-        "sorter" : ["All", "Lower", "Working", "Middle", "Upper-middle", "Upper"]
+        "sorter" : ["Lower Class or Poor", "Working Class", "Middle Class", "Upper-middle Class", "Upper Class"]
       },
       "partygroup": {
         "id": "partygroup",
         "title": "Political Party",
-        "description": "The political party that the respondent self-identifies with.",
+        "description": "The political party that the respondent self-identifies with",
         "type" : "CATEGORICAL",
         "sorter": ["Democrat", "Independent", "Republican", "Other"]
       },
@@ -89,14 +90,14 @@
       "ideology": {
         "id": "ideology",
         "title": "Economic Ideology",
-        "description": "The economic ideology that the respondent self-identifies with.",
+        "description": "The economic ideology that the respondent self-identifies with",
         "type" : "CATEGORICAL",
         "sorter" : ["Conservative", "Moderate", "Liberal"]
       },
       "econgroup": {
         "id": "econgroup",
         "title": "Economics Knowledge",
-        "description": "The respondent's self-reported knowedge of economics.",
+        "description": "The respondent's self-reported knowedge of economics",
         "type" : "CATEGORICAL",
         "sorter" : ["Not highly knowledgeable", "Highly knowledgeable"]
       },
@@ -173,7 +174,9 @@
                 "title": "Perceived Equality of Income Tax Share",
                 "description": "How equally the respondent thinks the share of income tax is distributed across people in the U.S.",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Everyone pays more or less the same share.", "People pay somewhat different shares of their income in taxes.", "People pay very different shares of their income in taxes."]
+                "sorter" : ["Everyone pays more or less the same share.", "People pay somewhat different shares of their income in taxes.", "People pay very different shares of their income in taxes."],
+                "color" : "Gradient3",
+                "correct" : "People pay very different shares of their income in taxes."
               },
               "Q04005_en": {
                 "id": "Q04005_en",
@@ -181,7 +184,7 @@
                 "description": "Whether respondent thinks people with higher incomes pay a higher or lower share of their total income in federal taxes than people with lower incomes?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["People with higher incomes pay a higher share of their income in taxes than those with lower incomes.", "People with higher incomes pay a lower share of their income in taxes than those with lower incomes."],
-                "correct" : "People pay very different shares of their income in taxes",
+                "correct" : "People with higher incomes pay a higher share of their income in taxes than those with lower incomes.",
                 "source" : "Pew Research",
                 "source_url" : "http://www.pewresearch.org/fact-tank/2017/10/06/a-closer-look-at-who-does-and-doesnt-pay-u-s-income-tax/"
               },
@@ -694,6 +697,7 @@
                     "id": "Q06004_1_en",
                     "title": "Lower Class or Poor",
                     "type" : "TREATMENT",
+                    "color" : "ReverseBinary",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
                     "questions" : [
                       {
@@ -721,6 +725,7 @@
                     "title": "Working class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "color" : "ReverseBinary", 
                     "questions" : [
                       {
                           "id" : "Q06004_2_en",
@@ -747,6 +752,7 @@
                     "title": "Middle class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "color" : "ReverseBinary", 
                     "questions" : [
                       {
                           "id" : "Q06004_3_en",
@@ -773,6 +779,7 @@
                     "title": "Upper-middle class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "color" : "ReverseBinary", 
                     "questions" : [
                       {
                           "id" : "Q06004_4_en",
@@ -799,6 +806,7 @@
                     "title": "Upper class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "color" : "ReverseBinary", 
                     "questions" : [
                       {
                           "id" : "Q06004_5_en",
@@ -833,6 +841,7 @@
                     "title": "Lower Class or Poor",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "color" : "ReverseBinary", 
                     "questions" : [
                       {
                           "id" : "Q06005_1_en",
@@ -859,6 +868,7 @@
                     "title": "Working class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "color" : "ReverseBinary", 
                     "questions" : [
                       {
                           "id" : "Q06005_2_en",
@@ -885,6 +895,7 @@
                     "title": "Middle class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "color" : "ReverseBinary", 
                     "questions" : [
                       {
                           "id" : "Q06005_3_en",
@@ -911,6 +922,7 @@
                     "title": "Upper-middle class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "color" : "ReverseBinary", 
                     "questions" : [
                       {
                           "id" : "Q06005_4_en",
@@ -937,6 +949,7 @@
                     "title": "Upper class",
                     "type" : "TREATMENT",
                     "sorter" : ["Mostly Lose", "Mostly Win"],
+                    "color" : "ReverseBinary", 
                     "questions" : [
                       {
                           "id" : "Q06005_5_en",
@@ -994,6 +1007,7 @@
                     "description": "How the respondent views the long-term impact of tax cuts on high-income households on the federal budget deficit?",
                     "type" : "TREATMENT",
                     "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won't be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
+                    "color" : "ReverseBinary", 
                     "questions" : [
                       {
                         "id" : "Q06007_en",
@@ -1021,6 +1035,7 @@
                     "description": "How the respondent views the long-term impact of tax cuts on middle-class households on the federal budget deficit?",
                     "type" : "TREATMENT",
                     "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won't be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
+                    "color" : "ReverseBinary",
                     "questions" : [
                       {
                         "id" : "Q06008_en",
@@ -1061,9 +1076,9 @@
               }
             }
           },
-          "Results": {
-            "id": "Results",
-            "title": "Results",
+          "Policy views": {
+            "id": "Policy views",
+            "title": "Policy views",
             "description": "Questions to test the individual's perception of income tax policy outcomes",
             "questions": {
               "Q07001_en" : {
@@ -1280,7 +1295,7 @@
                     {
                       "id": "Q04002_en",
                       "title": "Everyone",
-                      "description": "Is every individual's estate taxed",
+                      "description": "Is every individual's estate taxed?",
                       "type" : "CATEGORICAL",
                       "sorter" : ["Yes", "No"],
                       "correct" : "No",
@@ -1349,7 +1364,7 @@
                 "description": "Do you think many small business or small farm owners are subject to the federal estate tax?",
                 "type" : "CATEGORICAL",
                 "sorter" : ["Almost all are subject to the estate tax", "Many are subject to the estate tax", "Few are subject to the estate tax", "Almost none are subject to the estate tax"],
-                "correct" : "Few, only roughly 80 small bussiness and small farm estates nationwide will face any estate tax in 2017",
+                "correct" : "Few are subject to the estate tax",
                 "source" : "Center on Budget and Policy Priorities",
                 "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
@@ -1387,10 +1402,7 @@
                 "title": "Cost Basis at Death",
                 "description": "Do you know what the stepped-up cost basis at death is?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"],
-                "correct" : "It is the asset's (receive from the benefactor) market value at the time the benefactor dies",
-                "source" : "Internal Revnue Code § 1014(a)",
-                "source_url" : "https://www.law.cornell.edu/uscode/text/26/1014"
+                "sorter" : ["Yes", "No"]
               },
               "Q04014_en": {
                 "id": "Q04014_en",
@@ -1405,7 +1417,6 @@
                       "type" : "CATEGORICAL",
                       "sorter" : ["$50,000", "$300,000", "$350,000", "$400,000", "Other"],
                       "correct" : "$50,000",
-                      "format" : "dollar",
                       "source" : "IRS",
                       "source_url" : "https://www.irs.gov/faqs/interest-dividends-other-types-of-income/gifts-inheritances"
                     },
@@ -1730,7 +1741,7 @@
               "Q06002_1_en": {
                 "id": "Q06002_1_en",
                 "title": "Middle class behavior",
-                "description": "If the federal estate tax were to increase, to what extent would it encourage <strong>you</strong>ng people who are not yet rich towards the following behaviors?",
+                "description": "If the federal estate tax were to increase, to what extent would it encourage people who are not yet rich towards the following behaviors?",
                 "type" : "UMBRELLA",
                 "questions" : [
                   {
@@ -2222,9 +2233,9 @@
               }
             }
           },
-          "Government Questions (Specific)" : {
-            "id": "Government Questions (Specific)",
-            "title": "Government Questions (Specific)",
+          "Views on government " : {
+            "id": "Views on government",
+            "title": "Views on government",
             "description": "Questions to examine government intervention regarding estate tax policy",
             "questions": {
               "Q09001_en": {
@@ -3050,7 +3061,7 @@
               "Q06015_en": {
                 "id": "Q06015_en",
                 "title": "Employers with Religious Objections",
-                "description": "If you had to choose, which comes closest to your view? Employers who have religious objections to the use of birth control should be...",
+                "description": "If you had to choose, which comes closest to your view? \"Employers who have religious objections to the use of birth control should be...",
                 "type" : "CATEGORICAL",
                 "sorter" : ["... able to refuse to provide it in health insurance plans for their employees.", "... required to provide it in health insurance plans for their employees just as other employers are required to do."]
               },
@@ -3240,9 +3251,9 @@
               }
             }
           },
-          "Government questions (specific)" : {
-            "id": "Government questions (specific)",
-            "title": "Government questions (specific)",
+          "Views on government" : {
+            "id": "Views on government",
+            "title": "Views on government",
             "description": "Questions to examine government intervention regarding health policy",
             "questions": {
               "Q09001_en": {
@@ -4072,51 +4083,6 @@
                 "type" : "FREQUENCY",
                 "sorter" : ["18-35", "36-50", "51-69"]
               },
-              "incomegroup": {
-                "id": "incomegroup",
-                "title": "Income Group",
-                "description": "The annual income of the respondent",
-                "type" : "FREQUENCY",
-                "sorter" : [
-                  "$0-$19999", "$20000-$39999", "$40000-$69999", "$70000-$109999", "$110000+"
-                ]
-              },
-              "born_us": {
-                "id": "born_us",
-                "title": "Born in US",
-                "description": "Whether the respondent was born in the United States.",
-                "type" : "FREQUENCY",
-                "sorter" : ["Yes", "No"]
-              },
-              "married": {
-                "id": "married",
-                "title": "Married",
-                "description": "Whether the individual is married",
-                "type" : "FREQUENCY",
-                "sorter" : [
-                  "Married", "Non-married"
-                ]
-              },
-              "gender": {
-                "id": "gender",
-                "title": "Gender",
-                "description": "The gender of the respondent.",
-                "type" : "FREQUENCY"
-              },
-              "children": {
-                "id": "children",
-                "title": "Number of Children",
-                "description": "Number of children the repsondent has.",
-                "type" : "FREQUENCY",
-                "sorter" : ["0", "1", "2", "3+"]
-              },
-              "race": {
-                "id": "race",
-                "title": "Race",
-                "description": "The race of the respondent.",
-                "type" : "FREQUENCY",
-                "sorter" : ["African American", "Asian", "Hispanic", "White non Hispanic", "Other"]
-              },
               "edugroup": {
                 "id": "edugroup",
                 "title": "Education level",
@@ -4128,19 +4094,60 @@
                 "id": "employment_agg",
                 "title": "Employment Status",
                 "description": "The current employment status of the respondent.",
+                "sorter" : ["Working", "Not working", "Student", "Retiree"],
                 "type" : "FREQUENCY"
+              },
+              "gender": {
+                "id": "gender",
+                "title": "Gender",
+                "description": "The gender of the respondent.",
+                "type" : "FREQUENCY"
+              },
+              "incomegroup": {
+                "id": "incomegroup",
+                "title": "Income Group",
+                "description": "The annual income of the respondent",
+                "type" : "FREQUENCY",
+                "sorter" : [
+                  "$0-$19999", "$20000-$39999", "$40000-$69999", "$70000-$109999", "$110000+"
+                ]
+              },
+              "married": {
+                "id": "married",
+                "title": "Married",
+                "description": "Whether the individual is married",
+                "type" : "FREQUENCY",
+                "sorter" : [
+                  "Married", "Non-married"
+                ]
+              },
+              "children": {
+                "id": "children",
+                "title": "Number of Children",
+                "description": "Number of children the respondent has.",
+                "type" : "FREQUENCY",
+                "sorter" : ["0", "1", "2", "3+"]
+              },
+              "race": {
+                "id": "race",
+                "title": "Race",
+                "description": "The race of the respondent.",
+                "type" : "FREQUENCY",
+                "sorter" : ["African American", "Asian", "Hispanic", "White non Hispanic", "Other"]
+              },
+              "born_us": {
+                "id": "born_us",
+                "title": "Born in US",
+                "description": "Whether the respondent was born in the United States.",
+                "type" : "FREQUENCY",
+                "sorter" : ["Yes", "No"]
               },
               "social_class": {
                 "id": "social_class",
                 "title": "Social Class",
                 "description": "The social class that the respondent identifies with.",
-                "type" : "FREQUENCY"
-              },
-              "ideology": {
-                "id": "ideology",
-                "title": "Economic Ideology",
-                "description": "The economic ideology that the respondent self-identifies with.",
-                "type" : "FREQUENCY"
+                "type" : "FREQUENCY",
+                "sorter" : ["Lower Class or Poor", "Working Class", "Middle Class", "Upper-middle Class", "Upper Class"]
               },
               "partygroup": {
                 "id": "partygroup",
@@ -4149,33 +4156,40 @@
                 "type" : "FREQUENCY",
                 "sorter": ["Democrat", "Independent", "Republican", "Other"]
               },
-              "newsgroup": {
-                "id": "newsgroup",
-                "title": "Source of News",
-                "description": "The medium from which the respondent gets most of their news",
+              "candidate2016_agg": {
+                "id": "candidate2016_agg",
+                "title": "2016 Presidential Candidate",
+                "description": "Among those on the ballot, the candidate whom the respondent supported in the 2016 presidential election.",
                 "type" : "FREQUENCY",
-                "sorter" : ["Newspaper", "TV, radio", "Internet", "Other", "None"]
+                "sorter" : ["Clinton", "Trump", "Other"]
+              }, 
+              "ideology": {
+                "id": "ideology",
+                "title": "Economic Ideology",
+                "description": "The economic ideology that the respondent self-identifies with.",
+                "type" : "FREQUENCY",
+                "sorter" : ["Conservative", "Moderate", "Liberal"]
               },
               "econgroup": {
                 "id": "econgroup",
-                "title": "Knowledge of Economics",
+                "title": "Economics Knowledge",
                 "description": "The respondent's self-reported knowedge of economics.",
                 "type" : "FREQUENCY",
                 "sorter" : ["Not highly knowledgeable", "Highly knowledgeable"]
               },
-              "candidate2016_agg": {
-                "id": "candidate2016_agg",
-                "title": "2016 Presidential Candidate",
-                "description": "The candidate whom the respondent supported in the 2016 presidential election.",
-                "type" : "FREQUENCY",
-                "sorter" : ["Clinton", "Trump", "Other"]
-              }, 
               "econ" : {
                 "id" : "econ",
                 "title" : "Studied Economics",
                 "description" : "Whether the individual studied economics in college",
                 "type" : "FREQUENCY",
                 "sorter" : ["Yes", "No"]
+              },
+              "newsgroup": {
+                "id": "newsgroup",
+                "title": "Source of News",
+                "description": "The medium from which the respondent gets most of their news",
+                "type" : "FREQUENCY",
+                "sorter" : ["Newspaper", "TV, radio", "Internet", "Other", "None"]
               }
             }
           },
@@ -4197,14 +4211,15 @@
                 "title" : "Current intervention level",
                 "description" : "Some people think the government is trying to do too many things that should be left to individuals and businesses. Others think that government should do more to solve our country's problems. Which come closer to your own view?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Government should do more", "Government is doing just the right amount", "Government is doing too much"],
-                "color" : "Gradient3"
+                "sorter" : ["Government is doing too much", "Government is doing just the right amount", "Government should do more"],
+                "color" : "ReverseGradient3"
               },
               "G10003_en" : {
                 "id" : "G10003_en",
                 "title" : "Theoretical intervention level",
                 "description" : "Where would you rate yourself on a scale of 1 to 5, where 1 means you think the government should do only those things necessary to provide the most basic government functions, and 5 means you think the government should take active steps in every area it can to try and improve the lives of its citizens?",
-                "type" : "CATEGORICAL"
+                "type" : "CATEGORICAL",
+                "color": "ReverseGradient5"
               },
               "G10005_en" : {
                 "id" : "G10005_en",
@@ -4224,49 +4239,57 @@
                     "id" : "G10006_1_en",
                     "title" : "Reduce income differences",
                     "description" : "Reducing income differences between the rich and the poor",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "color" : "ReverseGradient5"
                   },
                   {
                     "id" : "G10006_2_en",
                     "title" : "Reduce wealth transmission",
                     "description" : "Reducing the transmission of wealth from one generation to the other",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "color" : "ReverseGradient5"
                   },
                   {
                     "id" : "G10006_3_en",
                     "title" : "Ensuring health care",
                     "description" : "Making sure Americans have adequate health care",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "color" : "ReverseGradient5"
                   }, 
                   {
                     "id" : "G10006_4_en",
                     "title" : "Reducing opportunity differences",
                     "description" : "Reducing the differences in opportunities between children from wealthy and poor families",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL", 
+                    "color" : "ReverseGradient5"
                   }, 
                   {
                     "id" : "G10006_5_en",
                     "title" : "Regulating trade",
                     "description" : "Regulating trade to and from the U.S. to protect American producers and consumers",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "color" : "ReverseGradient5"
                   }, 
                   {
                     "id" : "G10006_6_en",
                     "title" : "Stabilizing financial system",
-                    "description" : "Maintaining a stable financial system and enrusing that credit markets work",
-                    "type" : "CATEGORICAL"
+                    "description" : "Maintaining a stable financial system and ensuring that credit markets work",
+                    "type" : "CATEGORICAL",
+                    "color" : "ReverseGradient5"
                   },
                   {
                     "id" : "G10006_7_en",
                     "title" : "Stabilizing dollar",
                     "description" : "Ensuring a stable dollar",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "color" : "ReverseGradient5"
                   },
                   {
                     "id" : "G10006_8_en",
                     "title" : "Providing minimum living",
                     "description" : "Providing a minimum standard of living for all",
-                    "type" : "CATEGORICAL"
+                    "type" : "CATEGORICAL",
+                    "color" : "ReverseGradient5"
                   }
                 ]
               }
