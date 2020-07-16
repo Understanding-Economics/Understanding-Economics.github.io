@@ -1649,6 +1649,7 @@
               "title": "Reduction of income differences",
               "description": "To reduce income differences between rich and poor people, the government (local, state, or federal) has the ability and the tools to do:",
               "type": "CATEGORICAL",
+              "color" : "ReverseGradient4",
               "sorter": [
                 "Nothing at all",
                 "Not much",
@@ -3534,6 +3535,7 @@
                   "title": "Spend more on health",
                   "description": "Relative to other rich countries like France, Germany, and the U.K., how much does the U.S. spend on health care as a share of its GDP?",
                   "type": "CATEGORICAL",
+                  "color" : "ReverseGradient5", 
                   "sorter": [
                     "Much more",
                     "More",
@@ -5534,7 +5536,7 @@
             "edugroup": {
               "id": "edugroup",
               "title": "Education level",
-              "description": "The highest education level achieved by the repsondent.",
+              "description": "The highest education level achieved by the repsondent",
               "type": "FREQUENCY",
               "sorter": [
                 "College Degree",
@@ -5545,7 +5547,7 @@
             "employment_agg": {
               "id": "employment_agg",
               "title": "Employment Status",
-              "description": "The current employment status of the respondent.",
+              "description": "The current employment status of the respondent",
               "sorter": [
                 "Working",
                 "Not working",
@@ -5557,7 +5559,7 @@
             "gender": {
               "id": "gender",
               "title": "Gender",
-              "description": "The gender of the respondent.",
+              "description": "The gender of the respondent",
               "type": "FREQUENCY"
             },
             "incomegroup": {
@@ -5586,7 +5588,7 @@
             "children": {
               "id": "children",
               "title": "Number of Children",
-              "description": "Number of children the respondent has.",
+              "description": "Number of children the respondent has",
               "type": "FREQUENCY",
               "sorter": [
                 "0",
@@ -5611,7 +5613,7 @@
             "born_us": {
               "id": "born_us",
               "title": "Born in US",
-              "description": "Whether the respondent was born in the United States.",
+              "description": "Whether the respondent was born in the United States",
               "type": "FREQUENCY",
               "sorter": [
                 "Yes",
@@ -5621,7 +5623,7 @@
             "social_class": {
               "id": "social_class",
               "title": "Social Class",
-              "description": "The social class that the respondent identifies with.",
+              "description": "The social class that the respondent identifies with",
               "type": "FREQUENCY",
               "sorter": [
                 "Lower Class or Poor",
@@ -5634,7 +5636,7 @@
             "partygroup": {
               "id": "partygroup",
               "title": "Political Party",
-              "description": "The political party that the respondent self-identifies with.",
+              "description": "The political party that the respondent self-identifies with",
               "type": "FREQUENCY",
               "sorter": [
                 "Democrat",
@@ -5657,7 +5659,7 @@
             "ideology": {
               "id": "ideology",
               "title": "Economic Ideology",
-              "description": "The economic ideology that the respondent self-identifies with.",
+              "description": "The economic ideology that the respondent self-identifies with",
               "type": "FREQUENCY",
               "sorter": [
                 "Conservative",
@@ -5668,11 +5670,11 @@
             "econgroup": {
               "id": "econgroup",
               "title": "Economics Knowledge",
-              "description": "The respondent's self-reported knowedge of economics.",
+              "description": "The respondent's self-reported knowedge of economics",
               "type": "FREQUENCY",
               "sorter": [
-                "Not highly knowledgeable",
-                "Highly knowledgeable"
+                "Highly knowledgeable",
+                "Not highly knowledgeable"
               ]
             },
             "econ": {
