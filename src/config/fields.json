@@ -166,13 +166,14 @@
             "id": "Knowledge about policy",
             "title": "Knowledge about policy",
             "description": "Questions to examine the individual's knowledge of income tax policy",
+            "color" : "Gradient3", 
             "questions": {
               "Q04004_en": {
                 "id": "Q04004_en",
                 "title": "Perceived Equality of Income Tax Share",
                 "description": "How equally the respondent thinks the share of income tax is distributed across people in the U.S.",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Everyone pays more or less the same share", "People pay somewhat different shares of their income in taxes", "People pay very different shares of their incomes in taxes"]
+                "sorter" : ["Everyone pays more or less the same share.", "People pay somewhat different shares of their income in taxes.", "People pay very different shares of their income in taxes."]
               },
               "Q04005_en": {
                 "id": "Q04005_en",
@@ -667,7 +668,7 @@
                 "title": "Reducing income differences",
                 "description": "What would ultimately do more to reduce the income differences between poor and rich families?",
                 "type" : "TREATMENT",
-                "sorter" : ["Lowering taxes on wealthy people/women and corporations to encourage more investment in economic growth.", "Raising taxes on wealthy people/women and corporations to expand programs for the poor."],
+                "sorter" : ["Lowering taxes on wealthy people/women", "Raising taxes on wealthy people/women"],
                 "questions" : [
                   {
                     "id" : "Q06003_en",
@@ -992,7 +993,7 @@
                     "title": "High income",
                     "description": "How the respondent views the long-term impact of tax cuts on high-income households on the federal budget deficit?",
                     "type" : "TREATMENT",
-                    "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
+                    "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won't be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
                     "questions" : [
                       {
                         "id" : "Q06007_en",
@@ -1019,7 +1020,7 @@
                     "title": "Middle class",
                     "description": "How the respondent views the long-term impact of tax cuts on middle-class households on the federal budget deficit?",
                     "type" : "TREATMENT",
-                    "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
+                    "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won't be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
                     "questions" : [
                       {
                         "id" : "Q06008_en",
@@ -1344,10 +1345,10 @@
               },
               "Q04008_en": {
                 "id": "Q04008_en",
-                "title": "Affect Small Businesse/Farmer",
+                "title": "Affect Small Businesses/Farmers",
                 "description": "Do you think many small business or small farm owners are subject to the federal estate tax?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Almost all are subject to the estate tax; Many are subject to the estate tax", "Few are subject to the estate tax", "Almost none are subject to the estate tax"],
+                "sorter" : ["Almost all are subject to the estate tax", "Many are subject to the estate tax", "Few are subject to the estate tax", "Almost none are subject to the estate tax"],
                 "correct" : "Few, only roughly 80 small bussiness and small farm estates nationwide will face any estate tax in 2017",
                 "source" : "Center on Budget and Policy Priorities",
                 "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
@@ -1357,7 +1358,7 @@
                 "title": "Double Taxation",
                 "description": "Does federal estate tax policy mostly tax assets that have already been taxed, thus leading to ”double taxation”?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["It’s mostly double taxation", "It mostly taxes assets that have not been taxed before"],
+                "sorter" : ["It's mostly double taxation", "It mostly taxes assets that have not been taxed before"],
                 "correct" : "It mostly taxes assets that have not been taxed before",
                 "source_url" : "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
               },
@@ -1394,7 +1395,7 @@
               "Q04014_en": {
                 "id": "Q04014_en",
                 "title": "Capital Gains Example",
-                "description": "Let’s work through a concrete example about the federal estate tax now. Jack inherits a house from his father. His father paid $50,000 for the house 30 years ago. This house is now worth $350,000 at the time of the father’s death. But Jack manages to sell the house for $400,000.",
+                "description": "Let's work through a concrete example about the federal estate tax now. Jack inherits a house from his father. His father paid $50,000 for the house 30 years ago. This house is now worth $350,000 at the time of the father's death. But Jack manages to sell the house for $400,000.",
                 "type" : "UMBRELLA",
                 "questions" : [
                     {
@@ -1955,7 +1956,7 @@
                       "title": "On Federal Deficit",
                       "description": "View about the long-term impact that cuts in the federal estate tax for wealthy households may have on the federal budget deficit",
                       "type" : "TREATMENT",
-                      "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won’t be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
+                      "sorter" : ["The tax cuts would increase the deficit in the long run because the government would take in a lot less money that it won't be able to recover", "The tax cuts would decrease the deficit in the long run because they would stimulate the economy and bring in more money for the government"],
                       "questions" : [
                         {
                           "id" : "Q06005_en",
@@ -2130,22 +2131,22 @@
                       "title": "Pass wealth or tax wealth?",
                       "description": "Which statement do you agree with most?",
                       "type" : "TREATMENT",
-                      "sorter" : ["Yes", "No"],
+                      "sorter" : ["Should be able to pass on all wealth", "Part of wealth should be taxed"],
                       "questions" : [
                         {
-                          "id" : "Q06003_en",
+                          "id" : "Q06012_en",
                           "title" : "CONTROL",
                           "description" : "Statement 1: Wealthy parents should be allowed to pass on all of their wealth to their children. As a result, some children will start their own life with much larger wealth just by virtue of being born in a richer family. OR Statement 2: Children should not start their life with much larger wealth just by virtue of being born in a richer family. Part of the wealth passed on by parents to their children should therefore be taxed, even if that means that some parents who have worked hard will be taxed.",
                           "treatments" : ["Neutral"]
                         },
                         {
-                          "id" : "Q06003_en",
+                          "id" : "Q06012_en",
                           "title" : "YOU",
                           "description" : "Statement 1: Individuals with similar levels of wealth to mine should be al- lowed to pass on all of their wealth to their children. As a result, some children will start their own life with larger wealth just by virtue of being born in a richer family than others. OR Statement 2: Children should not start their life with larger wealth just by virtue of being born in a richer family. Part of the wealth passed on by parents with wealth similar to mine to their children should be taxed, even if I and some of those other parents have worked hard for it.",
                           "treatments" : ["You"]
                         },
                         {
-                          "id" : "Q06003_en",
+                          "id" : "Q06012_en",
                           "title" : "GENDER",
                           "description" : "Statement 1: A wealthy mother should be able to pass on all of her wealth to her children. As a result, some children will start their own life with much larger wealth just by virtue of being born with to richer mother. OR Statement 2: Children should not start their life with much larger wealth just by virtue of being born to a richer mother. Part of the wealth passed on by wealthy mothers to their children should be taxed, even if some mothers have worked hard for it.",
                           "treatments" : ["Gender"]
@@ -2316,7 +2317,7 @@
                 "title": "Seriousness of Condition",
                 "description": "If you put off medical treatment because of cost, how serious was the condition or illness?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Very serious", "Somewhat serious", "Not very serious", "Not at all serious"]
+                "sorter" : ["Serious", "Not serious"]
               },
               "Q03007_en": {
                 "id": "Q03007_en",
@@ -2631,7 +2632,7 @@
                 "title": "Federal Poverty Level - Medicaid eligibility",
                 "description": "How high is that FPL threshold percentage for a family like yours to be eligible for Medicaid?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Under 50% of the FPL", "Between 50 and 90% of the FPL", "Between 130 and 160% of the FPL", "Between 160 and 200% of the FPL", "Higher than 200 of the FPL"],
+                "sorter" : ["Under 50% of the FPL", "Between 50 and 90% of the FPL", "Between 90 and 130% of the FPL", "Between 130 and 160% of the FPL", "Between 160 and 200% of the FPL", "Higher than 200% of the FPL"],
                 "correct" : "Specific to family"
               },
               "Q04017_en": {
@@ -2738,7 +2739,7 @@
                     "id" : "Q06004_1_en",
                     "title" : "Increase Unnecessary Use of ER",
                     "type" : "TREATMENT",
-                    "sorter" : ["Yes", "No"],
+                    "sorter" : ["None at all", "A little", "A moderate amount", "A great deal", "A lot"],
                     "questions" : [
                         {
                             "id" : "Q06004_1_en",
@@ -2764,7 +2765,7 @@
                     "id" : "Q06004_2_en",
                     "title" : "Increase Unnecessary Medical Services",
                     "type" : "TREATMENT",
-                    "sorter" : ["Yes", "No"],
+                    "sorter" : ["None at all", "A little", "A moderate amount", "A great deal", "A lot"],
                     "questions" : [
                         {
                             "id" : "Q06004_2_en",
@@ -2790,7 +2791,7 @@
                     "id" : "Q06004_3_en",
                     "title" : "Increase Preventive Care",
                     "type" : "TREATMENT",
-                    "sorter" : ["Yes", "No"],
+                    "sorter" : ["None at all", "A little", "A moderate amount", "A great deal", "A lot"],
                     "questions" : [
                         {
                             "id" : "Q06004_3_en",
@@ -2970,7 +2971,7 @@
                 "title": "Responsibility for Health Issues",
                 "description": "What is more responsible for the health issues across the U.S. today?",
                 "type" : "TREATMENT",
-                "sorter" : ["Mostly the result of circumstances outside of one’s control", "Mostly the result of one’s own actions"],
+                "sorter" : ["Mostly results of circumstances outside control", "Mostly result of own actions"],
                 "questions" : [
                   {
                     "id" : "Q06011_en",
@@ -3144,31 +3145,31 @@
                     "title": "Medicare-for-all",
                     "description": "As you may know, some have proposed a 'Medicare-for-all' single payer health insurance program that would be administered by the federal government advanced through taxes. Please tell us if you favor or oppose this proposal, or if you don't know enough to say?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                    "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don't know enough to say"]
                   },
                   {
                     "id": "Q07007_en",
                     "title": "Help to Low-income Families",
                     "description": "Do you support additional transfers or subsidies to low-income families to help with the costs of health care?",
                     "type" : "CATEGORICAL",
-                    "color" : "ReverseGradient5", 
-                    "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                    "color" : "Gradient5", 
+                    "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"]
                   },
                   {
                     "id": "Q07008_en",
                     "title": "Individual Mandate",
                     "description": "Do you support an individual mandate whereby every individual is obliged to buy health insurance?",
                     "type" : "CATEGORICAL",
-                    "color" : "ReverseGradient5",
-                    "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                    "color" : "Gradient5",
+                    "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"]
                   },
                   {
                     "id": "Q07009_en",
                     "title": "Employer Mandate",
                     "description": "Do you support or oppose having an employer mandate whereby every large employer, with more than 50 employees, is obliged to offer health insurance plans for their employees?",
                     "type" : "CATEGORICAL",
-                    "color" : "ReverseGradient5",
-                    "sorter" : ["Strongly favor", "Favor", "Neither favor nor oppose", "Oppose", "Strongly oppose", "Don’t know enough to say"]
+                    "color" : "Gradient5",
+                    "sorter" : ["Strongly support", "Support", "Neither support nor oppose", "Oppose", "Strongly oppose"]
                   }
                 ]
               }
@@ -3184,55 +3185,56 @@
                 "title" : "Desired Design of Health Insurance",
                 "description" : "Desired Design of Health Insurance for the following types of of medical care:",
                 "type" : "UMBRELLA",
+                "color" : "Gradient4",
                 "questions" : [
                   {
                     "id": "Q07010_1_en",
                     "title": "Preventive Care",
                     "description" : "Preventive care (e.g.: annual physical examinations, recommended cancer screening, or immunizations)",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
+                    "sorter" : ["Full coverage", "Generous coverage", "Low coverage", "No coverage"]
                   },
                   {
                     "id": "Q07010_2_en",
                     "title": "Primary Care Visits",
                     "description" : "Primary care visits for non-life threatening conditions (e.g.: for a cold, flu, or stomach bug)",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
+                    "sorter" : ["Full coverage", "Generous coverage", "Low coverage", "No coverage"]
                   },
                   {
                     "id": "Q07010_3_en",
                     "title": "Maternity and Newborn Care",
                     "description" : "Maternity and newborn care (pre-natal screenings and check-ups, birth and delivery, newborn screening and care)",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
+                    "sorter" : ["Full coverage", "Generous coverage", "Low coverage", "No coverage"]
                   },
                   {
                     "id": "Q07010_4_en",
                     "title": "Specialist Visits for Non-essential Care",
                     "description" : "Specialist visits for non-essential care (e.g.: elective hip replacement, hearing aids)",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
+                    "sorter" : ["Full coverage", "Generous coverage", "Low coverage", "No coverage"]
                   },
                   {
                     "id": "Q07010_5_en",
                     "title": "Medical Care for Catastrophic Situations",
                     "description" : "Medical care for catastrophic situations (e.g.: long-run medical care after bad accidents or serious injuries once one leaves the emergency room, intensive treatment for cancers, management of serious, long-term hear and liver conditions)",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
+                    "sorter" : ["Full coverage", "Generous coverage", "Low coverage", "No coverage"]
                   },
                   {
                     "id": "Q07010_6_en",
                     "title": "Emergency Room Care",
                     "description" : "Emergency room care (emergency, short-term care after accidents, severe illness, life-threatening conditions that require immediate attention)",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
+                    "sorter" : ["Full coverage", "Generous coverage", "Low coverage", "No coverage"]
                   },
                   {
                     "id": "Q07010_7_en",
                     "title": "Pediatric Care",
                     "description" : "Pediatric care (medical care for children)",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["full coverage (the patient pays no costs out of pocket)", "generous coverage (the patient has only minimal copay or deductibles)", "low coverage (costs are shared and the patient bears a significant share of total costs)", "no coverage (meaning the patient has to pay the full costs out of pocket)"]
+                    "sorter" : ["Full coverage", "Generous coverage", "Low coverage", "No coverage"]
                   }
                 ]
               }
@@ -3494,7 +3496,7 @@
                 "title": "Effect on Workers",
                 "description": "Overall, has international trade helped or hurt U.S. workers?",
                 "type" : "CATEGORICAL",
-                "sorter" : ["Yes", "No"]
+                "sorter" : ["Helped U.S. workers", "Hurt U.S. workers"]
               },
               "Q06105" : {
                 "id" : "Q06105",
@@ -3652,7 +3654,7 @@
                     "title" : "Low-skilled Workers' Wages",
                     "description" : "What will happen to the wages of low-skilled workers working in the car sector?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"],
+                    "sorter" : ["Wages will decrease", "Wages will stay the same", "Wages will increase"],
                     "color" : "ReverseGradient3"
                   },
                   {
@@ -3668,7 +3670,7 @@
                     "title" : "High-skilled Workers' Wages",
                     "description" : "What will happen to the wages of high-skilled workers working in the laptop sector?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"],
+                    "sorter" : ["Wages will decrease", "Wages will stay the same", "Wages will increase"],
                     "color" : "ReverseGradient3"
                   },
                   {
@@ -3676,7 +3678,7 @@
                     "title" : "Changing Sectors and Increase in Exports",
                     "description" : "Imagine that over time, some low-skilled workers from the car sector are able to quit their jobs and find new jobs in the laptop sector. What will happen to their wages now if the U.S. exports more laptops?",
                     "type" : "CATEGORICAL",
-                    "sorter" : ["Wages will decrease", "Wages will remain the same", "Wages will increase"],
+                    "sorter" : ["Wages will decrease", "Wages will stay the same", "Wages will increase"],
                     "color" : "ReverseGradient3"
                   },
                   {
@@ -4049,7 +4051,7 @@
                 "title": "Gains and Losses of Increase in Trade",
                 "description": "Which statement comes closest to your views? When there is more trade between the US and other countries…",
                 "type" : "CATEGORICAL",
-                "sorter" : ["... most people gain, but a few people lose a lot.'", "... most people lose, but a few gain a lot.'"]
+                "sorter" : ["... most people gain, but a few people lose a lot.", "... most people lose, but a few gain a lot."]
               }
             }
           }
