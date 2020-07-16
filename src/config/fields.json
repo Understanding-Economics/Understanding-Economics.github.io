@@ -247,7 +247,9 @@
                 "People pay very different shares of their income in taxes."
               ],
               "color": "Gradient3",
-              "correct": "People pay very different shares of their income in taxes."
+              "correct": "People pay very different shares of their income in taxes.",
+              "source" : "Pew Research",
+              "source_url" : "https://www.pewresearch.org/fact-tank/2017/10/06/a-closer-look-at-who-does-and-doesnt-pay-u-s-income-tax/"
             },
             "Q04005_en": {
               "id": "Q04005_en",
@@ -275,8 +277,8 @@
                   "type": "NUMERIC",
                   "format": "dollar",
                   "correct": 600001,
-                  "source": "NerdWallet",
-                  "source_url": "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
+                  "source": "Tax Foundation",
+                  "source_url": "https://taxfoundation.org/2018-tax-brackets/",
                   "nticks": 5
                 },
                 {
@@ -312,8 +314,8 @@
                   "description": "What is the top federal personal income tax rate in the U.S.?",
                   "type": "NUMERIC",
                   "correct": 37,
-                  "source": "NerdWallet",
-                  "source_url": "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
+                  "source": "Tax Foundation",
+                  "source_url": "https://taxfoundation.org/2018-tax-brackets/",
                   "format": "percent"
                 },
                 {
@@ -365,8 +367,8 @@
                 "Lower income taxes"
               ],
               "correct": "Lower income taxes",
-              "source": "Time",
-              "source_url": "http://time.com/money/4862673/us-tax-burden-vs-oecd-countries/"
+              "source": "OECD",
+              "source_url": "https://www.oecd.org/tax/revenue-statistics-united-states.pdf"
             },
             "Q04016_en": {
               "id": "Q04016_en",
