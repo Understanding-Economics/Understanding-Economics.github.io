@@ -151,8 +151,8 @@
       "description": "The respondent's self-reported knowedge of economics",
       "type": "CATEGORICAL",
       "sorter": [
-        "Not highly knowledgeable",
-        "Highly knowledgeable"
+        "Highly knowledgeable",
+        "Not highly knowledgeable"
       ]
     },
     "econ": {
@@ -3413,6 +3413,7 @@
                   "title": "Consequences",
                   "description": "What happened if you did not have health insurance, until 2018?",
                   "type": "CATEGORICAL",
+                  "color" : "ReverseGradient4", 
                   "sorter": [
                     "A penalty had to be paid",
                     "You were forced to buy insurance",
@@ -3449,6 +3450,7 @@
                   "title": "How did the individual mandate change",
                   "description": "How did the legislation on the individual mandate change in 2019?",
                   "type": "CATEGORICAL",
+                  "color": "ReverseGradient5",
                   "sorter": [
                     "The penalty was increased",
                     "The penalty was decreased",

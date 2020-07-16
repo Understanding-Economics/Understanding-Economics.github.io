@@ -22,7 +22,6 @@ def check_sorter(question, data):
         print(question["id"])
         print(sorter_set)
         print(responses_set)
-        exit()
         return "Invalid sorter"
     return None
 
