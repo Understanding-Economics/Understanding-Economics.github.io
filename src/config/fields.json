@@ -163,9 +163,9 @@
               }
             }
           },
-          "Knowledge about policy": {
-            "id": "Knowledge about policy",
-            "title": "Knowledge about policy",
+          "Knowledge about Policy": {
+            "id": "Knowledge about Policy",
+            "title": "Knowledge about Policy",
             "description": "Questions to examine the individual's knowledge of income tax policy",
             "color" : "Gradient3", 
             "questions": {
@@ -321,9 +321,9 @@
               }
             }
           },
-          "Expected Effects": {
-            "id": "Expected Effects",
-            "title": "Expected Effects",
+          "Effects of the Policy": {
+            "id": "Effects of the Policy",
+            "title": "Effects of the Policy",
             "description": "How would increasing the federal income tax rate for the richest individuals encourage the following behavior(s)?",
             "questions": {
               "Q06001_1_en" : {
@@ -1076,9 +1076,9 @@
               }
             }
           },
-          "Policy views": {
-            "id": "Policy views",
-            "title": "Policy views",
+          "Policy Views": {
+            "id": "Policy Views",
+            "title": "Policy Views",
             "description": "Questions to test the individual's perception of income tax policy outcomes",
             "questions": {
               "Q07001_en" : {
@@ -1212,10 +1212,10 @@
               }
             }
           },
-          "Views on government" : {
-            "id": "Views on government",
-            "title": "Views on government",
-            "description": "Questions to examine the individual's views on government regarding income policy",
+          "Views on Government" : {
+            "id": "Views on Government",
+            "title": "Views on Government",
+            "description": "Questions to examine the individual's Views on Government regarding income policy",
             "questions": {
               "Q09001_en": {
                 "id": "Q09001_en",
@@ -1281,9 +1281,9 @@
               }
             }
           },
-          "Knowledge about policy" : {
-            "id": "Knowledge about policy",
-            "title": "Knowledge about policy",
+          "Knowledge about Policy" : {
+            "id": "Knowledge about Policy",
+            "title": "Knowledge about Policy",
             "description": "Questions to examine the individual's knowledge about estate tax policy",
             "questions": {
               "Q04002_en": {
@@ -2233,9 +2233,9 @@
               }
             }
           },
-          "Views on government " : {
-            "id": "Views on government",
-            "title": "Views on government",
+          "Views on Government" : {
+            "id": "Views on Government",
+            "title": "Views on Government",
             "description": "Questions to examine government intervention regarding estate tax policy",
             "questions": {
               "Q09001_en": {
@@ -2346,9 +2346,9 @@
               }
             }
           },
-          "Knowledge about policy" : {
-            "id": "Knowledge about policy",
-            "title": "Knowledge about policy",
+          "Knowledge about Policy" : {
+            "id": "Knowledge about Policy",
+            "title": "Knowledge about Policy",
             "description": "Questions to examine the individual's knowledge about health policy",
             "questions": {
               "dummy_medicaid": {
@@ -3251,9 +3251,9 @@
               }
             }
           },
-          "Views on government" : {
-            "id": "Views on government",
-            "title": "Views on government",
+          "Views on Government" : {
+            "id": "Views on Government",
+            "title": "Views on Government",
             "description": "Questions to examine government intervention regarding health policy",
             "questions": {
               "Q09001_en": {
@@ -3313,9 +3313,9 @@
               }
             }
           },
-          "Knowledge about policy" : {
-            "id": "Knowledge about policy",
-            "title": "Knowledge about policy",
+          "Knowledge about Policy" : {
+            "id": "Knowledge about Policy",
+            "title": "Knowledge about Policy",
             "description": "Questions to examine the individual's knowledge about trade policy",
             "questions": {
               "Q04002_en": {
@@ -4052,10 +4052,10 @@
               }
             }
           },
-          "Views on government" : {
-            "id": "Views on government",
-            "title": "Views on government",
-            "description": "Questions to examine views on government",
+          "Views on Government" : {
+            "id": "Views on Government",
+            "title": "Views on Government",
+            "description": "Questions to examine Views on Government",
             "questions": {
               "Q09003_en": {
                 "id": "Q09003_en",
@@ -4071,9 +4071,9 @@
       "pooled" : {
         "title" : "Pooled Data",
         "topics" : {
-          "Respondent characteristics": {
-            "id" : "Respondent characteristics",
-            "title" : "Respondent characteristics", 
+          "Respondent Characteristics": {
+            "id" : "Respondent Characteristics",
+            "title" : "Respondent Characteristics", 
             "description" : "Distributions of the characteristics of the respondents",
             "questions" : {
               "age3group": {
@@ -4193,9 +4193,9 @@
               }
             }
           },
-          "Views on government" : {
-            "id" : "Views on government",
-            "title" : "Views on government",
+          "Views on Government" : {
+            "id" : "Views on Government",
+            "title" : "Views on Government",
             "description" : "Questions on the individual's views on the government",
             "questions" : {
               "G10001_en" : {
