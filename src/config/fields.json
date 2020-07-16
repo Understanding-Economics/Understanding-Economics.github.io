@@ -239,7 +239,7 @@
             "Q04004_en": {
               "id": "Q04004_en",
               "title": "Perceived equality of income tax share",
-              "description": "How equally the respondent thinks the share of income tax is distributed across people in the U.S.",
+              "description": "Do you think that, broadly speaking, everyone in the U.S. currently pays approximately the same share of income in federal personal income taxes or do you think people pay very different shares of income in federal personal income taxes?",
               "type": "CATEGORICAL",
               "sorter": [
                 "Everyone pays more or less the same share.",
@@ -3125,7 +3125,7 @@
             "Q03008_en": {
               "id": "Q03008_en",
               "title": "Quality of healthcare received",
-              "description": "Quality of the health care you receive",
+              "description": "Quality of the healthcare you receive",
               "type": "CATEGORICAL",
               "sorter": [
                 "Excellent",
@@ -3467,7 +3467,7 @@
             "Q04015_en": {
               "id": "Q04015_en",
               "title": "Employer mandate",
-              "description": "Is there currently an employer mandate, whereby employers have to provide healt insurance to their employees?",
+              "description": "Is there currently an employer mandate, whereby employers have to provide health insurance to their employees?",
               "type": "CATEGORICAL",
               "sorter": [
                 "Yes, all employers are required to provide health insurance to their employees",
@@ -3496,7 +3496,7 @@
             "Q04017_en": {
               "id": "Q04017_en",
               "title": "Impact of aca on eligibility",
-              "description": "How did the FPL threshold percentage change, if at all, as a result of the Affordable Care Act",
+              "description": "How did the FPL threshold percentage change, if at all, as a result of the Affordable Care Act?",
               "type": "CATEGORICAL",
               "sorter": [
                 "Yes, it expanded eligibility",
@@ -3982,7 +3982,7 @@
             "Q06013_en": {
               "id": "Q06013_en",
               "title": "Healthcare to reduce contagion",
-              "description": "Importance of everyone affording healthcare to reduce the chances of contagion spreading.",
+              "description": "Let us consider the following statement about health care and health insurance. Please tell us whether you agree or disagree with it.",
               "type": "TREATMENT",
               "sorter": [
                 "Strongly agree",
@@ -4060,7 +4060,7 @@
             "Q06015_en": {
               "id": "Q06015_en",
               "title": "Employers with religious objections",
-              "description": "If you had to choose, which comes closest to your view? \"Employers who have religious objections to the use of birth control should be...",
+              "description": "If you had to choose, which comes closest to your view? \"Employers should be...",
               "type": "CATEGORICAL",
               "sorter": [
                 "... able to refuse to provide it in health insurance plans for their employees.",
@@ -4185,7 +4185,7 @@
                 {
                   "id": "Q07006_en",
                   "title": "Medicare-for-all",
-                  "description": "As you may know, some have proposed a 'Medicare-for-all' single payer health insurance program that would be administered by the federal government advanced through taxes. Please tell us if you favor or oppose this proposal, or if you don't know enough to say?",
+                  "description": "As you may know, some have proposed a 'Medicare-for-all' single payer health insurance program that would be administered by the federal government advanced through taxes. Please tell us if you favor or oppose this proposal, or if you don't know enough to say.",
                   "type": "CATEGORICAL",
                   "sorter": [
                     "Strongly favor",
@@ -4250,7 +4250,7 @@
             "Q07010_1_en": {
               "id": "Q07010_1_en",
               "title": "Desired design of health insurance",
-              "description": "Desired Design of Health Insurance for the following types of of medical care:",
+              "description": "Imagine it were up to you to design Americans’ health insurance plans such that they are most cost-effective and that patients get the best care while having to pay the lowest insurance premiums. For the following types of medical care, please say which ones should receive which coverage:",
               "type": "UMBRELLA",
               "color": "Gradient4",
               "questions": [
@@ -4438,10 +4438,7 @@
               "sorter": [
                 "Yes",
                 "No"
-              ],
-              "correct": "The import quota means physical limitation of the quantities of different products to be imported from foreign countries within a specified period of time, usually one year. The import quota may be fixed either in terms of quantity or the value of the product.",
-              "source": "Economics Discussion",
-              "source_url": "http://www.economicsdiscussion.net/import-quotas/import-quotas-meaning-objectives-and-types-international-economics/30454"
+              ]
             },
             "Q04006_en": {
               "id": "Q04006_en",
@@ -5217,7 +5214,7 @@
           "questions": {
             "Q07004": {
               "id": "Q07004",
-              "title": "Industry protection from foreign competition",
+              "title": "Industry",
               "description": "Do you think the following industries should be protected from foreign competition using tariffs or other import restrictions?",
               "type": "UMBRELLA",
               "questions": [
@@ -5315,7 +5312,7 @@
             },
             "Q07005": {
               "id": "Q07005",
-              "title": "Production protection from foreign competition",
+              "title": "Production",
               "description": "Do you think the following particular goods should be protected from foreign competition using tariffs or other import restrictions?",
               "type": "UMBRELLA",
               "questions": [
