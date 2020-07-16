@@ -1,3 +1,4 @@
+/* eslint-disable */
 const GREEN = "#8BCF9F";
 const BLUE = "#6CC3D5"; 
 const PURPLE = "#aa80ff";

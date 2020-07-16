@@ -247,7 +247,9 @@
                 "People pay very different shares of their income in taxes."
               ],
               "color": "Gradient3",
-              "correct": "People pay very different shares of their income in taxes."
+              "correct": "People pay very different shares of their income in taxes.",
+              "source" : "Pew Research",
+              "source_url" : "https://www.pewresearch.org/fact-tank/2017/10/06/a-closer-look-at-who-does-and-doesnt-pay-u-s-income-tax/"
             },
             "Q04005_en": {
               "id": "Q04005_en",
@@ -275,8 +277,8 @@
                   "type": "NUMERIC",
                   "format": "dollar",
                   "correct": 600001,
-                  "source": "NerdWallet",
-                  "source_url": "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
+                  "source": "Tax Foundation",
+                  "source_url": "https://taxfoundation.org/2018-tax-brackets/",
                   "nticks": 5
                 },
                 {
@@ -312,8 +314,8 @@
                   "description": "What is the top federal personal income tax rate in the U.S.?",
                   "type": "NUMERIC",
                   "correct": 37,
-                  "source": "NerdWallet",
-                  "source_url": "https://www.nerdwallet.com/blog/taxes/federal-income-tax-brackets/",
+                  "source": "Tax Foundation",
+                  "source_url": "https://taxfoundation.org/2018-tax-brackets/",
                   "format": "percent"
                 },
                 {
@@ -365,8 +367,8 @@
                 "Lower income taxes"
               ],
               "correct": "Lower income taxes",
-              "source": "Time",
-              "source_url": "http://time.com/money/4862673/us-tax-burden-vs-oecd-countries/"
+              "source": "OECD",
+              "source_url": "https://www.oecd.org/tax/revenue-statistics-united-states.pdf"
             },
             "Q04016_en": {
               "id": "Q04016_en",
@@ -1784,8 +1786,8 @@
                   "type": "NUMERIC",
                   "correct": 40,
                   "format": "percent",
-                  "source": "Wikipedia",
-                  "source_url": "https://en.wikipedia.org/wiki/Estate_tax_in_the_United_States",
+                  "source": "CBPP",
+                  "source_url": "https://www.cbpp.org/research/federal-tax/policy-basics-the-federal-estate-tax",
                   "nticks": 8,
                   "max_val": 80
                 },
@@ -3264,7 +3266,7 @@
               "questions": [
                 {
                   "id": "Q04020_1_en",
-                  "title": "Share of americans on medicaid",
+                  "title": "Share of Americans on medicaid",
                   "description": "Medicaid",
                   "type": "NUMERIC",
                   "correct": 17.6,
@@ -3275,7 +3277,7 @@
                 },
                 {
                   "id": "Q04020_2_en",
-                  "title": "Share of americans on medicare",
+                  "title": "Share of Americans on medicare",
                   "description": "Medicare",
                   "type": "NUMERIC",
                   "correct": 14,
@@ -3286,7 +3288,7 @@
                 },
                 {
                   "id": "Q04020_3_en",
-                  "title": "Share of americans on employer-based insurance",
+                  "title": "Share of Americans on employer-based insurance",
                   "description": "Group health insurance through employer",
                   "type": "NUMERIC",
                   "correct": 49,
@@ -3297,7 +3299,7 @@
                 },
                 {
                   "id": "Q04020_4_en",
-                  "title": "Share of americans on other insurance",
+                  "title": "Share of Americans on other insurance",
                   "description": "Other insurance (policies purchased directly from an insurance company, military, etc.)",
                   "type": "NUMERIC",
                   "correct": 10.7,
@@ -3306,7 +3308,7 @@
                 },
                 {
                   "id": "Q04020_5_en",
-                  "title": "Share of americans uninsured",
+                  "title": "Share of Americans uninsured",
                   "description": "Uninsured",
                   "type": "NUMERIC",
                   "correct": 8.7,
@@ -3319,7 +3321,7 @@
             },
             "Q04007_en": {
               "id": "Q04007_en",
-              "title": "Share of american children on medicaid",
+              "title": "Share of American children on medicaid",
               "description": "Out of 100 American children, aged below 18, how many are enrolled in Medicaid?",
               "type": "NUMERIC",
               "correct": 40.2,
