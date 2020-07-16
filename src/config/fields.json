@@ -1784,8 +1784,8 @@
                   "type": "NUMERIC",
                   "correct": 40,
                   "format": "percent",
-                  "source": "Wikipedia",
-                  "source_url": "https://en.wikipedia.org/wiki/Estate_tax_in_the_United_States",
+                  "source": "CBPP",
+                  "source_url": "https://www.cbpp.org/research/federal-tax/policy-basics-the-federal-estate-tax",
                   "nticks": 8,
                   "max_val": 80
                 },
@@ -3264,7 +3264,7 @@
               "questions": [
                 {
                   "id": "Q04020_1_en",
-                  "title": "Share of americans on medicaid",
+                  "title": "Share of Americans on medicaid",
                   "description": "Medicaid",
                   "type": "NUMERIC",
                   "correct": 17.6,
@@ -3275,7 +3275,7 @@
                 },
                 {
                   "id": "Q04020_2_en",
-                  "title": "Share of americans on medicare",
+                  "title": "Share of Americans on medicare",
                   "description": "Medicare",
                   "type": "NUMERIC",
                   "correct": 14,
@@ -3286,7 +3286,7 @@
                 },
                 {
                   "id": "Q04020_3_en",
-                  "title": "Share of americans on employer-based insurance",
+                  "title": "Share of Americans on employer-based insurance",
                   "description": "Group health insurance through employer",
                   "type": "NUMERIC",
                   "correct": 49,
@@ -3297,7 +3297,7 @@
                 },
                 {
                   "id": "Q04020_4_en",
-                  "title": "Share of americans on other insurance",
+                  "title": "Share of Americans on other insurance",
                   "description": "Other insurance (policies purchased directly from an insurance company, military, etc.)",
                   "type": "NUMERIC",
                   "correct": 10.7,
@@ -3306,7 +3306,7 @@
                 },
                 {
                   "id": "Q04020_5_en",
-                  "title": "Share of americans uninsured",
+                  "title": "Share of Americans uninsured",
                   "description": "Uninsured",
                   "type": "NUMERIC",
                   "correct": 8.7,
@@ -3319,7 +3319,7 @@
             },
             "Q04007_en": {
               "id": "Q04007_en",
-              "title": "Share of american children on medicaid",
+              "title": "Share of American children on medicaid",
               "description": "Out of 100 American children, aged below 18, how many are enrolled in Medicaid?",
               "type": "NUMERIC",
               "correct": 40.2,
