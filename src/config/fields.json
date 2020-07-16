@@ -1822,13 +1822,14 @@
             "Q04009_en": {
               "id": "Q04009_en",
               "title": "Double taxation",
-              "description": "Does federal estate tax policy mostly tax assets that have already been taxed, thus leading to \u201ddouble taxation\u201d?",
+              "description": "Does federal estate tax policy mostly tax assets that have already been taxed, thus leading to \"double taxation\"?",
               "type": "CATEGORICAL",
               "sorter": [
                 "It's mostly double taxation",
                 "It mostly taxes assets that have not been taxed before"
               ],
               "correct": "It mostly taxes assets that have not been taxed before",
+              "source": "CBPP", 
               "source_url": "https://www.cbpp.org/research/federal-tax/ten-facts-you-should-know-about-the-federal-estate-tax"
             },
             "Q04010_en": {
@@ -1979,7 +1980,9 @@
                   "type": "NUMERIC",
                   "correct": 7.5,
                   "format": "percent",
-                  "nticks": 10
+                  "nticks": 10,
+                  "source" : "Opportunity Insights",
+                  "source_url" : "https://opportunityinsights.org/paper/land-of-opportunity/"
                 },
                 {
                   "id": "Q04021_2_en",
@@ -1988,7 +1991,9 @@
                   "type": "NUMERIC",
                   "correct": 12.3,
                   "format": "percent",
-                  "nticks": 6
+                  "nticks": 6, 
+                  "source" : "Opportunity Insights",
+                  "source_url" : "https://opportunityinsights.org/paper/land-of-opportunity/"
                 },
                 {
                   "id": "Q04021_3_en",
@@ -1997,7 +2002,9 @@
                   "type": "NUMERIC",
                   "correct": 18.4,
                   "format": "percent",
-                  "nticks": 10
+                  "nticks": 10,
+                  "source" : "Opportunity Insights",
+                  "source_url" : "https://opportunityinsights.org/paper/land-of-opportunity/"
                 },
                 {
                   "id": "Q04021_4_en",
@@ -2006,7 +2013,9 @@
                   "type": "NUMERIC",
                   "correct": 28.0,
                   "format": "percent",
-                  "nticks": 10
+                  "nticks": 10,
+                  "source" : "Opportunity Insights",
+                  "source_url" : "https://opportunityinsights.org/paper/land-of-opportunity/"
                 },
                 {
                   "id": "Q04021_5_en",
@@ -2015,7 +2024,9 @@
                   "type": "NUMERIC",
                   "correct": 33.7,
                   "format": "percent",
-                  "nticks": 10
+                  "nticks": 10,
+                  "source" : "Opportunity Insights",
+                  "source_url" : "https://opportunityinsights.org/paper/land-of-opportunity/"
                 }
               ]
             }
@@ -3510,7 +3521,9 @@
                 "Between 160 and 200% of the FPL",
                 "Higher than 200% of the FPL"
               ],
-              "correct": "Specific to family"
+              "correct": "Specific to family", 
+              "source" : "Various sources",
+              "source_url" : "https://www.dropbox.com/s/tyjn61ybo089wxb/Answer_for_Medicaid_eligibility.xlsx?dl=0"
             },
             "Q04017_en": {
               "id": "Q04017_en",
