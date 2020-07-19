@@ -317,7 +317,8 @@
                   "correct": 37,
                   "source": "Tax Foundation",
                   "source_url": "https://taxfoundation.org/2018-tax-brackets/",
-                  "format": "percent"
+                  "format": "percent",
+                  "trim" : true
                 },
                 {
                   "id": "Q04011_en",
@@ -328,7 +329,8 @@
                   "source": "Stanford",
                   "source_url": "https://web.stanford.edu/class/polisci120a/immigration/Federal%20Tax%20Brackets.pdf",
                   "format": "percent",
-                  "max_val": 95
+                  "max_val": 100,
+                  "trim" : true
                 }
               ]
             },
