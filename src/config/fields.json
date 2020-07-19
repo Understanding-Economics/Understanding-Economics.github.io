@@ -5841,7 +5841,7 @@
           "questions" : {
             "G0800" : {
               "id" : "G0800",
-              "title" : "Taxes fair share",
+              "title" : "Fairness of tax shares",
               "description" : "For these different groups, please tell me if you think that they are paying their fair share in federal taxes, paying too much, or paying too little?",
               "type" : "UMBRELLA",
               "omit_surveys" : ["Income Tax"], 
