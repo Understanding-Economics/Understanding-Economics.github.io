@@ -67,7 +67,13 @@ export default class NumericDisplay extends React.Component {
     cleanData(data) {
         let filteredData = data.filter(x => x[this.props.group.id] && x[this.props.question.id]);
         let sortedData = filteredData.sort((a, b) => a[this.props.question.id] - b[this.props.question.id]);
-        return filteredData.filter(x => sortedData.indexOf(x) <= 0.95 * sortedData.length);
+        if(this.props.question.trim) {
+            return filteredData.filter(x => sortedData.indexOf(x) <= 0.95 * sortedData.length && 
+                                                sortedData.indexOf(x) >= 0.05 * sortedData.length);
+        }
+        else {
+            return filteredData;
+        }
     }
     
     createClickHandler(groupVal) {

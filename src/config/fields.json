@@ -279,7 +279,8 @@
                   "correct": 600001,
                   "source": "Tax Foundation",
                   "source_url": "https://taxfoundation.org/2018-tax-brackets/",
-                  "nticks": 5
+                  "nticks": 5,
+                  "trim" : true
                 },
                 {
                   "id": "Q04008_en",
@@ -1771,7 +1772,8 @@
               "format": "dollar",
               "source": "IRS",
               "source_url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax",
-              "nticks": 5
+              "nticks": 5,
+              "trim" : true
             },
             "Q04006_en": {
               "id": "Q04006_en",
@@ -4459,8 +4461,7 @@
               "sorter": [
                 "Yes",
                 "No"
-              ],
-              "correct": "A tariff on goods coming into a country from abroad, often used by governments as a way of reducing imports and protecting local industries."
+              ]
             },
             "Q04004_en": {
               "id": "Q04004_en",
