@@ -5833,6 +5833,118 @@
               ]
             }
           }
+        },
+        "Policy Views": {
+          "id": "Policy Views",
+          "title": "Policy Views",
+          "description": "Questions to examine views on government policy",
+          "questions" : {
+            "G0800" : {
+              "id" : "G0800",
+              "title" : "Taxes fair share",
+              "description" : "For these different groups, please tell me if you think that they are paying their fair share in federal taxes, paying too much, or paying too little?",
+              "type" : "UMBRELLA",
+              "omit_surveys" : ["Income Tax"], 
+              "questions" : [
+                {
+                  "id" : "G08002_en",
+                  "title" : "High-income households",
+                  "description" : "", 
+                  "type" : "CATEGORICAL",
+                  "color" : "Gradient5", 
+                  "sorter" : [
+                    "... pay much less than their fair share in income taxes",
+                    "... pay less than their fair share in income taxes",
+                    "... pay their fair share in income taxes",
+                    "... pay more than their fair share in income taxes",
+                    "... pay much more than their fair share in income taxes"
+                  ]
+                },
+                {
+                  "id" : "G08003_en",
+                  "title" : "Middle-income households",
+                  "description" : "", 
+                  "type" : "CATEGORICAL",
+                  "color" : "Gradient5",
+                  "sorter" : [
+                    "... pay much less than their fair share in income taxes",
+                    "... pay less than their fair share in income taxes",
+                    "... pay their fair share in income taxes",
+                    "... pay more than their fair share in income taxes",
+                    "... pay much more than their fair share in income taxes"
+                  ]
+                }
+              ]
+            },
+            "G08004" : {
+              "id" : "G08004",
+              "title" : "Funding of government services",
+              "description" : "Take the following government services. For each of them, say if would you like it to receive increased funding (even if that means more taxes or reduced spending in other areas), decreased spending (in order to reduce taxes or increase spending elsewhere) or would you like for its funding to be left unchanged?",
+              "type" : "UMBRELLA",
+              "questions" : [
+                {
+                  "id" : "G08004_1_en",
+                  "title" : "Transfers, income support",
+                  "description" : "Transfers and income support programs for those out of work",
+                  "type" : "CATEGORICAL",
+                  "color" : "Gradient3",
+                  "sorter" : [
+                    "Less of this service, reduced taxes",
+                    "Service and taxes as now",
+                    "More of this service, more taxes"
+                  ]
+                },
+                {
+                  "id" : "G08004_2_en",
+                  "title" : "Better schools",
+                  "description" : "Better schools for children from low-income families",
+                  "type" : "CATEGORICAL",
+                  "color" : "Gradient3",
+                  "sorter" : [
+                    "Less of this service, reduced taxes",
+                    "Service and taxes as now",
+                    "More of this service, more taxes"
+                  ]
+                },
+                {
+                  "id" : "G08004_3_en",
+                  "title" : "Income support, retraining",
+                  "description" : "Income support and retraining programs for workers who are displaced by international competition and trade",
+                  "type" : "CATEGORICAL",
+                  "color" : "Gradient3",
+                  "sorter" : [
+                    "Less of this service, reduced taxes",
+                    "Service and taxes as now",
+                    "More of this service, more taxes"
+                  ]
+                },
+                {
+                  "id" : "G08004_4_en",
+                  "title" : "Subsidies for low-income",
+                  "description" : "Subsidies for low-income households to help them with the costs of health insurance premiums and health care",
+                  "type" : "CATEGORICAL",
+                  "color" : "Gradient3",
+                  "sorter" : [
+                    "Less of this service, reduced taxes",
+                    "Service and taxes as now",
+                    "More of this service, more taxes"
+                  ]
+                },
+                {
+                  "id" : "G08004_5_en",
+                  "title" : "Wage subsidies",
+                  "description" : "Wage subsidies and help for the working poor who work for low wages",
+                  "type" : "CATEGORICAL",
+                  "color" : "Gradient3",
+                  "sorter" : [
+                    "Less of this service, reduced taxes",
+                    "Service and taxes as now",
+                    "More of this service, more taxes"
+                  ]
+                }
+              ]
+            }
+          }
         }
       }
     }

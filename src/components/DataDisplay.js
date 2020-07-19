@@ -11,6 +11,10 @@ import FrequencyDisplay from './FrequencyDisplay'
 export default class DataDisplay extends React.Component {
     render() {
         let question = this.props.selectedQuestion;
+        let data = this.props.data; 
+        if (question && question.omit_surveys) {
+            data = data.filter(x => question.omit_surveys.indexOf(x.survey) < 0)
+        }
         let specificDisplay = null;
         if(!question) {
             return null;
@@ -18,27 +22,27 @@ export default class DataDisplay extends React.Component {
         switch(question.type) {
             case DataType.CATEGORICAL:
                 specificDisplay = <CategoricalDisplay 
-                    data = { this.props.data }
+                    data = { data }
                     group = { this.props.selectedGroup }
                     question = { this.props.selectedQuestion }
                 />
                 break;
             case DataType.NUMERIC:
                 specificDisplay = <NumericDisplay
-                    data = { this.props.data }
+                    data = { data }
                     group = { this.props.selectedGroup }
                     question = { this.props.selectedQuestion }
                 />
                 break;
             case DataType.FREQUENCY:
                 specificDisplay = <FrequencyDisplay 
-                    data = { this.props.data }
+                    data = { data }
                     question = { this.props.selectedQuestion }
                 />
                 break;
             case DataType.TREATMENT:
                 specificDisplay =  <TreatmentDisplay
-                    data = { this.props.data }
+                    data = { data }
                     group = { this.props.selectedGroup }
                     question = { this.props.selectedQuestion }
                 />
@@ -50,7 +54,7 @@ export default class DataDisplay extends React.Component {
                 break;
             case DataType.UMBRELLA:
                 specificDisplay = <UmbrellaDisplay 
-                    data = { this.props.data }
+                    data = { data }
                     group = { this.props.selectedGroup }
                     question = { this.props.selectedQuestion }
                 />
