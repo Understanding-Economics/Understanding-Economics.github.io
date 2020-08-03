@@ -1995,7 +1995,7 @@
                   "type": "NUMERIC",
                   "correct": 12.3,
                   "format": "percent",
-                  "nticks": 6, 
+                  "nticks": 10, 
                   "source" : "Opportunity Insights",
                   "source_url" : "https://opportunityinsights.org/paper/land-of-opportunity/"
                 },
